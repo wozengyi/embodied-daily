@@ -343,9 +343,9 @@ def merge_into_history(hist, new_papers):
     return added
 
 # ---------- Build ----------
-def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limit=5000):
+def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None):
     hf = fetch_hf_days(days=14)
-    arx = fetch_arxiv(lookback_days=7, per_query=200)
+    arx = fetch_arxiv(lookback_days=7, per_query=300)
     # Merge sources by id (hf wins over arxiv when same id)
     by_id = {p['id']: dict(p) for p in arx}
     for p in hf:
@@ -379,8 +379,10 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=80, archive_limi
     archive = sorted([p for p in all_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
-    recent = recent[:limit]
-    archive = archive[:archive_limit]
+    if limit is not None:
+        recent = recent[:limit]
+    if archive_limit is not None:
+        archive = archive[:archive_limit]
     bundle = {
         'generatedAt': hist.get('generatedAt'),
         'recentDays': recent_days,
@@ -414,8 +416,8 @@ def main():
     ap.add_argument('--stdout', action='store_true')
     ap.add_argument('--recent', type=int, default=7, help='how many days to show in "latest" (default 7)')
     ap.add_argument('--archive', type=int, default=5*365, help='how many days back the "archive" tab covers (default 365)')
-    ap.add_argument('--limit', type=int, default=80, help='max papers shown in "latest"')
-    ap.add_argument('--archive-limit', dest='archive_limit', type=int, default=5000, help='max papers shown in "archive"')
+    ap.add_argument('--limit', type=int, default=None, help='max papers shown in "latest" (default: all)')
+    ap.add_argument('--archive-limit', dest='archive_limit', type=int, default=None, help='max papers shown in "archive" (default: all)')
     args = ap.parse_args()
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -433,4 +435,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+
 
