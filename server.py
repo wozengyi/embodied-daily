@@ -36,7 +36,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def _live_daily(self):
         try:
-            bundle = build_daily.build_bundle(limit=60)
+            hist = build_daily.load_history()
+            bundle = build_daily.build_bundle(
+                hist,
+                recent_days=7,
+                archive_days=5*365,
+                limit=60,
+                archive_limit=0,
+                venue_limit=0,
+            )
             data = json.dumps(bundle, ensure_ascii=False).encode('utf-8')
             self.send_response(200)
             self.send_header('Content-Type','application/json; charset=utf-8')
@@ -99,5 +107,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 

@@ -142,8 +142,9 @@ def main():
         bd.save_history(hist)
 
     # Regenerate bundle using the augmented history
-    bundle = bd.build_bundle(hist, recent_days=7, archive_days=args.years*365, limit=80, archive_limit=5000)
+    bundle = bd.build_bundle(hist, recent_days=7, archive_days=args.years*365, limit=80, archive_limit=0, venue_limit=0)
     bd.OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
+    bd.write_archive_shards(hist, bundle)
     print(f'Done. history: {before} -> {len(papers)} (+{total_added}), '
           f'latest={bundle["count"]}, archive={bundle["archiveCount"]}')
 

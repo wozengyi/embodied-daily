@@ -298,7 +298,8 @@ function renderChips(){
   const visibleTags = (state.showAllTags || query)
     ? tagEntries
     : [...activeEntries, ...inactiveEntries.slice(0, Math.max(defaultLimit - activeEntries.length, 0))];
-  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4)))]).sort((a,b)=>Number(b)-Number(a));
+  const indexYears = (state.archiveIndex?.years || []).map(y=>String(y.year));
+  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4))), ...indexYears]).sort((a,b)=>Number(b)-Number(a));
   const venueCounts = countBy([...newPs, ...classics, ...archivePs], publicationFacets);
   const bundledPublicationCounts = state.bundle?.publicationCounts || state.archiveIndex?.publicationCounts || {};
   Object.entries(bundledPublicationCounts).forEach(([name, count])=>{
@@ -678,7 +679,7 @@ byId('resetFilters').addEventListener('click', ()=>{
   render();
 });
 byId('shuffleBtn').addEventListener('click', ()=>{ state.seedOffset += 1337; render(); });
-byId('refreshBtn').addEventListener('click', ()=>{ loadBundle({live:true}); });
+byId('refreshBtn').addEventListener('click', ()=>{ loadBundle({refresh:true}); });
 
 function mountSearchExtras(){
   const wrap = byId('searchInput').parentElement;
@@ -705,19 +706,9 @@ function mountSearchExtras(){
 // ---------- Data loading ----------
 async function loadBundle(opts={}){
   state.loading = true; state.bundleError = null; render();
-  if(opts.live && location.protocol.startsWith('http')){
-    try{
-      const r = await fetch('/api/daily', {cache:'no-store'});
-      if(r.ok){
-        const d = await r.json();
-        if(d && Array.isArray(d.papers)){ state.bundle = d; state.loading=false; render(); return; }
-      }
-      state.bundleError = '实时抓取失败（HTTP '+r.status+'）';
-    }catch(e){ state.bundleError = String(e.message||e); }
-  }
   try{
-    const suffix = opts.live ? `?v=${Date.now()}` : '';
-    const r = await fetch(`data/daily.json${suffix}`, {cache: opts.live ? 'no-store' : 'default'});
+    const suffix = opts.refresh ? `?v=${Date.now()}` : '';
+    const r = await fetch(`data/daily.json${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});
     if(r.ok){
       const d = await r.json();
       if(d && Array.isArray(d.papers)){ state.bundle = d; }
@@ -728,6 +719,9 @@ async function loadBundle(opts={}){
   }catch(e){ state.bundleError = state.bundleError || String(e.message||e); }
   state.loading = false;
   render();
+  if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
+    loadArchiveIndex();
+  }
 }
 async function loadArchiveIndex(){
   state.archiveIndexLoading = true;
