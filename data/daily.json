@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-20T08:08:32.074379+00:00",
+  "generatedAt": "2026-08-20T08:24:04.064125+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
   "archiveCutoff": "2021-08-21",
   "addedToday": 0,
-  "venueUpdates": 6,
+  "venueUpdates": 0,
   "historyTotal": 5357,
   "publicationCounts": {
     "预印本": 5233,
@@ -38,7 +38,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.16590",
       "arxiv": "https://arxiv.org/abs/2608.16590",
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
-      "upvotes": 89,
+      "upvotes": 94,
       "tags": [
         "Humanoid",
         "Navigation",
