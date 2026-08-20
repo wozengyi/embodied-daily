@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-20T06:15:37.462076+00:00",
+  "generatedAt": "2026-08-20T06:27:47.815211+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
   "archiveCutoff": "2021-08-21",
-  "addedToday": 22,
+  "addedToday": 0,
   "historyTotal": 5357,
   "count": 147,
   "archiveCount": 800,
@@ -16,7 +16,9 @@
     "hf": 20,
     "arxiv": 780
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2608.16590",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.16590",
       "arxiv": "https://arxiv.org/abs/2608.16590",
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
-      "upvotes": 69,
+      "upvotes": 70,
       "tags": [
         "Humanoid",
         "Navigation",
@@ -23793,9 +23795,5 @@
         "Tactile"
       ]
     }
-  ],
-  "archiveTotal": 5099,
-  "notes": [
-    "archive list trimmed to 800 entries for fast GitHub Pages loading; full history remains in data/history.json"
   ]
 }
