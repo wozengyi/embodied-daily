@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
-const DATA_VERSION = '20260820-embodied-batch-v1';
+const DATA_VERSION = '20260820-embodied-facets-v1';
 const TODAY_MIN_PAPERS = 12;
 const TODAY_WINDOW_DAYS = 2;
 const state = {
@@ -213,6 +213,34 @@ function matches(p){
 
 function filtered(list){ return list.filter(matches); }
 
+function matchesFacetScope(p, ignoreFacet){
+  const q = state.search.trim().toLowerCase();
+  if(q){
+    const hay = (p.title+' '+(p.authors||'')+' '+(p.abstract||'')+' '+venueDisplay(p)+' '+(p.tags||[]).join(' ')).toLowerCase();
+    if(!hay.includes(q)) return false;
+  }
+  if(ignoreFacet !== 'tags' && state.activeTags.size){
+    const tagset = new Set(p.tags||[]);
+    let ok = false;
+    for(const t of state.activeTags){ if(tagset.has(t)){ ok=true; break; } }
+    if(!ok) return false;
+  }
+  if(ignoreFacet !== 'years' && state.activeYears.size){
+    if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
+  }
+  if(ignoreFacet !== 'venues' && state.activeVenues.size){
+    const facets = new Set(publicationFacets(p));
+    let ok = false;
+    for(const v of state.activeVenues){ if(facets.has(v)){ ok=true; break; } }
+    if(!ok) return false;
+  }
+  return true;
+}
+function filteredForFacet(list, ignoreFacet){ return list.filter(p=>matchesFacetScope(p, ignoreFacet)); }
+function countMapFromObject(obj){
+  return new Map(Object.entries(obj || {}).map(([name, count])=>[name, Number(count) || 0]));
+}
+
 // ---------- Render helpers ----------
 function sourceBadge(p){
   if(p.source === 'hf') return '<span class="src src-hf">🧡 HF</span>';
@@ -308,14 +336,12 @@ function heroCurated(sel){
 
 // ---------- Sidebar chips ----------
 function renderChips(){
-  const newPs = allNewPapers();
-  const classics = allClassics();
-  const archivePs = allArchivePapers();
-  const tagCounts = countBy([...newPs, ...classics, ...archivePs], p=>p.topics||[]);
-  const bundledTopicCounts = state.bundle?.topicCounts || state.archiveIndex?.topicCounts || {};
-  Object.entries(bundledTopicCounts).forEach(([name, count])=>{
-    tagCounts.set(name, Math.max(tagCounts.get(name) || 0, Number(count) || 0));
-  });
+  const viewPs = currentFacetPapers();
+  const useArchiveTopicIndex = state.tab === 'archive' && state.archiveIndex && !state.search.trim() && !state.activeYears.size && !state.activeVenues.size;
+  const tagCounts = useArchiveTopicIndex
+    ? countMapFromObject(state.archiveIndex.topicCounts)
+    : countBy(filteredForFacet(viewPs, 'tags'), p=>p.topics||p.tags||[]);
+  state.activeTags.forEach(name=>{ if(!tagCounts.has(name)) tagCounts.set(name, 0); });
   const query = state.tagSearch.trim().toLowerCase();
   let tagEntries = Array.from(tagCounts.entries()).map(([name, count])=>({name, count}));
   tagEntries = tagEntries
@@ -332,13 +358,13 @@ function renderChips(){
   const visibleTags = (state.showAllTags || query)
     ? tagEntries
     : [...activeEntries, ...inactiveEntries.slice(0, Math.max(defaultLimit - activeEntries.length, 0))];
-  const indexYears = (state.archiveIndex?.years || []).map(y=>String(y.year));
-  const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4))), ...indexYears]).sort((a,b)=>Number(b)-Number(a));
-  const venueCounts = countBy([...newPs, ...classics, ...archivePs], publicationFacets);
-  const bundledPublicationCounts = state.bundle?.publicationCounts || state.archiveIndex?.publicationCounts || {};
-  Object.entries(bundledPublicationCounts).forEach(([name, count])=>{
-    venueCounts.set(name, Math.max(venueCounts.get(name) || 0, Number(count) || 0));
-  });
+  const indexYears = state.tab === 'archive' ? (state.archiveIndex?.years || []).map(y=>String(y.year)) : [];
+  const yearSet = uniq([...viewPs.map(p=>String(p.year||(p.date||'').slice(0,4))), ...indexYears]).filter(Boolean).sort((a,b)=>Number(b)-Number(a));
+  const useArchivePublicationIndex = state.tab === 'archive' && state.archiveIndex && !state.search.trim() && !state.activeTags.size && !state.activeYears.size;
+  const venueCounts = useArchivePublicationIndex
+    ? countMapFromObject(state.archiveIndex.publicationCounts)
+    : countBy(filteredForFacet(viewPs, 'venues'), publicationFacets);
+  state.activeVenues.forEach(name=>{ if(!venueCounts.has(name)) venueCounts.set(name, 0); });
   const venueOrder = ['会议', '期刊', '已收录', '预印本', '经典精选'];
   const venueSet = venueOrder
     .filter(name=>venueCounts.has(name))
@@ -447,6 +473,16 @@ function allArchivePapers(){
     seen.add(p.id);
     return true;
   }).map(newAsGeneric);
+}
+function allBookmarkPapers(){
+  return [...allLatestPapers(), ...allClassics(), ...allArchivePapers()].filter(p=>state.bookmarks.has(p.id));
+}
+function currentFacetPapers(){
+  if(state.tab === 'feed') return allClassics();
+  if(state.tab === 'archive') return allArchivePapers();
+  if(state.tab === 'bookmarks') return allBookmarkPapers();
+  if(state.tab === 'latest' && state.search.trim().length >= 2 && state.searchIndex) return allSearchPapers();
+  return allLatestPapers();
 }
 function renderToday(){
   const curated = getCuratedSelection();
@@ -679,8 +715,7 @@ function renderArchive(){
 }
 
 function renderBookmarks(){
-  const newPs = allNewPapers(), cls = allClassics(), arcPs = allArchivePapers();
-  const all = [...newPs, ...cls, ...arcPs].filter(p=>state.bookmarks.has(p.id));
+  const all = allBookmarkPapers();
   byId('bmEmpty').hidden = all.length>0;
   byId('bmGrid').innerHTML = all.length ? all.map(p=> isClassic(p)?classicCard(p):newCard(p)).join('')
                                         : '<div class="empty">还没有收藏，点卡片右上角 ☆ 收藏论文。</div>';
@@ -855,7 +890,7 @@ async function loadArchiveIndex(){
     state.archiveIndexError = String(e.message || e);
   }finally{
     state.archiveIndexLoading = false;
-    if(state.tab === 'archive') renderArchive();
+    if(state.tab === 'archive') render();
     else renderCounts();
   }
 }
@@ -874,7 +909,7 @@ async function loadArchiveYear(year){
     state.archiveYearErrors[year] = String(e.message || e);
   }finally{
     state.archiveLoadingYears.delete(year);
-    if(state.tab === 'archive') renderArchive();
+    if(state.tab === 'archive') render();
     else renderCounts();
   }
 }
@@ -894,7 +929,7 @@ async function loadSearchIndex(){
     state.searchIndexError = String(e.message || e);
   }finally{
     state.searchIndexLoading = false;
-    if(state.tab === 'latest') renderLatest();
+    if(state.tab === 'latest') render();
   }
 }
 function closeDetail(){ byId('detail').classList.add('hidden'); }
