@@ -78,6 +78,7 @@ function latestDateIn(list){
 }
 function venueLabel(p){
   if(isClassic(p)) return p.venue || '经典';
+  if(p.venue && !/^arxiv$/i.test(p.venue)) return p.venue;
   if(p.source === 'hf') return 'HF Daily';
   const cats = p.categories || [];
   if(cats.length) return cats.slice(0,2).join(' / ');

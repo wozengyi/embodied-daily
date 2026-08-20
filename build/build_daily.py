@@ -158,6 +158,16 @@ def http_get(url, timeout=30):
     with urllib.request.urlopen(req, context=CTX, timeout=timeout) as r:
         return r.read()
 
+def http_post_json(url, payload, timeout=45):
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode('utf-8'),
+        method='POST',
+        headers={'User-Agent': UA, 'Content-Type': 'application/json'},
+    )
+    with urllib.request.urlopen(req, context=CTX, timeout=timeout) as r:
+        return r.read()
+
 # ---------- Hugging Face ----------
 def fetch_hf_days(days=14):
     out = []
@@ -342,8 +352,85 @@ def merge_into_history(hist, new_papers):
     hist['generatedAt'] = now
     return added
 
+def best_venue_from_semantic_scholar(meta):
+    if not meta:
+        return None
+    venue = meta.get('publicationVenue') or {}
+    journal = meta.get('journal') or {}
+    names = []
+    if venue.get('name'):
+        names.append(venue['name'])
+    names.extend(venue.get('alternate_names') or [])
+    if meta.get('venue'):
+        names.append(meta['venue'])
+    if journal.get('name') and journal.get('name').lower() != 'arxiv':
+        names.append(journal['name'])
+    clean = []
+    for name in names:
+        name = ' '.join(str(name).split())
+        if name and name.lower() not in {'arxiv', 'arxiv.org'} and name not in clean:
+            clean.append(name)
+    if not clean:
+        return None
+    short = [name for name in clean if len(name) <= 14 and any(c.isupper() for c in name)]
+    label = short[0] if short else clean[0]
+    year = meta.get('year')
+    if year and str(year) not in label:
+        label = f'{label} {year}'
+    return {
+        'venue': label,
+        'venueName': clean[0],
+        'venueType': venue.get('type') or ('journal' if journal else None),
+        'venueUrl': venue.get('url'),
+        'publicationYear': year,
+    }
+
+def enrich_venues(hist, max_papers=40):
+    """Cache conference/journal metadata incrementally; falls back cleanly when unavailable."""
+    if max_papers <= 0:
+        return 0
+    papers = sorted(hist.get('papers', {}).values(), key=lambda p: p.get('date') or '', reverse=True)
+    candidates = []
+    retry_before = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+    for p in papers:
+        if p.get('venue'):
+            continue
+        if p.get('venueLookup') == 'not_found' and p.get('venueCheckedAt', '') >= retry_before:
+            continue
+        m = re.search(r'(\d{4}\.\d{4,5})', (p.get('id') or '') + ' ' + (p.get('arxiv') or ''))
+        if not m:
+            continue
+        candidates.append((m.group(1), p))
+        if len(candidates) >= max_papers:
+            break
+    if not candidates:
+        return 0
+    fields = 'title,venue,publicationVenue,journal,year,externalIds'
+    url = 'https://api.semanticscholar.org/graph/v1/paper/batch?' + urllib.parse.urlencode({'fields': fields})
+    updated = 0
+    for start in range(0, len(candidates), 100):
+        batch = candidates[start:start+100]
+        try:
+            raw = http_post_json(url, {'ids': [f'ARXIV:{aid}' for aid, _ in batch]}, timeout=45)
+            results = json.loads(raw)
+        except Exception as e:
+            print(f'[venue] Semantic Scholar batch failed: {e}', file=sys.stderr)
+            time.sleep(2)
+            continue
+        for (_, paper), meta in zip(batch, results):
+            info = best_venue_from_semantic_scholar(meta)
+            if info:
+                paper.update({k: v for k, v in info.items() if v})
+                paper['venueLookup'] = 'found'
+                updated += 1
+            else:
+                paper['venueLookup'] = 'not_found'
+            paper['venueCheckedAt'] = datetime.now(timezone.utc).isoformat()
+        time.sleep(1.2)
+    return updated
+
 # ---------- Build ----------
-def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None):
+def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None, venue_limit=40):
     hf = fetch_hf_days(days=14)
     arx = fetch_arxiv(lookback_days=7, per_query=300)
     # Merge sources by id (hf wins over arxiv when same id)
@@ -363,6 +450,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     papers = list(by_id.values())
     # Merge into history
     added = merge_into_history(hist, papers)
+    venue_updates = enrich_venues(hist, max_papers=venue_limit)
     # Build two views:
     #   - recent: last `recent_days` days (shown on the homepage's "最新" panel)
     #   - archive: everything older than `recent_days` but within `archive_days`
@@ -391,6 +479,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'recentCutoff': recent_cutoff,
         'archiveCutoff': archive_cutoff,
         'addedToday': added,
+        'venueUpdates': venue_updates,
         'historyTotal': len(hist.get('papers',{})),
         'count': len(recent),
         'archiveCount': len(archive),
@@ -472,17 +561,18 @@ def main():
     ap.add_argument('--archive', type=int, default=5*365, help='how many days back the "archive" tab covers (default 365)')
     ap.add_argument('--limit', type=int, default=None, help='max papers shown in "latest" (default: all)')
     ap.add_argument('--archive-limit', dest='archive_limit', type=int, default=None, help='max papers shown in "archive" (default: all)')
+    ap.add_argument('--venue-limit', type=int, default=40, help='max papers to enrich with conference/journal metadata per run')
     args = ap.parse_args()
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     hist = load_history()
-    bundle = build_bundle(hist, recent_days=args.recent, archive_days=args.archive, limit=args.limit, archive_limit=args.archive_limit)
+    bundle = build_bundle(hist, recent_days=args.recent, archive_days=args.archive, limit=args.limit, archive_limit=args.archive_limit, venue_limit=args.venue_limit)
     save_history(hist)
     OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
     write_archive_shards(hist, bundle)
     print(f'[build] wrote {OUT_PATH}: latest={bundle["count"]} (HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}), '
           f'archive={bundle["archiveCount"]} (HF={bundle["archiveSources"]["hf"]}, arXiv={bundle["archiveSources"]["arxiv"]}), '
-          f'addedToday={bundle["addedToday"]}, historyTotal={bundle["historyTotal"]})')
+          f'addedToday={bundle["addedToday"]}, venueUpdates={bundle["venueUpdates"]}, historyTotal={bundle["historyTotal"]})')
     if bundle['warnings']:
         print('[build] warnings:', ','.join(bundle['warnings']))
     if args.stdout:
@@ -490,4 +580,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

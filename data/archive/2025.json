@@ -1798,7 +1798,8 @@
         "Sim2Real",
         "Reinforcement Learning",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.01052",
@@ -2462,7 +2463,8 @@
         "Imitation Learning",
         "Teleoperation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00532",
@@ -2490,7 +2492,8 @@
         "Manipulation",
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00493",
@@ -2517,7 +2520,8 @@
         "Foundation Models",
         "3D / Perception",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00592",
@@ -2542,7 +2546,8 @@
         "Navigation",
         "Reinforcement Learning",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00547",
@@ -2567,7 +2572,8 @@
         "Dataset",
         "3D / Perception",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00453",
@@ -2594,7 +2600,8 @@
         "Imitation Learning",
         "Dataset",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00565",
@@ -2619,7 +2626,8 @@
       "tags": [
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00427",
@@ -2643,7 +2651,12 @@
       "tags": [
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "venue": "Advanced Photonics Nexus 2025",
+      "venueName": "Advanced Photonics Nexus",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2512.00300",
@@ -2666,7 +2679,8 @@
       "tags": [
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00287",
@@ -2691,7 +2705,8 @@
       "tags": [
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00659",
@@ -2714,7 +2729,8 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00514",
@@ -2735,7 +2751,8 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00262",
@@ -2757,7 +2774,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00226",
@@ -2783,7 +2801,8 @@
         "Navigation",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23300",
@@ -2808,7 +2827,8 @@
         "VLA",
         "Manipulation",
         "Humanoid"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23186",
@@ -2835,7 +2855,8 @@
         "VLA",
         "Grasping",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23034",
@@ -2860,7 +2881,8 @@
         "VLA",
         "Manipulation",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22963",
@@ -2886,7 +2908,8 @@
         "Humanoid",
         "Reinforcement Learning",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22950",
@@ -2912,7 +2935,8 @@
         "VLA",
         "Dataset",
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.08952",
@@ -2940,7 +2964,8 @@
         "Humanoid",
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23241",
@@ -2963,7 +2988,8 @@
       "tags": [
         "Sim2Real",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23143",
@@ -2987,7 +3013,13 @@
       "tags": [
         "Imitation Learning",
         "LLM Agent"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2025",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.23055",
@@ -3010,7 +3042,8 @@
       "tags": [
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22896",
@@ -3033,7 +3066,8 @@
       "tags": [
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23407",
@@ -3054,7 +3088,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23372",
@@ -3075,7 +3110,8 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.16926",
@@ -3099,7 +3135,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23215",
@@ -3122,7 +3159,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.23188",
@@ -3143,7 +3181,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22996",
@@ -3165,7 +3204,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22777",
@@ -3196,7 +3236,8 @@
         "Imitation Learning",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22555",
@@ -3223,7 +3264,8 @@
         "Manipulation",
         "Dataset",
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22773",
@@ -3249,7 +3291,8 @@
         "Manipulation",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22685",
@@ -3274,7 +3317,8 @@
         "Navigation",
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22532",
@@ -3300,7 +3344,8 @@
         "VLA",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22505",
@@ -3326,7 +3371,8 @@
         "Sim2Real",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22364",
@@ -3352,7 +3398,8 @@
         "Navigation",
         "LLM Agent",
         "Mobile Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22780",
@@ -3377,7 +3424,8 @@
       "tags": [
         "VLA",
         "Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22744",
@@ -3400,7 +3448,8 @@
       "tags": [
         "Locomotion",
         "Sim2Real"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22697",
@@ -3425,7 +3474,8 @@
       "tags": [
         "VLA",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22354",
@@ -3448,7 +3498,8 @@
       "tags": [
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22225",
@@ -3472,7 +3523,13 @@
       "tags": [
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venue": "MRS 2025",
+      "venueName": "International Symposium on Multi-Robot and Multi-Agent Systems",
+      "venueType": "conference",
+      "venueUrl": "http://multirobotsystems.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.22195",
@@ -3495,7 +3552,8 @@
       "tags": [
         "Manipulation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22810",
@@ -3517,7 +3575,13 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venue": "IEEE Transactions on Control Systems Technology 2025",
+      "venueName": "IEEE Transactions on Control Systems Technology",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=87",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.22705",
@@ -3539,7 +3603,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22541",
@@ -3561,7 +3626,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Control Engineering Practice 2025",
+      "venueName": "Control Engineering Practice",
+      "venueType": "journal",
+      "venueUrl": "http://www.elsevier.com/wps/find/journaldescription.cws_home/123/description#description",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.22536",
@@ -3584,7 +3655,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22467",
@@ -3606,7 +3678,13 @@
       ],
       "tags": [
         "Teleoperation"
-      ]
+      ],
+      "venue": "WONS 2025",
+      "venueName": "Wireless on Demand Network Systems and Service",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=3130",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.22318",
@@ -3627,7 +3705,8 @@
       ],
       "tags": [
         "Tactile"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.22269",
@@ -3648,7 +3727,8 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00139",
@@ -3678,7 +3758,8 @@
         "Teleoperation",
         "Foundation Models",
         "Tactile"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2512.00021",
@@ -3706,7 +3787,12 @@
         "Dataset",
         "Foundation Models",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "Trans. Mach. Learn. Res. 2025",
+      "venueName": "Trans. Mach. Learn. Res.",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.00153",
@@ -3733,7 +3819,8 @@
         "Humanoid",
         "Imitation Learning",
         "Bimanual"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27607",
@@ -3761,7 +3848,8 @@
         "World Model",
         "Dataset",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27666",
@@ -3786,7 +3874,12 @@
         "Manipulation",
         "Grasping",
         "Dexterous"
-      ]
+      ],
+      "venue": "RoboSoft 2025",
+      "venueName": "International Conference on Soft Robotics",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27623",
@@ -3813,7 +3906,8 @@
         "VLA",
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27420",
@@ -3838,7 +3932,13 @@
         "Grasping",
         "Humanoid",
         "Dataset"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2025",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27130",
@@ -3863,7 +3963,8 @@
         "Imitation Learning",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27114",
@@ -3889,7 +3990,8 @@
         "Manipulation",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.02097",
@@ -3915,7 +4017,8 @@
         "Manipulation",
         "Navigation",
         "World Model"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00162",
@@ -3939,7 +4042,8 @@
       "tags": [
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27558",
@@ -3964,7 +4068,8 @@
       "tags": [
         "Manipulation",
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27545",
@@ -3988,7 +4093,8 @@
       "tags": [
         "VLA",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27428",
@@ -4012,7 +4118,8 @@
       "tags": [
         "Navigation",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27318",
@@ -4035,7 +4142,8 @@
       "tags": [
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27178",
@@ -4058,7 +4166,8 @@
       "tags": [
         "Mobile Manipulation",
         "Bimanual"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00259",
@@ -4081,7 +4190,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00193",
@@ -4103,7 +4213,13 @@
       ],
       "tags": [
         "Foundation Models"
-      ]
+      ],
+      "venue": "Journal of NeuroEngineering and Rehabilitation 2025",
+      "venueName": "Journal of NeuroEngineering and Rehabilitation",
+      "venueType": "journal",
+      "venueUrl": "https://jneuroengrehab.biomedcentral.com/",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27683",
@@ -4126,7 +4242,8 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00140",
@@ -4150,7 +4267,13 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "MILCOM 2025",
+      "venueName": "IEEE Military Communications Conference",
+      "venueType": "conference",
+      "venueUrl": "http://www.milcom.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27436",
@@ -4172,7 +4295,8 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27379",
@@ -4194,7 +4318,12 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "international journal of engineering trends and technology 2025",
+      "venueName": "international journal of engineering trends and technology",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27327",
@@ -4215,7 +4344,12 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "ICMRE 2025",
+      "venueName": "International Conference on Mechatronics and Robotics Engineering",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27324",
@@ -4237,7 +4371,8 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.15669",
@@ -4260,7 +4395,8 @@
       ],
       "tags": [
         "VLA"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27184",
@@ -4281,7 +4417,8 @@
       ],
       "tags": [
         "Grasping"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27151",
@@ -4302,7 +4439,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.27075",
@@ -4323,7 +4461,13 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venue": "Expert systems with applications 2025",
+      "venueName": "Expert systems with applications",
+      "venueType": "journal",
+      "venueUrl": "https://www.journals.elsevier.com/expert-systems-with-applications/",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.27048",
@@ -4353,7 +4497,8 @@
         "Dexterous",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26909",
@@ -4382,7 +4527,8 @@
         "Navigation",
         "Dataset",
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00088",
@@ -4441,7 +4587,8 @@
         "Sim2Real",
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26656",
@@ -4469,7 +4616,8 @@
         "Imitation Learning",
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26583",
@@ -4496,7 +4644,8 @@
         "World Model",
         "Reinforcement Learning",
         "Open-Source"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.05540",
@@ -4692,7 +4841,8 @@
         "Dataset",
         "3D / Perception",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26782",
@@ -4719,7 +4869,8 @@
         "Navigation",
         "World Model",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26363",
@@ -4820,7 +4971,8 @@
       "tags": [
         "World Model",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2511.00108",
@@ -4845,7 +4997,8 @@
       "tags": [
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26915",
@@ -4869,7 +5022,8 @@
       "tags": [
         "Locomotion",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26802",
@@ -4894,7 +5048,8 @@
       "tags": [
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26742",
@@ -4917,7 +5072,8 @@
       "tags": [
         "VLA",
         "Grasping"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26670",
@@ -4940,7 +5096,13 @@
       "tags": [
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2025",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.26551",
@@ -4965,7 +5127,8 @@
       "tags": [
         "Grasping",
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26132",
@@ -5055,7 +5218,12 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "RoboSoft 2025",
+      "venueName": "International Conference on Soft Robotics",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2511.00105",
@@ -5077,7 +5245,8 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26786",
@@ -5100,7 +5269,13 @@
       ],
       "tags": [
         "3D / Perception"
-      ]
+      ],
+      "venue": "NeurIPS 2025",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.26638",
@@ -5121,7 +5296,13 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.26623",
@@ -5142,7 +5323,12 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "RoboSoft 2025",
+      "venueName": "International Conference on Soft Robotics",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found"
     },
     {
       "id": "2510.26855",
@@ -5164,7 +5350,8 @@
       ],
       "tags": [
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26536",
@@ -5185,7 +5372,8 @@
       ],
       "tags": [
         "VLA"
-      ]
+      ],
+      "venueLookup": "not_found"
     },
     {
       "id": "2510.26344",
