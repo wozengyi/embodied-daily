@@ -9,6 +9,8 @@ const state = {
   bundle: null,
   loading: false,
   bundleError: null,
+  tagSearch: '',
+  showAllTags: false,
 };
 
 function byId(id){ return document.getElementById(id); }
@@ -26,6 +28,13 @@ function seededRandom(seed){
   };
 }
 function uniq(arr){ return Array.from(new Set(arr)); }
+function countBy(arr, pick){
+  const counts = new Map();
+  arr.forEach(item=>{
+    (pick(item) || []).forEach(v=>counts.set(v, (counts.get(v) || 0) + 1));
+  });
+  return counts;
+}
 function escapeHtml(s){
   return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -218,25 +227,66 @@ function renderChips(){
   const newPs = allNewPapers();
   const classics = allClassics();
   const archivePs = allArchivePapers();
-  const tagSet = uniq([...newPs.flatMap(p=>p.topics||[]), ...classics.flatMap(p=>p.topics||[]), ...archivePs.flatMap(p=>p.topics||[])]).sort();
+  const tagCounts = countBy([...newPs, ...classics, ...archivePs], p=>p.topics||[]);
+  const query = state.tagSearch.trim().toLowerCase();
+  let tagEntries = Array.from(tagCounts.entries()).map(([name, count])=>({name, count}));
+  tagEntries = tagEntries
+    .filter(t=>state.activeTags.has(t.name) || !query || t.name.toLowerCase().includes(query))
+    .sort((a,b)=>{
+      const activeDiff = Number(state.activeTags.has(b.name)) - Number(state.activeTags.has(a.name));
+      if(activeDiff) return activeDiff;
+      return b.count - a.count || a.name.localeCompare(b.name);
+    });
+  const totalTagCount = tagEntries.length;
+  const activeEntries = tagEntries.filter(t=>state.activeTags.has(t.name));
+  const inactiveEntries = tagEntries.filter(t=>!state.activeTags.has(t.name));
+  const defaultLimit = 18;
+  const visibleTags = (state.showAllTags || query)
+    ? tagEntries
+    : [...activeEntries, ...inactiveEntries.slice(0, Math.max(defaultLimit - activeEntries.length, 0))];
   const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4)))]).sort((a,b)=>Number(b)-Number(a));
 
-  const fill = (hostId, set, activeSet)=>{
+  const fill = (hostId, set, activeSet, opts={})=>{
     const host = byId(hostId); host.innerHTML='';
     set.forEach(v=>{
-      if(!v) return;
+      const value = typeof v === 'string' ? v : v.name;
+      if(!value) return;
       const b = document.createElement('button');
-      b.className = 'chip' + (activeSet.has(v)?' active':'');
-      b.textContent = v;
+      b.className = 'chip' + (activeSet.has(value)?' active':'');
+      if(opts.counts){
+        b.innerHTML = `<span class="chip-label">${escapeHtml(value)}</span><span class="chip-count">${opts.counts.get(value) || 0}</span>`;
+      } else {
+        b.textContent = value;
+      }
       b.onclick = ()=>{
-        if(activeSet.has(v)) activeSet.delete(v); else activeSet.add(v);
+        if(activeSet.has(value)) activeSet.delete(value); else activeSet.add(value);
         // when a tag is picked and we're on "today", stay on today; if on feed/latest, stay.
         render();
       };
       host.appendChild(b);
     });
   };
-  fill('tagChips', tagSet, state.activeTags);
+  fill('tagChips', visibleTags, state.activeTags, {counts: tagCounts});
+  const hiddenCount = totalTagCount - visibleTags.length;
+  const tagMeta = byId('tagMeta');
+  const toggleTags = byId('toggleTags');
+  if(tagMeta){
+    if(query){
+      const matchedCount = tagEntries.filter(t=>t.name.toLowerCase().includes(query)).length;
+      const activeText = state.activeTags.size ? `；已选 ${state.activeTags.size} 个` : '';
+      tagMeta.textContent = matchedCount ? `找到 ${matchedCount} 个主题${activeText}` : `没有匹配的主题${activeText}`;
+    } else if(state.activeTags.size){
+      tagMeta.textContent = `已选 ${state.activeTags.size} 个主题；点击标签可取消`;
+    } else if(hiddenCount > 0){
+      tagMeta.textContent = `优先显示高频主题，另有 ${hiddenCount} 个低频主题`;
+    } else {
+      tagMeta.textContent = `共 ${totalTagCount} 个主题`;
+    }
+  }
+  if(toggleTags){
+    toggleTags.textContent = state.showAllTags ? '收起' : '全部';
+    toggleTags.hidden = Boolean(query) || totalTagCount <= defaultLimit;
+  }
   byId('yearChips').innerHTML='';
   fill('yearChips', yearSet, state.activeYears);
   // (Venue filter is intentionally removed; sources are now clear via badges.)
@@ -445,8 +495,17 @@ byId('searchInput').addEventListener('input', (e)=>{
   if(state.search.trim() && state.tab === 'today') state.tab='latest';
   render();
 });
+byId('tagSearchInput').addEventListener('input', (e)=>{
+  state.tagSearch = e.target.value;
+  render();
+});
+byId('toggleTags').addEventListener('click', ()=>{
+  state.showAllTags = !state.showAllTags;
+  render();
+});
 byId('resetFilters').addEventListener('click', ()=>{
   state.activeTags.clear(); state.activeYears.clear();
+  state.tagSearch=''; state.showAllTags=false; byId('tagSearchInput').value='';
   state.search=''; byId('searchInput').value='';
   state.tab='today';
   render();

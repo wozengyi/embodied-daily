@@ -30,7 +30,12 @@
 
 <main class="layout">
   <aside class="sidebar">
-    <h3>主题</h3>
+    <div class="filter-head">
+      <h3>主题</h3>
+      <button id="toggleTags" class="link-btn" type="button">全部</button>
+    </div>
+    <input id="tagSearchInput" class="filter-search" type="search" placeholder="筛选主题…" autocomplete="off" />
+    <div id="tagMeta" class="filter-meta"></div>
     <div class="chips" id="tagChips"></div>
     <h3>年份</h3>
     <div class="chips" id="yearChips"></div>
