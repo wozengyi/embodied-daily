@@ -379,6 +379,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     archive = sorted([p for p in all_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
+    archive_total = len(archive)
     if limit is not None:
         recent = recent[:limit]
     if archive_limit is not None:
@@ -393,6 +394,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'historyTotal': len(hist.get('papers',{})),
         'count': len(recent),
         'archiveCount': len(archive),
+        'archiveTotal': archive_total,
         'sources': {
             'hf': sum(1 for p in recent if p.get('source')=='hf'),
             'arxiv': sum(1 for p in recent if p.get('source')=='arxiv'),
@@ -411,6 +413,58 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         bundle['warnings'].append('zero_new_today')
     return bundle
 
+def write_archive_shards(hist, bundle):
+    """Write complete archive as lightweight per-year files for lazy frontend loading."""
+    archive_dir = DATA_DIR / 'archive'
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    for old in archive_dir.glob('*.json'):
+        old.unlink()
+    recent_cutoff = bundle.get('recentCutoff') or '9999-99-99'
+    archive_cutoff = bundle.get('archiveCutoff') or '0000-00-00'
+    papers = [
+        p for p in hist.get('papers', {}).values()
+        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff
+    ]
+    def keyf(p):
+        return ((p.get('date') or '0000-00-00'),
+                1 if p.get('source')=='hf' else 0,
+                int(p.get('upvotes') or 0),
+                len(p.get('topics') or []))
+    papers = sorted(papers, key=keyf, reverse=True)
+    by_year = {}
+    for p in papers:
+        year = (p.get('date') or '0000')[:4]
+        if not year.isdigit():
+            continue
+        by_year.setdefault(year, []).append(p)
+    index = {
+        'generatedAt': hist.get('generatedAt'),
+        'archiveTotal': len(papers),
+        'recentCutoff': recent_cutoff,
+        'archiveCutoff': archive_cutoff,
+        'years': [],
+    }
+    for year in sorted(by_year.keys(), reverse=True):
+        items = by_year[year]
+        months = {}
+        for p in items:
+            ym = (p.get('date') or '')[:7]
+            if ym:
+                months[ym] = months.get(ym, 0) + 1
+        (archive_dir / f'{year}.json').write_text(
+            json.dumps({'year': year, 'count': len(items), 'papers': items}, ensure_ascii=False, indent=2),
+            encoding='utf-8'
+        )
+        index['years'].append({
+            'year': year,
+            'count': len(items),
+            'months': [{'month': m, 'count': months[m]} for m in sorted(months.keys(), reverse=True)],
+            'path': f'data/archive/{year}.json',
+        })
+    (DATA_DIR / 'archive-index.json').write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding='utf-8')
+    print(f'[build] wrote archive shards: years={len(index["years"])}, total={index["archiveTotal"]}')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stdout', action='store_true')
@@ -425,6 +479,7 @@ def main():
     bundle = build_bundle(hist, recent_days=args.recent, archive_days=args.archive, limit=args.limit, archive_limit=args.archive_limit)
     save_history(hist)
     OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
+    write_archive_shards(hist, bundle)
     print(f'[build] wrote {OUT_PATH}: latest={bundle["count"]} (HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}), '
           f'archive={bundle["archiveCount"]} (HF={bundle["archiveSources"]["hf"]}, arXiv={bundle["archiveSources"]["arxiv"]}), '
           f'addedToday={bundle["addedToday"]}, historyTotal={bundle["historyTotal"]})')
@@ -435,8 +490,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
 
