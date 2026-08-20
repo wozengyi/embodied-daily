@@ -86,6 +86,15 @@ button{font-family:inherit}
 }
 .filter-search:focus{border-color:var(--accent)}
 .filter-meta{min-height:18px;color:var(--muted);font-size:11px;line-height:1.45;margin-bottom:6px}
+.filter-mode{
+  display:flex;align-items:center;gap:6px;margin:0 0 8px;color:var(--muted);font-size:11px;
+}
+.mode-btn{
+  background:var(--chip);border:1px solid var(--border);color:var(--muted);
+  padding:4px 8px;border-radius:999px;font-size:11px;cursor:pointer;
+}
+.mode-btn:hover{border-color:var(--accent);color:var(--text)}
+.mode-btn.active{background:var(--chip-active);border-color:var(--accent);color:#e6f7ff}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
 .chip{
   background:var(--chip);border:1px solid var(--border);color:var(--text);

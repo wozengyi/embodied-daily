@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Embodied Daily · 每日具身智能论文</title>
-<link rel="stylesheet" href="styles.css?v=20260820-embodied-facets-v1" />
+<link rel="stylesheet" href="styles.css?v=20260821-embodied-tagmode-v1" />
 </head>
 <body>
 <header class="topbar">
@@ -36,6 +36,11 @@
     </div>
     <input id="tagSearchInput" class="filter-search" type="search" placeholder="筛选主题…" autocomplete="off" />
     <div id="tagMeta" class="filter-meta"></div>
+    <div class="filter-mode" aria-label="主题筛选关系">
+      <span>关系</span>
+      <button id="tagModeAny" class="mode-btn active" type="button" aria-pressed="true">任一</button>
+      <button id="tagModeAll" class="mode-btn" type="button" aria-pressed="false">全部</button>
+    </div>
     <div class="chips" id="tagChips"></div>
     <div class="filter-head">
       <h3>发表类型</h3>
@@ -122,8 +127,8 @@
   </div>
 </footer>
 
-<script src="papers.js?v=20260820-embodied-facets-v1"></script>
-<script src="data/data.js?v=20260820-embodied-facets-v1"></script>
-<script src="app.js?v=20260820-embodied-facets-v1"></script>
+<script src="papers.js?v=20260821-embodied-tagmode-v1"></script>
+<script src="data/data.js?v=20260821-embodied-tagmode-v1"></script>
+<script src="app.js?v=20260821-embodied-tagmode-v1"></script>
 </body>
 </html>

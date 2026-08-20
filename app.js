@@ -1,11 +1,12 @@
 const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
-const DATA_VERSION = '20260820-embodied-facets-v1';
+const DATA_VERSION = '20260821-embodied-tagmode-v1';
 const TODAY_MIN_PAPERS = 12;
 const TODAY_WINDOW_DAYS = 2;
 const state = {
   tab: 'today',
   search: '',
   activeTags: new Set(),
+  tagMode: 'any',
   activeYears: new Set(),
   activeVenues: new Set(),
   bookmarks: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')),
@@ -194,10 +195,7 @@ function matches(p){
     if(!hay.includes(q)) return false;
   }
   if(state.activeTags.size){
-    const tagset = new Set(p.tags||[]);
-    let ok = false;
-    for(const t of state.activeTags){ if(tagset.has(t)){ ok=true; break; } }
-    if(!ok) return false;
+    if(!tagFilterMatches(p)) return false;
   }
   if(state.activeYears.size){
     if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
@@ -213,6 +211,15 @@ function matches(p){
 
 function filtered(list){ return list.filter(matches); }
 
+function tagFilterMatches(p){
+  if(!state.activeTags.size) return true;
+  const tagset = new Set(p.tags||p.topics||[]);
+  const selected = Array.from(state.activeTags);
+  return state.tagMode === 'all'
+    ? selected.every(t=>tagset.has(t))
+    : selected.some(t=>tagset.has(t));
+}
+
 function matchesFacetScope(p, ignoreFacet){
   const q = state.search.trim().toLowerCase();
   if(q){
@@ -220,10 +227,7 @@ function matchesFacetScope(p, ignoreFacet){
     if(!hay.includes(q)) return false;
   }
   if(ignoreFacet !== 'tags' && state.activeTags.size){
-    const tagset = new Set(p.tags||[]);
-    let ok = false;
-    for(const t of state.activeTags){ if(tagset.has(t)){ ok=true; break; } }
-    if(!ok) return false;
+    if(!tagFilterMatches(p)) return false;
   }
   if(ignoreFacet !== 'years' && state.activeYears.size){
     if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
@@ -400,13 +404,22 @@ function renderChips(){
   const hiddenCount = totalTagCount - visibleTags.length;
   const tagMeta = byId('tagMeta');
   const toggleTags = byId('toggleTags');
+  const modeAny = byId('tagModeAny');
+  const modeAll = byId('tagModeAll');
+  if(modeAny && modeAll){
+    modeAny.classList.toggle('active', state.tagMode === 'any');
+    modeAll.classList.toggle('active', state.tagMode === 'all');
+    modeAny.setAttribute('aria-pressed', String(state.tagMode === 'any'));
+    modeAll.setAttribute('aria-pressed', String(state.tagMode === 'all'));
+  }
   if(tagMeta){
+    const modeText = state.tagMode === 'all' ? '全部匹配' : '任一匹配';
     if(query){
       const matchedCount = tagEntries.filter(t=>t.name.toLowerCase().includes(query)).length;
-      const activeText = state.activeTags.size ? `；已选 ${state.activeTags.size} 个` : '';
+      const activeText = state.activeTags.size ? `；已选 ${state.activeTags.size} 个，${modeText}` : '';
       tagMeta.textContent = matchedCount ? `找到 ${matchedCount} 个主题${activeText}` : `没有匹配的主题${activeText}`;
     } else if(state.activeTags.size){
-      tagMeta.textContent = `已选 ${state.activeTags.size} 个主题；点击标签可取消`;
+      tagMeta.textContent = `已选 ${state.activeTags.size} 个主题，${modeText}；点击标签可取消`;
     } else if(hiddenCount > 0){
       tagMeta.textContent = `优先显示高频主题，另有 ${hiddenCount} 个低频主题`;
     } else {
@@ -437,7 +450,7 @@ function getCuratedSelection(){
   const rng = seededRandom(seed);
   let pool = PAPERS;
   if(state.activeTags.size){
-    pool = PAPERS.filter(p=>p.tags.some(t=>state.activeTags.has(t)));
+    pool = PAPERS.filter(tagFilterMatches);
     if(!pool.length) pool = PAPERS;
   }
   const heroIdx = Math.floor(rng()*pool.length);
@@ -455,7 +468,7 @@ function pickNewHero(list){
   // If active tags, pick first (newest/hottest) matching in tags; else first.
   let pool = list;
   if(state.activeTags.size){
-    const p = list.filter(x => (x.topics||[]).some(t=>state.activeTags.has(t)));
+    const p = list.filter(tagFilterMatches);
     if(p.length) pool = p;
   }
   return pool[0];
@@ -779,8 +792,17 @@ byId('toggleTags').addEventListener('click', ()=>{
   state.showAllTags = !state.showAllTags;
   render();
 });
+byId('tagModeAny').addEventListener('click', ()=>{
+  state.tagMode = 'any';
+  render();
+});
+byId('tagModeAll').addEventListener('click', ()=>{
+  state.tagMode = 'all';
+  render();
+});
 byId('resetFilters').addEventListener('click', ()=>{
   state.activeTags.clear(); state.activeYears.clear(); state.activeVenues.clear();
+  state.tagMode='any';
   state.tagSearch=''; state.showAllTags=false; byId('tagSearchInput').value='';
   state.search=''; byId('searchInput').value='';
   state.tab='today';
