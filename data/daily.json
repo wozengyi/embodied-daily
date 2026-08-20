@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-08-20T06:15:37.462076+00:00",
+  "generatedAt": "2026-08-20T06:51:21.209772+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
   "archiveCutoff": "2021-08-21",
-  "addedToday": 22,
+  "addedToday": 0,
   "historyTotal": 5357,
   "count": 147,
   "archiveCount": 800,
+  "archiveTotal": 5099,
   "sources": {
     "hf": 12,
     "arxiv": 135
@@ -16,7 +17,9 @@
     "hf": 20,
     "arxiv": 780
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2608.16590",
@@ -29,7 +32,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.16590",
       "arxiv": "https://arxiv.org/abs/2608.16590",
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
-      "upvotes": 69,
+      "upvotes": 74,
       "tags": [
         "Humanoid",
         "Navigation",
@@ -53,7 +56,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.17512",
       "arxiv": "https://arxiv.org/abs/2608.17512",
       "pdf": "https://arxiv.org/pdf/2608.17512.pdf",
-      "upvotes": 45,
+      "upvotes": 46,
       "tags": [
         "VLA",
         "Navigation"
@@ -23793,9 +23796,5 @@
         "Tactile"
       ]
     }
-  ],
-  "archiveTotal": 800,
-  "notes": [
-    "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
   ]
 }
