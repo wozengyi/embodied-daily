@@ -4315,7 +4315,8 @@
         "LLM Agent",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800723+00:00"
     },
     {
       "id": "2510.27114",
@@ -4342,7 +4343,8 @@
         "Imitation Learning",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800728+00:00"
     },
     {
       "id": "2511.02097",
@@ -4369,7 +4371,8 @@
         "Navigation",
         "World Model"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800732+00:00"
     },
     {
       "id": "2511.00162",
@@ -4523,7 +4526,8 @@
         "Mobile Manipulation",
         "Bimanual"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800697+00:00"
     },
     {
       "id": "2511.00259",
@@ -4802,7 +4806,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800715+00:00"
     },
     {
       "id": "2510.27075",
@@ -4860,7 +4865,8 @@
         "Imitation Learning",
         "Reinforcement Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800736+00:00"
     },
     {
       "id": "2510.26909",
@@ -4890,7 +4896,8 @@
         "Dataset",
         "Foundation Models"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800761+00:00"
     },
     {
       "id": "2511.00088",
@@ -4921,7 +4928,9 @@
         "Reinforcement Learning",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800882+00:00"
     },
     {
       "id": "2511.00112",
@@ -4950,7 +4959,8 @@
         "Reinforcement Learning",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800740+00:00"
     },
     {
       "id": "2510.26656",
@@ -4979,7 +4989,8 @@
         "Dataset",
         "3D / Perception"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800772+00:00"
     },
     {
       "id": "2510.26583",
@@ -5007,7 +5018,8 @@
         "Reinforcement Learning",
         "Open-Source"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800777+00:00"
     },
     {
       "id": "2511.05540",
@@ -5038,7 +5050,9 @@
         "World Model",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800784+00:00"
     },
     {
       "id": "2510.26406",
@@ -5066,7 +5080,9 @@
         "Manipulation",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800787+00:00"
     },
     {
       "id": "2510.26362",
@@ -5094,7 +5110,14 @@
         "Dexterous",
         "Teleoperation",
         "Bimanual"
-      ]
+      ],
+      "venue": "The international journal of robotics research 2025",
+      "venueName": "The international journal of robotics research",
+      "venueType": "journal",
+      "venueUrl": "http://www.sagepub.com/journals/Journal201324/title",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800812+00:00"
     },
     {
       "id": "2510.26280",
@@ -5121,7 +5144,9 @@
         "Humanoid",
         "Reinforcement Learning",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800827+00:00"
     },
     {
       "id": "2510.26236",
@@ -5148,7 +5173,9 @@
         "Locomotion",
         "Dataset",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800832+00:00"
     },
     {
       "id": "2511.00091",
@@ -5176,7 +5203,9 @@
         "Manipulation",
         "Reinforcement Learning",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800835+00:00"
     },
     {
       "id": "2510.27033",
@@ -5204,7 +5233,8 @@
         "3D / Perception",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800744+00:00"
     },
     {
       "id": "2510.26782",
@@ -5232,7 +5262,8 @@
         "World Model",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800766+00:00"
     },
     {
       "id": "2510.26363",
@@ -5257,7 +5288,14 @@
         "Grasping",
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venue": "Arch Mech Eng 2025",
+      "venueName": "Archive of Mechanical Engineering",
+      "venueType": "journal",
+      "venueUrl": "http://versita.com/ame",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800802+00:00"
     },
     {
       "id": "2510.26241",
@@ -5283,7 +5321,9 @@
         "VLA",
         "Grasping",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800830+00:00"
     },
     {
       "id": "2510.26170",
@@ -5309,7 +5349,14 @@
         "Imitation Learning",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800849+00:00"
     },
     {
       "id": "2510.27002",
@@ -5334,7 +5381,8 @@
         "World Model",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800747+00:00"
     },
     {
       "id": "2511.00108",
@@ -5360,7 +5408,8 @@
         "Dataset",
         "Open-Source"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800752+00:00"
     },
     {
       "id": "2510.26915",
@@ -5385,7 +5434,8 @@
         "Locomotion",
         "LLM Agent"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800758+00:00"
     },
     {
       "id": "2510.26802",
@@ -5411,7 +5461,8 @@
         "Imitation Learning",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800763+00:00"
     },
     {
       "id": "2510.26742",
@@ -5435,7 +5486,8 @@
         "VLA",
         "Grasping"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800769+00:00"
     },
     {
       "id": "2510.26670",
@@ -5490,7 +5542,8 @@
         "Grasping",
         "Navigation"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800780+00:00"
     },
     {
       "id": "2510.26132",
@@ -5513,7 +5566,13 @@
       "tags": [
         "Locomotion",
         "Navigation"
-      ]
+      ],
+      "venue": "ICAR 2025",
+      "venueName": "International Conference on Advanced Robotics",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800861+00:00"
     },
     {
       "id": "2512.02022",
@@ -5536,7 +5595,13 @@
       "tags": [
         "Sim2Real",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "2019 WRC Symposium on Advanced Robotics and Automation (WRC SARA)",
+      "venueName": "2019 WRC Symposium on Advanced Robotics and Automation (WRC SARA)",
+      "venueType": "journal",
+      "publicationYear": 2019,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800867+00:00"
     },
     {
       "id": "2510.26067",
@@ -5559,7 +5624,14 @@
       "tags": [
         "Locomotion",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2025",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800879+00:00"
     },
     {
       "id": "2510.27010",
@@ -5608,7 +5680,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800755+00:00"
     },
     {
       "id": "2510.26786",
@@ -5713,7 +5786,8 @@
       "tags": [
         "Foundation Models"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800774+00:00"
     },
     {
       "id": "2510.26536",
@@ -5735,7 +5809,8 @@
       "tags": [
         "VLA"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800782+00:00"
     },
     {
       "id": "2510.26344",
@@ -5756,7 +5831,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800816+00:00"
     },
     {
       "id": "2511.00094",
@@ -5779,7 +5856,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "2025 IEEE International Smart Cities Conference (ISC2)",
+      "venueName": "2025 IEEE International Smart Cities Conference (ISC2)",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800823+00:00"
     },
     {
       "id": "2510.26142",
@@ -5800,7 +5883,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800852+00:00"
     },
     {
       "id": "2510.26082",
@@ -5821,7 +5906,9 @@
       ],
       "tags": [
         "Humanoid"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800870+00:00"
     },
     {
       "id": "2510.26080",
@@ -5842,7 +5929,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800873+00:00"
     },
     {
       "id": "2510.25850",
@@ -6026,7 +6115,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T23:44:59.800885+00:00"
     },
     {
       "id": "2510.25986",
