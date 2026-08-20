@@ -4161,5 +4161,8 @@
       "venueCheckedAt": "2026-08-20T08:03:45.603657+00:00"
     }
   ],
-  "archive": []
+  "archive": [],
+  "notes": [
+    "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
+  ]
 }
