@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T08:57:26.957579+00:00",
+  "generatedAt": "2026-08-20T10:05:17.899333+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
@@ -67,7 +67,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.16590",
       "arxiv": "https://arxiv.org/abs/2608.16590",
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
-      "upvotes": 96,
+      "upvotes": 114,
       "tags": [
         "Humanoid",
         "Navigation",
@@ -4161,8 +4161,5 @@
       "venueCheckedAt": "2026-08-20T08:03:45.603657+00:00"
     }
   ],
-  "archive": [],
-  "notes": [
-    "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
-  ]
+  "archive": []
 }

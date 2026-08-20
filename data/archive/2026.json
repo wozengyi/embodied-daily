@@ -3733,7 +3733,8 @@
         "Navigation",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093250+00:00"
     },
     {
       "id": "2608.07267",
@@ -3764,7 +3765,8 @@
         "WAM",
         "World Model"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093265+00:00"
     },
     {
       "id": "2608.07751",
@@ -3849,7 +3851,8 @@
         "World Model",
         "WAM"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093269+00:00"
     },
     {
       "id": "2608.07734",
@@ -4023,7 +4026,8 @@
         "Dataset"
       ],
       "source": "hf",
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093272+00:00"
     },
     {
       "id": "2608.05042",
@@ -4052,7 +4056,8 @@
         "3D / Perception"
       ],
       "source": "hf",
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093275+00:00"
     },
     {
       "id": "2608.03207",
@@ -4073,7 +4078,8 @@
         "VLA"
       ],
       "source": "hf",
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093277+00:00"
     },
     {
       "id": "2608.06375",
@@ -4106,7 +4112,8 @@
         "World Model",
         "Imitation Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093322+00:00"
     },
     {
       "id": "2608.05999",
@@ -4137,7 +4144,8 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093298+00:00"
     },
     {
       "id": "2608.06221",
@@ -4168,7 +4176,8 @@
         "Dataset",
         "Open-Source"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093292+00:00"
     },
     {
       "id": "2608.05738",
@@ -4197,7 +4206,8 @@
         "Imitation Learning",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093325+00:00"
     },
     {
       "id": "2608.06434",
@@ -4227,7 +4237,8 @@
         "Bimanual",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093327+00:00"
     },
     {
       "id": "2608.05975",
@@ -4255,7 +4266,8 @@
         "Sim2Real",
         "Imitation Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093300+00:00"
     },
     {
       "id": "2608.05799",
@@ -4283,7 +4295,8 @@
         "World Model",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093304+00:00"
     },
     {
       "id": "2608.05730",
@@ -4310,7 +4323,8 @@
         "Manipulation",
         "Grasping"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093306+00:00"
     },
     {
       "id": "2608.05715",
@@ -4338,7 +4352,8 @@
         "Imitation Learning",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093308+00:00"
     },
     {
       "id": "2608.05647",
@@ -4365,7 +4380,8 @@
         "Locomotion",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093316+00:00"
     },
     {
       "id": "2608.06008",
@@ -4392,7 +4408,8 @@
         "WAM",
         "World Model"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093330+00:00"
     },
     {
       "id": "2608.05903",
@@ -4420,7 +4437,8 @@
         "WAM",
         "World Model"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093332+00:00"
     },
     {
       "id": "2608.06650",
@@ -4446,7 +4464,8 @@
         "Humanoid",
         "Imitation Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093280+00:00"
     },
     {
       "id": "2608.06332",
@@ -4471,7 +4490,8 @@
         "Manipulation",
         "World Model"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093290+00:00"
     },
     {
       "id": "2608.06219",
@@ -4497,7 +4517,8 @@
         "Teleoperation",
         "Hardware"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093294+00:00"
     },
     {
       "id": "2608.06210",
@@ -4522,7 +4543,8 @@
         "Manipulation",
         "Imitation Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093296+00:00"
     },
     {
       "id": "2608.05746",
@@ -4577,7 +4599,8 @@
         "World Model",
         "Foundation Models"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093310+00:00"
     },
     {
       "id": "2608.05674",
@@ -4602,7 +4625,8 @@
         "World Model",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093314+00:00"
     },
     {
       "id": "2608.05579",
@@ -4627,7 +4651,8 @@
         "Manipulation",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093318+00:00"
     },
     {
       "id": "2608.06488",
@@ -4650,7 +4675,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093285+00:00"
     },
     {
       "id": "2608.06354",
@@ -4673,7 +4699,8 @@
       "tags": [
         "Teleoperation"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093287+00:00"
     },
     {
       "id": "2608.05830",
@@ -4696,7 +4723,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093302+00:00"
     },
     {
       "id": "2608.05684",
@@ -4722,7 +4750,8 @@
       "tags": [
         "Locomotion"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093312+00:00"
     },
     {
       "id": "2608.01127",
@@ -4745,7 +4774,8 @@
         "Embodied Vision"
       ],
       "source": "hf",
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093334+00:00"
     },
     {
       "id": "2608.00730",
@@ -4768,7 +4798,8 @@
         "Foundation Models"
       ],
       "source": "hf",
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093336+00:00"
     },
     {
       "id": "2607.28993",
@@ -4791,7 +4822,8 @@
         "WAM"
       ],
       "source": "hf",
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093337+00:00"
     },
     {
       "id": "2608.04657",
@@ -4875,7 +4907,8 @@
         "VLA",
         "Multi-task"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093353+00:00"
     },
     {
       "id": "2608.04510",
@@ -4975,7 +5008,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093339+00:00"
     },
     {
       "id": "2608.05313",
@@ -5001,7 +5035,8 @@
       "tags": [
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093341+00:00"
     },
     {
       "id": "2608.04721",
@@ -5024,7 +5059,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093344+00:00"
     },
     {
       "id": "2608.04600",
@@ -5048,7 +5084,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093346+00:00"
     },
     {
       "id": "2608.04309",
@@ -5072,7 +5109,8 @@
       "tags": [
         "LLM Agent"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093348+00:00"
     },
     {
       "id": "2608.05453",
@@ -5096,7 +5134,8 @@
       "tags": [
         "VLA"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093351+00:00"
     },
     {
       "id": "2608.04633",
@@ -5119,7 +5158,8 @@
       "tags": [
         "VLA"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T10:05:18.093355+00:00"
     },
     {
       "id": "2608.04042",
