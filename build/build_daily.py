@@ -429,6 +429,35 @@ def enrich_venues(hist, max_papers=40):
         time.sleep(1.2)
     return updated
 
+def venue_name(p):
+    return ' '.join(str(p.get('venueName') or p.get('venue') or '').split())
+
+def has_real_venue(p):
+    name = venue_name(p)
+    return bool(name) and not re.search(r'^(arxiv|arxiv\.org|hf daily|hugging face daily|preprint|预印本)$', name, re.I) and not re.search(r'^cs\.', name, re.I)
+
+def publication_kind(p):
+    if not has_real_venue(p):
+        return '预印本'
+    typ = str(p.get('venueType') or '').lower()
+    name = venue_name(p)
+    if 'journal' in typ:
+        return '期刊'
+    if 'conference' in typ:
+        return '会议'
+    if re.search(r'\b(journal|letters|transactions|t-?ro|ra-?l)\b|science robotics|autonomous robots|robotics and automation letters', name, re.I):
+        return '期刊'
+    if re.search(r'\b(icra|iros|corl|rss|cvpr|iccv|eccv|neurips|nips|icml|iclr|aaai|ijcai|acl|emnlp|naacl|chi|hri|uist|siggraph|case)\b', name, re.I):
+        return '会议'
+    return '已收录'
+
+def publication_counts(papers):
+    counts = {}
+    for p in papers:
+        kind = publication_kind(p)
+        counts[kind] = counts.get(kind, 0) + 1
+    return counts
+
 # ---------- Build ----------
 def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None, venue_limit=40):
     hf = fetch_hf_days(days=14)
@@ -481,6 +510,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'addedToday': added,
         'venueUpdates': venue_updates,
         'historyTotal': len(hist.get('papers',{})),
+        'publicationCounts': publication_counts(all_hist),
         'count': len(recent),
         'archiveCount': len(archive),
         'archiveTotal': archive_total,
@@ -529,6 +559,7 @@ def write_archive_shards(hist, bundle):
     index = {
         'generatedAt': hist.get('generatedAt'),
         'archiveTotal': len(papers),
+        'publicationCounts': publication_counts(papers),
         'recentCutoff': recent_cutoff,
         'archiveCutoff': archive_cutoff,
         'years': [],

@@ -162,7 +162,7 @@ button{font-family:inherit}
   position:relative;overflow:hidden;
 }
 .card:hover{transform:translateY(-2px);border-color:#2b3b4f}
-.card .venue{font-size:11px;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.card .venue{font-size:11px;color:var(--accent);font-weight:600;line-height:1.45}
 .card h3{margin:0;font-size:15px;line-height:1.4}
 .card .authors{font-size:12px;color:var(--muted);line-height:1.5}
 .card .abstract{font-size:13px;color:#cfd8e3;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}

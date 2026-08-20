@@ -76,14 +76,39 @@ function formatGeneratedAt(ds){
 function latestDateIn(list){
   return list.reduce((best, p)=>((p.date||'') > best ? p.date : best), '');
 }
+function venueName(p){
+  return String(p.venueName || p.venue || '').trim();
+}
+function hasRealVenue(p){
+  if(isClassic(p)) return Boolean(p.venue);
+  const name = venueName(p);
+  return Boolean(name) && !/^(arxiv|arxiv\.org|hf daily|hugging face daily|preprint|预印本)$/i.test(name) && !/^cs\./i.test(name);
+}
+function publicationKind(p){
+  if(isClassic(p)) return '经典精选';
+  if(!hasRealVenue(p)) return '预印本';
+  const type = String(p.venueType || '').toLowerCase();
+  const name = venueName(p);
+  if(type.includes('journal')) return '期刊';
+  if(type.includes('conference')) return '会议';
+  if(/\b(journal|letters|transactions|t-?ro|ra-?l)\b|science robotics|autonomous robots|robotics and automation letters/i.test(name)) return '期刊';
+  if(/\b(icra|iros|corl|rss|cvpr|iccv|eccv|neurips|nips|icml|iclr|aaai|ijcai|acl|emnlp|naacl|chi|hri|uist|siggraph|case)\b/i.test(name)) return '会议';
+  return '已收录';
+}
 function venueLabel(p){
   if(isClassic(p)) return p.venue || '经典';
-  if(p.venue && !/^arxiv$/i.test(p.venue)) return p.venue;
-  if(p.source === 'hf') return 'HF Daily';
-  const cats = p.categories || [];
-  if(cats.length) return cats.slice(0,2).join(' / ');
-  if(p.source === 'arxiv') return 'arXiv';
-  return p.venue || p.source || 'Unknown';
+  if(hasRealVenue(p)) return venueName(p);
+  return '预印本';
+}
+function venueDisplay(p){
+  const kind = publicationKind(p);
+  const venue = venueLabel(p);
+  if(kind === '预印本' || kind === '经典精选') return kind === '经典精选' ? venue : kind;
+  if(kind === '已收录') return venue;
+  return `${kind} · ${venue}`;
+}
+function publicationFacets(p){
+  return [publicationKind(p)];
 }
 function zhUrl(arxivIdOrUrl){
   const m = (arxivIdOrUrl||'').match(/(\d{4}\.\d{4,5})/);
@@ -121,7 +146,10 @@ function newAsGeneric(p){
     categories: p.categories || [],
     tags: uniq([...(p.tags||[]), ...(p.topics||[])]),
     topics: p.topics || p.tags || [],
-    venue: p.venue || venueLabel(p)
+    venue: p.venue,
+    venueName: p.venueName,
+    venueType: p.venueType,
+    publicationYear: p.publicationYear,
   };
 }
 
@@ -132,7 +160,7 @@ function allClassics(){ return PAPERS.map(curatedAsGeneric); }
 function matches(p){
   const q = state.search.trim().toLowerCase();
   if(q){
-    const hay = (p.title+' '+(p.authors||'')+' '+(p.abstract||'')+' '+(p.tags||[]).join(' ')).toLowerCase();
+    const hay = (p.title+' '+(p.authors||'')+' '+(p.abstract||'')+' '+venueDisplay(p)+' '+(p.tags||[]).join(' ')).toLowerCase();
     if(!hay.includes(q)) return false;
   }
   if(state.activeTags.size){
@@ -144,7 +172,12 @@ function matches(p){
   if(state.activeYears.size){
     if(!state.activeYears.has(String(p.year||(p.date||'').slice(0,4)))) return false;
   }
-  if(state.activeVenues.size && !state.activeVenues.has(venueLabel(p))) return false;
+  if(state.activeVenues.size){
+    const facets = new Set(publicationFacets(p));
+    let ok = false;
+    for(const v of state.activeVenues){ if(facets.has(v)){ ok=true; break; } }
+    if(!ok) return false;
+  }
   return true;
 }
 
@@ -172,7 +205,7 @@ function newCard(p, opts={}){
     ${bookmarkBtn(p.id)}
     <div class="venue">
       ${sourceBadge(p)}
-      <span style="margin-left:6px">${escapeHtml(p.date||'')} · ${escapeHtml(venueLabel(p))} · ${isClassic(p)?p.venue:daysAgoStr(p.date)}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
+      <span style="margin-left:6px">${escapeHtml(p.date||'')} · ${escapeHtml(venueDisplay(p))} · ${isClassic(p)?p.venue:daysAgoStr(p.date)}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
     </div>
     <h3>${isClassic(p)?escapeHtml(p.title):`<a href="${p.hfUrl||p.url||p.arxiv}" target="_blank" rel="noopener" style="color:var(--text)">${escapeHtml(p.title)}</a>`}</h3>
     <div class="authors">${escapeHtml(formatAuthors(p.authors))}</div>
@@ -266,15 +299,20 @@ function renderChips(){
     ? tagEntries
     : [...activeEntries, ...inactiveEntries.slice(0, Math.max(defaultLimit - activeEntries.length, 0))];
   const yearSet = uniq([...newPs.map(p=>String((p.date||'').slice(0,4))), ...classics.map(p=>String(p.year)), ...archivePs.map(p=>String((p.date||'').slice(0,4)))]).sort((a,b)=>Number(b)-Number(a));
-  const venueCounts = countBy([...newPs, ...classics, ...archivePs], p=>[venueLabel(p)]);
-  const venueSet = Array.from(venueCounts.entries())
-    .map(([name, count])=>({name, count}))
+  const venueCounts = countBy([...newPs, ...classics, ...archivePs], publicationFacets);
+  const bundledPublicationCounts = state.bundle?.publicationCounts || state.archiveIndex?.publicationCounts || {};
+  Object.entries(bundledPublicationCounts).forEach(([name, count])=>{
+    venueCounts.set(name, Math.max(venueCounts.get(name) || 0, Number(count) || 0));
+  });
+  const venueOrder = ['会议', '期刊', '已收录', '预印本', '经典精选'];
+  const venueSet = venueOrder
+    .filter(name=>venueCounts.has(name))
+    .map(name=>({name, count: venueCounts.get(name)}))
     .sort((a,b)=>{
       const activeDiff = Number(state.activeVenues.has(b.name)) - Number(state.activeVenues.has(a.name));
       if(activeDiff) return activeDiff;
-      return b.count - a.count || a.name.localeCompare(b.name);
-    })
-    .slice(0, 18);
+      return venueOrder.indexOf(a.name) - venueOrder.indexOf(b.name);
+    });
 
   const fill = (hostId, set, activeSet, opts={})=>{
     const host = byId(hostId); host.innerHTML='';
@@ -290,6 +328,7 @@ function renderChips(){
       }
       b.onclick = ()=>{
         if(activeSet.has(value)) activeSet.delete(value); else activeSet.add(value);
+        if(opts.onToggle) opts.onToggle(value);
         // when a tag is picked and we're on "today", stay on today; if on feed/latest, stay.
         render();
       };
@@ -319,7 +358,14 @@ function renderChips(){
   }
   byId('yearChips').innerHTML='';
   fill('yearChips', yearSet, state.activeYears);
-  fill('venueChips', venueSet, state.activeVenues, {counts: venueCounts});
+  fill('venueChips', venueSet, state.activeVenues, {
+    counts: venueCounts,
+    onToggle: (value)=>{
+      if(state.activeVenues.has(value) && state.tab === 'today' && value !== '预印本' && value !== '经典精选'){
+        state.tab = 'archive';
+      }
+    }
+  });
 }
 
 // ---------- Selections ----------
@@ -433,10 +479,14 @@ function renderClassics(){
   byId('classicsCount').textContent = allClassics().length;
 }
 function renderArchive(){
-  const list = filtered(allArchivePapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const loadedArchive = allArchivePapers();
+  const list = filtered(loadedArchive).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const host = byId('archiveGrid');
   const archiveTotal = state.bundle?.archiveTotal || state.bundle?.historyTotal || list.length;
-  const archiveNote = archiveTotal > list.length ? `，已加载 ${list.length}/${archiveTotal} 篇` : `，共 ${list.length} 篇`;
+  const hasFilters = Boolean(state.search.trim() || state.activeTags.size || state.activeYears.size || state.activeVenues.size);
+  const archiveNote = hasFilters
+    ? `，当前匹配 ${list.length} 篇，已加载 ${loadedArchive.length}/${archiveTotal} 篇`
+    : (archiveTotal > loadedArchive.length ? `，已加载 ${loadedArchive.length}/${archiveTotal} 篇` : `，共 ${loadedArchive.length} 篇`);
   byId('archiveCount').textContent = `最近 ${Math.round((state.bundle?.archiveDays||3650)/365)} 年${archiveNote}（不含最近 ${state.bundle?.recentDays||7} 天）`;
   if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError && archiveTotal > list.length){
     loadArchiveIndex();
@@ -448,10 +498,6 @@ function renderArchive(){
   if(state.archiveIndexError && archiveTotal > list.length){
     host.innerHTML = `<div class="empty">往期索引加载失败，先显示最近 ${list.length} 篇。${escapeHtml(state.archiveIndexError)}</div>`;
     if(!list.length) return;
-  }
-  if (list.length === 0) {
-    host.innerHTML = '<div class="empty">往期暂无匹配论文。历史回填进行中，每日自动更新积累。</div>';
-    return;
   }
   const years = new Map();
   list.forEach(p => {
@@ -468,6 +514,10 @@ function renderArchive(){
     });
   }
   const yearOrder = Array.from(years.keys()).sort().reverse();
+  if (yearOrder.length === 0) {
+    host.innerHTML = '<div class="empty">往期暂无匹配论文。历史回填进行中，每日自动更新积累。</div>';
+    return;
+  }
   if(!state.archiveExpandedYears.size && yearOrder.length){
     state.archiveExpandedYears.add(yearOrder[0]);
     if(state.archiveIndex && !state.archiveYears[yearOrder[0]] && !state.archiveLoadingYears.has(yearOrder[0])){
@@ -622,7 +672,7 @@ byId('toggleTags').addEventListener('click', ()=>{
   render();
 });
 byId('resetFilters').addEventListener('click', ()=>{
-  state.activeTags.clear(); state.activeYears.clear();
+  state.activeTags.clear(); state.activeYears.clear(); state.activeVenues.clear();
   state.tagSearch=''; state.showAllTags=false; byId('tagSearchInput').value='';
   state.search=''; byId('searchInput').value='';
   state.tab='today';
@@ -667,7 +717,8 @@ async function loadBundle(opts={}){
     }catch(e){ state.bundleError = String(e.message||e); }
   }
   try{
-    const r = await fetch(`data/daily.json?v=${Date.now()}`,{cache:'no-store'});
+    const suffix = opts.live ? `?v=${Date.now()}` : '';
+    const r = await fetch(`data/daily.json${suffix}`, {cache: opts.live ? 'no-store' : 'default'});
     if(r.ok){
       const d = await r.json();
       if(d && Array.isArray(d.papers)){ state.bundle = d; }
@@ -684,7 +735,7 @@ async function loadArchiveIndex(){
   state.archiveIndexError = null;
   renderCounts();
   try{
-    const r = await fetch(`data/archive-index.json?v=${Date.now()}`, {cache:'no-store'});
+    const r = await fetch('data/archive-index.json', {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const index = await r.json();
     if(!index || !Array.isArray(index.years)) throw new Error('archive-index.json 格式异常');
@@ -704,7 +755,7 @@ async function loadArchiveYear(year){
   delete state.archiveYearErrors[year];
   if(state.tab === 'archive') renderArchive();
   try{
-    const r = await fetch(`data/archive/${year}.json?v=${Date.now()}`, {cache:'no-store'});
+    const r = await fetch(`data/archive/${year}.json`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const data = await r.json();
     if(!data || !Array.isArray(data.papers)) throw new Error(`${year}.json 格式异常`);

@@ -17,6 +17,7 @@ def refresh_bundle_from_history(hist, bundle):
         'hf': sum(1 for p in archive if p.get('source') == 'hf'),
         'arxiv': sum(1 for p in archive if p.get('source') == 'arxiv'),
     }
+    bundle['publicationCounts'] = bd.publication_counts(papers.values())
     bundle['notes'] = [
         'archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database'
     ]
