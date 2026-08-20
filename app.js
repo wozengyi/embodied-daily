@@ -459,7 +459,7 @@ function renderToday(){
   } else {
     heroHost.innerHTML = heroCurated(curated);
     hfSub.textContent = '暂无新文数据，先看经典精选。';
-    newHost.innerHTML = `<div class="empty"><a class="btn primary" href="https://huggingface.co/papers" target="_blank" rel="noopener">🧡 HF Daily Papers</a> <a class="btn" href="https://arxiv.org/list/cs.RO/recent" target="_blank" rel="noopener">📄 arXiv cs.RO</a></div>`;
+    newHost.innerHTML = `<div class="empty"><a class="btn primary" href="https://huggingface.co/papers" target="_blank" rel="noopener">🧡 HF Daily Papers</a> <a class="btn" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=robotics&terms-0-field=all" target="_blank" rel="noopener">📄 arXiv 搜索</a></div>`;
   }
   moreHost.innerHTML = moreClassics.map(p=>classicCard(p, {why:'推荐理由：'+(p.why||'领域代表性工作')})).join('');
 }
@@ -627,7 +627,6 @@ function render(){
   byId('todayPane').classList.toggle('hidden', state.tab!=='today');
   byId('latestPane').classList.toggle('hidden', state.tab!=='latest');
   byId('feedPane').classList.toggle('hidden', state.tab!=='feed');
-  byId('latestPane').classList.toggle('hidden', state.tab!=='latest');
   byId('archivePane').classList.toggle('hidden', state.tab!=='archive');
   byId('bookmarksPane').classList.toggle('hidden', state.tab!=='bookmarks');
   if(state.tab === 'today') renderToday();

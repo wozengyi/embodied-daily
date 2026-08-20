@@ -238,7 +238,7 @@ button{font-family:inherit}
   font-size: 18px;
   font-weight: 600;
   padding: 10px 14px;
-  background: var(--bg-elevated);
+  background: var(--bg-elev);
   border-radius: 8px;
   margin: 0 0 12px 0;
   display: flex;
