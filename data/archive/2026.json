@@ -329,7 +329,9 @@
         "Manipulation",
         "Navigation",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386113+00:00"
     },
     {
       "id": "2608.11521",
@@ -407,7 +409,9 @@
       "tags": [
         "VLA",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386097+00:00"
     },
     {
       "id": "2608.12650",
@@ -478,7 +482,9 @@
       "topics": [
         "Imitation Learning"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386136+00:00"
     },
     {
       "id": "2608.09853",
@@ -502,7 +508,9 @@
         "Open-Source",
         "Foundation Models"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386138+00:00"
     },
     {
       "id": "2608.09848",
@@ -524,7 +532,9 @@
         "Imitation Learning",
         "Embodied Vision"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386141+00:00"
     },
     {
       "id": "2608.10860",
@@ -557,7 +567,9 @@
         "Imitation Learning",
         "Bimanual",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386122+00:00"
     },
     {
       "id": "2608.10383",
@@ -588,7 +600,9 @@
         "Dexterous",
         "Bimanual",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386218+00:00"
     },
     {
       "id": "2608.11204",
@@ -620,7 +634,9 @@
         "Imitation Learning",
         "Bimanual",
         "WAM"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386119+00:00"
     },
     {
       "id": "2608.11363",
@@ -651,7 +667,9 @@
         "Imitation Learning",
         "Reinforcement Learning",
         "Bimanual"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386175+00:00"
     },
     {
       "id": "2608.10718",
@@ -679,7 +697,9 @@
         "Manipulation",
         "Imitation Learning",
         "Bimanual"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386127+00:00"
     },
     {
       "id": "2608.10976",
@@ -705,7 +725,9 @@
         "VLA",
         "Imitation Learning",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386116+00:00"
     },
     {
       "id": "2608.10780",
@@ -731,7 +753,9 @@
         "World Model",
         "Imitation Learning",
         "WAM"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386124+00:00"
     },
     {
       "id": "2608.10756",
@@ -758,7 +782,9 @@
         "VLA",
         "Mobile Manipulation",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386206+00:00"
     },
     {
       "id": "2608.14713",
@@ -783,7 +809,9 @@
       "tags": [
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386177+00:00"
     },
     {
       "id": "2608.11051",
@@ -807,7 +835,14 @@
       "tags": [
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venue": "FG 2026",
+      "venueName": "IEEE International Conference on Automatic Face & Gesture Recognition",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=1029",
+      "publicationYear": 2026,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386198+00:00"
     },
     {
       "id": "2608.10449",
@@ -831,7 +866,9 @@
       "tags": [
         "Navigation",
         "World Model"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386201+00:00"
     },
     {
       "id": "2608.10393",
@@ -856,7 +893,9 @@
       "tags": [
         "VLA",
         "Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386203+00:00"
     },
     {
       "id": "2608.10648",
@@ -881,7 +920,13 @@
       "tags": [
         "Manipulation",
         "Dataset"
-      ]
+      ],
+      "venue": "2025 IEEE International Conference on Mechatronics and Automation (ICMA)",
+      "venueName": "2025 IEEE International Conference on Mechatronics and Automation (ICMA)",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386215+00:00"
     },
     {
       "id": "2608.10623",
@@ -903,7 +948,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386133+00:00"
     },
     {
       "id": "2608.11485",
@@ -925,7 +972,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "2D Materials 2026",
+      "venueName": "2D Materials",
+      "venueType": "journal",
+      "venueUrl": "https://iopscience.iop.org/2053-1583",
+      "publicationYear": 2026,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386165+00:00"
     },
     {
       "id": "2608.11417",
@@ -949,7 +1003,9 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386169+00:00"
     },
     {
       "id": "2608.11409",
@@ -971,7 +1027,9 @@
       ],
       "tags": [
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386172+00:00"
     },
     {
       "id": "2608.11063",
@@ -993,7 +1051,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386179+00:00"
     },
     {
       "id": "2608.10656",
@@ -1011,7 +1071,9 @@
       ],
       "source": "arxiv",
       "topics": [],
-      "tags": []
+      "tags": [],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386208+00:00"
     },
     {
       "id": "2608.07468",
@@ -1039,7 +1101,9 @@
         "Autonomous Driving",
         "WAM"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386258+00:00"
     },
     {
       "id": "2608.06756",
@@ -1065,7 +1129,9 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386263+00:00"
     },
     {
       "id": "2607.26657",
@@ -1085,7 +1151,9 @@
       "topics": [
         "World Model"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386261+00:00"
     },
     {
       "id": "2608.10220",
@@ -1180,7 +1248,9 @@
         "Imitation Learning",
         "Dataset",
         "WAM"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386291+00:00"
     },
     {
       "id": "2608.09762",
@@ -1210,7 +1280,9 @@
         "Humanoid",
         "Sim2Real",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386294+00:00"
     },
     {
       "id": "2608.09303",
@@ -1242,7 +1314,8 @@
         "Imitation Learning",
         "Hardware"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386318+00:00"
     },
     {
       "id": "2608.10232",
@@ -1365,7 +1438,9 @@
         "Manipulation",
         "Grasping",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386289+00:00"
     },
     {
       "id": "2608.09196",
@@ -1625,7 +1700,9 @@
         "VLA",
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386315+00:00"
     },
     {
       "id": "2608.09516",
@@ -1844,7 +1921,9 @@
       "tags": [
         "Grasping",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386296+00:00"
     },
     {
       "id": "2608.09198",
@@ -2014,7 +2093,9 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386266+00:00"
     },
     {
       "id": "2608.09891",
@@ -2036,7 +2117,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Soft Robotics 2020",
+      "venueName": "Soft Robotics",
+      "venueType": "journal",
+      "venueUrl": "http://www.liebertpub.com/soro",
+      "publicationYear": 2020,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386279+00:00"
     },
     {
       "id": "2608.09860",
@@ -2058,7 +2146,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386282+00:00"
     },
     {
       "id": "2608.09857",
@@ -2081,7 +2171,9 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386285+00:00"
     },
     {
       "id": "2608.09807",
@@ -2104,7 +2196,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386287+00:00"
     },
     {
       "id": "2608.09602",
@@ -2126,7 +2220,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE transactions on industrial electronics (1982. Print) 2021",
+      "venueName": "IEEE transactions on industrial electronics (1982. Print)",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=41",
+      "publicationYear": 2021,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386306+00:00"
     },
     {
       "id": "2608.09528",
@@ -2148,7 +2249,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE Transactions on Automation Science and Engineering 2026",
+      "venueName": "IEEE Transactions on Automation Science and Engineering",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8856",
+      "publicationYear": 2026,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:08:32.386312+00:00"
     },
     {
       "id": "2608.10056",
