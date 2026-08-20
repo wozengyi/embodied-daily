@@ -1984,7 +1984,9 @@
         "Dexterous",
         "Dataset",
         "Multi-task"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395507+00:00"
     },
     {
       "id": "2512.00727",
@@ -2014,7 +2016,8 @@
         "Reinforcement Learning",
         "Hardware"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395570+00:00"
     },
     {
       "id": "2512.01052",
@@ -2041,7 +2044,14 @@
         "Grasping",
         "Locomotion",
         "Navigation"
-      ]
+      ],
+      "venue": "CENiM 2025",
+      "venueName": "CENiM",
+      "venueType": "journal",
+      "venueUrl": "http://www.enim-egyptologie.fr/uk/index.php?page=cahiers",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395456+00:00"
     },
     {
       "id": "2512.00975",
@@ -2070,7 +2080,9 @@
         "Imitation Learning",
         "Bimanual",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395531+00:00"
     },
     {
       "id": "2512.00883",
@@ -2099,7 +2111,9 @@
         "World Model",
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395555+00:00"
     },
     {
       "id": "2512.01078",
@@ -2152,7 +2166,9 @@
         "VLA",
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395527+00:00"
     },
     {
       "id": "2512.00915",
@@ -2178,7 +2194,9 @@
         "Locomotion",
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395543+00:00"
     },
     {
       "id": "2512.00907",
@@ -2203,7 +2221,9 @@
         "Grasping",
         "Multi-task",
         "Tactile"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395549+00:00"
     },
     {
       "id": "2512.00797",
@@ -2228,7 +2248,9 @@
         "VLA",
         "LLM Agent",
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395558+00:00"
     },
     {
       "id": "2512.00783",
@@ -2254,7 +2276,9 @@
         "VLA",
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395561+00:00"
     },
     {
       "id": "2512.00736",
@@ -2281,7 +2305,9 @@
         "Navigation",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395568+00:00"
     },
     {
       "id": "2512.01106",
@@ -2336,7 +2362,9 @@
       "tags": [
         "VLA",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395488+00:00"
     },
     {
       "id": "2512.01023",
@@ -2360,7 +2388,14 @@
       "tags": [
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "IEEE Signal Processing Letters 2025",
+      "venueName": "IEEE Signal Processing Letters",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=97",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395502+00:00"
     },
     {
       "id": "2512.01010",
@@ -2388,7 +2423,9 @@
       "tags": [
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395523+00:00"
     },
     {
       "id": "2512.00971",
@@ -2411,7 +2448,9 @@
       "tags": [
         "Humanoid",
         "Locomotion"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395535+00:00"
     },
     {
       "id": "2512.00939",
@@ -2435,7 +2474,9 @@
       "tags": [
         "Manipulation",
         "Grasping"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395539+00:00"
     },
     {
       "id": "2512.00903",
@@ -2459,7 +2500,9 @@
       "tags": [
         "VLA",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395552+00:00"
     },
     {
       "id": "2512.01133",
@@ -2614,7 +2657,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395481+00:00"
     },
     {
       "id": "2512.01018",
@@ -2635,7 +2680,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "IEEE Access 2025",
+      "venueName": "IEEE Access",
+      "venueType": "journal",
+      "venueUrl": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395518+00:00"
     },
     {
       "id": "2512.00911",
@@ -2656,7 +2708,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395546+00:00"
     },
     {
       "id": "2512.00775",
@@ -2678,7 +2732,9 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395565+00:00"
     },
     {
       "id": "2512.00324",
@@ -2711,7 +2767,8 @@
         "Teleoperation",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395598+00:00"
     },
     {
       "id": "2512.00532",
@@ -2740,7 +2797,8 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395586+00:00"
     },
     {
       "id": "2512.00493",
@@ -2768,7 +2826,8 @@
         "3D / Perception",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395592+00:00"
     },
     {
       "id": "2512.00592",
@@ -2794,7 +2853,8 @@
         "Reinforcement Learning",
         "Autonomous Driving"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395577+00:00"
     },
     {
       "id": "2512.00547",
@@ -2820,7 +2880,8 @@
         "3D / Perception",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395583+00:00"
     },
     {
       "id": "2512.00453",
@@ -2848,7 +2909,8 @@
         "Dataset",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395595+00:00"
     },
     {
       "id": "2512.00565",
@@ -2874,7 +2936,8 @@
         "Dataset",
         "Open-Source"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395580+00:00"
     },
     {
       "id": "2512.00427",
@@ -2927,7 +2990,8 @@
         "Dataset",
         "3D / Perception"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395601+00:00"
     },
     {
       "id": "2512.00287",
@@ -2953,7 +3017,8 @@
         "LLM Agent",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395604+00:00"
     },
     {
       "id": "2512.00659",
@@ -2977,7 +3042,8 @@
       "tags": [
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395574+00:00"
     },
     {
       "id": "2512.00514",
@@ -2999,7 +3065,8 @@
       "tags": [
         "Locomotion"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395589+00:00"
     },
     {
       "id": "2512.00262",
@@ -3022,7 +3089,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395607+00:00"
     },
     {
       "id": "2512.00226",
@@ -3049,7 +3117,8 @@
         "LLM Agent",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395610+00:00"
     },
     {
       "id": "2511.23300",
@@ -3075,7 +3144,8 @@
         "Manipulation",
         "Humanoid"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395620+00:00"
     },
     {
       "id": "2511.23186",
@@ -3236,7 +3306,8 @@
         "Sim2Real",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395626+00:00"
     },
     {
       "id": "2511.23143",
@@ -3336,7 +3407,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395613+00:00"
     },
     {
       "id": "2511.23372",
@@ -3358,7 +3430,8 @@
       "tags": [
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395617+00:00"
     },
     {
       "id": "2512.16926",
@@ -3383,7 +3456,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395622+00:00"
     },
     {
       "id": "2511.23215",
@@ -3407,7 +3481,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T21:56:40.395629+00:00"
     },
     {
       "id": "2511.23188",
