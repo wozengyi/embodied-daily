@@ -23263,7 +23263,9 @@
         "Manipulation",
         "Teleoperation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T20:36:40.552335+00:00"
     },
     {
       "id": "2602.00169",
@@ -23398,7 +23400,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2026",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2026,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T20:36:40.552314+00:00"
     }
   ]
 }
