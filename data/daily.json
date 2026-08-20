@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-20T07:51:42.094428+00:00",
+  "generatedAt": "2026-08-20T08:03:45.142446+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
   "recentCutoff": "2026-08-13",
   "archiveCutoff": "2021-08-21",
   "addedToday": 0,
-  "venueUpdates": 2,
+  "venueUpdates": 1,
   "historyTotal": 5357,
   "publicationCounts": {
-    "预印本": 5240,
-    "会议": 40,
+    "预印本": 5239,
+    "会议": 41,
     "期刊": 77
   },
   "count": 147,
@@ -38,7 +38,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.16590",
       "arxiv": "https://arxiv.org/abs/2608.16590",
       "pdf": "https://arxiv.org/pdf/2608.16590.pdf",
-      "upvotes": 85,
+      "upvotes": 89,
       "tags": [
         "Humanoid",
         "Navigation",
@@ -3125,7 +3125,9 @@
         "Teleoperation",
         "Dataset",
         "Tactile"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603596+00:00"
     },
     {
       "id": "2608.14379",
@@ -3154,7 +3156,9 @@
         "Manipulation",
         "Dataset",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603540+00:00"
     },
     {
       "id": "2608.14049",
@@ -3497,7 +3501,13 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venue": "ECC 2026",
+      "venueName": "European Control Conference",
+      "venueType": "conference",
+      "publicationYear": 2026,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603590+00:00"
     },
     {
       "id": "2608.18160",
@@ -3521,7 +3531,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603600+00:00"
     },
     {
       "id": "2608.05604",
@@ -3547,7 +3559,9 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603614+00:00"
     },
     {
       "id": "2608.11350",
@@ -3571,7 +3585,9 @@
         "Foundation Models",
         "Embodied Vision"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603617+00:00"
     },
     {
       "id": "2608.06729",
@@ -3595,7 +3611,9 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603622+00:00"
     },
     {
       "id": "2608.11574",
@@ -3615,7 +3633,9 @@
       "topics": [
         "3D / Perception"
       ],
-      "source": "hf"
+      "source": "hf",
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603620+00:00"
     },
     {
       "id": "2608.12860",
@@ -3648,7 +3668,9 @@
         "Navigation",
         "Sim2Real",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603602+00:00"
     },
     {
       "id": "2608.12854",
@@ -3678,7 +3700,9 @@
         "World Model",
         "Autonomous Driving",
         "WAM"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603611+00:00"
     },
     {
       "id": "2608.13719",
@@ -3707,7 +3731,9 @@
         "Sim2Real",
         "Simulator",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603644+00:00"
     },
     {
       "id": "2608.13453",
@@ -3736,7 +3762,9 @@
         "Manipulation",
         "Multi-task",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603650+00:00"
     },
     {
       "id": "2608.13362",
@@ -3764,7 +3792,9 @@
         "Dexterous",
         "Imitation Learning",
         "Teleoperation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603654+00:00"
     },
     {
       "id": "2608.13395",
@@ -3790,7 +3820,9 @@
         "VLA",
         "Reinforcement Learning",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603608+00:00"
     },
     {
       "id": "2608.13284",
@@ -3816,7 +3848,9 @@
         "Dexterous",
         "Teleoperation",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603633+00:00"
     },
     {
       "id": "2608.13678",
@@ -3843,7 +3877,9 @@
         "World Model",
         "Imitation Learning",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603647+00:00"
     },
     {
       "id": "2608.13438",
@@ -3871,7 +3907,9 @@
         "Manipulation",
         "World Model",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603652+00:00"
     },
     {
       "id": "2608.13396",
@@ -3895,7 +3933,9 @@
       "tags": [
         "Imitation Learning",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603630+00:00"
     },
     {
       "id": "2608.13028",
@@ -3920,7 +3960,9 @@
       "tags": [
         "Sim2Real",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603640+00:00"
     },
     {
       "id": "2608.13474",
@@ -3942,7 +3984,9 @@
       ],
       "tags": [
         "VLA"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603606+00:00"
     },
     {
       "id": "2608.13448",
@@ -3964,7 +4008,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603625+00:00"
     },
     {
       "id": "2608.13415",
@@ -3987,7 +4033,9 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603628+00:00"
     },
     {
       "id": "2608.13233",
@@ -4009,7 +4057,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603635+00:00"
     },
     {
       "id": "2608.13103",
@@ -4032,7 +4082,9 @@
       ],
       "tags": [
         "World Model"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603637+00:00"
     },
     {
       "id": "2608.12755",
@@ -4055,7 +4107,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603642+00:00"
     },
     {
       "id": "2608.13220",
@@ -4073,11 +4127,10 @@
       ],
       "source": "arxiv",
       "topics": [],
-      "tags": []
+      "tags": [],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T08:03:45.603657+00:00"
     }
   ],
-  "archive": [],
-  "notes": [
-    "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
-  ]
+  "archive": []
 }
