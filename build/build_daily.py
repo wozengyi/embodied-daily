@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / 'data'
 HISTORY_PATH = DATA_DIR / 'history.json'
 OUT_PATH = DATA_DIR / 'daily.json'
+SEARCH_INDEX_PATH = DATA_DIR / 'search-index.json'
 
 UA = 'Mozilla/5.0 (EmbodiedDaily/1.1; +https://github.com/)'
 CTX = ssl.create_default_context()
@@ -458,6 +459,13 @@ def publication_counts(papers):
         counts[kind] = counts.get(kind, 0) + 1
     return counts
 
+def topic_counts(papers):
+    counts = {}
+    for p in papers:
+        for topic in p.get('topics') or p.get('tags') or []:
+            counts[topic] = counts.get(topic, 0) + 1
+    return counts
+
 # ---------- Build ----------
 def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None, venue_limit=40):
     hf = fetch_hf_days(days=14)
@@ -511,6 +519,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'venueUpdates': venue_updates,
         'historyTotal': len(hist.get('papers',{})),
         'publicationCounts': publication_counts(all_hist),
+        'topicCounts': topic_counts(all_hist),
         'count': len(recent),
         'archiveCount': len(archive),
         'archiveTotal': archive_total,
@@ -560,6 +569,7 @@ def write_archive_shards(hist, bundle):
         'generatedAt': hist.get('generatedAt'),
         'archiveTotal': len(papers),
         'publicationCounts': publication_counts(papers),
+        'topicCounts': topic_counts(papers),
         'recentCutoff': recent_cutoff,
         'archiveCutoff': archive_cutoff,
         'years': [],
@@ -584,6 +594,32 @@ def write_archive_shards(hist, bundle):
     (DATA_DIR / 'archive-index.json').write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f'[build] wrote archive shards: years={len(index["years"])}, total={index["archiveTotal"]}')
 
+def compact_search_paper(p):
+    keep = {
+        'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
+        'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes', 'venue', 'venueName', 'venueType',
+        'publicationYear',
+    }
+    out = {k: p.get(k) for k in keep if p.get(k) not in (None, '', [])}
+    abstract = ' '.join((p.get('abstract') or '').split())
+    if abstract:
+        out['abstract'] = abstract[:360]
+    return out
+
+def write_search_index(hist):
+    """Write a compact all-history index for lazy full-site search."""
+    papers = sorted(
+        hist.get('papers', {}).values(),
+        key=lambda p: ((p.get('date') or '0000-00-00'), int(p.get('upvotes') or 0)),
+        reverse=True,
+    )
+    index = {
+        'generatedAt': hist.get('generatedAt'),
+        'count': len(papers),
+        'papers': [compact_search_paper(p) for p in papers],
+    }
+    SEARCH_INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    print(f'[build] wrote {SEARCH_INDEX_PATH}: count={len(papers)}')
 
 def main():
     ap = argparse.ArgumentParser()
@@ -601,6 +637,7 @@ def main():
     save_history(hist)
     OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
     write_archive_shards(hist, bundle)
+    write_search_index(hist)
     print(f'[build] wrote {OUT_PATH}: latest={bundle["count"]} (HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}), '
           f'archive={bundle["archiveCount"]} (HF={bundle["archiveSources"]["hf"]}, arXiv={bundle["archiveSources"]["arxiv"]}), '
           f'addedToday={bundle["addedToday"]}, venueUpdates={bundle["venueUpdates"]}, historyTotal={bundle["historyTotal"]})')

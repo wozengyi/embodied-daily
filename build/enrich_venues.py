@@ -18,6 +18,7 @@ def refresh_bundle_from_history(hist, bundle):
         'arxiv': sum(1 for p in archive if p.get('source') == 'arxiv'),
     }
     bundle['publicationCounts'] = bd.publication_counts(papers.values())
+    bundle['topicCounts'] = bd.topic_counts(papers.values())
     bundle['notes'] = [
         'archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database'
     ]
@@ -46,6 +47,7 @@ def main():
     bundle = refresh_bundle_from_history(hist, bundle)
     bd.OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
     bd.write_archive_shards(hist, bundle)
+    bd.write_search_index(hist)
     print(f'[venue] updated={updated}, historyTotal={len(hist.get("papers", {}))}')
 
 

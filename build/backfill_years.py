@@ -145,6 +145,7 @@ def main():
     bundle = bd.build_bundle(hist, recent_days=7, archive_days=args.years*365, limit=80, archive_limit=0, venue_limit=0)
     bd.OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
     bd.write_archive_shards(hist, bundle)
+    bd.write_search_index(hist)
     print(f'Done. history: {before} -> {len(papers)} (+{total_added}), '
           f'latest={bundle["count"]}, archive={bundle["archiveCount"]}')
 

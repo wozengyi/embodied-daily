@@ -4132,5 +4132,37 @@
       "venueCheckedAt": "2026-08-20T08:03:45.603657+00:00"
     }
   ],
-  "archive": []
+  "archive": [],
+  "topicCounts": {
+    "VLA": 391,
+    "Manipulation": 859,
+    "Humanoid": 297,
+    "Locomotion": 502,
+    "Navigation": 1006,
+    "Imitation Learning": 794,
+    "Reinforcement Learning": 820,
+    "Bimanual": 120,
+    "Hardware": 181,
+    "Open-Source": 221,
+    "Tactile": 182,
+    "Grasping": 474,
+    "Sim2Real": 189,
+    "Dataset": 1532,
+    "Simulator": 359,
+    "3D / Perception": 426,
+    "Foundation Models": 149,
+    "Embodied Vision": 243,
+    "Autonomous Driving": 193,
+    "World Model": 160,
+    "WAM": 43,
+    "Dexterous": 218,
+    "Teleoperation": 141,
+    "LLM Agent": 340,
+    "Robotics": 996,
+    "Mobile Manipulation": 91,
+    "Multi-task": 99
+  },
+  "notes": [
+    "archive is split by year under data/archive/ for fast lazy loading; data/history.json keeps the complete database"
+  ]
 }

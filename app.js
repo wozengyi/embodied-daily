@@ -21,6 +21,10 @@ const state = {
   archiveYearErrors: {},
   archiveExpandedMonths: new Set(),
   archiveMonthLimits: {},
+  searchIndex: null,
+  searchIndexLoading: false,
+  searchIndexError: null,
+  searchResultLimit: 120,
 };
 
 function byId(id){ return document.getElementById(id); }
@@ -282,6 +286,10 @@ function renderChips(){
   const classics = allClassics();
   const archivePs = allArchivePapers();
   const tagCounts = countBy([...newPs, ...classics, ...archivePs], p=>p.topics||[]);
+  const bundledTopicCounts = state.bundle?.topicCounts || state.archiveIndex?.topicCounts || {};
+  Object.entries(bundledTopicCounts).forEach(([name, count])=>{
+    tagCounts.set(name, Math.max(tagCounts.get(name) || 0, Number(count) || 0));
+  });
   const query = state.tagSearch.trim().toLowerCase();
   let tagEntries = Array.from(tagCounts.entries()).map(([name, count])=>({name, count}));
   tagEntries = tagEntries
@@ -403,6 +411,7 @@ function pickNewHero(list){
 
 // ---------- Panels ----------
 function allLatestPapers(){ return ((state.bundle && state.bundle.papers) || []).map(newAsGeneric); }
+function allSearchPapers(){ return ((state.searchIndex && state.searchIndex.papers) || []).map(newAsGeneric); }
 function allArchivePapers(){
   const base = ((state.bundle && state.bundle.archive) || []);
   const loaded = Object.values(state.archiveYears).flat();
@@ -465,12 +474,31 @@ function renderToday(){
   moreHost.innerHTML = moreClassics.map(p=>classicCard(p, {why:'推荐理由：'+(p.why||'领域代表性工作')})).join('');
 }
 function renderLatest(){
-  const list = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const searching = state.search.trim().length >= 2;
+  if(searching && !state.searchIndex && !state.searchIndexLoading && !state.searchIndexError){
+    loadSearchIndex();
+  }
+  const sourceList = searching && state.searchIndex ? allSearchPapers() : allLatestPapers();
+  const list = filtered(sourceList).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const days = state.bundle?.recentDays || 7;
   const latestDate = latestDateIn(list);
   const generated = formatGeneratedAt(state.bundle?.generatedAt);
-  byId('latestCount2').textContent = `最近 ${days} 天，共 ${list.length} 篇${latestDate ? ` · 最新日期 ${latestDate}` : ''}${generated ? ` · 数据更新 ${generated}` : ''}`;
-  byId('latestGrid').innerHTML = list.length ? list.map(p=>newCard(p)).join('') : '<div class="empty">没有匹配的新论文，试试清除筛选或点「🔄 刷新最新」。</div>';
+  const searchMeta = searching
+    ? (state.searchIndex
+        ? `全库搜索，共 ${list.length}/${state.searchIndex.count} 篇匹配`
+        : state.searchIndexLoading
+          ? '正在加载全库搜索索引…'
+          : `全库搜索索引加载失败：${state.searchIndexError || '未知错误'}`)
+    : `最近 ${days} 天，共 ${list.length} 篇`;
+  byId('latestCount2').textContent = `${searchMeta}${latestDate ? ` · 最新日期 ${latestDate}` : ''}${generated ? ` · 数据更新 ${generated}` : ''}`;
+  const visible = searching ? list.slice(0, state.searchResultLimit) : list;
+  const more = searching && list.length > visible.length
+    ? `<button class="btn small load-more" data-search-more>再显示 ${Math.min(120, list.length - visible.length)} 篇</button>`
+    : '';
+  const emptyText = searching && state.searchIndexLoading
+    ? '正在加载全库搜索索引…'
+    : '没有匹配的新论文，试试清除筛选或点「刷新最新」。';
+  byId('latestGrid').innerHTML = visible.length ? visible.map(p=>newCard(p)).join('') + more : `<div class="empty">${emptyText}</div>`;
   byId('latestCount').textContent = allNewPapers().length;
 }
 function renderClassics(){
@@ -652,6 +680,10 @@ document.addEventListener('click', (e)=>{
     saveBookmarks(); render();
   }
   if(t.dataset && t.dataset.close!==undefined) closeDetail();
+  if(t.dataset && t.dataset.searchMore!==undefined){
+    state.searchResultLimit += 120;
+    renderLatest();
+  }
 });
 document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeDetail(); });
 document.querySelectorAll('.tab').forEach(tab=>{
@@ -659,8 +691,10 @@ document.querySelectorAll('.tab').forEach(tab=>{
 });
 byId('searchInput').addEventListener('input', (e)=>{
   state.search = e.target.value;
+  state.searchResultLimit = 120;
   // auto-switch to latest when typing new papers; classics tab still filters via state.
   if(state.search.trim() && state.tab === 'today') state.tab='latest';
+  if(state.search.trim().length >= 2) loadSearchIndex();
   render();
 });
 byId('tagSearchInput').addEventListener('input', (e)=>{
@@ -759,6 +793,24 @@ async function loadArchiveYear(year){
     state.archiveLoadingYears.delete(year);
     if(state.tab === 'archive') renderArchive();
     else renderCounts();
+  }
+}
+async function loadSearchIndex(){
+  if(state.searchIndex || state.searchIndexLoading) return;
+  state.searchIndexLoading = true;
+  state.searchIndexError = null;
+  if(state.tab === 'latest') renderLatest();
+  try{
+    const r = await fetch('data/search-index.json', {cache:'default'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const data = await r.json();
+    if(!data || !Array.isArray(data.papers)) throw new Error('search-index.json 格式异常');
+    state.searchIndex = data;
+  }catch(e){
+    state.searchIndexError = String(e.message || e);
+  }finally{
+    state.searchIndexLoading = false;
+    if(state.tab === 'latest') renderLatest();
   }
 }
 function closeDetail(){ byId('detail').classList.add('hidden'); }
