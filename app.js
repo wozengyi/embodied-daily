@@ -45,6 +45,18 @@ function daysAgoStr(ds){
   if(diff<0) return `${-diff} 天后`;
   return `${diff} 天前`;
 }
+function localDateStr(d=new Date()){
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function formatGeneratedAt(ds){
+  if(!ds) return '';
+  const d = new Date(ds);
+  if(isNaN(d)) return ds;
+  return `${localDateStr(d)} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
+function latestDateIn(list){
+  return list.reduce((best, p)=>((p.date||'') > best ? p.date : best), '');
+}
 function zhUrl(arxivIdOrUrl){
   const m = (arxivIdOrUrl||'').match(/(\d{4}\.\d{4,5})/);
   if(!m) return null;
@@ -162,12 +174,12 @@ function classicCard(p, opts={}){
 }
 function isClassic(p){ return p.source === 'classic'; }
 
-function heroNew(p){
+function heroNew(p, label='最新论文'){
   const srcClass = p.source==='hf'?'src-hf':(p.source==='arxiv'?'src-arxiv':'src-classic');
   const srcLabel = p.source==='hf'?'HF Daily':(p.source==='arxiv'?'arXiv':'新文');
   return `
     <div>
-      <span class="badge hf-badge">🔥 今日最新 · <span class="src ${srcClass}" style="margin-left:6px">${srcLabel}</span> · ${escapeHtml(p.date||'')}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
+      <span class="badge hf-badge">🔥 ${escapeHtml(label)} · <span class="src ${srcClass}" style="margin-left:6px">${srcLabel}</span> · ${escapeHtml(p.date||'')}${p.upvotes?(' · 👍 '+p.upvotes):''}</span>
       <h1><a href="${p.hfUrl||p.url||p.arxiv}" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">${escapeHtml(p.title)}</a></h1>
       <div class="meta">${escapeHtml(formatAuthors(p.authors))}</div>
       <div class="abstract">${escapeHtml(p.abstract||'')}</div>
@@ -267,22 +279,24 @@ function allLatestPapers(){ return ((state.bundle && state.bundle.papers) || [])
 function allArchivePapers(){ return ((state.bundle && state.bundle.archive) || []).map(newAsGeneric); }
 function renderToday(){
   const curated = getCuratedSelection();
+  const dateStr = localDateStr();
   const news = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
+  const todayNews = news.filter(p=>p.date === dateStr);
+  const latestDate = latestDateIn(news);
+  const displayNews = todayNews.length ? todayNews : news;
   const classicList = filtered(allClassics()); // "classics revisit" block below is always 3 related from curated selection (ignoring tag filter intentionally? We'll respect filter.)
   const moreClassics = classicList.filter(p=>p.id!=='c:'+curated.hero.id).sort(()=>seededRandom(todayKey()+state.seedOffset+1)()-0.5).slice(0,3);
 
-  const top = pickNewHero(news);
+  const top = pickNewHero(displayNews);
   const heroHost = byId('heroCard');
   const sub = byId('todaySub');
   const newHost = byId('hfGrid');
   const moreHost = byId('todayMore');
   const hfSub = byId('hfSub');
 
-  const d = new Date();
-  const dateStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
   const activeTagLabel = state.activeTags.size ? (' · 主题：'+Array.from(state.activeTags).join(' / ')) : '';
   byId('datePill').textContent = `${dateStr}${activeTagLabel}`;
-  byId('todayTitle').textContent = top? '今日最新论文' : '今日精选';
+  byId('todayTitle').textContent = top ? (todayNews.length ? '今日最新论文' : '最近最新论文') : '今日精选';
   byId('todayMoreTitle').textContent = top? '更多最新' : '更多精选';
 
   if(state.loading && !state.bundle){
@@ -291,14 +305,22 @@ function renderToday(){
     byId('todaySub').textContent = '抓取新文失败，显示经典精选：'+state.bundleError;
   } else if(state.bundle){
     const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0;
-    byId('todaySub').textContent = `${dateStr} · 最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇新文（HF ${hf} / arXiv ${arx}）${activeTagLabel}`;
+    const generated = formatGeneratedAt(state.bundle.generatedAt);
+    const generatedText = generated ? ` · 数据更新 ${generated}` : '';
+    if(todayNews.length){
+      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${activeTagLabel}`;
+    } else {
+      byId('todaySub').textContent = `${dateStr} 暂无当天匹配论文，当前展示 ${latestDate || '最近'} 的最新结果；最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${activeTagLabel}`;
+    }
   }
 
   if(top){
-    heroHost.innerHTML = heroNew(top);
-    const rest = news.filter(p=>p.id!==top.id).slice(0,9);
-    hfSub.textContent = `筛选后 ${rest.length+1} 篇，按日期+热度排序`;
-    newHost.innerHTML = rest.length ? rest.map(p=>newCard(p)).join('') : '<div class="empty">今天匹配的新文只有这一篇。</div>';
+    heroHost.innerHTML = heroNew(top, todayNews.length ? '今日最新' : `最新日期 ${top.date}`);
+    const rest = displayNews.filter(p=>p.id!==top.id).slice(0,9);
+    hfSub.textContent = todayNews.length
+      ? `今日筛选后 ${rest.length+1} 篇，按日期+热度排序`
+      : `今日暂无匹配，显示 ${latestDate} 的最新论文；筛选后 ${displayNews.length} 篇`;
+    newHost.innerHTML = rest.length ? rest.map(p=>newCard(p)).join('') : `<div class="empty">${todayNews.length ? '今天匹配的新文只有这一篇。' : `${latestDate || '最近'} 匹配的新文只有这一篇。`}</div>`;
   } else {
     heroHost.innerHTML = heroCurated(curated);
     hfSub.textContent = '暂无新文数据，先看经典精选。';
@@ -309,7 +331,9 @@ function renderToday(){
 function renderLatest(){
   const list = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const days = state.bundle?.recentDays || 7;
-  byId('latestCount2').textContent = `最近 ${days} 天，共 ${list.length} 篇`;
+  const latestDate = latestDateIn(list);
+  const generated = formatGeneratedAt(state.bundle?.generatedAt);
+  byId('latestCount2').textContent = `最近 ${days} 天，共 ${list.length} 篇${latestDate ? ` · 最新日期 ${latestDate}` : ''}${generated ? ` · 数据更新 ${generated}` : ''}`;
   byId('latestGrid').innerHTML = list.length ? list.map(p=>newCard(p)).join('') : '<div class="empty">没有匹配的新论文，试试清除筛选或点「🔄 刷新最新」。</div>';
   byId('latestCount').textContent = allNewPapers().length;
 }
@@ -466,7 +490,7 @@ async function loadBundle(opts={}){
     }catch(e){ state.bundleError = String(e.message||e); }
   }
   try{
-    const r = await fetch('data/daily.json',{cache:'no-cache'});
+    const r = await fetch(`data/daily.json?v=${Date.now()}`,{cache:'no-store'});
     if(r.ok){
       const d = await r.json();
       if(d && Array.isArray(d.papers)){ state.bundle = d; }

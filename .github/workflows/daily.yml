@@ -132,7 +132,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
+      - name: Sync latest generated data
+        run: git pull --ff-only origin main
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -142,5 +145,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
 
