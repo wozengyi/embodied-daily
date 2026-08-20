@@ -1088,13 +1088,14 @@
       "pdf": "https://arxiv.org/pdf/2608.07468.pdf",
       "upvotes": 105,
       "tags": [
+        "Manipulation",
         "World Model",
         "Imitation Learning",
         "Reinforcement Learning",
-        "Autonomous Driving",
-        "WAM"
+        "Autonomous Driving"
       ],
       "topics": [
+        "Manipulation",
         "World Model",
         "Imitation Learning",
         "Reinforcement Learning",
@@ -1146,9 +1147,11 @@
       "pdf": "https://arxiv.org/pdf/2607.26657.pdf",
       "upvotes": 5,
       "tags": [
+        "Manipulation",
         "World Model"
       ],
       "topics": [
+        "Manipulation",
         "World Model"
       ],
       "source": "hf",
@@ -11761,7 +11764,8 @@
         "Reinforcement Learning",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541291+00:00"
     },
     {
       "id": "2606.30243",
@@ -11791,7 +11795,8 @@
         "Reinforcement Learning",
         "Bimanual"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541294+00:00"
     },
     {
       "id": "2606.30900",
@@ -11911,7 +11916,8 @@
         "Foundation Models",
         "Hardware"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541246+00:00"
     },
     {
       "id": "2606.30318",
@@ -11939,7 +11945,8 @@
         "Bimanual",
         "Foundation Models"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541256+00:00"
     },
     {
       "id": "2606.30290",
@@ -11967,7 +11974,8 @@
         "Reinforcement Learning",
         "Teleoperation"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541282+00:00"
     },
     {
       "id": "2606.30809",
@@ -12049,7 +12057,8 @@
         "LLM Agent",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541230+00:00"
     },
     {
       "id": "2606.30378",
@@ -12075,7 +12084,8 @@
         "LLM Agent",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541239+00:00"
     },
     {
       "id": "2608.07510",
@@ -12207,7 +12217,8 @@
         "Bimanual",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541270+00:00"
     },
     {
       "id": "2606.30893",
@@ -12353,7 +12364,8 @@
       "tags": [
         "Imitation Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541263+00:00"
     },
     {
       "id": "2606.30293",
@@ -12375,7 +12387,8 @@
       "tags": [
         "Navigation"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541276+00:00"
     },
     {
       "id": "2606.30275",
@@ -12397,7 +12410,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541288+00:00"
     },
     {
       "id": "2606.01458",
@@ -12429,7 +12443,8 @@
         "Teleoperation",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541304+00:00"
     },
     {
       "id": "2606.01151",
@@ -12461,7 +12476,8 @@
         "Imitation Learning",
         "Reinforcement Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541351+00:00"
     },
     {
       "id": "2606.01247",
@@ -12492,7 +12508,8 @@
         "Open-Source",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541331+00:00"
     },
     {
       "id": "2606.01164",
@@ -12523,7 +12540,8 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541347+00:00"
     },
     {
       "id": "2606.01205",
@@ -12553,7 +12571,8 @@
         "WAM",
         "World Model"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541337+00:00"
     },
     {
       "id": "2606.01027",
@@ -12614,7 +12633,8 @@
         "Open-Source",
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541300+00:00"
     },
     {
       "id": "2606.01241",
@@ -12642,7 +12662,8 @@
         "Imitation Learning",
         "Foundation Models"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541334+00:00"
     },
     {
       "id": "2606.01095",
@@ -12725,7 +12746,8 @@
         "Reinforcement Learning",
         "Tactile"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541317+00:00"
     },
     {
       "id": "2606.01313",
@@ -12752,7 +12774,8 @@
         "Dataset",
         "Embodied Vision"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541327+00:00"
     },
     {
       "id": "2606.01072",
@@ -12856,7 +12879,8 @@
         "Navigation",
         "Reinforcement Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541314+00:00"
     },
     {
       "id": "2606.01323",
@@ -12881,7 +12905,8 @@
         "Grasping",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541321+00:00"
     },
     {
       "id": "2606.01316",
@@ -12905,7 +12930,8 @@
         "Humanoid",
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541324+00:00"
     },
     {
       "id": "2606.01098",
@@ -12930,7 +12956,8 @@
         "Manipulation",
         "Imitation Learning"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541357+00:00"
     },
     {
       "id": "2606.01063",
@@ -13048,7 +13075,8 @@
       "tags": [
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541308+00:00"
     },
     {
       "id": "2606.01398",
@@ -13070,7 +13098,8 @@
       "tags": [
         "Dataset"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541311+00:00"
     },
     {
       "id": "2606.01203",
@@ -13092,7 +13121,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541341+00:00"
     },
     {
       "id": "2606.01170",
@@ -13115,7 +13145,8 @@
       "tags": [
         "Simulator"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541344+00:00"
     },
     {
       "id": "2606.01112",
@@ -13137,7 +13168,8 @@
       "tags": [
         "Robotics"
       ],
-      "venueLookup": "not_found"
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-20T15:30:25.541354+00:00"
     },
     {
       "id": "2606.07632",

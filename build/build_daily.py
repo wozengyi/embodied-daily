@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / 'data'
 HISTORY_PATH = DATA_DIR / 'history.json'
 OUT_PATH = DATA_DIR / 'daily.json'
+LATEST_PATH = DATA_DIR / 'latest.json'
+BOOTSTRAP_PATH = DATA_DIR / 'data.js'
 SEARCH_INDEX_PATH = DATA_DIR / 'search-index.json'
 
 UA = 'Mozilla/5.0 (EmbodiedDaily/1.1; +https://github.com/)'
@@ -26,6 +28,8 @@ EMBODIMENT_KW_BROAD = [
     'teleoperation', 'tele-op', 'teleop', 'vr control',
     'bimanual', 'dual-arm', 'aloha',
     'mobile manipulation',
+    'deformable object', 'deformable-object', 'soft object', 'soft-object', 'cloth manipulation',
+    'tactile', 'tactile manipulation', 'visuo-tactile', 'visuotactile', 'tactile dataset',
     'sim2real', 'sim-to-real', 'domain randomization',
     'vla', 'vision-language-action', 'vision language action', 'vision-language policy',
     'diffusion policy', 'behavior cloning', 'imitation learning', 'learning from demonstration',
@@ -40,12 +44,15 @@ EMBODIMENT_KW_BROAD = [
     'franka', 'panda', 'kuka', 'ur5', 'ur10', 'sawyer', 'baxter', 'fetch robot',
     'aloha', 'droid dataset', 'bridge data', 'open x-embodiment',
     'rt-1', 'rt-2', 'rt-3', 'octo', 'openvla',
+    'robot foundation model', 'generalist robot policy', 'generalist robot',
     'habitat', 'isaac lab', 'isaac sim', 'mani skill', 'robosuite', 'mujoco',
 ]
 STRONG_KWS = [
     'robot','robotic','robotics','embodied','manipulat','grasp','humanoid','locomotion','navigation',
     'teleop','dexter','bimanual','legged','vla','sim2real','unitree','allegro','shadow hand','barrett',
-    'franka','panda','kuka','aloha','mujoco','habitat','isaac','robosuite','dexterous'
+    'franka','panda','kuka','aloha','mujoco','habitat','isaac','robosuite','dexterous',
+    'tactile','visuo-tactile','visuotactile','deformable','soft object','physical intelligence',
+    'robot foundation model','generalist robot'
 ]
 
 TOPIC_RULES = [
@@ -55,7 +62,7 @@ TOPIC_RULES = [
              r'vision[- ]language[- ]model.*(policy|robot|control|action|manipulation)',
              r'language[- ]conditioned (policy|control|manipulation|action)',
              r'language[- ]guided (policy|control|manipulation)']),
-        ('Manipulation', [r'robotic manipulation', r'manipulation (task|policy|skill|of|robot|objects|object|scene|grasp|dexterous|bimanual)', r'pick[- ]and[- ]place', r'robotic arm', r'contact-rich', r'whole-arm', r'wam', r'object manipulation', r'manipulator (arm|control|kinematic)']),
+        ('Manipulation', [r'robotic manipulation', r'manipulation (task|policy|skill|dataset|benchmark|of|for|with|robot|objects|object|scene|grasp|dexterous|bimanual)', r'deformable[- ]object', r'soft[- ]object', r'cloth manipulation', r'visuo[- ]tactile.*manipulat', r'pick[- ]and[- ]place', r'robotic arm', r'contact-rich', r'whole-arm', r'\bwam\b', r'object manipulation', r'manipulator (arm|control|kinematic)']),
     ('Grasping', [r'\bgrasp(ing|er)?\b', r'6-?dof grasp', r'graspnet', r'anygrasp']),
     ('Humanoid', [r'humanoid', r'whole[- ]body control', r'anthropomorphic',
                   r'figure[- ]?0\d?', r'optimus', r'\b1x\b', r'unitree g\d', r'\batlas\b']),
@@ -84,11 +91,13 @@ TOPIC_RULES = [
     ('Simulator', [r'simulator', r'habitat', r'isaac(\s?sim|\s?lab|gym|\sgym)', r'mani[sk]ill',
                    r'robosuite', r'mujoco', r'pybullet', r'sapien']),
     ('Foundation Models', [r'foundation model', r'generalist policy', r'robot foundation model',
-                           r'general-purpose robot']),
+                           r'general-purpose robot', r'physical intelligence']),
     ('3D / Perception', [r'point cloud', r'3d (perception|representation|tracking|reconstruction)',
                          r'\bnerf\b', r'gaussian splat', r'object-centric', r'pose estimation']),
     ('Multi-task', [r'multi[- ]task', r'multitask', r'task generalization']),
-    ('Tactile', [r'tactile', r'touch sensor', r'gel(sight|slim)']),
+    ('Tactile', [r'tactile', r'visuo[- ]tactile', r'visuotactile',
+                 r'tactile (dataset|benchmark|sensor|perception|feedback|policy|manipulation)',
+                 r'touch sensor', r'gel(sight|slim)']),
     ('Embodied Vision', [r'embodied (vision|ai|agent)', r'embodied question answering', r'\beqa\b']),
     ('Hardware', [r'\bfranka\b', r'\bpanda\b', r'\bkuka\b', r'\bur[ -]?\d', r'\bsawyer\b', r'\bbaxter\b',
                   r'\bfetch\b', r'\bunitree\b', r'\ballegro\b', r'shadow hand', r'barrett hand',
@@ -135,7 +144,9 @@ def is_relevant(text, topics):
         r"\bunitree\b|\bboston dynamics\b|\ballegro hand\b|\bshadow hand\b|\bbarrett hand\b|\bfranka\b|"
         r"\bpanda\b(?! )|\bkuka\b|\bur\s?\d\b|\bsawyer\b|\bbaxter\b|\bfetch robot\b|\baloha\b|\bmujoco\b|"
         r"\bisaac( sim| lab|gym)?\b|\bhabitat\b|\brobosuite\b|\bmaniskill\b|\bwam\b|\bwhole[- ]arm\b|"
-        r"\brobotic manipulation\b|\bvision[- ]language[- ]action\b|\bvla\b"
+        r"\brobotic manipulation\b|\bvision[- ]language[- ]action\b|\bvla\b|\btactile\b|"
+        r"\bvisuo[- ]tactile\b|\bvisuotactile\b|\bdeformable[- ]object\b|\bsoft[- ]object\b|"
+        r"\bcloth manipulation\b|\bphysical intelligence\b|\brobot foundation model\b|\bgeneralist robot\b"
     )
     if not must_have.search(t):
         return False
@@ -150,7 +161,7 @@ def is_relevant(text, topics):
         r"clinical trial|rag poisoning|database transaction|acid-compliant|audit-repair|process assessment|process benchmark"
     )
     if bad_domains.search(t):
-        if not re.search(r"\brobot(ic|s)?\b|\bmanipulat|\bgrasp|\bhumanoid|\bembodied|\bsurgical robot", t):
+        if not re.search(r"\brobot(ic|s)?\b|\bmanipulat|\bgrasp|\bhumanoid|\bembodied|\bsurgical robot|\btactile|\bdeformable[- ]object|\bsoft[- ]object|\bphysical intelligence", t):
             return False
     return True
 
@@ -281,7 +292,11 @@ def fetch_arxiv(lookback_days=7, per_query=200):
         'all:"diffusion+policy"','all:"behavior+cloning"','all:"imitation+learning"','all:"world+model"',
         'all:VLA','all:"mobile+manipulation"','all:"end-to-end+control"','all:"motion+planning"',
         'all:unitree','all:"pi+0"','all:π0','all:openvla','all:"open+vla"','all:octo',
-        'all:aloha','all:franka','all:allegro','all:mujoco','all:isaac','all:"world+action+model"','ti:WAM','abs:"world+action+model"'
+        'all:aloha','all:franka','all:allegro','all:mujoco','all:isaac',
+        'all:tactile','all:"visuo+tactile"','all:visuotactile','all:"deformable+object"',
+        'all:"soft+object"','all:"cloth+manipulation"','all:"physical+intelligence"',
+        'all:"robot+foundation+model"','all:"generalist+robot"',
+        'all:"world+action+model"','ti:WAM','abs:"world+action+model"'
     ])
     queries = [
         f'({cat_or})+AND+({kw_or})',
@@ -290,6 +305,7 @@ def fetch_arxiv(lookback_days=7, per_query=200):
         f'ti:"humanoid"',
         f'ti:"VLA"',
         f'ti:"grasping"+OR+ti:"manipulation"',
+        f'ti:"tactile"+OR+ti:"visuo-tactile"+OR+ti:"deformable"+OR+ti:"soft object"',
         f'(ti:WAM+OR+abs:"world action model"+OR+abs:"world-action model"+OR+ti:"world action model")+AND+(all:robot+OR+all:robotic+OR+all:embodied+OR+all:manipulation+OR+all:humanoid+OR+all:navigation)',
     ]
     out, seen = [], set()
@@ -504,6 +520,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     archive = sorted([p for p in all_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
+    recent_total = len(recent)
     archive_total = len(archive)
     if limit is not None:
         recent = recent[:limit]
@@ -520,6 +537,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'historyTotal': len(hist.get('papers',{})),
         'publicationCounts': publication_counts(all_hist),
         'topicCounts': topic_counts(all_hist),
+        'recentTotal': recent_total,
         'count': len(recent),
         'archiveCount': len(archive),
         'archiveTotal': archive_total,
@@ -606,6 +624,40 @@ def compact_search_paper(p):
         out['abstract'] = abstract[:360]
     return out
 
+def compact_display_paper(p, abstract_limit=520):
+    keep = {
+        'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
+        'categories', 'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes', 'venue', 'venueName',
+        'venueType', 'publicationYear',
+    }
+    out = {k: p.get(k) for k in keep if p.get(k) not in (None, '', [])}
+    abstract = ' '.join((p.get('abstract') or '').split())
+    if abstract:
+        out['abstract'] = abstract[:abstract_limit]
+    return out
+
+def make_bundle_view(bundle, paper_limit=None, compact=True):
+    view = dict(bundle)
+    papers = list(bundle.get('papers') or [])
+    if paper_limit is not None:
+        papers = papers[:paper_limit]
+    if compact:
+        papers = [compact_display_paper(p) for p in papers]
+    view['papers'] = papers
+    view['archive'] = []
+    view['count'] = len(papers)
+    view['latestPath'] = 'data/latest.json'
+    view['archiveIndexPath'] = 'data/archive-index.json'
+    view['searchIndexPath'] = 'data/search-index.json'
+    return view
+
+def write_json(path, data, *, indent=None):
+    if indent is None:
+        text = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
+    else:
+        text = json.dumps(data, ensure_ascii=False, indent=indent)
+    path.write_text(text, encoding='utf-8')
+
 def write_search_index(hist):
     """Write a compact all-history index for lazy full-site search."""
     papers = sorted(
@@ -635,10 +687,17 @@ def main():
     hist = load_history()
     bundle = build_bundle(hist, recent_days=args.recent, archive_days=args.archive, limit=args.limit, archive_limit=args.archive_limit, venue_limit=args.venue_limit)
     save_history(hist)
-    OUT_PATH.write_text(json.dumps(bundle, ensure_ascii=False, indent=2), encoding='utf-8')
+    latest_bundle = make_bundle_view(bundle, paper_limit=None, compact=True)
+    light_bundle = make_bundle_view(bundle, paper_limit=36, compact=True)
+    write_json(LATEST_PATH, latest_bundle)
+    write_json(OUT_PATH, light_bundle)
+    BOOTSTRAP_PATH.write_text(
+        'window.__BUNDLE__=' + json.dumps(light_bundle, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c') + ';\n',
+        encoding='utf-8',
+    )
     write_archive_shards(hist, bundle)
     write_search_index(hist)
-    print(f'[build] wrote {OUT_PATH}: latest={bundle["count"]} (HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}), '
+    print(f'[build] wrote {OUT_PATH}: bootstrap={light_bundle["count"]}/{bundle["count"]}, latest={bundle["count"]} (HF={bundle["sources"]["hf"]}, arXiv={bundle["sources"]["arxiv"]}), '
           f'archive={bundle["archiveCount"]} (HF={bundle["archiveSources"]["hf"]}, arXiv={bundle["archiveSources"]["arxiv"]}), '
           f'addedToday={bundle["addedToday"]}, venueUpdates={bundle["venueUpdates"]}, historyTotal={bundle["historyTotal"]})')
     if bundle['warnings']:

@@ -1,4 +1,7 @@
 const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
+const DATA_VERSION = '20260820-embodied-batch-v1';
+const TODAY_MIN_PAPERS = 12;
+const TODAY_WINDOW_DAYS = 2;
 const state = {
   tab: 'today',
   search: '',
@@ -8,6 +11,9 @@ const state = {
   bookmarks: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')),
   seedOffset: 0,
   bundle: null,
+  latestBundle: null,
+  latestLoading: false,
+  latestError: null,
   loading: false,
   bundleError: null,
   tagSearch: '',
@@ -71,6 +77,12 @@ function daysAgoStr(ds){
 function localDateStr(d=new Date()){
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
+function dateMinusDays(ds, days){
+  const d = new Date(`${ds}T00:00:00`);
+  if(isNaN(d)) return ds;
+  d.setDate(d.getDate() - days);
+  return localDateStr(d);
+}
 function formatGeneratedAt(ds){
   if(!ds) return '';
   const d = new Date(ds);
@@ -79,6 +91,19 @@ function formatGeneratedAt(ds){
 }
 function latestDateIn(list){
   return list.reduce((best, p)=>((p.date||'') > best ? p.date : best), '');
+}
+function recentWindowPapers(list, dateStr, days=TODAY_WINDOW_DAYS){
+  const cutoff = dateMinusDays(dateStr, days);
+  return list.filter(p => (p.date || '') >= cutoff && (p.date || '') <= dateStr);
+}
+function uniquePapers(list){
+  const seen = new Set();
+  return list.filter(p=>{
+    const id = p.id || p.arxiv || p.title;
+    if(seen.has(id)) return false;
+    seen.add(id);
+    return true;
+  });
 }
 function venueName(p){
   return String(p.venueName || p.venue || '').trim();
@@ -157,7 +182,8 @@ function newAsGeneric(p){
   };
 }
 
-function allNewPapers(){ return (state.bundle && state.bundle.papers || []).map(newAsGeneric); }
+function latestBundle(){ return state.latestBundle || state.bundle; }
+function allNewPapers(){ return (latestBundle() && latestBundle().papers || []).map(newAsGeneric); }
 function allClassics(){ return PAPERS.map(curatedAsGeneric); }
 
 // ---------- Filtering ----------
@@ -410,7 +436,7 @@ function pickNewHero(list){
 }
 
 // ---------- Panels ----------
-function allLatestPapers(){ return ((state.bundle && state.bundle.papers) || []).map(newAsGeneric); }
+function allLatestPapers(){ return ((latestBundle() && latestBundle().papers) || []).map(newAsGeneric); }
 function allSearchPapers(){ return ((state.searchIndex && state.searchIndex.papers) || []).map(newAsGeneric); }
 function allArchivePapers(){
   const base = ((state.bundle && state.bundle.archive) || []);
@@ -428,7 +454,12 @@ function renderToday(){
   const news = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const todayNews = news.filter(p=>p.date === dateStr);
   const latestDate = latestDateIn(news);
-  const displayNews = todayNews.length ? todayNews : news;
+  const latestBatch = latestDate ? news.filter(p=>p.date === latestDate) : [];
+  const windowNews = recentWindowPapers(news, dateStr, TODAY_WINDOW_DAYS);
+  const displayNews = todayNews.length >= TODAY_MIN_PAPERS
+    ? todayNews
+    : uniquePapers([...todayNews, ...windowNews, ...latestBatch, ...news]);
+  const usingExpandedToday = Boolean(displayNews.length && todayNews.length < TODAY_MIN_PAPERS);
   const classicList = filtered(allClassics()); // "classics revisit" block below is always 3 related from curated selection (ignoring tag filter intentionally? We'll respect filter.)
   const moreClassics = classicList.filter(p=>p.id!=='c:'+curated.hero.id).sort(()=>seededRandom(todayKey()+state.seedOffset+1)()-0.5).slice(0,3);
 
@@ -441,7 +472,7 @@ function renderToday(){
 
   const activeTagLabel = state.activeTags.size ? (' · 主题：'+Array.from(state.activeTags).join(' / ')) : '';
   byId('datePill').textContent = `${dateStr}${activeTagLabel}`;
-  byId('todayTitle').textContent = top ? (todayNews.length ? '今日最新论文' : '最近最新论文') : '今日精选';
+  byId('todayTitle').textContent = top ? '今日最新论文' : '今日精选';
   byId('todayMoreTitle').textContent = top? '更多最新' : '更多精选';
 
   if(state.loading && !state.bundle){
@@ -452,20 +483,24 @@ function renderToday(){
     const hf = state.bundle.sources?.hf||0, arx = state.bundle.sources?.arxiv||0;
     const generated = formatGeneratedAt(state.bundle.generatedAt);
     const generatedText = generated ? ` · 数据更新 ${generated}` : '';
-    if(todayNews.length){
-      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${activeTagLabel}`;
+    const recentTotal = state.latestBundle?.recentTotal || state.bundle.recentTotal || state.bundle.count;
+    const fullLoadingText = state.latestLoading ? ' · 正在补全最新列表' : '';
+    if(usingExpandedToday){
+      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇，已补充最近 ${TODAY_WINDOW_DAYS * 24} 小时/最新批次共 ${displayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fullLoadingText}${activeTagLabel}`;
+    } else if(todayNews.length){
+      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fullLoadingText}${activeTagLabel}`;
     } else {
-      byId('todaySub').textContent = `${dateStr} 暂无当天匹配论文，当前展示 ${latestDate || '最近'} 的最新结果；最近 ${state.bundle.recentDays||7} 天共 ${state.bundle.count} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${activeTagLabel}`;
+      byId('todaySub').textContent = `${dateStr} 暂无当天匹配论文，当前展示 ${latestDate || '最近'} 的最新结果；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fullLoadingText}${activeTagLabel}`;
     }
   }
 
   if(top){
-    heroHost.innerHTML = heroNew(top, todayNews.length ? '今日最新' : `最新日期 ${top.date}`);
+    heroHost.innerHTML = heroNew(top, usingExpandedToday ? '今日 + 最新批次' : '今日最新');
     const rest = displayNews.filter(p=>p.id!==top.id).slice(0,9);
-    hfSub.textContent = todayNews.length
-      ? `今日筛选后 ${rest.length+1} 篇，按日期+热度排序`
-      : `今日暂无匹配，显示 ${latestDate} 的最新论文；筛选后 ${displayNews.length} 篇`;
-    newHost.innerHTML = rest.length ? rest.map(p=>newCard(p)).join('') : `<div class="empty">${todayNews.length ? '今天匹配的新文只有这一篇。' : `${latestDate || '最近'} 匹配的新文只有这一篇。`}</div>`;
+    hfSub.textContent = usingExpandedToday
+      ? `今日不足 ${TODAY_MIN_PAPERS} 篇时自动补最近批次；当前展示 ${rest.length+1}/${displayNews.length} 篇`
+      : `今日筛选后 ${rest.length+1} 篇，按日期+热度排序`;
+    newHost.innerHTML = rest.length ? rest.map(p=>newCard(p)).join('') : `<div class="empty">今日与最近批次暂时只有这一篇。</div>`;
   } else {
     heroHost.innerHTML = heroCurated(curated);
     hfSub.textContent = '暂无新文数据，先看经典精选。';
@@ -477,6 +512,9 @@ function renderLatest(){
   const searching = state.search.trim().length >= 2;
   if(searching && !state.searchIndex && !state.searchIndexLoading && !state.searchIndexError){
     loadSearchIndex();
+  }
+  if(!searching && state.bundle && !state.latestBundle && !state.latestLoading && !state.latestError){
+    loadLatestBundle();
   }
   const sourceList = searching && state.searchIndex ? allSearchPapers() : allLatestPapers();
   const list = filtered(sourceList).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
@@ -490,7 +528,8 @@ function renderLatest(){
           ? '正在加载全库搜索索引…'
           : `全库搜索索引加载失败：${state.searchIndexError || '未知错误'}`)
     : `最近 ${days} 天，共 ${list.length} 篇`;
-  byId('latestCount2').textContent = `${searchMeta}${latestDate ? ` · 最新日期 ${latestDate}` : ''}${generated ? ` · 数据更新 ${generated}` : ''}`;
+  const latestLoadMeta = (!searching && state.latestLoading) ? ' · 正在加载完整最新列表' : (!searching && state.latestError ? ` · 完整列表加载失败：${state.latestError}` : '');
+  byId('latestCount2').textContent = `${searchMeta}${latestDate ? ` · 最新日期 ${latestDate}` : ''}${generated ? ` · 数据更新 ${generated}` : ''}${latestLoadMeta}`;
   const visible = searching ? list.slice(0, state.searchResultLimit) : list;
   const more = searching && list.length > visible.length
     ? `<button class="btn small load-more" data-search-more>再显示 ${Math.min(120, list.length - visible.length)} 篇</button>`
@@ -739,13 +778,32 @@ function mountSearchExtras(){
 
 // ---------- Data loading ----------
 async function loadBundle(opts={}){
+  if(!opts.refresh && window.__BUNDLE__ && Array.isArray(window.__BUNDLE__.papers)){
+    state.bundle = window.__BUNDLE__;
+    state.loading = false;
+    state.bundleError = null;
+    render();
+    if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
+      loadArchiveIndex();
+    }
+    if(!state.latestBundle && !state.latestLoading && !state.latestError){
+      loadLatestBundle();
+    }
+    return;
+  }
   state.loading = true; state.bundleError = null; render();
   try{
-    const suffix = opts.refresh ? `?v=${Date.now()}` : '';
+    const suffix = opts.refresh ? `?v=${Date.now()}` : `?v=${DATA_VERSION}`;
     const r = await fetch(`data/daily.json${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});
     if(r.ok){
       const d = await r.json();
-      if(d && Array.isArray(d.papers)){ state.bundle = d; }
+      if(d && Array.isArray(d.papers)){
+        state.bundle = d;
+        if(opts.refresh){
+          state.latestBundle = null;
+          state.latestError = null;
+        }
+      }
       else state.bundleError = state.bundleError || 'daily.json 格式异常';
     } else {
       state.bundleError = state.bundleError || '找不到 data/daily.json，请先运行 build/build_daily.py';
@@ -756,18 +814,43 @@ async function loadBundle(opts={}){
   if(!state.archiveIndex && !state.archiveIndexLoading && !state.archiveIndexError){
     loadArchiveIndex();
   }
+  if(!state.latestBundle && !state.latestLoading && !state.latestError){
+    loadLatestBundle(opts);
+  }
+}
+async function loadLatestBundle(opts={}){
+  if(state.latestBundle || state.latestLoading) return;
+  state.latestLoading = true;
+  state.latestError = null;
+  if(state.tab === 'today' || state.tab === 'latest') render();
+  try{
+    const path = state.bundle?.latestPath || 'data/latest.json';
+    const suffix = opts.refresh ? `?v=${Date.now()}` : `?v=${DATA_VERSION}`;
+    const r = await fetch(`${path}${suffix}`, {cache: opts.refresh ? 'no-store' : 'default'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const d = await r.json();
+    if(!d || !Array.isArray(d.papers)) throw new Error('latest.json 格式异常');
+    state.latestBundle = d;
+  }catch(e){
+    state.latestError = String(e.message || e);
+  }finally{
+    state.latestLoading = false;
+    if(state.tab === 'today' || state.tab === 'latest') render();
+    else renderCounts();
+  }
 }
 async function loadArchiveIndex(){
   state.archiveIndexLoading = true;
   state.archiveIndexError = null;
   renderCounts();
   try{
-    const r = await fetch('data/archive-index.json', {cache:'default'});
+    const path = state.bundle?.archiveIndexPath || 'data/archive-index.json';
+    const r = await fetch(`${path}?v=${DATA_VERSION}`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const index = await r.json();
     if(!index || !Array.isArray(index.years)) throw new Error('archive-index.json 格式异常');
     state.archiveIndex = index;
-    state.bundle.archiveTotal = index.archiveTotal || state.bundle.archiveTotal;
+    if(state.bundle) state.bundle.archiveTotal = index.archiveTotal || state.bundle.archiveTotal;
   }catch(e){
     state.archiveIndexError = String(e.message || e);
   }finally{
@@ -782,7 +865,7 @@ async function loadArchiveYear(year){
   delete state.archiveYearErrors[year];
   if(state.tab === 'archive') renderArchive();
   try{
-    const r = await fetch(`data/archive/${year}.json`, {cache:'default'});
+    const r = await fetch(`data/archive/${year}.json?v=${DATA_VERSION}`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const data = await r.json();
     if(!data || !Array.isArray(data.papers)) throw new Error(`${year}.json 格式异常`);
@@ -801,7 +884,8 @@ async function loadSearchIndex(){
   state.searchIndexError = null;
   if(state.tab === 'latest') renderLatest();
   try{
-    const r = await fetch('data/search-index.json', {cache:'default'});
+    const path = state.bundle?.searchIndexPath || 'data/search-index.json';
+    const r = await fetch(`${path}?v=${DATA_VERSION}`, {cache:'default'});
     if(!r.ok) throw new Error('HTTP '+r.status);
     const data = await r.json();
     if(!data || !Array.isArray(data.papers)) throw new Error('search-index.json 格式异常');

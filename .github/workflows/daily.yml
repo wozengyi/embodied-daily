@@ -68,14 +68,15 @@ jobs:
           p = Path('data/daily.json')
           data = json.loads(p.read_text(encoding='utf-8'))
           warns = list(data.get('warnings') or [])
-          if (data.get('count') or 0) < 20:
+          recent_count = data.get('recentTotal') or data.get('count') or 0
+          if recent_count < 20:
               warns.append('low_paper_count')
           if warns:
               print('Warnings:', warns)
               body = (
                 f"## Daily papers build warnings\n\n"
                 f"- Generated at: `{data.get('generatedAt')}`\n"
-                f"- Latest (7 days): {data.get('count')} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
+                f"- Latest (7 days): {recent_count} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
                 f"- Archive: {data.get('archiveCount')}\n"
                 f"- History total: {data.get('historyTotal')}\n"
                 f"- Added today: {data.get('addedToday')}\n\n"
@@ -110,7 +111,7 @@ jobs:
                   except Exception as e:
                       print('Failed to create issue:', e)
           else:
-              print('Build healthy: count=', data.get('count'), 'archive=', data.get('archiveCount'))
+              print('Build healthy: count=', recent_count, 'archive=', data.get('archiveCount'))
           PY
 
       - name: Commit updated data
