@@ -30,7 +30,14 @@
         "Dataset",
         "Simulator",
         "3D / Perception"
-      ]
+      ],
+      "venue": "ICML 2024",
+      "venueName": "International Conference on Machine Learning",
+      "venueType": "conference",
+      "venueUrl": "https://icml.cc/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197448+00:00"
     },
     {
       "id": "2501.00339",
@@ -56,7 +63,14 @@
         "Grasping",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venue": "EMNLP 2024",
+      "venueName": "Conference on Empirical Methods in Natural Language Processing",
+      "venueType": "conference",
+      "venueUrl": "https://www.aclweb.org/portal/emnlp",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197483+00:00"
     },
     {
       "id": "2501.00296",
@@ -84,7 +98,9 @@
         "VLA",
         "World Model",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197485+00:00"
     },
     {
       "id": "2501.00226",
@@ -110,7 +126,13 @@
         "World Model",
         "Reinforcement Learning",
         "LLM Agent"
-      ]
+      ],
+      "venue": "Adv. Robotics 2024",
+      "venueName": "Adv. Robotics",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197528+00:00"
     },
     {
       "id": "2501.00381",
@@ -134,7 +156,9 @@
       "tags": [
         "Reinforcement Learning",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197463+00:00"
     },
     {
       "id": "2501.00368",
@@ -159,7 +183,9 @@
       "tags": [
         "Manipulation",
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197466+00:00"
     },
     {
       "id": "2501.00358",
@@ -182,7 +208,14 @@
       "tags": [
         "LLM Agent",
         "Embodied Vision"
-      ]
+      ],
+      "venue": "ICCV 2024",
+      "venueName": "IEEE International Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197474+00:00"
     },
     {
       "id": "2501.00352",
@@ -206,7 +239,9 @@
       "tags": [
         "Navigation",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197476+00:00"
     },
     {
       "id": "2501.00657",
@@ -230,7 +265,14 @@
       ],
       "tags": [
         "3D / Perception"
-      ]
+      ],
+      "venue": "CDC 2024",
+      "venueName": "IEEE Conference on Decision and Control",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=403",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197438+00:00"
     },
     {
       "id": "2501.00525",
@@ -251,7 +293,13 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "npj Digital Surgery 2024",
+      "venueName": "npj Digital Surgery",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197442+00:00"
     },
     {
       "id": "2501.00507",
@@ -272,7 +320,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE Transactions on robotics 2024",
+      "venueName": "IEEE Transactions on robotics",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8860",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197454+00:00"
     },
     {
       "id": "2501.00390",
@@ -297,7 +352,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197461+00:00"
     },
     {
       "id": "2501.00265",
@@ -319,7 +381,9 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197488+00:00"
     },
     {
       "id": "2501.01990",
@@ -341,7 +405,13 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venue": "ACM SIGEnergy Energy Informatics Review 2024",
+      "venueName": "ACM SIGEnergy Energy Informatics Review",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197493+00:00"
     },
     {
       "id": "2501.00112",
@@ -368,7 +438,9 @@
         "Locomotion",
         "Dataset",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197538+00:00"
     },
     {
       "id": "2412.20977",
@@ -424,7 +496,9 @@
         "VLA",
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197531+00:00"
     },
     {
       "id": "2501.00184",
@@ -451,7 +525,13 @@
         "Navigation",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venue": "ACM Trans. Spatial Algorithms Syst. 2024",
+      "venueName": "ACM Trans. Spatial Algorithms Syst.",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T17:58:45.197536+00:00"
     },
     {
       "id": "2412.20998",
