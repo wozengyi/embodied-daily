@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
-const DATA_VERSION = '20260821-embodied-arxiv-recall-v1';
+const DATA_VERSION = '20260821-embodied-freshness-v1';
 const TODAY_MIN_PAPERS = 12;
 const TODAY_WINDOW_DAYS = 2;
 const state = {
@@ -92,6 +92,11 @@ function formatGeneratedAt(ds){
 }
 function latestDateIn(list){
   return list.reduce((best, p)=>((p.date||'') > best ? p.date : best), '');
+}
+function latestDateCount(list, source){
+  const scoped = source ? list.filter(p=>p.source === source) : list;
+  const date = latestDateIn(scoped);
+  return {date, count: date ? scoped.filter(p=>p.date === date).length : 0};
 }
 function recentWindowPapers(list, dateStr, days=TODAY_WINDOW_DAYS){
   const cutoff = dateMinusDays(dateStr, days);
@@ -503,6 +508,7 @@ function renderToday(){
   const news = filtered(allLatestPapers()).sort((a,b)=>(b.date||'').localeCompare(a.date||'') || (b.upvotes||0)-(a.upvotes||0));
   const todayNews = news.filter(p=>p.date === dateStr);
   const latestDate = latestDateIn(news);
+  const latestArxiv = latestDateCount(news, 'arxiv');
   const latestBatch = latestDate ? news.filter(p=>p.date === latestDate) : [];
   const windowNews = recentWindowPapers(news, dateStr, TODAY_WINDOW_DAYS);
   const displayNews = todayNews.length >= TODAY_MIN_PAPERS
@@ -520,9 +526,12 @@ function renderToday(){
   const hfSub = byId('hfSub');
 
   const activeTagLabel = state.activeTags.size ? (' · 主题：'+Array.from(state.activeTags).join(' / ')) : '';
-  byId('datePill').textContent = `${dateStr}${activeTagLabel}`;
-  byId('todayTitle').textContent = top ? '今日最新论文' : '今日精选';
-  byId('todayMoreTitle').textContent = top? '更多最新' : '更多精选';
+  const batchLabel = latestArxiv.date && latestArxiv.date !== dateStr
+    ? ` · arXiv 最新批次 ${latestArxiv.date}`
+    : '';
+  byId('datePill').textContent = `${dateStr}${batchLabel}${activeTagLabel}`;
+  byId('todayTitle').textContent = top ? '最新抓取论文' : '今日精选';
+  byId('todayMoreTitle').textContent = top? '更多最新抓取' : '更多精选';
 
   if(state.loading && !state.bundle){
     byId('todaySub').textContent = '正在从 Hugging Face + arXiv 抓取最新具身论文…';
@@ -534,20 +543,23 @@ function renderToday(){
     const generatedText = generated ? ` · 数据更新 ${generated}` : '';
     const recentTotal = state.latestBundle?.recentTotal || state.bundle.recentTotal || state.bundle.count;
     const fullLoadingText = state.latestLoading ? ' · 正在补全最新列表' : '';
+    const fetchStats = state.bundle.fetchStats || {};
+    const fetchText = fetchStats.total ? ` · 本轮抓取 HF ${fetchStats.hf || 0} / arXiv ${fetchStats.arxiv || 0}` : '';
     if(usingExpandedToday){
-      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇，已补充最近 ${TODAY_WINDOW_DAYS * 24} 小时/最新批次共 ${displayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fullLoadingText}${activeTagLabel}`;
+      const arxivText = latestArxiv.date ? `；arXiv 最新批次 ${latestArxiv.date} 共 ${latestArxiv.count} 篇` : '';
+      byId('todaySub').textContent = `${dateStr} 严格当天 ${todayNews.length} 篇${arxivText}，已合并最近 ${TODAY_WINDOW_DAYS * 24} 小时/最新批次共 ${displayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
     } else if(todayNews.length){
-      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fullLoadingText}${activeTagLabel}`;
+      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
     } else {
-      byId('todaySub').textContent = `${dateStr} 暂无当天匹配论文，当前展示 ${latestDate || '最近'} 的最新结果；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fullLoadingText}${activeTagLabel}`;
+      byId('todaySub').textContent = `${dateStr} 暂无当天匹配论文，当前展示 ${latestDate || '最近'} 的最新结果；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
     }
   }
 
   if(top){
-    heroHost.innerHTML = heroNew(top, usingExpandedToday ? '今日 + 最新批次' : '今日最新');
+    heroHost.innerHTML = heroNew(top, usingExpandedToday ? '最新抓取批次' : '今日最新');
     const rest = displayNews.filter(p=>p.id!==top.id).slice(0,9);
     hfSub.textContent = usingExpandedToday
-      ? `今日不足 ${TODAY_MIN_PAPERS} 篇时自动补最近批次；当前展示 ${rest.length+1}/${displayNews.length} 篇`
+      ? `arXiv 常把北京时间当天批次记为前一日；当前首屏展示 ${rest.length+1}/${displayNews.length} 篇，完整列表见「最新」`
       : `今日筛选后 ${rest.length+1} 篇，按日期+热度排序`;
     newHost.innerHTML = rest.length ? rest.map(p=>newCard(p)).join('') : `<div class="empty">今日与最近批次暂时只有这一篇。</div>`;
   } else {

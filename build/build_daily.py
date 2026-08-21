@@ -500,6 +500,11 @@ def topic_counts(papers):
 def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None, venue_limit=40):
     hf = fetch_hf_days(days=14)
     arx = fetch_arxiv(lookback_days=7, per_query=300)
+    fetch_stats = {
+        'hf': len(hf),
+        'arxiv': len(arx),
+        'total': len(hf) + len(arx),
+    }
     # Merge sources by id (hf wins over arxiv when same id)
     by_id = {p['id']: dict(p) for p in arx}
     for p in hf:
@@ -548,6 +553,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'archiveCutoff': archive_cutoff,
         'addedToday': added,
         'venueUpdates': venue_updates,
+        'fetchStats': fetch_stats,
         'historyTotal': len(hist.get('papers',{})),
         'publicationCounts': publication_counts(all_hist),
         'topicCounts': topic_counts(all_hist),
@@ -569,6 +575,10 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     }
     if bundle['count'] == 0:
         bundle['warnings'].append('zero_papers')
+    if fetch_stats['arxiv'] < 50:
+        bundle['warnings'].append('low_arxiv_fetch_count')
+    if fetch_stats['total'] < 60:
+        bundle['warnings'].append('low_current_fetch_count')
     return bundle
 
 def write_archive_shards(hist, bundle):

@@ -2,9 +2,9 @@ name: Daily Papers Build & Deploy
 
 on:
   schedule:
-    # Every 3 hours. In Beijing time this is 08:30, 11:30, 14:30, 17:30,
-    # 20:30, 23:30, 02:30, and 05:30, so late-published papers are picked up quickly.
-    - cron: '30 */3 * * *'
+    # Hourly. arXiv/HF publication times are uneven, so a shorter interval
+    # makes the homepage feel current without waiting for a fixed daily batch.
+    - cron: '30 * * * *'
   workflow_dispatch:
     inputs:
       backfill_years:
@@ -69,14 +69,19 @@ jobs:
           data = json.loads(p.read_text(encoding='utf-8'))
           warns = list(data.get('warnings') or [])
           recent_count = data.get('recentTotal') or data.get('count') or 0
+          fetch_stats = data.get('fetchStats') or {}
+          arxiv_fetch_count = fetch_stats.get('arxiv') or 0
           if recent_count < 20:
               warns.append('low_paper_count')
+          if arxiv_fetch_count < 50:
+              warns.append('low_arxiv_fetch_count')
           if warns:
               print('Warnings:', warns)
               body = (
                 f"## Daily papers build warnings\n\n"
                 f"- Generated at: `{data.get('generatedAt')}`\n"
                 f"- Latest (7 days): {recent_count} (HF={data.get('sources',{}).get('hf')}, arXiv={data.get('sources',{}).get('arxiv')})\n"
+                f"- Current fetch: HF={fetch_stats.get('hf')}, arXiv={fetch_stats.get('arxiv')}, total={fetch_stats.get('total')}\n"
                 f"- Archive: {data.get('archiveCount')}\n"
                 f"- History total: {data.get('historyTotal')}\n"
                 f"- Added today: {data.get('addedToday')}\n\n"
