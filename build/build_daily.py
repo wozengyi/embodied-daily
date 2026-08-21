@@ -113,6 +113,8 @@ def classify_topics(text):
         for pat in pats:
             if re.search(pat, t, flags=re.IGNORECASE):
                 topics.append(name); break
+    if re.search(r'\bcs\.ro\b', t) and 'Robotics' not in topics:
+        topics.append('Robotics')
     if not topics and re.search(r'robot|robotic|embodied', t):
         topics.append('Robotics')
     # World Action Models (WAMs). The bare token 'WAM' is ambiguous (Barrett arm / Wannier / etc.),
@@ -146,7 +148,8 @@ def is_relevant(text, topics):
         r"\bisaac( sim| lab|gym)?\b|\bhabitat\b|\brobosuite\b|\bmaniskill\b|\bwam\b|\bwhole[- ]arm\b|"
         r"\brobotic manipulation\b|\bvision[- ]language[- ]action\b|\bvla\b|\btactile\b|"
         r"\bvisuo[- ]tactile\b|\bvisuotactile\b|\bdeformable[- ]object\b|\bsoft[- ]object\b|"
-        r"\bcloth manipulation\b|\bphysical intelligence\b|\brobot foundation model\b|\bgeneralist robot\b"
+        r"\bcloth manipulation\b|\bphysical intelligence\b|\brobot foundation model\b|\bgeneralist robot\b|"
+        r"\bcs\.ro\b"
     )
     if not must_have.search(t):
         return False
@@ -265,7 +268,7 @@ def parse_arxiv(xml_bytes):
         })
     return entries
 
-def fetch_arxiv_max(query, start=0, max_results=200):
+def fetch_arxiv_max(query, start=0, max_results=200, attempts=3):
     params = {
         'search_query': query,
         'sortBy': 'submittedDate',
@@ -274,8 +277,19 @@ def fetch_arxiv_max(query, start=0, max_results=200):
         'max_results': max_results,
     }
     url = 'https://export.arxiv.org/api/query?' + urllib.parse.urlencode(params)
-    raw = http_get(url, timeout=45)
-    return parse_arxiv(raw)
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        try:
+            raw = http_get(url, timeout=45)
+            return parse_arxiv(raw)
+        except Exception as e:
+            last_error = e
+            if attempt < attempts:
+                time.sleep(3.5 * attempt)
+    raise last_error
+
+def arxiv_or(terms):
+    return ' OR '.join(terms)
 
 def fetch_arxiv(lookback_days=7, per_query=200):
     """
@@ -283,36 +297,36 @@ def fetch_arxiv(lookback_days=7, per_query=200):
     We cast a wide net across categories and combine with OR keywords.
     """
     cats = ['cs.RO','cs.AI','cs.CV','cs.LG','cs.MA','eess.SY','stat.ML','cs.HC']
-    cat_or = '+OR+'.join([f'cat:{c}' for c in cats])
-    # Broad keyword OR on title+abstract
-    kw_or = '+OR+'.join([
-        'all:embodied','all:robot','all:robotic','all:robotics','all:manipulation','all:manipulator',
-        'all:grasping','all:grasp','all:dexterous','all:humanoid','all:locomotion','all:legged',
-        'all:navigation','all:teleoperation','all:bimanual','all:sim2real','all:"vision-language-action"',
-        'all:"diffusion+policy"','all:"behavior+cloning"','all:"imitation+learning"','all:"world+model"',
-        'all:VLA','all:"mobile+manipulation"','all:"end-to-end+control"','all:"motion+planning"',
-        'all:unitree','all:"pi+0"','all:π0','all:openvla','all:"open+vla"','all:octo',
-        'all:aloha','all:franka','all:allegro','all:mujoco','all:isaac',
-        'all:tactile','all:"visuo+tactile"','all:visuotactile','all:"deformable+object"',
-        'all:"soft+object"','all:"cloth+manipulation"','all:"physical+intelligence"',
-        'all:"robot+foundation+model"','all:"generalist+robot"',
-        'all:"world+action+model"','ti:WAM','abs:"world+action+model"'
-    ])
+    cat_or = arxiv_or([f'cat:{c}' for c in cats])
+    robot_kw = arxiv_or(['all:embodied','all:robot','all:robotic','all:robotics','all:humanoid','all:locomotion','all:legged','all:navigation','all:teleoperation'])
+    manipulation_kw = arxiv_or(['all:manipulation','all:manipulator','all:grasping','all:grasp','all:dexterous','all:bimanual','all:"mobile manipulation"','all:"motion planning"'])
+    policy_kw = arxiv_or(['all:"vision-language-action"','all:VLA','all:"diffusion policy"','all:"behavior cloning"','all:"imitation learning"','all:"world model"','all:"world action model"','all:"end-to-end control"'])
+    platform_kw = arxiv_or(['all:unitree','all:"pi 0"','all:π0','all:openvla','all:"open vla"','all:octo','all:aloha','all:franka','all:allegro','all:mujoco','all:isaac'])
+    tactile_kw = arxiv_or(['all:tactile','all:"visuo tactile"','all:visuotactile','all:"deformable object"','all:"soft object"','all:"cloth manipulation"','all:"physical intelligence"','all:"robot foundation model"','all:"generalist robot"'])
+    wam_or = arxiv_or(['ti:WAM', 'abs:"world action model"', 'abs:"world-action model"', 'ti:"world action model"'])
+    wam_context_or = arxiv_or(['all:robot', 'all:robotic', 'all:embodied', 'all:manipulation', 'all:humanoid', 'all:navigation'])
     queries = [
-        f'({cat_or})+AND+({kw_or})',
-        # fall-back: explicit robot phrase even without cat matches
-        f'ti:"robot"',
-        f'ti:"humanoid"',
-        f'ti:"VLA"',
-        f'ti:"grasping"+OR+ti:"manipulation"',
-        f'ti:"tactile"+OR+ti:"visuo-tactile"+OR+ti:"deformable"+OR+ti:"soft object"',
-        f'(ti:WAM+OR+abs:"world action model"+OR+abs:"world-action model"+OR+ti:"world action model")+AND+(all:robot+OR+all:robotic+OR+all:embodied+OR+all:manipulation+OR+all:humanoid+OR+all:navigation)',
+        # Keep all recent Robotics-category submissions first. The downstream relevance filter
+        # still removes obvious non-embodied false positives.
+        ('cat:cs.RO', per_query),
+        (f'({cat_or}) AND ({robot_kw})', 160),
+        (f'({cat_or}) AND ({manipulation_kw})', 160),
+        (f'({cat_or}) AND ({policy_kw})', 160),
+        (f'({cat_or}) AND ({platform_kw})', 120),
+        (f'({cat_or}) AND ({tactile_kw})', 120),
+        # fall-back: explicit robot phrase even without category matches
+        (f'ti:"robot"', 160),
+        (f'ti:"humanoid"', 120),
+        (f'ti:"VLA"', 80),
+        (arxiv_or(['ti:"grasping"', 'ti:"manipulation"']), 160),
+        (arxiv_or(['ti:"tactile"', 'ti:"visuo-tactile"', 'ti:"deformable"', 'ti:"soft object"']), 120),
+        (f'({wam_or}) AND ({wam_context_or})', 80),
     ]
     out, seen = [], set()
     cutoff = (datetime.now(timezone.utc).date() - timedelta(days=lookback_days)).isoformat()
-    for q in queries:
+    for q, max_results in queries:
         try:
-            entries = fetch_arxiv_max(q, start=0, max_results=per_query)
+            entries = fetch_arxiv_max(q, start=0, max_results=max_results)
         except Exception as e:
             print(f'[arxiv] query failed ({q[:60]}...): {e}', file=sys.stderr)
             time.sleep(3.1); continue
@@ -555,8 +569,6 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     }
     if bundle['count'] == 0:
         bundle['warnings'].append('zero_papers')
-    if added == 0 and len(hist.get('papers',{})) > 50:
-        bundle['warnings'].append('zero_new_today')
     return bundle
 
 def write_archive_shards(hist, bundle):

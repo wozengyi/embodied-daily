@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
-const DATA_VERSION = '20260821-embodied-tagmode-v1';
+const DATA_VERSION = '20260821-embodied-arxiv-recall-v1';
 const TODAY_MIN_PAPERS = 12;
 const TODAY_WINDOW_DAYS = 2;
 const state = {
