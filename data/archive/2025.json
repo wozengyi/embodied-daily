@@ -12595,7 +12595,14 @@
         "Grasping",
         "Humanoid",
         "Dataset"
-      ]
+      ],
+      "venue": "NeurIPS 2025",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420633+00:00"
     },
     {
       "id": "2507.00273",
@@ -12694,7 +12701,13 @@
         "LLM Agent",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+      "venueName": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420565+00:00"
     },
     {
       "id": "2506.23919",
@@ -12721,7 +12734,9 @@
         "Manipulation",
         "World Model",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420586+00:00"
     },
     {
       "id": "2506.23944",
@@ -12747,7 +12762,9 @@
         "Manipulation",
         "Sim2Real",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420583+00:00"
     },
     {
       "id": "2507.00268",
@@ -12829,7 +12846,9 @@
       "tags": [
         "Dataset",
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420533+00:00"
     },
     {
       "id": "2506.23852",
@@ -12852,7 +12871,13 @@
       "tags": [
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venue": "ACM Multimedia 2025",
+      "venueName": "ACM Multimedia",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420605+00:00"
     },
     {
       "id": "2506.23624",
@@ -12876,7 +12901,13 @@
       "tags": [
         "Teleoperation",
         "Hardware"
-      ]
+      ],
+      "venue": "2025 IEEE Conference on Telepresence",
+      "venueName": "2025 IEEE Conference on Telepresence",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420645+00:00"
     },
     {
       "id": "2506.23573",
@@ -12901,7 +12932,13 @@
       "tags": [
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venue": "RO-MAN 2025",
+      "venueName": "IEEE International Symposium on Robot and Human Interactive Communication",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420659+00:00"
     },
     {
       "id": "2506.23523",
@@ -12924,7 +12961,14 @@
       "tags": [
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420667+00:00"
     },
     {
       "id": "2506.23514",
@@ -12949,7 +12993,14 @@
       "tags": [
         "Open-Source",
         "3D / Perception"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420684+00:00"
     },
     {
       "id": "2506.23505",
@@ -12972,7 +13023,9 @@
       "tags": [
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420687+00:00"
     },
     {
       "id": "2507.00271",
@@ -13107,7 +13160,9 @@
       ],
       "tags": [
         "Foundation Models"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420575+00:00"
     },
     {
       "id": "2506.24009",
@@ -13129,7 +13184,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420580+00:00"
     },
     {
       "id": "2506.23793",
@@ -13152,7 +13209,14 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420619+00:00"
     },
     {
       "id": "2506.23768",
@@ -13173,7 +13237,9 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420622+00:00"
     },
     {
       "id": "2506.23723",
@@ -13194,7 +13260,14 @@
       ],
       "tags": [
         "Bimanual"
-      ]
+      ],
+      "venue": "Control Engineering Practice 2025",
+      "venueName": "Control Engineering Practice",
+      "venueType": "journal",
+      "venueUrl": "http://www.elsevier.com/wps/find/journaldescription.cws_home/123/description#description",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420639+00:00"
     },
     {
       "id": "2506.23614",
@@ -13216,7 +13289,9 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420648+00:00"
     },
     {
       "id": "2506.23520",
@@ -13237,7 +13312,14 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venue": "ACL 2025",
+      "venueName": "Annual Meeting of the Association for Computational Linguistics",
+      "venueType": "conference",
+      "venueUrl": "https://www.aclweb.org/anthology/venues/acl/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420676+00:00"
     },
     {
       "id": "2506.23351",
@@ -13270,7 +13352,9 @@
         "Bimanual",
         "Dataset",
         "Tactile"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420690+00:00"
     },
     {
       "id": "2506.23152",
@@ -13300,7 +13384,14 @@
         "Dexterous",
         "Imitation Learning",
         "Teleoperation"
-      ]
+      ],
+      "venue": "ICCV 2025",
+      "venueName": "IEEE International Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420729+00:00"
     },
     {
       "id": "2506.23135",
@@ -13328,7 +13419,14 @@
         "World Model",
         "Imitation Learning",
         "Simulator"
-      ]
+      ],
+      "venue": "NeurIPS 2025",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420736+00:00"
     },
     {
       "id": "2506.23127",
@@ -13356,7 +13454,9 @@
         "Reinforcement Learning",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420739+00:00"
     },
     {
       "id": "2506.23126",
@@ -13383,7 +13483,9 @@
         "World Model",
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420742+00:00"
     },
     {
       "id": "2506.23125",
@@ -13408,7 +13510,9 @@
         "Humanoid",
         "Locomotion",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420744+00:00"
     },
     {
       "id": "2506.23068",
@@ -13435,7 +13539,9 @@
         "Manipulation",
         "Navigation",
         "World Model"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420756+00:00"
     },
     {
       "id": "2507.02953",
@@ -13461,7 +13567,13 @@
       "tags": [
         "Grasping",
         "Navigation"
-      ]
+      ],
+      "venue": "Proceedings of the Institute of Applied Mathematics and Mechanics NAS of Ukraine 2025",
+      "venueName": "Proceedings of the Institute of Applied Mathematics and Mechanics NAS of Ukraine",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420712+00:00"
     },
     {
       "id": "2506.23046",
@@ -13487,7 +13599,14 @@
       "tags": [
         "VLA",
         "Dataset"
-      ]
+      ],
+      "venue": "NeurIPS 2025",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420762+00:00"
     },
     {
       "id": "2506.23346",
@@ -13509,7 +13628,9 @@
       ],
       "tags": [
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420693+00:00"
     },
     {
       "id": "2506.23333",
@@ -13532,7 +13653,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)",
+      "venueName": "2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420699+00:00"
     },
     {
       "id": "2506.23326",
@@ -13553,7 +13680,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE robotics & automation magazine 2025",
+      "venueName": "IEEE robotics & automation magazine",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=100",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420706+00:00"
     },
     {
       "id": "2506.23308",
@@ -13574,7 +13708,14 @@
       ],
       "tags": [
         "3D / Perception"
-      ]
+      ],
+      "venue": "MICCAI 2025",
+      "venueName": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "venueType": "conference",
+      "venueUrl": "http://www.miccai.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420720+00:00"
     },
     {
       "id": "2506.23114",
@@ -13595,7 +13736,14 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420752+00:00"
     },
     {
       "id": "2506.22827",
@@ -13625,7 +13773,9 @@
         "Humanoid",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420792+00:00"
     },
     {
       "id": "2506.22756",
@@ -13682,7 +13832,9 @@
         "Dataset",
         "3D / Perception",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420783+00:00"
     },
     {
       "id": "2506.22788",
@@ -13707,7 +13859,9 @@
         "Manipulation",
         "Dataset",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420795+00:00"
     },
     {
       "id": "2506.22784",
@@ -13758,7 +13912,9 @@
       "tags": [
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420765+00:00"
     },
     {
       "id": "2507.01058",
@@ -13783,7 +13939,9 @@
       "tags": [
         "Grasping",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420768+00:00"
     },
     {
       "id": "2506.22769",
@@ -13828,7 +13986,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "RO-MAN 2025",
+      "venueName": "IEEE International Symposium on Robot and Human Interactive Communication",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420777+00:00"
     },
     {
       "id": "2506.22942",
@@ -13849,7 +14013,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420780+00:00"
     },
     {
       "id": "2506.22890",
@@ -13871,7 +14037,14 @@
       ],
       "tags": [
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "IEEE Transactions on Mobile Computing 2025",
+      "venueName": "IEEE Transactions on Mobile Computing",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=7755",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T12:17:15.420789+00:00"
     },
     {
       "id": "2506.22766",
