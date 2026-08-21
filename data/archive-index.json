@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-08-20T21:56:39.896707+00:00",
-  "archiveTotal": 5099,
+  "generatedAt": "2026-08-21T02:12:00.489392+00:00",
+  "archiveTotal": 5118,
   "publicationCounts": {
-    "预印本": 4939,
-    "会议": 58,
-    "期刊": 102
+    "预印本": 4946,
+    "会议": 68,
+    "期刊": 104
   },
   "topicCounts": {
-    "World Model": 148,
-    "Dataset": 1482,
-    "Embodied Vision": 232,
-    "Navigation": 979,
-    "Manipulation": 814,
-    "Humanoid": 284,
-    "Locomotion": 483,
-    "Sim2Real": 179,
-    "Reinforcement Learning": 799,
-    "VLA": 350,
-    "Dexterous": 204,
-    "WAM": 40,
-    "Teleoperation": 131,
+    "Imitation Learning": 759,
+    "LLM Agent": 329,
+    "Dataset": 1485,
+    "Embodied Vision": 236,
+    "Reinforcement Learning": 802,
+    "Foundation Models": 142,
+    "VLA": 355,
+    "3D / Perception": 420,
+    "Humanoid": 285,
+    "Locomotion": 484,
+    "Navigation": 980,
+    "Sim2Real": 182,
+    "Simulator": 344,
+    "Manipulation": 819,
+    "World Model": 152,
+    "Autonomous Driving": 191,
+    "WAM": 41,
+    "Multi-task": 98,
+    "Dexterous": 206,
+    "Teleoperation": 133,
+    "Hardware": 171,
+    "Robotics": 929,
+    "Tactile": 174,
     "Mobile Manipulation": 89,
-    "Foundation Models": 141,
     "Bimanual": 115,
-    "Imitation Learning": 754,
-    "Simulator": 342,
-    "LLM Agent": 328,
-    "Robotics": 928,
     "Open-Source": 217,
-    "3D / Perception": 416,
-    "Grasping": 458,
-    "Autonomous Driving": 188,
-    "Hardware": 170,
-    "Tactile": 173,
-    "Multi-task": 97
+    "Grasping": 458
   },
-  "recentCutoff": "2026-08-13",
-  "archiveCutoff": "2021-08-21",
+  "recentCutoff": "2026-08-14",
+  "archiveCutoff": "2021-08-22",
   "years": [
     {
       "year": "2026",
-      "count": 855,
+      "count": 878,
       "months": [
         {
           "month": "2026-08",
-          "count": 246
+          "count": 269
         },
         {
           "month": "2026-07",
@@ -299,7 +299,7 @@
     },
     {
       "year": "2021",
-      "count": 357,
+      "count": 353,
       "months": [
         {
           "month": "2021-12",
@@ -319,7 +319,7 @@
         },
         {
           "month": "2021-08",
-          "count": 82
+          "count": 78
         }
       ],
       "path": "data/archive/2021.json"

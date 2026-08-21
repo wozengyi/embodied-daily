@@ -1,6 +1,6 @@
 {
   "year": "2021",
-  "count": 357,
+  "count": 353,
   "papers": [
     {
       "id": "2201.00042",
@@ -8244,94 +8244,6 @@
       ],
       "tags": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2108.09568",
-      "title": "Heterogeneous Graph Attention Networks for Learning Diverse Communication",
-      "abstract": "Multi-agent teaming achieves better performance when there is communication among participating agents allowing them to coordinate their actions for maximizing shared utility. However, when collaborating a team of agents with different action and observation spaces, information sharing is not straightforward and requires customized communication protocols, depending on sender and receiver types. Without properly modeling such heterogeneity in agents, communication becomes less helpful and could even deteriorate the multi-agent cooperation performance. We propose heterogeneous graph attention networks, called HetNet, to learn efficient and diverse communication models for coordinating heterogeneous agents towards accomplishing tasks that are of collaborative nature. We propose a Multi-Agent Heterogeneous Actor-Critic (MAHAC) learning paradigm to obtain collaborative per-class policies and effective communication protocols for composite robot teams. Our proposed framework is evaluated against multiple baselines in a complex environment in which agents of different types must communicate and cooperate to satisfy the objectives. Experimental results show that HetNet outperforms the baselines in learning sophisticated multi-agent communication protocols by achieving $\\sim$10\\% improvements in performance metrics.",
-      "authors": "Esmaeil Seraj, Zheyuan Wang, Rohan Paleja, Matthew Sklar, Anirudh Patel, Matthew Gombolay",
-      "date": "2021-08-21",
-      "published": "2021-08-21",
-      "arxiv": "https://arxiv.org/abs/2108.09568",
-      "pdf": "https://arxiv.org/pdf/2108.09568.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.MA"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2108.09490",
-      "title": "Incrementally Stochastic and Accelerated Gradient Information mixed Optimization for Manipulator Motion Planning",
-      "abstract": "This paper introduces a novel motion planner, incrementally stochastic and accelerated gradient information mixed optimization (iSAGO), for robotic manipulators in a narrow workspace. Primarily, we propose the overall scheme of iSAGO informed by the mixed momenta for an efficient constrained optimization based on the penalty method. In the stochastic part, we generate the adaptive stochastic momenta via the random selection of sub-functionals based on the adaptive momentum (Adam) method to solve the body-obstacle stuck case. Due to the slow convergence of the stochastic part, we integrate the accelerated gradient descent (AGD) to improve the planning efficiency. Moreover, we adopt the Bayesian tree inference (BTI) to transform the whole trajectory optimization (SAGO) into an incremental sub-trajectory optimization (iSAGO), which improves the computation efficiency and success rate further. Finally, we tune the key parameters and benchmark iSAGO against the other 5 planners on LBR-iiwa in a bookshelf and AUBO-i5 on a storage shelf. The result shows the highest success rate and moderate solving efficiency of iSAGO.",
-      "authors": "Yichang Feng, Jin Wang, Haiyun Zhang, Guodong Lu",
-      "date": "2021-08-21",
-      "published": "2021-08-21",
-      "arxiv": "https://arxiv.org/abs/2108.09490",
-      "pdf": "https://arxiv.org/pdf/2108.09490.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "math.OC"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Dataset"
-      ],
-      "tags": [
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2109.03040",
-      "title": "Reconfigurable co-processor architecture with limited numerical precision to accelerate deep convolutional neural networks",
-      "abstract": "Convolutional Neural Networks (CNNs) are widely used in deep learning applications, e.g. visual systems, robotics etc. However, existing software solutions are not efficient. Therefore, many hardware accelerators have been proposed optimizing performance, power and resource utilization of the implementation. Amongst existing solutions, Field Programmable Gate Array (FPGA) based architecture provides better cost-energy-performance trade-offs as well as scalability and minimizing development time. In this paper, we present a model-independent reconfigurable co-processing architecture to accelerate CNNs. Our architecture consists of parallel Multiply and Accumulate (MAC) units with caching techniques and interconnection networks to exploit maximum data parallelism. In contrast to existing solutions, we introduce limited precision 32 bit Q-format fixed point quantization for arithmetic representations and operations. As a result, our architecture achieved significant reduction in resource utilization with competitive accuracy. Furthermore, we developed an assembly-type microinstructions to access the co-processing fabric to manage layer-wise parallelism, thereby making re-use of limited resources. Finally, we have tested our architecture up to 9x9 kernel size on Xilinx Virtex 7 FPGA, achieving a throughput of up to 226.2 GOp/S for 3x3 kernel size.",
-      "authors": "Sasindu Wijeratne, Sandaruwan Jayaweera, Mahesh Dananjaya, Ajith Pasqual",
-      "date": "2021-08-21",
-      "published": "2021-08-21",
-      "arxiv": "https://arxiv.org/abs/2109.03040",
-      "pdf": "https://arxiv.org/pdf/2109.03040.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.AR",
-        "cs.DC"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2108.09442",
-      "title": "A Geometric Kinematic Model for Flexible Voxel-Based Robots",
-      "abstract": "Voxel-based structures provide a modular, mechanically flexible periodic lattice which can be used as a soft robot through internal deformations. To engage these structures for robotic tasks, we use a finite element method to characterize the motion caused by deforming single degrees of freedom and develop a reduced kinematic model. We find that node translations propagate periodically along geometric planes within the lattice, and briefly show that translational modes dominate the energy usage of the actuators. The resulting kinematic model frames the structural deformations in terms of user-defined control and end effector nodes, which further reduces the model size. The derived Planes of Motion (POM) model can be equivalently used for forward and inverse kinematics, as demonstrated by the design of a tripod stable gait for a locomotive voxel robot and validation of the quasi-static model through physical experiments.",
-      "authors": "Maryam Tebyani, Alex Spaeth, Nicholas Cramer, Mircea Teodorescu",
-      "date": "2021-08-21",
-      "published": "2021-08-21",
-      "arxiv": "https://arxiv.org/abs/2108.09442",
-      "pdf": "https://arxiv.org/pdf/2108.09442.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Locomotion"
-      ],
-      "tags": [
-        "Locomotion"
       ]
     }
   ]
