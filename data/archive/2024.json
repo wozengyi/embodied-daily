@@ -5069,7 +5069,14 @@
         "Imitation Learning",
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venue": "CVPR 2024",
+      "venueName": "Computer Vision and Pattern Recognition",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777812+00:00"
     },
     {
       "id": "2411.17855",
@@ -5097,7 +5104,9 @@
         "Grasping",
         "Imitation Learning",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777768+00:00"
     },
     {
       "id": "2411.17662",
@@ -5123,7 +5132,14 @@
         "Imitation Learning",
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venue": "CVPR 2024",
+      "venueName": "Computer Vision and Pattern Recognition",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777827+00:00"
     },
     {
       "id": "2411.17636",
@@ -5147,7 +5163,14 @@
       "tags": [
         "Navigation",
         "LLM Agent"
-      ]
+      ],
+      "venue": "IROS 2024",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777840+00:00"
     },
     {
       "id": "2412.08654",
@@ -5207,7 +5230,14 @@
         "Sim2Real",
         "Dexterous",
         "Imitation Learning"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777930+00:00"
     },
     {
       "id": "2410.24164",
@@ -5238,7 +5268,9 @@
         "Mobile Manipulation",
         "Bimanual",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777933+00:00"
     },
     {
       "id": "2410.24091",
@@ -5270,7 +5302,13 @@
         "Imitation Learning",
         "Bimanual",
         "3D / Perception"
-      ]
+      ],
+      "venue": "CoRL 2024",
+      "venueName": "Conference on Robot Learning",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777954+00:00"
     },
     {
       "id": "2410.23701",
@@ -5300,7 +5338,13 @@
         "Dexterous",
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venue": "CoRL 2024",
+      "venueName": "Conference on Robot Learning",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778054+00:00"
     },
     {
       "id": "2410.24035",
@@ -5331,7 +5375,14 @@
         "Imitation Learning",
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venue": "Robotics and Autonomous Systems 2024",
+      "venueName": "Robotics and Autonomous Systems",
+      "venueType": "journal",
+      "venueUrl": "http://www.elsevier.com/wps/find/journaldescription.cws_home/505622/description#description",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778000+00:00"
     },
     {
       "id": "2410.24205",
@@ -5359,7 +5410,9 @@
         "Reinforcement Learning",
         "Simulator",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777919+00:00"
     },
     {
       "id": "2411.00081",
@@ -5387,7 +5440,9 @@
         "LLM Agent",
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777922+00:00"
     },
     {
       "id": "2410.23535",
@@ -5442,7 +5497,14 @@
         "Manipulation",
         "Imitation Learning",
         "Bimanual"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777901+00:00"
     },
     {
       "id": "2410.24218",
@@ -5471,7 +5533,14 @@
         "Reinforcement Learning",
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venue": "EMNLP 2024",
+      "venueName": "Conference on Empirical Methods in Natural Language Processing",
+      "venueType": "conference",
+      "venueUrl": "https://www.aclweb.org/portal/emnlp",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777910+00:00"
     },
     {
       "id": "2410.24090",
@@ -5496,7 +5565,13 @@
         "Imitation Learning",
         "Dataset",
         "Tactile"
-      ]
+      ],
+      "venue": "CoRL 2024",
+      "venueName": "Conference on Robot Learning",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777990+00:00"
     },
     {
       "id": "2410.23978",
@@ -5521,7 +5596,14 @@
         "Locomotion",
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venue": "NeurIPS 2024",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778013+00:00"
     },
     {
       "id": "2410.23968",
@@ -5546,7 +5628,9 @@
         "Locomotion",
         "LLM Agent",
         "Mobile Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778017+00:00"
     },
     {
       "id": "2410.23860",
@@ -5571,7 +5655,9 @@
         "Manipulation",
         "Dexterous",
         "Tactile"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778042+00:00"
     },
     {
       "id": "2410.23643",
@@ -5596,7 +5682,14 @@
         "Grasping",
         "Dexterous",
         "Dataset"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2024",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778068+00:00"
     },
     {
       "id": "2410.23640",
@@ -5621,7 +5714,13 @@
         "VLA",
         "Manipulation",
         "LLM Agent"
-      ]
+      ],
+      "venue": "J. Robotics Mechatronics 2024",
+      "venueName": "J. Robotics Mechatronics",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778073+00:00"
     },
     {
       "id": "2410.23625",
@@ -5646,7 +5745,14 @@
         "Mobile Manipulation",
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venue": "NeurIPS 2024",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778081+00:00"
     },
     {
       "id": "2411.00174",
@@ -5671,7 +5777,14 @@
       "tags": [
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "NeurIPS 2024",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777868+00:00"
     },
     {
       "id": "2410.23963",
@@ -5694,7 +5807,14 @@
       "tags": [
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venue": "IEEE Transactions on robotics 2024",
+      "venueName": "IEEE Transactions on robotics",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8860",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778023+00:00"
     },
     {
       "id": "2411.00241",
@@ -5716,7 +5836,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "RoboSoft 2024",
+      "venueName": "International Conference on Soft Robotics",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777850+00:00"
     },
     {
       "id": "2411.00221",
@@ -5738,7 +5864,14 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venue": "IROS 2024",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777861+00:00"
     },
     {
       "id": "2411.00161",
@@ -5760,7 +5893,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777872+00:00"
     },
     {
       "id": "2411.00138",
@@ -5782,7 +5917,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "RoboSoft 2024",
+      "venueName": "International Conference on Soft Robotics",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777881+00:00"
     },
     {
       "id": "2411.00137",
@@ -5805,7 +5946,9 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777885+00:00"
     },
     {
       "id": "2410.24226",
@@ -5826,7 +5969,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2024",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777891+00:00"
     },
     {
       "id": "2411.00083",
@@ -5847,7 +5997,13 @@
       ],
       "tags": [
         "Sim2Real"
-      ]
+      ],
+      "venue": "CoRL 2024",
+      "venueName": "Conference on Robot Learning",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777916+00:00"
     },
     {
       "id": "2410.24121",
@@ -5868,7 +6024,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IAS 2024",
+      "venueName": "Annual Meeting of the IEEE Industry Applications Society",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=1253",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777948+00:00"
     },
     {
       "id": "2410.24036",
@@ -5890,7 +6053,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.777994+00:00"
     },
     {
       "id": "2410.23986",
@@ -5911,7 +6076,14 @@
       ],
       "tags": [
         "Dexterous"
-      ]
+      ],
+      "venue": "IEEE Access 2024",
+      "venueName": "IEEE Access",
+      "venueType": "journal",
+      "venueUrl": "http://www.ieee.org/publications_standards/publications/ieee_access.html",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778006+00:00"
     },
     {
       "id": "2410.23916",
@@ -5934,7 +6106,14 @@
       ],
       "tags": [
         "Foundation Models"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2024",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778030+00:00"
     },
     {
       "id": "2410.23910",
@@ -5955,7 +6134,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778033+00:00"
     },
     {
       "id": "2410.23906",
@@ -5976,7 +6157,13 @@
       ],
       "tags": [
         "Sim2Real"
-      ]
+      ],
+      "venue": "SCIA 2024",
+      "venueName": "Scandinavian Conference on Image Analysis",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778039+00:00"
     },
     {
       "id": "2410.23747",
@@ -5997,7 +6184,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778045+00:00"
     },
     {
       "id": "2410.23722",
@@ -6018,7 +6207,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778048+00:00"
     },
     {
       "id": "2410.23682",
@@ -6039,7 +6230,14 @@
       ],
       "tags": [
         "Humanoid"
-      ]
+      ],
+      "venue": "Humanoids 2024",
+      "venueName": "IEEE-RAS International Conference on Humanoid Robots",
+      "venueType": "conference",
+      "venueUrl": "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/humanoids",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778062+00:00"
     },
     {
       "id": "2410.23586",
@@ -6060,7 +6258,9 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778084+00:00"
     },
     {
       "id": "2410.23581",
@@ -6081,7 +6281,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE transactions on industrial electronics (1982. Print) 2024",
+      "venueName": "IEEE transactions on industrial electronics (1982. Print)",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=41",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T19:50:12.778092+00:00"
     },
     {
       "id": "2410.23522",
