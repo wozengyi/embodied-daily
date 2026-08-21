@@ -8138,7 +8138,9 @@
         "Manipulation",
         "Dataset",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627662+00:00"
     },
     {
       "id": "2509.25402",
@@ -8186,7 +8188,9 @@
       "tags": [
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627641+00:00"
     },
     {
       "id": "2509.25164",
@@ -8209,7 +8213,9 @@
       "tags": [
         "Dataset",
         "Multi-task"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627667+00:00"
     },
     {
       "id": "2509.25556",
@@ -8292,7 +8298,9 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627670+00:00"
     },
     {
       "id": "2509.00831",
@@ -8317,7 +8325,9 @@
         "Navigation",
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627702+00:00"
     },
     {
       "id": "2509.00789",
@@ -8342,7 +8352,9 @@
         "VLA",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627719+00:00"
     },
     {
       "id": "2509.00767",
@@ -8367,7 +8379,13 @@
         "Manipulation",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venue": "3DV 2025",
+      "venueName": "International Conference on 3D Vision",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627729+00:00"
     },
     {
       "id": "2509.00836",
@@ -8390,7 +8408,9 @@
       "tags": [
         "Navigation",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627699+00:00"
     },
     {
       "id": "2509.00670",
@@ -8417,7 +8437,14 @@
       "tags": [
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venue": "PLoS ONE 2025",
+      "venueName": "PLoS ONE",
+      "venueType": "journal",
+      "venueUrl": "https://journals.plos.org/plosone/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627738+00:00"
     },
     {
       "id": "2509.00660",
@@ -8441,7 +8468,9 @@
       "tags": [
         "Navigation",
         "Teleoperation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627740+00:00"
     },
     {
       "id": "2509.00646",
@@ -8465,7 +8494,14 @@
       "tags": [
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venue": "FIE 2025",
+      "venueName": "Frontiers in Education Conference",
+      "venueType": "conference",
+      "venueUrl": "http://fie-conference.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627747+00:00"
     },
     {
       "id": "2509.01010",
@@ -8487,7 +8523,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627673+00:00"
     },
     {
       "id": "2509.00992",
@@ -8509,7 +8547,13 @@
       ],
       "tags": [
         "Multi-task"
-      ]
+      ],
+      "venue": "ICDCSW 2025",
+      "venueName": "International Conference on Distributed Computing Systems Workshops",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627695+00:00"
     },
     {
       "id": "2509.00828",
@@ -8532,7 +8576,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "CASC 2025",
+      "venueName": "Computer Algebra in Scientific Computing",
+      "venueType": "conference",
+      "venueUrl": "http://wwwmayr.in.tum.de/CASC",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627710+00:00"
     },
     {
       "id": "2509.00823",
@@ -8555,7 +8606,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "CASC 2025",
+      "venueName": "Computer Algebra in Scientific Computing",
+      "venueType": "conference",
+      "venueUrl": "http://wwwmayr.in.tum.de/CASC",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627716+00:00"
     },
     {
       "id": "2509.00328",
@@ -8586,7 +8644,9 @@
         "Open-Source",
         "Foundation Models",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627802+00:00"
     },
     {
       "id": "2509.00465",
@@ -8615,7 +8675,9 @@
         "Imitation Learning",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627783+00:00"
     },
     {
       "id": "2509.00576",
@@ -8641,7 +8703,9 @@
         "VLA",
         "Mobile Manipulation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627749+00:00"
     },
     {
       "id": "2509.00574",
@@ -8667,7 +8731,9 @@
         "Imitation Learning",
         "Reinforcement Learning",
         "Teleoperation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627751+00:00"
     },
     {
       "id": "2509.00491",
@@ -8692,7 +8758,13 @@
         "Teleoperation",
         "Bimanual",
         "Hardware"
-      ]
+      ],
+      "venue": "SII 2025",
+      "venueName": "IEEE/SICE International Symposium on System Integration",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627781+00:00"
     },
     {
       "id": "2509.00339",
@@ -8717,7 +8789,9 @@
         "Manipulation",
         "Grasping",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627797+00:00"
     },
     {
       "id": "2509.00338",
@@ -8743,7 +8817,9 @@
         "Reinforcement Learning",
         "Open-Source",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627799+00:00"
     },
     {
       "id": "2509.00319",
@@ -8770,7 +8846,13 @@
         "Navigation",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "ROBIO 2025",
+      "venueName": "IEEE International Conference on Robotics and Biomimetics",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627808+00:00"
     },
     {
       "id": "2509.00571",
@@ -8794,7 +8876,9 @@
       "tags": [
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627754+00:00"
     },
     {
       "id": "2509.00570",
@@ -8817,7 +8901,9 @@
       "tags": [
         "Manipulation",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627756+00:00"
     },
     {
       "id": "2509.00433",
@@ -8841,7 +8927,14 @@
       "tags": [
         "Navigation",
         "3D / Perception"
-      ]
+      ],
+      "venue": "ASPLOS 2025",
+      "venueName": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.acm.org/sigplan/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627792+00:00"
     },
     {
       "id": "2509.00361",
@@ -8864,7 +8957,9 @@
       "tags": [
         "Manipulation",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627795+00:00"
     },
     {
       "id": "2509.00317",
@@ -8888,7 +8983,9 @@
       "tags": [
         "Mobile Manipulation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627810+00:00"
     },
     {
       "id": "2509.00564",
@@ -8911,7 +9008,14 @@
       ],
       "tags": [
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IROS 2024",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627764+00:00"
     },
     {
       "id": "2509.00530",
@@ -8933,7 +9037,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "EMBC 2025",
+      "venueName": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+      "venueType": "conference",
+      "venueUrl": "https://www.inscribepublications.com/journal/josa",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627772+00:00"
     },
     {
       "id": "2509.00499",
@@ -8956,7 +9067,9 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627775+00:00"
     },
     {
       "id": "2509.00294",
@@ -8978,7 +9091,14 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venue": "CDC 2025",
+      "venueName": "IEEE Conference on Decision and Control",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=403",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627819+00:00"
     },
     {
       "id": "2509.00215",
@@ -9007,7 +9127,9 @@
         "Reinforcement Learning",
         "Dataset",
         "Simulator"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627823+00:00"
     },
     {
       "id": "2509.00178",
@@ -9034,7 +9156,9 @@
         "Reinforcement Learning",
         "Simulator",
         "Hardware"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627828+00:00"
     },
     {
       "id": "2509.00210",
@@ -9060,7 +9184,9 @@
         "Navigation",
         "World Model",
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627825+00:00"
     },
     {
       "id": "2508.21690",
@@ -9085,7 +9211,9 @@
         "Navigation",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627847+00:00"
     },
     {
       "id": "2508.21501",
@@ -9228,7 +9356,9 @@
       ],
       "tags": [
         "Embodied Vision"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627821+00:00"
     },
     {
       "id": "2508.21800",
@@ -9250,7 +9380,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "NeurIPS 2025",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627834+00:00"
     },
     {
       "id": "2508.21739",
@@ -9273,7 +9410,9 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627836+00:00"
     },
     {
       "id": "2508.21724",
@@ -9295,7 +9434,13 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "RTSI 2025",
+      "venueName": "International Forum on Research and Technologies for Society and Industry Leveraging a better tomorrow",
+      "venueType": "conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T09:44:04.627844+00:00"
     },
     {
       "id": "2508.21677",
