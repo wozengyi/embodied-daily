@@ -21399,7 +21399,14 @@
         "Manipulation",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "ICLR 2025",
+      "venueName": "International Conference on Learning Representations",
+      "venueType": "conference",
+      "venueUrl": "https://iclr.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783631+00:00"
     },
     {
       "id": "2502.20607",
@@ -21424,7 +21431,9 @@
         "Navigation",
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783638+00:00"
     },
     {
       "id": "2502.20990",
@@ -22124,7 +22133,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "ICRA 2025",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783593+00:00"
     },
     {
       "id": "2502.20606",
@@ -22146,7 +22162,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Robotics 2025",
+      "venueName": "Robotics",
+      "venueType": "journal",
+      "venueUrl": "http://www.sciencedirect.com/science/journal/01678493",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783649+00:00"
     },
     {
       "id": "2502.20396",
@@ -22182,7 +22205,9 @@
         "Humanoid",
         "Sim2Real",
         "Dexterous"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783697+00:00"
     },
     {
       "id": "2502.20382",
@@ -22215,7 +22240,14 @@
         "Imitation Learning",
         "Bimanual",
         "Dataset"
-      ]
+      ],
+      "venue": "Robotics 2025",
+      "venueName": "Robotics",
+      "venueType": "journal",
+      "venueUrl": "http://www.sciencedirect.com/science/journal/01678493",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783713+00:00"
     },
     {
       "id": "2502.20018",
@@ -22247,7 +22279,14 @@
         "Dexterous",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2025",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783843+00:00"
     },
     {
       "id": "2502.19645",
@@ -22280,7 +22319,14 @@
         "Imitation Learning",
         "Bimanual",
         "Dataset"
-      ]
+      ],
+      "venue": "Robotics 2025",
+      "venueName": "Robotics",
+      "venueType": "journal",
+      "venueUrl": "http://www.sciencedirect.com/science/journal/01678493",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783918+00:00"
     },
     {
       "id": "2502.20367",
@@ -22307,7 +22353,14 @@
         "Reinforcement Learning",
         "Dataset",
         "Tactile"
-      ]
+      ],
+      "venue": "ICRA 2025",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783745+00:00"
     },
     {
       "id": "2502.20089",
@@ -22336,7 +22389,13 @@
         "Imitation Learning",
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venue": "Trans. Mach. Learn. Res. 2025",
+      "venueName": "Trans. Mach. Learn. Res.",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783788+00:00"
     },
     {
       "id": "2502.20061",
@@ -22363,7 +22422,14 @@
         "Humanoid",
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IROS 2025",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783800+00:00"
     },
     {
       "id": "2502.20030",
@@ -22392,7 +22458,13 @@
         "Dataset",
         "Open-Source",
         "Simulator"
-      ]
+      ],
+      "venue": "Trans. Mach. Learn. Res. 2025",
+      "venueName": "Trans. Mach. Learn. Res.",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783836+00:00"
     },
     {
       "id": "2502.19652",
@@ -22421,7 +22493,14 @@
         "Reinforcement Learning",
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venue": "ICLR 2025",
+      "venueName": "International Conference on Learning Representations",
+      "venueType": "conference",
+      "venueUrl": "https://iclr.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783911+00:00"
     },
     {
       "id": "2502.20386",
@@ -22446,7 +22525,9 @@
         "Humanoid",
         "Navigation",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783705+00:00"
     },
     {
       "id": "2502.20041",
@@ -22472,7 +22553,14 @@
         "Imitation Learning",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venue": "ICLR 2025",
+      "venueName": "International Conference on Learning Representations",
+      "venueType": "conference",
+      "venueUrl": "https://iclr.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783820+00:00"
     },
     {
       "id": "2502.20037",
@@ -22497,7 +22585,14 @@
         "Manipulation",
         "Grasping",
         "Dataset"
-      ]
+      ],
+      "venue": "IEEE Transactions on Mobile Computing 2025",
+      "venueName": "IEEE Transactions on Mobile Computing",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=7755",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783829+00:00"
     },
     {
       "id": "2502.19899",
@@ -22524,7 +22619,14 @@
         "Teleoperation",
         "Simulator",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "HRI 2025",
+      "venueName": "IEEE/ACM International Conference on Human-Robot Interaction",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=1232",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783860+00:00"
     },
     {
       "id": "2502.19892",
@@ -22550,7 +22652,9 @@
         "Navigation",
         "Reinforcement Learning",
         "Open-Source"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783865+00:00"
     },
     {
       "id": "2502.19859",
@@ -22575,7 +22679,14 @@
         "Navigation",
         "Imitation Learning",
         "Simulator"
-      ]
+      ],
+      "venue": "ICML 2025",
+      "venueName": "International Conference on Machine Learning",
+      "venueType": "conference",
+      "venueUrl": "https://icml.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783873+00:00"
     },
     {
       "id": "2502.19638",
@@ -22602,7 +22713,14 @@
         "Manipulation",
         "Dataset",
         "Tactile"
-      ]
+      ],
+      "venue": "ICLR 2025",
+      "venueName": "International Conference on Learning Representations",
+      "venueType": "conference",
+      "venueUrl": "https://iclr.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783926+00:00"
     },
     {
       "id": "2502.20217",
@@ -22626,7 +22744,14 @@
       "tags": [
         "Navigation",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "ICRA 2025",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783769+00:00"
     },
     {
       "id": "2502.20168",
@@ -22653,7 +22778,9 @@
       "tags": [
         "World Model",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783773+00:00"
     },
     {
       "id": "2502.19991",
@@ -22676,7 +22803,9 @@
       "tags": [
         "Teleoperation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783848+00:00"
     },
     {
       "id": "2502.19706",
@@ -22700,7 +22829,9 @@
       "tags": [
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783890+00:00"
     },
     {
       "id": "2502.20598",
@@ -22722,7 +22853,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783655+00:00"
     },
     {
       "id": "2502.20573",
@@ -22744,7 +22877,14 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venue": "ICMI 2025",
+      "venueName": "International Conference on Multimodal Interaction",
+      "venueType": "conference",
+      "venueUrl": "https://en.wikipedia.org/wiki/ACM/IEEE_Virtual_Reality_International_Conference",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783677+00:00"
     },
     {
       "id": "2502.20549",
@@ -22766,7 +22906,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783682+00:00"
     },
     {
       "id": "2502.20524",
@@ -22788,7 +22930,14 @@
       ],
       "tags": [
         "Dexterous"
-      ]
+      ],
+      "venue": "IEEE Control Systems Letters 2025",
+      "venueName": "IEEE Control Systems Letters",
+      "venueType": "journal",
+      "venueUrl": "https://ieeexplore.ieee.org/servlet/opac?punumber=7782633",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783692+00:00"
     },
     {
       "id": "2502.20391",
@@ -22809,7 +22958,9 @@
       ],
       "tags": [
         "Teleoperation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783701+00:00"
     },
     {
       "id": "2502.20369",
@@ -22831,7 +22982,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "ICRA 2025",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783732+00:00"
     },
     {
       "id": "2503.07622",
@@ -22853,7 +23011,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "HRI 2025",
+      "venueName": "IEEE/ACM International Conference on Human-Robot Interaction",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=1232",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783758+00:00"
     },
     {
       "id": "2502.20125",
@@ -22876,7 +23041,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Robotics Auton. Syst. 2025",
+      "venueName": "Robotics Auton. Syst.",
+      "venueType": "journal",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783780+00:00"
     },
     {
       "id": "2502.20054",
@@ -22898,7 +23069,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "IEEE Transactions on robotics 2025",
+      "venueName": "IEEE Transactions on robotics",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8860",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783810+00:00"
     },
     {
       "id": "2502.19832",
@@ -22919,7 +23097,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE Transactions on Automation Science and Engineering 2025",
+      "venueName": "IEEE Transactions on Automation Science and Engineering",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8856",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783886+00:00"
     },
     {
       "id": "2502.19690",
@@ -22942,7 +23127,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "ICRA 2025",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783902+00:00"
     },
     {
       "id": "2502.19544",
@@ -23024,7 +23216,14 @@
         "Reinforcement Learning",
         "Simulator",
         "Multi-task"
-      ]
+      ],
+      "venue": "ICML 2025",
+      "venueName": "International Conference on Machine Learning",
+      "venueType": "conference",
+      "venueUrl": "https://icml.cc/",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783946+00:00"
     },
     {
       "id": "2502.19374",
@@ -23259,7 +23458,14 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2025",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783937+00:00"
     },
     {
       "id": "2502.19603",
@@ -23281,7 +23487,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "ICRA 2025",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783956+00:00"
     },
     {
       "id": "2502.19595",
@@ -23302,7 +23515,14 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venue": "Adv Sci 2024",
+      "venueName": "Advancement of science",
+      "venueType": "journal",
+      "venueUrl": "http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2198-3844",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783967+00:00"
     },
     {
       "id": "2502.19592",
@@ -23323,7 +23543,14 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "Robotics 2025",
+      "venueName": "Robotics",
+      "venueType": "journal",
+      "venueUrl": "http://www.sciencedirect.com/science/journal/01678493",
+      "publicationYear": 2025,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-21T16:42:00.783974+00:00"
     },
     {
       "id": "2502.19564",
