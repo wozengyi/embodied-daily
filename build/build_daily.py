@@ -291,12 +291,39 @@ def fetch_arxiv_max(query, start=0, max_results=200, attempts=3):
 def arxiv_or(terms):
     return ' OR '.join(terms)
 
+def fetch_arxiv_announce_dates(categories, show=500):
+    """Map arXiv ids to the date shown on arxiv.org/list/<cat>/recent."""
+    out = {}
+    for cat in categories:
+        url = f'https://arxiv.org/list/{urllib.parse.quote(cat)}/recent?show={show}'
+        try:
+            html = http_get(url, timeout=45).decode('utf-8', errors='replace')
+        except Exception as e:
+            print(f'[arxiv] announce-date page failed ({cat}): {e}', file=sys.stderr)
+            continue
+        current = None
+        for line in html.splitlines():
+            m = re.search(r'<h3[^>]*>\s*([A-Z][a-z]{2},\s+\d{1,2}\s+[A-Z][a-z]{2}\s+\d{4})', line)
+            if m:
+                try:
+                    current = datetime.strptime(m.group(1), '%a, %d %b %Y').date().isoformat()
+                except Exception:
+                    current = None
+                continue
+            if not current:
+                continue
+            for aid in re.findall(r'arXiv:(\d{4}\.\d{4,5})', line):
+                out.setdefault(aid, current)
+        time.sleep(0.4)
+    return out
+
 def fetch_arxiv(lookback_days=7, per_query=200):
     """
     Fire multiple arXiv queries to maximize recall.
     We cast a wide net across categories and combine with OR keywords.
     """
     cats = ['cs.RO','cs.AI','cs.CV','cs.LG','cs.MA','eess.SY','stat.ML','cs.HC']
+    announce_dates = fetch_arxiv_announce_dates(cats)
     cat_or = arxiv_or([f'cat:{c}' for c in cats])
     robot_kw = arxiv_or(['all:embodied','all:robot','all:robotic','all:robotics','all:humanoid','all:locomotion','all:legged','all:navigation','all:teleoperation'])
     manipulation_kw = arxiv_or(['all:manipulation','all:manipulator','all:grasping','all:grasp','all:dexterous','all:bimanual','all:"mobile manipulation"','all:"motion planning"'])
@@ -338,6 +365,11 @@ def fetch_arxiv(lookback_days=7, per_query=200):
             text = f"{ent['title']} {ent['abstract']} {' '.join(ent.get('categories',[]))}"
             topics = classify_topics(text)
             if not is_relevant(text, topics): continue
+            announced = announce_dates.get(ent['id'])
+            if announced:
+                ent['submittedDate'] = ent.get('date')
+                ent['announceDate'] = announced
+                ent['date'] = announced
             ent['topics'] = topics
             ent['tags'] = topics[:5]
             out.append(ent); seen.add(ent['id']); kept += 1
@@ -386,8 +418,12 @@ def merge_into_history(hist, new_papers):
             cur['tags'] = cur['topics'][:5]
             if p.get('source') == 'hf': cur['source'] = 'hf'  # hf as "verified" source
             if p.get('hfUrl'): cur['hfUrl'] = p['hfUrl']
+            if p.get('submittedDate'): cur['submittedDate'] = p['submittedDate']
+            if p.get('announceDate'):
+                cur['announceDate'] = p['announceDate']
+                cur['date'] = p['announceDate']
             # Keep earliest date seen
-            if not cur.get('date') or (p.get('date') and p['date'] < cur['date']):
+            elif not cur.get('date') or (p.get('date') and p['date'] < cur['date']):
                 cur['date'] = p['date']
     hist['generatedAt'] = now
     return added
@@ -678,7 +714,7 @@ def write_archive_shards(hist, bundle):
 
 def compact_search_paper(p):
     keep = {
-        'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
+        'id', 'title', 'authors', 'date', 'published', 'announceDate', 'submittedDate', 'source', 'topics', 'tags',
         'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes', 'venue', 'venueName', 'venueType',
         'publicationYear',
     }
@@ -690,7 +726,7 @@ def compact_search_paper(p):
 
 def compact_display_paper(p, abstract_limit=520):
     keep = {
-        'id', 'title', 'authors', 'date', 'published', 'source', 'topics', 'tags',
+        'id', 'title', 'authors', 'date', 'published', 'announceDate', 'submittedDate', 'source', 'topics', 'tags',
         'categories', 'arxiv', 'pdf', 'url', 'hfUrl', 'upvotes', 'venue', 'venueName',
         'venueType', 'publicationYear',
     }
