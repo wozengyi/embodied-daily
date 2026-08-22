@@ -22870,7 +22870,14 @@
         "Manipulation",
         "Grasping",
         "Locomotion"
-      ]
+      ],
+      "venue": "Front Mech Eng 2023",
+      "venueName": "Frontiers of Mechanical Engineering",
+      "venueType": "journal",
+      "venueUrl": "https://link.springer.com/journal/volumesAndIssues/11465",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.186963+00:00"
     },
     {
       "id": "2303.16635",
@@ -22896,7 +22903,14 @@
         "Locomotion",
         "Navigation",
         "Open-Source"
-      ]
+      ],
+      "venue": "ICONIP 2023",
+      "venueName": "International Conference on Neural Information Processing",
+      "venueType": "conference",
+      "venueUrl": "https://link.springer.com/conference/iconip",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187009+00:00"
     },
     {
       "id": "2303.16469",
@@ -22922,7 +22936,13 @@
         "Manipulation",
         "Reinforcement Learning",
         "Simulator"
-      ]
+      ],
+      "venue": "ICAR 2023",
+      "venueName": "International Conference on Advanced Robotics",
+      "venueType": "conference",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187043+00:00"
     },
     {
       "id": "2303.16382",
@@ -22948,7 +22968,14 @@
         "Manipulation",
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venue": "ICRA 2023",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187060+00:00"
     },
     {
       "id": "2303.17047",
@@ -23003,7 +23030,14 @@
       "tags": [
         "Grasping",
         "Dataset"
-      ]
+      ],
+      "venue": "ICCV 2023",
+      "venueName": "IEEE International Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.186952+00:00"
     },
     {
       "id": "2303.16833",
@@ -23026,7 +23060,14 @@
       "tags": [
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venue": "ICRA 2023",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.186975+00:00"
     },
     {
       "id": "2303.16746",
@@ -23050,7 +23091,14 @@
       "tags": [
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.186985+00:00"
     },
     {
       "id": "2303.16500",
@@ -23073,7 +23121,14 @@
       "tags": [
         "Navigation",
         "3D / Perception"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187027+00:00"
     },
     {
       "id": "2303.16427",
@@ -23096,7 +23151,9 @@
       "tags": [
         "Imitation Learning",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187047+00:00"
     },
     {
       "id": "2303.17057",
@@ -23174,7 +23231,14 @@
       ],
       "tags": [
         "Grasping"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.186919+00:00"
     },
     {
       "id": "2304.00995",
@@ -23195,7 +23259,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "J Mech Robot 2023",
+      "venueName": "Journal of Mechanisms and Robotics",
+      "venueType": "journal",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.186993+00:00"
     },
     {
       "id": "2303.16654",
@@ -23216,7 +23286,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "ICRA 2023",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187002+00:00"
     },
     {
       "id": "2303.16567",
@@ -23237,7 +23314,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "CDC 2023",
+      "venueName": "IEEE Conference on Decision and Control",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=403",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187019+00:00"
     },
     {
       "id": "2303.16479",
@@ -23258,7 +23342,14 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "CVPR 2023",
+      "venueName": "Computer Vision and Pattern Recognition",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187035+00:00"
     },
     {
       "id": "2303.16408",
@@ -23280,7 +23371,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187051+00:00"
     },
     {
       "id": "2303.16055",
@@ -23309,7 +23402,9 @@
         "Teleoperation",
         "Bimanual",
         "3D / Perception"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187089+00:00"
     },
     {
       "id": "2303.15796",
@@ -23336,7 +23431,14 @@
         "Dataset",
         "3D / Perception",
         "Embodied Vision"
-      ]
+      ],
+      "venue": "CVPR 2023",
+      "venueName": "Computer Vision and Pattern Recognition",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187199+00:00"
     },
     {
       "id": "2303.16138",
@@ -23361,7 +23463,14 @@
         "Grasping",
         "Imitation Learning",
         "Simulator"
-      ]
+      ],
+      "venue": "ICRA 2023",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187085+00:00"
     },
     {
       "id": "2303.15900",
@@ -23386,7 +23495,14 @@
         "Locomotion",
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187161+00:00"
     },
     {
       "id": "2303.16165",
@@ -23410,7 +23526,14 @@
       "tags": [
         "Locomotion",
         "Imitation Learning"
-      ]
+      ],
+      "venue": "Journal of Dynamic Systems Measurement, and Control 2023",
+      "venueName": "Journal of Dynamic Systems Measurement, and Control",
+      "venueType": "journal",
+      "venueUrl": "http://dynamicsystems.asmedigitalcollection.asme.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187076+00:00"
     },
     {
       "id": "2303.15932",
@@ -23433,7 +23556,14 @@
       "tags": [
         "Grasping",
         "Dataset"
-      ]
+      ],
+      "venue": "ICCV 2023",
+      "venueName": "IEEE International Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187127+00:00"
     },
     {
       "id": "2303.15931",
@@ -23456,7 +23586,9 @@
       "tags": [
         "Humanoid",
         "Reinforcement Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187130+00:00"
     },
     {
       "id": "2303.15859",
@@ -23479,7 +23611,14 @@
       "tags": [
         "Dataset",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "Pattern Recognition 2023",
+      "venueName": "Pattern Recognition",
+      "venueType": "journal",
+      "venueUrl": "http://www.elsevier.com/wps/find/journaldescription.cws_home/328/description#description",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187174+00:00"
     },
     {
       "id": "2303.16194",
@@ -23500,7 +23639,14 @@
       ],
       "tags": [
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "ICLR 2023",
+      "venueName": "International Conference on Learning Representations",
+      "venueType": "conference",
+      "venueUrl": "https://iclr.cc/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187067+00:00"
     },
     {
       "id": "2303.16641",
@@ -23525,7 +23671,14 @@
       ],
       "tags": [
         "Simulator"
-      ]
+      ],
+      "venue": "SAC 2023",
+      "venueName": "ACM Symposium on Applied Computing",
+      "venueType": "conference",
+      "venueUrl": "https://www.acm.org/publications",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187100+00:00"
     },
     {
       "id": "2303.16017",
@@ -23546,7 +23699,9 @@
       ],
       "tags": [
         "VLA"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187104+00:00"
     },
     {
       "id": "2303.16010",
@@ -23568,7 +23723,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187107+00:00"
     },
     {
       "id": "2303.16009",
@@ -23590,7 +23747,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187110+00:00"
     },
     {
       "id": "2303.15972",
@@ -23611,7 +23770,14 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2023",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187117+00:00"
     },
     {
       "id": "2304.01080",
@@ -23634,7 +23800,13 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "ISCAS 2023",
+      "venueName": "International Symposium on Circuits and Systems",
+      "venueType": "conference",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187138+00:00"
     },
     {
       "id": "2303.15917",
@@ -23656,7 +23828,14 @@
       ],
       "tags": [
         "Humanoid"
-      ]
+      ],
+      "venue": "CHI 2023",
+      "venueName": "International Conference on Human Factors in Computing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.acm.org/sigchi/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187149+00:00"
     },
     {
       "id": "2303.15913",
@@ -23677,7 +23856,9 @@
       ],
       "tags": [
         "Dexterous"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187152+00:00"
     },
     {
       "id": "2303.15869",
@@ -23698,7 +23879,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "CDC 2023",
+      "venueName": "IEEE Conference on Decision and Control",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=403",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187169+00:00"
     },
     {
       "id": "2303.15857",
@@ -23719,7 +23907,14 @@
       ],
       "tags": [
         "3D / Perception"
-      ]
+      ],
+      "venue": "ICRA 2023",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187183+00:00"
     },
     {
       "id": "2303.15800",
@@ -23740,7 +23935,14 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venue": "CHI 2023",
+      "venueName": "International Conference on Human Factors in Computing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.acm.org/sigchi/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187192+00:00"
     },
     {
       "id": "2303.15732",
@@ -23761,7 +23963,13 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venue": "RoboSoft 2023",
+      "venueName": "International Conference on Soft Robotics",
+      "venueType": "conference",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187207+00:00"
     },
     {
       "id": "2303.15688",
@@ -23783,7 +23991,14 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187215+00:00"
     },
     {
       "id": "2304.03223",
@@ -23815,7 +24030,14 @@
         "Imitation Learning",
         "Reinforcement Learning",
         "Teleoperation"
-      ]
+      ],
+      "venue": "ICLR 2023",
+      "venueName": "International Conference on Learning Representations",
+      "venueType": "conference",
+      "venueUrl": "https://iclr.cc/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187228+00:00"
     },
     {
       "id": "2303.14870",
@@ -23873,7 +24095,14 @@
         "Imitation Learning",
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187236+00:00"
     },
     {
       "id": "2303.14883",
@@ -23944,7 +24173,13 @@
       ],
       "tags": [
         "Locomotion"
-      ]
+      ],
+      "venue": "2023 3rd International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)",
+      "venueName": "2023 3rd International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)",
+      "venueType": "journal",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T19:01:33.187221+00:00"
     },
     {
       "id": "2303.15213",
