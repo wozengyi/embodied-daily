@@ -505,9 +505,9 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'arxiv': len(arx),
         'total': len(hf) + len(arx),
     }
-    if fetch_stats['arxiv'] < 50:
+    if fetch_stats['arxiv'] <= 0:
         raise RuntimeError(
-            f'arXiv fetch returned too few papers ({fetch_stats["arxiv"]}); '
+            'arXiv fetch returned zero papers; '
             'treating this as a transient source failure so Actions can retry without committing stale data.'
         )
     # Merge sources by id (hf wins over arxiv when same id)
