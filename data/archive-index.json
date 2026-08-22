@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-08-21T23:51:03.199339+00:00",
-  "archiveTotal": 5118,
+  "generatedAt": "2026-08-22T02:09:12.889496+00:00",
+  "archiveTotal": 5147,
   "publicationCounts": {
-    "预印本": 4156,
-    "会议": 544,
-    "期刊": 418
+    "预印本": 4182,
+    "期刊": 419,
+    "会议": 546
   },
   "topicCounts": {
-    "Imitation Learning": 759,
-    "LLM Agent": 329,
-    "Dataset": 1485,
+    "Manipulation": 824,
+    "Grasping": 460,
+    "World Model": 156,
+    "Imitation Learning": 767,
+    "Reinforcement Learning": 804,
+    "Dataset": 1495,
+    "3D / Perception": 423,
     "Embodied Vision": 236,
-    "Reinforcement Learning": 802,
-    "Foundation Models": 142,
-    "VLA": 355,
-    "3D / Perception": 420,
-    "Humanoid": 285,
-    "Locomotion": 484,
-    "Navigation": 980,
+    "VLA": 361,
+    "Dexterous": 206,
+    "Teleoperation": 134,
+    "Tactile": 178,
+    "Robotics": 959,
+    "Simulator": 346,
+    "Navigation": 984,
+    "Autonomous Driving": 193,
+    "Humanoid": 287,
+    "Hardware": 173,
+    "Open-Source": 219,
     "Sim2Real": 182,
-    "Simulator": 344,
-    "Manipulation": 819,
-    "World Model": 152,
-    "Autonomous Driving": 191,
+    "Locomotion": 485,
+    "LLM Agent": 330,
+    "Foundation Models": 142,
     "WAM": 41,
     "Multi-task": 98,
-    "Dexterous": 206,
-    "Teleoperation": 133,
-    "Hardware": 171,
-    "Robotics": 929,
-    "Tactile": 174,
     "Mobile Manipulation": 89,
-    "Bimanual": 115,
-    "Open-Source": 217,
-    "Grasping": 458
+    "Bimanual": 115
   },
-  "recentCutoff": "2026-08-14",
-  "archiveCutoff": "2021-08-22",
+  "recentCutoff": "2026-08-15",
+  "archiveCutoff": "2021-08-23",
   "years": [
     {
       "year": "2026",
-      "count": 878,
+      "count": 917,
       "months": [
         {
           "month": "2026-08",
-          "count": 269
+          "count": 308
         },
         {
           "month": "2026-07",
@@ -299,7 +299,7 @@
     },
     {
       "year": "2021",
-      "count": 353,
+      "count": 343,
       "months": [
         {
           "month": "2021-12",
@@ -319,7 +319,7 @@
         },
         {
           "month": "2021-08",
-          "count": 78
+          "count": 68
         }
       ],
       "path": "data/archive/2021.json"
