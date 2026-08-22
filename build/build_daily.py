@@ -374,10 +374,11 @@ def merge_into_history(hist, new_papers):
             papers[p['id']] = item
             added += 1
         else:
-            fallback_seen = cur.get('published') or cur.get('date') or p.get('published') or p.get('date') or '1970-01-01'
-            if re.match(r'^\d{4}-\d{2}-\d{2}$', str(fallback_seen)):
-                fallback_seen = f'{fallback_seen}T00:00:00+00:00'
-            cur.setdefault('firstSeenAt', fallback_seen)
+            date_seen = cur.get('published') or cur.get('date') or p.get('published') or p.get('date') or ''
+            legacy_fallback = f'{date_seen}T00:00:00+00:00' if re.match(r'^\d{4}-\d{2}-\d{2}$', str(date_seen)) else None
+            if not cur.get('firstSeenAt') or (legacy_fallback and cur.get('firstSeenAt') == legacy_fallback):
+                cur['firstSeenAt'] = '1970-01-01T00:00:00+00:00'
+                cur['firstSeenAtEstimated'] = True
             cur['lastSeenAt'] = now
             # Update mutable fields (HF upvotes may grow over time)
             cur['upvotes'] = max(int(cur.get('upvotes',0)), int(p.get('upvotes',0)))
