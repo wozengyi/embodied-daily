@@ -11829,7 +11829,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095524+00:00"
     },
     {
       "id": "2308.14126",
@@ -11854,7 +11856,14 @@
         "Grasping",
         "Sim2Real",
         "3D / Perception"
-      ]
+      ],
+      "venue": "WACV 2023",
+      "venueName": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "http://www.wikicfp.com/cfp/program?id=2993",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095547+00:00"
     },
     {
       "id": "2308.14232",
@@ -11877,7 +11886,9 @@
       "tags": [
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095527+00:00"
     },
     {
       "id": "2308.14206",
@@ -11901,7 +11912,13 @@
       "tags": [
         "Manipulation",
         "Hardware"
-      ]
+      ],
+      "venue": "2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)",
+      "venueName": "2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)",
+      "venueType": "journal",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095534+00:00"
     },
     {
       "id": "2308.14064",
@@ -11924,7 +11941,9 @@
       "tags": [
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095576+00:00"
     },
     {
       "id": "2308.14005",
@@ -11947,7 +11966,14 @@
       "tags": [
         "Navigation",
         "3D / Perception"
-      ]
+      ],
+      "venue": "ICCV 2023",
+      "venueName": "IEEE International Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095595+00:00"
     },
     {
       "id": "2308.13988",
@@ -11970,7 +11996,14 @@
       "tags": [
         "Locomotion",
         "Imitation Learning"
-      ]
+      ],
+      "venue": "IEEE/ASME transactions on mechatronics 2023",
+      "venueName": "IEEE/ASME transactions on mechatronics",
+      "venueType": "journal",
+      "venueUrl": "https://ieeexplore.ieee.org/servlet/opac?punumber=3516",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095610+00:00"
     },
     {
       "id": "2308.14100",
@@ -11992,7 +12025,13 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "Comput. Biol. Medicine 2023",
+      "venueName": "Comput. Biol. Medicine",
+      "venueType": "journal",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095554+00:00"
     },
     {
       "id": "2308.14074",
@@ -12013,7 +12052,14 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venue": "ICCV 2023",
+      "venueName": "IEEE International Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome/1000149/all-proceedings",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095569+00:00"
     },
     {
       "id": "2308.14068",
@@ -12034,7 +12080,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095573+00:00"
     },
     {
       "id": "2308.14039",
@@ -12055,7 +12103,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems 2023",
+      "venueName": "IEEE Transactions on Neural Networks and Learning Systems",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=5962385",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095584+00:00"
     },
     {
       "id": "2308.13998",
@@ -12079,7 +12134,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Cybernetics and Intelligence 2023",
+      "venueName": "Cybernetics and Intelligence",
+      "venueType": "journal",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095600+00:00"
     },
     {
       "id": "2308.13955",
@@ -12104,7 +12165,14 @@
         "Manipulation",
         "Locomotion",
         "Navigation"
-      ]
+      ],
+      "venue": "ISMAR 2023",
+      "venueName": "International Symposium on Mixed and Augmented Reality",
+      "venueType": "conference",
+      "venueUrl": "https://www.ismar.net/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095623+00:00"
     },
     {
       "id": "2308.13972",
@@ -12128,7 +12196,9 @@
       "tags": [
         "Locomotion",
         "Navigation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095614+00:00"
     },
     {
       "id": "2308.13944",
@@ -12153,7 +12223,14 @@
       "tags": [
         "Dataset",
         "Hardware"
-      ]
+      ],
+      "venue": "IEEE Transactions on Instrumentation and Measurement 2023",
+      "venueName": "IEEE Transactions on Instrumentation and Measurement",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=19",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095630+00:00"
     },
     {
       "id": "2308.13936",
@@ -12177,7 +12254,9 @@
       "tags": [
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095634+00:00"
     },
     {
       "id": "2308.13929",
@@ -12201,7 +12280,14 @@
       "tags": [
         "Grasping",
         "Teleoperation"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2023",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095641+00:00"
     },
     {
       "id": "2308.13920",
@@ -12225,7 +12311,14 @@
       "tags": [
         "Grasping",
         "LLM Agent"
-      ]
+      ],
+      "venue": "ASE 2023",
+      "venueName": "International Conference on Automated Software Engineering",
+      "venueType": "conference",
+      "venueUrl": "http://ase.informatik.uni-essen.de/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095651+00:00"
     },
     {
       "id": "2308.13879",
@@ -12250,7 +12343,14 @@
       "tags": [
         "Dataset",
         "Embodied Vision"
-      ]
+      ],
+      "venue": "ICMI 2023",
+      "venueName": "International Conference on Multimodal Interaction",
+      "venueType": "conference",
+      "venueUrl": "https://en.wikipedia.org/wiki/ACM/IEEE_Virtual_Reality_International_Conference",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095661+00:00"
     },
     {
       "id": "2308.13877",
@@ -12273,7 +12373,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095665+00:00"
     },
     {
       "id": "2308.14762",
@@ -12294,7 +12396,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T15:30:38.095668+00:00"
     },
     {
       "id": "2308.13826",
