@@ -40,6 +40,9 @@ jobs:
           MAX_PAPERS="${{ github.event.inputs.max_papers || '40' }}"
           python build/enrich_venues.py --max-papers "$MAX_PAPERS"
 
+      - name: Validate generated data
+        run: python build/validate_data.py
+
       - name: Commit enriched metadata
         id: commit
         run: |

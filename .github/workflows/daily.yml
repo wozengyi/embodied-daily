@@ -60,6 +60,9 @@ jobs:
           retry_on: error
           command: python build/build_daily.py --recent 7 --archive 1825 --archive-limit 0 --venue-limit 40
 
+      - name: Validate generated data
+        run: python build/validate_data.py
+
       - name: Warn on suspicious builds
         run: |
           python - <<'PY'
