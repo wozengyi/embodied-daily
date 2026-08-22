@@ -368,9 +368,17 @@ def merge_into_history(hist, new_papers):
     for p in new_papers:
         cur = papers.get(p['id'])
         if cur is None:
-            papers[p['id']] = p
+            item = dict(p)
+            item['firstSeenAt'] = now
+            item['lastSeenAt'] = now
+            papers[p['id']] = item
             added += 1
         else:
+            fallback_seen = cur.get('published') or cur.get('date') or p.get('published') or p.get('date') or '1970-01-01'
+            if re.match(r'^\d{4}-\d{2}-\d{2}$', str(fallback_seen)):
+                fallback_seen = f'{fallback_seen}T00:00:00+00:00'
+            cur.setdefault('firstSeenAt', fallback_seen)
+            cur['lastSeenAt'] = now
             # Update mutable fields (HF upvotes may grow over time)
             cur['upvotes'] = max(int(cur.get('upvotes',0)), int(p.get('upvotes',0)))
             cur['topics'] = list(dict.fromkeys((p.get('topics') or []) + (cur.get('topics') or [])))[:8]
@@ -496,6 +504,29 @@ def topic_counts(papers):
             counts[topic] = counts.get(topic, 0) + 1
     return counts
 
+def parse_seen_at(value):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace('Z', '+00:00'))
+    except Exception:
+        return None
+
+def freshness_stats(papers, now):
+    latest_date = max((p.get('date') or '') for p in papers) if papers else ''
+    latest_published = max((p.get('published') or p.get('date') or '') for p in papers) if papers else ''
+    new_24_cutoff = now - timedelta(hours=24)
+    new_48_cutoff = now - timedelta(hours=48)
+    def first_seen_after(cutoff):
+        return sum(1 for p in papers if (parse_seen_at(p.get('firstSeenAt')) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff)
+    return {
+        'latestPaperDate': latest_date,
+        'latestPublishedDate': latest_published,
+        'latestBatchCount': sum(1 for p in papers if (p.get('date') or '') == latest_date) if latest_date else 0,
+        'newInLast24h': first_seen_after(new_24_cutoff),
+        'newInLast48h': first_seen_after(new_48_cutoff),
+    }
+
 # ---------- Build ----------
 def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_limit=None, venue_limit=40):
     hf = fetch_hf_days(days=14)
@@ -533,6 +564,8 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     #   - archive: everything older than `recent_days` but within `archive_days`
     all_hist = list(hist['papers'].values())
     today = datetime.now(timezone.utc).date()
+    now = datetime.now(timezone.utc)
+    today_iso = today.isoformat()
     recent_cutoff = (today - timedelta(days=recent_days)).isoformat()
     archive_cutoff = (today - timedelta(days=archive_days)).isoformat()
     def keyf(p):
@@ -540,8 +573,9 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
                 1 if p.get('source')=='hf' else 0,
                 int(p.get('upvotes') or 0),
                 len(p.get('topics') or []))
-    recent = sorted([p for p in all_hist if (p.get('date') or '0000-00-00') >= recent_cutoff], key=keyf, reverse=True)
-    archive = sorted([p for p in all_hist
+    visible_hist = [p for p in all_hist if (p.get('date') or '0000-00-00') <= today_iso]
+    recent = sorted([p for p in visible_hist if (p.get('date') or '0000-00-00') >= recent_cutoff], key=keyf, reverse=True)
+    archive = sorted([p for p in visible_hist
                        if archive_cutoff <= (p.get('date') or '0000-00-00') < recent_cutoff],
                       key=keyf, reverse=True)
     recent_total = len(recent)
@@ -557,11 +591,13 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
         'recentCutoff': recent_cutoff,
         'archiveCutoff': archive_cutoff,
         'addedToday': added,
+        'addedThisRun': added,
         'venueUpdates': venue_updates,
         'fetchStats': fetch_stats,
-        'historyTotal': len(hist.get('papers',{})),
-        'publicationCounts': publication_counts(all_hist),
-        'topicCounts': topic_counts(all_hist),
+        'freshness': freshness_stats(visible_hist, now),
+        'historyTotal': len(visible_hist),
+        'publicationCounts': publication_counts(visible_hist),
+        'topicCounts': topic_counts(visible_hist),
         'recentTotal': recent_total,
         'count': len(recent),
         'archiveCount': len(archive),
@@ -687,8 +723,9 @@ def write_json(path, data, *, indent=None):
 
 def write_search_index(hist):
     """Write a compact all-history index for lazy full-site search."""
+    today_iso = datetime.now(timezone.utc).date().isoformat()
     papers = sorted(
-        hist.get('papers', {}).values(),
+        [p for p in hist.get('papers', {}).values() if (p.get('date') or '0000-00-00') <= today_iso],
         key=lambda p: ((p.get('date') or '0000-00-00'), int(p.get('upvotes') or 0)),
         reverse=True,
     )

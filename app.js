@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'embodied-daily-bookmarks-v2';
-const DATA_VERSION = '20260821-embodied-freshness-v1';
+const DATA_VERSION = '20260822-embodied-seen-v1';
 const TODAY_MIN_PAPERS = 12;
 const TODAY_WINDOW_DAYS = 2;
 const state = {
@@ -526,10 +526,13 @@ function renderToday(){
   const hfSub = byId('hfSub');
 
   const activeTagLabel = state.activeTags.size ? (' · 主题：'+Array.from(state.activeTags).join(' / ')) : '';
-  const batchLabel = latestArxiv.date && latestArxiv.date !== dateStr
-    ? ` · arXiv 最新批次 ${latestArxiv.date}`
-    : '';
-  byId('datePill').textContent = `${dateStr}${batchLabel}${activeTagLabel}`;
+  const activeBundle = state.latestBundle || state.bundle || {};
+  const freshness = activeBundle.freshness || {};
+  const latestBatchDate = freshness.latestPaperDate || latestArxiv.date || latestDate;
+  const latestBatchCount = freshness.latestBatchCount || (latestBatchDate ? news.filter(p=>p.date === latestBatchDate).length : 0);
+  const new24 = freshness.newInLast24h ?? 0;
+  const new48 = freshness.newInLast48h ?? 0;
+  byId('datePill').textContent = `最新批次 ${latestBatchDate || dateStr} · 近24h入库 ${new24}${activeTagLabel}`;
   byId('todayTitle').textContent = top ? '最新抓取论文' : '今日精选';
   byId('todayMoreTitle').textContent = top? '更多最新抓取' : '更多精选';
 
@@ -546,12 +549,11 @@ function renderToday(){
     const fetchStats = state.bundle.fetchStats || {};
     const fetchText = fetchStats.total ? ` · 本轮抓取 HF ${fetchStats.hf || 0} / arXiv ${fetchStats.arxiv || 0}` : '';
     if(usingExpandedToday){
-      const arxivText = latestArxiv.date ? `；arXiv 最新批次 ${latestArxiv.date} 共 ${latestArxiv.count} 篇` : '';
-      byId('todaySub').textContent = `${dateStr} 严格当天 ${todayNews.length} 篇${arxivText}，已合并最近 ${TODAY_WINDOW_DAYS * 24} 小时/最新批次共 ${displayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
+      byId('todaySub').textContent = `最新发布批次 ${latestBatchDate || latestDate || dateStr} 共 ${latestBatchCount} 篇；近24h新入库 ${new24} 篇，近48h ${new48} 篇；当前展示 ${displayNews.length} 篇，最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
     } else if(todayNews.length){
-      byId('todaySub').textContent = `${dateStr} · 今日匹配 ${todayNews.length} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
+      byId('todaySub').textContent = `最新发布批次 ${latestBatchDate || dateStr} 共 ${latestBatchCount} 篇；近24h新入库 ${new24} 篇，近48h ${new48} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
     } else {
-      byId('todaySub').textContent = `${dateStr} 暂无当天匹配论文，当前展示 ${latestDate || '最近'} 的最新结果；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
+      byId('todaySub').textContent = `当前没有本地日期 ${dateStr} 的发布批次，展示 ${latestBatchDate || latestDate || '最近'} 最新结果；近24h新入库 ${new24} 篇，近48h ${new48} 篇；最近 ${state.bundle.recentDays||7} 天共 ${recentTotal} 篇（HF ${hf} / arXiv ${arx}）${generatedText}${fetchText}${fullLoadingText}${activeTagLabel}`;
     }
   }
 
