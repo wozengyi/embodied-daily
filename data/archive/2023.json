@@ -24,7 +24,13 @@
       "tags": [
         "Imitation Learning",
         "Open-Source"
-      ]
+      ],
+      "venue": "ERF 2023",
+      "venueName": "European Robotics Forum",
+      "venueType": "conference",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084160+00:00"
     },
     {
       "id": "2401.00496",
@@ -49,7 +55,9 @@
       "tags": [
         "Dataset",
         "Multi-task"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084167+00:00"
     },
     {
       "id": "2401.00438",
@@ -70,7 +78,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084173+00:00"
     },
     {
       "id": "2401.00330",
@@ -94,7 +104,9 @@
       "tags": [
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084177+00:00"
     },
     {
       "id": "2401.00212",
@@ -119,7 +131,14 @@
       "tags": [
         "Sim2Real",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IEEE Transactions on robotics 2023",
+      "venueName": "IEEE Transactions on robotics",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8860",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084197+00:00"
     },
     {
       "id": "2401.00104",
@@ -144,7 +163,14 @@
       "tags": [
         "Grasping",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "CLEaR 2023",
+      "venueName": "CLEaR",
+      "venueType": "conference",
+      "venueUrl": "http://www.jolace.com/publications/clear/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084230+00:00"
     },
     {
       "id": "2401.00880",
@@ -165,7 +191,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084185+00:00"
     },
     {
       "id": "2401.00167",
@@ -187,7 +215,14 @@
       ],
       "tags": [
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "AAAI 2023",
+      "venueName": "AAAI Conference on Artificial Intelligence",
+      "venueType": "conference",
+      "venueUrl": "http://www.aaai.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084213+00:00"
     },
     {
       "id": "2312.17643",
@@ -262,7 +297,14 @@
       "tags": [
         "Dataset",
         "3D / Perception"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2023",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084251+00:00"
     },
     {
       "id": "2312.17650",
@@ -353,7 +395,13 @@
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "venue": "L4DC 2023",
+      "venueName": "Conference on Learning for Dynamics & Control",
+      "venueType": "conference",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T07:38:36.084241+00:00"
     },
     {
       "id": "2312.17634",
