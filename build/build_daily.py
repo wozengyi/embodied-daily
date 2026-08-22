@@ -288,6 +288,30 @@ def fetch_arxiv_max(query, start=0, max_results=200, attempts=3):
                 time.sleep(3.5 * attempt)
     raise last_error
 
+def fetch_arxiv_id_list(ids, batch_size=100, attempts=3):
+    out = []
+    ids = list(dict.fromkeys(ids))
+    for i in range(0, len(ids), batch_size):
+        batch = ids[i:i+batch_size]
+        params = {
+            'id_list': ','.join(batch),
+            'max_results': len(batch),
+        }
+        url = 'https://export.arxiv.org/api/query?' + urllib.parse.urlencode(params)
+        last_error = None
+        for attempt in range(1, attempts + 1):
+            try:
+                out.extend(parse_arxiv(http_get(url, timeout=45)))
+                break
+            except Exception as e:
+                last_error = e
+                if attempt < attempts:
+                    time.sleep(3.5 * attempt)
+        else:
+            print(f'[arxiv] id_list failed ({len(batch)} ids): {last_error}', file=sys.stderr)
+        time.sleep(3.1)
+    return out
+
 def arxiv_or(terms):
     return ' OR '.join(terms)
 
@@ -351,6 +375,36 @@ def fetch_arxiv(lookback_days=7, per_query=200):
     ]
     out, seen = [], set()
     cutoff = (datetime.now(timezone.utc).date() - timedelta(days=lookback_days)).isoformat()
+
+    def keep_entry(ent):
+        if ent['id'] in seen:
+            return False
+        announced = announce_dates.get(ent['id'])
+        effective_date = announced or ent.get('date') or '0000-00-00'
+        if effective_date < cutoff:
+            return False
+        text = f"{ent['title']} {ent['abstract']} {' '.join(ent.get('categories',[]))}"
+        topics = classify_topics(text)
+        if not is_relevant(text, topics):
+            return False
+        if announced:
+            ent['submittedDate'] = ent.get('date')
+            ent['announceDate'] = announced
+            ent['date'] = announced
+        ent['topics'] = topics
+        ent['tags'] = topics[:5]
+        out.append(ent)
+        seen.add(ent['id'])
+        return True
+
+    recent_ids = [aid for aid, date in announce_dates.items() if date >= cutoff]
+    if recent_ids:
+        kept = 0
+        for ent in fetch_arxiv_id_list(recent_ids):
+            if keep_entry(ent):
+                kept += 1
+        print(f'[arxiv] recent pages kept {kept} entries from {len(recent_ids)} ids', file=sys.stderr)
+
     for q, max_results in queries:
         try:
             entries = fetch_arxiv_max(q, start=0, max_results=max_results)
@@ -359,20 +413,8 @@ def fetch_arxiv(lookback_days=7, per_query=200):
             time.sleep(3.1); continue
         kept = 0
         for ent in entries:
-            if ent['id'] in seen: continue
-            # Only keep papers within the lookback window
-            if (ent.get('date') or '0000-00-00') < cutoff: continue
-            text = f"{ent['title']} {ent['abstract']} {' '.join(ent.get('categories',[]))}"
-            topics = classify_topics(text)
-            if not is_relevant(text, topics): continue
-            announced = announce_dates.get(ent['id'])
-            if announced:
-                ent['submittedDate'] = ent.get('date')
-                ent['announceDate'] = announced
-                ent['date'] = announced
-            ent['topics'] = topics
-            ent['tags'] = topics[:5]
-            out.append(ent); seen.add(ent['id']); kept += 1
+            if keep_entry(ent):
+                kept += 1
         print(f'[arxiv] query kept {kept} new entries', file=sys.stderr)
         time.sleep(3.1)  # respect arXiv rate limit
     return out
