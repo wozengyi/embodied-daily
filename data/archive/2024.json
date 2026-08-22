@@ -24555,7 +24555,14 @@
         "Grasping",
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems 2024",
+      "venueName": "IEEE Transactions on Neural Networks and Learning Systems",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=5962385",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343599+00:00"
     },
     {
       "id": "2403.19879",
@@ -24746,7 +24753,9 @@
       "tags": [
         "Navigation",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343534+00:00"
     },
     {
       "id": "2405.00695",
@@ -24771,7 +24780,9 @@
       "tags": [
         "Manipulation",
         "Imitation Learning"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343584+00:00"
     },
     {
       "id": "2403.19122",
@@ -24795,7 +24806,14 @@
       "tags": [
         "Navigation",
         "Dataset"
-      ]
+      ],
+      "venue": "ACC 2024",
+      "venueName": "American Control Conference",
+      "venueType": "conference",
+      "venueUrl": "http://a2c2.org/conferences/american-control-conferences",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343627+00:00"
     },
     {
       "id": "2403.19862",
@@ -25033,7 +25051,13 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "Adv. Robotics 2024",
+      "venueName": "Adv. Robotics",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343570+00:00"
     },
     {
       "id": "2403.19293",
@@ -25055,7 +25079,9 @@
       ],
       "tags": [
         "Manipulation"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343579+00:00"
     },
     {
       "id": "2403.19129",
@@ -25076,7 +25102,14 @@
       ],
       "tags": [
         "Tactile"
-      ]
+      ],
+      "venue": "IROS 2024",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343612+00:00"
     },
     {
       "id": "2403.19102",
@@ -25097,7 +25130,9 @@
       ],
       "tags": [
         "Grasping"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343631+00:00"
     },
     {
       "id": "2403.19093",
@@ -25119,7 +25154,14 @@
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "venue": "IROS 2023",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343641+00:00"
     },
     {
       "id": "2403.18960",
@@ -25146,7 +25188,14 @@
         "Grasping",
         "Dexterous",
         "Imitation Learning"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343713+00:00"
     },
     {
       "id": "2403.19026",
@@ -25171,7 +25220,9 @@
         "Navigation",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343660+00:00"
     },
     {
       "id": "2403.18821",
@@ -25199,7 +25250,14 @@
         "Sim2Real",
         "Imitation Learning",
         "Dataset"
-      ]
+      ],
+      "venue": "CVPR 2024",
+      "venueName": "Computer Vision and Pattern Recognition",
+      "venueType": "conference",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343723+00:00"
     },
     {
       "id": "2403.18760",
@@ -25224,7 +25282,14 @@
         "LLM Agent",
         "Dataset",
         "Open-Source"
-      ]
+      ],
+      "venue": "DASFAA 2024",
+      "venueName": "International Conference on Database Systems for Advanced Applications",
+      "venueType": "conference",
+      "venueUrl": "http://www.dasfaa.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343746+00:00"
     },
     {
       "id": "2403.18972",
@@ -25248,7 +25313,14 @@
       "tags": [
         "Locomotion",
         "Autonomous Driving"
-      ]
+      ],
+      "venue": "IEEE Control Systems 2024",
+      "venueName": "IEEE Control Systems",
+      "venueType": "journal",
+      "venueUrl": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5488303",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343677+00:00"
     },
     {
       "id": "2403.18778",
@@ -25271,7 +25343,9 @@
       "tags": [
         "Navigation",
         "LLM Agent"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343726+00:00"
     },
     {
       "id": "2403.18765",
@@ -25295,7 +25369,14 @@
       "tags": [
         "Locomotion",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IROS 2024",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343738+00:00"
     },
     {
       "id": "2403.18546",
@@ -25320,7 +25401,14 @@
       "tags": [
         "Grasping",
         "3D / Perception"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2023",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343798+00:00"
     },
     {
       "id": "2403.19060",
@@ -25344,7 +25432,14 @@
       ],
       "tags": [
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IROS 2024",
+      "venueName": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.iros.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343650+00:00"
     },
     {
       "id": "2403.19027",
@@ -25366,7 +25461,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "CHI Extended Abstracts 2024",
+      "venueName": "CHI Extended Abstracts",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343657+00:00"
     },
     {
       "id": "2403.19010",
@@ -25387,7 +25488,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343670+00:00"
     },
     {
       "id": "2403.18721",
@@ -25408,7 +25516,13 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venue": "2024 33rd IEEE International Conference on Robot and Human Interactive Communication (ROMAN)",
+      "venueName": "2024 33rd IEEE International Conference on Robot and Human Interactive Communication (ROMAN)",
+      "venueType": "journal",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343752+00:00"
     },
     {
       "id": "2403.18692",
@@ -25430,7 +25544,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343756+00:00"
     },
     {
       "id": "2403.18650",
@@ -25451,7 +25567,13 @@
       ],
       "tags": [
         "Teleoperation"
-      ]
+      ],
+      "venue": "ECC 2024",
+      "venueName": "European Control Conference",
+      "venueType": "conference",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343764+00:00"
     },
     {
       "id": "2403.18632",
@@ -25472,7 +25594,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "IEEE Transactions on Automatic Control 2024",
+      "venueName": "IEEE Transactions on Automatic Control",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=9",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343770+00:00"
     },
     {
       "id": "2403.18616",
@@ -25494,7 +25623,14 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Interacción 2024",
+      "venueName": "Interacción",
+      "venueType": "conference",
+      "venueUrl": "http://www.hci-international.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343784+00:00"
     },
     {
       "id": "2403.18588",
@@ -25516,7 +25652,13 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venue": "Annu. Rev. Control. Robotics Auton. Syst. 2023",
+      "venueName": "Annu. Rev. Control. Robotics Auton. Syst.",
+      "venueType": "journal",
+      "publicationYear": 2023,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343790+00:00"
     },
     {
       "id": "2402.19432",
@@ -25546,7 +25688,14 @@
         "Navigation",
         "Imitation Learning",
         "Mobile Manipulation"
-      ]
+      ],
+      "venue": "Robot Sci Syst 2024",
+      "venueName": "Robotics: Science and Systems Conference",
+      "venueType": "conference",
+      "venueUrl": "http://www.roboticsproceedings.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343862+00:00"
     },
     {
       "id": "2403.00841",
@@ -25656,7 +25805,14 @@
         "Locomotion",
         "Reinforcement Learning",
         "3D / Perception"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343807+00:00"
     },
     {
       "id": "2403.00049",
@@ -25681,7 +25837,14 @@
         "Manipulation",
         "Dexterous",
         "Tactile"
-      ]
+      ],
+      "venue": "ICRA 2024",
+      "venueName": "IEEE International Conference on Robotics and Automation",
+      "venueType": "conference",
+      "venueUrl": "http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343831+00:00"
     },
     {
       "id": "2402.19474",
@@ -25706,7 +25869,14 @@
         "Grasping",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venue": "ECCV 2024",
+      "venueName": "European Conference on Computer Vision",
+      "venueType": "conference",
+      "venueUrl": "https://link.springer.com/conference/eccv",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343845+00:00"
     },
     {
       "id": "2403.14661",
@@ -25733,7 +25903,14 @@
         "Imitation Learning",
         "LLM Agent",
         "Dataset"
-      ]
+      ],
+      "venue": "Educ Data Min 2024",
+      "venueName": "Educational Data Mining",
+      "venueType": "conference",
+      "venueUrl": "http://www.educationaldatamining.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343889+00:00"
     },
     {
       "id": "2402.18844",
@@ -25784,7 +25961,14 @@
       "tags": [
         "Sim2Real",
         "Reinforcement Learning"
-      ]
+      ],
+      "venue": "IEEE Transactions on robotics 2024",
+      "venueName": "IEEE Transactions on robotics",
+      "venueType": "journal",
+      "venueUrl": "http://ieeexplore.ieee.org/servlet/opac?punumber=8860",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343817+00:00"
     },
     {
       "id": "2402.19469",
@@ -25809,7 +25993,14 @@
       "tags": [
         "Humanoid",
         "Locomotion"
-      ]
+      ],
+      "venue": "NeurIPS 2024",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343852+00:00"
     },
     {
       "id": "2402.19299",
@@ -25833,7 +26024,14 @@
       "tags": [
         "Reinforcement Learning",
         "LLM Agent"
-      ]
+      ],
+      "venue": "NeurIPS 2024",
+      "venueName": "Neural Information Processing Systems",
+      "venueType": "conference",
+      "venueUrl": "http://neurips.cc/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343872+00:00"
     },
     {
       "id": "2402.19249",
@@ -25856,7 +26054,14 @@
       "tags": [
         "Manipulation",
         "Foundation Models"
-      ]
+      ],
+      "venue": "Robot Sci Syst 2024",
+      "venueName": "Robotics: Science and Systems Conference",
+      "venueType": "conference",
+      "venueUrl": "http://www.roboticsproceedings.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343879+00:00"
     },
     {
       "id": "2402.19128",
@@ -25904,7 +26109,9 @@
       ],
       "tags": [
         "Robotics"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343810+00:00"
     },
     {
       "id": "2403.00076",
@@ -25925,7 +26132,14 @@
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "venue": "IEEE Robotics and Automation Letters 2020",
+      "venueName": "IEEE Robotics and Automation Letters",
+      "venueType": "journal",
+      "venueUrl": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=PER481-ELE",
+      "publicationYear": 2020,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343823+00:00"
     },
     {
       "id": "2402.19475",
@@ -25948,7 +26162,14 @@
       ],
       "tags": [
         "Grasping"
-      ]
+      ],
+      "venue": "ACL 2024",
+      "venueName": "Annual Meeting of the Association for Computational Linguistics",
+      "venueType": "conference",
+      "venueUrl": "https://www.aclweb.org/anthology/venues/acl/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343839+00:00"
     },
     {
       "id": "2402.19410",
@@ -25970,7 +26191,9 @@
       ],
       "tags": [
         "Autonomous Driving"
-      ]
+      ],
+      "venueLookup": "not_found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343865+00:00"
     },
     {
       "id": "2402.19166",
@@ -25991,7 +26214,14 @@
       ],
       "tags": [
         "LLM Agent"
-      ]
+      ],
+      "venue": "AAMAS 2024",
+      "venueName": "Adaptive Agents and Multi-Agent Systems",
+      "venueType": "conference",
+      "venueUrl": "http://www.ifaamas.org/",
+      "publicationYear": 2024,
+      "venueLookup": "found",
+      "venueCheckedAt": "2026-08-22T05:33:42.343899+00:00"
     },
     {
       "id": "2402.19058",
