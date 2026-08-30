@@ -369,7 +369,7 @@ def build_bundle(hist, recent_days=7, archive_days=5*365, limit=None, archive_li
     all_hist = list(hist['papers'].values())
     today = datetime.now(timezone.utc).date()
     recent_cutoff = (today - timedelta(days=recent_days)).isoformat()
-    archive_cutoff = (today - timedelta(days=archive_days)).isoformat()
+    archive_cutoff = (today - timedelta(days=archive_days)).isoformat() if archive_days > 0 else '0000-00-00'
     def keyf(p):
         return ((p.get('date') or '0000-00-00'),
                 1 if p.get('source')=='hf' else 0,
@@ -435,6 +435,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
