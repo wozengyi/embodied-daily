@@ -1,0 +1,19 @@
+{
+  "name": "Embodied Daily · 每日具身智能论文",
+  "short_name": "Embodied Daily",
+  "description": "每日最新具身智能、VLA、WAM、机器人论文推荐",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "education", "productivity"]
+}
