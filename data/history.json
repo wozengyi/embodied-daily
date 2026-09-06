@@ -129378,7 +129378,7 @@
       "url": "https://huggingface.co/papers/2608.26067",
       "arxiv": "https://arxiv.org/abs/2608.26067",
       "pdf": "https://arxiv.org/pdf/2608.26067.pdf",
-      "upvotes": 19,
+      "upvotes": 20,
       "categories": [
         "cs.CV"
       ],
@@ -132209,7 +132209,7 @@
       "url": "https://huggingface.co/papers/2608.30821",
       "arxiv": "https://arxiv.org/abs/2608.30821",
       "pdf": "https://arxiv.org/pdf/2608.30821.pdf",
-      "upvotes": 105,
+      "upvotes": 106,
       "categories": [
         "cs.CV",
         "cs.AI"
@@ -133191,7 +133191,7 @@
       "url": "https://huggingface.co/papers/2609.00188",
       "arxiv": "https://arxiv.org/abs/2609.00188",
       "pdf": "https://arxiv.org/pdf/2609.00188.pdf",
-      "upvotes": 47,
+      "upvotes": 50,
       "categories": [
         "cs.CV"
       ],
@@ -134422,7 +134422,7 @@
       "url": "https://arxiv.org/abs/2609.03199",
       "arxiv": "https://arxiv.org/abs/2609.03199",
       "pdf": "https://arxiv.org/pdf/2609.03199.pdf",
-      "upvotes": 16,
+      "upvotes": 91,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -134502,7 +134502,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.04173",
       "arxiv": "https://arxiv.org/abs/2609.04173",
       "pdf": "https://arxiv.org/pdf/2609.04173.pdf",
-      "upvotes": 22,
+      "upvotes": 26,
       "tags": [
         "Dataset"
       ],
@@ -134510,7 +134510,284 @@
         "Dataset"
       ],
       "source": "hf"
+    },
+    "2609.04030": {
+      "id": "2609.04030",
+      "title": "IRWOZ 2.0: A Large Language Model-driven Dialogue Dataset for Industrial Robot Conversations",
+      "abstract": "IRWOZ has improved industrial human-robot interaction (HRI) dialogue systems through domain-specific annotations. However, its initial version contains substantial noise in dialogue states and utterances, limiting state-tracking accuracy. We introduce IRWOZ 2.0, which addresses these limitations through large language model (LLM) enhanced generation (Mistral/Claude-3.5) and quality refinements. Our improved dataset expands to 390 dialogues across 4 industrial domains (Assembly, Delivery, Position, Relocation), featuring manual corrections and automated typo removal. Benchmark experiments on dialogue state tracking demonstrate significant improvements, with GPT-2's BLEU-4 score increasing from 0.1651 to 0.5604 compared to original IRWOZ. To support industrial HRI research, we publicly released IRWOZ 2.0 dataset at https://ieee-dataport.org/documents/irwoz-20-large-language-model-driven-dialogue-dataset-industrial-robot-conversations",
+      "authors": "Chen Li, Dimitrios Chrysostomou",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.04030",
+      "arxiv": "https://arxiv.org/abs/2609.04030",
+      "pdf": "https://arxiv.org/pdf/2609.04030.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.AI"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "LLM Agent",
+        "Dataset"
+      ],
+      "tags": [
+        "LLM Agent",
+        "Dataset"
+      ]
+    },
+    "2609.03970": {
+      "id": "2609.03970",
+      "title": "Automated Weld Seam Recognition and 3D Mapping for Robotic Post Processing Using Photogrammetry and Semantic Segmentation",
+      "abstract": "Accurate identification of weld seam geometries is essential for automated robotic post processing operations such as grinding, finishing, and inspection. For large workpieces, complete surface scanning using high precision laser scanners or structured light sensors can be time consuming and often generates substantial amount of data that are not relevant. This paper presents an experimental vision based pipeline for the approximate localization of weld seams. This serves as a preliminary stage before high precision measurement. The proposed approach aims to reduce the overall scanning effort and data acquisition efficiency. The proposed method includes capturing images of the workpiece from multiple viewpoints, identifying weld seams from the images using semantic segmentation, reconstructing the workpiece using photogrammetry, and projection of identified weld seams into the reconstructed model.",
+      "authors": "Augustin Raju, Abilash Madavath, Chandra Yuvesh Aubeeluck, Nicolas Pyschny, Felix Hackelöer, Florian Zwanzig",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03970",
+      "arxiv": "https://arxiv.org/abs/2609.03970",
+      "pdf": "https://arxiv.org/pdf/2609.03970.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Robotics"
+      ],
+      "tags": [
+        "Robotics"
+      ]
+    },
+    "2609.03927": {
+      "id": "2609.03927",
+      "title": "Toward Unified Robot Learning: Bridging Representation, Vision-Language-Action, and World Models",
+      "abstract": "For robots to operate reliably in real-world environments, they need to perceive their surroundings, act, and reason about the consequences of those actions. Rapid progress in the domains of representation learning, VLA models, and world models has significantly enhanced the capabilities of robot learning systems, enabling robots to work in increasingly complex environments. However, these paradigms are typically developed in isolation, resulting in fragmented systems that struggle with generalization, long-horizon temporal reasoning and planning, and deployment in unstructured environments. In this survey, we present a unified perspective on robot learning by organizing the existing methods along three complementary axes: understanding through representation learning, acting through VLA models, and reasoning through world models. We introduce a structured taxonomy that captures key design choices in environment representation, policy learning, and predictive modeling, and summarize the recent progress in these domains. Beyond classifying the existing works, we analyze how these components interact, discuss common limitations, and highlight emerging trends towards more integrated systems. Through this lens, we identify the challenges in the domain of robot learning, including uncertainty quantification, out-of-distribution generalization, cross-embodiment transfer, long-context understanding, and long-horizon planning. We argue that these challenges arise not only from limitations within individual components but also from the lack of integration across perception, action, and reasoning. Building on this analysis, we outline future directions towards unified, physically grounded, and probabilistic robot learning to develop robust robotic systems that maintain consistent internal representations and support decision making over extended interactions in real-world environments.",
+      "authors": "Shaunak A. Mehta, Ananya Hazarika, Haochen Zhang, Fan Yang, Ryo Moriyama, Wenkai Li, Yash Patel, Kanata Suzuki",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03927",
+      "arxiv": "https://arxiv.org/abs/2609.03927",
+      "pdf": "https://arxiv.org/pdf/2609.03927.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "VLA",
+        "World Model",
+        "Imitation Learning"
+      ],
+      "tags": [
+        "VLA",
+        "World Model",
+        "Imitation Learning"
+      ]
+    },
+    "2609.03761": {
+      "id": "2609.03761",
+      "title": "Robot Aware Computational Design of Object Specific Passive Grippers for Additive Manufacturing",
+      "abstract": "This paper presents an end-to-end computational pipeline that converts a selected object mesh, a measured object state, and a selected six-axis robot into an object-specific, unactuated, additively manufacturable gripper. The method couples exact-mesh RGB-D/ICP pose registration, deterministic surface-contact sampling, uncertainty-aware wrench screening, selection among six passive capture mechanisms, object-conformal surface synthesis, full-orientation robot inverse kinematics, a swept-volume-aware manufacturing domain, directional fused-deposition finite-element screening, and constrained three-dimensional SIMP topology optimization. Unlike workflows that treat grasp selection, tool geometry, motion, and structural design as separate problems, every exported design is bound to the source mesh, object pose, robot flange, contact set, and insertion hypothesis by a traceable design identifier. We derive the implemented registration, contact, fit-tolerance, finite-element, and density-optimization equations and prove three properties of the numerical construction: nodal load preservation, monotonic compliance sensitivity under SIMP interpolation, and voxel-domain containment after topology post-processing. Four archived object-specific attempts - a rabbit, camera flange, 3DBenchy, and faceted bust - meet the nominal fit, uncertain-wrench, runtime-sweep, and baseline/post-topology FEA gates. A deliberately enlarged +/-3 mm, +/-5 degree pose stress check differentiates the designs, retaining 29-134 of 160 simulated trials. Their reconstructed topologies retain 92.0-97.6% of the FE domain because functional regions are protected. Archived robot photographs show the corresponding printed assemblies qualitatively, while nominal material properties and absent coupon-calibrated, instrumented tests keep all four at digital-screening status rather than operational release.",
+      "authors": "Abdullah Yahya Abdullah Omaisan, Ibrahim Sheikh Mohamed",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03761",
+      "arxiv": "https://arxiv.org/abs/2609.03761",
+      "pdf": "https://arxiv.org/pdf/2609.03761.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Grasping"
+      ],
+      "tags": [
+        "Grasping"
+      ]
+    },
+    "2609.03758": {
+      "id": "2609.03758",
+      "title": "A Multi-Vine Soft Robot Enabling Accessible Working Channel and Steering",
+      "abstract": "Soft eversion robots, also known as vine robots, have attracted growing interest for navigation and inspection tasks, including minimally invasive medical applications [1]. A vine robot consists of a thin, flexible, inextensible tube folded inward that everts and grows forward when pressurized. This tip-growth enables navigation with minimal friction, making vine robots well suited for complex environments such as the human colon [2]. While their inherent softness allows passive conforma- tion to curved pathways in confined spaces, navigation performance strongly depends on environmental inter- actions, including contact angle and the length of un- constrained deployed material [3], [4]. Sharp directional changes, such as those in the sigmoid colon, often limit passive growth and necessitate active steering. Existing solutions include distributed artificial muscles [5] or dedicated tip-based steering mechanisms [6]. In addition, many applications require payload delivery, such as sensors and tools [7], [8]. Within the ERC Synergy project EndoTheranostics, this motivates the development of vine robots capable of delivering micro- surgical tools during growth. Prior work has integrated working channels within the vine body [8], [9], but these approaches constrain tool size, introduce friction, and limit access to the environment to the robot tip. In this work, we propose a multi-vine architecture in which two vine robots are coupled to an externally integrated working channel via soft mounting tips [10]. Independent vine actuation enables active tip steering while advancing the working channel without embed- ding it within the vine bodies Figure 1. Experiments demonstrate sharp steering of nearly 90 degrees during growth, highlighting the potential of this architecture for versatile medical and non-medical applications.",
+      "authors": "Reza Kashef, Cem Suulker, Mohammad Sheikh Sofla, Kaspar Althoefer",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03758",
+      "arxiv": "https://arxiv.org/abs/2609.03758",
+      "pdf": "https://arxiv.org/pdf/2609.03758.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Navigation"
+      ],
+      "tags": [
+        "Navigation"
+      ]
+    },
+    "2609.03680": {
+      "id": "2609.03680",
+      "title": "DropClick: Semi-Automated One-Click Segmentation for Agricultural Robotic Data",
+      "abstract": "Labelling vision datasets, especially for segmentation tasks, is a laborious and costly process that stymies novel developments in agricultural robotics. In this paper, we present DropClick, a click-guided segmentation tool that simplifies the annotation process. Our system utilises single-click inputs on objects to generate pseudo-labels, which can replace manual annotations. DropClick stands out as it is a semi-automated approach and does not require a click for every object in the scene. It can therefore further reduce the required amount of user input drastically. We evaluate our method on two challenging agricultural robotic datasets, SB20 and BUP20 for plant and fruit segmentation, respectively. DropClick is first trained on a small subset of just 5 images from the original training data. This DropClick model can then be deployed as a one-click segmentation system and achieves comparable or higher performance than other one-click methods achieving an mIoU of 70.0 and 72.6 points, for SB20 and BUP20 respectively. DropClick then excels at maintaining high performance when clicks are not given (e.g. dropped); when 50% of the clicks are missing it still maintains an mIoU of 68.9 and 71.3 points, for SB20 and BUP20 respectively. We validate DropClick as a pseudo-labelling approach by taking its outputs to train a Mask2Former instance-based segmentation model in a semi-supervised manner. In this process, partially removing user input from DropClick yields similar high performance when compared to providing all clicks, at 70.1 vs 70.7 points AP50 for SB20 and no difference for BUP20 at 77.0 for both models; at the same time saving 46.3% of total input for SB20 and 31.9% for BUP20.",
+      "authors": "Patrick Zimmer, Michael Halstead, Chris McCool",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03680",
+      "arxiv": "https://arxiv.org/abs/2609.03680",
+      "pdf": "https://arxiv.org/pdf/2609.03680.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Dataset"
+      ],
+      "tags": [
+        "Dataset"
+      ]
+    },
+    "2609.03623": {
+      "id": "2609.03623",
+      "title": "QLAUN: A Research-Oriented, Robust, Agile, Modular, and Affordable Torque-Controlled Quadruped Robot",
+      "abstract": "QLAUN Bot (Quad-Legged Adaptive Unmanned Navigator Robot) is a torque-controlled quadruped robot that is research-oriented, cost-effective, and aimed at achieving simultaneous robustness and agility while being completely 3D-printed. It is a quadruped robot that is aimed at empowering robotics research at universities and research institutes in Lebanon and the MENA region. Using a novel electronics-free leg design strategy, we present a modular robot with interchangeable and easily replaceable legs. The 15 kg robot possesses 12 DoF (Degrees-of-Freedom) with three per leg, each paired with a completely 3D-printed Quasi-Direct Drive (QDD) actuator that consists of a brushless DC motor and a low-ratio gearbox transmission that is connected to a belt transmission system for significantly increasing the torque outputs at the joints. We present legs that have decoupled hip and knee actuators to improve the overall modularity of the robot. QLAUN is almost completely 3D-printed using polylactic acid (PLA) and assembled using off-the-shelf parts to create a robust, agile, and affordable robot for legged robot locomotion research. The legs possess joints with wide ranges of motion, including a continuous hip flexion-extension joint. A compliant foot, printed using TPU-95A is also implemented for alleviating hard impacts and handling terrain uncertainties. This extended abstract aims to introduce QLAUN, a novel platform for robotics research, emphasizing the design concepts and principles that underpin its development to the academic and research communities in the field of robotics.",
+      "authors": "Mohamad S. Moudallal, Noel J. Maalouf",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03623",
+      "arxiv": "https://arxiv.org/abs/2609.03623",
+      "pdf": "https://arxiv.org/pdf/2609.03623.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Locomotion"
+      ],
+      "tags": [
+        "Locomotion"
+      ]
+    },
+    "2609.03565": {
+      "id": "2609.03565",
+      "title": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
+      "abstract": "Action-conditioned JEPA world models enable planning toward visually specified goals without reconstructing future pixels, yet latent prediction alone does not explicitly encourage the learned representations to retain information relevant to robotic control. We introduce an end-to-end JEPA world model that augments latent prediction with inverse dynamics (IDM) and state alignment (SA). While inverse dynamics discourages latent collapse and makes latent transitions informative of the actions that produced them, state alignment grounds consecutive representations in their associated physical configuration and motion. Across four benchmark tasks, our model attains the highest success rates on TwoRoom (100%), PushT (98%), and OGBench-Cube (87%), while performing comparably to LeWorldModel on Reacher. Our ablation further shows that adding state alignment consistently improves planning success over IDM alone across all four tasks. Although LeWorldModel, our primary baseline, attains higher average straightening on OGBench-Cube, transition-subspace analysis shows that its transition energy is concentrated in a substantially lower-dimensional subspace. Our state-aligned model exhibits a higher effective transition dimension than LeWorldModel and improves planning over IDM alone, supporting state alignment as an effective complement to inverse dynamics for robotic planning.",
+      "authors": "Muyuan Liu, Yue Huang, Zheng Liang, Xiang Gao",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03565",
+      "arxiv": "https://arxiv.org/abs/2609.03565",
+      "pdf": "https://arxiv.org/pdf/2609.03565.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "World Model",
+        "Dataset"
+      ],
+      "tags": [
+        "World Model",
+        "Dataset"
+      ]
+    },
+    "2609.03373": {
+      "id": "2609.03373",
+      "title": "3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper V. Key Scientific Mission: Compact-Object Time-Domain Science",
+      "abstract": "An isolated compact object retains the point-source resolving power of the space-based slitless spectrograph. The baseline wavelength range is 0.2--1.5 $μ$m. The planning baseline uses $R \\simeq 1000$ for broad and faint transient spectra and reserves selectable bands at $R \\simeq 5000$ for accretion-disk profiles, velocity structure, and precision line ratios. Broad features can be measured after binning the native $R \\simeq 5000$ data to lower resolution. Rapid-response spectroscopy follows gravitational-wave counterparts and kilonovae from hours to days. Repeated spectra of dwarf novae and compact binaries trace accretion state and orbital phase, while uninterrupted imaging of white dwarfs measures pulsation frequencies. The program combines mission-based monitoring with external alerts, including KGMT transient detections. The instrument study must preserve calibrated throughput to 2.70 $μ$m and evaluate a 3.0 $μ$m operational band edge, with 2.5 $μ$m retained as the formal engineering off-ramp. Mid-infrared imaging is not part of the adopted compact-object baseline.",
+      "authors": "Juhan Kim, Yong-Woo Kang, Sang Hyun Lee, Jeong-Yeol Han, Sungwook E. Hong, Bongkon Moon, Donguk Song, Juhyung Kang, Myeong-Gu Park, Sang Chul Kim, Chung-Uk Lee, Sangmo Tony Sohn, Arman Shafieloo, David Parkinson, Hong Soo Park, Dohyeong Kim, Chan Park, Jungjoo Sohn, Young-Beom Jeon, Jong-Hak Woo, Hyung Mok Lee, Hong Bae Ann, Myungkook James Jee, Mansoo Choi, Changbom Park",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03373",
+      "arxiv": "https://arxiv.org/abs/2609.03373",
+      "pdf": "https://arxiv.org/pdf/2609.03373.pdf",
+      "upvotes": 0,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Robotics"
+      ],
+      "tags": [
+        "Robotics"
+      ]
+    },
+    "2609.03371": {
+      "id": "2609.03371",
+      "title": "3.5-meter Segmented-Mirror Robotic Space Telescope Mission White Paper IV. Key Scientific Mission: Solar-System Small Bodies and Planetary Defense",
+      "abstract": "The baseline 0.2--1.5 $μ$m observatory provides rapid-response astrometry, visible and near-infrared taxonomy, rotation and phase curves, recovery, and long-arc orbit improvement for near-Earth objects and other small bodies. The instrument study also evaluates calibrated throughput to 2.70 $μ$m with a 3.0 $μ$m operational band-edge goal. A reduction to 2.5 $μ$m remains the formal engineering off-ramp if thermal, detector, cooling, mass, power, or cost constraints require it. The 3.5-meter Segmented-Mirror Robotic Space Telescope does not carry a mid-infrared channel. Coordinated ground-based mid-infrared telescopes provide the thermal fluxes required to infer diameter and albedo, while the space mission supplies contemporaneous reflected-light measurements and observing geometry. The program combines recovery, physical characterization, orbit refinement, and covariance-based hazard assessment. Its CODES dynamics system and OGFinder-to-OpenOrb processing path connect measured astrometry to reproducible orbit solutions and close-approach predictions.",
+      "authors": "Juhan Kim, Yong-Woo Kang, Sang Hyun Lee, Jeong-Yeol Han, Sungwook E. Hong, Bongkon Moon, Donguk Song, Juhyung Kang, Myeong-Gu Park, Sang Chul Kim, Chung-Uk Lee, Sangmo Tony Sohn, Arman Shafieloo, David Parkinson, Hong Soo Park, Dohyeong Kim, Chan Park, Jungjoo Sohn, Young-Beom Jeon, Jong-Hak Woo, Hyung Mok Lee, Hong Bae Ann, Myungkook James Jee, Mansoo Choi, Changbom Park",
+      "date": "2026-09-03",
+      "published": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03371",
+      "arxiv": "https://arxiv.org/abs/2609.03371",
+      "pdf": "https://arxiv.org/pdf/2609.03371.pdf",
+      "upvotes": 0,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Robotics"
+      ],
+      "tags": [
+        "Robotics"
+      ]
+    },
+    "2609.03175": {
+      "id": "2609.03175",
+      "title": "Real-Time Shape Control of Multi-Segment Soft Robotic Arms Using Koopman Operators with Global and Local Observables",
+      "abstract": "Multi-segment soft robotic arms can continuously reconfigure their body shapes for safe interaction, but tip control alone is insufficient for constrained-space tasks. Therefore, shape control is a more important task for multi-segment soft arms than tip control, but remains challenging due to the high dimensionality and nonlinear dynamics of continuum deformation. In existing work, shape control accuracy is defined by the error in the global frame (global shape error). For multi-segment soft arms, using only global shape error as the control objective is insufficient, as segment coupling, gravity-induced loading, and inertial effects become more significant. This difficulty increases with the number of segments. In this paper, we present a Koopman-based model predictive control framework that combines global and local observables, enabling real-time shape control on multi-segment soft robotic arms. The framework is evaluated through numerical and physical experiments. Numerical experiments demonstrate the scalability of the proposed controller by achieving shape control on robots with up to 10 independently actuated segments. The physical experiments demonstrate that the controller is capable of (1) real-time shape control of 3- and 5-segment robotic arms with tip speeds up to 0.6 m/s, (2) robust tracking without retraining, including distal payloads up to 400~g and recovery from a 7~N lateral disturbance, and (3) the potential for future inspection applications through a confined-space demonstration. These results demonstrate that the proposed framework enables dynamic, scalable, and accurate real-time shape control on multi-segment soft robotic arms.",
+      "authors": "Jiahe Wang, Eron Ristich, Sultan Haidar Ali, Eric weissman, Lei Zhang, Wanxin Jin, Yi Ren, Jiefeng Sun",
+      "date": "2026-09-02",
+      "published": "2026-09-02",
+      "url": "https://arxiv.org/abs/2609.03175",
+      "arxiv": "https://arxiv.org/abs/2609.03175",
+      "pdf": "https://arxiv.org/pdf/2609.03175.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Manipulation"
+      ],
+      "tags": [
+        "Manipulation"
+      ]
+    },
+    "2609.03055": {
+      "id": "2609.03055",
+      "title": "Seeing Less Is Not Seeing Safely: Privacy Leakage from Task-Scoped Robot Perception Exports",
+      "abstract": "Domestic robots rely on rich perception to operate in private homes, but privacy risk persists even when raw sensor data remain local. Structured representations exported to downstream planners, cloud services, logs, or learning pipelines can still reveal household information through semantics, geometry, spatial structure, and task targets. We introduce Task-Functional Perception Distillation (TFPD), a task-scoped representation-export framework that keeps rich perception local and profiles downstream exports according to task utility, direct exposure, and multiple residual inference risks. Using 120 AI2-THOR scenes with scene-disjoint train/validation/test splits, frozen attacker selection, and representation-aware held-out attacks, we evaluate navigation, collision checking, and object-goal execution. Three navigation exports achieve identical success (1.000) and mean path ratio (0.898), yet representation-level linkability ranges from 0.532 to 0.970. Replacing an explicit target label with a target region reduces target-category macro-F1 from 1.000 to 0.077 while preserving success at 0.995, while geometric coarsening reduces object-category macro-F1 from 0.704 to 0.556 at a measurable collision-utility cost. A ProcTHOR replication preserves the navigation task-equivalence/privacy-inequivalence finding while changing the relative ordering of normalized and topological exports. These results show that neither field removal nor stronger abstraction induces a universal privacy ordering and motivate task-specific, multi-risk evaluation of the complete public representation.",
+      "authors": "Yuqiao Xu, Erman Ayday",
+      "date": "2026-09-02",
+      "published": "2026-09-02",
+      "url": "https://arxiv.org/abs/2609.03055",
+      "arxiv": "https://arxiv.org/abs/2609.03055",
+      "pdf": "https://arxiv.org/pdf/2609.03055.pdf",
+      "upvotes": 0,
+      "categories": [
+        "cs.RO",
+        "cs.CR"
+      ],
+      "source": "arxiv",
+      "topics": [
+        "Navigation"
+      ],
+      "tags": [
+        "Navigation"
+      ]
     }
   },
-  "generatedAt": "2026-09-05T04:36:37.218973+00:00"
+  "generatedAt": "2026-09-06T04:47:17.773427+00:00"
 }
