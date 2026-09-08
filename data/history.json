@@ -131186,7 +131186,7 @@
       "url": "https://huggingface.co/papers/2608.27550",
       "arxiv": "https://arxiv.org/abs/2608.27550",
       "pdf": "https://arxiv.org/pdf/2608.27550.pdf",
-      "upvotes": 92,
+      "upvotes": 93,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -132209,7 +132209,7 @@
       "url": "https://huggingface.co/papers/2608.30821",
       "arxiv": "https://arxiv.org/abs/2608.30821",
       "pdf": "https://arxiv.org/pdf/2608.30821.pdf",
-      "upvotes": 111,
+      "upvotes": 116,
       "categories": [
         "cs.CV",
         "cs.AI"
@@ -133276,7 +133276,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.30935",
       "arxiv": "https://arxiv.org/abs/2608.30935",
       "pdf": "https://arxiv.org/pdf/2608.30935.pdf",
-      "upvotes": 30,
+      "upvotes": 32,
       "tags": [
         "VLA",
         "Navigation",
@@ -134422,7 +134422,7 @@
       "url": "https://arxiv.org/abs/2609.03199",
       "arxiv": "https://arxiv.org/abs/2609.03199",
       "pdf": "https://arxiv.org/pdf/2609.03199.pdf",
-      "upvotes": 115,
+      "upvotes": 116,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -135508,7 +135508,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.05416",
       "arxiv": "https://arxiv.org/abs/2609.05416",
       "pdf": "https://arxiv.org/pdf/2609.05416.pdf",
-      "upvotes": 2,
+      "upvotes": 21,
       "tags": [
         "Dataset",
         "3D / Perception"
@@ -135518,7 +135518,55 @@
         "3D / Perception"
       ],
       "source": "hf"
+    },
+    "2609.05415": {
+      "id": "2609.05415",
+      "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
+      "abstract": "Recent advances in automatic rigging now deliver animation-ready 3D assets at scale, yet generating the motion to drive them remains a bottleneck. Existing learned animators are topology-constrained: they rely on category-specific templates or require per-skeleton fine-tuning and reference motions at inference. We present UniMate, a unified foundation model that synthesizes articulated motion for arbitrary skeletons from a rigged 3D asset and a text prompt, with no test-time optimization or per-skeleton retraining. UniMate introduces a topology-aware diffusion transformer, which integrates skeletal topology into attention via three mechanisms: (1) a graph-aware attention bias from pairwise joint relations and geodesic distances; (2) a spectral rotary position embedding generalizing RoPE to arbitrary kinematic trees via the graph Laplacian; and (3) a global topological conditioner attention-pooled from the rest-pose skeleton. We also curate UniML3D, 13,006 motion sequences spanning bipedal, quadrupedal, avian, marine, insectoid, serpentine, and articulated rigid objects with unified canonicalization and text pairing. Trained on this dataset, UniMate outperforms state-of-the-art baselines in quality, generalization, and efficiency, and supports zero-shot cross-topology transfer, in-betweening, expansion, and text-guided editing. Our project page is available at https://linzhanmou.com/unimate/.",
+      "authors": "Linzhan Mou, Jiahui Lei, Zhiyang Dou, Chenyue Cai, Chaoyue Song, Adam Finkelstein, Szymon Rusinkiewicz",
+      "date": "2026-09-07",
+      "published": "2026-09-07",
+      "url": "https://huggingface.co/papers/2609.05415",
+      "hfUrl": "https://huggingface.co/papers/2609.05415",
+      "arxiv": "https://arxiv.org/abs/2609.05415",
+      "pdf": "https://arxiv.org/pdf/2609.05415.pdf",
+      "upvotes": 13,
+      "tags": [
+        "Locomotion",
+        "Dataset",
+        "Foundation Models"
+      ],
+      "topics": [
+        "Locomotion",
+        "Dataset",
+        "Foundation Models"
+      ],
+      "source": "hf"
+    },
+    "2609.02780": {
+      "id": "2609.02780",
+      "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+      "abstract": "Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow at a rate directly proportional to the prefill depth. To address these challenges, we propose ShallowStream, a novel framework that leverages the shallow layers of an MLLM to simultaneously perform frame encoding and retrieval index building. During stream processing, ShallowStream maintains an always-on lightweight index using the KV cache of shallow layers. During query-time answering, we leverage the attention scores generated by the shallow layers to score context frames and employ a diversity-aware selection strategy to retrieve precise and comprehensive evidence. ShallowStream achieves performance on par with the strongest existing streaming methods, while reducing per-frame prefill latency and 10-second end-to-end latency by up to 52.1x and 11.9x, respectively. Our code is available at https://github.com/CURRENTF/ShallowStream.",
+      "authors": "Jitai Hao, Ke Yang, Qiang Huang, Jun Yu",
+      "date": "2026-09-07",
+      "published": "2026-09-07",
+      "url": "https://huggingface.co/papers/2609.02780",
+      "hfUrl": "https://huggingface.co/papers/2609.02780",
+      "arxiv": "https://arxiv.org/abs/2609.02780",
+      "pdf": "https://arxiv.org/pdf/2609.02780.pdf",
+      "upvotes": 3,
+      "tags": [
+        "Humanoid",
+        "LLM Agent",
+        "Autonomous Driving"
+      ],
+      "topics": [
+        "Humanoid",
+        "LLM Agent",
+        "Autonomous Driving"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-09-07T04:50:55.701057+00:00"
+  "generatedAt": "2026-09-08T04:49:17.236787+00:00"
 }
