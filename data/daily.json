@@ -1,23 +1,43 @@
 {
-  "generatedAt": "2026-09-11T04:48:34.201089+00:00",
+  "generatedAt": "2026-09-12T04:42:58.345904+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-04",
-  "archiveCutoff": "2021-09-12",
-  "addedToday": 33,
-  "historyTotal": 5787,
-  "count": 166,
-  "archiveCount": 5428,
+  "recentCutoff": "2026-09-05",
+  "archiveCutoff": "2021-09-13",
+  "addedToday": 1,
+  "historyTotal": 5788,
+  "count": 141,
+  "archiveCount": 5454,
   "sources": {
     "hf": 17,
-    "arxiv": 149
+    "arxiv": 124
   },
   "archiveSources": {
-    "hf": 66,
-    "arxiv": 5362
+    "hf": 68,
+    "arxiv": 5386
   },
   "warnings": [],
   "papers": [
+    {
+      "id": "2608.15380",
+      "title": "Adaptive Bridge: A Proxy-Based Decoupling Layer for Mitigating DDS Backpressure in ROS 2",
+      "abstract": "In systems built on Robot Operating System 2 (ROS 2) and using Data Distribution Service (DDS), a single network-impaired or throttled subscriber on a RELIABLE topic can cause backpressure that degrades throughput and latency for all other subscribers, including safety-critical ones sharing the publisher, because the publisher's DDS writer can no longer accept new samples. We present Adaptive Bridge, a proxy-based layer that decouples critical subscribers from degraded or noncritical ones, thereby isolating the critical path through topic splitting and dynamic rate control. The proxy acts as a middleman and subscribes to the original topic and republishes the messages to two independent DDS writers: one RELIABLE writer for critical nodes and one BEST EFFORT writer for noncritical or degraded nodes, thus isolating the degraded nodes and safeguarding the publisher and critical nodes from backpressure. A probe-based classifier actively monitors subscriber health through sampling with hysteresis and adjusts subscriber rate limits in real time. We evaluate the system under a Gilbert-Elliott bursty wireless loss model using a reproducible Docker-based harness. The results show that using the Adaptive Bridge in our evaluation harness reduces the critical subscriber tail p95 latency from up to 15 s to 1.55 ms across all impairment severities while preserving the publisher's configured throughput.",
+      "authors": "Kaushalraj Puwar, B. Thangaraju",
+      "date": "2026-09-11",
+      "published": "2026-09-11",
+      "url": "https://huggingface.co/papers/2608.15380",
+      "hfUrl": "https://huggingface.co/papers/2608.15380",
+      "arxiv": "https://arxiv.org/abs/2608.15380",
+      "pdf": "https://arxiv.org/pdf/2608.15380.pdf",
+      "upvotes": 1,
+      "tags": [
+        "Robotics"
+      ],
+      "topics": [
+        "Robotics"
+      ],
+      "source": "hf"
+    },
     {
       "id": "2608.12564",
       "title": "Scaling Automatic Research Agents via World Models",
@@ -29,7 +49,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12564",
       "arxiv": "https://arxiv.org/abs/2608.12564",
       "pdf": "https://arxiv.org/pdf/2608.12564.pdf",
-      "upvotes": 429,
+      "upvotes": 437,
       "tags": [
         "VLA",
         "World Model",
@@ -52,7 +72,7 @@
       "url": "https://huggingface.co/papers/2609.10522",
       "arxiv": "https://arxiv.org/abs/2609.10522",
       "pdf": "https://arxiv.org/pdf/2609.10522.pdf",
-      "upvotes": 130,
+      "upvotes": 135,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -115,6 +135,35 @@
         "Simulator"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2609.11561",
+      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
+      "abstract": "Mainstream robotic policies often adopt a Markovian formulation, but many complex real-world manipulation tasks are inherently non-Markovian, requiring long-horizon memory beyond the current observation. Existing memory mechanisms often rely on language summaries, growing visual windows, or their combinations, and may therefore lose fine-grained visual evidence or face a trade-off between history coverage and execution efficiency. We introduce MaP-WAM, a Memory-as-Plans framework that decomposes memory-dependent world-action modeling into memory-grounded planning and plan-conditioned execution, and uses long-term multimodal episodic context as planning-time evidence rather than repeatedly conditioning the executor on the full history. MaP-WAM represents memory as completed segment records containing language instructions and sparse visual context, and converts this episodic memory into compact plans comprising the next segment-level language plan and corresponding visual guidance. A World-Action-Progress (WAP) model executes each plan over an unknown duration by jointly predicting action chunks and corresponding execution progress at inference time, calibrating predicted progress through plan-observation alignment for adaptive segment transitions and closed-loop context updates. MaP-WAM keeps the executor context length fixed, while structured attention further enables key-value caching in both planning and execution. MaP-WAM achieves state-of-the-art performance on RMBench with an 83.3% success rate and attains 78.0% success on real-robot tasks, while maintaining approximately constant executor inference latency as task history grows.",
+      "authors": "Sizhe Zhao, Haozhe Xie, Weiyu Zhao, Chenchu Zhang, Huan Wang, Chenyang Wang, Qinglin Liu, Shengping Zhang",
+      "date": "2026-09-10",
+      "published": "2026-09-10",
+      "url": "https://arxiv.org/abs/2609.11561",
+      "arxiv": "https://arxiv.org/abs/2609.11561",
+      "pdf": "https://arxiv.org/pdf/2609.11561.pdf",
+      "upvotes": 10,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Imitation Learning",
+        "WAM",
+        "World Model"
+      ],
+      "tags": [
+        "Manipulation",
+        "Imitation Learning",
+        "WAM",
+        "World Model"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.11561"
     },
     {
       "id": "2609.11357",
@@ -293,34 +342,6 @@
         "Dataset",
         "Multi-task",
         "Hardware"
-      ]
-    },
-    {
-      "id": "2609.11561",
-      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
-      "abstract": "Mainstream robotic policies often adopt a Markovian formulation, but many complex real-world manipulation tasks are inherently non-Markovian, requiring long-horizon memory beyond the current observation. Existing memory mechanisms often rely on language summaries, growing visual windows, or their combinations, and may therefore lose fine-grained visual evidence or face a trade-off between history coverage and execution efficiency. We introduce MaP-WAM, a Memory-as-Plans framework that decomposes memory-dependent world-action modeling into memory-grounded planning and plan-conditioned execution, and uses long-term multimodal episodic context as planning-time evidence rather than repeatedly conditioning the executor on the full history. MaP-WAM represents memory as completed segment records containing language instructions and sparse visual context, and converts this episodic memory into compact plans comprising the next segment-level language plan and corresponding visual guidance. A World-Action-Progress (WAP) model executes each plan over an unknown duration by jointly predicting action chunks and corresponding execution progress at inference time, calibrating predicted progress through plan-observation alignment for adaptive segment transitions and closed-loop context updates. MaP-WAM keeps the executor context length fixed, while structured attention further enables key-value caching in both planning and execution. MaP-WAM achieves state-of-the-art performance on RMBench with an 83.3% success rate and attains 78.0% success on real-robot tasks, while maintaining approximately constant executor inference latency as task history grows.",
-      "authors": "Sizhe Zhao, Haozhe Xie, Weiyu Zhao, Chenchu Zhang, Huan Wang, Chenyang Wang, Qinglin Liu, Shengping Zhang",
-      "date": "2026-09-10",
-      "published": "2026-09-10",
-      "url": "https://arxiv.org/abs/2609.11561",
-      "arxiv": "https://arxiv.org/abs/2609.11561",
-      "pdf": "https://arxiv.org/pdf/2609.11561.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Imitation Learning",
-        "WAM",
-        "World Model"
-      ],
-      "tags": [
-        "Manipulation",
-        "Imitation Learning",
-        "WAM",
-        "World Model"
       ]
     },
     {
@@ -755,6 +776,26 @@
       "tags": []
     },
     {
+      "id": "2609.08084",
+      "title": "Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation",
+      "abstract": "Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despite the field's maturity, recent models still struggle to generalize to out-of-distribution inputs and to produce sharp and detailed depth maps. In this paper, we revisit Marigold, a set of techniques for repurposing modern image generation and editing models, powered by the diffusion transformer (DiT) architecture, into state-of-the-art monocular depth estimators. Our recipes target single-step inference from pretrained multi-step flow-matching models, with quantization where needed, preserving model capacity while remaining cheap to run. We analyze the artifacts of naive training and identify two effective remedies: aligning the model's internal representations with semantic features extracted from ground-truth, and adopting a 2-stage fine-tuning protocol built around a novel Sinkhorn-based loss. The results are crisper, cleaner depth maps that generalize well out-of-distribution, with 16-26% improvement in AbsRel over the previous best on KITTI and ETH3D. Qualitatively, our model resolves fur, foliage, and hair-thin edges that have eluded prior models. Furthermore, Marigold V2 achieves state-of-the-art results when applied to other dense regression tasks, such as surface normals estimation and intrinsic image decomposition. Project website: https://hf.co/spaces/huawei-bayerlab/marigold-v2-web",
+      "authors": "Igor Pavlovic, Thiemo Wandel, Anton Obukhov, Luca Bartolomei, Andrey Davydov, Fabio Tosi, Matteo Poggi, Sabine Süsstrunk, Dengxin Dai",
+      "date": "2026-09-09",
+      "published": "2026-09-09",
+      "url": "https://huggingface.co/papers/2609.08084",
+      "hfUrl": "https://huggingface.co/papers/2609.08084",
+      "arxiv": "https://arxiv.org/abs/2609.08084",
+      "pdf": "https://arxiv.org/pdf/2609.08084.pdf",
+      "upvotes": 54,
+      "tags": [
+        "Robotics"
+      ],
+      "topics": [
+        "Robotics"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2609.05588",
       "title": "GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation",
       "abstract": "World-action models (WAM) predict future states to guide robot actions, enabling learning from both action-free video and action-labeled interaction. Most inherit pretrained video generators, leaving WAM pretraining and scaling underexplored. We introduce Genie Envisioner Act 2.0 (GE-Act 2.0), a world-action model whose trainable generative and action components are all initialized from scratch on manipulation data. It combines a control-oriented autoencoder (CoAE), a single-step visual planner (SVP), and an inverse dynamics model (IDM). CoAE retains action- and instruction-relevant information under aggressive compression, while SVP produces a complete future state in one differentiable pass, so visual planning and inverse dynamics can be pretrained separately on complementary data. The components are then jointly trained with knowledge-aligned selective optimization (KASO), which reduces mismatched supervision by selecting only predicted futures judged behaviorally compatible with the recorded action. We evaluate pretrained checkpoints directly, without per-task fine-tuning, on 100 tasks across 20 manipulation skill groups with held-out scenes, backgrounds, lighting, and object instances. Scaling co-training data from 300 to 30,000 hours raises success from 17.1% to 44.1% on G1-OP and from 13.4% to 31.1% on G2-90D; despite comprising less than 2% of the co-training data, G2-90D improves by 17.7 points, suggesting cross-embodiment transfer. Gains span 19/20 and 18/20 skill groups, and skill-specific coverage strongly correlates with zero-shot out-of-distribution (OOD) success (Pearson r=0.80; Spearman rho=0.85). Under the same protocol, the model grounds object, color, shape, and position references in at least 90% of trials and follows explicit instructions even when they conflict with an already-committed behavior or a conventional scene association.",
@@ -764,7 +805,7 @@
       "url": "https://huggingface.co/papers/2609.05588",
       "arxiv": "https://arxiv.org/abs/2609.05588",
       "pdf": "https://arxiv.org/pdf/2609.05588.pdf",
-      "upvotes": 50,
+      "upvotes": 51,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -785,26 +826,6 @@
       "hfUrl": "https://huggingface.co/papers/2609.05588"
     },
     {
-      "id": "2609.08084",
-      "title": "Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation",
-      "abstract": "Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despite the field's maturity, recent models still struggle to generalize to out-of-distribution inputs and to produce sharp and detailed depth maps. In this paper, we revisit Marigold, a set of techniques for repurposing modern image generation and editing models, powered by the diffusion transformer (DiT) architecture, into state-of-the-art monocular depth estimators. Our recipes target single-step inference from pretrained multi-step flow-matching models, with quantization where needed, preserving model capacity while remaining cheap to run. We analyze the artifacts of naive training and identify two effective remedies: aligning the model's internal representations with semantic features extracted from ground-truth, and adopting a 2-stage fine-tuning protocol built around a novel Sinkhorn-based loss. The results are crisper, cleaner depth maps that generalize well out-of-distribution, with 16-26% improvement in AbsRel over the previous best on KITTI and ETH3D. Qualitatively, our model resolves fur, foliage, and hair-thin edges that have eluded prior models. Furthermore, Marigold V2 achieves state-of-the-art results when applied to other dense regression tasks, such as surface normals estimation and intrinsic image decomposition. Project website: https://hf.co/spaces/huawei-bayerlab/marigold-v2-web",
-      "authors": "Igor Pavlovic, Thiemo Wandel, Anton Obukhov, Luca Bartolomei, Andrey Davydov, Fabio Tosi, Matteo Poggi, Sabine Süsstrunk, Dengxin Dai",
-      "date": "2026-09-09",
-      "published": "2026-09-09",
-      "url": "https://huggingface.co/papers/2609.08084",
-      "hfUrl": "https://huggingface.co/papers/2609.08084",
-      "arxiv": "https://arxiv.org/abs/2609.08084",
-      "pdf": "https://arxiv.org/pdf/2609.08084.pdf",
-      "upvotes": 49,
-      "tags": [
-        "Robotics"
-      ],
-      "topics": [
-        "Robotics"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2609.05594",
       "title": "SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution",
       "abstract": "Diverse and simulation-ready indoor scenes are essential for interactive entertainment and embodied AI, yet their scalable generation remains challenging. Recent agentic text-to-3D scene pipelines that rely on vision-language models (VLMs) can generate scenes of high fidelity but require costly iterative object placement and refinement. Another mainstream paradigm, parametric image-to-3D scene models, produces scenes efficiently from strong priors learned from 2D images but often leads to imprecise and physically invalid scenes. More importantly, both paradigms struggle to output diverse scenes for a single input, making it hard for them to reflect the dynamically changing nature of real scenes. In this paper we propose SceneMosaic, a framework that combines the merits of both paradigms. It obtains the initial candidate from the learned image-based prior, and subsequently evolves the result through VLM agents, ensuring both efficiency and physical validity. Within the evolution process, SceneMosaic exploits the locality of natural scenes and decomposes a scene into independent local units, allowing separate evolution within each unit before composing the global scene via Cartesian product. On SceneEval-100, SceneMosaic matches the strongest agentic baseline in semantic layout quality with a 24x speedup, substantially reduces physical violations, and receives the highest human ratings. Our code is publicly available at https://github.com/rxjfighting/SceneMosaic.",
@@ -815,7 +836,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.05594",
       "arxiv": "https://arxiv.org/abs/2609.05594",
       "pdf": "https://arxiv.org/pdf/2609.05594.pdf",
-      "upvotes": 41,
+      "upvotes": 42,
       "tags": [
         "Embodied Vision"
       ],
@@ -834,7 +855,7 @@
       "url": "https://huggingface.co/papers/2609.07498",
       "arxiv": "https://arxiv.org/abs/2609.07498",
       "pdf": "https://arxiv.org/pdf/2609.07498.pdf",
-      "upvotes": 25,
+      "upvotes": 27,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -2133,7 +2154,7 @@
       "url": "https://arxiv.org/abs/2609.07398",
       "arxiv": "https://arxiv.org/abs/2609.07398",
       "pdf": "https://arxiv.org/pdf/2609.07398.pdf",
-      "upvotes": 63,
+      "upvotes": 65,
       "categories": [
         "cs.RO"
       ],
@@ -3643,7 +3664,9 @@
       "tags": [
         "Multi-task"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.04173",
       "title": "Last Translation Benchmark",
@@ -3674,7 +3697,7 @@
       "url": "https://arxiv.org/abs/2609.05324",
       "arxiv": "https://arxiv.org/abs/2609.05324",
       "pdf": "https://arxiv.org/pdf/2609.05324.pdf",
-      "upvotes": 21,
+      "upvotes": 25,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -4285,9 +4308,7 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.00474",
       "title": "Exploring Collaboration between a language and a non-language agent",
@@ -6634,7 +6655,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.25417",
       "arxiv": "https://arxiv.org/abs/2608.25417",
       "pdf": "https://arxiv.org/pdf/2608.25417.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "tags": [
         "Navigation",
         "Dexterous",

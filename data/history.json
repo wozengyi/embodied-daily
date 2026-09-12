@@ -131220,7 +131220,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.25417",
       "arxiv": "https://arxiv.org/abs/2608.25417",
       "pdf": "https://arxiv.org/pdf/2608.25417.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "tags": [
         "Navigation",
         "Dexterous",
@@ -135217,7 +135217,7 @@
       "url": "https://arxiv.org/abs/2609.05324",
       "arxiv": "https://arxiv.org/abs/2609.05324",
       "pdf": "https://arxiv.org/pdf/2609.05324.pdf",
-      "upvotes": 21,
+      "upvotes": 25,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -136510,7 +136510,7 @@
       "url": "https://huggingface.co/papers/2609.05588",
       "arxiv": "https://arxiv.org/abs/2609.05588",
       "pdf": "https://arxiv.org/pdf/2609.05588.pdf",
-      "upvotes": 50,
+      "upvotes": 51,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -137168,7 +137168,7 @@
       "url": "https://huggingface.co/papers/2609.07498",
       "arxiv": "https://arxiv.org/abs/2609.07498",
       "pdf": "https://arxiv.org/pdf/2609.07498.pdf",
-      "upvotes": 25,
+      "upvotes": 27,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -137196,7 +137196,7 @@
       "url": "https://arxiv.org/abs/2609.07398",
       "arxiv": "https://arxiv.org/abs/2609.07398",
       "pdf": "https://arxiv.org/pdf/2609.07398.pdf",
-      "upvotes": 63,
+      "upvotes": 65,
       "categories": [
         "cs.RO"
       ],
@@ -137630,7 +137630,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.05594",
       "arxiv": "https://arxiv.org/abs/2609.05594",
       "pdf": "https://arxiv.org/pdf/2609.05594.pdf",
-      "upvotes": 41,
+      "upvotes": 42,
       "tags": [
         "Embodied Vision"
       ],
@@ -137649,7 +137649,7 @@
       "url": "https://huggingface.co/papers/2609.10522",
       "arxiv": "https://arxiv.org/abs/2609.10522",
       "pdf": "https://arxiv.org/pdf/2609.10522.pdf",
-      "upvotes": 130,
+      "upvotes": 135,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -138366,7 +138366,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.08084",
       "arxiv": "https://arxiv.org/abs/2609.08084",
       "pdf": "https://arxiv.org/pdf/2609.08084.pdf",
-      "upvotes": 49,
+      "upvotes": 54,
       "tags": [
         "Robotics"
       ],
@@ -138849,11 +138849,11 @@
       "url": "https://arxiv.org/abs/2609.11561",
       "arxiv": "https://arxiv.org/abs/2609.11561",
       "pdf": "https://arxiv.org/pdf/2609.11561.pdf",
-      "upvotes": 0,
+      "upvotes": 10,
       "categories": [
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Manipulation",
         "Imitation Learning",
@@ -138865,7 +138865,8 @@
         "Imitation Learning",
         "WAM",
         "World Model"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.11561"
     },
     "2609.11472": {
       "id": "2609.11472",
@@ -139164,7 +139165,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12564",
       "arxiv": "https://arxiv.org/abs/2608.12564",
       "pdf": "https://arxiv.org/pdf/2608.12564.pdf",
-      "upvotes": 429,
+      "upvotes": 437,
       "tags": [
         "VLA",
         "World Model",
@@ -139198,7 +139199,27 @@
         "Simulator"
       ],
       "source": "hf"
+    },
+    "2608.15380": {
+      "id": "2608.15380",
+      "title": "Adaptive Bridge: A Proxy-Based Decoupling Layer for Mitigating DDS Backpressure in ROS 2",
+      "abstract": "In systems built on Robot Operating System 2 (ROS 2) and using Data Distribution Service (DDS), a single network-impaired or throttled subscriber on a RELIABLE topic can cause backpressure that degrades throughput and latency for all other subscribers, including safety-critical ones sharing the publisher, because the publisher's DDS writer can no longer accept new samples. We present Adaptive Bridge, a proxy-based layer that decouples critical subscribers from degraded or noncritical ones, thereby isolating the critical path through topic splitting and dynamic rate control. The proxy acts as a middleman and subscribes to the original topic and republishes the messages to two independent DDS writers: one RELIABLE writer for critical nodes and one BEST EFFORT writer for noncritical or degraded nodes, thus isolating the degraded nodes and safeguarding the publisher and critical nodes from backpressure. A probe-based classifier actively monitors subscriber health through sampling with hysteresis and adjusts subscriber rate limits in real time. We evaluate the system under a Gilbert-Elliott bursty wireless loss model using a reproducible Docker-based harness. The results show that using the Adaptive Bridge in our evaluation harness reduces the critical subscriber tail p95 latency from up to 15 s to 1.55 ms across all impairment severities while preserving the publisher's configured throughput.",
+      "authors": "Kaushalraj Puwar, B. Thangaraju",
+      "date": "2026-09-11",
+      "published": "2026-09-11",
+      "url": "https://huggingface.co/papers/2608.15380",
+      "hfUrl": "https://huggingface.co/papers/2608.15380",
+      "arxiv": "https://arxiv.org/abs/2608.15380",
+      "pdf": "https://arxiv.org/pdf/2608.15380.pdf",
+      "upvotes": 1,
+      "tags": [
+        "Robotics"
+      ],
+      "topics": [
+        "Robotics"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-09-11T04:48:34.201089+00:00"
+  "generatedAt": "2026-09-12T04:42:58.345904+00:00"
 }
