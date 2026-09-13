@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-09-12T04:42:58.345904+00:00",
+  "generatedAt": "2026-09-13T04:58:37.999631+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-05",
-  "archiveCutoff": "2021-09-13",
-  "addedToday": 1,
+  "recentCutoff": "2026-09-06",
+  "archiveCutoff": "2021-09-14",
+  "addedToday": 0,
   "historyTotal": 5788,
-  "count": 141,
-  "archiveCount": 5454,
+  "count": 127,
+  "archiveCount": 5468,
   "sources": {
     "hf": 17,
-    "arxiv": 124
+    "arxiv": 110
   },
   "archiveSources": {
     "hf": 68,
-    "arxiv": 5386
+    "arxiv": 5400
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2608.15380",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.15380",
       "arxiv": "https://arxiv.org/abs/2608.15380",
       "pdf": "https://arxiv.org/pdf/2608.15380.pdf",
-      "upvotes": 1,
+      "upvotes": 12,
       "tags": [
         "Robotics"
       ],
@@ -49,7 +51,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12564",
       "arxiv": "https://arxiv.org/abs/2608.12564",
       "pdf": "https://arxiv.org/pdf/2608.12564.pdf",
-      "upvotes": 437,
+      "upvotes": 444,
       "tags": [
         "VLA",
         "World Model",
@@ -72,7 +74,7 @@
       "url": "https://huggingface.co/papers/2609.10522",
       "arxiv": "https://arxiv.org/abs/2609.10522",
       "pdf": "https://arxiv.org/pdf/2609.10522.pdf",
-      "upvotes": 135,
+      "upvotes": 138,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -95,6 +97,35 @@
       "hfUrl": "https://huggingface.co/papers/2609.10522"
     },
     {
+      "id": "2609.11561",
+      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
+      "abstract": "Mainstream robotic policies often adopt a Markovian formulation, but many complex real-world manipulation tasks are inherently non-Markovian, requiring long-horizon memory beyond the current observation. Existing memory mechanisms often rely on language summaries, growing visual windows, or their combinations, and may therefore lose fine-grained visual evidence or face a trade-off between history coverage and execution efficiency. We introduce MaP-WAM, a Memory-as-Plans framework that decomposes memory-dependent world-action modeling into memory-grounded planning and plan-conditioned execution, and uses long-term multimodal episodic context as planning-time evidence rather than repeatedly conditioning the executor on the full history. MaP-WAM represents memory as completed segment records containing language instructions and sparse visual context, and converts this episodic memory into compact plans comprising the next segment-level language plan and corresponding visual guidance. A World-Action-Progress (WAP) model executes each plan over an unknown duration by jointly predicting action chunks and corresponding execution progress at inference time, calibrating predicted progress through plan-observation alignment for adaptive segment transitions and closed-loop context updates. MaP-WAM keeps the executor context length fixed, while structured attention further enables key-value caching in both planning and execution. MaP-WAM achieves state-of-the-art performance on RMBench with an 83.3% success rate and attains 78.0% success on real-robot tasks, while maintaining approximately constant executor inference latency as task history grows.",
+      "authors": "Sizhe Zhao, Haozhe Xie, Weiyu Zhao, Chenchu Zhang, Huan Wang, Chenyang Wang, Qinglin Liu, Shengping Zhang",
+      "date": "2026-09-10",
+      "published": "2026-09-10",
+      "url": "https://arxiv.org/abs/2609.11561",
+      "arxiv": "https://arxiv.org/abs/2609.11561",
+      "pdf": "https://arxiv.org/pdf/2609.11561.pdf",
+      "upvotes": 26,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Imitation Learning",
+        "WAM",
+        "World Model"
+      ],
+      "tags": [
+        "Manipulation",
+        "Imitation Learning",
+        "WAM",
+        "World Model"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.11561"
+    },
+    {
       "id": "2609.00369",
       "title": "Puppeteer: Object-Grounded Posture-Aware Co-Speech Gesture Generation",
       "abstract": "Generating co-speech gestures that are temporally coherent, semantically aligned with speech, and grounded with surrounding objects remains challenging. Prior speech-driven gesture models emphasize audio-gesture alignment but do not explicitly account for posture constraints or surrounding objects, failing to capture the inherent correlation between body gestures and the physical space. We present Puppeteer, a posture-aware, object-grounded co-speech gesture diffusion model operating in a causal latent space. We decompose long gestures into structured primitives and learn a causal variational autoencoder that encodes them into temporally ordered latent tokens, each depending only on the past. We then perform conditional diffusion directly in the causal latent space, conditioning on speech signals, motion history, an initial posture reference, and object geometry to synthesize physically consistent gestures. This temporally ordered latent formulation enables explicit temporal control and supports tasks such as gesture in-betweening and gesture completion. To better assess co-speech gesture synthesis beyond existing measures, we introduce new evaluation metrics tailored to this task. We also created SceneGes, the first curated synthetic 3D dataset of embodied co-speech gestures and corresponding 3D objects, enabling object-grounded gesture generation. Experiments show that Puppeteer generates more diverse and temporally synchronized gestures than prior methods, while enabling object-grounded gesture synthesis.",
@@ -105,7 +136,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.00369",
       "arxiv": "https://arxiv.org/abs/2609.00369",
       "pdf": "https://arxiv.org/pdf/2609.00369.pdf",
-      "upvotes": 16,
+      "upvotes": 18,
       "tags": [
         "Dataset"
       ],
@@ -125,7 +156,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.09155",
       "arxiv": "https://arxiv.org/abs/2609.09155",
       "pdf": "https://arxiv.org/pdf/2609.09155.pdf",
-      "upvotes": 12,
+      "upvotes": 14,
       "tags": [
         "World Model",
         "Simulator"
@@ -135,35 +166,6 @@
         "Simulator"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2609.11561",
-      "title": "Memory as Plans: World-Action Modeling with Memory-Grounded Planning",
-      "abstract": "Mainstream robotic policies often adopt a Markovian formulation, but many complex real-world manipulation tasks are inherently non-Markovian, requiring long-horizon memory beyond the current observation. Existing memory mechanisms often rely on language summaries, growing visual windows, or their combinations, and may therefore lose fine-grained visual evidence or face a trade-off between history coverage and execution efficiency. We introduce MaP-WAM, a Memory-as-Plans framework that decomposes memory-dependent world-action modeling into memory-grounded planning and plan-conditioned execution, and uses long-term multimodal episodic context as planning-time evidence rather than repeatedly conditioning the executor on the full history. MaP-WAM represents memory as completed segment records containing language instructions and sparse visual context, and converts this episodic memory into compact plans comprising the next segment-level language plan and corresponding visual guidance. A World-Action-Progress (WAP) model executes each plan over an unknown duration by jointly predicting action chunks and corresponding execution progress at inference time, calibrating predicted progress through plan-observation alignment for adaptive segment transitions and closed-loop context updates. MaP-WAM keeps the executor context length fixed, while structured attention further enables key-value caching in both planning and execution. MaP-WAM achieves state-of-the-art performance on RMBench with an 83.3% success rate and attains 78.0% success on real-robot tasks, while maintaining approximately constant executor inference latency as task history grows.",
-      "authors": "Sizhe Zhao, Haozhe Xie, Weiyu Zhao, Chenchu Zhang, Huan Wang, Chenyang Wang, Qinglin Liu, Shengping Zhang",
-      "date": "2026-09-10",
-      "published": "2026-09-10",
-      "url": "https://arxiv.org/abs/2609.11561",
-      "arxiv": "https://arxiv.org/abs/2609.11561",
-      "pdf": "https://arxiv.org/pdf/2609.11561.pdf",
-      "upvotes": 10,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Imitation Learning",
-        "WAM",
-        "World Model"
-      ],
-      "tags": [
-        "Manipulation",
-        "Imitation Learning",
-        "WAM",
-        "World Model"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.11561"
     },
     {
       "id": "2609.11357",
@@ -786,7 +788,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.08084",
       "arxiv": "https://arxiv.org/abs/2609.08084",
       "pdf": "https://arxiv.org/pdf/2609.08084.pdf",
-      "upvotes": 54,
+      "upvotes": 59,
       "tags": [
         "Robotics"
       ],
@@ -805,7 +807,7 @@
       "url": "https://huggingface.co/papers/2609.05588",
       "arxiv": "https://arxiv.org/abs/2609.05588",
       "pdf": "https://arxiv.org/pdf/2609.05588.pdf",
-      "upvotes": 51,
+      "upvotes": 54,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -836,7 +838,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.05594",
       "arxiv": "https://arxiv.org/abs/2609.05594",
       "pdf": "https://arxiv.org/pdf/2609.05594.pdf",
-      "upvotes": 42,
+      "upvotes": 45,
       "tags": [
         "Embodied Vision"
       ],
@@ -855,7 +857,7 @@
       "url": "https://huggingface.co/papers/2609.07498",
       "arxiv": "https://arxiv.org/abs/2609.07498",
       "pdf": "https://arxiv.org/pdf/2609.07498.pdf",
-      "upvotes": 27,
+      "upvotes": 31,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -883,7 +885,7 @@
       "url": "https://huggingface.co/papers/2609.09158",
       "arxiv": "https://arxiv.org/abs/2609.09158",
       "pdf": "https://arxiv.org/pdf/2609.09158.pdf",
-      "upvotes": 19,
+      "upvotes": 22,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -1542,7 +1544,7 @@
       "url": "https://huggingface.co/papers/2609.05533",
       "arxiv": "https://arxiv.org/abs/2609.05533",
       "pdf": "https://arxiv.org/pdf/2609.05533.pdf",
-      "upvotes": 7,
+      "upvotes": 10,
       "categories": [
         "cs.CV",
         "cs.LG",
@@ -2154,7 +2156,7 @@
       "url": "https://arxiv.org/abs/2609.07398",
       "arxiv": "https://arxiv.org/abs/2609.07398",
       "pdf": "https://arxiv.org/pdf/2609.07398.pdf",
-      "upvotes": 65,
+      "upvotes": 71,
       "categories": [
         "cs.RO"
       ],
@@ -2188,7 +2190,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.05416",
       "arxiv": "https://arxiv.org/abs/2609.05416",
       "pdf": "https://arxiv.org/pdf/2609.05416.pdf",
-      "upvotes": 23,
+      "upvotes": 27,
       "tags": [
         "Dataset",
         "3D / Perception"
@@ -2209,7 +2211,7 @@
       "url": "https://arxiv.org/abs/2609.07470",
       "arxiv": "https://arxiv.org/abs/2609.07470",
       "pdf": "https://arxiv.org/pdf/2609.07470.pdf",
-      "upvotes": 19,
+      "upvotes": 21,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -2240,7 +2242,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.05415",
       "arxiv": "https://arxiv.org/abs/2609.05415",
       "pdf": "https://arxiv.org/pdf/2609.05415.pdf",
-      "upvotes": 14,
+      "upvotes": 16,
       "tags": [
         "Locomotion",
         "Dataset",
@@ -2264,7 +2266,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.02780",
       "arxiv": "https://arxiv.org/abs/2609.02780",
       "pdf": "https://arxiv.org/pdf/2609.02780.pdf",
-      "upvotes": 3,
+      "upvotes": 4,
       "tags": [
         "Humanoid",
         "LLM Agent",
@@ -3280,7 +3282,9 @@
       "tags": [
         "Robotics"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.06251",
       "title": "MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control",
@@ -3664,9 +3668,7 @@
       "tags": [
         "Multi-task"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.04173",
       "title": "Last Translation Benchmark",
@@ -3678,7 +3680,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.04173",
       "arxiv": "https://arxiv.org/abs/2609.04173",
       "pdf": "https://arxiv.org/pdf/2609.04173.pdf",
-      "upvotes": 37,
+      "upvotes": 39,
       "tags": [
         "Dataset"
       ],
@@ -3697,7 +3699,7 @@
       "url": "https://arxiv.org/abs/2609.05324",
       "arxiv": "https://arxiv.org/abs/2609.05324",
       "pdf": "https://arxiv.org/pdf/2609.05324.pdf",
-      "upvotes": 25,
+      "upvotes": 28,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -5184,7 +5186,7 @@
       "url": "https://arxiv.org/abs/2609.03199",
       "arxiv": "https://arxiv.org/abs/2609.03199",
       "pdf": "https://arxiv.org/pdf/2609.03199.pdf",
-      "upvotes": 116,
+      "upvotes": 121,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -5212,7 +5214,7 @@
       "url": "https://huggingface.co/papers/2609.00188",
       "arxiv": "https://arxiv.org/abs/2609.00188",
       "pdf": "https://arxiv.org/pdf/2609.00188.pdf",
-      "upvotes": 51,
+      "upvotes": 53,
       "categories": [
         "cs.CV"
       ],
@@ -5918,7 +5920,7 @@
       "url": "https://huggingface.co/papers/2608.30821",
       "arxiv": "https://arxiv.org/abs/2608.30821",
       "pdf": "https://arxiv.org/pdf/2608.30821.pdf",
-      "upvotes": 119,
+      "upvotes": 120,
       "categories": [
         "cs.CV",
         "cs.AI"
@@ -5996,7 +5998,7 @@
       "url": "https://arxiv.org/abs/2609.01281",
       "arxiv": "https://arxiv.org/abs/2609.01281",
       "pdf": "https://arxiv.org/pdf/2609.01281.pdf",
-      "upvotes": 14,
+      "upvotes": 16,
       "categories": [
         "cs.RO",
         "cs.AI"
