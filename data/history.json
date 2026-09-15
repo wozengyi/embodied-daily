@@ -134423,7 +134423,7 @@
       "url": "https://arxiv.org/abs/2609.03199",
       "arxiv": "https://arxiv.org/abs/2609.03199",
       "pdf": "https://arxiv.org/pdf/2609.03199.pdf",
-      "upvotes": 121,
+      "upvotes": 122,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -134503,7 +134503,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.04173",
       "arxiv": "https://arxiv.org/abs/2609.04173",
       "pdf": "https://arxiv.org/pdf/2609.04173.pdf",
-      "upvotes": 39,
+      "upvotes": 40,
       "tags": [
         "Dataset"
       ],
@@ -136323,7 +136323,7 @@
         "cs.CV",
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "VLA",
         "Manipulation",
@@ -136340,7 +136340,8 @@
         "Humanoid",
         "Locomotion",
         "Navigation"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.06251"
     },
     "2609.06221": {
       "id": "2609.06221",
@@ -136510,7 +136511,7 @@
       "url": "https://huggingface.co/papers/2609.05588",
       "arxiv": "https://arxiv.org/abs/2609.05588",
       "pdf": "https://arxiv.org/pdf/2609.05588.pdf",
-      "upvotes": 58,
+      "upvotes": 59,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -137196,7 +137197,7 @@
       "url": "https://arxiv.org/abs/2609.07398",
       "arxiv": "https://arxiv.org/abs/2609.07398",
       "pdf": "https://arxiv.org/pdf/2609.07398.pdf",
-      "upvotes": 73,
+      "upvotes": 74,
       "categories": [
         "cs.RO"
       ],
@@ -137649,7 +137650,7 @@
       "url": "https://huggingface.co/papers/2609.10522",
       "arxiv": "https://arxiv.org/abs/2609.10522",
       "pdf": "https://arxiv.org/pdf/2609.10522.pdf",
-      "upvotes": 146,
+      "upvotes": 157,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -138346,7 +138347,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.00369",
       "arxiv": "https://arxiv.org/abs/2609.00369",
       "pdf": "https://arxiv.org/pdf/2609.00369.pdf",
-      "upvotes": 21,
+      "upvotes": 22,
       "tags": [
         "Dataset"
       ],
@@ -138366,7 +138367,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.08084",
       "arxiv": "https://arxiv.org/abs/2609.08084",
       "pdf": "https://arxiv.org/pdf/2609.08084.pdf",
-      "upvotes": 65,
+      "upvotes": 68,
       "tags": [
         "Robotics"
       ],
@@ -138849,7 +138850,7 @@
       "url": "https://arxiv.org/abs/2609.11561",
       "arxiv": "https://arxiv.org/abs/2609.11561",
       "pdf": "https://arxiv.org/pdf/2609.11561.pdf",
-      "upvotes": 36,
+      "upvotes": 38,
       "categories": [
         "cs.RO"
       ],
@@ -139165,7 +139166,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12564",
       "arxiv": "https://arxiv.org/abs/2608.12564",
       "pdf": "https://arxiv.org/pdf/2608.12564.pdf",
-      "upvotes": 448,
+      "upvotes": 452,
       "tags": [
         "VLA",
         "World Model",
@@ -139189,7 +139190,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.09155",
       "arxiv": "https://arxiv.org/abs/2609.09155",
       "pdf": "https://arxiv.org/pdf/2609.09155.pdf",
-      "upvotes": 16,
+      "upvotes": 17,
       "tags": [
         "World Model",
         "Simulator"
@@ -139231,7 +139232,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.12641",
       "arxiv": "https://arxiv.org/abs/2609.12641",
       "pdf": "https://arxiv.org/pdf/2609.12641.pdf",
-      "upvotes": 25,
+      "upvotes": 65,
       "tags": [
         "VLA",
         "Imitation Learning",
@@ -139243,7 +139244,146 @@
         "Foundation Models"
       ],
       "source": "hf"
+    },
+    "2609.14973": {
+      "id": "2609.14973",
+      "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+      "abstract": "We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience. Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash. It achieves the best open-source results on 14 benchmarks while retaining general multimodal capabilities. Beyond these understanding evaluations, qualitative examples show the model's ability to produce end-effector trajectories and predict future scenes through spatially aligned RGB, depth, and robot-mask outputs.",
+      "authors": "DeepCybo Team, Yu Bin, Haipeng Cao, Zheng Chang, Kai Chen, Youning Chen, Kailin Deng, Yichao Du, Xiaotong Fu, Haoyang Ge, Yunlong Guo, Chenliu Hao, Jiyan He, Xuguo He, Yakun Hou, Kai Hu, Cong Huang, Tuopusen Huang, Yu Huang, Hong Li, Peize Li, Shijie Lian, Xiaopeng Lin, Yun Lin, Haibao Liu, Haochen Liu, Qiuzhi Liu, Shengcai Liu, Zhiqiang Liu, Tao Luo, Peng Ren, Shuo Ren, Chaoyi Ruan, Zhaolong Shen, Yukun Shi, Qiyuan Su, Yuxuan Tian, Yining Wang, Changti Wu, Hao Wu, Xueyin Xu, Ruoqi Yang, Zhaoyang Yang, Hang Yuan, Zhaoyang Zeng, Hanwen Zhang, Ruimeng Zhang, Yao Zhang, Yibo Zhang, Yuxiang Zhang, Zhirui Zhang, Ziyi Zhang, Zubin Zheng, Zishen Zhuang",
+      "date": "2026-09-15",
+      "published": "2026-09-15",
+      "url": "https://huggingface.co/papers/2609.14973",
+      "hfUrl": "https://huggingface.co/papers/2609.14973",
+      "arxiv": "https://arxiv.org/abs/2609.14973",
+      "pdf": "https://arxiv.org/pdf/2609.14973.pdf",
+      "upvotes": 51,
+      "tags": [
+        "VLA",
+        "Dataset",
+        "Open-Source",
+        "Foundation Models"
+      ],
+      "topics": [
+        "VLA",
+        "Dataset",
+        "Open-Source",
+        "Foundation Models"
+      ],
+      "source": "hf"
+    },
+    "2609.15973": {
+      "id": "2609.15973",
+      "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+      "abstract": "Foundation models have progressed from learning and reasoning over existing knowledge, to increasingly learning through action, tool use, and outcome feedback. We argue that the next frontier is a further transition: from solving and acting within problems specified by humans to participating in the process by which new problems, representations, explanations, and knowledge are created. We refer to this capability as Discovery Intelligence. We formulate Discovery Foundation Models (DFMs) as general-purpose model systems for open-ended discovery. A DFM operates over a revisable research state and supports seven coupled capabilities spanning problem discovery, formulation, representation construction, hypothesis formation, intervention, evidence-grounded revision, and continual discovery improvement. We instantiate this framework with Zetema, which couples explicit research-state dynamics, verification and experimental gating, external grounding, and cross-task Discovery Skill evolution. We further ground the framework with GALILEO, a real therapeutic-discovery system in which Dry-Lab reasoning, robotic and hands-on Wet-Lab experimentation, external biological evidence, and iterative hypothesis and design revision form a closed physical discovery loop. We then formulate a unified approach to capability formation and process-centered evaluation, enabling discovery behavior to be trained, improved, and measured beyond final-answer performance. Together, these components establish discovery as a learnable, executable, and evaluable capability of foundation-model systems. We view this shift as a broader progression in intelligence scaling: from learning over existing knowledge, to learning from action outcomes, and ultimately to participating in the construction, testing, and revision of the structures through which new knowledge is discovered. Code: https://github.com/Gen-Verse/DFM-Plans",
+      "authors": "Ling Yang, Zhenfei Yin, Yingcheng Wu",
+      "date": "2026-09-15",
+      "published": "2026-09-15",
+      "url": "https://huggingface.co/papers/2609.15973",
+      "hfUrl": "https://huggingface.co/papers/2609.15973",
+      "arxiv": "https://arxiv.org/abs/2609.15973",
+      "pdf": "https://arxiv.org/pdf/2609.15973.pdf",
+      "upvotes": 16,
+      "tags": [
+        "Foundation Models"
+      ],
+      "topics": [
+        "Foundation Models"
+      ],
+      "source": "hf"
+    },
+    "2609.12541": {
+      "id": "2609.12541",
+      "title": "Agent as Policy for Robotic Manipulation",
+      "abstract": "We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training. We introduce Agent as Policy (AGP), which places task planning and execution under the agent's control. Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes. This brings the agent's reasoning and programming capabilities into continuous interaction with the physical world. We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects. These include assembly from human videos, block construction from goal images, die reorientation, targeted throwing, and bimanual towel folding. AGP achieves success rates of 100%, 100%, and 80% on three block construction configurations. These findings establish a path for general-purpose agents to act as robotic policies, extending their autonomy to physical manipulation through runtime reasoning, programming, and interaction.",
+      "authors": "Mengzhao Jia, Yang Lin, Xixin Zhang, Zhihan Zhang, Xiaobai Liu, Meng Jiang",
+      "date": "2026-09-15",
+      "published": "2026-09-15",
+      "url": "https://huggingface.co/papers/2609.12541",
+      "hfUrl": "https://huggingface.co/papers/2609.12541",
+      "arxiv": "https://arxiv.org/abs/2609.12541",
+      "pdf": "https://arxiv.org/pdf/2609.12541.pdf",
+      "upvotes": 0,
+      "tags": [
+        "Manipulation",
+        "Bimanual"
+      ],
+      "topics": [
+        "Manipulation",
+        "Bimanual"
+      ],
+      "source": "hf"
+    },
+    "2609.10895": {
+      "id": "2609.10895",
+      "title": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs",
+      "abstract": "Reacting to sudden physical hazards (catching a slipping plate, dodging a falling knife) is both a meaningful test of embodied intelligence and a hard requirement for deploying multimodal large language models (MLLMs) as the decision coreof household robots. Existing evaluations, however, probe intuitive physics passively through question answering over videos, or target deliberate, long-horizon tasks such as navigation and rearrangement; none measure whether a model can turn physical understanding into immediate, safety-critical action. We introduce ReactHuman, the first physics-grounded benchmark for human-like reactive decision-making, in which the evaluated MLLM acts as the brain of a simulated humanoid facing sudden household hazards; it spans 17 event families and over 1,000 bit-for-bit reproducible scenes with exact, annotation-free ground truth derived from 240 Hz rigid-body simulation, including adversarial objects whose appearance contradicts their physics (a foam anvil, a steel apple). We further design a five-metric suite that scores each reaction along three axes: reasonable, safe, and physically grounded. We physically execute every committed plan so that decisions have observable consequences. With this harness we evaluate seven representative MLLMs. Results show that reactive safety is far from solved: models mishandle roughly one hazard in three, act from fixed dispositions rather than the observed scene, trust appearance over motion, and miss interception points at meter scale even when the chosen action is correct; none of these failures shrink with model scale. ReactHuman thus offers both a fine-grained diagnosis and a scalable training signal toward physically grounded, safety-aware embodied agents. The benchmark can be found here: https://huggingface.co/datasets/Alan123/reacthuman-benchmark-scaled",
+      "authors": "Yizhan Li, Jianxin You, Mengyang Xiong, Yinhuan Chen, Zicheng Zhao, Dekun Wu, Dongqing Zhang, Bang Liu",
+      "date": "2026-09-14",
+      "published": "2026-09-14",
+      "url": "https://huggingface.co/papers/2609.10895",
+      "hfUrl": "https://huggingface.co/papers/2609.10895",
+      "arxiv": "https://arxiv.org/abs/2609.10895",
+      "pdf": "https://arxiv.org/pdf/2609.10895.pdf",
+      "upvotes": 31,
+      "tags": [
+        "Humanoid",
+        "Navigation",
+        "Imitation Learning",
+        "LLM Agent",
+        "Dataset"
+      ],
+      "topics": [
+        "Humanoid",
+        "Navigation",
+        "Imitation Learning",
+        "LLM Agent",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    "2609.12036": {
+      "id": "2609.12036",
+      "title": "Pelican-Sim 1.0: A General World Model Simulator for Embodied Intelligence",
+      "abstract": "In this technical report, we propose Pelican-Sim 1.0, a general world model simulator for embodied intelligence that predicts future observations from visual context and robot actions to support downstream learning and decision making. The model incorporates four key design features: (1) Unified action representation: a 28-dimensional action value space covering most mainstream embodiments, keeping one model valid across heterogeneous devices. (2) Action-visual injection: URDF- and camera-rendered action videos bridge actions and pixels, giving markedly better controllability across embodiments, scenes, and tasks (PSNR +0.904 over alternative fusion baselines). (3) Sparse mixture-of-experts (MoE): sparse MoE layers add capacity for heterogeneous dynamics and absorb the action modality while reducing inter-modality conflict (FVD -6.530 vs. the dense backbone). (4) Efficient rollout generation: causal adaptation and few-step distillation yield a four-step autoregressive simulator, achieving a 5.67-fold speedup over the 35-step model. Benefiting from these designs, we train on approximately one million real-world and simulated trajectories and obtain large gains in action controllability and video quality: PSNR improves over the strongest evaluated baselines by 4.636 on AgiBotWorld Beta, 2.080 on RoboMIND, and 10.343 on RoboTwin, with the adapted EWMBench DYN score up 0.426 on RoboTwin. Relying on this, four downstream applications on RoboTwin succeed: 500 generated trajectories added to 50 demonstrations per task raise policy success from 70% to 93%; policy evaluation reaches a Pearson correlation of 0.994 across five checkpoints; and relative success gains reach 47.7% for action selection and 20.3% for policy improvement. Qualitative generalization across trajectory, scene, object, embodiment, and viewpoint shifts highlights its potential as a general-purpose world model simulator.",
+      "authors": "Shilong Zou, Shilin Zhang, Yingji Zhang, Yuhang Huang, Yi Zhang, Zeyuan Ding, Han Dong, Junwei Liao, Yong Dai, Jian Tang, Xiaozhu Ju",
+      "date": "2026-09-14",
+      "published": "2026-09-14",
+      "url": "https://huggingface.co/papers/2609.12036",
+      "hfUrl": "https://huggingface.co/papers/2609.12036",
+      "arxiv": "https://arxiv.org/abs/2609.12036",
+      "pdf": "https://arxiv.org/pdf/2609.12036.pdf",
+      "upvotes": 1,
+      "tags": [
+        "World Model",
+        "Simulator"
+      ],
+      "topics": [
+        "World Model",
+        "Simulator"
+      ],
+      "source": "hf"
+    },
+    "2609.08365": {
+      "id": "2609.08365",
+      "title": "ReMoMask-2: Latent Retrieval-Augmented Masked Motion Generation",
+      "abstract": "Text-to-motion (T2M) generation maps natural language to human joint movements, aiding gaming, VR, and robotics. Retrieval-Augmented Text-to-Motion (RAG-T2M) improves generation on complex descriptions by conditioning on retrieved motion-text pairs. However, existing RAG-T2M models face two challenges: coarse-grained retrieval and fusion mechanisms overlook the hierarchical, spatial-temporal topology of human motion, and a representation gap exists because retrieved evidence resides in a semantic space separate from the generator's latents. To address the first, we present ReMoMask, a structure-aware RAG framework coupling Hierarchical Bidirectional Momentum (HBM) contrastive learning to align global and part-level features with text; Semantic Spatial-Temporal Attention (SSTA) for topology-aware fusion; and Topology Structured Masking (TSM) to force robust part-level grounding via adaptive masking. To address the second, we introduce ReMoMask-2, which rebuilds the retrieval database directly within the generator's pre-quantization latent space and aligns text queries via a distilled lightweight projector, allowing the generator to directly consume the retrieved motion's semantic content. Extensive experiments on HumanML3D, KIT-ML, and SnapMoGen demonstrate our retriever achieves state-of-the-art accuracy, while ReMoMask-2 attains the lowest FID on KIT-ML and SnapMoGen; notably, its single mask-transformer stage surpasses ReMoMask's full two-stage pipeline and delivers the fastest inference.",
+      "authors": "Yiran Wang, Zeyu Zhang, Ling Shao, Hao Tang",
+      "date": "2026-09-14",
+      "published": "2026-09-14",
+      "url": "https://huggingface.co/papers/2609.08365",
+      "hfUrl": "https://huggingface.co/papers/2609.08365",
+      "arxiv": "https://arxiv.org/abs/2609.08365",
+      "pdf": "https://arxiv.org/pdf/2609.08365.pdf",
+      "upvotes": 1,
+      "tags": [
+        "Robotics"
+      ],
+      "topics": [
+        "Robotics"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-09-14T05:06:54.852066+00:00"
+  "generatedAt": "2026-09-15T05:00:50.203238+00:00"
 }
