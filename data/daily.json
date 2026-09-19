@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-09-18T04:51:37.393718+00:00",
+  "generatedAt": "2026-09-19T04:44:11.579790+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-11",
-  "archiveCutoff": "2021-09-19",
-  "addedToday": 72,
+  "recentCutoff": "2026-09-12",
+  "archiveCutoff": "2021-09-20",
+  "addedToday": 0,
   "historyTotal": 6081,
-  "count": 283,
-  "archiveCount": 5605,
+  "count": 256,
+  "archiveCount": 5632,
   "sources": {
-    "hf": 17,
-    "arxiv": 266
+    "hf": 16,
+    "arxiv": 240
   },
   "archiveSources": {
-    "hf": 85,
-    "arxiv": 5520
+    "hf": 86,
+    "arxiv": 5546
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2609.19554",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.19554",
       "arxiv": "https://arxiv.org/abs/2609.19554",
       "pdf": "https://arxiv.org/pdf/2609.19554.pdf",
-      "upvotes": 4,
+      "upvotes": 7,
       "tags": [
         "Imitation Learning",
         "Bimanual"
@@ -51,7 +53,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.18487",
       "arxiv": "https://arxiv.org/abs/2609.18487",
       "pdf": "https://arxiv.org/pdf/2609.18487.pdf",
-      "upvotes": 36,
+      "upvotes": 39,
       "tags": [
         "VLA"
       ],
@@ -1492,6 +1494,34 @@
       "source": "hf"
     },
     {
+      "id": "2609.19138",
+      "title": "In-Context Robot Learning with VLM Agents",
+      "abstract": "Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce GPT-Policy, a general-agent framework for in-context robot learning. GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome. We evaluate its reliability and limitations through task success and efficiency metrics, matched comparisons across models, and controlled context ablations. In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks. These findings position GPT-Policy as a step toward robot adaptation through in-context learning, providing an empirical foundation for translating the general-purpose capabilities of VLMs into physical behavior and clarifying the challenges that must be overcome for reliable deployment.",
+      "authors": "Dongzhou Cheng, Taoran Yi, Ye Fang, Xingwu Zhang, Fan Feng, Yixuan Li, Gengxiong Zhuang, Rongze Wang, Shuai Yang, Wei Song, Weizhi Xue, Minyan Wu, Jie Gui, Jiaqi Wang, Tong Wu",
+      "date": "2026-09-16",
+      "published": "2026-09-16",
+      "url": "https://arxiv.org/abs/2609.19138",
+      "arxiv": "https://arxiv.org/abs/2609.19138",
+      "pdf": "https://arxiv.org/pdf/2609.19138.pdf",
+      "upvotes": 16,
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "tags": [
+        "VLA",
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.19138"
+    },
+    {
       "id": "2609.15195",
       "title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
       "abstract": "Embodied navigation requires agents to interpret visual observations, accumulate spatial knowledge, and execute actions to follow instructions or locate objects. Training-based methods face generalization challenges, while training-free methods exploit multimodal large language models (MLLMs) but often lack mechanisms to reconcile proposed actions with spatial evidence, task progress, and execution failures. We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface. The Harness validates planner proposals against spatial evidence, geometric feasibility, and subgoal consistency, incorporating structured tool feedback into subsequent decisions. Hierarchical event memory tracks task progress and execution history, while a persistent Spatiotemporal Graph maintains reusable spatial evidence and failure annotations for verification and recovery. A replaceable Navigation Executor converts validated targets into executable motions, allowing the same Harness protocol to support instruction-following and object-goal navigation. HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3% on R2R, RxR, HM3D-v2, and HM3D-OVON, respectively, surpassing prior training-free SOTA results. Humanoid deployment further demonstrates its applicability to both tasks in real-world environments. The project page is: https://harnessvln.netlify.app/.",
@@ -1516,34 +1546,6 @@
       "source": "hf"
     },
     {
-      "id": "2609.19138",
-      "title": "In-Context Robot Learning with VLM Agents",
-      "abstract": "Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce GPT-Policy, a general-agent framework for in-context robot learning. GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome. We evaluate its reliability and limitations through task success and efficiency metrics, matched comparisons across models, and controlled context ablations. In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks. These findings position GPT-Policy as a step toward robot adaptation through in-context learning, providing an empirical foundation for translating the general-purpose capabilities of VLMs into physical behavior and clarifying the challenges that must be overcome for reliable deployment.",
-      "authors": "Dongzhou Cheng, Taoran Yi, Ye Fang, Xingwu Zhang, Fan Feng, Yixuan Li, Gengxiong Zhuang, Rongze Wang, Shuai Yang, Wei Song, Weizhi Xue, Minyan Wu, Jie Gui, Jiaqi Wang, Tong Wu",
-      "date": "2026-09-16",
-      "published": "2026-09-16",
-      "url": "https://arxiv.org/abs/2609.19138",
-      "arxiv": "https://arxiv.org/abs/2609.19138",
-      "pdf": "https://arxiv.org/pdf/2609.19138.pdf",
-      "upvotes": 15,
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Imitation Learning",
-        "Embodied Vision"
-      ],
-      "tags": [
-        "VLA",
-        "Imitation Learning",
-        "Embodied Vision"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.19138"
-    },
-    {
       "id": "2609.17524",
       "title": "Modality-Autoregressive World-Action Models",
       "abstract": "World-action models (WAMs) jointly model future observations and actions, typically predicting the future as RGB images. Other visual modalities such as depth, pretrained visual features, and point tracks can more efficiently capture geometric, semantic, and motion features. However, how best to combine these modalities within WAMs remains an open question. We introduce ModAR, the first WAM to autoregressively denoise multiple future modalities before predicting actions. This allows each prediction to condition on previously generated modalities. We train from scratch to systematically study how training-data mixtures, predicted modalities, and WAM formulations affect performance. In our evaluations, WAMs benefit from predicting point tracks, DINO features, and depth maps, while additionally predicting future RGB does not provide a consistent benefit. We also find that ModAR's sequential generation outperforms existing WAM formulations, with the highest average success rate at all evaluated data scales. We also fine-tune the video-model-initialized WAM Flex-$π$ on the same data; ModAR achieves a slightly higher observed average success rate (75% vs. 72%) while using approximately $20\\times$ fewer training FLOPs and no pretraining. On three real-world bimanual tasks, ModAR outperforms baselines and improves with human videos.",
@@ -1553,7 +1555,7 @@
       "url": "https://huggingface.co/papers/2609.17524",
       "arxiv": "https://arxiv.org/abs/2609.17524",
       "pdf": "https://arxiv.org/pdf/2609.17524.pdf",
-      "upvotes": 7,
+      "upvotes": 8,
       "categories": [
         "cs.RO"
       ],
@@ -6561,7 +6563,9 @@
       "tags": [
         "VLA"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2608.15380",
       "title": "Adaptive Bridge: A Proxy-Based Decoupling Layer for Mitigating DDS Backpressure in ROS 2",
@@ -7240,9 +7244,7 @@
       "tags": [
         "Imitation Learning"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2608.12564",
       "title": "Scaling Automatic Research Agents via World Models",
@@ -9019,7 +9021,7 @@
       "url": "https://huggingface.co/papers/2609.05533",
       "arxiv": "https://arxiv.org/abs/2609.05533",
       "pdf": "https://arxiv.org/pdf/2609.05533.pdf",
-      "upvotes": 13,
+      "upvotes": 14,
       "categories": [
         "cs.CV",
         "cs.LG",
