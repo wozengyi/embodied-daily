@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-19T04:44:11.579790+00:00",
+  "generatedAt": "2026-09-20T05:00:18.317169+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-12",
-  "archiveCutoff": "2021-09-20",
+  "recentCutoff": "2026-09-13",
+  "archiveCutoff": "2021-09-21",
   "addedToday": 0,
   "historyTotal": 6081,
-  "count": 256,
-  "archiveCount": 5632,
+  "count": 240,
+  "archiveCount": 5648,
   "sources": {
     "hf": 16,
-    "arxiv": 240
+    "arxiv": 224
   },
   "archiveSources": {
     "hf": 86,
-    "arxiv": 5546
+    "arxiv": 5562
   },
   "warnings": [
     "zero_new_today"
@@ -31,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.19554",
       "arxiv": "https://arxiv.org/abs/2609.19554",
       "pdf": "https://arxiv.org/pdf/2609.19554.pdf",
-      "upvotes": 7,
+      "upvotes": 32,
       "tags": [
         "Imitation Learning",
         "Bimanual"
@@ -53,7 +53,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.18487",
       "arxiv": "https://arxiv.org/abs/2609.18487",
       "pdf": "https://arxiv.org/pdf/2609.18487.pdf",
-      "upvotes": 39,
+      "upvotes": 40,
       "tags": [
         "VLA"
       ],
@@ -1494,6 +1494,30 @@
       "source": "hf"
     },
     {
+      "id": "2609.15195",
+      "title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
+      "abstract": "Embodied navigation requires agents to interpret visual observations, accumulate spatial knowledge, and execute actions to follow instructions or locate objects. Training-based methods face generalization challenges, while training-free methods exploit multimodal large language models (MLLMs) but often lack mechanisms to reconcile proposed actions with spatial evidence, task progress, and execution failures. We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface. The Harness validates planner proposals against spatial evidence, geometric feasibility, and subgoal consistency, incorporating structured tool feedback into subsequent decisions. Hierarchical event memory tracks task progress and execution history, while a persistent Spatiotemporal Graph maintains reusable spatial evidence and failure annotations for verification and recovery. A replaceable Navigation Executor converts validated targets into executable motions, allowing the same Harness protocol to support instruction-following and object-goal navigation. HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3% on R2R, RxR, HM3D-v2, and HM3D-OVON, respectively, surpassing prior training-free SOTA results. Humanoid deployment further demonstrates its applicability to both tasks in real-world environments. The project page is: https://harnessvln.netlify.app/.",
+      "authors": "Yang Chen, Lirong Che, Zhenyu Huang, Wenbo Fu, Chuang Wang, Xu Cao, Daqi Liu, Yuzhe Yang, Jian Su, Lan-Zhe Guo",
+      "date": "2026-09-16",
+      "published": "2026-09-16",
+      "url": "https://huggingface.co/papers/2609.15195",
+      "hfUrl": "https://huggingface.co/papers/2609.15195",
+      "arxiv": "https://arxiv.org/abs/2609.15195",
+      "pdf": "https://arxiv.org/pdf/2609.15195.pdf",
+      "upvotes": 17,
+      "tags": [
+        "Humanoid",
+        "Navigation",
+        "LLM Agent"
+      ],
+      "topics": [
+        "Humanoid",
+        "Navigation",
+        "LLM Agent"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2609.19138",
       "title": "In-Context Robot Learning with VLM Agents",
       "abstract": "Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce GPT-Policy, a general-agent framework for in-context robot learning. GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome. We evaluate its reliability and limitations through task success and efficiency metrics, matched comparisons across models, and controlled context ablations. In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks. These findings position GPT-Policy as a step toward robot adaptation through in-context learning, providing an empirical foundation for translating the general-purpose capabilities of VLMs into physical behavior and clarifying the challenges that must be overcome for reliable deployment.",
@@ -1522,30 +1546,6 @@
       "hfUrl": "https://huggingface.co/papers/2609.19138"
     },
     {
-      "id": "2609.15195",
-      "title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
-      "abstract": "Embodied navigation requires agents to interpret visual observations, accumulate spatial knowledge, and execute actions to follow instructions or locate objects. Training-based methods face generalization challenges, while training-free methods exploit multimodal large language models (MLLMs) but often lack mechanisms to reconcile proposed actions with spatial evidence, task progress, and execution failures. We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface. The Harness validates planner proposals against spatial evidence, geometric feasibility, and subgoal consistency, incorporating structured tool feedback into subsequent decisions. Hierarchical event memory tracks task progress and execution history, while a persistent Spatiotemporal Graph maintains reusable spatial evidence and failure annotations for verification and recovery. A replaceable Navigation Executor converts validated targets into executable motions, allowing the same Harness protocol to support instruction-following and object-goal navigation. HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3% on R2R, RxR, HM3D-v2, and HM3D-OVON, respectively, surpassing prior training-free SOTA results. Humanoid deployment further demonstrates its applicability to both tasks in real-world environments. The project page is: https://harnessvln.netlify.app/.",
-      "authors": "Yang Chen, Lirong Che, Zhenyu Huang, Wenbo Fu, Chuang Wang, Xu Cao, Daqi Liu, Yuzhe Yang, Jian Su, Lan-Zhe Guo",
-      "date": "2026-09-16",
-      "published": "2026-09-16",
-      "url": "https://huggingface.co/papers/2609.15195",
-      "hfUrl": "https://huggingface.co/papers/2609.15195",
-      "arxiv": "https://arxiv.org/abs/2609.15195",
-      "pdf": "https://arxiv.org/pdf/2609.15195.pdf",
-      "upvotes": 16,
-      "tags": [
-        "Humanoid",
-        "Navigation",
-        "LLM Agent"
-      ],
-      "topics": [
-        "Humanoid",
-        "Navigation",
-        "LLM Agent"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2609.17524",
       "title": "Modality-Autoregressive World-Action Models",
       "abstract": "World-action models (WAMs) jointly model future observations and actions, typically predicting the future as RGB images. Other visual modalities such as depth, pretrained visual features, and point tracks can more efficiently capture geometric, semantic, and motion features. However, how best to combine these modalities within WAMs remains an open question. We introduce ModAR, the first WAM to autoregressively denoise multiple future modalities before predicting actions. This allows each prediction to condition on previously generated modalities. We train from scratch to systematically study how training-data mixtures, predicted modalities, and WAM formulations affect performance. In our evaluations, WAMs benefit from predicting point tracks, DINO features, and depth maps, while additionally predicting future RGB does not provide a consistent benefit. We also find that ModAR's sequential generation outperforms existing WAM formulations, with the highest average success rate at all evaluated data scales. We also fine-tune the video-model-initialized WAM Flex-$π$ on the same data; ModAR achieves a slightly higher observed average success rate (75% vs. 72%) while using approximately $20\\times$ fewer training FLOPs and no pretraining. On three real-world bimanual tasks, ModAR outperforms baselines and improves with human videos.",
@@ -1555,7 +1555,7 @@
       "url": "https://huggingface.co/papers/2609.17524",
       "arxiv": "https://arxiv.org/abs/2609.17524",
       "pdf": "https://arxiv.org/pdf/2609.17524.pdf",
-      "upvotes": 8,
+      "upvotes": 10,
       "categories": [
         "cs.RO"
       ],
@@ -3616,7 +3616,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.15973",
       "arxiv": "https://arxiv.org/abs/2609.15973",
       "pdf": "https://arxiv.org/pdf/2609.15973.pdf",
-      "upvotes": 30,
+      "upvotes": 31,
       "tags": [
         "Foundation Models"
       ],
@@ -3636,7 +3636,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.12541",
       "arxiv": "https://arxiv.org/abs/2609.12541",
       "pdf": "https://arxiv.org/pdf/2609.12541.pdf",
-      "upvotes": 13,
+      "upvotes": 16,
       "tags": [
         "Manipulation",
         "Bimanual"
@@ -4791,7 +4791,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.12036",
       "arxiv": "https://arxiv.org/abs/2609.12036",
       "pdf": "https://arxiv.org/pdf/2609.12036.pdf",
-      "upvotes": 19,
+      "upvotes": 20,
       "tags": [
         "World Model",
         "Simulator"
@@ -6162,7 +6162,9 @@
       "tags": [
         "Dataset"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.14156",
       "title": "Visible Touch: Rendering Contact for Visuomotor Policies",
@@ -6563,9 +6565,7 @@
       "tags": [
         "VLA"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2608.15380",
       "title": "Adaptive Bridge: A Proxy-Based Decoupling Layer for Mitigating DDS Backpressure in ROS 2",
@@ -7256,7 +7256,7 @@
       "hfUrl": "https://huggingface.co/papers/2608.12564",
       "arxiv": "https://arxiv.org/abs/2608.12564",
       "pdf": "https://arxiv.org/pdf/2608.12564.pdf",
-      "upvotes": 459,
+      "upvotes": 466,
       "tags": [
         "VLA",
         "World Model",
@@ -10770,7 +10770,7 @@
       "url": "https://arxiv.org/abs/2609.06251",
       "arxiv": "https://arxiv.org/abs/2609.06251",
       "pdf": "https://arxiv.org/pdf/2609.06251.pdf",
-      "upvotes": 3,
+      "upvotes": 4,
       "categories": [
         "cs.CV",
         "cs.RO"
