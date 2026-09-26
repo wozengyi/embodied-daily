@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-09-25T05:04:32.865994+00:00",
+  "generatedAt": "2026-09-26T05:07:19.977205+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-18",
-  "archiveCutoff": "2021-09-26",
-  "addedToday": 65,
+  "recentCutoff": "2026-09-19",
+  "archiveCutoff": "2021-09-27",
+  "addedToday": 0,
   "historyTotal": 6456,
-  "count": 363,
-  "archiveCount": 5895,
+  "count": 298,
+  "archiveCount": 5952,
   "sources": {
-    "hf": 20,
-    "arxiv": 343
+    "hf": 19,
+    "arxiv": 279
   },
   "archiveSources": {
-    "hf": 105,
-    "arxiv": 5790
+    "hf": 107,
+    "arxiv": 5845
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2609.23407",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.23407",
       "arxiv": "https://arxiv.org/abs/2609.23407",
       "pdf": "https://arxiv.org/pdf/2609.23407.pdf",
-      "upvotes": 14,
+      "upvotes": 20,
       "tags": [
         "Navigation",
         "Dataset",
@@ -38,6 +40,28 @@
       "topics": [
         "Navigation",
         "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2609.29837",
+      "title": "PUBG Ally: A Conversational Embodied Agent as an AI Teammate",
+      "abstract": "We introduce PUBG Ally, an embodied agent for PUBG: BATTLEGROUNDS that can reason, act autonomously, and play alongside players as a voice-enabled teammate. Building such a teammate requires combining two difficult capabilities: it must perceive and respond to a constantly changing game world under strict latency constraints while interacting naturally with players, keeping its speech synchronized with its actions. Ally therefore combines agentic tool use with real-time game control. A language-model agent uses a controlled interface to inspect game information, interpret player speech, maintain context, decide what to say, and issue high-level action choices that steer a faster control layer for movement, combat, and recovery. Because the player's and Ally's speech and actions continually shape each other and the course of the match, training requires data from actual gameplay. We therefore collect data across nearly 39k sessions in which real players play alongside Ally, recording gameplay, player speech, agent decisions, tool use, actions, and player feedback, and use these records for iterative training. To evaluate teammate quality, we use player feedback and preference comparisons to identify gaps between offline evaluations and player preferences, and iteratively refine the evaluation criteria. Deploying Ally in live service further requires low-latency on-device execution and safeguards for player-facing communication, which we address through model compression, context compaction, targeted safety training, runtime guardrails, and memory redaction. During the live service, we surveyed players in 141 countries. Among respondents whose play with Ally was confirmed in game records, positive responses exceeded negative responses by 25.1 percentage points when asked whether they would recommend Ally, with players describing Ally not only as a tool but also as a teammate or companion.",
+      "authors": "Beomsoo Kim, Byeongju Kim, Dohyun Kim, Dongwon Kim, Eunchong Kim, Hongmin Kim, Hyeojung Im, Hyeonbin Hwang, Hyeonghwan Kim, Hyoseok Seol, Insub Im, Irene Chen, Jaeseung Jeon, Jimin Hong, Kiyoon Yoo, Minkyoung Park, Seohyeon Jung, Seungjun Chung, Sue Hyun Park, Sungwoo Kim, Youngin Cho, Yujeong Son, Kangwook Lee, Hyunseung Kim",
+      "date": "2026-09-25",
+      "published": "2026-09-25",
+      "url": "https://huggingface.co/papers/2609.29837",
+      "hfUrl": "https://huggingface.co/papers/2609.29837",
+      "arxiv": "https://arxiv.org/abs/2609.29837",
+      "pdf": "https://arxiv.org/pdf/2609.29837.pdf",
+      "upvotes": 4,
+      "tags": [
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Imitation Learning",
         "Embodied Vision"
       ],
       "source": "hf"
@@ -71,28 +95,6 @@
       "hfUrl": "https://huggingface.co/papers/2609.29964"
     },
     {
-      "id": "2609.29837",
-      "title": "PUBG Ally: A Conversational Embodied Agent as an AI Teammate",
-      "abstract": "We introduce PUBG Ally, an embodied agent for PUBG: BATTLEGROUNDS that can reason, act autonomously, and play alongside players as a voice-enabled teammate. Building such a teammate requires combining two difficult capabilities: it must perceive and respond to a constantly changing game world under strict latency constraints while interacting naturally with players, keeping its speech synchronized with its actions. Ally therefore combines agentic tool use with real-time game control. A language-model agent uses a controlled interface to inspect game information, interpret player speech, maintain context, decide what to say, and issue high-level action choices that steer a faster control layer for movement, combat, and recovery. Because the player's and Ally's speech and actions continually shape each other and the course of the match, training requires data from actual gameplay. We therefore collect data across nearly 39k sessions in which real players play alongside Ally, recording gameplay, player speech, agent decisions, tool use, actions, and player feedback, and use these records for iterative training. To evaluate teammate quality, we use player feedback and preference comparisons to identify gaps between offline evaluations and player preferences, and iteratively refine the evaluation criteria. Deploying Ally in live service further requires low-latency on-device execution and safeguards for player-facing communication, which we address through model compression, context compaction, targeted safety training, runtime guardrails, and memory redaction. During the live service, we surveyed players in 141 countries. Among respondents whose play with Ally was confirmed in game records, positive responses exceeded negative responses by 25.1 percentage points when asked whether they would recommend Ally, with players describing Ally not only as a tool but also as a teammate or companion.",
-      "authors": "Beomsoo Kim, Byeongju Kim, Dohyun Kim, Dongwon Kim, Eunchong Kim, Hongmin Kim, Hyeojung Im, Hyeonbin Hwang, Hyeonghwan Kim, Hyoseok Seol, Insub Im, Irene Chen, Jaeseung Jeon, Jimin Hong, Kiyoon Yoo, Minkyoung Park, Seohyeon Jung, Seungjun Chung, Sue Hyun Park, Sungwoo Kim, Youngin Cho, Yujeong Son, Kangwook Lee, Hyunseung Kim",
-      "date": "2026-09-25",
-      "published": "2026-09-25",
-      "url": "https://huggingface.co/papers/2609.29837",
-      "hfUrl": "https://huggingface.co/papers/2609.29837",
-      "arxiv": "https://arxiv.org/abs/2609.29837",
-      "pdf": "https://arxiv.org/pdf/2609.29837.pdf",
-      "upvotes": 3,
-      "tags": [
-        "Imitation Learning",
-        "Embodied Vision"
-      ],
-      "topics": [
-        "Imitation Learning",
-        "Embodied Vision"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2609.24308",
       "title": "HappyWorld-Bench",
       "abstract": "Evaluating world models requires assessing both the quality of the worlds they generate and their consistency and responsiveness under exploration, interaction, and modification. We introduce HappyWorld-Bench, a comprehensive benchmark that evaluates whether generated worlds remain reliable as agents interact with them. Our design is built on a hierarchical capability framework of six world capabilities (W1-W6), from generative construction to unified world modeling, instantiated across three independent evaluation tracks: video world models, spatial world models, and embodied world models. HappyWorld-Bench comprises 1,138 video prompts, 300 spatial scenes, and 254 embodied test cases. Across all three tracks, we build and operate HappyWorld-Arena to organize human A/B comparisons and derive model-level Elo ratings, which complement newly designed automated metrics that capture behavioral correctness. We evaluate 14 video world models, 9 spatial systems, and 8 embodied candidates under this unified framework. Results reveal remaining reliability gaps across all three tracks: video models exhibit reduced consistency during extended rollouts and revisits, spatial models achieve at best 70.14% placement accuracy and 73.33% edit execution, and embodied models struggle to preserve state across multi-step actions and respond precisely to altered action conditions and physical rules. These findings highlight the need to evaluate world models not only by visual quality, but also by state consistency and the correctness of their responses to actions and interventions.",
@@ -103,7 +105,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24308",
       "arxiv": "https://arxiv.org/abs/2609.24308",
       "pdf": "https://arxiv.org/pdf/2609.24308.pdf",
-      "upvotes": 39,
+      "upvotes": 40,
       "tags": [
         "Navigation",
         "World Model",
@@ -222,7 +224,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24815",
       "arxiv": "https://arxiv.org/abs/2609.24815",
       "pdf": "https://arxiv.org/pdf/2609.24815.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "tags": [
         "Simulator",
         "Embodied Vision"
@@ -1583,7 +1585,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.25636",
       "arxiv": "https://arxiv.org/abs/2609.25636",
       "pdf": "https://arxiv.org/pdf/2609.25636.pdf",
-      "upvotes": 4,
+      "upvotes": 6,
       "tags": [
         "VLA",
         "Dataset",
@@ -1595,6 +1597,34 @@
         "Embodied Vision"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2609.28811",
+      "title": "DeltaWAM: Delta World Action Models for Bimanual Manipulation",
+      "abstract": "World-action models (WAMs) transfer visual and motion priors from pretrained video generators to robot control by jointly modeling visual dynamics and actions. Existing WAMs, however, predict dense future frames during training, repeatedly modeling largely unchanged content and coupling action-conditioned dynamics to nuisance appearance variations. At inference, processing each complete observation with the heavy video expert bottlenecks few-step action generation. Accordingly, we propose DeltaWAM, which jointly predicts visual deltas and actions using dense-anchor, sparse-delta, and action streams, with three architectures that differ in representation and computation sharing. We further develop Streaming Delta Memory (SDM), which updates cached anchor context with compact observed deltas, reducing heavy video-expert processing. On RoboTwin, DeltaWAM with SDM improves average success over Fast-WAM from 81.3% to 85.4% in the clean setting and from 75.8% to 83.9% under visual randomization. The three architectures reduce training FLOPs by 17.78-23.77%, while SDM reduces one-step inference latency and FLOPs by 36.57% and 31.55%, respectively; real-world evaluations further show the highest overall success rate and normalized progress among the evaluated policies. Code: https://github.com/AIGeeksGroup/DeltaWAM. Website: https://aigeeksgroup.github.io/DeltaWAM.",
+      "authors": "Han Yan, Zishang Xiang, Haokai Jiang, Zeyu Zhang, Qilin Wang, Weiyu Guo, Yandong Guo, Boxin Shi, Hao Tang",
+      "date": "2026-09-23",
+      "published": "2026-09-23",
+      "url": "https://arxiv.org/abs/2609.28811",
+      "arxiv": "https://arxiv.org/abs/2609.28811",
+      "pdf": "https://arxiv.org/pdf/2609.28811.pdf",
+      "upvotes": 2,
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "World Model",
+        "Bimanual",
+        "WAM"
+      ],
+      "tags": [
+        "World Model",
+        "Bimanual",
+        "WAM"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.28811"
     },
     {
       "id": "2609.28431",
@@ -2137,33 +2167,6 @@
         "Grasping",
         "Humanoid",
         "Dexterous"
-      ]
-    },
-    {
-      "id": "2609.28811",
-      "title": "DeltaWAM: Delta World Action Models for Bimanual Manipulation",
-      "abstract": "World-action models (WAMs) transfer visual and motion priors from pretrained video generators to robot control by jointly modeling visual dynamics and actions. Existing WAMs, however, predict dense future frames during training, repeatedly modeling largely unchanged content and coupling action-conditioned dynamics to nuisance appearance variations. At inference, processing each complete observation with the heavy video expert bottlenecks few-step action generation. Accordingly, we propose DeltaWAM, which jointly predicts visual deltas and actions using dense-anchor, sparse-delta, and action streams, with three architectures that differ in representation and computation sharing. We further develop Streaming Delta Memory (SDM), which updates cached anchor context with compact observed deltas, reducing heavy video-expert processing. On RoboTwin, DeltaWAM with SDM improves average success over Fast-WAM from 81.3% to 85.4% in the clean setting and from 75.8% to 83.9% under visual randomization. The three architectures reduce training FLOPs by 17.78-23.77%, while SDM reduces one-step inference latency and FLOPs by 36.57% and 31.55%, respectively; real-world evaluations further show the highest overall success rate and normalized progress among the evaluated policies. Code: https://github.com/AIGeeksGroup/DeltaWAM. Website: https://aigeeksgroup.github.io/DeltaWAM.",
-      "authors": "Han Yan, Zishang Xiang, Haokai Jiang, Zeyu Zhang, Qilin Wang, Weiyu Guo, Yandong Guo, Boxin Shi, Hao Tang",
-      "date": "2026-09-23",
-      "published": "2026-09-23",
-      "url": "https://arxiv.org/abs/2609.28811",
-      "arxiv": "https://arxiv.org/abs/2609.28811",
-      "pdf": "https://arxiv.org/pdf/2609.28811.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "World Model",
-        "Bimanual",
-        "WAM"
-      ],
-      "tags": [
-        "World Model",
-        "Bimanual",
-        "WAM"
       ]
     },
     {
@@ -7731,7 +7734,9 @@
       "tags": [
         "Robotics"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.19554",
       "title": "VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control",
@@ -9417,9 +9422,7 @@
       "tags": [
         "VLA"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.18487",
       "title": "ActionPiece: Rethinking Action Tokenization for Autoregressive Vision-Language-Action Models",
@@ -11163,7 +11166,7 @@
       "url": "https://arxiv.org/abs/2609.19138",
       "arxiv": "https://arxiv.org/abs/2609.19138",
       "pdf": "https://arxiv.org/pdf/2609.19138.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -13341,6 +13344,33 @@
       "source": "hf"
     },
     {
+      "id": "2609.22319",
+      "title": "Embedding Physics Priors in Robot Learning: A Survey",
+      "abstract": "The rapid progress of artificial intelligence is reshaping robotics and accelerating the adoption of learning-based approaches. While purely data-driven methods have achieved remarkable success in computer vision and natural language processing, robotics remains constrained by limited data, complex real-world interactions, and the need for reliable operation. These challenges have motivated the exploration of physics-embedded robot learning, which embeds physics priors into learning algorithms. By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency. However, the literature on physics-embedded robot learning remains fragmented across terminology, methodologies, and application domains, making it difficult to assess this growing body of work. This survey reviews physics-embedded robot learning across a broad range of physics priors, robotics applications, and machine learning models, from single-layer perceptrons to generative foundation models. We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions. Building on this taxonomy, we review methods for robot dynamics learning, trajectory planning, prediction, control, and estimation, together with the corresponding open-source software ecosystem. We identify key open challenges, and outline promising future research directions. Overall, we argue that physics priors provide a particularly relevant robotics-specific inductive bias, complementing rather than replacing data-driven learning, and paving the way toward more generalizable, data-efficient, and trustworthy robotic systems.",
+      "authors": "Mattia Piccinini, Lucas Schulze, Alice Plebe, Matteo Saveriano, Thomas Beckers, Yuan Gao, Oleg Arenz, Baha Zarrouki, Dingrui Wang, Finn Rasmus Schäfer, Jan Peters, Johannes Betz, Gastone Pietro Rosati Papini",
+      "date": "2026-09-15",
+      "published": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.22319",
+      "arxiv": "https://arxiv.org/abs/2609.22319",
+      "pdf": "https://arxiv.org/pdf/2609.22319.pdf",
+      "upvotes": 9,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Navigation",
+        "Open-Source",
+        "Foundation Models"
+      ],
+      "tags": [
+        "Navigation",
+        "Open-Source",
+        "Foundation Models"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.22319"
+    },
+    {
       "id": "2609.13053",
       "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
       "abstract": "Visual goal and dynamics prediction can provide language-conditioned robot policies with both a target outcome and a representation of action-dependent scene changes. We bring these predictions into action generation and selection through a shared trajectory model. Dynin-Robotics implements this formulation on Dynin-Omni, an omnimodal masked-diffusion backbone, representing language, visual observations, goals, and actions as discrete tokens. By varying conditioning and target spans, the same model learns action prediction, action-conditioned next-observation prediction, terminal goal-state prediction, and trajectory-to-instruction reconstruction. These interfaces support test-time scaling through goal prediction, action-candidate evaluation, and joint refinement of action and future-state predictions. We continually pretrain the model on approximately 1.33 million trajectories from 48 Open X-Embodiment datasets and adapt it separately to downstream domains. On two VLABench tasks, robot pretraining improves adaptation within a fixed Stage-2 step budget, and the full objective mixture improves shifted-instruction success over Policy-only post-training under the same coupled decoder. Combining goal guidance with joint action-next-state denoising further improves shifted-instruction success over action-only decoding; the benefit depends on how the predictions are composed. Dynin-Robotics achieves competitive performance on LIBERO and zero-shot LIBERO-Plus, together with a 78.4% average success rate across four manipulation conditions on a Franka Research 3 robot. An optimized block-parallel implementation accelerates model-side action decoding by up to 29.2x relative to the base implementation under the reported profiling setup. These results support shared trajectory modeling as a common interface for learning complementary robot objectives and composing their predictions during control.",
@@ -13379,7 +13409,7 @@
       "url": "https://arxiv.org/abs/2609.17172",
       "arxiv": "https://arxiv.org/abs/2609.17172",
       "pdf": "https://arxiv.org/pdf/2609.17172.pdf",
-      "upvotes": 3,
+      "upvotes": 4,
       "categories": [
         "cs.RO",
         "eess.SY"
@@ -13400,33 +13430,6 @@
         "Simulator"
       ],
       "hfUrl": "https://huggingface.co/papers/2609.17172"
-    },
-    {
-      "id": "2609.22319",
-      "title": "Embedding Physics Priors in Robot Learning: A Survey",
-      "abstract": "The rapid progress of artificial intelligence is reshaping robotics and accelerating the adoption of learning-based approaches. While purely data-driven methods have achieved remarkable success in computer vision and natural language processing, robotics remains constrained by limited data, complex real-world interactions, and the need for reliable operation. These challenges have motivated the exploration of physics-embedded robot learning, which embeds physics priors into learning algorithms. By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency. However, the literature on physics-embedded robot learning remains fragmented across terminology, methodologies, and application domains, making it difficult to assess this growing body of work. This survey reviews physics-embedded robot learning across a broad range of physics priors, robotics applications, and machine learning models, from single-layer perceptrons to generative foundation models. We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions. Building on this taxonomy, we review methods for robot dynamics learning, trajectory planning, prediction, control, and estimation, together with the corresponding open-source software ecosystem. We identify key open challenges, and outline promising future research directions. Overall, we argue that physics priors provide a particularly relevant robotics-specific inductive bias, complementing rather than replacing data-driven learning, and paving the way toward more generalizable, data-efficient, and trustworthy robotic systems.",
-      "authors": "Mattia Piccinini, Lucas Schulze, Alice Plebe, Matteo Saveriano, Thomas Beckers, Yuan Gao, Oleg Arenz, Baha Zarrouki, Dingrui Wang, Finn Rasmus Schäfer, Jan Peters, Johannes Betz, Gastone Pietro Rosati Papini",
-      "date": "2026-09-15",
-      "published": "2026-09-15",
-      "url": "https://arxiv.org/abs/2609.22319",
-      "arxiv": "https://arxiv.org/abs/2609.22319",
-      "pdf": "https://arxiv.org/pdf/2609.22319.pdf",
-      "upvotes": 2,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "Navigation",
-        "Open-Source",
-        "Foundation Models"
-      ],
-      "tags": [
-        "Navigation",
-        "Open-Source",
-        "Foundation Models"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.22319"
     },
     {
       "id": "2609.16697",
@@ -151987,195 +151990,6 @@
       ],
       "tags": [
         "Robotics"
-      ]
-    },
-    {
-      "id": "2109.12720",
-      "title": "On the Feasibility of Learning Finger-gaiting In-hand Manipulation with Intrinsic Sensing",
-      "abstract": "Finger-gaiting manipulation is an important skill to achieve large-angle in-hand re-orientation of objects. However, achieving these gaits with arbitrary orientations of the hand is challenging due to the unstable nature of the task. In this work, we use model-free reinforcement learning (RL) to learn finger-gaiting only via precision grasps and demonstrate finger-gaiting for rotation about an axis purely using on-board proprioceptive and tactile feedback. To tackle the inherent instability of precision grasping, we propose the use of initial state distributions that enable effective exploration of the state space. Our method can learn finger-gaiting with significantly improved sample complexity than the state-of-the-art. The policies we obtain are robust and also transfer to novel objects. Videos can be found at https://roamlab.github.io/learnfg/",
-      "authors": "Gagan Khandate, Maxmillian Haas-Heger, Matei Ciocarlie",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12720",
-      "pdf": "https://arxiv.org/pdf/2109.12720.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Grasping",
-        "Locomotion",
-        "Navigation",
-        "Dexterous",
-        "Reinforcement Learning",
-        "Tactile"
-      ],
-      "tags": [
-        "Grasping",
-        "Locomotion",
-        "Navigation",
-        "Dexterous",
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2109.12696",
-      "title": "PM-FSM: Policies Modulating Finite State Machine for Robust Quadrupedal Locomotion",
-      "abstract": "Deep reinforcement learning (deep RL) has emerged as an effective tool for developing controllers for legged robots. However, vanilla deep RL often requires a tremendous amount of training samples and is not feasible for achieving robust behaviors. Instead, researchers have investigated a novel policy architecture by incorporating human experts' knowledge, such as Policies Modulating Trajectory Generators (PMTG). This architecture builds a recurrent control loop by combining a parametric trajectory generator (TG) and a feedback policy network to achieve more robust behaviors. To take advantage of human experts' knowledge but eliminate time-consuming interactive teaching, researchers have investigated a novel architecture, Policies Modulating Trajectory Generators (PMTG), which builds a recurrent control loop by combining a parametric trajectory generator (TG) and a feedback policy network to achieve more robust behaviors using intuitive prior knowledge. In this work, we propose Policies Modulating Finite State Machine (PM-FSM) by replacing TGs with contact-aware finite state machines (FSM), which offer more flexible control of each leg. Compared with the TGs, FSMs offer high-level management on each leg motion generator and enable a flexible state arrangement, which makes the learned behavior less vulnerable to unseen perturbations or challenging terrains. This invention offers an explicit notion of contact events to the policy to negotiate unexpected perturbations. We demonstrated that the proposed architecture could achieve more robust behaviors in various scenarios, such as challenging terrains or external perturbations, on both simulated and real robots. The supplemental video can be found at: https://youtu.be/78cboMqTkJQ.",
-      "authors": "Ren Liu, Nitish Sontakke, Sehoon Ha",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12696",
-      "pdf": "https://arxiv.org/pdf/2109.12696.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Locomotion",
-        "Imitation Learning",
-        "Reinforcement Learning"
-      ],
-      "tags": [
-        "Locomotion",
-        "Imitation Learning",
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2109.12694",
-      "title": "VP-GO: a \"light\" action-conditioned visual prediction model",
-      "abstract": "Visual prediction models are a promising solution for visual-based robotic grasping of cluttered, unknown soft objects. Previous models from the literature are computationally greedy, which limits reproducibility; although some consider stochasticity in the prediction model, it is often too weak to catch the reality of robotics experiments involving grasping such objects. Furthermore, previous work focused on elementary movements that are not efficient to reason in terms of more complex semantic actions. To address these limitations, we propose VP-GO, a ``light'' stochastic action-conditioned visual prediction model. We propose a hierarchical decomposition of semantic grasping and manipulation actions into elementary end-effector movements, to ensure compatibility with existing models and datasets for visual prediction of robotic actions such as RoboNet. We also record and release a new open dataset for visual prediction of object grasping, called PandaGrasp. Our model can be pre-trained on RoboNet and fine-tuned on PandaGrasp, and performs similarly to more complex models in terms of signal prediction metrics. Qualitatively, it outperforms when predicting the outcome of complex grasps performed by our robot.",
-      "authors": "Anji Ma, Yoann Fleytoux, Jean-Bapstiste Mouret, Serena Ivaldi",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12694",
-      "pdf": "https://arxiv.org/pdf/2109.12694.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Grasping",
-        "Dataset"
-      ],
-      "tags": [
-        "Grasping",
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2109.12665",
-      "title": "Linear Policies are Sufficient to Realize Robust Bipedal Walking on Challenging Terrains",
-      "abstract": "In this work, we demonstrate robust walking in the bipedal robot Digit on uneven terrains by just learning a single linear policy. In particular, we propose a new control pipeline, wherein the high-level trajectory modulator shapes the end-foot ellipsoidal trajectories, and the low-level gait controller regulates the torso and ankle orientation. The foot-trajectory modulator uses a linear policy and the regulator uses a linear PD control law. As opposed to neural network-based policies, the proposed linear policy has only 13 learnable parameters, thereby not only guaranteeing sample efficient learning but also enabling simplicity and interpretability of the policy. This is achieved with no loss of performance on challenging terrains like slopes, stairs and outdoor landscapes. We first demonstrate robust walking in the custom simulation environment, MuJoCo, and then directly transfer to hardware with no modification of the control pipeline. We subject the biped to a series of pushes and terrain height changes, both indoors and outdoors, thereby validating the presented work.",
-      "authors": "Lokesh Krishna, Guillermo A. Castillo, Utkarsh A. Mishra, Ayonga Hereid, Shishir Kolathaya",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12665",
-      "pdf": "https://arxiv.org/pdf/2109.12665.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Locomotion",
-        "Simulator"
-      ],
-      "tags": [
-        "Locomotion",
-        "Simulator"
-      ]
-    },
-    {
-      "id": "2109.12722",
-      "title": "Markerless Suture Needle 6D Pose Tracking with Robust Uncertainty Estimation for Autonomous Minimally Invasive Robotic Surgery",
-      "abstract": "Suture needle localization is necessary for autonomous suturing. Previous approaches in autonomous suturing often relied on fiducial markers rather than markerless detection schemes for localizing a suture needle due to the inconsistency of markerless detections. However, fiducial markers are not practical for real-world applications and can often be occluded from environmental factors in surgery (e.g., blood). Therefore in this work, we present a robust tracking approach for estimating the 6D pose of a suture needle when using inconsistent detections. We define observation models based on suture needles' geometry that captures the uncertainty of the detections and fuse them temporally in a probabilistic fashion. In our experiments, we compare different permutations of the observation models in the suture needle localization task to show their effectiveness. Our proposed method outperforms previous approaches in localizing a suture needle. We also demonstrate the proposed tracking method in an autonomous suture needle regrasping task and ex vivo environments.",
-      "authors": "Zih-Yun Chiu, Albert Z Liao, Florian Richter, Bjorn Johnson, Michael C. Yip",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12722",
-      "pdf": "https://arxiv.org/pdf/2109.12722.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2109.12490",
-      "title": "Anytime Game-Theoretic Planning with Active Reasoning About Humans' Latent States for Human-Centered Robots",
-      "abstract": "A human-centered robot needs to reason about the cognitive limitation and potential irrationality of its human partner to achieve seamless interactions. This paper proposes an anytime game-theoretic planner that integrates iterative reasoning models, a partially observable Markov decision process, and chance-constrained Monte-Carlo belief tree search for robot behavioral planning. Our planner enables a robot to safely and actively reason about its human partner's latent cognitive states (bounded intelligence and irrationality) in real-time to maximize its utility better. We validate our approach in an autonomous driving domain where our behavioral planner and a low-level motion controller hierarchically control an autonomous car to negotiate traffic merges. Simulations and user studies are conducted to show our planner's effectiveness.",
-      "authors": "Ran Tian, Liting Sun, Masayoshi Tomizuka, David Isele",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12490",
-      "pdf": "https://arxiv.org/pdf/2109.12490.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Autonomous Driving"
-      ],
-      "tags": [
-        "Autonomous Driving"
-      ]
-    },
-    {
-      "id": "2109.12470",
-      "title": "Singularities of serial robots: Identification and distance computation using geometric algebra",
-      "abstract": "The singularities of serial robotic manipulators are those configurations in which the robot loses the ability to move in at least one direction. Hence, their identification is fundamental to enhance the performance of current control and motion planning strategies. While classical approaches entail the computation of the determinant of either a 6x n or nxn matrix for an n degrees of freedom serial robot, this work addresses a novel singularity identification method based on modelling the twists defined by the joint axes of the robot as vectors of the six-dimensional and three-dimensional geometric algebras. In particular, it consists of identifying which configurations cause the exterior product of these twists to vanish. In addition, since rotors represent rotations in geometric algebra, once these singularities have been identified, a distance function is defined in the configuration space C such that its restriction to the set of singular configurations S allows us to compute the distance of any configuration to a given singularity. This distance function is used to enhance how the singularities are handled in three different scenarios, namely motion planning, motion control and bilateral teleoperation.",
-      "authors": "Isiah Zaplana, Hugo Hadfield, Joan Lasenby",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12470",
-      "pdf": "https://arxiv.org/pdf/2109.12470.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.CG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Teleoperation"
-      ],
-      "tags": [
-        "Teleoperation"
-      ]
-    },
-    {
-      "id": "2109.12469",
-      "title": "Efficient Force Estimation for Continuum Robot",
-      "abstract": "External contact force is one of the most significant information for the robots to model, control, and safely interact with external objects. For continuum robots, it is possible to estimate the contact force based on the measurements of robot configurations, which addresses the difficulty of implementing the force sensor feedback on the robot body with strict dimension constraints. In this paper, we use local curvatures measured from fiber Bragg grating sensors (FBGS) to estimate the magnitude and location of single or multiple external contact forces. A simplified mechanics model is derived from Cosserat rod theory to compute continuum robot curvatures. Least-square optimization is utilized to estimate the forces by minimizing errors between computed curvatures and measured curvatures. The results show that the proposed method is able to accurately estimate the contact force magnitude (error: 5.25\\% -- 12.87\\%) and locations (error: 1.02\\% -- 2.19\\%). The calculation speed of the proposed method is validated in MATLAB. The results indicate that our approach is 29.0 -- 101.6 times faster than the conventional methods. These results indicate that the proposed method is accurate and efficient for contact force estimations.",
-      "authors": "Qingyu Xiao, Yue Chen",
-      "date": "2021-09-26",
-      "published": "2021-09-26",
-      "arxiv": "https://arxiv.org/abs/2109.12469",
-      "pdf": "https://arxiv.org/pdf/2109.12469.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Imitation Learning"
-      ],
-      "tags": [
-        "Imitation Learning"
       ]
     }
   ]

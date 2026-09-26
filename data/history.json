@@ -141474,7 +141474,7 @@
       "url": "https://arxiv.org/abs/2609.17172",
       "arxiv": "https://arxiv.org/abs/2609.17172",
       "pdf": "https://arxiv.org/pdf/2609.17172.pdf",
-      "upvotes": 3,
+      "upvotes": 4,
       "categories": [
         "cs.RO",
         "eess.SY"
@@ -142965,7 +142965,7 @@
       "url": "https://arxiv.org/abs/2609.19138",
       "arxiv": "https://arxiv.org/abs/2609.19138",
       "pdf": "https://arxiv.org/pdf/2609.19138.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -150026,7 +150026,7 @@
       "url": "https://arxiv.org/abs/2609.22319",
       "arxiv": "https://arxiv.org/abs/2609.22319",
       "pdf": "https://arxiv.org/pdf/2609.22319.pdf",
-      "upvotes": 2,
+      "upvotes": 9,
       "categories": [
         "cs.RO"
       ],
@@ -154732,7 +154732,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.25636",
       "arxiv": "https://arxiv.org/abs/2609.25636",
       "pdf": "https://arxiv.org/pdf/2609.25636.pdf",
-      "upvotes": 4,
+      "upvotes": 6,
       "tags": [
         "VLA",
         "Dataset",
@@ -156226,12 +156226,12 @@
       "url": "https://arxiv.org/abs/2609.28811",
       "arxiv": "https://arxiv.org/abs/2609.28811",
       "pdf": "https://arxiv.org/pdf/2609.28811.pdf",
-      "upvotes": 0,
+      "upvotes": 2,
       "categories": [
         "cs.CV",
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "World Model",
         "Bimanual",
@@ -156241,7 +156241,8 @@
         "World Model",
         "Bimanual",
         "WAM"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.28811"
     },
     "2609.28798": {
       "id": "2609.28798",
@@ -156334,7 +156335,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.23407",
       "arxiv": "https://arxiv.org/abs/2609.23407",
       "pdf": "https://arxiv.org/pdf/2609.23407.pdf",
-      "upvotes": 14,
+      "upvotes": 20,
       "tags": [
         "Navigation",
         "Dataset",
@@ -156358,7 +156359,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.29837",
       "arxiv": "https://arxiv.org/abs/2609.29837",
       "pdf": "https://arxiv.org/pdf/2609.29837.pdf",
-      "upvotes": 3,
+      "upvotes": 4,
       "tags": [
         "Imitation Learning",
         "Embodied Vision"
@@ -156380,7 +156381,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24308",
       "arxiv": "https://arxiv.org/abs/2609.24308",
       "pdf": "https://arxiv.org/pdf/2609.24308.pdf",
-      "upvotes": 39,
+      "upvotes": 40,
       "tags": [
         "Navigation",
         "World Model",
@@ -156406,7 +156407,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24815",
       "arxiv": "https://arxiv.org/abs/2609.24815",
       "pdf": "https://arxiv.org/pdf/2609.24815.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "tags": [
         "Simulator",
         "Embodied Vision"
@@ -156418,5 +156419,5 @@
       "source": "hf"
     }
   },
-  "generatedAt": "2026-09-25T05:04:32.865994+00:00"
+  "generatedAt": "2026-09-26T05:07:19.977205+00:00"
 }
