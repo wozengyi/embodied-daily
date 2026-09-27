@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-26T05:07:19.977205+00:00",
+  "generatedAt": "2026-09-27T05:25:16.130944+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-19",
-  "archiveCutoff": "2021-09-27",
+  "recentCutoff": "2026-09-20",
+  "archiveCutoff": "2021-09-28",
   "addedToday": 0,
   "historyTotal": 6456,
-  "count": 298,
-  "archiveCount": 5952,
+  "count": 267,
+  "archiveCount": 5958,
   "sources": {
     "hf": 19,
-    "arxiv": 279
+    "arxiv": 248
   },
   "archiveSources": {
     "hf": 107,
-    "arxiv": 5845
+    "arxiv": 5851
   },
   "warnings": [
     "zero_new_today"
@@ -31,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.23407",
       "arxiv": "https://arxiv.org/abs/2609.23407",
       "pdf": "https://arxiv.org/pdf/2609.23407.pdf",
-      "upvotes": 20,
+      "upvotes": 21,
       "tags": [
         "Navigation",
         "Dataset",
@@ -40,28 +40,6 @@
       "topics": [
         "Navigation",
         "Dataset",
-        "Embodied Vision"
-      ],
-      "source": "hf"
-    },
-    {
-      "id": "2609.29837",
-      "title": "PUBG Ally: A Conversational Embodied Agent as an AI Teammate",
-      "abstract": "We introduce PUBG Ally, an embodied agent for PUBG: BATTLEGROUNDS that can reason, act autonomously, and play alongside players as a voice-enabled teammate. Building such a teammate requires combining two difficult capabilities: it must perceive and respond to a constantly changing game world under strict latency constraints while interacting naturally with players, keeping its speech synchronized with its actions. Ally therefore combines agentic tool use with real-time game control. A language-model agent uses a controlled interface to inspect game information, interpret player speech, maintain context, decide what to say, and issue high-level action choices that steer a faster control layer for movement, combat, and recovery. Because the player's and Ally's speech and actions continually shape each other and the course of the match, training requires data from actual gameplay. We therefore collect data across nearly 39k sessions in which real players play alongside Ally, recording gameplay, player speech, agent decisions, tool use, actions, and player feedback, and use these records for iterative training. To evaluate teammate quality, we use player feedback and preference comparisons to identify gaps between offline evaluations and player preferences, and iteratively refine the evaluation criteria. Deploying Ally in live service further requires low-latency on-device execution and safeguards for player-facing communication, which we address through model compression, context compaction, targeted safety training, runtime guardrails, and memory redaction. During the live service, we surveyed players in 141 countries. Among respondents whose play with Ally was confirmed in game records, positive responses exceeded negative responses by 25.1 percentage points when asked whether they would recommend Ally, with players describing Ally not only as a tool but also as a teammate or companion.",
-      "authors": "Beomsoo Kim, Byeongju Kim, Dohyun Kim, Dongwon Kim, Eunchong Kim, Hongmin Kim, Hyeojung Im, Hyeonbin Hwang, Hyeonghwan Kim, Hyoseok Seol, Insub Im, Irene Chen, Jaeseung Jeon, Jimin Hong, Kiyoon Yoo, Minkyoung Park, Seohyeon Jung, Seungjun Chung, Sue Hyun Park, Sungwoo Kim, Youngin Cho, Yujeong Son, Kangwook Lee, Hyunseung Kim",
-      "date": "2026-09-25",
-      "published": "2026-09-25",
-      "url": "https://huggingface.co/papers/2609.29837",
-      "hfUrl": "https://huggingface.co/papers/2609.29837",
-      "arxiv": "https://arxiv.org/abs/2609.29837",
-      "pdf": "https://arxiv.org/pdf/2609.29837.pdf",
-      "upvotes": 4,
-      "tags": [
-        "Imitation Learning",
-        "Embodied Vision"
-      ],
-      "topics": [
-        "Imitation Learning",
         "Embodied Vision"
       ],
       "source": "hf"
@@ -76,7 +54,7 @@
       "url": "https://huggingface.co/papers/2609.29964",
       "arxiv": "https://arxiv.org/abs/2609.29964",
       "pdf": "https://arxiv.org/pdf/2609.29964.pdf",
-      "upvotes": 3,
+      "upvotes": 6,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -95,6 +73,28 @@
       "hfUrl": "https://huggingface.co/papers/2609.29964"
     },
     {
+      "id": "2609.29837",
+      "title": "PUBG Ally: A Conversational Embodied Agent as an AI Teammate",
+      "abstract": "We introduce PUBG Ally, an embodied agent for PUBG: BATTLEGROUNDS that can reason, act autonomously, and play alongside players as a voice-enabled teammate. Building such a teammate requires combining two difficult capabilities: it must perceive and respond to a constantly changing game world under strict latency constraints while interacting naturally with players, keeping its speech synchronized with its actions. Ally therefore combines agentic tool use with real-time game control. A language-model agent uses a controlled interface to inspect game information, interpret player speech, maintain context, decide what to say, and issue high-level action choices that steer a faster control layer for movement, combat, and recovery. Because the player's and Ally's speech and actions continually shape each other and the course of the match, training requires data from actual gameplay. We therefore collect data across nearly 39k sessions in which real players play alongside Ally, recording gameplay, player speech, agent decisions, tool use, actions, and player feedback, and use these records for iterative training. To evaluate teammate quality, we use player feedback and preference comparisons to identify gaps between offline evaluations and player preferences, and iteratively refine the evaluation criteria. Deploying Ally in live service further requires low-latency on-device execution and safeguards for player-facing communication, which we address through model compression, context compaction, targeted safety training, runtime guardrails, and memory redaction. During the live service, we surveyed players in 141 countries. Among respondents whose play with Ally was confirmed in game records, positive responses exceeded negative responses by 25.1 percentage points when asked whether they would recommend Ally, with players describing Ally not only as a tool but also as a teammate or companion.",
+      "authors": "Beomsoo Kim, Byeongju Kim, Dohyun Kim, Dongwon Kim, Eunchong Kim, Hongmin Kim, Hyeojung Im, Hyeonbin Hwang, Hyeonghwan Kim, Hyoseok Seol, Insub Im, Irene Chen, Jaeseung Jeon, Jimin Hong, Kiyoon Yoo, Minkyoung Park, Seohyeon Jung, Seungjun Chung, Sue Hyun Park, Sungwoo Kim, Youngin Cho, Yujeong Son, Kangwook Lee, Hyunseung Kim",
+      "date": "2026-09-25",
+      "published": "2026-09-25",
+      "url": "https://huggingface.co/papers/2609.29837",
+      "hfUrl": "https://huggingface.co/papers/2609.29837",
+      "arxiv": "https://arxiv.org/abs/2609.29837",
+      "pdf": "https://arxiv.org/pdf/2609.29837.pdf",
+      "upvotes": 5,
+      "tags": [
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2609.24308",
       "title": "HappyWorld-Bench",
       "abstract": "Evaluating world models requires assessing both the quality of the worlds they generate and their consistency and responsiveness under exploration, interaction, and modification. We introduce HappyWorld-Bench, a comprehensive benchmark that evaluates whether generated worlds remain reliable as agents interact with them. Our design is built on a hierarchical capability framework of six world capabilities (W1-W6), from generative construction to unified world modeling, instantiated across three independent evaluation tracks: video world models, spatial world models, and embodied world models. HappyWorld-Bench comprises 1,138 video prompts, 300 spatial scenes, and 254 embodied test cases. Across all three tracks, we build and operate HappyWorld-Arena to organize human A/B comparisons and derive model-level Elo ratings, which complement newly designed automated metrics that capture behavioral correctness. We evaluate 14 video world models, 9 spatial systems, and 8 embodied candidates under this unified framework. Results reveal remaining reliability gaps across all three tracks: video models exhibit reduced consistency during extended rollouts and revisits, spatial models achieve at best 70.14% placement accuracy and 73.33% edit execution, and embodied models struggle to preserve state across multi-step actions and respond precisely to altered action conditions and physical rules. These findings highlight the need to evaluate world models not only by visual quality, but also by state consistency and the correctness of their responses to actions and interventions.",
@@ -105,7 +105,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24308",
       "arxiv": "https://arxiv.org/abs/2609.24308",
       "pdf": "https://arxiv.org/pdf/2609.24308.pdf",
-      "upvotes": 40,
+      "upvotes": 42,
       "tags": [
         "Navigation",
         "World Model",
@@ -130,7 +130,7 @@
       "url": "https://huggingface.co/papers/2609.28256",
       "arxiv": "https://arxiv.org/abs/2609.28256",
       "pdf": "https://arxiv.org/pdf/2609.28256.pdf",
-      "upvotes": 9,
+      "upvotes": 10,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -161,7 +161,7 @@
       "url": "https://huggingface.co/papers/2609.27656",
       "arxiv": "https://arxiv.org/abs/2609.27656",
       "pdf": "https://arxiv.org/pdf/2609.27656.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -194,7 +194,7 @@
       "url": "https://huggingface.co/papers/2609.27308",
       "arxiv": "https://arxiv.org/abs/2609.27308",
       "pdf": "https://arxiv.org/pdf/2609.27308.pdf",
-      "upvotes": 2,
+      "upvotes": 3,
       "categories": [
         "cs.RO"
       ],
@@ -224,7 +224,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24815",
       "arxiv": "https://arxiv.org/abs/2609.24815",
       "pdf": "https://arxiv.org/pdf/2609.24815.pdf",
-      "upvotes": 1,
+      "upvotes": 2,
       "tags": [
         "Simulator",
         "Embodied Vision"
@@ -1585,7 +1585,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.25636",
       "arxiv": "https://arxiv.org/abs/2609.25636",
       "pdf": "https://arxiv.org/pdf/2609.25636.pdf",
-      "upvotes": 6,
+      "upvotes": 10,
       "tags": [
         "VLA",
         "Dataset",
@@ -1608,7 +1608,7 @@
       "url": "https://arxiv.org/abs/2609.28811",
       "arxiv": "https://arxiv.org/abs/2609.28811",
       "pdf": "https://arxiv.org/pdf/2609.28811.pdf",
-      "upvotes": 2,
+      "upvotes": 3,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -2864,7 +2864,7 @@
       "url": "https://huggingface.co/papers/2609.23863",
       "arxiv": "https://arxiv.org/abs/2609.23863",
       "pdf": "https://arxiv.org/pdf/2609.23863.pdf",
-      "upvotes": 86,
+      "upvotes": 87,
       "categories": [
         "cs.RO"
       ],
@@ -2899,7 +2899,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24983",
       "arxiv": "https://arxiv.org/abs/2609.24983",
       "pdf": "https://arxiv.org/pdf/2609.24983.pdf",
-      "upvotes": 54,
+      "upvotes": 55,
       "tags": [
         "LLM Agent",
         "Dataset",
@@ -2923,7 +2923,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.13231",
       "arxiv": "https://arxiv.org/abs/2609.13231",
       "pdf": "https://arxiv.org/pdf/2609.13231.pdf",
-      "upvotes": 13,
+      "upvotes": 15,
       "tags": [
         "VLA",
         "Manipulation",
@@ -4395,7 +4395,7 @@
       "url": "https://arxiv.org/abs/2609.24118",
       "arxiv": "https://arxiv.org/abs/2609.24118",
       "pdf": "https://arxiv.org/pdf/2609.24118.pdf",
-      "upvotes": 24,
+      "upvotes": 26,
       "categories": [
         "cs.RO"
       ],
@@ -4448,7 +4448,7 @@
       "url": "https://arxiv.org/abs/2609.25187",
       "arxiv": "https://arxiv.org/abs/2609.25187",
       "pdf": "https://arxiv.org/pdf/2609.25187.pdf",
-      "upvotes": 1,
+      "upvotes": 2,
       "categories": [
         "cs.AI"
       ],
@@ -5975,7 +5975,7 @@
       "url": "https://arxiv.org/abs/2609.23784",
       "arxiv": "https://arxiv.org/abs/2609.23784",
       "pdf": "https://arxiv.org/pdf/2609.23784.pdf",
-      "upvotes": 10,
+      "upvotes": 11,
       "categories": [
         "cs.RO"
       ],
@@ -6945,7 +6945,9 @@
       "tags": [
         "Robotics"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.22803",
       "title": "ARCGym: Benchmarking Deep Reinforcement Learning in Autonomous Robotic Colonoscopy",
@@ -7734,9 +7736,7 @@
       "tags": [
         "Robotics"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.19554",
       "title": "VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control",
@@ -7748,7 +7748,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.19554",
       "arxiv": "https://arxiv.org/abs/2609.19554",
       "pdf": "https://arxiv.org/pdf/2609.19554.pdf",
-      "upvotes": 41,
+      "upvotes": 42,
       "tags": [
         "Imitation Learning",
         "Bimanual"
@@ -11166,7 +11166,7 @@
       "url": "https://arxiv.org/abs/2609.19138",
       "arxiv": "https://arxiv.org/abs/2609.19138",
       "pdf": "https://arxiv.org/pdf/2609.19138.pdf",
-      "upvotes": 23,
+      "upvotes": 27,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -11218,7 +11218,7 @@
       "url": "https://arxiv.org/abs/2609.18620",
       "arxiv": "https://arxiv.org/abs/2609.18620",
       "pdf": "https://arxiv.org/pdf/2609.18620.pdf",
-      "upvotes": 15,
+      "upvotes": 17,
       "categories": [
         "cs.RO"
       ],
@@ -13353,7 +13353,7 @@
       "url": "https://arxiv.org/abs/2609.22319",
       "arxiv": "https://arxiv.org/abs/2609.22319",
       "pdf": "https://arxiv.org/pdf/2609.22319.pdf",
-      "upvotes": 9,
+      "upvotes": 12,
       "categories": [
         "cs.RO"
       ],
@@ -151390,606 +151390,6 @@
       ],
       "tags": [
         "Locomotion"
-      ]
-    },
-    {
-      "id": "2109.13005",
-      "title": "Efficiently Training On-Policy Actor-Critic Networks in Robotic Deep Reinforcement Learning with Demonstration-like Sampled Exploration",
-      "abstract": "In complex environments with high dimension, training a reinforcement learning (RL) model from scratch often suffers from lengthy and tedious collection of agent-environment interactions. Instead, leveraging expert demonstration to guide RL agent can boost sample efficiency and improve final convergence. In order to better integrate expert prior with on-policy RL models, we propose a generic framework for Learning from Demonstration (LfD) based on actor-critic algorithms. Technically, we first employ K-Means clustering to evaluate the similarity of sampled exploration with demonstration data. Then we increase the likelihood of actions in similar frames by modifying the gradient update strategy to leverage demonstration. We conduct experiments on 4 standard benchmark environments in Mujoco and 2 self-designed robotic environments. Results show that, under certain condition, our algorithm can improve sample efficiency by 20% ~ 40%. By combining our framework with on-policy algorithms, RL models can accelerate convergence and obtain better final mean episode rewards especially in complex robotic context where interactions are expensive.",
-      "authors": "Zhaorun Chen, Binhao Chen, Shenghan Xie, Liang Gong, Chengliang Liu, Zhengfeng Zhang, Junping Zhang",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13005",
-      "pdf": "https://arxiv.org/pdf/2109.13005.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG",
-        "cs.HC",
-        "cs.RO",
-        "eess.SY"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "Imitation Learning",
-        "Reinforcement Learning",
-        "Dataset",
-        "Simulator"
-      ],
-      "tags": [
-        "Navigation",
-        "Imitation Learning",
-        "Reinforcement Learning",
-        "Dataset",
-        "Simulator"
-      ]
-    },
-    {
-      "id": "2109.13081",
-      "title": "Semi-Autonomous Teleoperation via Learning Non-Prehensile Manipulation Skills",
-      "abstract": "In this paper, we present a semi-autonomous teleoperation framework for a pick-and-place task using an RGB-D sensor. In particular, we assume that the target object is located in a cluttered environment where both prehensile grasping and non-prehensile manipulation are combined for efficient teleoperation. A trajectory-based reinforcement learning is utilized for learning the non-prehensile manipulation to rearrange the objects for enabling direct grasping. From the depth image of the cluttered environment and the location of the goal object, the learned policy can provide multiple options of non-prehensile manipulation to the human operator. We carefully design a reward function for the rearranging task where the policy is trained in a simulational environment. Then, the trained policy is transferred to a real-world and evaluated in a number of real-world experiments with the varying number of objects where we show that the proposed method outperforms manual keyboard control in terms of the time duration for the grasping.",
-      "authors": "Sangbeom Park, Yoonbyung Chai, Sunghyun Park, Jeongeun Park, Kyungjae Lee, Sungjoon Choi",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13081",
-      "pdf": "https://arxiv.org/pdf/2109.13081.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Grasping",
-        "Reinforcement Learning",
-        "Teleoperation"
-      ],
-      "tags": [
-        "Manipulation",
-        "Grasping",
-        "Reinforcement Learning",
-        "Teleoperation"
-      ]
-    },
-    {
-      "id": "2109.13050",
-      "title": "Learning of Parameters in Behavior Trees for Movement Skills",
-      "abstract": "Reinforcement Learning (RL) is a powerful mathematical framework that allows robots to learn complex skills by trial-and-error. Despite numerous successes in many applications, RL algorithms still require thousands of trials to converge to high-performing policies, can produce dangerous behaviors while learning, and the optimized policies (usually modeled as neural networks) give almost zero explanation when they fail to perform the task. For these reasons, the adoption of RL in industrial settings is not common. Behavior Trees (BTs), on the other hand, can provide a policy representation that a) supports modular and composable skills, b) allows for easy interpretation of the robot actions, and c) provides an advantageous low-dimensional parameter space. In this paper, we present a novel algorithm that can learn the parameters of a BT policy in simulation and then generalize to the physical robot without any additional training. We leverage a physical simulator with a digital twin of our workstation, and optimize the relevant parameters with a black-box optimizer. We showcase the efficacy of our method with a 7-DOF KUKA-iiwa manipulator in a task that includes obstacle avoidance and a contact-rich insertion (peg-in-hole), in which our method outperforms the baselines.",
-      "authors": "Matthias Mayr, Konstantinos Chatzilygeroudis, Faseeh Ahmad, Luigi Nardi, Volker Krueger",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13050",
-      "pdf": "https://arxiv.org/pdf/2109.13050.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Reinforcement Learning",
-        "Simulator",
-        "Hardware"
-      ],
-      "tags": [
-        "Manipulation",
-        "Reinforcement Learning",
-        "Simulator",
-        "Hardware"
-      ]
-    },
-    {
-      "id": "2109.13396",
-      "title": "Bridge Data: Boosting Generalization of Robotic Skills with Cross-Domain Datasets",
-      "abstract": "Robot learning holds the promise of learning policies that generalize broadly. However, such generalization requires sufficiently diverse datasets of the task of interest, which can be prohibitively expensive to collect. In other fields, such as computer vision, it is common to utilize shared, reusable datasets, such as ImageNet, to overcome this challenge, but this has proven difficult in robotics. In this paper, we ask: what would it take to enable practical data reuse in robotics for end-to-end skill learning? We hypothesize that the key is to use datasets with multiple tasks and multiple domains, such that a new user that wants to train their robot to perform a new task in a new domain can include this dataset in their training process and benefit from cross-task and cross-domain generalization. To evaluate this hypothesis, we collect a large multi-domain and multi-task dataset, with 7,200 demonstrations constituting 71 tasks across 10 environments, and empirically study how this data can improve the learning of new tasks in new environments. We find that jointly training with the proposed dataset and 50 demonstrations of a never-before-seen task in a new domain on average leads to a 2x improvement in success rate compared to using target domain data alone. We also find that data for only a few tasks in a new domain can bridge the domain gap and make it possible for a robot to perform a variety of prior tasks that were only seen in other domains. These results suggest that reusing diverse multi-task and multi-domain datasets, including our open-source dataset, may pave the way for broader robot generalization, eliminating the need to re-collect data for each new robot learning project.",
-      "authors": "Frederik Ebert, Yanlai Yang, Karl Schmeckpeper, Bernadette Bucher, Georgios Georgakis, Kostas Daniilidis, Chelsea Finn, Sergey Levine",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13396",
-      "pdf": "https://arxiv.org/pdf/2109.13396.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Dataset",
-        "Open-Source",
-        "Multi-task"
-      ],
-      "tags": [
-        "Dataset",
-        "Open-Source",
-        "Multi-task"
-      ]
-    },
-    {
-      "id": "2109.13382",
-      "title": "Bimanual Telemanipulation with Force and Haptic Feedback and Predictive Limit Avoidance",
-      "abstract": "Robotic teleoperation is a key technology for a wide variety of applications. It allows sending robots instead of humans in remote, possibly dangerous locations while still using the human brain with its enormous knowledge and creativity, especially for solving unexpected problems. A main challenge in teleoperation consists of providing enough feedback to the human operator for situation awareness and thus create full immersion, as well as offering the operator suitable control interfaces to achieve efficient and robust task fulfillment. We present a bimanual telemanipulation system consisting of an anthropomorphic avatar robot and an operator station providing force and haptic feedback to the human operator. The avatar arms are controlled in Cartesian space with a 1:1 mapping of the operator movements. The measured forces and torques on the avatar side are haptically displayed directly to the operator. We developed a predictive avatar model for limit avoidance which runs on the operator side, ensuring low latency. Only off-the-shelf components were used to build the system. It is evaluated in lab experiments and by untrained operators in a small user study.",
-      "authors": "Christian Lenz, Sven Behnke",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13382",
-      "pdf": "https://arxiv.org/pdf/2109.13382.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Humanoid",
-        "Teleoperation",
-        "Bimanual"
-      ],
-      "tags": [
-        "Humanoid",
-        "Teleoperation",
-        "Bimanual"
-      ]
-    },
-    {
-      "id": "2109.13338",
-      "title": "Solving Challenging Control Problems Using Two-Staged Deep Reinforcement Learning",
-      "abstract": "We present a deep reinforcement learning (deep RL) algorithm that consists of learning-based motion planning and imitation to tackle challenging control problems. Deep RL has been an effective tool for solving many high-dimensional continuous control problems, but it cannot effectively solve challenging problems with certain properties, such as sparse reward functions or sensitive dynamics. In this work, we propose an approach that decomposes the given problem into two deep RL stages: motion planning and motion imitation. The motion planning stage seeks to compute a feasible motion plan by leveraging the powerful planning capability of deep RL. Subsequently, the motion imitation stage learns a control policy that can imitate the given motion plan with realistic sensors and actuation models. This new formulation requires only a nominal added cost to the user because both stages require minimal changes to the original problem. We demonstrate that our approach can solve challenging control problems, rocket navigation, and quadrupedal locomotion, which cannot be solved by the monolithic deep RL formulation or the version with Probabilistic Roadmap.",
-      "authors": "Nitish Sontakke, Sehoon Ha",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13338",
-      "pdf": "https://arxiv.org/pdf/2109.13338.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Locomotion",
-        "Navigation",
-        "Reinforcement Learning"
-      ],
-      "tags": [
-        "Locomotion",
-        "Navigation",
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2109.13145",
-      "title": "Non-prehensile Planar Manipulation via Trajectory Optimization with Complementarity Constraints",
-      "abstract": "Contact adaption is an essential capability when manipulating objects. Two key contact modes of non-prehensile manipulation are sticking and sliding. This paper presents a Trajectory Optimization (TO) method formulated as a Mathematical Program with Complementarity Constraints (MPCC), which is able to switch between these two modes. We show that this formulation can be applicable to both planning and Model Predictive Control (MPC) for planar manipulation tasks. We numerically compare: (i) our planner against a mixed integer alternative, showing that the MPCC planer converges faster, scales better with respect to time horizon, and can handle environments with obstacles; (ii) our controller against a state-of-the-art mixed integer approach, showing that the MPCC controller achieves better tracking and more consistent computation times. Additionally, we experimentally validate both our planner and controller with the KUKA LWR robot on a range of planar manipulation tasks.",
-      "authors": "João Moura, Theodoros Stouraitis, Sethu Vijayakumar",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13145",
-      "pdf": "https://arxiv.org/pdf/2109.13145.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Imitation Learning",
-        "Hardware"
-      ],
-      "tags": [
-        "Manipulation",
-        "Imitation Learning",
-        "Hardware"
-      ]
-    },
-    {
-      "id": "2109.12750",
-      "title": "Learning Multimodal Rewards from Rankings",
-      "abstract": "Learning from human feedback has shown to be a useful approach in acquiring robot reward functions. However, expert feedback is often assumed to be drawn from an underlying unimodal reward function. This assumption does not always hold including in settings where multiple experts provide data or when a single expert provides data for different tasks -- we thus go beyond learning a unimodal reward and focus on learning a multimodal reward function. We formulate the multimodal reward learning as a mixture learning problem and develop a novel ranking-based learning approach, where the experts are only required to rank a given set of trajectories. Furthermore, as access to interaction data is often expensive in robotics, we develop an active querying approach to accelerate the learning process. We conduct experiments and user studies using a multi-task variant of OpenAI's LunarLander and a real Fetch robot, where we collect data from multiple users with different preferences. The results suggest that our approach can efficiently learn multimodal reward functions, and improve data-efficiency over benchmark methods that we adapt to our learning problem.",
-      "authors": "Vivek Myers, Erdem Bıyık, Nima Anari, Dorsa Sadigh",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12750",
-      "pdf": "https://arxiv.org/pdf/2109.12750.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Dataset",
-        "Multi-task",
-        "Hardware"
-      ],
-      "tags": [
-        "Dataset",
-        "Multi-task",
-        "Hardware"
-      ]
-    },
-    {
-      "id": "2109.13324",
-      "title": "Multiple-Pilot Collaboration for Advanced Remote Intervention using Reinforcement Learning",
-      "abstract": "The traditional master-slave teleoperation relies on human expertise without correction mechanisms, resulting in excessive physical and mental workloads. To address these issues, a co-pilot-in-the-loop control framework is investigated for cooperative teleoperation. A deep deterministic policy gradient(DDPG) based agent is realised to effectively restore the master operators' intents without prior knowledge on time delay. The proposed framework allows for introducing an operator (i.e., co-pilot) to generate commands at the slave side, whose weights are optimally assigned online through DDPG-based arbitration, thereby enhancing the command robustness in the case of possible human operational errors. With the help of interval type-2(IT2) Takagi-Sugeno (T-S) fuzzy identification, force feedback can be reconstructed at the master side without a sense of delay, thus ensuring the telepresence performance in the force-sensor-free scenarios. Two experimental applications validate the effectiveness of the proposed framework.",
-      "authors": "Ziwei Wang, Weibang Bai, Zhang Chen, Bo Xiao, Bin Liang, Eric M. Yeatman",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13324",
-      "pdf": "https://arxiv.org/pdf/2109.13324.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Reinforcement Learning",
-        "Teleoperation"
-      ],
-      "tags": [
-        "Reinforcement Learning",
-        "Teleoperation"
-      ]
-    },
-    {
-      "id": "2109.13176",
-      "title": "G-VOM: A GPU Accelerated Voxel Off-Road Mapping System",
-      "abstract": "We present a local 3D voxel mapping framework for off-road path planning and navigation. Our method provides both hard and soft positive obstacle detection, negative obstacle detection, slope estimation, and roughness estimation. By using a 3D array lookup table data structure and by leveraging the GPU it can provide online performance. We then demonstrate the system working on three vehicles, a Clearpath Robotics Warthog, Moose, and a Polaris Ranger, and compare against a set of pre-recorded waypoints. This was done at 4.5 m/s in autonomous operation and 12 m/s in manual operation with a map update rate of 10 Hz. Finally, an open-source ROS implementation is provided. https://github.com/unmannedlab/G-VOM",
-      "authors": "Timothy Overbye, Srikanth Saripalli",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13176",
-      "pdf": "https://arxiv.org/pdf/2109.13176.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "Open-Source"
-      ],
-      "tags": [
-        "Navigation",
-        "Open-Source"
-      ]
-    },
-    {
-      "id": "2109.13160",
-      "title": "Robust SLAM Systems: Are We There Yet?",
-      "abstract": "Progress in the last decade has brought about significant improvements in the accuracy and speed of SLAM systems, broadening their mapping capabilities. Despite these advancements, long-term operation remains a major challenge, primarily due to the wide spectrum of perturbations robotic systems may encounter. Increasing the robustness of SLAM algorithms is an ongoing effort, however it usually addresses a specific perturbation. Generalisation of robustness across a large variety of challenging scenarios is not well-studied nor understood. This paper presents a systematic evaluation of the robustness of open-source state-of-the-art SLAM algorithms with respect to challenging conditions such as fast motion, non-uniform illumination, and dynamic scenes. The experiments are performed with perturbations present both independently of each other, as well as in combination in long-term deployment settings in unconstrained environments (lifelong operation).",
-      "authors": "Mihai Bujanca, Xuesong Shi, Matthew Spear, Pengpeng Zhao, Barry Lennox, Mikel Lujan",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13160",
-      "pdf": "https://arxiv.org/pdf/2109.13160.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "Open-Source"
-      ],
-      "tags": [
-        "Navigation",
-        "Open-Source"
-      ]
-    },
-    {
-      "id": "2109.12979",
-      "title": "CT-ICP: Real-time Elastic LiDAR Odometry with Loop Closure",
-      "abstract": "Multi-beam LiDAR sensors are increasingly used in robotics, particularly with autonomous cars for localization and perception tasks, both relying on the ability to build a precise map of the environment. For this, we propose a new real-time LiDAR-only odometry method called CT-ICP (for Continuous-Time ICP), completed into a full SLAM with a novel loop detection procedure. The core of this method, is the introduction of the combined continuity in the scan matching, and discontinuity between scans. It allows both the elastic distortion of the scan during the registration for increased precision, and the increased robustness to high frequency motions from the discontinuity. We build a complete SLAM on top of this odometry, using a fast pure LiDAR loop detection based on elevation image 2D matching, providing a pose graph with loop constraints. To show the robustness of the method, we tested it on seven datasets: KITTI, KITTI-raw, KITTI-360, KITTI-CARLA, ParisLuco, Newer College, and NCLT in driving and high-frequency motion scenarios. Both the CT-ICP odometry and the loop detection are made available online. CT-ICP is currently first, among those giving access to a public code, on the KITTI odometry leaderboard, with an average Relative Translation Error (RTE) of 0.59% and an average time per scan of 60ms on a CPU with a single thread.",
-      "authors": "Pierre Dellenbach, Jean-Emmanuel Deschaud, Bastien Jacquet, François Goulette",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12979",
-      "pdf": "https://arxiv.org/pdf/2109.12979.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "Dataset"
-      ],
-      "tags": [
-        "Navigation",
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2109.12910",
-      "title": "A Biologically-Inspired Simultaneous Localization and Mapping System Based on LiDAR Sensor",
-      "abstract": "Simultaneous localization and mapping (SLAM) is one of the essential techniques and functionalities used by robots to perform autonomous navigation tasks. Inspired by the rodent hippocampus, this paper presents a biologically inspired SLAM system based on a LiDAR sensor using a hippocampal model to build a cognitive map and estimate the robot pose in indoor environments. Based on the biologically inspired models mimicking boundary cells, place cells, and head direction cells, the SLAM system using LiDAR point cloud data is capable of leveraging the self-motion cues from the LiDAR odometry and the boundary cues from the LiDAR boundary cells to build a cognitive map and estimate the robot pose. Experiment results show that with the LiDAR boundary cells the proposed SLAM system greatly outperforms the camera-based brain-inspired method in both simulation and indoor environments, and is competitive with the conventional LiDAR-based SLAM methods.",
-      "authors": "Genghang Zhuang, Zhenshan Bing, Yuhong Huang, Kai Huang, Alois Knoll",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12910",
-      "pdf": "https://arxiv.org/pdf/2109.12910.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "3D / Perception"
-      ],
-      "tags": [
-        "Navigation",
-        "3D / Perception"
-      ]
-    },
-    {
-      "id": "2109.12869",
-      "title": "Introspective Robot Perception using Smoothed Predictions from Bayesian Neural Networks",
-      "abstract": "This work focuses on improving uncertainty estimation in the field of object classification from RGB images and demonstrates its benefits in two robotic applications. We employ a (BNN), and evaluate two practical inference techniques to obtain better uncertainty estimates, namely Concrete Dropout (CDP) and Kronecker-factored Laplace Approximation (LAP). We show a performance increase using more reliable uncertainty estimates as unary potentials within a Conditional Random Field (CRF), which is able to incorporate contextual information as well. Furthermore, the obtained uncertainties are exploited to achieve domain adaptation in a semi-supervised manner, which requires less manual efforts in annotating data. We evaluate our approach on two public benchmark datasets that are relevant for robot perception tasks.",
-      "authors": "Jianxiang Feng, Maximilian Durner, Zoltan-Csaba Marton, Ferenc Balint-Benczedi, Rudolph Triebel",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12869",
-      "pdf": "https://arxiv.org/pdf/2109.12869.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Sim2Real",
-        "Dataset"
-      ],
-      "tags": [
-        "Sim2Real",
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2109.13377",
-      "title": "Model-Free Reinforcement Learning for Optimal Control of MarkovDecision Processes Under Signal Temporal Logic Specifications",
-      "abstract": "We present a model-free reinforcement learning algorithm to find an optimal policy for a finite-horizon Markov decision process while guaranteeing a desired lower bound on the probability of satisfying a signal temporal logic (STL) specification. We propose a method to effectively augment the MDP state space to capture the required state history and express the STL objective as a reachability objective. The planning problem can then be formulated as a finite-horizon constrained Markov decision process (CMDP). For a general finite horizon CMDP problem with unknown transition probability, we develop a reinforcement learning scheme that can leverage any model-free RL algorithm to provide an approximately optimal policy out of the general space of non-stationary randomized policies. We illustrate the effectiveness of our approach in the context of robotic motion planning for complex missions under uncertainty and performance objectives.",
-      "authors": "Krishna C. Kalagarla, Rahul Jain, Pierluigi Nuzzo",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13377",
-      "pdf": "https://arxiv.org/pdf/2109.13377.pdf",
-      "upvotes": 0,
-      "categories": [
-        "eess.SY",
-        "cs.AI",
-        "cs.FL"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Reinforcement Learning"
-      ],
-      "tags": [
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2109.13373",
-      "title": "Trustworthy AI and Robotics and the Implications for the AEC Industry: A Systematic Literature Review and Future Potentials",
-      "abstract": "Human-technology interaction deals with trust as an inevitable requirement for user acceptance. As the applications of artificial intelligence (AI) and robotics emerge and with their ever-growing socio-economic influence in various fields of research and practice, there is an imminent need to study trust in such systems. With the opaque work mechanism of AI-based systems and the prospect of intelligent robots as workers' companions, context-specific interdisciplinary studies on trust are key in increasing their adoption. Through a thorough systematic literature review on (1) trust in AI and robotics (AIR) and (2) AIR applications in the architecture, engineering, and construction (AEC) industry, this study identifies common trust dimensions in the literature and uses them to organize the paper. Furthermore, the connections of the identified dimensions to the existing and potential AEC applications are determined and discussed. Finally, major future directions on trustworthy AI and robotics in AEC research and practice are outlined.",
-      "authors": "Newsha Emaminejad, Reza Akhavian",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13373",
-      "pdf": "https://arxiv.org/pdf/2109.13373.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.HC",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2109.13362",
-      "title": "FastMimic: Model-based Motion Imitation for Agile, Diverse and Generalizable Quadrupedal Locomotion",
-      "abstract": "Robots operating in human environments need various skills, like slow and fast walking, turning, side-stepping, and many more. However, building robot controllers that can exhibit such a large range of behaviors is a challenging problem that requires tedious investigation for every task. We present a unified model-based control algorithm for imitating different animal gaits without expensive simulation training or real-world fine-tuning. Our method consists of stance and swing leg controllers using a centroidal dynamics model augmented with online adaptation techniques. We also develop a whole-body trajectory optimization procedure to fix the kinematic infeasibility of the reference animal motions. We demonstrate that our universal data-driven model-based controller can seamlessly imitate various motor skills, including trotting, pacing, turning, and side-stepping. It also shows better tracking capabilities in simulation and the real world against several baselines, including another model-based imitation controller and a learning-based motion imitation technique.",
-      "authors": "Tianyu Li, Jungdam Won, Sehoon Ha, Akshara Rai",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13362",
-      "pdf": "https://arxiv.org/pdf/2109.13362.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Locomotion"
-      ],
-      "tags": [
-        "Locomotion"
-      ]
-    },
-    {
-      "id": "2109.13349",
-      "title": "Control Barrier Functions for Singularity Avoidance in Passivity-Based Manipulator Control",
-      "abstract": "Task-space Passivity-Based Control (PBC) for manipulation has numerous appealing properties, including robustness to modeling error and safety for human-robot interaction. Existing methods perform poorly in singular configurations, however, such as when all the robot's joints are fully extended. Additionally, standard methods for constrained task-space PBC guarantee passivity only when constraints are not active. We propose a convex-optimization-based control scheme that provides guarantees of singularity avoidance, passivity, and feasibility. This work paves the way for PBC with passivity guarantees under other types of constraints as well, including joint limits and contact/friction constraints. The proposed methods are validated in simulation experiments on a 7 degree-of-freedom manipulator.",
-      "authors": "Vince Kurtz, Patrick M. Wensing, Hai Lin",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13349",
-      "pdf": "https://arxiv.org/pdf/2109.13349.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "eess.SY"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation"
-      ],
-      "tags": [
-        "Manipulation"
-      ]
-    },
-    {
-      "id": "2109.13201",
-      "title": "A 3-DoF Robotic Platform for the Rehabilitation and Assessment of Reaction Time and Balance Skills of MS Patients",
-      "abstract": "The central nervous system exploits anticipatory (APAs) and compensatory (CPAs) postural adjustments to maintain the balance.The postural adjustments comprising stability of the center of mass (CoM) and the pressure distribution of the body influence each other if there is a lack of performance in either of them.Any predictable or sudden perturbation may pave the way for the divergence of CoM from equilibrium and inhomogeneous pressure distribution of the body.Such a situation is often observed in the daily lives of MS patients due to their poor APAs and CPAs and induces their falls.The way of minimizing the risk of falls in neurological patients is by utilizing perturbation-based rehabilitation, as it is efficient in the recovery of the balance disorder. In light of the findings, we present the design, implementation, and experimental evaluation of a novel 3 DoF parallel manipulator to treat the balance disorder of MS.The robotic platform allows angular motion of the ankle based on its anthropomorphic freedom.Moreover, the end-effector endowed with upper and lower platforms is designed to evaluate both the pressure distribution of each foot and the CoM of the body, respectively.Data gathered from the platforms are utilized to both evaluate the performance of the patients and used in high-level control of the robotic platform to regulate the difficulty level of tasks. In the study, kinematic and dynamic analyses of the robot are derived and validated in the simulation environment.Low-level control of the first prototype is also successfully implemented via the PID controller.The capacity of each platform is evaluated with a set of experiments considering the assessment of pressure distribution and CoM of the foot-like objects on the end-effector.The experimental results indicate that such a system well-address the need for balance skill training and assessment through the APAs and CPAs.",
-      "authors": "Tugce Ersoy, Elif Hocaoglu",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13201",
-      "pdf": "https://arxiv.org/pdf/2109.13201.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Humanoid"
-      ],
-      "tags": [
-        "Humanoid"
-      ]
-    },
-    {
-      "id": "2109.13162",
-      "title": "Precision fruit tree pruning using a learned hybrid vision/interaction controller",
-      "abstract": "Robotic tree pruning requires highly precise manipulator control in order to accurately align a cutting implement with the desired pruning point at the correct angle. Simultaneously, the robot must avoid applying excessive force to rigid parts of the environment such as trees, support posts, and wires. In this paper, we propose a hybrid control system that uses a learned vision-based controller to initially align the cutter with the desired pruning point, taking in images of the environment and outputting control actions. This controller is trained entirely in simulation, but transfers easily to real trees via a neural network which transforms raw images into a simplified, segmented representation. Once contact is established, the system hands over control to an interaction controller that guides the cutter pivot point to the branch while minimizing interaction forces. With this simple, yet novel, approach we demonstrate an improvement of over 30 percentage points in accuracy over a baseline controller that uses camera depth data.",
-      "authors": "Alexander You, Hannah Kolano, Nidhi Parayil, Cindy Grimm, Joseph R. Davidson",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13162",
-      "pdf": "https://arxiv.org/pdf/2109.13162.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation"
-      ],
-      "tags": [
-        "Manipulation"
-      ]
-    },
-    {
-      "id": "2109.13030",
-      "title": "GPU Accelerated Batch Multi-Convex Trajectory Optimization for a Rectangular Holonomic Mobile Robot",
-      "abstract": "We present a batch trajectory optimizer that can simultaneously solve hundreds of different instances of the problem in real-time. We consider holonomic robots but relax the assumption of circular base footprint. Our main algorithmic contributions lie in: (i) improving the computational tractability of the underlying non-convex problem and (ii) leveraging batch computation to mitigate initialization bottlenecks and improve solution quality. We achieve both goals by deriving a multi-convex reformulation of the kinematics and collision avoidance constraints. We exploit these structures through an Alternating Minimization approach and show that the resulting batch operation reduces to computing just matrix-vector products that can be trivially accelerated over GPUs. We improve the state-of-the-art in three respects. First, we improve quality of navigation (success-rate, tracking) as compared to baseline approach that relies on computing a single locally optimal trajectory at each control loop. Second, we show that when initialized with trajectory samples from a Gaussian distribution, our batch optimizer outperforms state-of-the-art cross-entropy method in solution quality. Finally, our batch optimizer is several orders of magnitude faster than the conceptually simpler alternative of running different optimization instances in parallel CPU threads. \\textbf{Codes:} \\url{https://tinyurl.com/a3b99m8}",
-      "authors": "Fatemeh Rastgar, Houman Masnavi, Karl Kruusamäe, Alvo Aabloo, Arun Kumar Singh",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.13030",
-      "pdf": "https://arxiv.org/pdf/2109.13030.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation"
-      ],
-      "tags": [
-        "Navigation"
-      ]
-    },
-    {
-      "id": "2109.12941",
-      "title": "PicTalky: Augmentative and Alternative Communication Software for Language Developmental Disabilities",
-      "abstract": "Augmentative and alternative communication (AAC) is a practical means of communication for people with language disabilities. In this study, we propose PicTalky, which is an AI-based AAC system that helps children with language developmental disabilities to improve their communication skills and language comprehension abilities. PicTalky can process both text and pictograms more accurately by connecting a series of neural-based NLP modules. Moreover, we perform quantitative and qualitative analyses on the essential features of PicTalky. It is expected that those suffering from language problems will be able to express their intentions or desires more easily and improve their quality of life by using this service. We have made the models freely available alongside a demonstration of the Web interface. Furthermore, we implemented robotics AAC for the first time by applying PicTalky to the NAO robot.",
-      "authors": "Chanjun Park, Yoonna Jang, Seolhwa Lee, Jaehyung Seo, Kisu Yang, Heuiseok Lim",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12941",
-      "pdf": "https://arxiv.org/pdf/2109.12941.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CL",
-        "cs.CY",
-        "cs.HC"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2109.12912",
-      "title": "A User-Centred Framework for Explainable Artificial Intelligence in Human-Robot Interaction",
-      "abstract": "State of the art Artificial Intelligence (AI) techniques have reached an impressive complexity. Consequently, researchers are discovering more and more methods to use them in real-world applications. However, the complexity of such systems requires the introduction of methods that make those transparent to the human user. The AI community is trying to overcome the problem by introducing the Explainable AI (XAI) field, which is tentative to make AI algorithms less opaque. However, in recent years, it became clearer that XAI is much more than a computer science problem: since it is about communication, XAI is also a Human-Agent Interaction problem. Moreover, AI came out of the laboratories to be used in real life. This implies the need for XAI solutions tailored to non-expert users. Hence, we propose a user-centred framework for XAI that focuses on its social-interactive aspect taking inspiration from cognitive and social sciences' theories and findings. The framework aims to provide a structure for interactive XAI solutions thought for non-expert users.",
-      "authors": "Marco Matarese, Francesco Rea, Alessandra Sciutti",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12912",
-      "pdf": "https://arxiv.org/pdf/2109.12912.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.AI",
-        "cs.HC",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2109.12787",
-      "title": "Emotional Speech Synthesis for Companion Robot to Imitate Professional Caregiver Speech",
-      "abstract": "When people try to influence others to do something, they subconsciously adjust their speech to include appropriate emotional information. In order for a robot to influence people in the same way, the robot should be able to imitate the range of human emotions when speaking. To achieve this, we propose a speech synthesis method for imitating the emotional states in human speech. In contrast to previous methods, the advantage of our method is that it requires less manual effort to adjust the emotion of the synthesized speech. Our synthesizer receives an emotion vector to characterize the emotion of synthesized speech. The vector is automatically obtained from human utterances by using a speech emotion recognizer. We evaluated our method in a scenario when a robot tries to regulate an elderly person's circadian rhythm by speaking to the person using appropriate emotional states. For the target speech to imitate, we collected utterances from professional caregivers when they speak to elderly people at different times of the day. Then we conducted a subjective evaluation where the elderly participants listened to the speech samples generated by our method. The results showed that listening to the samples made the participants feel more active in the early morning and calmer in the middle of the night. This suggests that the robot may be able to adjust the participants' circadian rhythm and that the robot can potentially exert influence similarly to a person.",
-      "authors": "Takeshi Homma, Qinghua Sun, Takuya Fujioka, Ryuta Takawaki, Eriko Ankyu, Kenji Nagamatsu, Daichi Sugawara, Etsuko T. Harada",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12787",
-      "pdf": "https://arxiv.org/pdf/2109.12787.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "eess.AS"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2109.12109",
-      "title": "Autonomy and Perception for Space Mining",
-      "abstract": "Future Moon bases will likely be constructed using resources mined from the surface of the Moon. The difficulty of maintaining a human workforce on the Moon and communications lag with Earth means that mining will need to be conducted using collaborative robots with a high degree of autonomy. In this paper, we describe our solution for Phase 2 of the NASA Space Robotics Challenge, which provided a simulated lunar environment in which teams were tasked to develop software systems to achieve autonomous collaborative robots for mining on the Moon. Our 3rd place and innovation award winning solution shows how machine learning-enabled vision could alleviate major challenges posed by the lunar environment towards autonomous space mining, chiefly the lack of satellite positioning systems, hazardous terrain, and delicate robot interactions. A robust multi-robot coordinator was also developed to achieve long-term operation and effective collaboration between robots.",
-      "authors": "Ragav Sachdeva, Ravi Hammond, James Bockman, Alec Arthur, Brandon Smart, Dustin Craggs, Anh-Dzung Doan, Thomas Rowntree, Elijah Schutz, Adrian Orenstein, Andy Yu, Tat-Jun Chin, Ian Reid",
-      "date": "2021-09-27",
-      "published": "2021-09-27",
-      "arxiv": "https://arxiv.org/abs/2109.12109",
-      "pdf": "https://arxiv.org/pdf/2109.12109.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
       ]
     }
   ]
