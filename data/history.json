@@ -156229,7 +156229,7 @@
       "url": "https://arxiv.org/abs/2609.28811",
       "arxiv": "https://arxiv.org/abs/2609.28811",
       "pdf": "https://arxiv.org/pdf/2609.28811.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -156385,7 +156385,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24308",
       "arxiv": "https://arxiv.org/abs/2609.24308",
       "pdf": "https://arxiv.org/pdf/2609.24308.pdf",
-      "upvotes": 56,
+      "upvotes": 57,
       "tags": [
         "Navigation",
         "World Model",
@@ -156411,7 +156411,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24815",
       "arxiv": "https://arxiv.org/abs/2609.24815",
       "pdf": "https://arxiv.org/pdf/2609.24815.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "tags": [
         "Simulator",
         "Embodied Vision"
@@ -157308,7 +157308,7 @@
       "url": "https://huggingface.co/papers/2609.31394",
       "arxiv": "https://arxiv.org/abs/2609.31394",
       "pdf": "https://arxiv.org/pdf/2609.31394.pdf",
-      "upvotes": 27,
+      "upvotes": 29,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -159707,7 +159707,7 @@
       "url": "https://arxiv.org/abs/2609.34599",
       "arxiv": "https://arxiv.org/abs/2609.34599",
       "pdf": "https://arxiv.org/pdf/2609.34599.pdf",
-      "upvotes": 14,
+      "upvotes": 16,
       "categories": [
         "cs.LG"
       ],
@@ -161605,7 +161605,7 @@
       "url": "https://arxiv.org/abs/2609.34981",
       "arxiv": "https://arxiv.org/abs/2609.34981",
       "pdf": "https://arxiv.org/pdf/2609.34981.pdf",
-      "upvotes": 116,
+      "upvotes": 123,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -161800,7 +161800,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.28236",
       "arxiv": "https://arxiv.org/abs/2609.28236",
       "pdf": "https://arxiv.org/pdf/2609.28236.pdf",
-      "upvotes": 37,
+      "upvotes": 39,
       "tags": [
         "Imitation Learning",
         "Dataset",
@@ -161824,7 +161824,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.32862",
       "arxiv": "https://arxiv.org/abs/2609.32862",
       "pdf": "https://arxiv.org/pdf/2609.32862.pdf",
-      "upvotes": 24,
+      "upvotes": 25,
       "tags": [
         "Imitation Learning",
         "Foundation Models",
@@ -161965,7 +161965,7 @@
       "url": "https://huggingface.co/papers/2609.38059",
       "arxiv": "https://arxiv.org/abs/2609.38059",
       "pdf": "https://arxiv.org/pdf/2609.38059.pdf",
-      "upvotes": 17,
+      "upvotes": 24,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -162922,7 +162922,7 @@
       "url": "https://huggingface.co/papers/2609.38087",
       "arxiv": "https://arxiv.org/abs/2609.38087",
       "pdf": "https://arxiv.org/pdf/2609.38087.pdf",
-      "upvotes": 21,
+      "upvotes": 22,
       "categories": [
         "cs.RO"
       ],
@@ -164124,7 +164124,7 @@
       "url": "https://huggingface.co/papers/2609.38057",
       "arxiv": "https://arxiv.org/abs/2609.38057",
       "pdf": "https://arxiv.org/pdf/2609.38057.pdf",
-      "upvotes": 30,
+      "upvotes": 35,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -164246,7 +164246,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34759",
       "arxiv": "https://arxiv.org/abs/2609.34759",
       "pdf": "https://arxiv.org/pdf/2609.34759.pdf",
-      "upvotes": 152,
+      "upvotes": 158,
       "tags": [
         "VLA",
         "Locomotion",
@@ -164270,7 +164270,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34606",
       "arxiv": "https://arxiv.org/abs/2609.34606",
       "pdf": "https://arxiv.org/pdf/2609.34606.pdf",
-      "upvotes": 24,
+      "upvotes": 38,
       "tags": [
         "World Model",
         "Embodied Vision"
@@ -164292,7 +164292,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.38154",
       "arxiv": "https://arxiv.org/abs/2609.38154",
       "pdf": "https://arxiv.org/pdf/2609.38154.pdf",
-      "upvotes": 28,
+      "upvotes": 32,
       "tags": [
         "World Model"
       ],
@@ -164872,11 +164872,11 @@
       "url": "https://arxiv.org/abs/2609.38886",
       "arxiv": "https://arxiv.org/abs/2609.38886",
       "pdf": "https://arxiv.org/pdf/2609.38886.pdf",
-      "upvotes": 0,
+      "upvotes": 8,
       "categories": [
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Manipulation",
         "Dataset"
@@ -164884,7 +164884,8 @@
       "tags": [
         "Manipulation",
         "Dataset"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.38886"
     },
     "2609.38873": {
       "id": "2609.38873",
@@ -165994,7 +165995,7 @@
       "url": "https://arxiv.org/abs/2609.39375",
       "arxiv": "https://arxiv.org/abs/2609.39375",
       "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
-      "upvotes": 16,
+      "upvotes": 31,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -166323,7 +166324,7 @@
       "url": "https://huggingface.co/papers/2609.38537",
       "arxiv": "https://arxiv.org/abs/2609.38537",
       "pdf": "https://arxiv.org/pdf/2609.38537.pdf",
-      "upvotes": 28,
+      "upvotes": 30,
       "categories": [
         "cs.RO"
       ],
@@ -166547,7 +166548,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.40325",
       "arxiv": "https://arxiv.org/abs/2609.40325",
       "pdf": "https://arxiv.org/pdf/2609.40325.pdf",
-      "upvotes": 93,
+      "upvotes": 95,
       "tags": [
         "VLA",
         "Navigation",
@@ -166621,7 +166622,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.35427",
       "arxiv": "https://arxiv.org/abs/2609.35427",
       "pdf": "https://arxiv.org/pdf/2609.35427.pdf",
-      "upvotes": 67,
+      "upvotes": 72,
       "tags": [
         "LLM Agent",
         "Embodied Vision"
@@ -166771,11 +166772,11 @@
       "url": "https://arxiv.org/abs/2610.01939",
       "arxiv": "https://arxiv.org/abs/2610.01939",
       "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
-      "upvotes": 0,
+      "upvotes": 26,
       "categories": [
         "cs.CV"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "VLA",
         "LLM Agent"
@@ -166783,7 +166784,8 @@
       "tags": [
         "VLA",
         "LLM Agent"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.01939"
     },
     "2610.01910": {
       "id": "2610.01910",
@@ -167345,7 +167347,7 @@
       "url": "https://huggingface.co/papers/2610.02196",
       "arxiv": "https://arxiv.org/abs/2610.02196",
       "pdf": "https://arxiv.org/pdf/2610.02196.pdf",
-      "upvotes": 3,
+      "upvotes": 37,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -168248,7 +168250,7 @@
       "title": "DexPolicy: Scheduled Exploration for Trajectory-Guided Dexterous Manipulation",
       "abstract": "Reinforcement learning (RL) for dexterous manipulation must discover finger-object contacts and then control the object precisely; the action noise that serves the first goal can interfere with the second. In trajectory-guided settings such as ViViDex, where RL refine hand-object trajectories from human video, our baseline PPO runs end near their initial action noise after 5M steps, motivating explicit control of exploration scale. DexPolicy makes that scale an explicit function of training steps, annealing from broad to narrow exploration while holding loss, architecture, reward, and optimizer settings fixed. We study three policy-optimization settings: PPO, critic-free GRPO continuation, and a flow-parameterized PPO variant (FPO). Across five YCB objects and three training seeds, mean deterministic Target success rises from 49.4% to 68.1% (FPO), 14.1% to 45.4% (GRPO), and 32.0% to 35.7% (PPO). On a RealMan RM75 arm with an Inspire/RH56 hand, 360 trials over three objects raise mean Target success from 25.0% to 85.0% (FPO), 10.0% to 63.3% (GRPO), and 8.3% to 43.3% (PPO), with one trained model per object-method condition. PPO component screening favors noise control over the tested optimizer contraction; the selected PPO schedule yields higher mean Target success than linear decay with the same endpoints on three tested objects. Training return, deterministic Target success, and tolerance to execution noise dissociate; schedules should therefore be judged by terminal task success under the intended execution conditions, per task and policy-optimization setting. Code: https://github.com/AIGeeksGroup/DexPolicy. Website: https://aigeeksgroup.github.io/DexPolicy.",
       "authors": "Haoyu Wang, Siyuan Qian, Yanjun Li, Zeyu Zhang, Yandong Guo, Boxin Shi, Hao Tang",
-      "date": "2026-10-02",
+      "date": "2026-09-30",
       "published": "2026-09-30",
       "url": "https://huggingface.co/papers/2610.00360",
       "arxiv": "https://arxiv.org/abs/2610.00360",
@@ -168358,7 +168360,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.35690",
       "arxiv": "https://arxiv.org/abs/2609.35690",
       "pdf": "https://arxiv.org/pdf/2609.35690.pdf",
-      "upvotes": 39,
+      "upvotes": 68,
       "tags": [
         "Grasping"
       ],
@@ -168378,7 +168380,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.38653",
       "arxiv": "https://arxiv.org/abs/2609.38653",
       "pdf": "https://arxiv.org/pdf/2609.38653.pdf",
-      "upvotes": 32,
+      "upvotes": 33,
       "tags": [
         "Locomotion",
         "Imitation Learning",
@@ -168412,7 +168414,29 @@
         "Navigation"
       ],
       "source": "hf"
+    },
+    "2609.39378": {
+      "id": "2609.39378",
+      "title": "EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos",
+      "abstract": "Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are tool-mediated. Understanding them requires reasoning about affordances, hand-tool-object geometry, procedural progress, and causal effects on target objects. Yet despite strong performance on perception-oriented video tasks such as captioning and general video QA, current multimodal video models remain limited in this form of tool-centric embodied reasoning. Progress in this direction has been limited by the lack of real-world egocentric data and diagnostic benchmarks. To address this gap, we introduce EgoTools, the first comprehensive suite for egocentric tool-use understanding. It consists of two complementary components: EgoTools-Data, a large-scale corpus of 100 hours of tool-centric egocentric recordings with synchronized audio, dense captions, reasoning-heavy narrations, and supplementary 3D information; and EgoTools-Bench, a diagnostic benchmark of 1,000 QA pairs across four tracks that cover tool-use understanding from perception and geometry to procedure and causal reasoning. Experimental results show that current models still struggle to ground tool use in visual evidence: Gemini-3.1-Pro achieves 66.9% overall accuracy but only 51.7% on Perception & Grounding. Beyond evaluation, we validate EgoTools-Data as a training resource. On the full 1,000-question benchmark, full supervised fine-tuning improves Qwen3-VL-8B-Instruct from 50.0% to 60.9%, under strict source-video separation. Together, these results establish EgoTools as a unified resource for both training and diagnostic evaluation of real-world egocentric tool-use understanding.",
+      "authors": "Shulin Tian, Junsu Kim, Shuai Liu, Hao Li, Yujiao Shen, Sihan Li, Zhe Yang, Yeongon Kim, Feiyu Li, Jialin Wu, Yichi Zhang, Wenhui Wang, Runmao Yao, Yuhao Dong, Zhaoxi Chen, Fangzhou Hong, Antonino Furnari, Jingkang Yang, Hongyuan Zhu, Ziwei Liu",
+      "date": "2026-10-02",
+      "published": "2026-10-02",
+      "url": "https://huggingface.co/papers/2609.39378",
+      "hfUrl": "https://huggingface.co/papers/2609.39378",
+      "arxiv": "https://arxiv.org/abs/2609.39378",
+      "pdf": "https://arxiv.org/pdf/2609.39378.pdf",
+      "upvotes": 35,
+      "tags": [
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-10-02T05:48:11.186713+00:00"
+  "generatedAt": "2026-10-03T05:25:15.118576+00:00"
 }

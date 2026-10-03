@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-02T05:48:11.186713+00:00",
+  "generatedAt": "2026-10-03T05:25:15.118576+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-25",
-  "archiveCutoff": "2021-10-03",
-  "addedToday": 68,
-  "historyTotal": 6915,
-  "count": 447,
-  "archiveCount": 6184,
+  "recentCutoff": "2026-09-26",
+  "archiveCutoff": "2021-10-04",
+  "addedToday": 1,
+  "historyTotal": 6916,
+  "count": 395,
+  "archiveCount": 6237,
   "sources": {
     "hf": 30,
-    "arxiv": 417
+    "arxiv": 365
   },
   "archiveSources": {
-    "hf": 127,
-    "arxiv": 6057
+    "hf": 130,
+    "arxiv": 6107
   },
   "warnings": [],
   "papers": [
@@ -29,7 +29,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.35690",
       "arxiv": "https://arxiv.org/abs/2609.35690",
       "pdf": "https://arxiv.org/pdf/2609.35690.pdf",
-      "upvotes": 39,
+      "upvotes": 68,
       "tags": [
         "Grasping"
       ],
@@ -48,7 +48,7 @@
       "url": "https://huggingface.co/papers/2610.02196",
       "arxiv": "https://arxiv.org/abs/2610.02196",
       "pdf": "https://arxiv.org/pdf/2610.02196.pdf",
-      "upvotes": 3,
+      "upvotes": 37,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -73,32 +73,26 @@
       "hfUrl": "https://huggingface.co/papers/2610.02196"
     },
     {
-      "id": "2610.00360",
-      "title": "DexPolicy: Scheduled Exploration for Trajectory-Guided Dexterous Manipulation",
-      "abstract": "Reinforcement learning (RL) for dexterous manipulation must discover finger-object contacts and then control the object precisely; the action noise that serves the first goal can interfere with the second. In trajectory-guided settings such as ViViDex, where RL refine hand-object trajectories from human video, our baseline PPO runs end near their initial action noise after 5M steps, motivating explicit control of exploration scale. DexPolicy makes that scale an explicit function of training steps, annealing from broad to narrow exploration while holding loss, architecture, reward, and optimizer settings fixed. We study three policy-optimization settings: PPO, critic-free GRPO continuation, and a flow-parameterized PPO variant (FPO). Across five YCB objects and three training seeds, mean deterministic Target success rises from 49.4% to 68.1% (FPO), 14.1% to 45.4% (GRPO), and 32.0% to 35.7% (PPO). On a RealMan RM75 arm with an Inspire/RH56 hand, 360 trials over three objects raise mean Target success from 25.0% to 85.0% (FPO), 10.0% to 63.3% (GRPO), and 8.3% to 43.3% (PPO), with one trained model per object-method condition. PPO component screening favors noise control over the tested optimizer contraction; the selected PPO schedule yields higher mean Target success than linear decay with the same endpoints on three tested objects. Training return, deterministic Target success, and tolerance to execution noise dissociate; schedules should therefore be judged by terminal task success under the intended execution conditions, per task and policy-optimization setting. Code: https://github.com/AIGeeksGroup/DexPolicy. Website: https://aigeeksgroup.github.io/DexPolicy.",
-      "authors": "Haoyu Wang, Siyuan Qian, Yanjun Li, Zeyu Zhang, Yandong Guo, Boxin Shi, Hao Tang",
+      "id": "2609.39378",
+      "title": "EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos",
+      "abstract": "Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are tool-mediated. Understanding them requires reasoning about affordances, hand-tool-object geometry, procedural progress, and causal effects on target objects. Yet despite strong performance on perception-oriented video tasks such as captioning and general video QA, current multimodal video models remain limited in this form of tool-centric embodied reasoning. Progress in this direction has been limited by the lack of real-world egocentric data and diagnostic benchmarks. To address this gap, we introduce EgoTools, the first comprehensive suite for egocentric tool-use understanding. It consists of two complementary components: EgoTools-Data, a large-scale corpus of 100 hours of tool-centric egocentric recordings with synchronized audio, dense captions, reasoning-heavy narrations, and supplementary 3D information; and EgoTools-Bench, a diagnostic benchmark of 1,000 QA pairs across four tracks that cover tool-use understanding from perception and geometry to procedure and causal reasoning. Experimental results show that current models still struggle to ground tool use in visual evidence: Gemini-3.1-Pro achieves 66.9% overall accuracy but only 51.7% on Perception & Grounding. Beyond evaluation, we validate EgoTools-Data as a training resource. On the full 1,000-question benchmark, full supervised fine-tuning improves Qwen3-VL-8B-Instruct from 50.0% to 60.9%, under strict source-video separation. Together, these results establish EgoTools as a unified resource for both training and diagnostic evaluation of real-world egocentric tool-use understanding.",
+      "authors": "Shulin Tian, Junsu Kim, Shuai Liu, Hao Li, Yujiao Shen, Sihan Li, Zhe Yang, Yeongon Kim, Feiyu Li, Jialin Wu, Yichi Zhang, Wenhui Wang, Runmao Yao, Yuhao Dong, Zhaoxi Chen, Fangzhou Hong, Antonino Furnari, Jingkang Yang, Hongyuan Zhu, Ziwei Liu",
       "date": "2026-10-02",
-      "published": "2026-09-30",
-      "url": "https://huggingface.co/papers/2610.00360",
-      "arxiv": "https://arxiv.org/abs/2610.00360",
-      "pdf": "https://arxiv.org/pdf/2610.00360.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "Navigation",
-        "Dexterous",
-        "Reinforcement Learning"
-      ],
+      "published": "2026-10-02",
+      "url": "https://huggingface.co/papers/2609.39378",
+      "hfUrl": "https://huggingface.co/papers/2609.39378",
+      "arxiv": "https://arxiv.org/abs/2609.39378",
+      "pdf": "https://arxiv.org/pdf/2609.39378.pdf",
+      "upvotes": 35,
       "tags": [
-        "Navigation",
-        "Dexterous",
-        "Reinforcement Learning"
+        "Imitation Learning",
+        "Dataset"
       ],
-      "hfUrl": "https://huggingface.co/papers/2610.00360"
+      "topics": [
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "source": "hf"
     },
     {
       "id": "2609.40325",
@@ -111,7 +105,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.40325",
       "arxiv": "https://arxiv.org/abs/2609.40325",
       "pdf": "https://arxiv.org/pdf/2609.40325.pdf",
-      "upvotes": 93,
+      "upvotes": 95,
       "tags": [
         "VLA",
         "Navigation",
@@ -135,7 +129,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.38653",
       "arxiv": "https://arxiv.org/abs/2609.38653",
       "pdf": "https://arxiv.org/pdf/2609.38653.pdf",
-      "upvotes": 32,
+      "upvotes": 33,
       "tags": [
         "Locomotion",
         "Imitation Learning",
@@ -160,7 +154,7 @@
       "url": "https://huggingface.co/papers/2609.38537",
       "arxiv": "https://arxiv.org/abs/2609.38537",
       "pdf": "https://arxiv.org/pdf/2609.38537.pdf",
-      "upvotes": 28,
+      "upvotes": 30,
       "categories": [
         "cs.RO"
       ],
@@ -182,6 +176,31 @@
         "Dexterous"
       ],
       "hfUrl": "https://huggingface.co/papers/2609.38537"
+    },
+    {
+      "id": "2610.01939",
+      "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens",
+      "abstract": "Vision language model (VLM) agents can control robots through visual feedback and action primitives, but repeated model invocations and redundant observations incur substantial token overhead. We introduce PyRUA-Lean, an interactive code-execution framework that couples feedback-driven primitive composition with selective observation: the agent composes classical robot primitives and learned vision-language-action (VLA) policies into Python cells that perform conditional checks and local retries, returning only explicitly requested images and state feedback for replanning. Across 700 simulated task instances from LIBERO-PRO, RoboTwin 2.0, and RoboCasa365, we compare PyRUA-Lean with a tool-calling baseline using the same GPT-6 Astra planner and underlying robot primitives. Under equal LLM-call budgets, PyRUA-Lean increases overall success from 63.1% to 71.7%. On instances solved by both agents, it uses 49% fewer LLM calls and 65% fewer input tokens.",
+      "authors": "Ruiyang Si, Jianxin Bi, Shunyu Yang, Rui Ni, Wenbo Huang, Qiang Wang, Shulong Jiang, Duomin Wang, Xiuyu Li, Haiwen Feng, Zhen Dong, Daquan Zhou",
+      "date": "2026-10-01",
+      "published": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.01939",
+      "arxiv": "https://arxiv.org/abs/2610.01939",
+      "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
+      "upvotes": 26,
+      "categories": [
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "LLM Agent"
+      ],
+      "tags": [
+        "VLA",
+        "LLM Agent"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.01939"
     },
     {
       "id": "2609.39685",
@@ -1037,30 +1056,6 @@
       ]
     },
     {
-      "id": "2610.01939",
-      "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens",
-      "abstract": "Vision language model (VLM) agents can control robots through visual feedback and action primitives, but repeated model invocations and redundant observations incur substantial token overhead. We introduce PyRUA-Lean, an interactive code-execution framework that couples feedback-driven primitive composition with selective observation: the agent composes classical robot primitives and learned vision-language-action (VLA) policies into Python cells that perform conditional checks and local retries, returning only explicitly requested images and state feedback for replanning. Across 700 simulated task instances from LIBERO-PRO, RoboTwin 2.0, and RoboCasa365, we compare PyRUA-Lean with a tool-calling baseline using the same GPT-6 Astra planner and underlying robot primitives. Under equal LLM-call budgets, PyRUA-Lean increases overall success from 63.1% to 71.7%. On instances solved by both agents, it uses 49% fewer LLM calls and 65% fewer input tokens.",
-      "authors": "Ruiyang Si, Jianxin Bi, Shunyu Yang, Rui Ni, Wenbo Huang, Qiang Wang, Shulong Jiang, Duomin Wang, Xiuyu Li, Haiwen Feng, Zhen Dong, Daquan Zhou",
-      "date": "2026-10-01",
-      "published": "2026-10-01",
-      "url": "https://arxiv.org/abs/2610.01939",
-      "arxiv": "https://arxiv.org/abs/2610.01939",
-      "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "VLA",
-        "LLM Agent"
-      ],
-      "tags": [
-        "VLA",
-        "LLM Agent"
-      ]
-    },
-    {
       "id": "2610.01178",
       "title": "Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation",
       "abstract": "Manipulation failures can leave scenes in states from which a task policy cannot recover. Learning corrective behaviors requires scalable failure exploration and physical grounding. We present Recova, an agent-guided framework that jointly develops task execution and recovery in a reconstructed digital twin, then verifies and refines both through real-world experience. In the twin, the agent diagnoses failures, tests corrective programs, and collects successful task and recovery rollouts for separate policies. During deployment, it monitors progress, invokes a learned or programmatic recovery, verifies scene restoration, and resumes execution. When no suitable recovery is available, a human demonstration resolves the failure and enters the learning loop, allowing the system to expand its recovery capabilities. Physical rollouts and human demonstrations are routed to the corresponding policy for DAgger training. Across six LIBERO-Pro settings and four MolmoSpaces categories, Recova achieves 78.8% and 64.9% mean success, compared with 71.7% and 38.0% for the strongest baselines. With parallel collection across four real-robot workstations, DAgger fine-tuning raises mean success from 23.8% to 77.5%, and recovery skills further raise it to 87.5%. Over four collection rounds on one task, observed human intervention falls from 87.5% to 0%. Together, these results show how agent-guided recovery turns failures into reusable capabilities, improving robustness while progressively reducing human intervention. Project page: https://www.liuisabella.com/Recova",
@@ -1492,7 +1487,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34759",
       "arxiv": "https://arxiv.org/abs/2609.34759",
       "pdf": "https://arxiv.org/pdf/2609.34759.pdf",
-      "upvotes": 152,
+      "upvotes": 158,
       "tags": [
         "VLA",
         "Locomotion",
@@ -1516,13 +1511,35 @@
       "hfUrl": "https://huggingface.co/papers/2609.35427",
       "arxiv": "https://arxiv.org/abs/2609.35427",
       "pdf": "https://arxiv.org/pdf/2609.35427.pdf",
-      "upvotes": 67,
+      "upvotes": 72,
       "tags": [
         "LLM Agent",
         "Embodied Vision"
       ],
       "topics": [
         "LLM Agent",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2609.34606",
+      "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
+      "abstract": "Leveraging the paradigm of autoregressive diffusion, text-conditioned interactive video world models aim to simulate temporally coherent environments guided by textual instructions. While enabling low-latency, long-duration generation is pivotal for embodied AI and simulation-based planning, current frameworks primarily rely on sliding-window mechanisms to bound computational complexity. However, this approach inherently sacrifices historical context, undermining the long-range interactive capabilities. Conversely, maintaining a full-history cache remains computationally prohibitive and memory-intensive: the quadratic complexity of attention leads to excessive computational overhead, while the linear growth of the KV cache inevitably leads to GPU memory saturation. To overcome these limitations, we propose WorldAttention, a system-oriented attention architecture that achieves high efficiency through the co-design of specialized attention kernels and hierarchical KV cache management. First, we introduce Hybrid Sparse Attention (HSA), which integrates linear global attention supplemented with head-adaptive sparse attention. Additionally, we design a Hierarchical KV Cache (HKV) that organizes historical KV pairs into semantically indexed pages across multi-tier memory, enabling fine-grained retrieval and controlled GPU residency. These two designs are supported by tailored kernels to effectively translate their theoretical efficiency into real-world performance. Extensive experiments on VBench-Long and InterVBench demonstrate that WorldAttention consistently surpasses prior state-of-the-art methods, achieving subject consistency scores of 0.9472 on VBench-Long and 0.9668 on InterVBench, respectively.",
+      "authors": "Zeyu Zhang, Jinyuan Mao, Dakai An, Wangbo Zhao, Hanfeng Lu, Jiasheng Tang, Yinghao Yu, Wei Wang, Bohan Zhuang",
+      "date": "2026-09-30",
+      "published": "2026-09-30",
+      "url": "https://huggingface.co/papers/2609.34606",
+      "hfUrl": "https://huggingface.co/papers/2609.34606",
+      "arxiv": "https://arxiv.org/abs/2609.34606",
+      "pdf": "https://arxiv.org/pdf/2609.34606.pdf",
+      "upvotes": 38,
+      "tags": [
+        "World Model",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "World Model",
         "Embodied Vision"
       ],
       "source": "hf"
@@ -1537,7 +1554,7 @@
       "url": "https://huggingface.co/papers/2609.38057",
       "arxiv": "https://arxiv.org/abs/2609.38057",
       "pdf": "https://arxiv.org/pdf/2609.38057.pdf",
-      "upvotes": 30,
+      "upvotes": 35,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1566,7 +1583,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.38154",
       "arxiv": "https://arxiv.org/abs/2609.38154",
       "pdf": "https://arxiv.org/pdf/2609.38154.pdf",
-      "upvotes": 28,
+      "upvotes": 32,
       "tags": [
         "World Model"
       ],
@@ -1576,26 +1593,56 @@
       "source": "hf"
     },
     {
-      "id": "2609.34606",
-      "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
-      "abstract": "Leveraging the paradigm of autoregressive diffusion, text-conditioned interactive video world models aim to simulate temporally coherent environments guided by textual instructions. While enabling low-latency, long-duration generation is pivotal for embodied AI and simulation-based planning, current frameworks primarily rely on sliding-window mechanisms to bound computational complexity. However, this approach inherently sacrifices historical context, undermining the long-range interactive capabilities. Conversely, maintaining a full-history cache remains computationally prohibitive and memory-intensive: the quadratic complexity of attention leads to excessive computational overhead, while the linear growth of the KV cache inevitably leads to GPU memory saturation. To overcome these limitations, we propose WorldAttention, a system-oriented attention architecture that achieves high efficiency through the co-design of specialized attention kernels and hierarchical KV cache management. First, we introduce Hybrid Sparse Attention (HSA), which integrates linear global attention supplemented with head-adaptive sparse attention. Additionally, we design a Hierarchical KV Cache (HKV) that organizes historical KV pairs into semantically indexed pages across multi-tier memory, enabling fine-grained retrieval and controlled GPU residency. These two designs are supported by tailored kernels to effectively translate their theoretical efficiency into real-world performance. Extensive experiments on VBench-Long and InterVBench demonstrate that WorldAttention consistently surpasses prior state-of-the-art methods, achieving subject consistency scores of 0.9472 on VBench-Long and 0.9668 on InterVBench, respectively.",
-      "authors": "Zeyu Zhang, Jinyuan Mao, Dakai An, Wangbo Zhao, Hanfeng Lu, Jiasheng Tang, Yinghao Yu, Wei Wang, Bohan Zhuang",
+      "id": "2609.39375",
+      "title": "Beyond the Current Scene: Event-Referential Grasping with Active View Selection",
+      "abstract": "A robot that observes people interacting with objects should be able to carry out later requests that refer back to those interactions. Such requests may specify a grasp target by the role it played in a past event rather than by its name or appearance. Moreover, the target may no longer be visible when the robot is asked to act. We present BeyondSCe, a zero-shot robotic grasping system for this event-referential setting. Given the event history and the current scene, the system identifies the requested object or part and localizes it for grasping. If the target is occluded, it combines an event prior recovered from the history with current scene geometry to select camera viewpoints likely to reveal the target. The system uses pretrained models without additional task-specific training. In real-robot experiments with a single wrist-mounted RGB-D camera, it achieves grasp success rates of 76% and 77% for initially visible and occluded targets, respectively, compared with 40% and 55% for the strongest baseline in each condition. On four additional scenes with heavy occlusion, it increases grasp success rates from 75% to 95% while reducing the mean number of views from 3.35 to 2.20, compared with an active-perception baseline given the target's ground-truth 3D bounding box.",
+      "authors": "Hyunjoon Lee, Haebeom Jung, Eunsung Cha, Daeun Lee, Yu-Chiang Frank Wang, Jaesung Choe, Jaesik Park",
       "date": "2026-09-30",
       "published": "2026-09-30",
-      "url": "https://huggingface.co/papers/2609.34606",
-      "hfUrl": "https://huggingface.co/papers/2609.34606",
-      "arxiv": "https://arxiv.org/abs/2609.34606",
-      "pdf": "https://arxiv.org/pdf/2609.34606.pdf",
-      "upvotes": 24,
-      "tags": [
-        "World Model",
-        "Embodied Vision"
+      "url": "https://arxiv.org/abs/2609.39375",
+      "arxiv": "https://arxiv.org/abs/2609.39375",
+      "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
+      "upvotes": 31,
+      "categories": [
+        "cs.RO",
+        "cs.CV"
       ],
+      "source": "hf",
       "topics": [
-        "World Model",
-        "Embodied Vision"
+        "Grasping",
+        "Imitation Learning"
       ],
-      "source": "hf"
+      "tags": [
+        "Grasping",
+        "Imitation Learning"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.39375"
+    },
+    {
+      "id": "2609.38059",
+      "title": "WorldLine: Action-Driven Visual Simulation for Robotic Manipulation",
+      "abstract": "Real-world robot learning is constrained by the cost of collecting experience and evaluating candidate behaviors. Video generation models offer a scalable foundation for visual simulators that predict action outcomes before physical execution. Yet they often favor visual plausibility over accurate action following and coherent robot--object dynamics, while action-conditioned simulators depend on scarce, embodiment-specific data that are difficult to share across incompatible control spaces. We introduce WorldLine, an action-driven visual simulator that decouples transferable dynamics learning from heterogeneous action grounding. WorldLine learns manipulation dynamics from more than 10,000 hours of action-free robot videos and grounds them using over 2,000 hours of action trajectories across more than ten embodiments. An image-space action representation provides a shared control interface across embodiments, while multi-view and failure-enriched training with relational regularization improves interaction-sensitive prediction. Robot-focused few-step distillation enables efficient causal rollout while preserving action-critical motion. Across held-out and out-of-domain settings, WorldLine maintains strong visual quality and robot-motion agreement; on failed trajectories, it improves robot-mask IoU by 0.1626 over the strongest baseline. It predicts trajectory success with 74% mean accuracy across RoboTwin and AgiBot, one percentage point above the strongest baseline. Without RoboTwin training or adaptation, its rollouts improve task success by up to 21.4 percentage points over direct policy execution. Together, these capabilities make WorldLine a scalable and efficient visual simulator for policy evaluation and embodied planning. More results are available at \\href{https://zhengsh123.github.io/WorldLine/}{project page}.",
+      "authors": "Shenghe Zheng, Wenbo Li, Jiyao Zhang, Bin Xia, Haoyang Huang, Nan Duan, Jiaya Jia",
+      "date": "2026-09-30",
+      "published": "2026-09-29",
+      "url": "https://huggingface.co/papers/2609.38059",
+      "arxiv": "https://arxiv.org/abs/2609.38059",
+      "pdf": "https://arxiv.org/pdf/2609.38059.pdf",
+      "upvotes": 24,
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Simulator"
+      ],
+      "tags": [
+        "Manipulation",
+        "Simulator"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.38059"
     },
     {
       "id": "2609.38087",
@@ -1607,7 +1654,7 @@
       "url": "https://huggingface.co/papers/2609.38087",
       "arxiv": "https://arxiv.org/abs/2609.38087",
       "pdf": "https://arxiv.org/pdf/2609.38087.pdf",
-      "upvotes": 21,
+      "upvotes": 22,
       "categories": [
         "cs.RO"
       ],
@@ -1625,56 +1672,57 @@
       "hfUrl": "https://huggingface.co/papers/2609.38087"
     },
     {
-      "id": "2609.38059",
-      "title": "WorldLine: Action-Driven Visual Simulation for Robotic Manipulation",
-      "abstract": "Real-world robot learning is constrained by the cost of collecting experience and evaluating candidate behaviors. Video generation models offer a scalable foundation for visual simulators that predict action outcomes before physical execution. Yet they often favor visual plausibility over accurate action following and coherent robot--object dynamics, while action-conditioned simulators depend on scarce, embodiment-specific data that are difficult to share across incompatible control spaces. We introduce WorldLine, an action-driven visual simulator that decouples transferable dynamics learning from heterogeneous action grounding. WorldLine learns manipulation dynamics from more than 10,000 hours of action-free robot videos and grounds them using over 2,000 hours of action trajectories across more than ten embodiments. An image-space action representation provides a shared control interface across embodiments, while multi-view and failure-enriched training with relational regularization improves interaction-sensitive prediction. Robot-focused few-step distillation enables efficient causal rollout while preserving action-critical motion. Across held-out and out-of-domain settings, WorldLine maintains strong visual quality and robot-motion agreement; on failed trajectories, it improves robot-mask IoU by 0.1626 over the strongest baseline. It predicts trajectory success with 74% mean accuracy across RoboTwin and AgiBot, one percentage point above the strongest baseline. Without RoboTwin training or adaptation, its rollouts improve task success by up to 21.4 percentage points over direct policy execution. Together, these capabilities make WorldLine a scalable and efficient visual simulator for policy evaluation and embodied planning. More results are available at \\href{https://zhengsh123.github.io/WorldLine/}{project page}.",
-      "authors": "Shenghe Zheng, Wenbo Li, Jiyao Zhang, Bin Xia, Haoyang Huang, Nan Duan, Jiaya Jia",
-      "date": "2026-09-30",
-      "published": "2026-09-29",
-      "url": "https://huggingface.co/papers/2609.38059",
-      "arxiv": "https://arxiv.org/abs/2609.38059",
-      "pdf": "https://arxiv.org/pdf/2609.38059.pdf",
-      "upvotes": 17,
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Simulator"
-      ],
-      "tags": [
-        "Manipulation",
-        "Simulator"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.38059"
-    },
-    {
-      "id": "2609.39375",
-      "title": "Beyond the Current Scene: Event-Referential Grasping with Active View Selection",
-      "abstract": "A robot that observes people interacting with objects should be able to carry out later requests that refer back to those interactions. Such requests may specify a grasp target by the role it played in a past event rather than by its name or appearance. Moreover, the target may no longer be visible when the robot is asked to act. We present BeyondSCe, a zero-shot robotic grasping system for this event-referential setting. Given the event history and the current scene, the system identifies the requested object or part and localizes it for grasping. If the target is occluded, it combines an event prior recovered from the history with current scene geometry to select camera viewpoints likely to reveal the target. The system uses pretrained models without additional task-specific training. In real-robot experiments with a single wrist-mounted RGB-D camera, it achieves grasp success rates of 76% and 77% for initially visible and occluded targets, respectively, compared with 40% and 55% for the strongest baseline in each condition. On four additional scenes with heavy occlusion, it increases grasp success rates from 75% to 95% while reducing the mean number of views from 3.35 to 2.20, compared with an active-perception baseline given the target's ground-truth 3D bounding box.",
-      "authors": "Hyunjoon Lee, Haebeom Jung, Eunsung Cha, Daeun Lee, Yu-Chiang Frank Wang, Jaesung Choe, Jaesik Park",
+      "id": "2609.38886",
+      "title": "Benchmarking and Enhancing Skill-Level Memory for Partially Observable Robotic Manipulation",
+      "abstract": "Recent advances in robot learning have enabled manipulation policies to perform increasingly diverse tasks and generalize across environments. However, reliable execution often depends on hidden task states that cannot be determined from current observations alone, making interaction history essential. We introduce $HIDE$, a benchmark for evaluating manipulation memory under partial observability. HIDE comprises 15 tasks covering repetition counting, historical-state recall, and execution-progress tracking, with randomized initial configurations and decision points where similar observations require different actions depending on prior events. We further propose $SEEK$, a framework combining three complementary memory mechanisms to retain historical evidence and track execution state. Evaluations reveal substantial limitations in existing policies on HIDE, while memory augmentation improves task success in both simulation and real-world experiments. Individual mechanisms benefit some tasks but can degrade others; their combination achieves the highest average success rate on HIDE among the evaluated configurations. These findings highlight the importance of maintaining internal representations of hidden task states and matching memory design to task-specific information requirements.",
+      "authors": "Yansong Shi, Jiange Yang, Xijie Yang, Shaowei Zhang, Yuhan Zhu, Tao Lu, Limin Wang",
       "date": "2026-09-30",
       "published": "2026-09-30",
-      "url": "https://arxiv.org/abs/2609.39375",
-      "arxiv": "https://arxiv.org/abs/2609.39375",
-      "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
-      "upvotes": 16,
+      "url": "https://arxiv.org/abs/2609.38886",
+      "arxiv": "https://arxiv.org/abs/2609.38886",
+      "pdf": "https://arxiv.org/pdf/2609.38886.pdf",
+      "upvotes": 8,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Dataset"
+      ],
+      "tags": [
+        "Manipulation",
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.38886"
+    },
+    {
+      "id": "2610.00360",
+      "title": "DexPolicy: Scheduled Exploration for Trajectory-Guided Dexterous Manipulation",
+      "abstract": "Reinforcement learning (RL) for dexterous manipulation must discover finger-object contacts and then control the object precisely; the action noise that serves the first goal can interfere with the second. In trajectory-guided settings such as ViViDex, where RL refine hand-object trajectories from human video, our baseline PPO runs end near their initial action noise after 5M steps, motivating explicit control of exploration scale. DexPolicy makes that scale an explicit function of training steps, annealing from broad to narrow exploration while holding loss, architecture, reward, and optimizer settings fixed. We study three policy-optimization settings: PPO, critic-free GRPO continuation, and a flow-parameterized PPO variant (FPO). Across five YCB objects and three training seeds, mean deterministic Target success rises from 49.4% to 68.1% (FPO), 14.1% to 45.4% (GRPO), and 32.0% to 35.7% (PPO). On a RealMan RM75 arm with an Inspire/RH56 hand, 360 trials over three objects raise mean Target success from 25.0% to 85.0% (FPO), 10.0% to 63.3% (GRPO), and 8.3% to 43.3% (PPO), with one trained model per object-method condition. PPO component screening favors noise control over the tested optimizer contraction; the selected PPO schedule yields higher mean Target success than linear decay with the same endpoints on three tested objects. Training return, deterministic Target success, and tolerance to execution noise dissociate; schedules should therefore be judged by terminal task success under the intended execution conditions, per task and policy-optimization setting. Code: https://github.com/AIGeeksGroup/DexPolicy. Website: https://aigeeksgroup.github.io/DexPolicy.",
+      "authors": "Haoyu Wang, Siyuan Qian, Yanjun Li, Zeyu Zhang, Yandong Guo, Boxin Shi, Hao Tang",
+      "date": "2026-09-30",
+      "published": "2026-09-30",
+      "url": "https://huggingface.co/papers/2610.00360",
+      "arxiv": "https://arxiv.org/abs/2610.00360",
+      "pdf": "https://arxiv.org/pdf/2610.00360.pdf",
+      "upvotes": 0,
       "categories": [
         "cs.RO",
         "cs.CV"
       ],
       "source": "hf",
       "topics": [
-        "Grasping",
-        "Imitation Learning"
+        "Navigation",
+        "Dexterous",
+        "Reinforcement Learning"
       ],
       "tags": [
-        "Grasping",
-        "Imitation Learning"
+        "Navigation",
+        "Dexterous",
+        "Reinforcement Learning"
       ],
-      "hfUrl": "https://huggingface.co/papers/2609.39375"
+      "hfUrl": "https://huggingface.co/papers/2610.00360"
     },
     {
       "id": "2609.40134",
@@ -3036,30 +3084,6 @@
       ]
     },
     {
-      "id": "2609.38886",
-      "title": "Benchmarking and Enhancing Skill-Level Memory for Partially Observable Robotic Manipulation",
-      "abstract": "Recent advances in robot learning have enabled manipulation policies to perform increasingly diverse tasks and generalize across environments. However, reliable execution often depends on hidden task states that cannot be determined from current observations alone, making interaction history essential. We introduce $HIDE$, a benchmark for evaluating manipulation memory under partial observability. HIDE comprises 15 tasks covering repetition counting, historical-state recall, and execution-progress tracking, with randomized initial configurations and decision points where similar observations require different actions depending on prior events. We further propose $SEEK$, a framework combining three complementary memory mechanisms to retain historical evidence and track execution state. Evaluations reveal substantial limitations in existing policies on HIDE, while memory augmentation improves task success in both simulation and real-world experiments. Individual mechanisms benefit some tasks but can degrade others; their combination achieves the highest average success rate on HIDE among the evaluated configurations. These findings highlight the importance of maintaining internal representations of hidden task states and matching memory design to task-specific information requirements.",
-      "authors": "Yansong Shi, Jiange Yang, Xijie Yang, Shaowei Zhang, Yuhan Zhu, Tao Lu, Limin Wang",
-      "date": "2026-09-30",
-      "published": "2026-09-30",
-      "url": "https://arxiv.org/abs/2609.38886",
-      "arxiv": "https://arxiv.org/abs/2609.38886",
-      "pdf": "https://arxiv.org/pdf/2609.38886.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Dataset"
-      ],
-      "tags": [
-        "Manipulation",
-        "Dataset"
-      ]
-    },
-    {
       "id": "2609.39575",
       "title": "ECHO-G: Embodied Co-speech Humanoid mOtion Generation",
       "abstract": "Generating full-body co-speech motion for humanoid robots requires coordinating speech prosody, linguistic content, and embodiment-specific motion. To this end, we present ECHO-G, a framework jointly conditioned on speech audio and timed transcripts. Its Speech-Grounded Diffusion Transformer (SGDiT) combines frame-aligned acoustic features with token-level linguistic context, preserving their distinct granularities. Trained with rectified flow matching, it models one-to-many utterance-motion relationships directly in robot space. To support training and evaluation, we introduce a BEAT2-derived audio-text-robot dataset and a benchmark covering co-speech characteristics, robot-motion quality, and runtime efficiency. Comparative evaluation supports direct robot-space generation over the evaluated human-motion generation and retargeting pipelines, while modality ablations highlight the benefits of joint audio-text conditioning. We further demonstrate deployment on a physical humanoid robot. A complementary video-rating study also favors joint conditioning over the alternatives. The dataset and training, inference, and evaluation code are available through our project page.",
@@ -3772,7 +3796,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.28236",
       "arxiv": "https://arxiv.org/abs/2609.28236",
       "pdf": "https://arxiv.org/pdf/2609.28236.pdf",
-      "upvotes": 37,
+      "upvotes": 39,
       "tags": [
         "Imitation Learning",
         "Dataset",
@@ -3796,7 +3820,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.32862",
       "arxiv": "https://arxiv.org/abs/2609.32862",
       "pdf": "https://arxiv.org/pdf/2609.32862.pdf",
-      "upvotes": 24,
+      "upvotes": 25,
       "tags": [
         "Imitation Learning",
         "Foundation Models",
@@ -6186,7 +6210,7 @@
       "url": "https://arxiv.org/abs/2609.34981",
       "arxiv": "https://arxiv.org/abs/2609.34981",
       "pdf": "https://arxiv.org/pdf/2609.34981.pdf",
-      "upvotes": 116,
+      "upvotes": 123,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -6216,7 +6240,7 @@
       "url": "https://huggingface.co/papers/2609.31394",
       "arxiv": "https://arxiv.org/abs/2609.31394",
       "pdf": "https://arxiv.org/pdf/2609.31394.pdf",
-      "upvotes": 27,
+      "upvotes": 29,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -6249,7 +6273,7 @@
       "url": "https://arxiv.org/abs/2609.34599",
       "arxiv": "https://arxiv.org/abs/2609.34599",
       "pdf": "https://arxiv.org/pdf/2609.34599.pdf",
-      "upvotes": 14,
+      "upvotes": 16,
       "categories": [
         "cs.LG"
       ],
@@ -10353,7 +10377,9 @@
       "tags": [
         "Manipulation"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.23407",
       "title": "OmniEcho: Spatial Audio Understanding for Embodied Agents",
@@ -11701,9 +11727,7 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.24308",
       "title": "HappyWorld-Bench",
@@ -11715,7 +11739,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24308",
       "arxiv": "https://arxiv.org/abs/2609.24308",
       "pdf": "https://arxiv.org/pdf/2609.24308.pdf",
-      "upvotes": 56,
+      "upvotes": 57,
       "tags": [
         "Navigation",
         "World Model",
@@ -11805,7 +11829,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24815",
       "arxiv": "https://arxiv.org/abs/2609.24815",
       "pdf": "https://arxiv.org/pdf/2609.24815.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "tags": [
         "Simulator",
         "Embodied Vision"
@@ -13551,7 +13575,7 @@
       "url": "https://arxiv.org/abs/2609.28811",
       "arxiv": "https://arxiv.org/abs/2609.28811",
       "pdf": "https://arxiv.org/pdf/2609.28811.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "categories": [
         "cs.CV",
         "cs.RO"
