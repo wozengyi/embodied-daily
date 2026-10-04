@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-10-03T05:25:15.118576+00:00",
+  "generatedAt": "2026-10-04T06:01:47.971988+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-09-26",
-  "archiveCutoff": "2021-10-04",
-  "addedToday": 1,
+  "recentCutoff": "2026-09-27",
+  "archiveCutoff": "2021-10-05",
+  "addedToday": 0,
   "historyTotal": 6916,
-  "count": 395,
-  "archiveCount": 6237,
+  "count": 372,
+  "archiveCount": 6260,
   "sources": {
-    "hf": 30,
-    "arxiv": 365
+    "hf": 31,
+    "arxiv": 341
   },
   "archiveSources": {
     "hf": 130,
-    "arxiv": 6107
+    "arxiv": 6130
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2609.35690",
@@ -29,12 +31,34 @@
       "hfUrl": "https://huggingface.co/papers/2609.35690",
       "arxiv": "https://arxiv.org/abs/2609.35690",
       "pdf": "https://arxiv.org/pdf/2609.35690.pdf",
-      "upvotes": 68,
+      "upvotes": 73,
       "tags": [
         "Grasping"
       ],
       "topics": [
         "Grasping"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2609.39378",
+      "title": "EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos",
+      "abstract": "Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are tool-mediated. Understanding them requires reasoning about affordances, hand-tool-object geometry, procedural progress, and causal effects on target objects. Yet despite strong performance on perception-oriented video tasks such as captioning and general video QA, current multimodal video models remain limited in this form of tool-centric embodied reasoning. Progress in this direction has been limited by the lack of real-world egocentric data and diagnostic benchmarks. To address this gap, we introduce EgoTools, the first comprehensive suite for egocentric tool-use understanding. It consists of two complementary components: EgoTools-Data, a large-scale corpus of 100 hours of tool-centric egocentric recordings with synchronized audio, dense captions, reasoning-heavy narrations, and supplementary 3D information; and EgoTools-Bench, a diagnostic benchmark of 1,000 QA pairs across four tracks that cover tool-use understanding from perception and geometry to procedure and causal reasoning. Experimental results show that current models still struggle to ground tool use in visual evidence: Gemini-3.1-Pro achieves 66.9% overall accuracy but only 51.7% on Perception & Grounding. Beyond evaluation, we validate EgoTools-Data as a training resource. On the full 1,000-question benchmark, full supervised fine-tuning improves Qwen3-VL-8B-Instruct from 50.0% to 60.9%, under strict source-video separation. Together, these results establish EgoTools as a unified resource for both training and diagnostic evaluation of real-world egocentric tool-use understanding.",
+      "authors": "Shulin Tian, Junsu Kim, Shuai Liu, Hao Li, Yujiao Shen, Sihan Li, Zhe Yang, Yeongon Kim, Feiyu Li, Jialin Wu, Yichi Zhang, Wenhui Wang, Runmao Yao, Yuhao Dong, Zhaoxi Chen, Fangzhou Hong, Antonino Furnari, Jingkang Yang, Hongyuan Zhu, Ziwei Liu",
+      "date": "2026-10-02",
+      "published": "2026-10-02",
+      "url": "https://huggingface.co/papers/2609.39378",
+      "hfUrl": "https://huggingface.co/papers/2609.39378",
+      "arxiv": "https://arxiv.org/abs/2609.39378",
+      "pdf": "https://arxiv.org/pdf/2609.39378.pdf",
+      "upvotes": 45,
+      "tags": [
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Dataset"
       ],
       "source": "hf"
     },
@@ -48,7 +72,7 @@
       "url": "https://huggingface.co/papers/2610.02196",
       "arxiv": "https://arxiv.org/abs/2610.02196",
       "pdf": "https://arxiv.org/pdf/2610.02196.pdf",
-      "upvotes": 37,
+      "upvotes": 43,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -73,28 +97,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.02196"
     },
     {
-      "id": "2609.39378",
-      "title": "EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos",
-      "abstract": "Real-world embodied tasks, from everyday activities to professional procedures, require agents to act under physical constraints while tracking evolving object and task states. Tool use sits at the heart of such tasks, as many everyday and professional activities are tool-mediated. Understanding them requires reasoning about affordances, hand-tool-object geometry, procedural progress, and causal effects on target objects. Yet despite strong performance on perception-oriented video tasks such as captioning and general video QA, current multimodal video models remain limited in this form of tool-centric embodied reasoning. Progress in this direction has been limited by the lack of real-world egocentric data and diagnostic benchmarks. To address this gap, we introduce EgoTools, the first comprehensive suite for egocentric tool-use understanding. It consists of two complementary components: EgoTools-Data, a large-scale corpus of 100 hours of tool-centric egocentric recordings with synchronized audio, dense captions, reasoning-heavy narrations, and supplementary 3D information; and EgoTools-Bench, a diagnostic benchmark of 1,000 QA pairs across four tracks that cover tool-use understanding from perception and geometry to procedure and causal reasoning. Experimental results show that current models still struggle to ground tool use in visual evidence: Gemini-3.1-Pro achieves 66.9% overall accuracy but only 51.7% on Perception & Grounding. Beyond evaluation, we validate EgoTools-Data as a training resource. On the full 1,000-question benchmark, full supervised fine-tuning improves Qwen3-VL-8B-Instruct from 50.0% to 60.9%, under strict source-video separation. Together, these results establish EgoTools as a unified resource for both training and diagnostic evaluation of real-world egocentric tool-use understanding.",
-      "authors": "Shulin Tian, Junsu Kim, Shuai Liu, Hao Li, Yujiao Shen, Sihan Li, Zhe Yang, Yeongon Kim, Feiyu Li, Jialin Wu, Yichi Zhang, Wenhui Wang, Runmao Yao, Yuhao Dong, Zhaoxi Chen, Fangzhou Hong, Antonino Furnari, Jingkang Yang, Hongyuan Zhu, Ziwei Liu",
-      "date": "2026-10-02",
-      "published": "2026-10-02",
-      "url": "https://huggingface.co/papers/2609.39378",
-      "hfUrl": "https://huggingface.co/papers/2609.39378",
-      "arxiv": "https://arxiv.org/abs/2609.39378",
-      "pdf": "https://arxiv.org/pdf/2609.39378.pdf",
-      "upvotes": 35,
-      "tags": [
-        "Imitation Learning",
-        "Dataset"
-      ],
-      "topics": [
-        "Imitation Learning",
-        "Dataset"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2609.40325",
       "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
       "abstract": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have shown potential for automating this task. However, 3D world auditing is complex, requiring the close coupling of two distinct capabilities: action, to navigate the 3D world and search for anomalies systematically and efficiently; and visual reasoning, to understand the environment and identify anomalies from multimodal observations. It remains largely unexplored whether multimodal agents can effectively couple these two capabilities, using visual reasoning to identify potential anomalies while taking actions to validate them. In this paper, we introduce WorldAuditBench, a benchmark for 3D world auditing comprising 213 anomaly tasks across 13 environments built with Unreal Engine 5 and Three.js, spanning five anomaly families. We evaluate five frontier models under a fixed exploration budget using two auditing paradigms: VLA-based exploration followed by VLM-based anomaly identification, and an end-to-end VLM agent in which visual reasoning directly guides action selection. Across the evaluated models and two paradigms, success rates range from 6.6% to 42.3%, substantially below human performance (83.4%). Through the task of world auditing, WorldAuditBench provides a testbed for studying how multimodal agents couple action and visual reasoning in interactive 3D environments, while highlighting current limitations in their ability to gather and interpret evidence during exploration.",
@@ -117,6 +119,31 @@
         "Dataset"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2610.01939",
+      "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens",
+      "abstract": "Vision language model (VLM) agents can control robots through visual feedback and action primitives, but repeated model invocations and redundant observations incur substantial token overhead. We introduce PyRUA-Lean, an interactive code-execution framework that couples feedback-driven primitive composition with selective observation: the agent composes classical robot primitives and learned vision-language-action (VLA) policies into Python cells that perform conditional checks and local retries, returning only explicitly requested images and state feedback for replanning. Across 700 simulated task instances from LIBERO-PRO, RoboTwin 2.0, and RoboCasa365, we compare PyRUA-Lean with a tool-calling baseline using the same GPT-6 Astra planner and underlying robot primitives. Under equal LLM-call budgets, PyRUA-Lean increases overall success from 63.1% to 71.7%. On instances solved by both agents, it uses 49% fewer LLM calls and 65% fewer input tokens.",
+      "authors": "Ruiyang Si, Jianxin Bi, Shunyu Yang, Rui Ni, Wenbo Huang, Qiang Wang, Shulong Jiang, Duomin Wang, Xiuyu Li, Haiwen Feng, Zhen Dong, Daquan Zhou",
+      "date": "2026-10-01",
+      "published": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.01939",
+      "arxiv": "https://arxiv.org/abs/2610.01939",
+      "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
+      "upvotes": 34,
+      "categories": [
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "LLM Agent"
+      ],
+      "tags": [
+        "VLA",
+        "LLM Agent"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.01939"
     },
     {
       "id": "2609.38653",
@@ -178,29 +205,35 @@
       "hfUrl": "https://huggingface.co/papers/2609.38537"
     },
     {
-      "id": "2610.01939",
-      "title": "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens",
-      "abstract": "Vision language model (VLM) agents can control robots through visual feedback and action primitives, but repeated model invocations and redundant observations incur substantial token overhead. We introduce PyRUA-Lean, an interactive code-execution framework that couples feedback-driven primitive composition with selective observation: the agent composes classical robot primitives and learned vision-language-action (VLA) policies into Python cells that perform conditional checks and local retries, returning only explicitly requested images and state feedback for replanning. Across 700 simulated task instances from LIBERO-PRO, RoboTwin 2.0, and RoboCasa365, we compare PyRUA-Lean with a tool-calling baseline using the same GPT-6 Astra planner and underlying robot primitives. Under equal LLM-call budgets, PyRUA-Lean increases overall success from 63.1% to 71.7%. On instances solved by both agents, it uses 49% fewer LLM calls and 65% fewer input tokens.",
-      "authors": "Ruiyang Si, Jianxin Bi, Shunyu Yang, Rui Ni, Wenbo Huang, Qiang Wang, Shulong Jiang, Duomin Wang, Xiuyu Li, Haiwen Feng, Zhen Dong, Daquan Zhou",
+      "id": "2610.01092",
+      "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
+      "abstract": "Video generation models are increasingly being explored as world simulators for embodied planning and learning. To do so effectively, these models must not only generate visually appealing frames, but also predict how environments dynamically evolve when executing goal-directed actions. While evaluating these capabilities is crucial, existing benchmarks focus mainly on single short actions or step-by-step instructions. This leaves multi-step physical reasoning underexplored, especially in egocentric video generation that requires planning to simulate proper execution to accomplish high-level goals by carrying out multiple real-world manipulations. We introduce Ego2Act, a goal-directed benchmark featuring 2,640 videos from 110 real-world tasks across day-to-day settings, varying object clutter and multi-step complexity. Given an initial scene image and a high-level goal, Ego2Act evaluates whether video generation models can produce realistic egocentric videos of a hand manipulating objects to carry out the task. To support scalable evaluation, we also introduce Ego2ActJudge, a reference-free evaluation pipeline that achieves better task completion and physics plausibility evaluation alignment with human consensus compared to relevant baselines. Our findings reveal that models' generated simulations often skip or partially execute steps, leaving later steps missing dependent states, which leads to unfulfilled goal. Furthermore, models consistently fail at fine-grained physical dynamics, particularly during complex object manipulation and persistent world modeling. We hope Ego2Act provides a rigorous testbed for advancing video models toward physically plausible, goal-directed simulation.",
+      "authors": "Patrick Amadeus Irawan, Iskandar Muda Rizky Parlambang, Rava Maulana, Qinrong Cui, Erland Hilman Fuadi, Zayd M. K. Zuhri, Nanda Ryaas Absar, Ahmed Elshabrawy, Wilfried Ariel Mulyawan, Shoubin Yu, Yue Zhang, Mohit Bansal, Alham Fikri Aji",
       "date": "2026-10-01",
       "published": "2026-10-01",
-      "url": "https://arxiv.org/abs/2610.01939",
-      "arxiv": "https://arxiv.org/abs/2610.01939",
-      "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
-      "upvotes": 26,
+      "url": "https://arxiv.org/abs/2610.01092",
+      "arxiv": "https://arxiv.org/abs/2610.01092",
+      "pdf": "https://arxiv.org/pdf/2610.01092.pdf",
+      "upvotes": 21,
       "categories": [
         "cs.CV"
       ],
       "source": "hf",
       "topics": [
-        "VLA",
-        "LLM Agent"
+        "Manipulation",
+        "World Model",
+        "Imitation Learning",
+        "Dataset",
+        "Simulator"
       ],
       "tags": [
-        "VLA",
-        "LLM Agent"
+        "Manipulation",
+        "World Model",
+        "Imitation Learning",
+        "Dataset",
+        "Simulator"
       ],
-      "hfUrl": "https://huggingface.co/papers/2610.01939"
+      "hfUrl": "https://huggingface.co/papers/2610.01092"
     },
     {
       "id": "2609.39685",
@@ -422,36 +455,6 @@
         "Dataset",
         "Simulator",
         "Embodied Vision"
-      ]
-    },
-    {
-      "id": "2610.01092",
-      "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
-      "abstract": "Video generation models are increasingly being explored as world simulators for embodied planning and learning. To do so effectively, these models must not only generate visually appealing frames, but also predict how environments dynamically evolve when executing goal-directed actions. While evaluating these capabilities is crucial, existing benchmarks focus mainly on single short actions or step-by-step instructions. This leaves multi-step physical reasoning underexplored, especially in egocentric video generation that requires planning to simulate proper execution to accomplish high-level goals by carrying out multiple real-world manipulations. We introduce Ego2Act, a goal-directed benchmark featuring 2,640 videos from 110 real-world tasks across day-to-day settings, varying object clutter and multi-step complexity. Given an initial scene image and a high-level goal, Ego2Act evaluates whether video generation models can produce realistic egocentric videos of a hand manipulating objects to carry out the task. To support scalable evaluation, we also introduce Ego2ActJudge, a reference-free evaluation pipeline that achieves better task completion and physics plausibility evaluation alignment with human consensus compared to relevant baselines. Our findings reveal that models' generated simulations often skip or partially execute steps, leaving later steps missing dependent states, which leads to unfulfilled goal. Furthermore, models consistently fail at fine-grained physical dynamics, particularly during complex object manipulation and persistent world modeling. We hope Ego2Act provides a rigorous testbed for advancing video models toward physically plausible, goal-directed simulation.",
-      "authors": "Patrick Amadeus Irawan, Iskandar Muda Rizky Parlambang, Rava Maulana, Qinrong Cui, Erland Hilman Fuadi, Zayd M. K. Zuhri, Nanda Ryaas Absar, Ahmed Elshabrawy, Wilfried Ariel Mulyawan, Shoubin Yu, Yue Zhang, Mohit Bansal, Alham Fikri Aji",
-      "date": "2026-10-01",
-      "published": "2026-10-01",
-      "url": "https://arxiv.org/abs/2610.01092",
-      "arxiv": "https://arxiv.org/abs/2610.01092",
-      "pdf": "https://arxiv.org/pdf/2610.01092.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "World Model",
-        "Imitation Learning",
-        "Dataset",
-        "Simulator"
-      ],
-      "tags": [
-        "Manipulation",
-        "World Model",
-        "Imitation Learning",
-        "Dataset",
-        "Simulator"
       ]
     },
     {
@@ -1487,7 +1490,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34759",
       "arxiv": "https://arxiv.org/abs/2609.34759",
       "pdf": "https://arxiv.org/pdf/2609.34759.pdf",
-      "upvotes": 158,
+      "upvotes": 161,
       "tags": [
         "VLA",
         "Locomotion",
@@ -1511,7 +1514,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.35427",
       "arxiv": "https://arxiv.org/abs/2609.35427",
       "pdf": "https://arxiv.org/pdf/2609.35427.pdf",
-      "upvotes": 72,
+      "upvotes": 77,
       "tags": [
         "LLM Agent",
         "Embodied Vision"
@@ -1533,7 +1536,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34606",
       "arxiv": "https://arxiv.org/abs/2609.34606",
       "pdf": "https://arxiv.org/pdf/2609.34606.pdf",
-      "upvotes": 38,
+      "upvotes": 44,
       "tags": [
         "World Model",
         "Embodied Vision"
@@ -1554,7 +1557,7 @@
       "url": "https://huggingface.co/papers/2609.38057",
       "arxiv": "https://arxiv.org/abs/2609.38057",
       "pdf": "https://arxiv.org/pdf/2609.38057.pdf",
-      "upvotes": 35,
+      "upvotes": 40,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1583,7 +1586,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.38154",
       "arxiv": "https://arxiv.org/abs/2609.38154",
       "pdf": "https://arxiv.org/pdf/2609.38154.pdf",
-      "upvotes": 32,
+      "upvotes": 40,
       "tags": [
         "World Model"
       ],
@@ -1602,7 +1605,7 @@
       "url": "https://arxiv.org/abs/2609.39375",
       "arxiv": "https://arxiv.org/abs/2609.39375",
       "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
-      "upvotes": 31,
+      "upvotes": 35,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -1628,7 +1631,7 @@
       "url": "https://huggingface.co/papers/2609.38059",
       "arxiv": "https://arxiv.org/abs/2609.38059",
       "pdf": "https://arxiv.org/pdf/2609.38059.pdf",
-      "upvotes": 24,
+      "upvotes": 27,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -1654,7 +1657,7 @@
       "url": "https://huggingface.co/papers/2609.38087",
       "arxiv": "https://arxiv.org/abs/2609.38087",
       "pdf": "https://arxiv.org/pdf/2609.38087.pdf",
-      "upvotes": 22,
+      "upvotes": 25,
       "categories": [
         "cs.RO"
       ],
@@ -1681,7 +1684,7 @@
       "url": "https://arxiv.org/abs/2609.38886",
       "arxiv": "https://arxiv.org/abs/2609.38886",
       "pdf": "https://arxiv.org/pdf/2609.38886.pdf",
-      "upvotes": 8,
+      "upvotes": 11,
       "categories": [
         "cs.RO"
       ],
@@ -6210,7 +6213,7 @@
       "url": "https://arxiv.org/abs/2609.34981",
       "arxiv": "https://arxiv.org/abs/2609.34981",
       "pdf": "https://arxiv.org/pdf/2609.34981.pdf",
-      "upvotes": 123,
+      "upvotes": 127,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -9797,7 +9800,9 @@
       "tags": [
         "Navigation"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2609.32634",
       "title": "PF-RL: Progress Field Reinforcement Learning via Goal-Conditioned Value Geometry for Vision-Language-Action Models",
@@ -10377,9 +10382,7 @@
       "tags": [
         "Manipulation"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.23407",
       "title": "OmniEcho: Spatial Audio Understanding for Embodied Agents",
@@ -11755,6 +11758,37 @@
       "source": "hf"
     },
     {
+      "id": "2609.28256",
+      "title": "MemBodied: Recurrent Associative Memory for Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action models provide a strong foundation for general-purpose robot control, yet a vast majority of policies do not preserve and leverage episode-level information beyond the current observation. This limitation is consequential in history-dependent manipulation tasks that depend on information available only in past observations. Retaining past observations in context can aid in recovering this information, but at the significant cost of ever-growing, bloated context and inference latency. We thus introduce MemBodied, a fixed-size episodic memory with two complementary components: an associative state that records interactions across policy calls and an episode anchor that preserves a compact representation of the initial scene as a reference. At each policy call, the model conditions action generation on the current input and the memory components, rather than directly using past observations. Across five evaluated RMBench tasks requiring memory, MemBodied achieves $7.81\\times$ the mean success rate of a stateless policy and $2.98\\times$ of vanilla recurrent memory, while outperforming the strongest memory-augmented baseline by $1.3\\times$ with $10\\times$ fewer added parameters. On the fully observable LIBERO-Long suite, it reached 90.6%, a 5.4% improvement over the stateless $π_0$ policy. These findings support MemBodied as a practical alternative to expanding the policy context for history-dependent manipulation.",
+      "authors": "Tej Deep Pala, Navonil Majumder, Bryce Goh, Raphael Yee, Jianfei Yang, Liming Chen, Soujanya Poria",
+      "date": "2026-09-24",
+      "published": "2026-09-23",
+      "url": "https://huggingface.co/papers/2609.28256",
+      "arxiv": "https://arxiv.org/abs/2609.28256",
+      "pdf": "https://arxiv.org/pdf/2609.28256.pdf",
+      "upvotes": 15,
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Manipulation",
+        "Imitation Learning",
+        "Foundation Models"
+      ],
+      "tags": [
+        "VLA",
+        "Manipulation",
+        "Imitation Learning",
+        "Foundation Models"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.28256"
+    },
+    {
       "id": "2609.27656",
       "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
       "abstract": "Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale. Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and adapts it to newly observed states through observation-conditioned context routing. Domain-specific interfaces and soft prompts support heterogeneous embodiments, while contact-aware post-training incorporates force and tactile signals for contact-rich manipulation. We train InternW0 on approximately 7,200 hours of heterogeneous robot and egocentric data, including EgoLab, a 275-hour real-laboratory egocentric dataset. Evaluation spans simulation benchmarks and real-world scientific tasks, including a 15-stage metal--organic framework synthesis workflow and 5-stage contact- and force-aware dexterous manipulation for general-purpose quantitative pipetting. These results advance scalable, asynchronous, and science-native physical world models for universal and efficient real-world interactions.",
@@ -11788,37 +11822,6 @@
       "hfUrl": "https://huggingface.co/papers/2609.27656"
     },
     {
-      "id": "2609.28256",
-      "title": "MemBodied: Recurrent Associative Memory for Vision-Language-Action Models",
-      "abstract": "Vision-Language-Action models provide a strong foundation for general-purpose robot control, yet a vast majority of policies do not preserve and leverage episode-level information beyond the current observation. This limitation is consequential in history-dependent manipulation tasks that depend on information available only in past observations. Retaining past observations in context can aid in recovering this information, but at the significant cost of ever-growing, bloated context and inference latency. We thus introduce MemBodied, a fixed-size episodic memory with two complementary components: an associative state that records interactions across policy calls and an episode anchor that preserves a compact representation of the initial scene as a reference. At each policy call, the model conditions action generation on the current input and the memory components, rather than directly using past observations. Across five evaluated RMBench tasks requiring memory, MemBodied achieves $7.81\\times$ the mean success rate of a stateless policy and $2.98\\times$ of vanilla recurrent memory, while outperforming the strongest memory-augmented baseline by $1.3\\times$ with $10\\times$ fewer added parameters. On the fully observable LIBERO-Long suite, it reached 90.6%, a 5.4% improvement over the stateless $π_0$ policy. These findings support MemBodied as a practical alternative to expanding the policy context for history-dependent manipulation.",
-      "authors": "Tej Deep Pala, Navonil Majumder, Bryce Goh, Raphael Yee, Jianfei Yang, Liming Chen, Soujanya Poria",
-      "date": "2026-09-24",
-      "published": "2026-09-23",
-      "url": "https://huggingface.co/papers/2609.28256",
-      "arxiv": "https://arxiv.org/abs/2609.28256",
-      "pdf": "https://arxiv.org/pdf/2609.28256.pdf",
-      "upvotes": 14,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Manipulation",
-        "Imitation Learning",
-        "Foundation Models"
-      ],
-      "tags": [
-        "VLA",
-        "Manipulation",
-        "Imitation Learning",
-        "Foundation Models"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.28256"
-    },
-    {
       "id": "2609.24815",
       "title": "Uranus: Building the Next-Generation Simulation Infrastructure for Embodied AI",
       "abstract": "Scalable simulation is essential for robot data generation, policy training, evaluation, and safe iteration, yet real-world interaction is costly and conventional simulators require labor-intensive construction. We present Uranus, a data-driven robot simulator built around a joint-trajectory-conditioned autoregressive diffusion model. Uranus offers three key capabilities: (1) streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon; (2) low-latency generation, achieving 24 FPS after inference optimization; and (3) scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot embodiments and camera configurations. We conduct comprehensive quantitative and qualitative evaluations on both in-distribution and out-of-distribution data, providing an objective assessment of Uranus and clearly identifying its current limitations. We release the code and model weights to empower the community with practical tools and insights.",
@@ -11829,7 +11832,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.24815",
       "arxiv": "https://arxiv.org/abs/2609.24815",
       "pdf": "https://arxiv.org/pdf/2609.24815.pdf",
-      "upvotes": 7,
+      "upvotes": 9,
       "tags": [
         "Simulator",
         "Embodied Vision"
@@ -13603,7 +13606,7 @@
       "url": "https://arxiv.org/abs/2609.28660",
       "arxiv": "https://arxiv.org/abs/2609.28660",
       "pdf": "https://arxiv.org/pdf/2609.28660.pdf",
-      "upvotes": 13,
+      "upvotes": 16,
       "categories": [
         "cs.RO"
       ],
@@ -16440,7 +16443,7 @@
       "url": "https://arxiv.org/abs/2609.24385",
       "arxiv": "https://arxiv.org/abs/2609.24385",
       "pdf": "https://arxiv.org/pdf/2609.24385.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -17993,7 +17996,7 @@
       "url": "https://arxiv.org/abs/2609.23784",
       "arxiv": "https://arxiv.org/abs/2609.23784",
       "pdf": "https://arxiv.org/pdf/2609.23784.pdf",
-      "upvotes": 14,
+      "upvotes": 15,
       "categories": [
         "cs.RO"
       ],
