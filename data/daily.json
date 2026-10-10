@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-09T06:18:12.935149+00:00",
+  "generatedAt": "2026-10-10T06:01:37.578537+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-02",
-  "archiveCutoff": "2021-10-10",
-  "addedToday": 77,
-  "historyTotal": 7305,
-  "count": 377,
-  "archiveCount": 6644,
+  "recentCutoff": "2026-10-03",
+  "archiveCutoff": "2021-10-11",
+  "addedToday": 1,
+  "historyTotal": 7306,
+  "count": 330,
+  "archiveCount": 6692,
   "sources": {
-    "hf": 36,
-    "arxiv": 341
+    "hf": 31,
+    "arxiv": 299
   },
   "archiveSources": {
-    "hf": 169,
-    "arxiv": 6475
+    "hf": 175,
+    "arxiv": 6517
   },
   "warnings": [],
   "papers": [
@@ -29,7 +29,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12126",
       "arxiv": "https://arxiv.org/abs/2610.12126",
       "pdf": "https://arxiv.org/pdf/2610.12126.pdf",
-      "upvotes": 50,
+      "upvotes": 64,
       "tags": [
         "Locomotion",
         "Navigation",
@@ -43,6 +43,30 @@
       "source": "hf"
     },
     {
+      "id": "2610.12299",
+      "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+      "abstract": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomotion, camera control, or discrete commands, leaving fine-grained embodied interactions underexplored. We formulate multi-agent egocentric world modeling as synchronized ego-stream generation for multiple agents interacting through fine-grained actions in a shared world. This requires cross-view action consistency, shared-environment consistency, and consistent propagation of interaction-induced state updates. We propose Multi-agent Egocentric World Model (ME-World), which jointly denoises multiple ego streams in a shared token sequence, conditions each stream on all agents' target-view poses, and grounds generation with shared environment memory. We train and evaluate on real and synthetic multi-agent data and introduce shared-world consistency metrics for environment, update, and identity consistency. Experiments show ME-World improves shared-world consistency, action control, identity preservation, and video quality over existing methods.",
+      "authors": "Dahyun Chung, Siyoon Jin, Hyunwook Choi, Honggyu An, Junyoung Seo, Hyunsung Kim, Seung Wook Kim, Seungryong Kim",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "url": "https://huggingface.co/papers/2610.12299",
+      "hfUrl": "https://huggingface.co/papers/2610.12299",
+      "arxiv": "https://arxiv.org/abs/2610.12299",
+      "pdf": "https://arxiv.org/pdf/2610.12299.pdf",
+      "upvotes": 44,
+      "tags": [
+        "Locomotion",
+        "World Model",
+        "Imitation Learning"
+      ],
+      "topics": [
+        "Locomotion",
+        "World Model",
+        "Imitation Learning"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.12468",
       "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
       "abstract": "We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacles: imprecise calibration can impair action following, while limited coverage of unsuccessful interactions can bias predictions toward successful outcomes. To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations. To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes. On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%. Notably, our model ranks first in the world model track of the AgiBot World Challenge 2026. The project page can be found at https://brave-eai.github.io/DreamTrue.",
@@ -52,7 +76,7 @@
       "url": "https://huggingface.co/papers/2610.12468",
       "arxiv": "https://arxiv.org/abs/2610.12468",
       "pdf": "https://arxiv.org/pdf/2610.12468.pdf",
-      "upvotes": 29,
+      "upvotes": 34,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -71,30 +95,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.12468"
     },
     {
-      "id": "2610.12299",
-      "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
-      "abstract": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomotion, camera control, or discrete commands, leaving fine-grained embodied interactions underexplored. We formulate multi-agent egocentric world modeling as synchronized ego-stream generation for multiple agents interacting through fine-grained actions in a shared world. This requires cross-view action consistency, shared-environment consistency, and consistent propagation of interaction-induced state updates. We propose Multi-agent Egocentric World Model (ME-World), which jointly denoises multiple ego streams in a shared token sequence, conditions each stream on all agents' target-view poses, and grounds generation with shared environment memory. We train and evaluate on real and synthetic multi-agent data and introduce shared-world consistency metrics for environment, update, and identity consistency. Experiments show ME-World improves shared-world consistency, action control, identity preservation, and video quality over existing methods.",
-      "authors": "Dahyun Chung, Siyoon Jin, Hyunwook Choi, Honggyu An, Junyoung Seo, Hyunsung Kim, Seung Wook Kim, Seungryong Kim",
-      "date": "2026-10-09",
-      "published": "2026-10-09",
-      "url": "https://huggingface.co/papers/2610.12299",
-      "hfUrl": "https://huggingface.co/papers/2610.12299",
-      "arxiv": "https://arxiv.org/abs/2610.12299",
-      "pdf": "https://arxiv.org/pdf/2610.12299.pdf",
-      "upvotes": 28,
-      "tags": [
-        "Locomotion",
-        "World Model",
-        "Imitation Learning"
-      ],
-      "topics": [
-        "Locomotion",
-        "World Model",
-        "Imitation Learning"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2610.11322",
       "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
       "abstract": "Geometrically faithful and functional articulated 3D assets are essential for real-to-sim robot manipulation, where policies trained in simulation must transfer to physical objects. Recent mesh-based methods learn to infer articulation from annotated 3D assets, but deployment remains challenging when real-world objects fall outside the training distribution or their meshes are incomplete or corrupted. To address these limitations, we formulate articulated asset reconstruction as programmatic modeling grounded in partial geometric evidence and introduce USDCraft, a framework in which a pretrained LLM writes and revises executable programs for simulation-ready articulated assets without task-specific training. We propose source geometry analysis, which converts the source mesh into a metric textual description that distinguishes observed surface from unknown space, and iterative geometric rechecking, which re-encodes each candidate in the same representation so that discrepancies point to program edits while unobserved regions remain open to completion. Visual feedback and physical authoring guidance complete the modeling process, which produces articulated USD assets with explicit physical properties that load into Isaac Sim without manual adjustment. Experiments demonstrate leading articulation recovery on two benchmarks and validate USDCraft's effectiveness for real-to-sim-to-real robot manipulation.",
@@ -104,7 +104,7 @@
       "url": "https://huggingface.co/papers/2610.11322",
       "arxiv": "https://arxiv.org/abs/2610.11322",
       "pdf": "https://arxiv.org/pdf/2610.11322.pdf",
-      "upvotes": 9,
+      "upvotes": 13,
       "categories": [
         "cs.RO"
       ],
@@ -122,6 +122,61 @@
         "Simulator"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.11322"
+    },
+    {
+      "id": "2610.12369",
+      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
+      "abstract": "Most robot policies keep a model in the control loop: a VLA maps observations to actions, and an Agent Harness, such as Agent-as-Policy or Harness VLA queries a VLM for decision making at run time. We propose a different view: the embodied world is an Embodied Turing Machine, whose tape is the robot and environment state and rules are the policy. If this state can be represented accurately, the decision making can be written entirely in code. We therefore propose Code-Only-as-Policy (COAP): code measures and tracks the robot, environment, and task state from camera images and proprioception, and makes every decision from it. The same code applies across episodes, and different tasks share one library without a VLM or VLA in the loop. Compared with VLAs and Agent Harnesses, we analyze three advantages of COAP: (i) Explicit State: the state can be stored in code; (ii) Execution: code makes decision making controllable, recovers from failures flexibly, and runs fast and cheaply online; (iii) Extensibility: new tasks reuse, inherit, or extend the shared library, so capabilities can accumulate over tasks. These advantages make COAP a suitable medium for recursive self-improvement (RSI): coding agents develop the library in a closed loop, and each change is explicit and controllable. On RoboDojo's 42 bimanual tasks, the resulting library reaches a success rate of 70.24% without a model at test time. The upper bound of COAP lies in how accurately the state is represented for decision making and how robust the code logic is. We thus propose COAP as a new paradigm for embodied tasks; since it applies across episodes, it can also serve as an efficient data engine for VLAs and Agent Harnesses.",
+      "authors": "Kairui Hu, Siyuan Hu, Fangzhou Hong, Zhaoxi Chen, Ziwei Liu",
+      "date": "2026-10-09",
+      "published": "2026-10-08",
+      "url": "https://huggingface.co/papers/2610.12369",
+      "arxiv": "https://arxiv.org/abs/2610.12369",
+      "pdf": "https://arxiv.org/pdf/2610.12369.pdf",
+      "upvotes": 12,
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Bimanual"
+      ],
+      "tags": [
+        "VLA",
+        "Bimanual"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.12369"
+    },
+    {
+      "id": "2606.03335",
+      "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
+      "abstract": "GPU-parallel simulation provides abundant robot interaction, but existing benchmarks rarely combine this scale with heterogeneous manipulation tasks and standardized multi-task RL evaluation. We introduce Hebero (Heterogeneous Benchmark for Robot Learning), a GPU-parallel Isaac Lab benchmark that enables efficient joint training and evaluation of a single policy across all 40 heterogeneous tasks. Scaling experiments show that increasing parallel replicas per task improves success under a fixed wall-clock budget. To support learning with sparse rewards and limited demonstrations, we propose Demonstration-Guided Policy Optimization (DGPO), which reuses demonstrations for dense tracking rewards and asymmetric value learning. Its shared stack supports controlled comparisons of learner-specific demonstration interfaces within PPO. Within DGPO framework, we introduce IW-ABC, which uses a lightweight per-task learning progress signal to coordinate adaptive behavior cloning (ABC), relaxing demonstration guidance with task progress, and importance weighting (IW), emphasizing lagging tasks in PPO updates. With 50 demonstrations per task, IW-ABC achieves 90.1% state-input mean success, outperforming the strongest baseline FAMO-ABC by 7.8 percentage points. Its visual counterpart reaches 93.5% mean success. Real-world experiments further demonstrate that a single multi-task policy trained in simulation can successfully perform four tasks on a physical Piper robot. The project page is available at https://hebero-rl.github.io/.",
+      "authors": "Rui Zhang, Qiwei Wu, Zhengyu Zhang, Tao Li, Hongyu Zhou, Xiang Li, Yunrong Guo, Junjie Lai, Renjing Xu, Weihua Zhang",
+      "date": "2026-10-09",
+      "published": "2026-10-09",
+      "url": "https://huggingface.co/papers/2606.03335",
+      "hfUrl": "https://huggingface.co/papers/2606.03335",
+      "arxiv": "https://arxiv.org/abs/2606.03335",
+      "pdf": "https://arxiv.org/pdf/2606.03335.pdf",
+      "upvotes": 7,
+      "tags": [
+        "Manipulation",
+        "Imitation Learning",
+        "Reinforcement Learning",
+        "Dataset",
+        "Simulator"
+      ],
+      "topics": [
+        "Manipulation",
+        "Imitation Learning",
+        "Reinforcement Learning",
+        "Dataset",
+        "Simulator",
+        "Multi-task"
+      ],
+      "source": "hf"
     },
     {
       "id": "2610.08941",
@@ -150,32 +205,6 @@
       "source": "hf"
     },
     {
-      "id": "2610.12369",
-      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
-      "abstract": "Most robot policies keep a model in the control loop: a VLA maps observations to actions, and an Agent Harness, such as Agent-as-Policy or Harness VLA queries a VLM for decision making at run time. We propose a different view: the embodied world is an Embodied Turing Machine, whose tape is the robot and environment state and rules are the policy. If this state can be represented accurately, the decision making can be written entirely in code. We therefore propose Code-Only-as-Policy (COAP): code measures and tracks the robot, environment, and task state from camera images and proprioception, and makes every decision from it. The same code applies across episodes, and different tasks share one library without a VLM or VLA in the loop. Compared with VLAs and Agent Harnesses, we analyze three advantages of COAP: (i) Explicit State: the state can be stored in code; (ii) Execution: code makes decision making controllable, recovers from failures flexibly, and runs fast and cheaply online; (iii) Extensibility: new tasks reuse, inherit, or extend the shared library, so capabilities can accumulate over tasks. These advantages make COAP a suitable medium for recursive self-improvement (RSI): coding agents develop the library in a closed loop, and each change is explicit and controllable. On RoboDojo's 42 bimanual tasks, the resulting library reaches a success rate of 70.24% without a model at test time. The upper bound of COAP lies in how accurately the state is represented for decision making and how robust the code logic is. We thus propose COAP as a new paradigm for embodied tasks; since it applies across episodes, it can also serve as an efficient data engine for VLAs and Agent Harnesses.",
-      "authors": "Kairui Hu, Siyuan Hu, Fangzhou Hong, Zhaoxi Chen, Ziwei Liu",
-      "date": "2026-10-09",
-      "published": "2026-10-08",
-      "url": "https://huggingface.co/papers/2610.12369",
-      "arxiv": "https://arxiv.org/abs/2610.12369",
-      "pdf": "https://arxiv.org/pdf/2610.12369.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Bimanual"
-      ],
-      "tags": [
-        "VLA",
-        "Bimanual"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.12369"
-    },
-    {
       "id": "2610.10528",
       "title": "Long-WAM: Scaling the Context of World-Action Models",
       "abstract": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
@@ -185,7 +214,7 @@
       "url": "https://huggingface.co/papers/2610.10528",
       "arxiv": "https://arxiv.org/abs/2610.10528",
       "pdf": "https://arxiv.org/pdf/2610.10528.pdf",
-      "upvotes": 94,
+      "upvotes": 101,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -219,7 +248,7 @@
       "url": "https://huggingface.co/papers/2610.10409",
       "arxiv": "https://arxiv.org/abs/2610.10409",
       "pdf": "https://arxiv.org/pdf/2610.10409.pdf",
-      "upvotes": 30,
+      "upvotes": 32,
       "categories": [
         "cs.RO",
         "cs.LG"
@@ -274,7 +303,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.10437",
       "arxiv": "https://arxiv.org/abs/2610.10437",
       "pdf": "https://arxiv.org/pdf/2610.10437.pdf",
-      "upvotes": 17,
+      "upvotes": 19,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -1849,7 +1878,7 @@
       "url": "https://huggingface.co/papers/2610.09455",
       "arxiv": "https://arxiv.org/abs/2610.09455",
       "pdf": "https://arxiv.org/pdf/2610.09455.pdf",
-      "upvotes": 22,
+      "upvotes": 34,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1872,6 +1901,30 @@
       "hfUrl": "https://huggingface.co/papers/2610.09455"
     },
     {
+      "id": "2610.08791",
+      "title": "World Models' Last Exam in Physics",
+      "abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models.",
+      "authors": "Mingju Gao, Qingle Liu, Yuzhao Peng, Xinjie Lin, Ziming Qin, Zheng Jiang, Wenyi Li, Calvin Xiao, Youjie Zheng, Kaisen Yang, Qinhuai Na",
+      "date": "2026-10-07",
+      "published": "2026-10-07",
+      "url": "https://huggingface.co/papers/2610.08791",
+      "hfUrl": "https://huggingface.co/papers/2610.08791",
+      "arxiv": "https://arxiv.org/abs/2610.08791",
+      "pdf": "https://arxiv.org/pdf/2610.08791.pdf",
+      "upvotes": 22,
+      "tags": [
+        "World Model",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "World Model",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.07969",
       "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation",
       "abstract": "Scaling robotic foundation models requires diverse training data and reliable evaluation environments. Simulation offers a scalable solution, yet existing generation pipelines remain constrained by predefined assets and skills, a disconnect between scene generation and task generation, and limited support for complex embodiments and physics. We introduce EmbodiedSmith, a framework for scalable embodied data generation through recursive self-improvement (RSI). EmbodiedSmith unifies asset, scene, and task generation in a pipeline that supports autonomous creation and language-driven customization. Its core is an agentic refinement loop: scene generation anticipates downstream task requirements, while task generation guides targeted scene edits, allowing scenes and tasks to iteratively improve one another. This joint refinement improves task generation success, including for long-horizon tasks. The framework further supports mobile manipulators, humanoids, and dexterous hands, as well as interactions involving deformable objects and fluids, broadening the range of behaviors and physical phenomena represented in generated data. Together, these capabilities provide a flexible simulation engine for both robot pretraining and evaluation. Extensive experiments validate the quality, diversity, and generation efficiency of the resulting data, while downstream policy experiments demonstrate that increased data diversity improves generalization.",
@@ -1881,7 +1934,7 @@
       "url": "https://huggingface.co/papers/2610.07969",
       "arxiv": "https://arxiv.org/abs/2610.07969",
       "pdf": "https://arxiv.org/pdf/2610.07969.pdf",
-      "upvotes": 12,
+      "upvotes": 16,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1902,26 +1955,22 @@
       "hfUrl": "https://huggingface.co/papers/2610.07969"
     },
     {
-      "id": "2610.08791",
-      "title": "World Models' Last Exam in Physics",
-      "abstract": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Physics, a measurement-based benchmark for evaluating physical consistency in video world models. The benchmark comprises 40 controlled tasks spanning mechanics, optics, fluids, thermal and phase-change phenomena, electromagnetism, and surface tension. Each task pairs an initial image and a generation prompt with predefined physical criteria, enabling interpretable tests of observable physical relationships without requiring reference videos. Its evaluator combines task-observability screening with task-specific quantitative physical measurements. Experiments on eight video generation models across 1,280 videos reveal persistent physical inconsistencies and substantial variation across tasks, with the best model achieving an overall score of 57.76 out of 100. Evaluation on synthetic videos with known physical relationships provides evidence for the validity of the measurement module under controlled conditions. The evaluator also achieves higher agreement with human judgments than a direct vision-language model baseline in both within-task rankings and pairwise comparisons. By combining coverage across physical domains with scores grounded in measurable evidence and explicit measurement limitations, the benchmark provides an interpretable basis for diagnosing physical inconsistencies and tracking progress toward physically consistent video world models.",
-      "authors": "Mingju Gao, Qingle Liu, Yuzhao Peng, Xinjie Lin, Ziming Qin, Zheng Jiang, Wenyi Li, Calvin Xiao, Youjie Zheng, Kaisen Yang, Qinhuai Na",
+      "id": "2610.08761",
+      "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
+      "abstract": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improvement Loop uses a rubric judge to diagnose recurring failures, construct an adaptive curriculum, and optimize the policy. When progress plateaus and verification becomes a bottleneck, the Judge Improvement Loop selectively queries human guidance on informative failure cases and refines the judge through coactive calibration, in which humans and agents resolve disagreements and converge toward the objective rubric of physical reasoning. The revised judge then guides the next stage of data selection and policy optimization. Experiments on driving and robot navigation tasks demonstrate continuous self-improvement in both policy and judge capability across reinforcement and supervised fine-tuning. These results show how scaling verification supports continuous self-improvement as policy failure patterns evolve.",
+      "authors": "Zewei Zhou, Rachel Luo, Yulong Cao, Chaowei Xiao, Chensheng Peng, Boyi Li, Thomas Tian, Zheng Lian, Yan Wang, Jiaqi Ma, Boris Ivanovic, Marco Pavone, Wenhao Ding",
       "date": "2026-10-07",
       "published": "2026-10-07",
-      "url": "https://huggingface.co/papers/2610.08791",
-      "hfUrl": "https://huggingface.co/papers/2610.08791",
-      "arxiv": "https://arxiv.org/abs/2610.08791",
-      "pdf": "https://arxiv.org/pdf/2610.08791.pdf",
-      "upvotes": 12,
+      "url": "https://huggingface.co/papers/2610.08761",
+      "hfUrl": "https://huggingface.co/papers/2610.08761",
+      "arxiv": "https://arxiv.org/abs/2610.08761",
+      "pdf": "https://arxiv.org/pdf/2610.08761.pdf",
+      "upvotes": 6,
       "tags": [
-        "World Model",
-        "Dataset",
-        "Embodied Vision"
+        "Navigation"
       ],
       "topics": [
-        "World Model",
-        "Dataset",
-        "Embodied Vision"
+        "Navigation"
       ],
       "source": "hf"
     },
@@ -1944,26 +1993,6 @@
       "topics": [
         "Imitation Learning",
         "Embodied Vision"
-      ],
-      "source": "hf"
-    },
-    {
-      "id": "2610.08761",
-      "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
-      "abstract": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improvement Loop uses a rubric judge to diagnose recurring failures, construct an adaptive curriculum, and optimize the policy. When progress plateaus and verification becomes a bottleneck, the Judge Improvement Loop selectively queries human guidance on informative failure cases and refines the judge through coactive calibration, in which humans and agents resolve disagreements and converge toward the objective rubric of physical reasoning. The revised judge then guides the next stage of data selection and policy optimization. Experiments on driving and robot navigation tasks demonstrate continuous self-improvement in both policy and judge capability across reinforcement and supervised fine-tuning. These results show how scaling verification supports continuous self-improvement as policy failure patterns evolve.",
-      "authors": "Zewei Zhou, Rachel Luo, Yulong Cao, Chaowei Xiao, Chensheng Peng, Boyi Li, Thomas Tian, Zheng Lian, Yan Wang, Jiaqi Ma, Boris Ivanovic, Marco Pavone, Wenhao Ding",
-      "date": "2026-10-07",
-      "published": "2026-10-07",
-      "url": "https://huggingface.co/papers/2610.08761",
-      "hfUrl": "https://huggingface.co/papers/2610.08761",
-      "arxiv": "https://arxiv.org/abs/2610.08761",
-      "pdf": "https://arxiv.org/pdf/2610.08761.pdf",
-      "upvotes": 5,
-      "tags": [
-        "Navigation"
-      ],
-      "topics": [
-        "Navigation"
       ],
       "source": "hf"
     },
@@ -3584,7 +3613,7 @@
       "url": "https://huggingface.co/papers/2610.05719",
       "arxiv": "https://arxiv.org/abs/2610.05719",
       "pdf": "https://arxiv.org/pdf/2610.05719.pdf",
-      "upvotes": 31,
+      "upvotes": 32,
       "categories": [
         "cs.RO"
       ],
@@ -5353,7 +5382,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.02521",
       "arxiv": "https://arxiv.org/abs/2610.02521",
       "pdf": "https://arxiv.org/pdf/2610.02521.pdf",
-      "upvotes": 57,
+      "upvotes": 58,
       "tags": [
         "World Model",
         "LLM Agent",
@@ -6972,7 +7001,7 @@
       "url": "https://arxiv.org/abs/2610.04933",
       "arxiv": "https://arxiv.org/abs/2610.04933",
       "pdf": "https://arxiv.org/pdf/2610.04933.pdf",
-      "upvotes": 11,
+      "upvotes": 14,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -8568,7 +8597,9 @@
       "tags": [
         "Hardware"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.03391",
       "title": "Native Action-Prior Learning from Videos for World Action Models",
@@ -8606,7 +8637,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.35690",
       "arxiv": "https://arxiv.org/abs/2609.35690",
       "pdf": "https://arxiv.org/pdf/2609.35690.pdf",
-      "upvotes": 86,
+      "upvotes": 87,
       "tags": [
         "Grasping"
       ],
@@ -8714,7 +8745,7 @@
       "url": "https://arxiv.org/abs/2610.03607",
       "arxiv": "https://arxiv.org/abs/2610.03607",
       "pdf": "https://arxiv.org/pdf/2610.03607.pdf",
-      "upvotes": 22,
+      "upvotes": 29,
       "categories": [
         "cs.RO"
       ],
@@ -9804,9 +9835,7 @@
       "tags": [
         "Dexterous"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2609.40325",
       "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
@@ -9870,7 +9899,7 @@
       "url": "https://arxiv.org/abs/2610.02054",
       "arxiv": "https://arxiv.org/abs/2610.02054",
       "pdf": "https://arxiv.org/pdf/2610.02054.pdf",
-      "upvotes": 52,
+      "upvotes": 54,
       "categories": [
         "cs.RO"
       ],
@@ -9897,7 +9926,7 @@
       "url": "https://arxiv.org/abs/2610.01939",
       "arxiv": "https://arxiv.org/abs/2610.01939",
       "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
-      "upvotes": 50,
+      "upvotes": 51,
       "categories": [
         "cs.CV"
       ],
@@ -9922,7 +9951,7 @@
       "url": "https://arxiv.org/abs/2610.00864",
       "arxiv": "https://arxiv.org/abs/2610.00864",
       "pdf": "https://arxiv.org/pdf/2610.00864.pdf",
-      "upvotes": 41,
+      "upvotes": 44,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -11796,7 +11825,7 @@
       "url": "https://arxiv.org/abs/2609.38886",
       "arxiv": "https://arxiv.org/abs/2609.38886",
       "pdf": "https://arxiv.org/pdf/2609.38886.pdf",
-      "upvotes": 27,
+      "upvotes": 28,
       "categories": [
         "cs.RO"
       ],
@@ -13883,7 +13912,7 @@
       "url": "https://arxiv.org/abs/2609.38078",
       "arxiv": "https://arxiv.org/abs/2609.38078",
       "pdf": "https://arxiv.org/pdf/2609.38078.pdf",
-      "upvotes": 111,
+      "upvotes": 113,
       "categories": [
         "cs.RO"
       ],
@@ -13924,6 +13953,31 @@
       "hfUrl": "https://huggingface.co/papers/2609.35432"
     },
     {
+      "id": "2609.38173",
+      "title": "In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks",
+      "abstract": "We study robotic in-context learning (ICL), an emerging paradigm that enables robots to infer and execute tasks from visual demonstrations. Despite its growing promise, the problem itself remains under-defined: a visual demonstration simultaneously conveys action trajectories, object semantics, manipulation affordances, spatial relations, and task goals, making it unclear what information the robot is actually expected to follow. In this work, we first provide a clear problem definition of robot ICL that explicitly defines its learning target and resolves this fundamental prompt ambiguity. Building on this definition, we develop a minimalist and reproducible ICL framework (SimpleICL) with a visual prompt encoder and a low-cost data collection protocol. Without massive pre-training or specialized data infrastructure, our framework achieves strong performance in both simulation and real-world environments. Extensive experiments further reveal several key properties of robot ICL, including action, semantic, composition, and affordance discrimination. We will fully open-source our data and training pipeline to facilitate systematic and reproducible research on robot ICL. The project page can be found at https://simpleicl.github.io/simpleicl.",
+      "authors": "Minxing Li, Minghao Han, Weizhi Zhao, Hanwen Wang, Xiangshuo Liu, Shuyao Shang, Jingxiang Zhou, Mingchao Sun, Hongyu Pan, Mu Xu, Yu Liu, Lue Fan, Zhaoxiang Zhang",
+      "date": "2026-09-29",
+      "published": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.38173",
+      "arxiv": "https://arxiv.org/abs/2609.38173",
+      "pdf": "https://arxiv.org/pdf/2609.38173.pdf",
+      "upvotes": 41,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Open-Source"
+      ],
+      "tags": [
+        "Manipulation",
+        "Open-Source"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.38173"
+    },
+    {
       "id": "2609.28236",
       "title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks",
       "abstract": "Long-horizon embodied interaction requires agents to retain and continually update information about the environment as they observe, act, and encounter change. Yet current agents struggle to maintain such memory reliably. Our analysis traces this limitation to four key deficiencies: weak fine-grained visual memory, unreliable dynamic world-state tracking, failing to record world state revealed by interaction outcomes, and limited generalization from prior experience. However, existing benchmarks do not directly assess these memory capabilities during long-horizon embodied interaction. To address this gap, we introduce EmbodiedMemory-Bench (EMem-Bench), comprising 2,554 interactive episodes across four task families. EMem-Bench requires agents to build and update memory from interaction history, then use it to complete a later task by acting in the environment. We further present Embodied-Memorizer (EMem), an external memory system that organizes embodied experience into spatial, event, and scene memories. We also train EMem-8B, an 8B policy that manages and uses these memories. We evaluate a diverse range of open-source and proprietary MLLMs and representative multimodal memory systems. Results show that current models remain weak and uneven across the four challenges. Under matched backbones, EMem achieves the best overall performance among the evaluated memory systems and improves both open-source and proprietary models, while EMem-8B further improves over its backbone. Project page: https://zju-omniai.github.io/EmbodiedMemoryBench/",
@@ -13957,7 +14011,7 @@
       "url": "https://arxiv.org/abs/2609.37334",
       "arxiv": "https://arxiv.org/abs/2609.37334",
       "pdf": "https://arxiv.org/pdf/2609.37334.pdf",
-      "upvotes": 30,
+      "upvotes": 38,
       "categories": [
         "cs.RO"
       ],
@@ -13971,31 +14025,6 @@
         "Dataset"
       ],
       "hfUrl": "https://huggingface.co/papers/2609.37334"
-    },
-    {
-      "id": "2609.38173",
-      "title": "In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks",
-      "abstract": "We study robotic in-context learning (ICL), an emerging paradigm that enables robots to infer and execute tasks from visual demonstrations. Despite its growing promise, the problem itself remains under-defined: a visual demonstration simultaneously conveys action trajectories, object semantics, manipulation affordances, spatial relations, and task goals, making it unclear what information the robot is actually expected to follow. In this work, we first provide a clear problem definition of robot ICL that explicitly defines its learning target and resolves this fundamental prompt ambiguity. Building on this definition, we develop a minimalist and reproducible ICL framework (SimpleICL) with a visual prompt encoder and a low-cost data collection protocol. Without massive pre-training or specialized data infrastructure, our framework achieves strong performance in both simulation and real-world environments. Extensive experiments further reveal several key properties of robot ICL, including action, semantic, composition, and affordance discrimination. We will fully open-source our data and training pipeline to facilitate systematic and reproducible research on robot ICL. The project page can be found at https://simpleicl.github.io/simpleicl.",
-      "authors": "Minxing Li, Minghao Han, Weizhi Zhao, Hanwen Wang, Xiangshuo Liu, Shuyao Shang, Jingxiang Zhou, Mingchao Sun, Hongyu Pan, Mu Xu, Yu Liu, Lue Fan, Zhaoxiang Zhang",
-      "date": "2026-09-29",
-      "published": "2026-09-29",
-      "url": "https://arxiv.org/abs/2609.38173",
-      "arxiv": "https://arxiv.org/abs/2609.38173",
-      "pdf": "https://arxiv.org/pdf/2609.38173.pdf",
-      "upvotes": 28,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Open-Source"
-      ],
-      "tags": [
-        "Manipulation",
-        "Open-Source"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.38173"
     },
     {
       "id": "2609.32862",
@@ -16328,7 +16357,7 @@
       "url": "https://arxiv.org/abs/2609.34981",
       "arxiv": "https://arxiv.org/abs/2609.34981",
       "pdf": "https://arxiv.org/pdf/2609.34981.pdf",
-      "upvotes": 137,
+      "upvotes": 138,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -16358,7 +16387,7 @@
       "url": "https://huggingface.co/papers/2609.31394",
       "arxiv": "https://arxiv.org/abs/2609.31394",
       "pdf": "https://arxiv.org/pdf/2609.31394.pdf",
-      "upvotes": 30,
+      "upvotes": 31,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -23691,7 +23720,7 @@
       "url": "https://arxiv.org/abs/2609.28339",
       "arxiv": "https://arxiv.org/abs/2609.28339",
       "pdf": "https://arxiv.org/pdf/2609.28339.pdf",
-      "upvotes": 27,
+      "upvotes": 28,
       "categories": [
         "cs.RO"
       ],
