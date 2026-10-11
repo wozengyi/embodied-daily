@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-10-10T06:01:37.578537+00:00",
+  "generatedAt": "2026-10-11T05:56:32.090093+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-03",
-  "archiveCutoff": "2021-10-11",
-  "addedToday": 1,
+  "recentCutoff": "2026-10-04",
+  "archiveCutoff": "2021-10-12",
+  "addedToday": 0,
   "historyTotal": 7306,
-  "count": 330,
-  "archiveCount": 6692,
+  "count": 293,
+  "archiveCount": 6729,
   "sources": {
     "hf": 31,
-    "arxiv": 299
+    "arxiv": 262
   },
   "archiveSources": {
     "hf": 175,
-    "arxiv": 6517
+    "arxiv": 6554
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2610.12126",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12126",
       "arxiv": "https://arxiv.org/abs/2610.12126",
       "pdf": "https://arxiv.org/pdf/2610.12126.pdf",
-      "upvotes": 64,
+      "upvotes": 71,
       "tags": [
         "Locomotion",
         "Navigation",
@@ -53,7 +55,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12299",
       "arxiv": "https://arxiv.org/abs/2610.12299",
       "pdf": "https://arxiv.org/pdf/2610.12299.pdf",
-      "upvotes": 44,
+      "upvotes": 51,
       "tags": [
         "Locomotion",
         "World Model",
@@ -76,7 +78,7 @@
       "url": "https://huggingface.co/papers/2610.12468",
       "arxiv": "https://arxiv.org/abs/2610.12468",
       "pdf": "https://arxiv.org/pdf/2610.12468.pdf",
-      "upvotes": 34,
+      "upvotes": 37,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -95,6 +97,32 @@
       "hfUrl": "https://huggingface.co/papers/2610.12468"
     },
     {
+      "id": "2610.12369",
+      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
+      "abstract": "Most robot policies keep a model in the control loop: a VLA maps observations to actions, and an Agent Harness, such as Agent-as-Policy or Harness VLA queries a VLM for decision making at run time. We propose a different view: the embodied world is an Embodied Turing Machine, whose tape is the robot and environment state and rules are the policy. If this state can be represented accurately, the decision making can be written entirely in code. We therefore propose Code-Only-as-Policy (COAP): code measures and tracks the robot, environment, and task state from camera images and proprioception, and makes every decision from it. The same code applies across episodes, and different tasks share one library without a VLM or VLA in the loop. Compared with VLAs and Agent Harnesses, we analyze three advantages of COAP: (i) Explicit State: the state can be stored in code; (ii) Execution: code makes decision making controllable, recovers from failures flexibly, and runs fast and cheaply online; (iii) Extensibility: new tasks reuse, inherit, or extend the shared library, so capabilities can accumulate over tasks. These advantages make COAP a suitable medium for recursive self-improvement (RSI): coding agents develop the library in a closed loop, and each change is explicit and controllable. On RoboDojo's 42 bimanual tasks, the resulting library reaches a success rate of 70.24% without a model at test time. The upper bound of COAP lies in how accurately the state is represented for decision making and how robust the code logic is. We thus propose COAP as a new paradigm for embodied tasks; since it applies across episodes, it can also serve as an efficient data engine for VLAs and Agent Harnesses.",
+      "authors": "Kairui Hu, Siyuan Hu, Fangzhou Hong, Zhaoxi Chen, Ziwei Liu",
+      "date": "2026-10-09",
+      "published": "2026-10-08",
+      "url": "https://huggingface.co/papers/2610.12369",
+      "arxiv": "https://arxiv.org/abs/2610.12369",
+      "pdf": "https://arxiv.org/pdf/2610.12369.pdf",
+      "upvotes": 19,
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Bimanual"
+      ],
+      "tags": [
+        "VLA",
+        "Bimanual"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.12369"
+    },
+    {
       "id": "2610.11322",
       "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
       "abstract": "Geometrically faithful and functional articulated 3D assets are essential for real-to-sim robot manipulation, where policies trained in simulation must transfer to physical objects. Recent mesh-based methods learn to infer articulation from annotated 3D assets, but deployment remains challenging when real-world objects fall outside the training distribution or their meshes are incomplete or corrupted. To address these limitations, we formulate articulated asset reconstruction as programmatic modeling grounded in partial geometric evidence and introduce USDCraft, a framework in which a pretrained LLM writes and revises executable programs for simulation-ready articulated assets without task-specific training. We propose source geometry analysis, which converts the source mesh into a metric textual description that distinguishes observed surface from unknown space, and iterative geometric rechecking, which re-encodes each candidate in the same representation so that discrepancies point to program edits while unobserved regions remain open to completion. Visual feedback and physical authoring guidance complete the modeling process, which produces articulated USD assets with explicit physical properties that load into Isaac Sim without manual adjustment. Experiments demonstrate leading articulation recovery on two benchmarks and validate USDCraft's effectiveness for real-to-sim-to-real robot manipulation.",
@@ -104,7 +132,7 @@
       "url": "https://huggingface.co/papers/2610.11322",
       "arxiv": "https://arxiv.org/abs/2610.11322",
       "pdf": "https://arxiv.org/pdf/2610.11322.pdf",
-      "upvotes": 13,
+      "upvotes": 17,
       "categories": [
         "cs.RO"
       ],
@@ -124,32 +152,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.11322"
     },
     {
-      "id": "2610.12369",
-      "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
-      "abstract": "Most robot policies keep a model in the control loop: a VLA maps observations to actions, and an Agent Harness, such as Agent-as-Policy or Harness VLA queries a VLM for decision making at run time. We propose a different view: the embodied world is an Embodied Turing Machine, whose tape is the robot and environment state and rules are the policy. If this state can be represented accurately, the decision making can be written entirely in code. We therefore propose Code-Only-as-Policy (COAP): code measures and tracks the robot, environment, and task state from camera images and proprioception, and makes every decision from it. The same code applies across episodes, and different tasks share one library without a VLM or VLA in the loop. Compared with VLAs and Agent Harnesses, we analyze three advantages of COAP: (i) Explicit State: the state can be stored in code; (ii) Execution: code makes decision making controllable, recovers from failures flexibly, and runs fast and cheaply online; (iii) Extensibility: new tasks reuse, inherit, or extend the shared library, so capabilities can accumulate over tasks. These advantages make COAP a suitable medium for recursive self-improvement (RSI): coding agents develop the library in a closed loop, and each change is explicit and controllable. On RoboDojo's 42 bimanual tasks, the resulting library reaches a success rate of 70.24% without a model at test time. The upper bound of COAP lies in how accurately the state is represented for decision making and how robust the code logic is. We thus propose COAP as a new paradigm for embodied tasks; since it applies across episodes, it can also serve as an efficient data engine for VLAs and Agent Harnesses.",
-      "authors": "Kairui Hu, Siyuan Hu, Fangzhou Hong, Zhaoxi Chen, Ziwei Liu",
-      "date": "2026-10-09",
-      "published": "2026-10-08",
-      "url": "https://huggingface.co/papers/2610.12369",
-      "arxiv": "https://arxiv.org/abs/2610.12369",
-      "pdf": "https://arxiv.org/pdf/2610.12369.pdf",
-      "upvotes": 12,
-      "categories": [
-        "cs.RO",
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Bimanual"
-      ],
-      "tags": [
-        "VLA",
-        "Bimanual"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.12369"
-    },
-    {
       "id": "2606.03335",
       "title": "A GPU-Parallel Framework for Heterogeneous Multi-Task Reinforcement Learning",
       "abstract": "GPU-parallel simulation provides abundant robot interaction, but existing benchmarks rarely combine this scale with heterogeneous manipulation tasks and standardized multi-task RL evaluation. We introduce Hebero (Heterogeneous Benchmark for Robot Learning), a GPU-parallel Isaac Lab benchmark that enables efficient joint training and evaluation of a single policy across all 40 heterogeneous tasks. Scaling experiments show that increasing parallel replicas per task improves success under a fixed wall-clock budget. To support learning with sparse rewards and limited demonstrations, we propose Demonstration-Guided Policy Optimization (DGPO), which reuses demonstrations for dense tracking rewards and asymmetric value learning. Its shared stack supports controlled comparisons of learner-specific demonstration interfaces within PPO. Within DGPO framework, we introduce IW-ABC, which uses a lightweight per-task learning progress signal to coordinate adaptive behavior cloning (ABC), relaxing demonstration guidance with task progress, and importance weighting (IW), emphasizing lagging tasks in PPO updates. With 50 demonstrations per task, IW-ABC achieves 90.1% state-input mean success, outperforming the strongest baseline FAMO-ABC by 7.8 percentage points. Its visual counterpart reaches 93.5% mean success. Real-world experiments further demonstrate that a single multi-task policy trained in simulation can successfully perform four tasks on a physical Piper robot. The project page is available at https://hebero-rl.github.io/.",
@@ -160,7 +162,7 @@
       "hfUrl": "https://huggingface.co/papers/2606.03335",
       "arxiv": "https://arxiv.org/abs/2606.03335",
       "pdf": "https://arxiv.org/pdf/2606.03335.pdf",
-      "upvotes": 7,
+      "upvotes": 11,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -214,7 +216,7 @@
       "url": "https://huggingface.co/papers/2610.10528",
       "arxiv": "https://arxiv.org/abs/2610.10528",
       "pdf": "https://arxiv.org/pdf/2610.10528.pdf",
-      "upvotes": 101,
+      "upvotes": 104,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -276,7 +278,7 @@
       "url": "https://huggingface.co/papers/2610.08995",
       "arxiv": "https://arxiv.org/abs/2610.08995",
       "pdf": "https://arxiv.org/pdf/2610.08995.pdf",
-      "upvotes": 29,
+      "upvotes": 30,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -303,7 +305,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.10437",
       "arxiv": "https://arxiv.org/abs/2610.10437",
       "pdf": "https://arxiv.org/pdf/2610.10437.pdf",
-      "upvotes": 19,
+      "upvotes": 21,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -1878,7 +1880,7 @@
       "url": "https://huggingface.co/papers/2610.09455",
       "arxiv": "https://arxiv.org/abs/2610.09455",
       "pdf": "https://arxiv.org/pdf/2610.09455.pdf",
-      "upvotes": 34,
+      "upvotes": 37,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1911,7 +1913,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.08791",
       "arxiv": "https://arxiv.org/abs/2610.08791",
       "pdf": "https://arxiv.org/pdf/2610.08791.pdf",
-      "upvotes": 22,
+      "upvotes": 24,
       "tags": [
         "World Model",
         "Dataset",
@@ -1934,7 +1936,7 @@
       "url": "https://huggingface.co/papers/2610.07969",
       "arxiv": "https://arxiv.org/abs/2610.07969",
       "pdf": "https://arxiv.org/pdf/2610.07969.pdf",
-      "upvotes": 16,
+      "upvotes": 20,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1955,6 +1957,28 @@
       "hfUrl": "https://huggingface.co/papers/2610.07969"
     },
     {
+      "id": "2610.07785",
+      "title": "Attacca: Goal-Directed Control under State Continuity for Long-Horizon Embodied Agents",
+      "abstract": "A central capability of embodied agents is to accomplish complex objectives through sequences of interdependent tasks. Yet existing visual goal-conditioned policies underlying these agents are typically evaluated on isolated interactions where the target is already visible, and thus do not capture the conditions that arise during continuous long-horizon task execution. In such settings, each task begins from the state left by the previous one: the agent may end at a different position and orientation, the world may have been modified, and the next interaction target may lie outside the current field of view. As a result, agents relying on such policies may struggle to proceed to the next task when they cannot ground their target in the current observation. To address this challenge, we propose Attacca, a new approach that trains visual goal-conditioned policies on complete search-to-interact trajectories using goal images decoupled from the execution environment. Attacca uses context-decoupled goal sampling to pair each demonstration with a class-compatible masked goal image from another world, removing direct scene and pose correspondence. It learns dense current-view grounding through a target-mask prediction head, providing auxiliary supervision beyond action imitation. We further introduce behavioral-phase conditioning that teaches the policy to distinguish Search, Approach, and Interact stages and adapt its control as execution progresses. We evaluate Attacca on multiple short- and long-horizon embodied tasks in Minecraft. Our method achieves 39.0-47.5% clean success, improving over the strongest baseline by 1.7-2.4x. On long-horizon tasks, it attains 54%, 30%, and 28% completion, yielding up to a 7x improvement.",
+      "authors": "Gyusik Seo, Jaehong Yoon",
+      "date": "2026-10-07",
+      "published": "2026-10-07",
+      "url": "https://huggingface.co/papers/2610.07785",
+      "hfUrl": "https://huggingface.co/papers/2610.07785",
+      "arxiv": "https://arxiv.org/abs/2610.07785",
+      "pdf": "https://arxiv.org/pdf/2610.07785.pdf",
+      "upvotes": 6,
+      "tags": [
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.08761",
       "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
       "abstract": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improvement Loop uses a rubric judge to diagnose recurring failures, construct an adaptive curriculum, and optimize the policy. When progress plateaus and verification becomes a bottleneck, the Judge Improvement Loop selectively queries human guidance on informative failure cases and refines the judge through coactive calibration, in which humans and agents resolve disagreements and converge toward the objective rubric of physical reasoning. The revised judge then guides the next stage of data selection and policy optimization. Experiments on driving and robot navigation tasks demonstrate continuous self-improvement in both policy and judge capability across reinforcement and supervised fine-tuning. These results show how scaling verification supports continuous self-improvement as policy failure patterns evolve.",
@@ -1971,28 +1995,6 @@
       ],
       "topics": [
         "Navigation"
-      ],
-      "source": "hf"
-    },
-    {
-      "id": "2610.07785",
-      "title": "Attacca: Goal-Directed Control under State Continuity for Long-Horizon Embodied Agents",
-      "abstract": "A central capability of embodied agents is to accomplish complex objectives through sequences of interdependent tasks. Yet existing visual goal-conditioned policies underlying these agents are typically evaluated on isolated interactions where the target is already visible, and thus do not capture the conditions that arise during continuous long-horizon task execution. In such settings, each task begins from the state left by the previous one: the agent may end at a different position and orientation, the world may have been modified, and the next interaction target may lie outside the current field of view. As a result, agents relying on such policies may struggle to proceed to the next task when they cannot ground their target in the current observation. To address this challenge, we propose Attacca, a new approach that trains visual goal-conditioned policies on complete search-to-interact trajectories using goal images decoupled from the execution environment. Attacca uses context-decoupled goal sampling to pair each demonstration with a class-compatible masked goal image from another world, removing direct scene and pose correspondence. It learns dense current-view grounding through a target-mask prediction head, providing auxiliary supervision beyond action imitation. We further introduce behavioral-phase conditioning that teaches the policy to distinguish Search, Approach, and Interact stages and adapt its control as execution progresses. We evaluate Attacca on multiple short- and long-horizon embodied tasks in Minecraft. Our method achieves 39.0-47.5% clean success, improving over the strongest baseline by 1.7-2.4x. On long-horizon tasks, it attains 54%, 30%, and 28% completion, yielding up to a 7x improvement.",
-      "authors": "Gyusik Seo, Jaehong Yoon",
-      "date": "2026-10-07",
-      "published": "2026-10-07",
-      "url": "https://huggingface.co/papers/2610.07785",
-      "hfUrl": "https://huggingface.co/papers/2610.07785",
-      "arxiv": "https://arxiv.org/abs/2610.07785",
-      "pdf": "https://arxiv.org/pdf/2610.07785.pdf",
-      "upvotes": 5,
-      "tags": [
-        "Imitation Learning",
-        "Embodied Vision"
-      ],
-      "topics": [
-        "Imitation Learning",
-        "Embodied Vision"
       ],
       "source": "hf"
     },
@@ -3642,7 +3644,7 @@
       "url": "https://huggingface.co/papers/2610.06617",
       "arxiv": "https://arxiv.org/abs/2610.06617",
       "pdf": "https://arxiv.org/pdf/2610.06617.pdf",
-      "upvotes": 19,
+      "upvotes": 23,
       "categories": [
         "cs.CV",
         "cs.LG",
@@ -3662,6 +3664,28 @@
       "hfUrl": "https://huggingface.co/papers/2610.06617"
     },
     {
+      "id": "2610.04616",
+      "title": "PerturBot: Breaking Shortcut Priors in Vision-Language-Action Models with Perturbative Training",
+      "abstract": "A vision--language--action (VLA) policy can complete complex tasks while ignoring the evidence that should determine its actions. An object held near the wrist camera can displace the instructed target. Language and action show the same pattern: a familiar noun can trigger the operation it was paired with in training even after the verb changes, and a gripper that closed on nothing may lift anyway. We call these dependencies modality shortcuts: regularities in successful demonstrations make visual, lexical, or motor cues sufficient to predict expert actions without the task evidence needed for the underlying decision. More demonstrations of the same kind can raise task success while leaving these shortcuts intact. We propose Perturbot which makes task-relevant evidence easier to use and shortcuts insufficient on their own: it applies task-preserving wrist-view perturbations, enriches instructions with decision-relevant captions, and adds random and failed trajectory segments relabeled with the behavior they contain. It complements scaling by changing what is scaled, and leaves inference unchanged. Moreover, we propose GroundingFscore, an offline score that diagnoses how severely a policy relies on modality shortcuts. Task success rate shows whether a policy improves, while GroundingFscore reveals whether the policy scales healthily, relying on task evidence rather than shortcuts. Together, Perturbot and GroundingFscore provide a training-and-evaluation framework for disentangling VLA decisions from shortcut priors while preserving responsiveness to task-relevant evidence.",
+      "authors": "Mingyu Liu, Chonghao Sima, Tianjian Feng, Hanqing Wang, Cong Chen, Hao Chen, Chunhua Shen",
+      "date": "2026-10-06",
+      "published": "2026-10-06",
+      "url": "https://huggingface.co/papers/2610.04616",
+      "hfUrl": "https://huggingface.co/papers/2610.04616",
+      "arxiv": "https://arxiv.org/abs/2610.04616",
+      "pdf": "https://arxiv.org/pdf/2610.04616.pdf",
+      "upvotes": 20,
+      "tags": [
+        "VLA",
+        "Imitation Learning"
+      ],
+      "topics": [
+        "VLA",
+        "Imitation Learning"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.04929",
       "title": "RobotUse: Allocating Computation, Context, and Decisions",
       "abstract": "Robot agents must connect their intended actions to observed outcomes while retaining the context needed to revise their choices over repeated attempts. Existing interfaces often leave these choices inside predefined tools or require agents to manage detailed execution code and its growing history. We introduce RobotUse, a robot agent harness that organizes computation, context, and decisions around specifying and revising physical actions. Agents visually select targets and poses, while the backend handles geometry, motion planning, and control. Subagents retain detailed interactions within each subgoal and return the information needed for subsequent decisions. Continual harnessing lets agents learn from execution by updating a persistent playbook. On RoboLab, RobotUse achieves 45% task success, outperforming CaP-X by 6.7 percentage points while maintaining compact decision contexts and reducing reliance on predefined action abstractions. Furthermore, we show that RobotUse learns from real-world execution despite imperfect feedback and transfers what it learns to subsequent tasks. Project page is available at https://robotuse-team.github.io/.",
@@ -3678,28 +3702,6 @@
       ],
       "topics": [
         "Robotics"
-      ],
-      "source": "hf"
-    },
-    {
-      "id": "2610.04616",
-      "title": "PerturBot: Breaking Shortcut Priors in Vision-Language-Action Models with Perturbative Training",
-      "abstract": "A vision--language--action (VLA) policy can complete complex tasks while ignoring the evidence that should determine its actions. An object held near the wrist camera can displace the instructed target. Language and action show the same pattern: a familiar noun can trigger the operation it was paired with in training even after the verb changes, and a gripper that closed on nothing may lift anyway. We call these dependencies modality shortcuts: regularities in successful demonstrations make visual, lexical, or motor cues sufficient to predict expert actions without the task evidence needed for the underlying decision. More demonstrations of the same kind can raise task success while leaving these shortcuts intact. We propose Perturbot which makes task-relevant evidence easier to use and shortcuts insufficient on their own: it applies task-preserving wrist-view perturbations, enriches instructions with decision-relevant captions, and adds random and failed trajectory segments relabeled with the behavior they contain. It complements scaling by changing what is scaled, and leaves inference unchanged. Moreover, we propose GroundingFscore, an offline score that diagnoses how severely a policy relies on modality shortcuts. Task success rate shows whether a policy improves, while GroundingFscore reveals whether the policy scales healthily, relying on task evidence rather than shortcuts. Together, Perturbot and GroundingFscore provide a training-and-evaluation framework for disentangling VLA decisions from shortcut priors while preserving responsiveness to task-relevant evidence.",
-      "authors": "Mingyu Liu, Chonghao Sima, Tianjian Feng, Hanqing Wang, Cong Chen, Hao Chen, Chunhua Shen",
-      "date": "2026-10-06",
-      "published": "2026-10-06",
-      "url": "https://huggingface.co/papers/2610.04616",
-      "hfUrl": "https://huggingface.co/papers/2610.04616",
-      "arxiv": "https://arxiv.org/abs/2610.04616",
-      "pdf": "https://arxiv.org/pdf/2610.04616.pdf",
-      "upvotes": 18,
-      "tags": [
-        "VLA",
-        "Imitation Learning"
-      ],
-      "topics": [
-        "VLA",
-        "Imitation Learning"
       ],
       "source": "hf"
     },
@@ -5406,7 +5408,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.03367",
       "arxiv": "https://arxiv.org/abs/2610.03367",
       "pdf": "https://arxiv.org/pdf/2610.03367.pdf",
-      "upvotes": 51,
+      "upvotes": 52,
       "tags": [
         "Dataset"
       ],
@@ -5466,7 +5468,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.03664",
       "arxiv": "https://arxiv.org/abs/2610.03664",
       "pdf": "https://arxiv.org/pdf/2610.03664.pdf",
-      "upvotes": 32,
+      "upvotes": 34,
       "tags": [
         "Dataset"
       ],
@@ -7001,7 +7003,7 @@
       "url": "https://arxiv.org/abs/2610.04933",
       "arxiv": "https://arxiv.org/abs/2610.04933",
       "pdf": "https://arxiv.org/pdf/2610.04933.pdf",
-      "upvotes": 14,
+      "upvotes": 15,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -7633,7 +7635,9 @@
       "tags": [
         "Navigation"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.04765",
       "title": "PatternDex: Learning Interaction Patterns to Guide Reinforcement Learning of Bimanual Dexterous Manipulation of Articulated Objects",
@@ -8597,9 +8601,7 @@
       "tags": [
         "Hardware"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.03391",
       "title": "Native Action-Prior Learning from Videos for World Action Models",
@@ -8657,7 +8659,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.39378",
       "arxiv": "https://arxiv.org/abs/2609.39378",
       "pdf": "https://arxiv.org/pdf/2609.39378.pdf",
-      "upvotes": 71,
+      "upvotes": 74,
       "tags": [
         "Imitation Learning",
         "Dataset"
@@ -8712,7 +8714,7 @@
       "url": "https://arxiv.org/abs/2610.02840",
       "arxiv": "https://arxiv.org/abs/2610.02840",
       "pdf": "https://arxiv.org/pdf/2610.02840.pdf",
-      "upvotes": 61,
+      "upvotes": 62,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -8745,7 +8747,7 @@
       "url": "https://arxiv.org/abs/2610.03607",
       "arxiv": "https://arxiv.org/abs/2610.03607",
       "pdf": "https://arxiv.org/pdf/2610.03607.pdf",
-      "upvotes": 29,
+      "upvotes": 35,
       "categories": [
         "cs.RO"
       ],
@@ -9847,7 +9849,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.40325",
       "arxiv": "https://arxiv.org/abs/2609.40325",
       "pdf": "https://arxiv.org/pdf/2609.40325.pdf",
-      "upvotes": 104,
+      "upvotes": 105,
       "tags": [
         "VLA",
         "Navigation",
@@ -9870,7 +9872,7 @@
       "url": "https://arxiv.org/abs/2610.02508",
       "arxiv": "https://arxiv.org/abs/2610.02508",
       "pdf": "https://arxiv.org/pdf/2610.02508.pdf",
-      "upvotes": 96,
+      "upvotes": 97,
       "categories": [
         "cs.AI",
         "cs.CV",
@@ -9926,7 +9928,7 @@
       "url": "https://arxiv.org/abs/2610.01939",
       "arxiv": "https://arxiv.org/abs/2610.01939",
       "pdf": "https://arxiv.org/pdf/2610.01939.pdf",
-      "upvotes": 51,
+      "upvotes": 52,
       "categories": [
         "cs.CV"
       ],
@@ -9951,7 +9953,7 @@
       "url": "https://arxiv.org/abs/2610.00864",
       "arxiv": "https://arxiv.org/abs/2610.00864",
       "pdf": "https://arxiv.org/pdf/2610.00864.pdf",
-      "upvotes": 44,
+      "upvotes": 47,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -9978,7 +9980,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.38653",
       "arxiv": "https://arxiv.org/abs/2609.38653",
       "pdf": "https://arxiv.org/pdf/2609.38653.pdf",
-      "upvotes": 38,
+      "upvotes": 39,
       "tags": [
         "Locomotion",
         "Imitation Learning",
@@ -11652,7 +11654,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.35427",
       "arxiv": "https://arxiv.org/abs/2609.35427",
       "pdf": "https://arxiv.org/pdf/2609.35427.pdf",
-      "upvotes": 85,
+      "upvotes": 86,
       "tags": [
         "LLM Agent",
         "Embodied Vision"
@@ -11673,7 +11675,7 @@
       "url": "https://arxiv.org/abs/2609.39375",
       "arxiv": "https://arxiv.org/abs/2609.39375",
       "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
-      "upvotes": 52,
+      "upvotes": 54,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -11795,7 +11797,7 @@
       "url": "https://arxiv.org/abs/2609.39820",
       "arxiv": "https://arxiv.org/abs/2609.39820",
       "pdf": "https://arxiv.org/pdf/2609.39820.pdf",
-      "upvotes": 29,
+      "upvotes": 30,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -11825,7 +11827,7 @@
       "url": "https://arxiv.org/abs/2609.38886",
       "arxiv": "https://arxiv.org/abs/2609.38886",
       "pdf": "https://arxiv.org/pdf/2609.38886.pdf",
-      "upvotes": 28,
+      "upvotes": 30,
       "categories": [
         "cs.RO"
       ],
@@ -13912,7 +13914,7 @@
       "url": "https://arxiv.org/abs/2609.38078",
       "arxiv": "https://arxiv.org/abs/2609.38078",
       "pdf": "https://arxiv.org/pdf/2609.38078.pdf",
-      "upvotes": 113,
+      "upvotes": 114,
       "categories": [
         "cs.RO"
       ],
@@ -13962,7 +13964,7 @@
       "url": "https://arxiv.org/abs/2609.38173",
       "arxiv": "https://arxiv.org/abs/2609.38173",
       "pdf": "https://arxiv.org/pdf/2609.38173.pdf",
-      "upvotes": 41,
+      "upvotes": 47,
       "categories": [
         "cs.RO"
       ],
@@ -13976,6 +13978,31 @@
         "Open-Source"
       ],
       "hfUrl": "https://huggingface.co/papers/2609.38173"
+    },
+    {
+      "id": "2609.37334",
+      "title": "Taming VLAs under Robot Execution Errors: Self-Compensation and Stress Testing",
+      "abstract": "Vision-language-action (VLA) policies often fail when a robot's executed motion deviates from their commanded action. Such execution errors arise from the robot's mechanics and operating conditions, such as wear and payload changes. We propose self-compensating VLA, a deployment-time adaptation method that enables a VLA policy to pre-compensate for the robot's execution errors when generating commands. Without task rewards or labels, it updates the policy online using the residual between the action commanded by a VLA and the motion executed by the robot. To stress-test VLA robustness across execution conditions that are impractical to cover with physical robots alone, we introduce RoboStress, a controlled simulation benchmark. It combines established joint-level models of friction, backlash, compliance, and gravity-compensation error into seven deployment scenarios whose execution errors depend on the robot's state and motion history. On RoboStress, self-compensating VLA achieves higher average task success than both the base policies and methods that build in robustness during training. On two physical robot arms with different usage histories, it raises the average task success rate by more than 30 percentage points on each arm, and the gains extend to objects not seen in the task demonstrations.",
+      "authors": "Sohyun Lee, Yoonjae Baek, Jaesang Won, Jinnyeong Kim, Kang Hyunwoo, Seung-Hwan Baek, Ivan Laptev, Suha Kwak",
+      "date": "2026-09-29",
+      "published": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.37334",
+      "arxiv": "https://arxiv.org/abs/2609.37334",
+      "pdf": "https://arxiv.org/pdf/2609.37334.pdf",
+      "upvotes": 40,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Dataset"
+      ],
+      "tags": [
+        "VLA",
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.37334"
     },
     {
       "id": "2609.28236",
@@ -14000,31 +14027,6 @@
         "Open-Source"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2609.37334",
-      "title": "Taming VLAs under Robot Execution Errors: Self-Compensation and Stress Testing",
-      "abstract": "Vision-language-action (VLA) policies often fail when a robot's executed motion deviates from their commanded action. Such execution errors arise from the robot's mechanics and operating conditions, such as wear and payload changes. We propose self-compensating VLA, a deployment-time adaptation method that enables a VLA policy to pre-compensate for the robot's execution errors when generating commands. Without task rewards or labels, it updates the policy online using the residual between the action commanded by a VLA and the motion executed by the robot. To stress-test VLA robustness across execution conditions that are impractical to cover with physical robots alone, we introduce RoboStress, a controlled simulation benchmark. It combines established joint-level models of friction, backlash, compliance, and gravity-compensation error into seven deployment scenarios whose execution errors depend on the robot's state and motion history. On RoboStress, self-compensating VLA achieves higher average task success than both the base policies and methods that build in robustness during training. On two physical robot arms with different usage histories, it raises the average task success rate by more than 30 percentage points on each arm, and the gains extend to objects not seen in the task demonstrations.",
-      "authors": "Sohyun Lee, Yoonjae Baek, Jaesang Won, Jinnyeong Kim, Kang Hyunwoo, Seung-Hwan Baek, Ivan Laptev, Suha Kwak",
-      "date": "2026-09-29",
-      "published": "2026-09-29",
-      "url": "https://arxiv.org/abs/2609.37334",
-      "arxiv": "https://arxiv.org/abs/2609.37334",
-      "pdf": "https://arxiv.org/pdf/2609.37334.pdf",
-      "upvotes": 38,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Dataset"
-      ],
-      "tags": [
-        "VLA",
-        "Dataset"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.37334"
     },
     {
       "id": "2609.32862",
@@ -16420,7 +16422,7 @@
       "url": "https://arxiv.org/abs/2609.34599",
       "arxiv": "https://arxiv.org/abs/2609.34599",
       "pdf": "https://arxiv.org/pdf/2609.34599.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.LG"
       ],
@@ -23720,7 +23722,7 @@
       "url": "https://arxiv.org/abs/2609.28339",
       "arxiv": "https://arxiv.org/abs/2609.28339",
       "pdf": "https://arxiv.org/pdf/2609.28339.pdf",
-      "upvotes": 28,
+      "upvotes": 30,
       "categories": [
         "cs.RO"
       ],
