@@ -1,69 +1,25 @@
 {
-  "generatedAt": "2026-10-12T06:07:18.694732+00:00",
+  "generatedAt": "2026-10-13T06:52:32.796219+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-05",
-  "archiveCutoff": "2021-10-13",
-  "addedToday": 65,
+  "recentCutoff": "2026-10-06",
+  "archiveCutoff": "2021-10-14",
+  "addedToday": 0,
   "historyTotal": 7371,
-  "count": 333,
-  "archiveCount": 6754,
+  "count": 269,
+  "archiveCount": 6818,
   "sources": {
-    "hf": 35,
-    "arxiv": 298
+    "hf": 29,
+    "arxiv": 240
   },
   "archiveSources": {
-    "hf": 176,
-    "arxiv": 6578
+    "hf": 184,
+    "arxiv": 6634
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
-    {
-      "id": "2610.07121",
-      "title": "SoloQ: Calibration-Free Quantization for Diffusion Language Models",
-      "abstract": "Diffusion large language models dLLMs) have emerged as a promising alternative to autoregressive language models through bidirectional diffusion-based token generation. However, their growing model sizes and high inference costs make efficient deployment challenging: full-sequence denoising repeatedly invokes compute-intensive forward passes, while block-diffusion models additionally introduce a memory-intensive KV-cache. Low-bit weight-activation quantization is therefore attractive, yet existing dLLM post-training quantization methods rely on calibration data despite activation distributions shifting across masking states and denoising steps. We present SoloQ, a calibration-free quantization framework that maps weights and activations into a normalized rotated basis with a predictable marginal distribution, enabling data-independent quantization. SoloQ combines a structured K-RPBH rotation with a lightweight rescaling correction for calibration-free quantization. Its predictable post-rotation distribution supports both distribution-matched codebooks and hardware-native NVFP4. For block-diffusion models, SoloQ further applies commit-time KV-cache quantization to compress persistent states without perturbing the actively denoised block. Across full-sequence dLLMs (LLaDA and Dream) and block-diffusion dLLMs(Fast-dLLM v2 and Nemotron-Labs-Diffusion), SoloQ retains accuracy under 4-bit quantization and outperforms calibration-based baselines on knowledge- and reasoning-intensive benchmarks. With NVFP4, SoloQ reduces peak memory by up to 2.61X and accelerates end-to-end inference by up to 2.24X.",
-      "authors": "Donghyun Lee, Arkapravo Ghosh, Varun Manjunath, Bumjoon Kyle Rhee, Hyunho Kook, Shiting Xiao, Youngeun Kim, Priyadarshini Panda",
-      "date": "2026-10-12",
-      "published": "2026-10-12",
-      "url": "https://huggingface.co/papers/2610.07121",
-      "hfUrl": "https://huggingface.co/papers/2610.07121",
-      "arxiv": "https://arxiv.org/abs/2610.07121",
-      "pdf": "https://arxiv.org/pdf/2610.07121.pdf",
-      "upvotes": 21,
-      "tags": [
-        "LLM Agent",
-        "Dataset",
-        "Hardware"
-      ],
-      "topics": [
-        "LLM Agent",
-        "Dataset",
-        "Hardware"
-      ],
-      "source": "hf"
-    },
-    {
-      "id": "2610.13021",
-      "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
-      "abstract": "Continual learning requires models to accumulate past experience and transfer it to new tasks. Despite substantial research on continual learning, existing work remains largely confined to non-embodied settings, without extending to embodied environments. To address this gap, we introduce EmbodiedCLBench, the first benchmark in embodied simulation for evaluating the continual learning capability of self-evolving agents. With compositional generalization as the core evaluation principle, our benchmark evaluates whether agents can first learn from basic tasks and then recombine the acquired skills to solve complex, unseen advanced tasks. Based on EmbodiedCLBench, we conduct extensive experiments across multiple agent harnesses and learning methods, revealing consistent limitations and distinctive behaviors. Our results show that while advanced tasks can be hardly solved under zero-shot setting, the experience from basic tasks enables consistent improvement. Such benefit from the experience remains stable even if the task complexity increases. However, this improvement does not scale accordingly with the number of learning samples, and current agents cannot extract meaningful information from additional experience. Collectively, our findings highlight continual learning as a fundamental yet underexplored capability, and our benchmark offers valuable resources for designing effective self-evolving agents in embodied environments. Our code and dataset are available at https://pku-value-lab.github.io/EmbodiedCLBench-homepage.",
-      "authors": "Jie Huang, Yanan Chen, Ruixun Liu, Kaichen He, Xinyi He, Rui Huang, Zilong Zheng, Zhenliang Zhang, Yiwu Zhong",
-      "date": "2026-10-12",
-      "published": "2026-10-12",
-      "url": "https://huggingface.co/papers/2610.13021",
-      "hfUrl": "https://huggingface.co/papers/2610.13021",
-      "arxiv": "https://arxiv.org/abs/2610.13021",
-      "pdf": "https://arxiv.org/pdf/2610.13021.pdf",
-      "upvotes": 21,
-      "tags": [
-        "Dataset",
-        "Embodied Vision"
-      ],
-      "topics": [
-        "Dataset",
-        "Embodied Vision"
-      ],
-      "source": "hf"
-    },
     {
       "id": "2610.12772",
       "title": "Reflex: Visually Grounded Reactive Humanoid Control",
@@ -74,7 +30,7 @@
       "url": "https://huggingface.co/papers/2610.12772",
       "arxiv": "https://arxiv.org/abs/2610.12772",
       "pdf": "https://arxiv.org/pdf/2610.12772.pdf",
-      "upvotes": 9,
+      "upvotes": 134,
       "categories": [
         "cs.RO"
       ],
@@ -94,6 +50,52 @@
       "hfUrl": "https://huggingface.co/papers/2610.12772"
     },
     {
+      "id": "2610.13021",
+      "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+      "abstract": "Continual learning requires models to accumulate past experience and transfer it to new tasks. Despite substantial research on continual learning, existing work remains largely confined to non-embodied settings, without extending to embodied environments. To address this gap, we introduce EmbodiedCLBench, the first benchmark in embodied simulation for evaluating the continual learning capability of self-evolving agents. With compositional generalization as the core evaluation principle, our benchmark evaluates whether agents can first learn from basic tasks and then recombine the acquired skills to solve complex, unseen advanced tasks. Based on EmbodiedCLBench, we conduct extensive experiments across multiple agent harnesses and learning methods, revealing consistent limitations and distinctive behaviors. Our results show that while advanced tasks can be hardly solved under zero-shot setting, the experience from basic tasks enables consistent improvement. Such benefit from the experience remains stable even if the task complexity increases. However, this improvement does not scale accordingly with the number of learning samples, and current agents cannot extract meaningful information from additional experience. Collectively, our findings highlight continual learning as a fundamental yet underexplored capability, and our benchmark offers valuable resources for designing effective self-evolving agents in embodied environments. Our code and dataset are available at https://pku-value-lab.github.io/EmbodiedCLBench-homepage.",
+      "authors": "Jie Huang, Yanan Chen, Ruixun Liu, Kaichen He, Xinyi He, Rui Huang, Zilong Zheng, Zhenliang Zhang, Yiwu Zhong",
+      "date": "2026-10-12",
+      "published": "2026-10-12",
+      "url": "https://huggingface.co/papers/2610.13021",
+      "hfUrl": "https://huggingface.co/papers/2610.13021",
+      "arxiv": "https://arxiv.org/abs/2610.13021",
+      "pdf": "https://arxiv.org/pdf/2610.13021.pdf",
+      "upvotes": 63,
+      "tags": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2610.07121",
+      "title": "SoloQ: Calibration-Free Quantization for Diffusion Language Models",
+      "abstract": "Diffusion large language models dLLMs) have emerged as a promising alternative to autoregressive language models through bidirectional diffusion-based token generation. However, their growing model sizes and high inference costs make efficient deployment challenging: full-sequence denoising repeatedly invokes compute-intensive forward passes, while block-diffusion models additionally introduce a memory-intensive KV-cache. Low-bit weight-activation quantization is therefore attractive, yet existing dLLM post-training quantization methods rely on calibration data despite activation distributions shifting across masking states and denoising steps. We present SoloQ, a calibration-free quantization framework that maps weights and activations into a normalized rotated basis with a predictable marginal distribution, enabling data-independent quantization. SoloQ combines a structured K-RPBH rotation with a lightweight rescaling correction for calibration-free quantization. Its predictable post-rotation distribution supports both distribution-matched codebooks and hardware-native NVFP4. For block-diffusion models, SoloQ further applies commit-time KV-cache quantization to compress persistent states without perturbing the actively denoised block. Across full-sequence dLLMs (LLaDA and Dream) and block-diffusion dLLMs(Fast-dLLM v2 and Nemotron-Labs-Diffusion), SoloQ retains accuracy under 4-bit quantization and outperforms calibration-based baselines on knowledge- and reasoning-intensive benchmarks. With NVFP4, SoloQ reduces peak memory by up to 2.61X and accelerates end-to-end inference by up to 2.24X.",
+      "authors": "Donghyun Lee, Arkapravo Ghosh, Varun Manjunath, Bumjoon Kyle Rhee, Hyunho Kook, Shiting Xiao, Youngeun Kim, Priyadarshini Panda",
+      "date": "2026-10-12",
+      "published": "2026-10-12",
+      "url": "https://huggingface.co/papers/2610.07121",
+      "hfUrl": "https://huggingface.co/papers/2610.07121",
+      "arxiv": "https://arxiv.org/abs/2610.07121",
+      "pdf": "https://arxiv.org/pdf/2610.07121.pdf",
+      "upvotes": 33,
+      "tags": [
+        "LLM Agent",
+        "Dataset",
+        "Hardware"
+      ],
+      "topics": [
+        "LLM Agent",
+        "Dataset",
+        "Hardware"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.07625",
       "title": "Stateless Language Agents: Scaling Long-Horizon Automated Research",
       "abstract": "Automated research systems increasingly run LLM agents over long horizons, but more inference does not by itself produce more progress: agents replay growing histories, duplicate one another's work, or stop experimenting while token consumption continues. Yet most evaluations use short budgets or benchmarks that saturate early, leaving these failure modes untested. We trace these failures to two choices: where research state lives and who decides what to try next. We introduce Stateless Language Agents (SLAs), built on the principle of stateful search with stateless agents: no agent carries its conversation across invocations; instead, the harness owns the research state (candidate solutions and measured outcomes) and reconstructs a fresh and role-specific context for every invocation. What each agent sees becomes an explicit design choice rather than a history that grows with the run. We implement this principle in the SLA framework, where a stateless Advisor reads harness-summarized evidence across search directions and assigns concrete experiments to parallel Workers. We evaluate SLA against three recent frameworks on software engineering, kernel optimization, and algorithm design at budgets of up to one billion tokens. SLA achieves the best final result on every task and reaches the strongest kernel baseline's final performance with over 84% fewer tokens. Ablations from shared checkpoints show that focused contexts and explicit assignments each contribute to SLA's progress, with effects that can compound over full runs, while the Advisor consumes less than 0.6% of tokens. These results argue for SLAs, which keep durable research state out of agent conversations, and show that short evaluation horizons can misjudge research systems and their components.",
@@ -104,7 +106,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.07625",
       "arxiv": "https://arxiv.org/abs/2610.07625",
       "pdf": "https://arxiv.org/pdf/2610.07625.pdf",
-      "upvotes": 1,
+      "upvotes": 20,
       "tags": [
         "LLM Agent",
         "Dataset"
@@ -125,7 +127,7 @@
       "url": "https://huggingface.co/papers/2610.13118",
       "arxiv": "https://arxiv.org/abs/2610.13118",
       "pdf": "https://arxiv.org/pdf/2610.13118.pdf",
-      "upvotes": 0,
+      "upvotes": 9,
       "categories": [
         "cs.RO",
         "cs.MA",
@@ -151,7 +153,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12126",
       "arxiv": "https://arxiv.org/abs/2610.12126",
       "pdf": "https://arxiv.org/pdf/2610.12126.pdf",
-      "upvotes": 72,
+      "upvotes": 75,
       "tags": [
         "Locomotion",
         "Navigation",
@@ -175,7 +177,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12299",
       "arxiv": "https://arxiv.org/abs/2610.12299",
       "pdf": "https://arxiv.org/pdf/2610.12299.pdf",
-      "upvotes": 52,
+      "upvotes": 58,
       "tags": [
         "Locomotion",
         "World Model",
@@ -198,7 +200,7 @@
       "url": "https://huggingface.co/papers/2610.12468",
       "arxiv": "https://arxiv.org/abs/2610.12468",
       "pdf": "https://arxiv.org/pdf/2610.12468.pdf",
-      "upvotes": 38,
+      "upvotes": 41,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -226,7 +228,7 @@
       "url": "https://huggingface.co/papers/2610.12369",
       "arxiv": "https://arxiv.org/abs/2610.12369",
       "pdf": "https://arxiv.org/pdf/2610.12369.pdf",
-      "upvotes": 20,
+      "upvotes": 22,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -282,7 +284,7 @@
       "hfUrl": "https://huggingface.co/papers/2606.03335",
       "arxiv": "https://arxiv.org/abs/2606.03335",
       "pdf": "https://arxiv.org/pdf/2606.03335.pdf",
-      "upvotes": 11,
+      "upvotes": 16,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -1451,7 +1453,7 @@
       "url": "https://huggingface.co/papers/2610.10528",
       "arxiv": "https://arxiv.org/abs/2610.10528",
       "pdf": "https://arxiv.org/pdf/2610.10528.pdf",
-      "upvotes": 106,
+      "upvotes": 109,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -1476,6 +1478,32 @@
       "hfUrl": "https://huggingface.co/papers/2610.10528"
     },
     {
+      "id": "2610.08995",
+      "title": "PhysEvo: Astra Can Act, Let It",
+      "abstract": "Astra can act, yet reliable manipulation depends on the system through which it observes and controls the world. We introduce PhysEvo, a framework for physical recursive self-improvement (RSI) around a single frozen model. A task agent executes robot tasks; a meta-agent uses the resulting trajectories to diagnose failures, revise tools and skills, and test corrections. The meta-agent can also improve its own diagnostic tools, so retained revisions support both later action and later self-improvement. This process develops joint-level control, evidence-seeking observation, and reusable manipulation skills without model-weight updates or a separately trained action policy. Across 42 RoboDojo tasks, held-out-layout evaluation of retained task-specific deployment versions yields a five-dimension average score of 68.14/100 and 62.00% success, compared with 47.17% for RoboDawn's one-shot Astra agent, the strongest published reference in our comparison. On eight manipulation tasks challenging direct Astra, PhysEvo achieves 55.00% success, compared with 1.25% for the direct-Astra reference. Deploying the simulation-evolved harness on AgileX PiPER and continuing skill revision yields 90.60/100 average score and 84.00% success across 25 trials on five real-world tasks. PhysEvo turns the consequences of action into persistent, testable changes to how a frozen model acts and improves.",
+      "authors": "Wenqing Tian, Zeyu Zhang, Zhaocheng Liu, Fengwei Liu, Qiang Liu, Liang Wang",
+      "date": "2026-10-08",
+      "published": "2026-10-06",
+      "url": "https://huggingface.co/papers/2610.08995",
+      "arxiv": "https://arxiv.org/abs/2610.08995",
+      "pdf": "https://arxiv.org/pdf/2610.08995.pdf",
+      "upvotes": 88,
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Imitation Learning"
+      ],
+      "tags": [
+        "Manipulation",
+        "Imitation Learning"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.08995"
+    },
+    {
       "id": "2610.10409",
       "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
       "abstract": "General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these capabilities carry into the physical world. To investigate this, we introduce RobotWorld, a challenging simulation testbed for robot use: turning instructions and observations into physical task execution through robot interfaces. Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks. By analysing task outcomes alongside execution traces, we identify both the capabilities that transfer and the gaps that prevent reliable completion. Furthermore, we find that current agents can construct sophisticated perception and control workflows, including image segmentation, camera calibration, spatial estimation, and dynamics-based computation. These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion. This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals. By linking these outcomes to execution behaviour, RobotWorld provides both a rigorous proving ground and an empirical account of the remaining capability gaps, thereby establishing concrete targets for training and designing more reliable physical-world agents.",
@@ -1485,7 +1513,7 @@
       "url": "https://huggingface.co/papers/2610.10409",
       "arxiv": "https://arxiv.org/abs/2610.10409",
       "pdf": "https://arxiv.org/pdf/2610.10409.pdf",
-      "upvotes": 33,
+      "upvotes": 39,
       "categories": [
         "cs.RO",
         "cs.LG"
@@ -1504,32 +1532,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.10409"
     },
     {
-      "id": "2610.08995",
-      "title": "PhysEvo: Astra Can Act, Let It",
-      "abstract": "Astra can act, yet reliable manipulation depends on the system through which it observes and controls the world. We introduce PhysEvo, a framework for physical recursive self-improvement (RSI) around a single frozen model. A task agent executes robot tasks; a meta-agent uses the resulting trajectories to diagnose failures, revise tools and skills, and test corrections. The meta-agent can also improve its own diagnostic tools, so retained revisions support both later action and later self-improvement. This process develops joint-level control, evidence-seeking observation, and reusable manipulation skills without model-weight updates or a separately trained action policy. Across 42 RoboDojo tasks, held-out-layout evaluation of retained task-specific deployment versions yields a five-dimension average score of 68.14/100 and 62.00% success, compared with 47.17% for RoboDawn's one-shot Astra agent, the strongest published reference in our comparison. On eight manipulation tasks challenging direct Astra, PhysEvo achieves 55.00% success, compared with 1.25% for the direct-Astra reference. Deploying the simulation-evolved harness on AgileX PiPER and continuing skill revision yields 90.60/100 average score and 84.00% success across 25 trials on five real-world tasks. PhysEvo turns the consequences of action into persistent, testable changes to how a frozen model acts and improves.",
-      "authors": "Wenqing Tian, Zeyu Zhang, Zhaocheng Liu, Fengwei Liu, Qiang Liu, Liang Wang",
-      "date": "2026-10-08",
-      "published": "2026-10-06",
-      "url": "https://huggingface.co/papers/2610.08995",
-      "arxiv": "https://arxiv.org/abs/2610.08995",
-      "pdf": "https://arxiv.org/pdf/2610.08995.pdf",
-      "upvotes": 30,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Imitation Learning"
-      ],
-      "tags": [
-        "Manipulation",
-        "Imitation Learning"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.08995"
-    },
-    {
       "id": "2610.10437",
       "title": "Q-Learning with Scalar Adjoint Matching",
       "abstract": "Flow policies capture rich and diverse action distributions, and fine-tuning them with off-policy RL to improve beyond the demonstrations has drawn growing interest. However, fine-tuning a flow policy against a learned value function is not trivial, because the policy generates its action over many flow steps. Adjoint matching offers a principled way to update the flow model itself by propagating value information from the final action back to each flow step, but it requires a vector--Jacobian product through the policy at every step, a cost that grows with the number of flow steps and the policy size. We observe that the batch-averaged velocity Jacobian of pretrained flow policies concentrates on its diagonal. Motivated by this finding, we derive a closed-form scalar adjoint that scales the value gradient at the final action by the flow time, eliminating the per-step vector--Jacobian products. We further find that controlling the critic's value at policy-generated actions is particularly important under the scalar adjoint. Based on these findings, we propose Q-learning with Scalar Adjoint Matching (SQAM), which combines the scalar adjoint with a value penalty at those actions. SQAM's gains concentrate on the four hardest OGBench domains, where its success rate exceeds that of the strongest baseline in each domain by 18 to 35 percentage points. To test whether SQAM extends to large pretrained policies, we also fine-tune a vision-language-action policy on a real bimanual robot. SQAM improves over supervised fine-tuning on all three tasks.",
@@ -1540,7 +1542,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.10437",
       "arxiv": "https://arxiv.org/abs/2610.10437",
       "pdf": "https://arxiv.org/pdf/2610.10437.pdf",
-      "upvotes": 23,
+      "upvotes": 25,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -3546,7 +3548,7 @@
       "url": "https://huggingface.co/papers/2610.09455",
       "arxiv": "https://arxiv.org/abs/2610.09455",
       "pdf": "https://arxiv.org/pdf/2610.09455.pdf",
-      "upvotes": 44,
+      "upvotes": 45,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -3621,6 +3623,37 @@
         "Foundation Models"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.07969"
+    },
+    {
+      "id": "2610.10288",
+      "title": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
+      "abstract": "Large-scale egocentric human interaction data is becoming an important source of physical supervision for embodied learning, yet video alone leaves the contact and pressure that characterize physical interaction unrecorded. Recent visual-tactile datasets provide this missing supervision, but their synchronized tactile data remain far smaller in volume than human video. Moreover, the largest resources often merge recordings from different sensors or annotation procedures, which makes the effect of data scale difficult to isolate. We therefore introduce TouchScale, a 500-hour dataset of contact-rich human interaction recorded with a single unified wearable setup. Its approximately 2K predefined task descriptions span everyday activities and structured manipulation, and each recording temporally aligns egocentric RGB-D video with wrist RGB video and dense full-hand bimanual tactile measurements. Compared with prior tactile data, training on the full TouchScale raises zero-shot contact IoU on data from an unseen tactile sensor from 0.134 to 0.383. Pretraining a visual encoder on TouchScale also yields the highest action recognition accuracy on three benchmarks among the compared visual-tactile datasets. Used for visual-tactile mid-training of a robot policy, TouchScale improves the average real-world success rate across four contact-rich manipulation tasks from 22.5% to 57.5%. With the sensor and collection protocol held fixed, both zero-shot tactile prediction and robot success show an overall upward trend as more TouchScale data is used. These results suggest that human visual-tactile data collected at scale with consistent sensing benefits both perception and robot manipulation. We will publicly release TouchScale, including all synchronized visual-tactile recordings and reconstructed object models, to support future research on scalable visual-tactile learning.",
+      "authors": "Dayou Li, Hao Wang, Qianqian Yang, Zihao Zhu, Haoquan Fang, Ziyao Zeng, Yan Han, Zihan Wang, Yan Wang, Baoru Huang, Dilin Wang, Kenji Shimada, Yiyue Luo, Manling Li, Teresa Lv, Mustafa Mukadam, Rakesh Ranjan, Ruohan Zhang, Qi He, Changliu Liu, Xu Chen, Marco Pavone, Bangya Liu, Jiachen Li, Masayoshi Tomizuka, Zhiwen Fan",
+      "date": "2026-10-07",
+      "published": "2026-10-07",
+      "url": "https://arxiv.org/abs/2610.10288",
+      "arxiv": "https://arxiv.org/abs/2610.10288",
+      "pdf": "https://arxiv.org/pdf/2610.10288.pdf",
+      "upvotes": 10,
+      "categories": [
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Imitation Learning",
+        "Bimanual",
+        "Dataset",
+        "Tactile"
+      ],
+      "tags": [
+        "Manipulation",
+        "Imitation Learning",
+        "Bimanual",
+        "Dataset",
+        "Tactile"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.10288"
     },
     {
       "id": "2610.08761",
@@ -3945,36 +3978,6 @@
         "Reinforcement Learning",
         "Dataset",
         "Hardware"
-      ]
-    },
-    {
-      "id": "2610.10288",
-      "title": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
-      "abstract": "Large-scale egocentric human interaction data is becoming an important source of physical supervision for embodied learning, yet video alone leaves the contact and pressure that characterize physical interaction unrecorded. Recent visual-tactile datasets provide this missing supervision, but their synchronized tactile data remain far smaller in volume than human video. Moreover, the largest resources often merge recordings from different sensors or annotation procedures, which makes the effect of data scale difficult to isolate. We therefore introduce TouchScale, a 500-hour dataset of contact-rich human interaction recorded with a single unified wearable setup. Its approximately 2K predefined task descriptions span everyday activities and structured manipulation, and each recording temporally aligns egocentric RGB-D video with wrist RGB video and dense full-hand bimanual tactile measurements. Compared with prior tactile data, training on the full TouchScale raises zero-shot contact IoU on data from an unseen tactile sensor from 0.134 to 0.383. Pretraining a visual encoder on TouchScale also yields the highest action recognition accuracy on three benchmarks among the compared visual-tactile datasets. Used for visual-tactile mid-training of a robot policy, TouchScale improves the average real-world success rate across four contact-rich manipulation tasks from 22.5% to 57.5%. With the sensor and collection protocol held fixed, both zero-shot tactile prediction and robot success show an overall upward trend as more TouchScale data is used. These results suggest that human visual-tactile data collected at scale with consistent sensing benefits both perception and robot manipulation. We will publicly release TouchScale, including all synchronized visual-tactile recordings and reconstructed object models, to support future research on scalable visual-tactile learning.",
-      "authors": "Dayou Li, Hao Wang, Qianqian Yang, Zihao Zhu, Haoquan Fang, Ziyao Zeng, Yan Han, Zihan Wang, Yan Wang, Baoru Huang, Dilin Wang, Kenji Shimada, Yiyue Luo, Manling Li, Teresa Lv, Mustafa Mukadam, Rakesh Ranjan, Ruohan Zhang, Qi He, Changliu Liu, Xu Chen, Marco Pavone, Bangya Liu, Jiachen Li, Masayoshi Tomizuka, Zhiwen Fan",
-      "date": "2026-10-07",
-      "published": "2026-10-07",
-      "url": "https://arxiv.org/abs/2610.10288",
-      "arxiv": "https://arxiv.org/abs/2610.10288",
-      "pdf": "https://arxiv.org/pdf/2610.10288.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Imitation Learning",
-        "Bimanual",
-        "Dataset",
-        "Tactile"
-      ],
-      "tags": [
-        "Manipulation",
-        "Imitation Learning",
-        "Bimanual",
-        "Dataset",
-        "Tactile"
       ]
     },
     {
@@ -7038,7 +7041,9 @@
       "tags": [
         "Humanoid"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.02521",
       "title": "Spatial Memory Intelligence: Endowing World Models with Understanding-Driven Long-Term Memory",
@@ -8658,9 +8663,7 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.04933",
       "title": "DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling",
@@ -10337,6 +10340,40 @@
       "source": "hf"
     },
     {
+      "id": "2610.02196",
+      "title": "InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation",
+      "abstract": "We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad controller already holds much of the competence a new task needs, and that this competence becomes accessible through an interface between planning and control that is expressive enough to specify contact-rich, multi-stage interactions, yet executable and measurable enough that execution feedback can guide planning from experience. InterEvolve realizes this interface with two components. First, we develop an object-aware forward-backward (FB) behavioral foundation model, whose object residuals on a frozen body prior turn a new reward about the body or objects into loco-manipulation behavior at test time. Second, we specify tasks as reward programs: staged rewards with completion conditions and tunable constants. A large language model (LLM) agent revises the program structure in context, drawing on execution feedback and a skill library of verified programs, while a numerical optimizer tunes its constants. With every candidate verified across parallel simulation scenarios, the program explores new ways to induce, repurpose, and compose the controller's existing motor competence for the task at hand, and thus improves over iterations. Experiments show that human-designed rewards leave much of the FB model's loco-manipulation competence untapped, whereas the programs InterEvolve evolves release it, sometimes through novel strategies. It further produces behaviors for diverse tasks, complex scenes, and long-horizon compositions in simulation, and evolved skills run autonomously on a physical Unitree G1 from egocentric onboard perception.",
+      "authors": "Zhuo Lin, Sirui Xu, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui",
+      "date": "2026-10-02",
+      "published": "2026-10-01",
+      "url": "https://huggingface.co/papers/2610.02196",
+      "arxiv": "https://arxiv.org/abs/2610.02196",
+      "pdf": "https://arxiv.org/pdf/2610.02196.pdf",
+      "upvotes": 63,
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.GR"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Humanoid",
+        "Imitation Learning",
+        "LLM Agent",
+        "Foundation Models",
+        "Hardware"
+      ],
+      "tags": [
+        "Manipulation",
+        "Humanoid",
+        "Imitation Learning",
+        "LLM Agent",
+        "Foundation Models"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.02196"
+    },
+    {
       "id": "2610.02840",
       "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
       "abstract": "World action models jointly learn to forecast world dynamics and predict robot actions, such that the learned internal world dynamics guide accurate actions. Existing approaches typically represent the world as RGB frames or latent counterparts while predicting actions as end-effector poses or joint angles, but they often struggle to capture the 3D spatial structure and contact geometry central to dexterous manipulation. We introduce Point World Action Model (PointWAM), a 3D world action model that decomposes the world into a scene (i.e., environment) and hands (i.e., actor), and jointly forecasts both as 3D point trajectories within a shared space-time coordinate frame. This explicit, disentangled representation enables effective pre-training on large-scale human demonstration videos without requiring any task-specific object or keypoint selection. Given a colored point cloud and a language instruction, PointWAM predicts how the scene and hands co-evolve in 3D space over time, then retargets the forecast hand motion to robot actions. Pre-training on human videos improves average DexJoCo success by 56.9 percentage points, and scene-trajectory supervision adds 10.9 points over forecasting the hands alone. With both, PointWAM surpasses the prior state of the art on ten DexJoCo tasks by 11.7 points and outperforms strong VLAs on a real robot.",
@@ -10370,40 +10407,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.02840"
     },
     {
-      "id": "2610.02196",
-      "title": "InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation",
-      "abstract": "We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad controller already holds much of the competence a new task needs, and that this competence becomes accessible through an interface between planning and control that is expressive enough to specify contact-rich, multi-stage interactions, yet executable and measurable enough that execution feedback can guide planning from experience. InterEvolve realizes this interface with two components. First, we develop an object-aware forward-backward (FB) behavioral foundation model, whose object residuals on a frozen body prior turn a new reward about the body or objects into loco-manipulation behavior at test time. Second, we specify tasks as reward programs: staged rewards with completion conditions and tunable constants. A large language model (LLM) agent revises the program structure in context, drawing on execution feedback and a skill library of verified programs, while a numerical optimizer tunes its constants. With every candidate verified across parallel simulation scenarios, the program explores new ways to induce, repurpose, and compose the controller's existing motor competence for the task at hand, and thus improves over iterations. Experiments show that human-designed rewards leave much of the FB model's loco-manipulation competence untapped, whereas the programs InterEvolve evolves release it, sometimes through novel strategies. It further produces behaviors for diverse tasks, complex scenes, and long-horizon compositions in simulation, and evolved skills run autonomously on a physical Unitree G1 from egocentric onboard perception.",
-      "authors": "Zhuo Lin, Sirui Xu, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui",
-      "date": "2026-10-02",
-      "published": "2026-10-01",
-      "url": "https://huggingface.co/papers/2610.02196",
-      "arxiv": "https://arxiv.org/abs/2610.02196",
-      "pdf": "https://arxiv.org/pdf/2610.02196.pdf",
-      "upvotes": 62,
-      "categories": [
-        "cs.RO",
-        "cs.CV",
-        "cs.GR"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Humanoid",
-        "Imitation Learning",
-        "LLM Agent",
-        "Foundation Models",
-        "Hardware"
-      ],
-      "tags": [
-        "Manipulation",
-        "Humanoid",
-        "Imitation Learning",
-        "LLM Agent",
-        "Foundation Models"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.02196"
-    },
-    {
       "id": "2610.03607",
       "title": "World Action Learning via Interaction-Centric Spectral Latent Guidance",
       "abstract": "Learning general-purpose robot policies requires large-scale real-world interaction data, yet collecting robot demonstrations remains expensive and difficult to scale. Egocentric videos offer abundant human interaction experience with task-relevant semantics for robotic manipulation, but direct transfer is challenging for two reasons: latent actions inferred from frame reconstruction can be dominated by nuisance variation such as ego-camera motion, and human and robot behaviors often exhibit different temporal dynamics. We propose WING (World Action Learning via INteraction-Centric Spectral Latent Guidance), a framework for transferring interaction knowledge from egocentric videos to robot policies. WING first separates observer-induced motion from hand-object interaction and distills the interaction-centric component into latent actions. It then exploits the observation that cross-embodiment task semantics are concentrated in slowly varying temporal structures, identifying shared low-frequency components between egocentric latent actions and robot behaviors in the spectral domain and using them to guide action generation. WING achieves average success rates of 99.20% on LIBERO, 93.80% on RoboTwin 2.0, and 57.7% on RoboCasa-GR1, and also performs strongly across four real-world manipulation tasks under diverse generalization settings. These results show that interaction-centric spectral guidance provides an effective and scalable way to transfer physical interaction knowledge from human egocentric video to robot control. Project page: https://mikuz12.github.io/wing/",
@@ -10413,7 +10416,7 @@
       "url": "https://arxiv.org/abs/2610.03607",
       "arxiv": "https://arxiv.org/abs/2610.03607",
       "pdf": "https://arxiv.org/pdf/2610.03607.pdf",
-      "upvotes": 40,
+      "upvotes": 43,
       "categories": [
         "cs.RO"
       ],
@@ -11538,7 +11541,7 @@
       "url": "https://arxiv.org/abs/2610.02508",
       "arxiv": "https://arxiv.org/abs/2610.02508",
       "pdf": "https://arxiv.org/pdf/2610.02508.pdf",
-      "upvotes": 97,
+      "upvotes": 98,
       "categories": [
         "cs.AI",
         "cs.CV",
@@ -11567,7 +11570,7 @@
       "url": "https://arxiv.org/abs/2610.02054",
       "arxiv": "https://arxiv.org/abs/2610.02054",
       "pdf": "https://arxiv.org/pdf/2610.02054.pdf",
-      "upvotes": 61,
+      "upvotes": 73,
       "categories": [
         "cs.RO"
       ],
@@ -11583,6 +11586,35 @@
         "World Model"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.02054"
+    },
+    {
+      "id": "2610.02368",
+      "title": "Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation",
+      "abstract": "Long-horizon compositional manipulation has become increasingly important for real-world robot deployment, where a single task involves multiple coordinated subtasks. Existing world-action models (WAMs) jointly predict short-horizon visual futures and actions, but typically lack explicit subtask-level reasoning. We propose Visual Goal-conditioned Action Reasoning (ViGAR), a hierarchical framework that factorizes manipulation into a visual subgoal planner and a subgoal executor. Given the current observation and global instruction, the subgoal planner predicts a visual subgoal for the next subtask. The subgoal executor then jointly generates future visual trajectories and actions conditioned on the predicted subgoal. Both components share a pretrained world-model representation, enabling task-level planning and action generation to benefit from common physical knowledge. Moreover, our framework naturally supports in-context learning: using a global goal image as context can induce different subtask decompositions and behaviors without parameter updates. On the RoboTwin Clean2Random benchmark, ViGAR achieves 82.00% and 67.02% success rates under the Clean and Random settings, respectively, surpassing the strongest baseline by 12.86 percentage points in average success rate. Real-world robot experiments on five compositional and two in-context learning tasks further confirm the effectiveness of ViGAR.",
+      "authors": "Shukai Gong, Xuanran Zhai, Yintianrun Zhang, Ruopeng Cui, Ye Huang, Yiyang Fu, Dexuan Lyu, Chaojie Li, Xinyi Song, Peiwen Lin, Chuang Wang, Mingyuan Jia, Yufan Deng, Jiaxin Fang, Bo Liang, Jiaxin Li, Yuxiang Gao, Hao Liu, Daquan Zhou",
+      "date": "2026-10-01",
+      "published": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.02368",
+      "arxiv": "https://arxiv.org/abs/2610.02368",
+      "pdf": "https://arxiv.org/pdf/2610.02368.pdf",
+      "upvotes": 56,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Dataset",
+        "WAM",
+        "World Model"
+      ],
+      "tags": [
+        "Manipulation",
+        "Dataset",
+        "WAM",
+        "World Model"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.02368"
     },
     {
       "id": "2610.01939",
@@ -11796,35 +11828,6 @@
         "Hardware"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2610.02368",
-      "title": "Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation",
-      "abstract": "Long-horizon compositional manipulation has become increasingly important for real-world robot deployment, where a single task involves multiple coordinated subtasks. Existing world-action models (WAMs) jointly predict short-horizon visual futures and actions, but typically lack explicit subtask-level reasoning. We propose Visual Goal-conditioned Action Reasoning (ViGAR), a hierarchical framework that factorizes manipulation into a visual subgoal planner and a subgoal executor. Given the current observation and global instruction, the subgoal planner predicts a visual subgoal for the next subtask. The subgoal executor then jointly generates future visual trajectories and actions conditioned on the predicted subgoal. Both components share a pretrained world-model representation, enabling task-level planning and action generation to benefit from common physical knowledge. Moreover, our framework naturally supports in-context learning: using a global goal image as context can induce different subtask decompositions and behaviors without parameter updates. On the RoboTwin Clean2Random benchmark, ViGAR achieves 82.00% and 67.02% success rates under the Clean and Random settings, respectively, surpassing the strongest baseline by 12.86 percentage points in average success rate. Real-world robot experiments on five compositional and two in-context learning tasks further confirm the effectiveness of ViGAR.",
-      "authors": "Shukai Gong, Xuanran Zhai, Yintianrun Zhang, Ruopeng Cui, Ye Huang, Yiyang Fu, Dexuan Lyu, Chaojie Li, Xinyi Song, Peiwen Lin, Chuang Wang, Mingyuan Jia, Yufan Deng, Jiaxin Fang, Bo Liang, Jiaxin Li, Yuxiang Gao, Hao Liu, Daquan Zhou",
-      "date": "2026-10-01",
-      "published": "2026-10-01",
-      "url": "https://arxiv.org/abs/2610.02368",
-      "arxiv": "https://arxiv.org/abs/2610.02368",
-      "pdf": "https://arxiv.org/pdf/2610.02368.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Dataset",
-        "WAM",
-        "World Model"
-      ],
-      "tags": [
-        "Manipulation",
-        "Dataset",
-        "WAM",
-        "World Model"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.02368"
     },
     {
       "id": "2605.22493",
@@ -13341,7 +13344,7 @@
       "url": "https://arxiv.org/abs/2609.39375",
       "arxiv": "https://arxiv.org/abs/2609.39375",
       "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
-      "upvotes": 54,
+      "upvotes": 55,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -13358,6 +13361,43 @@
       "hfUrl": "https://huggingface.co/papers/2609.39375"
     },
     {
+      "id": "2609.39601",
+      "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
+      "abstract": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%). As a downstream visual backbone, GroundingPI improves performance on robotic manipulation and autonomous driving. On RoboTwin 2.0, it outperforms every mainstream backbone we evaluate in all four out-of-distribution settings, by up to 24.8% relative to the strongest backbone. On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%. On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m. We systematically analyze GroundingPI's pretraining in scale and data composition. Downstream autonomous driving and robotic manipulation improve as the pretraining is scaled. Analyzing the data recipe across these 11 perceptual capabilities shows dense grounding's substantial benefits for both, and OCR's potential as a catalyst for perceptual learning. These results support grounding as a perceptual foundation, and dedicated perceptual pretraining as a promising direction for foundation models of physical intelligence.",
+      "authors": "Qize Yu, Lianrui Fan, Boyu Chen, Jiaqi Liang, Xini Ding, Yue Chen, Zetian Song, Yuran Wang, Yi Zou, Kaixuan Wang, Tianxing Chen, Wenxuan Song, Bohan Zhou, Mingleyang Li, Siqiao Huang, Yuqi Ye, Caigao Jiang, Wei Wei, Ruihai Wu, Hang Zhang, Yixiao Ge, Shuchang Zhou, Shilong Liu, Xianming Liu, Ping Luo, Shiyu Huang",
+      "date": "2026-09-30",
+      "published": "2026-09-30",
+      "url": "https://arxiv.org/abs/2609.39601",
+      "arxiv": "https://arxiv.org/abs/2609.39601",
+      "pdf": "https://arxiv.org/pdf/2609.39601.pdf",
+      "upvotes": 52,
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Manipulation",
+        "Reinforcement Learning",
+        "Dataset",
+        "Foundation Models",
+        "Autonomous Driving",
+        "WAM",
+        "World Model"
+      ],
+      "tags": [
+        "VLA",
+        "Manipulation",
+        "Reinforcement Learning",
+        "Dataset",
+        "Foundation Models"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.39601"
+    },
+    {
       "id": "2609.34606",
       "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
       "abstract": "Leveraging the paradigm of autoregressive diffusion, text-conditioned interactive video world models aim to simulate temporally coherent environments guided by textual instructions. While enabling low-latency, long-duration generation is pivotal for embodied AI and simulation-based planning, current frameworks primarily rely on sliding-window mechanisms to bound computational complexity. However, this approach inherently sacrifices historical context, undermining the long-range interactive capabilities. Conversely, maintaining a full-history cache remains computationally prohibitive and memory-intensive: the quadratic complexity of attention leads to excessive computational overhead, while the linear growth of the KV cache inevitably leads to GPU memory saturation. To overcome these limitations, we propose WorldAttention, a system-oriented attention architecture that achieves high efficiency through the co-design of specialized attention kernels and hierarchical KV cache management. First, we introduce Hybrid Sparse Attention (HSA), which integrates linear global attention supplemented with head-adaptive sparse attention. Additionally, we design a Hierarchical KV Cache (HKV) that organizes historical KV pairs into semantically indexed pages across multi-tier memory, enabling fine-grained retrieval and controlled GPU residency. These two designs are supported by tailored kernels to effectively translate their theoretical efficiency into real-world performance. Extensive experiments on VBench-Long and InterVBench demonstrate that WorldAttention consistently surpasses prior state-of-the-art methods, achieving subject consistency scores of 0.9472 on VBench-Long and 0.9668 on InterVBench, respectively.",
@@ -13368,7 +13408,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34606",
       "arxiv": "https://arxiv.org/abs/2609.34606",
       "pdf": "https://arxiv.org/pdf/2609.34606.pdf",
-      "upvotes": 50,
+      "upvotes": 51,
       "tags": [
         "World Model",
         "Embodied Vision"
@@ -13595,42 +13635,6 @@
         "Grasping",
         "Navigation",
         "Imitation Learning"
-      ]
-    },
-    {
-      "id": "2609.39601",
-      "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
-      "abstract": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%). As a downstream visual backbone, GroundingPI improves performance on robotic manipulation and autonomous driving. On RoboTwin 2.0, it outperforms every mainstream backbone we evaluate in all four out-of-distribution settings, by up to 24.8% relative to the strongest backbone. On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%. On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m. We systematically analyze GroundingPI's pretraining in scale and data composition. Downstream autonomous driving and robotic manipulation improve as the pretraining is scaled. Analyzing the data recipe across these 11 perceptual capabilities shows dense grounding's substantial benefits for both, and OCR's potential as a catalyst for perceptual learning. These results support grounding as a perceptual foundation, and dedicated perceptual pretraining as a promising direction for foundation models of physical intelligence.",
-      "authors": "Qize Yu, Lianrui Fan, Boyu Chen, Jiaqi Liang, Xini Ding, Yue Chen, Zetian Song, Yuran Wang, Yi Zou, Kaixuan Wang, Tianxing Chen, Wenxuan Song, Bohan Zhou, Mingleyang Li, Siqiao Huang, Yuqi Ye, Caigao Jiang, Wei Wei, Ruihai Wu, Hang Zhang, Yixiao Ge, Shuchang Zhou, Shilong Liu, Xianming Liu, Ping Luo, Shiyu Huang",
-      "date": "2026-09-30",
-      "published": "2026-09-30",
-      "url": "https://arxiv.org/abs/2609.39601",
-      "arxiv": "https://arxiv.org/abs/2609.39601",
-      "pdf": "https://arxiv.org/pdf/2609.39601.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "VLA",
-        "Manipulation",
-        "Reinforcement Learning",
-        "Dataset",
-        "Foundation Models",
-        "Autonomous Driving",
-        "WAM",
-        "World Model"
-      ],
-      "tags": [
-        "VLA",
-        "Manipulation",
-        "Reinforcement Learning",
-        "Dataset",
-        "Foundation Models"
       ]
     },
     {
@@ -15580,7 +15584,7 @@
       "url": "https://arxiv.org/abs/2609.38078",
       "arxiv": "https://arxiv.org/abs/2609.38078",
       "pdf": "https://arxiv.org/pdf/2609.38078.pdf",
-      "upvotes": 114,
+      "upvotes": 115,
       "categories": [
         "cs.RO"
       ],
@@ -15630,7 +15634,7 @@
       "url": "https://arxiv.org/abs/2609.38173",
       "arxiv": "https://arxiv.org/abs/2609.38173",
       "pdf": "https://arxiv.org/pdf/2609.38173.pdf",
-      "upvotes": 47,
+      "upvotes": 51,
       "categories": [
         "cs.RO"
       ],
@@ -15775,7 +15779,7 @@
       "url": "https://arxiv.org/abs/2609.36691",
       "arxiv": "https://arxiv.org/abs/2609.36691",
       "pdf": "https://arxiv.org/pdf/2609.36691.pdf",
-      "upvotes": 16,
+      "upvotes": 17,
       "categories": [
         "cs.CL"
       ],

@@ -161892,7 +161892,7 @@
       "url": "https://arxiv.org/abs/2609.38173",
       "arxiv": "https://arxiv.org/abs/2609.38173",
       "pdf": "https://arxiv.org/pdf/2609.38173.pdf",
-      "upvotes": 47,
+      "upvotes": 51,
       "categories": [
         "cs.RO"
       ],
@@ -161943,7 +161943,7 @@
       "url": "https://arxiv.org/abs/2609.38078",
       "arxiv": "https://arxiv.org/abs/2609.38078",
       "pdf": "https://arxiv.org/pdf/2609.38078.pdf",
-      "upvotes": 114,
+      "upvotes": 115,
       "categories": [
         "cs.RO"
       ],
@@ -163720,7 +163720,7 @@
       "url": "https://arxiv.org/abs/2609.36691",
       "arxiv": "https://arxiv.org/abs/2609.36691",
       "pdf": "https://arxiv.org/pdf/2609.36691.pdf",
-      "upvotes": 16,
+      "upvotes": 17,
       "categories": [
         "cs.CL"
       ],
@@ -164276,7 +164276,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.34606",
       "arxiv": "https://arxiv.org/abs/2609.34606",
       "pdf": "https://arxiv.org/pdf/2609.34606.pdf",
-      "upvotes": 50,
+      "upvotes": 51,
       "tags": [
         "World Model",
         "Embodied Vision"
@@ -165809,14 +165809,14 @@
       "url": "https://arxiv.org/abs/2609.39601",
       "arxiv": "https://arxiv.org/abs/2609.39601",
       "pdf": "https://arxiv.org/pdf/2609.39601.pdf",
-      "upvotes": 0,
+      "upvotes": 52,
       "categories": [
         "cs.CV",
         "cs.AI",
         "cs.LG",
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "VLA",
         "Manipulation",
@@ -165833,7 +165833,8 @@
         "Reinforcement Learning",
         "Dataset",
         "Foundation Models"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.39601"
     },
     "2609.39599": {
       "id": "2609.39599",
@@ -166002,7 +166003,7 @@
       "url": "https://arxiv.org/abs/2609.39375",
       "arxiv": "https://arxiv.org/abs/2609.39375",
       "pdf": "https://arxiv.org/pdf/2609.39375.pdf",
-      "upvotes": 54,
+      "upvotes": 55,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -167357,7 +167358,7 @@
       "url": "https://huggingface.co/papers/2610.02196",
       "arxiv": "https://arxiv.org/abs/2610.02196",
       "pdf": "https://arxiv.org/pdf/2610.02196.pdf",
-      "upvotes": 62,
+      "upvotes": 63,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -168294,7 +168295,7 @@
       "url": "https://arxiv.org/abs/2610.02054",
       "arxiv": "https://arxiv.org/abs/2610.02054",
       "pdf": "https://arxiv.org/pdf/2610.02054.pdf",
-      "upvotes": 61,
+      "upvotes": 73,
       "categories": [
         "cs.RO"
       ],
@@ -168888,7 +168889,7 @@
       "url": "https://arxiv.org/abs/2610.02368",
       "arxiv": "https://arxiv.org/abs/2610.02368",
       "pdf": "https://arxiv.org/pdf/2610.02368.pdf",
-      "upvotes": 0,
+      "upvotes": 56,
       "categories": [
         "cs.RO"
       ],
@@ -169254,7 +169255,7 @@
       "url": "https://arxiv.org/abs/2610.03607",
       "arxiv": "https://arxiv.org/abs/2610.03607",
       "pdf": "https://arxiv.org/pdf/2610.03607.pdf",
-      "upvotes": 40,
+      "upvotes": 43,
       "categories": [
         "cs.RO"
       ],
@@ -169705,7 +169706,7 @@
       "url": "https://arxiv.org/abs/2610.02508",
       "arxiv": "https://arxiv.org/abs/2610.02508",
       "pdf": "https://arxiv.org/pdf/2610.02508.pdf",
-      "upvotes": 97,
+      "upvotes": 98,
       "categories": [
         "cs.AI",
         "cs.CV",
@@ -174862,7 +174863,7 @@
       "url": "https://huggingface.co/papers/2610.10409",
       "arxiv": "https://arxiv.org/abs/2610.10409",
       "pdf": "https://arxiv.org/pdf/2610.10409.pdf",
-      "upvotes": 33,
+      "upvotes": 39,
       "categories": [
         "cs.RO",
         "cs.LG"
@@ -175223,7 +175224,7 @@
       "url": "https://huggingface.co/papers/2610.09455",
       "arxiv": "https://arxiv.org/abs/2610.09455",
       "pdf": "https://arxiv.org/pdf/2610.09455.pdf",
-      "upvotes": 44,
+      "upvotes": 45,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -175886,7 +175887,7 @@
       "url": "https://huggingface.co/papers/2610.10528",
       "arxiv": "https://arxiv.org/abs/2610.10528",
       "pdf": "https://arxiv.org/pdf/2610.10528.pdf",
-      "upvotes": 106,
+      "upvotes": 109,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -176039,11 +176040,11 @@
       "url": "https://arxiv.org/abs/2610.10288",
       "arxiv": "https://arxiv.org/abs/2610.10288",
       "pdf": "https://arxiv.org/pdf/2610.10288.pdf",
-      "upvotes": 0,
+      "upvotes": 10,
       "categories": [
         "cs.CV"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Manipulation",
         "Imitation Learning",
@@ -176057,7 +176058,8 @@
         "Bimanual",
         "Dataset",
         "Tactile"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.10288"
     },
     "2610.10283": {
       "id": "2610.10283",
@@ -176395,7 +176397,7 @@
       "url": "https://huggingface.co/papers/2610.08995",
       "arxiv": "https://arxiv.org/abs/2610.08995",
       "pdf": "https://arxiv.org/pdf/2610.08995.pdf",
-      "upvotes": 30,
+      "upvotes": 88,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -176526,7 +176528,7 @@
       "url": "https://huggingface.co/papers/2610.12468",
       "arxiv": "https://arxiv.org/abs/2610.12468",
       "pdf": "https://arxiv.org/pdf/2610.12468.pdf",
-      "upvotes": 38,
+      "upvotes": 41,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -176736,7 +176738,7 @@
       "url": "https://huggingface.co/papers/2610.12369",
       "arxiv": "https://arxiv.org/abs/2610.12369",
       "pdf": "https://arxiv.org/pdf/2610.12369.pdf",
-      "upvotes": 20,
+      "upvotes": 22,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -178467,7 +178469,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12126",
       "arxiv": "https://arxiv.org/abs/2610.12126",
       "pdf": "https://arxiv.org/pdf/2610.12126.pdf",
-      "upvotes": 72,
+      "upvotes": 75,
       "tags": [
         "Locomotion",
         "Navigation",
@@ -178491,7 +178493,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12299",
       "arxiv": "https://arxiv.org/abs/2610.12299",
       "pdf": "https://arxiv.org/pdf/2610.12299.pdf",
-      "upvotes": 52,
+      "upvotes": 58,
       "tags": [
         "Locomotion",
         "World Model",
@@ -178541,7 +178543,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.10437",
       "arxiv": "https://arxiv.org/abs/2610.10437",
       "pdf": "https://arxiv.org/pdf/2610.10437.pdf",
-      "upvotes": 23,
+      "upvotes": 25,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -178565,7 +178567,7 @@
       "hfUrl": "https://huggingface.co/papers/2606.03335",
       "arxiv": "https://arxiv.org/abs/2606.03335",
       "pdf": "https://arxiv.org/pdf/2606.03335.pdf",
-      "upvotes": 11,
+      "upvotes": 16,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -178981,7 +178983,7 @@
       "url": "https://huggingface.co/papers/2610.13118",
       "arxiv": "https://arxiv.org/abs/2610.13118",
       "pdf": "https://arxiv.org/pdf/2610.13118.pdf",
-      "upvotes": 0,
+      "upvotes": 9,
       "categories": [
         "cs.RO",
         "cs.MA",
@@ -179437,7 +179439,7 @@
       "url": "https://huggingface.co/papers/2610.12772",
       "arxiv": "https://arxiv.org/abs/2610.12772",
       "pdf": "https://arxiv.org/pdf/2610.12772.pdf",
-      "upvotes": 9,
+      "upvotes": 134,
       "categories": [
         "cs.RO"
       ],
@@ -180194,7 +180196,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.13021",
       "arxiv": "https://arxiv.org/abs/2610.13021",
       "pdf": "https://arxiv.org/pdf/2610.13021.pdf",
-      "upvotes": 21,
+      "upvotes": 63,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -180216,7 +180218,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.07121",
       "arxiv": "https://arxiv.org/abs/2610.07121",
       "pdf": "https://arxiv.org/pdf/2610.07121.pdf",
-      "upvotes": 21,
+      "upvotes": 33,
       "tags": [
         "LLM Agent",
         "Dataset",
@@ -180240,7 +180242,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.07625",
       "arxiv": "https://arxiv.org/abs/2610.07625",
       "pdf": "https://arxiv.org/pdf/2610.07625.pdf",
-      "upvotes": 1,
+      "upvotes": 20,
       "tags": [
         "LLM Agent",
         "Dataset"
@@ -180252,5 +180254,5 @@
       "source": "hf"
     }
   },
-  "generatedAt": "2026-10-12T06:07:18.694732+00:00"
+  "generatedAt": "2026-10-13T06:52:32.796219+00:00"
 }
