@@ -1,23 +1,43 @@
 {
-  "generatedAt": "2026-10-16T04:39:49.024756+00:00",
+  "generatedAt": "2026-10-17T04:38:56.917742+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-09",
-  "archiveCutoff": "2021-10-17",
-  "addedToday": 59,
-  "historyTotal": 7666,
-  "count": 345,
-  "archiveCount": 7037,
+  "recentCutoff": "2026-10-10",
+  "archiveCutoff": "2021-10-18",
+  "addedToday": 1,
+  "historyTotal": 7667,
+  "count": 282,
+  "archiveCount": 7101,
   "sources": {
-    "hf": 33,
-    "arxiv": 312
+    "hf": 27,
+    "arxiv": 255
   },
   "archiveSources": {
-    "hf": 204,
-    "arxiv": 6833
+    "hf": 213,
+    "arxiv": 6888
   },
   "warnings": [],
   "papers": [
+    {
+      "id": "2610.21095",
+      "title": "Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
+      "abstract": "World and action modeling are closely related, yet their reciprocal benefits under unified causal training remain unclear. We introduce OneWM, a simple framework for unified causal training that treats actions as both conditions for world prediction and targets for policy learning within a shared video-action architecture. Using this framework, we investigate whether learning forward dynamics conditioned on specified actions improves action learning, and whether learning to generate actions in turn improves action-conditioned world modeling. We use LIBERO, LIBERO-Plus, and RoboCasa365 as embodied testbeds to evaluate both policy learning and world modeling, complemented by real-world policy experiments. Learning the visual consequences of specified actions improves policy performance and generalization across changing scenes. In turn, action learning improves multi-view world-prediction fidelity under the same architecture. Together, these results answer both questions positively, supporting reciprocal benefits between world modeling and action generation under unified causal training.",
+      "authors": "Yue Su, Bokai Lin, Xinkai Wang, Chubin Zhang, Xiangnan Wu, Kuan Zhang, Weiyang Jin, Jiwen Yu, Yiming Li, Cewu Lu, Lixin Yang, Xihui Liu",
+      "date": "2026-10-16",
+      "published": "2026-10-16",
+      "url": "https://huggingface.co/papers/2610.21095",
+      "hfUrl": "https://huggingface.co/papers/2610.21095",
+      "arxiv": "https://arxiv.org/abs/2610.21095",
+      "pdf": "https://arxiv.org/pdf/2610.21095.pdf",
+      "upvotes": 30,
+      "tags": [
+        "World Model"
+      ],
+      "topics": [
+        "World Model"
+      ],
+      "source": "hf"
+    },
     {
       "id": "2610.21453",
       "title": "CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance",
@@ -28,7 +48,7 @@
       "url": "https://huggingface.co/papers/2610.21453",
       "arxiv": "https://arxiv.org/abs/2610.21453",
       "pdf": "https://arxiv.org/pdf/2610.21453.pdf",
-      "upvotes": 6,
+      "upvotes": 10,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -43,6 +63,26 @@
       "hfUrl": "https://huggingface.co/papers/2610.21453"
     },
     {
+      "id": "2610.22322",
+      "title": "Learning Self-Orchestration in Decentralized Agent Swarms",
+      "abstract": "The capabilities of an agent swarm depend on both its individual members and how they coordinate. Yet existing multi-agent systems often train agents within fixed orchestration structures, separating the learning of individual capabilities from the organization of collective behavior. We introduce market-based post-training (MPT), a framework for jointly learning action policies and self-orchestration in decentralized agent swarms. Agents express their willingness to participate through bids, which determine who acts and how collective outcomes provide local training credit. Learning both action and bidding behavior allows individual capabilities and patterns of participation to adapt together without a central coordinating agent. We evaluate MPT on embodied crafting, robot navigation, and deep research. Results show gains over monolithic post-training and confirm that agent participation indeed evolves with learning. With the same post-trained action policies, learned self-orchestration outperforms alternative coordination strategies. Ablations show that both action and bidding benefit from learning, and that learned bids provide more effective action-training signals. Beyond the original training objectives, trained swarms adapt faster to related tasks and achieve better performance with larger populations at inference time. Larger populations also suffer smaller performance losses under agent dropout, demonstrating that learned self-orchestration supports reuse, scaling, and robustness in decentralized agent swarms. Code and trained models are available at https://github.com/Embodied-Minds-Lab/MPT.",
+      "authors": "Guowei Xu, Zhenting Qi, Amani Kiruga, Himabindu Lakkaraju, Yilun Du",
+      "date": "2026-10-16",
+      "published": "2026-10-16",
+      "url": "https://huggingface.co/papers/2610.22322",
+      "hfUrl": "https://huggingface.co/papers/2610.22322",
+      "arxiv": "https://arxiv.org/abs/2610.22322",
+      "pdf": "https://arxiv.org/pdf/2610.22322.pdf",
+      "upvotes": 10,
+      "tags": [
+        "Navigation"
+      ],
+      "topics": [
+        "Navigation"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.22070",
       "title": "Memory as Weights: Internalizing Long-Term History for Streaming Videos",
       "abstract": "Streaming vision-language models (VLMs) must continuously integrate information from the past while remaining responsive to current observations and user queries. Existing memory mechanisms typically compress, retrieve, or cache historical observations and reintroduce them into the input context, forcing historical memory and current observations to compete for limited context. We propose MaLoW, a streaming memory framework that instead internalizes historical context into evolving lightweight parameter updates. MaLoW uses a recurrent HyperNetwork to incrementally consolidate incoming video observations into fixed-size LoRA weights, allowing historical information to be carried forward without revisiting the full video stream. In doing so, MaLoW represents history as weights, while keeping the current observation as input. To support training, we further construct MaLoW-Instruct, a large-scale streaming video dataset containing 381K question-answer pairs over 56K videos. We conduct extensive experiments to demonstrate that MaLoW achieves strong performance on OVO-Bench, StreamingBench, and StreamArena. On the backward split of OVO-Bench, MaLoW outperforms prior memory approaches by 3.9% to 11.8% across different video backbones while incurring only modest latency overhead. Beyond streaming video understanding, MaLoW also generalizes to vision-language-action models, improving the action success rate on Simpler WidowX by 9.3%.",
@@ -53,7 +93,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.22070",
       "arxiv": "https://arxiv.org/abs/2610.22070",
       "pdf": "https://arxiv.org/pdf/2610.22070.pdf",
-      "upvotes": 5,
+      "upvotes": 7,
       "tags": [
         "VLA",
         "Dataset"
@@ -65,24 +105,29 @@
       "source": "hf"
     },
     {
-      "id": "2610.22322",
-      "title": "Learning Self-Orchestration in Decentralized Agent Swarms",
-      "abstract": "The capabilities of an agent swarm depend on both its individual members and how they coordinate. Yet existing multi-agent systems often train agents within fixed orchestration structures, separating the learning of individual capabilities from the organization of collective behavior. We introduce market-based post-training (MPT), a framework for jointly learning action policies and self-orchestration in decentralized agent swarms. Agents express their willingness to participate through bids, which determine who acts and how collective outcomes provide local training credit. Learning both action and bidding behavior allows individual capabilities and patterns of participation to adapt together without a central coordinating agent. We evaluate MPT on embodied crafting, robot navigation, and deep research. Results show gains over monolithic post-training and confirm that agent participation indeed evolves with learning. With the same post-trained action policies, learned self-orchestration outperforms alternative coordination strategies. Ablations show that both action and bidding benefit from learning, and that learned bids provide more effective action-training signals. Beyond the original training objectives, trained swarms adapt faster to related tasks and achieve better performance with larger populations at inference time. Larger populations also suffer smaller performance losses under agent dropout, demonstrating that learned self-orchestration supports reuse, scaling, and robustness in decentralized agent swarms. Code and trained models are available at https://github.com/Embodied-Minds-Lab/MPT.",
-      "authors": "Guowei Xu, Zhenting Qi, Amani Kiruga, Himabindu Lakkaraju, Yilun Du",
-      "date": "2026-10-16",
-      "published": "2026-10-16",
-      "url": "https://huggingface.co/papers/2610.22322",
-      "hfUrl": "https://huggingface.co/papers/2610.22322",
-      "arxiv": "https://arxiv.org/abs/2610.22322",
-      "pdf": "https://arxiv.org/pdf/2610.22322.pdf",
-      "upvotes": 3,
-      "tags": [
-        "Navigation"
+      "id": "2610.21306",
+      "title": "VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models",
+      "abstract": "Vision-language-action (VLA) models transfer semantic knowledge acquired through vision-language pretraining to robot control, achieving strong performance across various benchmarks. However, most VLAs directly map observations to demonstrated actions without explicit supervision of intermediate physical state changes, making them prone to overfitting observation-action correspondences. Some methods introduce intermediate reasoning or future-state prediction in language, visual, or latent spaces to guide action generation, but do not explicitly supervise the physical state transition itself. We therefore propose VLA-$Δ$, a general framework that uses physical changes between current and future states as explicit learning targets. To support this objective, we construct a large-scale pretraining dataset and derive physical state-transition annotations covering task-relevant semantics and visual motion changes, providing more direct supervision for continuous action generation. During inference, the model generates actions directly from current observations without additional inference overhead. VLA-$Δ$ achieves performance competitive with the state of the art on LIBERO and RoboTwin, and outperforms $π_{0.5}$ in real-robot experiments. Our code is available at https://github.com/ZJU-OmniAI/VLA-Delta",
+      "authors": "Qi Lu, Jiarun Li, Ce Zhang, Miao Pan, Yi Pan, Xu Wang, Wenqi Zhang, Xuhong Zhang",
+      "date": "2026-10-15",
+      "published": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.21306",
+      "arxiv": "https://arxiv.org/abs/2610.21306",
+      "pdf": "https://arxiv.org/pdf/2610.21306.pdf",
+      "upvotes": 54,
+      "categories": [
+        "cs.CV"
       ],
+      "source": "hf",
       "topics": [
-        "Navigation"
+        "VLA",
+        "Dataset"
       ],
-      "source": "hf"
+      "tags": [
+        "VLA",
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.21306"
     },
     {
       "id": "2610.20442",
@@ -94,7 +139,7 @@
       "url": "https://huggingface.co/papers/2610.20442",
       "arxiv": "https://arxiv.org/abs/2610.20442",
       "pdf": "https://arxiv.org/pdf/2610.20442.pdf",
-      "upvotes": 31,
+      "upvotes": 32,
       "categories": [
         "cs.RO"
       ],
@@ -126,7 +171,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.14020",
       "arxiv": "https://arxiv.org/abs/2610.14020",
       "pdf": "https://arxiv.org/pdf/2610.14020.pdf",
-      "upvotes": 15,
+      "upvotes": 16,
       "tags": [
         "Dataset",
         "Autonomous Driving"
@@ -177,7 +222,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.19420",
       "arxiv": "https://arxiv.org/abs/2610.19420",
       "pdf": "https://arxiv.org/pdf/2610.19420.pdf",
-      "upvotes": 8,
+      "upvotes": 9,
       "tags": [
         "Navigation",
         "LLM Agent",
@@ -189,6 +234,30 @@
         "Embodied Vision"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2610.22362",
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "abstract": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that address a policy's failures and supervision that helps it overcome them. We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress. The memory compiles validated diagnoses from a vision-language critic into generation programs that recreate difficulties and training programs that help the policy overcome them. We further propose Text2potential to convert these diagnoses into staged potentials for action-chunk value learning, providing dense supervision for policy updates while preserving the task's optimal policy under standard shaping assumptions. Measured learning progress guides further generation and program refinement. Across four manipulation task families, CoDA improves out-of-distribution success from 5.3% after supervised fine-tuning to 27.6%, exceeding the strongest closed-loop baseline by 9.5 percentage points with the same generation budget. On LIBERO-Pro, 15 rounds of generation and training raise success from 25% to 84% under position perturbations and from 1% to 76% under instruction perturbations.",
+      "authors": "Tianjiao Yu, Zhilin Ou, Yifan Shen, Xinzhuo Li, Yuanzhe Liu, Onkar Kishor Susladkar, Fan Wang, Ismini Lourentzou",
+      "date": "2026-10-15",
+      "published": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.22362",
+      "arxiv": "https://arxiv.org/abs/2610.22362",
+      "pdf": "https://arxiv.org/pdf/2610.22362.pdf",
+      "upvotes": 9,
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation"
+      ],
+      "tags": [
+        "Manipulation"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.22362"
     },
     {
       "id": "2606.24472",
@@ -1030,30 +1099,6 @@
       ]
     },
     {
-      "id": "2610.21306",
-      "title": "VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models",
-      "abstract": "Vision-language-action (VLA) models transfer semantic knowledge acquired through vision-language pretraining to robot control, achieving strong performance across various benchmarks. However, most VLAs directly map observations to demonstrated actions without explicit supervision of intermediate physical state changes, making them prone to overfitting observation-action correspondences. Some methods introduce intermediate reasoning or future-state prediction in language, visual, or latent spaces to guide action generation, but do not explicitly supervise the physical state transition itself. We therefore propose VLA-$Δ$, a general framework that uses physical changes between current and future states as explicit learning targets. To support this objective, we construct a large-scale pretraining dataset and derive physical state-transition annotations covering task-relevant semantics and visual motion changes, providing more direct supervision for continuous action generation. During inference, the model generates actions directly from current observations without additional inference overhead. VLA-$Δ$ achieves performance competitive with the state of the art on LIBERO and RoboTwin, and outperforms $π_{0.5}$ in real-robot experiments. Our code is available at https://github.com/ZJU-OmniAI/VLA-Delta",
-      "authors": "Qi Lu, Jiarun Li, Ce Zhang, Miao Pan, Yi Pan, Xu Wang, Wenqi Zhang, Xuhong Zhang",
-      "date": "2026-10-15",
-      "published": "2026-10-15",
-      "url": "https://arxiv.org/abs/2610.21306",
-      "arxiv": "https://arxiv.org/abs/2610.21306",
-      "pdf": "https://arxiv.org/pdf/2610.21306.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "VLA",
-        "Dataset"
-      ],
-      "tags": [
-        "VLA",
-        "Dataset"
-      ]
-    },
-    {
       "id": "2610.21251",
       "title": "Do VLAs Really Follow Instructions? Diagnosing How-Level Instruction Following in Vision-Language-Action Models",
       "abstract": "Vision-language-action (VLA) models are expected to follow instructions like their language backbones, yet prior work has focused on What-level instructions that specify the task rather than How-level instructions that specify how to carry it out. Through our diagnoses, we find that How-level instructions do not help current VLAs and lower task success. We hypothesize that pairing each training episode with a single instruction limits How-level instruction following, and show that training with segment-level enriched instructions makes actions respond to such instructions without consistently raising task success. To measure How-level instruction following beyond standard benchmarks, we introduce SIMPLER-IN, where success requires conditions given only in the instruction. It shows that the gained responsiveness does not extend to demanding or out-of-distribution How-level instructions. How-level instruction following thus remains an open challenge.",
@@ -1237,29 +1282,6 @@
       ]
     },
     {
-      "id": "2610.22362",
-      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
-      "abstract": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that address a policy's failures and supervision that helps it overcome them. We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress. The memory compiles validated diagnoses from a vision-language critic into generation programs that recreate difficulties and training programs that help the policy overcome them. We further propose Text2potential to convert these diagnoses into staged potentials for action-chunk value learning, providing dense supervision for policy updates while preserving the task's optimal policy under standard shaping assumptions. Measured learning progress guides further generation and program refinement. Across four manipulation task families, CoDA improves out-of-distribution success from 5.3% after supervised fine-tuning to 27.6%, exceeding the strongest closed-loop baseline by 9.5 percentage points with the same generation budget. On LIBERO-Pro, 15 rounds of generation and training raise success from 25% to 84% under position perturbations and from 1% to 76% under instruction perturbations.",
-      "authors": "Tianjiao Yu, Zhilin Ou, Yifan Shen, Xinzhuo Li, Yuanzhe Liu, Onkar Kishor Susladkar, Fan Wang, Ismini Lourentzou",
-      "date": "2026-10-15",
-      "published": "2026-10-15",
-      "url": "https://arxiv.org/abs/2610.22362",
-      "arxiv": "https://arxiv.org/abs/2610.22362",
-      "pdf": "https://arxiv.org/pdf/2610.22362.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation"
-      ],
-      "tags": [
-        "Manipulation"
-      ]
-    },
-    {
       "id": "2610.21239",
       "title": "CLIS-MPPI: Closed-Loop Model Predictive Path Integral Control With Initial-State Sampling Under Execution Delay",
       "abstract": "Sampling-based motion planning such as Model Predictive Path Integral (MPPI) control has become attractive for robotics due to its ability to handle nonlinear dynamics and non-smooth objectives without gradient information, while leveraging parallel rollout computation for real-time performance. However, in real-world robotic systems, the optimized control input is often applied after a non-negligible planning delay, causing a mismatch between the state used in forward simulation and the actual state at control execution, which can significantly degrade planning accuracy and may even lead to unsafe behavior such as collisions. This paper proposes Closed-Loop MPPI with Initial-State Sampling (CLIS-MPPI), which explicitly addresses execution-time state mismatch by modeling planning delay as a distribution over plausible execution-time initial states, performing rollout optimization from sampled initial states, and applying a rollout-based local feedback correction during control execution. The proposed method is validated through real-world experiments on a 6-DoF UR5e manipulator in a narrow-passage task involving obstacle avoidance and end-effector target reaching. Across 5 real-world runs of the same task, standard MPPI collided in 2 runs, whereas CLIS-MPPI remained collision-free in all 5 runs. Averaged over all collision-free runs for each method (3 for MPPI and 5 for CLIS-MPPI), CLIS-MPPI reduced the average task completion time from 25.4s to 24.4s and the average end-effector path length from 0.456 m to 0.425 m. It also reduced the overall joint-position and joint-velocity root mean square errors (RMSEs) from 0.100 rad and 0.108 rad/s to 0.017 rad and 0.011 rad/s, respectively. These results demonstrate improved safety, planning-execution consistency, and motion smoothness.",
@@ -1310,7 +1332,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.18871",
       "arxiv": "https://arxiv.org/abs/2610.18871",
       "pdf": "https://arxiv.org/pdf/2610.18871.pdf",
-      "upvotes": 26,
+      "upvotes": 30,
       "tags": [
         "Grasping"
       ],
@@ -1329,7 +1351,7 @@
       "url": "https://huggingface.co/papers/2610.18872",
       "arxiv": "https://arxiv.org/abs/2610.18872",
       "pdf": "https://arxiv.org/pdf/2610.18872.pdf",
-      "upvotes": 23,
+      "upvotes": 27,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -2966,7 +2988,7 @@
       "url": "https://arxiv.org/abs/2610.18774",
       "arxiv": "https://arxiv.org/abs/2610.18774",
       "pdf": "https://arxiv.org/pdf/2610.18774.pdf",
-      "upvotes": 90,
+      "upvotes": 98,
       "categories": [
         "cs.RO"
       ],
@@ -2999,7 +3021,7 @@
       "url": "https://arxiv.org/abs/2610.18568",
       "arxiv": "https://arxiv.org/abs/2610.18568",
       "pdf": "https://arxiv.org/pdf/2610.18568.pdf",
-      "upvotes": 24,
+      "upvotes": 38,
       "categories": [
         "cs.RO"
       ],
@@ -3052,7 +3074,7 @@
       "url": "https://arxiv.org/abs/2610.18596",
       "arxiv": "https://arxiv.org/abs/2610.18596",
       "pdf": "https://arxiv.org/pdf/2610.18596.pdf",
-      "upvotes": 15,
+      "upvotes": 19,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -4936,7 +4958,7 @@
       "url": "https://huggingface.co/papers/2610.12772",
       "arxiv": "https://arxiv.org/abs/2610.12772",
       "pdf": "https://arxiv.org/pdf/2610.12772.pdf",
-      "upvotes": 151,
+      "upvotes": 153,
       "categories": [
         "cs.RO"
       ],
@@ -4966,7 +4988,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.13021",
       "arxiv": "https://arxiv.org/abs/2610.13021",
       "pdf": "https://arxiv.org/pdf/2610.13021.pdf",
-      "upvotes": 73,
+      "upvotes": 74,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -7325,7 +7347,9 @@
       "tags": [
         "Imitation Learning"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.12126",
       "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
@@ -7384,7 +7408,7 @@
       "url": "https://huggingface.co/papers/2610.12468",
       "arxiv": "https://arxiv.org/abs/2610.12468",
       "pdf": "https://arxiv.org/pdf/2610.12468.pdf",
-      "upvotes": 46,
+      "upvotes": 48,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -7413,7 +7437,7 @@
       "hfUrl": "https://huggingface.co/papers/2606.03335",
       "arxiv": "https://arxiv.org/abs/2606.03335",
       "pdf": "https://arxiv.org/pdf/2606.03335.pdf",
-      "upvotes": 27,
+      "upvotes": 28,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -7496,7 +7520,7 @@
       "url": "https://arxiv.org/abs/2610.13781",
       "arxiv": "https://arxiv.org/abs/2610.13781",
       "pdf": "https://arxiv.org/pdf/2610.13781.pdf",
-      "upvotes": 10,
+      "upvotes": 17,
       "categories": [
         "cs.CV"
       ],
@@ -8982,9 +9006,7 @@
       "tags": [
         "VLA"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.10528",
       "title": "Long-WAM: Scaling the Context of World-Action Models",
@@ -9055,7 +9077,7 @@
       "url": "https://huggingface.co/papers/2610.10409",
       "arxiv": "https://arxiv.org/abs/2610.10409",
       "pdf": "https://arxiv.org/pdf/2610.10409.pdf",
-      "upvotes": 39,
+      "upvotes": 40,
       "categories": [
         "cs.RO",
         "cs.LG"
@@ -9107,7 +9129,7 @@
       "url": "https://arxiv.org/abs/2610.12099",
       "arxiv": "https://arxiv.org/abs/2610.12099",
       "pdf": "https://arxiv.org/pdf/2610.12099.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "categories": [
         "cs.RO"
       ],
@@ -14724,7 +14746,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.02521",
       "arxiv": "https://arxiv.org/abs/2610.02521",
       "pdf": "https://arxiv.org/pdf/2610.02521.pdf",
-      "upvotes": 59,
+      "upvotes": 60,
       "tags": [
         "World Model",
         "LLM Agent",
@@ -19266,7 +19288,7 @@
       "url": "https://arxiv.org/abs/2610.02368",
       "arxiv": "https://arxiv.org/abs/2610.02368",
       "pdf": "https://arxiv.org/pdf/2610.02368.pdf",
-      "upvotes": 66,
+      "upvotes": 68,
       "categories": [
         "cs.RO"
       ],
@@ -19436,7 +19458,7 @@
       "url": "https://arxiv.org/abs/2610.02089",
       "arxiv": "https://arxiv.org/abs/2610.02089",
       "pdf": "https://arxiv.org/pdf/2610.02089.pdf",
-      "upvotes": 22,
+      "upvotes": 24,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -20968,7 +20990,7 @@
       "url": "https://arxiv.org/abs/2609.39601",
       "arxiv": "https://arxiv.org/abs/2609.39601",
       "pdf": "https://arxiv.org/pdf/2609.39601.pdf",
-      "upvotes": 315,
+      "upvotes": 316,
       "categories": [
         "cs.CV",
         "cs.AI",
@@ -23304,7 +23326,7 @@
       "url": "https://arxiv.org/abs/2609.38173",
       "arxiv": "https://arxiv.org/abs/2609.38173",
       "pdf": "https://arxiv.org/pdf/2609.38173.pdf",
-      "upvotes": 63,
+      "upvotes": 64,
       "categories": [
         "cs.RO"
       ],
