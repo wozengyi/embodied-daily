@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-10-17T04:38:56.917742+00:00",
+  "generatedAt": "2026-10-18T04:42:32.647043+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-10",
-  "archiveCutoff": "2021-10-18",
-  "addedToday": 1,
+  "recentCutoff": "2026-10-11",
+  "archiveCutoff": "2021-10-19",
+  "addedToday": 0,
   "historyTotal": 7667,
-  "count": 282,
-  "archiveCount": 7101,
+  "count": 255,
+  "archiveCount": 7128,
   "sources": {
     "hf": 27,
-    "arxiv": 255
+    "arxiv": 228
   },
   "archiveSources": {
     "hf": 213,
-    "arxiv": 6888
+    "arxiv": 6915
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2610.21095",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.21095",
       "arxiv": "https://arxiv.org/abs/2610.21095",
       "pdf": "https://arxiv.org/pdf/2610.21095.pdf",
-      "upvotes": 30,
+      "upvotes": 31,
       "tags": [
         "World Model"
       ],
@@ -139,7 +141,7 @@
       "url": "https://huggingface.co/papers/2610.20442",
       "arxiv": "https://arxiv.org/abs/2610.20442",
       "pdf": "https://arxiv.org/pdf/2610.20442.pdf",
-      "upvotes": 32,
+      "upvotes": 34,
       "categories": [
         "cs.RO"
       ],
@@ -1332,7 +1334,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.18871",
       "arxiv": "https://arxiv.org/abs/2610.18871",
       "pdf": "https://arxiv.org/pdf/2610.18871.pdf",
-      "upvotes": 30,
+      "upvotes": 31,
       "tags": [
         "Grasping"
       ],
@@ -1351,7 +1353,7 @@
       "url": "https://huggingface.co/papers/2610.18872",
       "arxiv": "https://arxiv.org/abs/2610.18872",
       "pdf": "https://arxiv.org/pdf/2610.18872.pdf",
-      "upvotes": 27,
+      "upvotes": 29,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -2988,7 +2990,7 @@
       "url": "https://arxiv.org/abs/2610.18774",
       "arxiv": "https://arxiv.org/abs/2610.18774",
       "pdf": "https://arxiv.org/pdf/2610.18774.pdf",
-      "upvotes": 98,
+      "upvotes": 102,
       "categories": [
         "cs.RO"
       ],
@@ -3021,7 +3023,7 @@
       "url": "https://arxiv.org/abs/2610.18568",
       "arxiv": "https://arxiv.org/abs/2610.18568",
       "pdf": "https://arxiv.org/pdf/2610.18568.pdf",
-      "upvotes": 38,
+      "upvotes": 42,
       "categories": [
         "cs.RO"
       ],
@@ -3039,6 +3041,35 @@
         "WAM"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.18568"
+    },
+    {
+      "id": "2610.18596",
+      "title": "ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models",
+      "abstract": "Reinforcement learning (RL) post-training improves robot foundation models (RFMs) beyond their demonstrations, but real-world deployment demands more: learning new tasks efficiently while retaining previously acquired behaviors. Existing continual RL methods on top of VLAs mitigate forgetting but rely on on-policy updates with limited forward transfer, whereas off-policy methods improve single-task sample efficiency without addressing learner persistence across tasks. We propose ACCRUE, a continual off-policy RL framework that carries lightweight actor and critic networks across tasks, allowing each stage to reuse behavioral and value knowledge acquired through prior RL. The inherited critic adapts only on current-task transitions and guides current-task actor learning, while prior behavior is preserved by distilling the actor toward cached targets on a small number of retained episodes. Fixed visual features keep the inherited learner and its replay compatible with base-policy updates. Across contact-rich assembly sequences in simulation and on real-robot hardware, ACCRUE accelerates subsequent-task learning with near-zero forgetting and significantly reduces real-robot training time by 31.0\\% to 68.5\\%.",
+      "authors": "Changyeon Kim, Kimin Lee, Yashraj Narang, Yijie Guo",
+      "date": "2026-10-13",
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18596",
+      "arxiv": "https://arxiv.org/abs/2610.18596",
+      "pdf": "https://arxiv.org/pdf/2610.18596.pdf",
+      "upvotes": 21,
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Reinforcement Learning",
+        "Foundation Models"
+      ],
+      "tags": [
+        "Manipulation",
+        "Reinforcement Learning",
+        "Foundation Models"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.18596"
     },
     {
       "id": "2610.12417",
@@ -3063,35 +3094,6 @@
         "Dataset"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2610.18596",
-      "title": "ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models",
-      "abstract": "Reinforcement learning (RL) post-training improves robot foundation models (RFMs) beyond their demonstrations, but real-world deployment demands more: learning new tasks efficiently while retaining previously acquired behaviors. Existing continual RL methods on top of VLAs mitigate forgetting but rely on on-policy updates with limited forward transfer, whereas off-policy methods improve single-task sample efficiency without addressing learner persistence across tasks. We propose ACCRUE, a continual off-policy RL framework that carries lightweight actor and critic networks across tasks, allowing each stage to reuse behavioral and value knowledge acquired through prior RL. The inherited critic adapts only on current-task transitions and guides current-task actor learning, while prior behavior is preserved by distilling the actor toward cached targets on a small number of retained episodes. Fixed visual features keep the inherited learner and its replay compatible with base-policy updates. Across contact-rich assembly sequences in simulation and on real-robot hardware, ACCRUE accelerates subsequent-task learning with near-zero forgetting and significantly reduces real-robot training time by 31.0\\% to 68.5\\%.",
-      "authors": "Changyeon Kim, Kimin Lee, Yashraj Narang, Yijie Guo",
-      "date": "2026-10-13",
-      "published": "2026-10-13",
-      "url": "https://arxiv.org/abs/2610.18596",
-      "arxiv": "https://arxiv.org/abs/2610.18596",
-      "pdf": "https://arxiv.org/pdf/2610.18596.pdf",
-      "upvotes": 19,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "source": "hf",
-      "topics": [
-        "Manipulation",
-        "Reinforcement Learning",
-        "Foundation Models"
-      ],
-      "tags": [
-        "Manipulation",
-        "Reinforcement Learning",
-        "Foundation Models"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.18596"
     },
     {
       "id": "2610.17638",
@@ -5034,7 +5036,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.07625",
       "arxiv": "https://arxiv.org/abs/2610.07625",
       "pdf": "https://arxiv.org/pdf/2610.07625.pdf",
-      "upvotes": 29,
+      "upvotes": 30,
       "tags": [
         "LLM Agent",
         "Dataset"
@@ -5055,7 +5057,7 @@
       "url": "https://huggingface.co/papers/2610.13118",
       "arxiv": "https://arxiv.org/abs/2610.13118",
       "pdf": "https://arxiv.org/pdf/2610.13118.pdf",
-      "upvotes": 16,
+      "upvotes": 18,
       "categories": [
         "cs.RO",
         "cs.MA",
@@ -6654,7 +6656,9 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.14936",
       "title": "CFG-Policy: Unified Diffusion Policy Learning Framework via Classifier-free Guidance",
@@ -7347,9 +7351,7 @@
       "tags": [
         "Imitation Learning"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.12126",
       "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
@@ -7408,7 +7410,7 @@
       "url": "https://huggingface.co/papers/2610.12468",
       "arxiv": "https://arxiv.org/abs/2610.12468",
       "pdf": "https://arxiv.org/pdf/2610.12468.pdf",
-      "upvotes": 48,
+      "upvotes": 49,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -7437,7 +7439,7 @@
       "hfUrl": "https://huggingface.co/papers/2606.03335",
       "arxiv": "https://arxiv.org/abs/2606.03335",
       "pdf": "https://arxiv.org/pdf/2606.03335.pdf",
-      "upvotes": 28,
+      "upvotes": 32,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -9017,7 +9019,7 @@
       "url": "https://huggingface.co/papers/2610.10528",
       "arxiv": "https://arxiv.org/abs/2610.10528",
       "pdf": "https://arxiv.org/pdf/2610.10528.pdf",
-      "upvotes": 111,
+      "upvotes": 113,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -11278,7 +11280,7 @@
       "url": "https://arxiv.org/abs/2610.10288",
       "arxiv": "https://arxiv.org/abs/2610.10288",
       "pdf": "https://arxiv.org/pdf/2610.10288.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "categories": [
         "cs.CV"
       ],
@@ -13057,7 +13059,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.04929",
       "arxiv": "https://arxiv.org/abs/2610.04929",
       "pdf": "https://arxiv.org/pdf/2610.04929.pdf",
-      "upvotes": 19,
+      "upvotes": 20,
       "tags": [
         "Robotics"
       ],
@@ -14790,7 +14792,7 @@
       "hfUrl": "https://huggingface.co/papers/2609.36529",
       "arxiv": "https://arxiv.org/abs/2609.36529",
       "pdf": "https://arxiv.org/pdf/2609.36529.pdf",
-      "upvotes": 38,
+      "upvotes": 39,
       "tags": [
         "Hardware"
       ],
@@ -19261,7 +19263,7 @@
       "url": "https://arxiv.org/abs/2610.02054",
       "arxiv": "https://arxiv.org/abs/2610.02054",
       "pdf": "https://arxiv.org/pdf/2610.02054.pdf",
-      "upvotes": 77,
+      "upvotes": 81,
       "categories": [
         "cs.RO"
       ],
@@ -19288,7 +19290,7 @@
       "url": "https://arxiv.org/abs/2610.02368",
       "arxiv": "https://arxiv.org/abs/2610.02368",
       "pdf": "https://arxiv.org/pdf/2610.02368.pdf",
-      "upvotes": 68,
+      "upvotes": 71,
       "categories": [
         "cs.RO"
       ],
@@ -19458,7 +19460,7 @@
       "url": "https://arxiv.org/abs/2610.02089",
       "arxiv": "https://arxiv.org/abs/2610.02089",
       "pdf": "https://arxiv.org/pdf/2610.02089.pdf",
-      "upvotes": 24,
+      "upvotes": 25,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -20990,7 +20992,7 @@
       "url": "https://arxiv.org/abs/2609.39601",
       "arxiv": "https://arxiv.org/abs/2609.39601",
       "pdf": "https://arxiv.org/pdf/2609.39601.pdf",
-      "upvotes": 316,
+      "upvotes": 320,
       "categories": [
         "cs.CV",
         "cs.AI",
