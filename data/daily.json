@@ -1,42 +1,110 @@
 {
-  "generatedAt": "2026-10-22T04:58:41.011243+00:00",
+  "generatedAt": "2026-10-23T05:00:52.768663+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-15",
-  "archiveCutoff": "2021-10-23",
-  "addedToday": 64,
-  "historyTotal": 7914,
-  "count": 296,
-  "archiveCount": 7334,
+  "recentCutoff": "2026-10-16",
+  "archiveCutoff": "2021-10-24",
+  "addedToday": 4,
+  "historyTotal": 7918,
+  "count": 247,
+  "archiveCount": 7387,
   "sources": {
-    "hf": 31,
-    "arxiv": 265
+    "hf": 30,
+    "arxiv": 217
   },
   "archiveSources": {
-    "hf": 235,
-    "arxiv": 7099
+    "hf": 242,
+    "arxiv": 7145
   },
   "warnings": [],
   "papers": [
     {
-      "id": "2610.28698",
-      "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
-      "abstract": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
-      "authors": "Kuan Zhang, Yukun Chen, Zhihao Yang, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Jinkun Hou, Tao Tan, Yinhe Zheng, Yiming Li",
-      "date": "2026-10-22",
-      "published": "2026-10-22",
-      "url": "https://huggingface.co/papers/2610.28698",
-      "hfUrl": "https://huggingface.co/papers/2610.28698",
-      "arxiv": "https://arxiv.org/abs/2610.28698",
-      "pdf": "https://arxiv.org/pdf/2610.28698.pdf",
-      "upvotes": 13,
+      "id": "2610.27851",
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "abstract": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.",
+      "authors": "Junha Song, Geonmo Gu, Jeongeun Park, Heejeong Nam, Lucas Maes, Byeongho Heo, Dongyoon Han, Sangdoo Yun",
+      "date": "2026-10-23",
+      "published": "2026-10-23",
+      "url": "https://huggingface.co/papers/2610.27851",
+      "hfUrl": "https://huggingface.co/papers/2610.27851",
+      "arxiv": "https://arxiv.org/abs/2610.27851",
+      "pdf": "https://arxiv.org/pdf/2610.27851.pdf",
+      "upvotes": 6,
       "tags": [
-        "Dataset",
-        "Embodied Vision"
+        "World Model",
+        "Dataset"
       ],
       "topics": [
+        "World Model",
+        "Dataset"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2610.31494",
+      "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+      "abstract": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23 source datasets and adapting them for reliable offline evaluation. The resulting benchmark preserves realistic scenarios from interactive environments across diverse domains, and its model rankings track those from corresponding online evaluations. Across the 22 evaluated models, the best achieves only 58.5% accuracy. Our cross-domain analysis shows that errors are driven primarily by failures to ground and maintain accurate representations of the current and evolving visual state, including localizing relevant UI elements, interpreting motion, tracking state changes over time, and inferring 3D spatial relationships, rather than by task misinterpretation or downstream logical reasoning.",
+      "authors": "Advait Gupta, Sachin Konan, Tom Yin, Gabriel Sarch, Zhuang Liu",
+      "date": "2026-10-23",
+      "published": "2026-10-23",
+      "url": "https://huggingface.co/papers/2610.31494",
+      "hfUrl": "https://huggingface.co/papers/2610.31494",
+      "arxiv": "https://arxiv.org/abs/2610.31494",
+      "pdf": "https://arxiv.org/pdf/2610.31494.pdf",
+      "upvotes": 5,
+      "tags": [
+        "VLA",
         "Dataset",
-        "Embodied Vision"
+        "Simulator"
+      ],
+      "topics": [
+        "VLA",
+        "Dataset",
+        "Simulator"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2610.30320",
+      "title": "Self-Distilling Future Video Representations for World Action Models",
+      "abstract": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
+      "authors": "Huiwon Jang, Suhyeok Jang, Hyeonmo Kang, Seungku Kim, Jinwoo Shin, Sihyun Yu",
+      "date": "2026-10-23",
+      "published": "2026-10-23",
+      "url": "https://huggingface.co/papers/2610.30320",
+      "hfUrl": "https://huggingface.co/papers/2610.30320",
+      "arxiv": "https://arxiv.org/abs/2610.30320",
+      "pdf": "https://arxiv.org/pdf/2610.30320.pdf",
+      "upvotes": 1,
+      "tags": [
+        "World Model",
+        "WAM"
+      ],
+      "topics": [
+        "World Model",
+        "WAM"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2610.31474",
+      "title": "Skeleton-Grounded Latent Action Model for Robot World Models",
+      "abstract": "Robot world models simulate how environments evolve in response to robot actions. Latent action models enable learning dynamics from videos by encoding visual transitions as proxy actions. However, reconstruction-driven latent actions mix robot motion with object responses and other scene changes, complicating their correspondence with robot controls. We propose SkeLAM, a skeleton-guided latent action model for controllable robot world modeling. SkeLAM decomposes latent actions into a kinematic component grounded by robot skeleton supervision and a residual component retaining complementary visual dynamics. Cross-modal swap reconstruction encourages RGB-derived and skeleton-derived kinematic representations to be interchangeable during video reconstruction. The world model incorporates both components through separate conditioning pathways, while branch dropout reduces its dependence on future-derived residual information. A lightweight adapter maps robot actions to the kinematic space, and subsequent world-model fine-tuning adapts generation to these predicted conditions. At inference, the model generates future observations from the current observation and robot actions. On DROID, SkeLAM reduces end-effector ADE by 19.5% and LPIPS by 11.1% compared with DreamDojo. Motion probing supports kinematic specialization, while qualitative results demonstrate zero-shot human-to-robot motion transfer in generated rollouts. Policy evaluation shows agreement between predicted success rates and those measured in real robot executions.",
+      "authors": "Qi Lv, Jiayi Lin, Yuxin Jiang, Jianzong Wang, Xiang Deng, Mike Shou Zheng",
+      "date": "2026-10-23",
+      "published": "2026-10-23",
+      "url": "https://huggingface.co/papers/2610.31474",
+      "hfUrl": "https://huggingface.co/papers/2610.31474",
+      "arxiv": "https://arxiv.org/abs/2610.31474",
+      "pdf": "https://arxiv.org/pdf/2610.31474.pdf",
+      "upvotes": 1,
+      "tags": [
+        "World Model",
+        "Dataset"
+      ],
+      "topics": [
+        "World Model",
+        "Dataset"
       ],
       "source": "hf"
     },
@@ -50,7 +118,7 @@
       "url": "https://huggingface.co/papers/2610.29997",
       "arxiv": "https://arxiv.org/abs/2610.29997",
       "pdf": "https://arxiv.org/pdf/2610.29997.pdf",
-      "upvotes": 12,
+      "upvotes": 133,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -73,6 +141,28 @@
       "hfUrl": "https://huggingface.co/papers/2610.29997"
     },
     {
+      "id": "2610.28698",
+      "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
+      "abstract": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
+      "authors": "Kuan Zhang, Yukun Chen, Zhihao Yang, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Jinkun Hou, Tao Tan, Yinhe Zheng, Yiming Li",
+      "date": "2026-10-22",
+      "published": "2026-10-22",
+      "url": "https://huggingface.co/papers/2610.28698",
+      "hfUrl": "https://huggingface.co/papers/2610.28698",
+      "arxiv": "https://arxiv.org/abs/2610.28698",
+      "pdf": "https://arxiv.org/pdf/2610.28698.pdf",
+      "upvotes": 53,
+      "tags": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.30108",
       "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
       "abstract": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome. Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across all five capabilities rather than task success alone.",
@@ -82,7 +172,7 @@
       "url": "https://huggingface.co/papers/2610.30108",
       "arxiv": "https://arxiv.org/abs/2610.30108",
       "pdf": "https://arxiv.org/pdf/2610.30108.pdf",
-      "upvotes": 7,
+      "upvotes": 19,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -111,7 +201,7 @@
       "url": "https://huggingface.co/papers/2610.30136",
       "arxiv": "https://arxiv.org/abs/2610.30136",
       "pdf": "https://arxiv.org/pdf/2610.30136.pdf",
-      "upvotes": 2,
+      "upvotes": 13,
       "categories": [
         "cs.RO"
       ],
@@ -142,7 +232,7 @@
       "url": "https://huggingface.co/papers/2610.28594",
       "arxiv": "https://arxiv.org/abs/2610.28594",
       "pdf": "https://arxiv.org/pdf/2610.28594.pdf",
-      "upvotes": 42,
+      "upvotes": 48,
       "categories": [
         "cs.CV"
       ],
@@ -168,7 +258,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.28632",
       "arxiv": "https://arxiv.org/abs/2610.28632",
       "pdf": "https://arxiv.org/pdf/2610.28632.pdf",
-      "upvotes": 22,
+      "upvotes": 25,
       "tags": [
         "Robotics"
       ],
@@ -176,6 +266,33 @@
         "Robotics"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2610.29560",
+      "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
+      "abstract": "Vision-language-action (VLA) models achieve strong performance across embodied manipulation tasks by unifying visual understanding, language conditioning, and action generation. However, long-horizon tasks can involve non-Markovian dependencies: successful decisions may require retaining task progress and past interaction outcomes, while partial observability and execution errors compound over time. Existing work has begun to address these challenges by augmenting foundation-model policies with memory and by introducing hierarchical architectures that separate high-level planning from low-level execution. We organize the high-level VLM as a robotic agent through an editable harness to maintain task context and improve planning through execution experience. We instantiate this approach as SERA (Self-Evolving Robotic Agent), with a fixed VLA executor providing low-level control. The harness maintains and updates task context using observations and execution feedback to guide subsequent planning. Self-evolution uses environment rollouts to propose and evaluate harness revisions, with the selected configuration fixed before held-out testing. On RoboMME, SERA achieves 51.38% overall success with autonomous selection, compared with 44.38% without self-evolution. Our exploration suggests that agentic planning is a promising direction for history-dependent robotic manipulation.",
+      "authors": "Tingwen Du, Haoyu Guo, Hanxue Zhang, Xuanxu Wang, Junting Dong, Chao Gao, Mingfei Han, Tao Lu, Mulin Yu, Chunhua Shen, Xiaojun Chang, Zhihui Li",
+      "date": "2026-10-21",
+      "published": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.29560",
+      "arxiv": "https://arxiv.org/abs/2610.29560",
+      "pdf": "https://arxiv.org/pdf/2610.29560.pdf",
+      "upvotes": 10,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Manipulation",
+        "Navigation"
+      ],
+      "tags": [
+        "VLA",
+        "Manipulation",
+        "Navigation"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.29560"
     },
     {
       "id": "2610.26711",
@@ -188,7 +305,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.26711",
       "arxiv": "https://arxiv.org/abs/2610.26711",
       "pdf": "https://arxiv.org/pdf/2610.26711.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "tags": [
         "Humanoid",
         "Locomotion",
@@ -225,6 +342,30 @@
         "Robotics"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2610.29677",
+      "title": "Toward Recursive Self-Improvement in Physical AI",
+      "abstract": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
+      "authors": "Meng Luo, Zechen Bai, Shanqing Xu, Yanlin Li, Kaixin Li, Mengchen Qian, Weifeng Lu, Ran Zhang, Yingtian Zou, Ziyang Luo, Wei Chen, Hongzhan Lin",
+      "date": "2026-10-21",
+      "published": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.29677",
+      "arxiv": "https://arxiv.org/abs/2610.29677",
+      "pdf": "https://arxiv.org/pdf/2610.29677.pdf",
+      "upvotes": 2,
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Robotics"
+      ],
+      "tags": [
+        "Robotics"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.29677"
     },
     {
       "id": "2610.30097",
@@ -610,32 +751,6 @@
         "Imitation Learning",
         "Foundation Models",
         "WAM"
-      ]
-    },
-    {
-      "id": "2610.29560",
-      "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
-      "abstract": "Vision-language-action (VLA) models achieve strong performance across embodied manipulation tasks by unifying visual understanding, language conditioning, and action generation. However, long-horizon tasks can involve non-Markovian dependencies: successful decisions may require retaining task progress and past interaction outcomes, while partial observability and execution errors compound over time. Existing work has begun to address these challenges by augmenting foundation-model policies with memory and by introducing hierarchical architectures that separate high-level planning from low-level execution. We organize the high-level VLM as a robotic agent through an editable harness to maintain task context and improve planning through execution experience. We instantiate this approach as SERA (Self-Evolving Robotic Agent), with a fixed VLA executor providing low-level control. The harness maintains and updates task context using observations and execution feedback to guide subsequent planning. Self-evolution uses environment rollouts to propose and evaluate harness revisions, with the selected configuration fixed before held-out testing. On RoboMME, SERA achieves 51.38% overall success with autonomous selection, compared with 44.38% without self-evolution. Our exploration suggests that agentic planning is a promising direction for history-dependent robotic manipulation.",
-      "authors": "Tingwen Du, Haoyu Guo, Hanxue Zhang, Xuanxu Wang, Junting Dong, Chao Gao, Mingfei Han, Tao Lu, Mulin Yu, Chunhua Shen, Xiaojun Chang, Zhihui Li",
-      "date": "2026-10-21",
-      "published": "2026-10-21",
-      "url": "https://arxiv.org/abs/2610.29560",
-      "arxiv": "https://arxiv.org/abs/2610.29560",
-      "pdf": "https://arxiv.org/pdf/2610.29560.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "VLA",
-        "Manipulation",
-        "Navigation"
-      ],
-      "tags": [
-        "VLA",
-        "Manipulation",
-        "Navigation"
       ]
     },
     {
@@ -1241,29 +1356,6 @@
       ]
     },
     {
-      "id": "2610.29677",
-      "title": "Toward Recursive Self-Improvement in Physical AI",
-      "abstract": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
-      "authors": "Meng Luo, Zechen Bai, Shanqing Xu, Yanlin Li, Kaixin Li, Mengchen Qian, Weifeng Lu, Ran Zhang, Yingtian Zou, Ziyang Luo, Wei Chen, Hongzhan Lin",
-      "date": "2026-10-21",
-      "published": "2026-10-21",
-      "url": "https://arxiv.org/abs/2610.29677",
-      "arxiv": "https://arxiv.org/abs/2610.29677",
-      "pdf": "https://arxiv.org/pdf/2610.29677.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
       "id": "2610.29568",
       "title": "Mixture of Flow Matching and Particle Filter for Proprioception-Based Online Contact Estimation",
       "abstract": "In this article, we propose ContactFlowFilter, a novel approach for contact estimation that determines the number of active contacts, their locations, and the associated force vectors. We consider a robot manipulator equipped with joint torque sensors and a base force/torque sensor; such a proprioceptive-only setup presents a challenging inverse problem characterized by (i) multi-modality from non-unique solutions, (ii) temporal dependencies in state evolution, and (iii) discrete contact events involving contact addition/removal. Existing approaches, such as particle filters (PFs) and learning-based methods, often struggle to address these challenges simultaneously. To overcome this, ContactFlowFilter integrates a generative model into the PF framework. The recursive structure of the PF captures temporal dependencies, while the flow matching model serves as an auxiliary proposal distribution to track multi-modal beliefs and detect contact events. Extensive validation in both simulation and real-world experiments confirms the effectiveness of the proposed method. In real-world settings, ContactFlowFilter achieves the lowest dissimilarity from the target distribution, with errors of only 0.36 cm and 0.88 cm for single- and dual-contact scenarios, respectively, while operating at 0.69 ms and 2.69 ms.",
@@ -1358,7 +1450,7 @@
       "url": "https://huggingface.co/papers/2610.26625",
       "arxiv": "https://arxiv.org/abs/2610.26625",
       "pdf": "https://arxiv.org/pdf/2610.26625.pdf",
-      "upvotes": 173,
+      "upvotes": 187,
       "categories": [
         "cs.CV"
       ],
@@ -1385,7 +1477,7 @@
       "url": "https://huggingface.co/papers/2610.25736",
       "arxiv": "https://arxiv.org/abs/2610.25736",
       "pdf": "https://arxiv.org/pdf/2610.25736.pdf",
-      "upvotes": 114,
+      "upvotes": 125,
       "categories": [
         "cs.RO"
       ],
@@ -1409,7 +1501,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.25690",
       "arxiv": "https://arxiv.org/abs/2610.25690",
       "pdf": "https://arxiv.org/pdf/2610.25690.pdf",
-      "upvotes": 85,
+      "upvotes": 89,
       "tags": [
         "Locomotion",
         "Navigation",
@@ -1437,7 +1529,7 @@
       "url": "https://huggingface.co/papers/2610.25666",
       "arxiv": "https://arxiv.org/abs/2610.25666",
       "pdf": "https://arxiv.org/pdf/2610.25666.pdf",
-      "upvotes": 18,
+      "upvotes": 22,
       "categories": [
         "cs.CV"
       ],
@@ -1462,7 +1554,7 @@
       "url": "https://arxiv.org/abs/2610.28589",
       "arxiv": "https://arxiv.org/abs/2610.28589",
       "pdf": "https://arxiv.org/pdf/2610.28589.pdf",
-      "upvotes": 16,
+      "upvotes": 21,
       "categories": [
         "cs.RO"
       ],
@@ -2818,7 +2910,7 @@
       "url": "https://huggingface.co/papers/2610.22471",
       "arxiv": "https://arxiv.org/abs/2610.22471",
       "pdf": "https://arxiv.org/pdf/2610.22471.pdf",
-      "upvotes": 460,
+      "upvotes": 465,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -2938,7 +3030,7 @@
       "url": "https://arxiv.org/abs/2610.26765",
       "arxiv": "https://arxiv.org/abs/2610.26765",
       "pdf": "https://arxiv.org/pdf/2610.26765.pdf",
-      "upvotes": 8,
+      "upvotes": 9,
       "categories": [
         "cs.RO"
       ],
@@ -2970,7 +3062,7 @@
       "url": "https://arxiv.org/abs/2610.27040",
       "arxiv": "https://arxiv.org/abs/2610.27040",
       "pdf": "https://arxiv.org/pdf/2610.27040.pdf",
-      "upvotes": 4,
+      "upvotes": 9,
       "categories": [
         "cs.RO"
       ],
@@ -4135,7 +4227,7 @@
       "url": "https://arxiv.org/abs/2610.25043",
       "arxiv": "https://arxiv.org/abs/2610.25043",
       "pdf": "https://arxiv.org/pdf/2610.25043.pdf",
-      "upvotes": 60,
+      "upvotes": 64,
       "categories": [
         "cs.AI",
         "cs.RO"
@@ -6376,7 +6468,9 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.21306",
       "title": "VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models",
@@ -7776,9 +7870,7 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.18871",
       "title": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
@@ -9535,7 +9627,7 @@
       "url": "https://arxiv.org/abs/2610.18596",
       "arxiv": "https://arxiv.org/abs/2610.18596",
       "pdf": "https://arxiv.org/pdf/2610.18596.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -9565,7 +9657,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.12417",
       "arxiv": "https://arxiv.org/abs/2610.12417",
       "pdf": "https://arxiv.org/pdf/2610.12417.pdf",
-      "upvotes": 20,
+      "upvotes": 21,
       "tags": [
         "World Model",
         "LLM Agent",
@@ -9615,7 +9707,7 @@
       "url": "https://arxiv.org/abs/2610.18950",
       "arxiv": "https://arxiv.org/abs/2610.18950",
       "pdf": "https://arxiv.org/pdf/2610.18950.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -11444,7 +11536,7 @@
       "url": "https://huggingface.co/papers/2610.12772",
       "arxiv": "https://arxiv.org/abs/2610.12772",
       "pdf": "https://arxiv.org/pdf/2610.12772.pdf",
-      "upvotes": 154,
+      "upvotes": 155,
       "categories": [
         "cs.RO"
       ],
@@ -11474,7 +11566,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.13021",
       "arxiv": "https://arxiv.org/abs/2610.13021",
       "pdf": "https://arxiv.org/pdf/2610.13021.pdf",
-      "upvotes": 74,
+      "upvotes": 75,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -11496,7 +11588,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.07121",
       "arxiv": "https://arxiv.org/abs/2610.07121",
       "pdf": "https://arxiv.org/pdf/2610.07121.pdf",
-      "upvotes": 39,
+      "upvotes": 40,
       "tags": [
         "LLM Agent",
         "Dataset",
@@ -11520,7 +11612,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.07625",
       "arxiv": "https://arxiv.org/abs/2610.07625",
       "pdf": "https://arxiv.org/pdf/2610.07625.pdf",
-      "upvotes": 30,
+      "upvotes": 31,
       "tags": [
         "LLM Agent",
         "Dataset"
@@ -11530,6 +11622,37 @@
         "Dataset"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2610.16782",
+      "title": "LIBERO-Industry: Benchmarking Robotic Manipulation under Industrial Process Constraints",
+      "abstract": "Industrial manipulation in flexible manufacturing, e.g., high-mix, low-volume (HMLV) electronics assembly, requires robot policies to adapt to changing products and production conditions. Such settings impose industrial process constraints, including product variants, moving material flows, finite execution windows, and tight geometric tolerances. However, existing evaluation frameworks do not systematically capture these constraints when assessing generalist robot policies. To address this gap, we introduce LIBERO-Industry, a novel benchmark built on the widely used robot learning benchmark LIBERO, that translates the aforementioned industrial constraints into controllable task conditions and measurable success criteria. Specifically, LIBERO-Industry comprises three classic task scenarios: Static-to-Dynamic (S2D) loading, Dynamic-to-Static (D2S) unloading, and Dynamic-to-Dynamic (D2D) transfer. The suites contain 216 tasks in total that systematically vary object geometry, conveyor speed, interaction-window duration, and geometric acceptance region size. Extensive experiments across five generalist robot policies (including vision-language-action models and world-action models) show that performance progressively degrades as industrial constraints are introduced and combined. Under a shared fine-tuning and evaluation protocol, the LIBERO-Industry co-training condition achieved higher observed target-transfer completion than the original-LIBERO condition.",
+      "authors": "Ming Shin Cindy Sung, Duan Leijiahao, Haoxiang Wang, Boning Tan, Liangna Fu, Chao Tan, Yafu Li, Yulong Chen, Chaoqun Wan, Zhen Huang, Shuxian Liang, Xian-Sheng Hua",
+      "date": "2026-10-12",
+      "published": "2026-10-12",
+      "url": "https://arxiv.org/abs/2610.16782",
+      "arxiv": "https://arxiv.org/abs/2610.16782",
+      "pdf": "https://arxiv.org/pdf/2610.16782.pdf",
+      "upvotes": 20,
+      "categories": [
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Manipulation",
+        "Dataset",
+        "WAM",
+        "World Model"
+      ],
+      "tags": [
+        "VLA",
+        "Manipulation",
+        "Dataset",
+        "WAM",
+        "World Model"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.16782"
     },
     {
       "id": "2610.13118",
@@ -11555,37 +11678,6 @@
         "Simulator"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.13118"
-    },
-    {
-      "id": "2610.16782",
-      "title": "LIBERO-Industry: Benchmarking Robotic Manipulation under Industrial Process Constraints",
-      "abstract": "Industrial manipulation in flexible manufacturing, e.g., high-mix, low-volume (HMLV) electronics assembly, requires robot policies to adapt to changing products and production conditions. Such settings impose industrial process constraints, including product variants, moving material flows, finite execution windows, and tight geometric tolerances. However, existing evaluation frameworks do not systematically capture these constraints when assessing generalist robot policies. To address this gap, we introduce LIBERO-Industry, a novel benchmark built on the widely used robot learning benchmark LIBERO, that translates the aforementioned industrial constraints into controllable task conditions and measurable success criteria. Specifically, LIBERO-Industry comprises three classic task scenarios: Static-to-Dynamic (S2D) loading, Dynamic-to-Static (D2S) unloading, and Dynamic-to-Dynamic (D2D) transfer. The suites contain 216 tasks in total that systematically vary object geometry, conveyor speed, interaction-window duration, and geometric acceptance region size. Extensive experiments across five generalist robot policies (including vision-language-action models and world-action models) show that performance progressively degrades as industrial constraints are introduced and combined. Under a shared fine-tuning and evaluation protocol, the LIBERO-Industry co-training condition achieved higher observed target-transfer completion than the original-LIBERO condition.",
-      "authors": "Ming Shin Cindy Sung, Duan Leijiahao, Haoxiang Wang, Boning Tan, Liangna Fu, Chao Tan, Yafu Li, Yulong Chen, Chaoqun Wan, Zhen Huang, Shuxian Liang, Xian-Sheng Hua",
-      "date": "2026-10-12",
-      "published": "2026-10-12",
-      "url": "https://arxiv.org/abs/2610.16782",
-      "arxiv": "https://arxiv.org/abs/2610.16782",
-      "pdf": "https://arxiv.org/pdf/2610.16782.pdf",
-      "upvotes": 12,
-      "categories": [
-        "cs.AI"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Manipulation",
-        "Dataset",
-        "WAM",
-        "World Model"
-      ],
-      "tags": [
-        "VLA",
-        "Manipulation",
-        "Dataset",
-        "WAM",
-        "World Model"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.16782"
     },
     {
       "id": "2610.16517",
@@ -15615,7 +15707,7 @@
       "url": "https://arxiv.org/abs/2610.12099",
       "arxiv": "https://arxiv.org/abs/2610.12099",
       "pdf": "https://arxiv.org/pdf/2610.12099.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "categories": [
         "cs.RO"
       ],
@@ -49198,6 +49290,39 @@
       "hfUrl": "https://huggingface.co/papers/2609.19138"
     },
     {
+      "id": "2609.22332",
+      "title": "AffordanceWAM: Affordance-Aware Joint World-Action Modeling for Robot Manipulation",
+      "abstract": "Generalizable robot manipulation requires predicting how a scene will evolve, identifying where interactions are feasible, and determining how to act. Action-labeled robot videos directly supervise control but are costly and limited in diversity, whereas egocentric human videos capture diverse interactions but lack robot actions and differ in embodiment and appearance. We introduce AffordanceWAM, an affordance-aware generative World Action Model that represents object-centric spatiotemporal affordance through Scalar Affordance and Affordance Heatmap, within the generated future World. This representation grounds visual prediction in task-relevant objects and interaction regions for action generation, and provides shared interaction targets across human and robot videos. Built on a pretrained video diffusion Transformer, AffordanceWAM uses separately parameterized World and Action Experts, coupled through Masked Joint Self-Attention, to jointly predict future RGB observations, Scalar Affordance fields, Affordance Heatmaps, and continuous robot actions under a unified flow-matching objective. Human videos supervise all three future-World streams, whereas robot trajectories additionally provide action supervision, enabling transfer without human action labels or retargeting. Experiments on RoboCasa, CALVIN ABC$\\rightarrow$D, and real-world manipulation demonstrate consistent gains over RGB-only and robot-data-only baselines. Under fixed robot supervision, RoboCasa performance improves monotonically as affordance-annotated human video scales. These results support affordance as an effective interface for both vision-language-action learning and human-to-robot transfer.",
+      "authors": "Jiadi You, Qize Yu, Yue Chen, Minghong Cai, Zhide Zhong, Yuran Wang, Bowen Ping, Jiaqi Liang, Zhenhao Shen, Haodong Yan, Yinchuan Li, Ruihai Wu, Xiaojuan Qi, Yingcong Chen",
+      "date": "2026-09-16",
+      "published": "2026-09-16",
+      "url": "https://arxiv.org/abs/2609.22332",
+      "arxiv": "https://arxiv.org/abs/2609.22332",
+      "pdf": "https://arxiv.org/pdf/2609.22332.pdf",
+      "upvotes": 24,
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "World Model",
+        "Imitation Learning",
+        "3D / Perception",
+        "WAM"
+      ],
+      "tags": [
+        "VLA",
+        "World Model",
+        "Imitation Learning",
+        "3D / Perception",
+        "WAM"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2609.22332"
+    },
+    {
       "id": "2609.18620",
       "title": "DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation",
       "abstract": "Creating deformable assets for robot manipulation requires jointly specifying their geometry, appearance, and physical properties. This is especially challenging for deformable objects, since text and images provide limited evidence about how they deform and respond to contact, yet these responses directly affect their suitability for interaction. Automated generation therefore needs to resolve coupled physical requirements and use interaction evidence to guide construction and refinement. We present DeformSmith, a framework that enables automated generation of interactive, physically credible deformable assets from text or a single image. Through hierarchical agentic construction and a shared physics-grounded harness, it progressively builds, tests, and refines geometry, physical models, material behavior, and robot interaction until the resulting asset is ready for simulation and manipulation. Robot interaction closes the generation loop through manipulation feedback and replayable interaction data. Results show that DeformSmith generates assets with better visual quality and physical plausibility than state-of-the-art baselines, including PhysGen3D, PhysGM, and PhysX-Omni, while supporting the synthesis of data for robotic manipulation of deformable objects. Project page: https://can-lee.github.io/deformsmith-web/",
@@ -49221,39 +49346,6 @@
         "Imitation Learning"
       ],
       "hfUrl": "https://huggingface.co/papers/2609.18620"
-    },
-    {
-      "id": "2609.22332",
-      "title": "AffordanceWAM: Affordance-Aware Joint World-Action Modeling for Robot Manipulation",
-      "abstract": "Generalizable robot manipulation requires predicting how a scene will evolve, identifying where interactions are feasible, and determining how to act. Action-labeled robot videos directly supervise control but are costly and limited in diversity, whereas egocentric human videos capture diverse interactions but lack robot actions and differ in embodiment and appearance. We introduce AffordanceWAM, an affordance-aware generative World Action Model that represents object-centric spatiotemporal affordance through Scalar Affordance and Affordance Heatmap, within the generated future World. This representation grounds visual prediction in task-relevant objects and interaction regions for action generation, and provides shared interaction targets across human and robot videos. Built on a pretrained video diffusion Transformer, AffordanceWAM uses separately parameterized World and Action Experts, coupled through Masked Joint Self-Attention, to jointly predict future RGB observations, Scalar Affordance fields, Affordance Heatmaps, and continuous robot actions under a unified flow-matching objective. Human videos supervise all three future-World streams, whereas robot trajectories additionally provide action supervision, enabling transfer without human action labels or retargeting. Experiments on RoboCasa, CALVIN ABC$\\rightarrow$D, and real-world manipulation demonstrate consistent gains over RGB-only and robot-data-only baselines. Under fixed robot supervision, RoboCasa performance improves monotonically as affordance-annotated human video scales. These results support affordance as an effective interface for both vision-language-action learning and human-to-robot transfer.",
-      "authors": "Jiadi You, Qize Yu, Yue Chen, Minghong Cai, Zhide Zhong, Yuran Wang, Bowen Ping, Jiaqi Liang, Zhenhao Shen, Haodong Yan, Yinchuan Li, Ruihai Wu, Xiaojuan Qi, Yingcong Chen",
-      "date": "2026-09-16",
-      "published": "2026-09-16",
-      "url": "https://arxiv.org/abs/2609.22332",
-      "arxiv": "https://arxiv.org/abs/2609.22332",
-      "pdf": "https://arxiv.org/pdf/2609.22332.pdf",
-      "upvotes": 21,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "World Model",
-        "Imitation Learning",
-        "3D / Perception",
-        "WAM"
-      ],
-      "tags": [
-        "VLA",
-        "World Model",
-        "Imitation Learning",
-        "3D / Perception",
-        "WAM"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2609.22332"
     },
     {
       "id": "2609.15195",
