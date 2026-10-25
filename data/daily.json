@@ -1,45 +1,25 @@
 {
-  "generatedAt": "2026-10-24T04:45:39.974343+00:00",
+  "generatedAt": "2026-10-25T04:52:06.355175+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-17",
-  "archiveCutoff": "2021-10-25",
-  "addedToday": 38,
+  "recentCutoff": "2026-10-18",
+  "archiveCutoff": "2021-10-26",
+  "addedToday": 0,
   "historyTotal": 7956,
-  "count": 242,
-  "archiveCount": 7430,
+  "count": 219,
+  "archiveCount": 7445,
   "sources": {
     "hf": 28,
-    "arxiv": 214
+    "arxiv": 191
   },
   "archiveSources": {
     "hf": 247,
-    "arxiv": 7183
+    "arxiv": 7198
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
-    {
-      "id": "2610.27851",
-      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
-      "abstract": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.",
-      "authors": "Junha Song, Geonmo Gu, Jeongeun Park, Heejeong Nam, Lucas Maes, Byeongho Heo, Dongyoon Han, Sangdoo Yun",
-      "date": "2026-10-23",
-      "published": "2026-10-23",
-      "url": "https://huggingface.co/papers/2610.27851",
-      "hfUrl": "https://huggingface.co/papers/2610.27851",
-      "arxiv": "https://arxiv.org/abs/2610.27851",
-      "pdf": "https://arxiv.org/pdf/2610.27851.pdf",
-      "upvotes": 29,
-      "tags": [
-        "World Model",
-        "Dataset"
-      ],
-      "topics": [
-        "World Model",
-        "Dataset"
-      ],
-      "source": "hf"
-    },
     {
       "id": "2610.30320",
       "title": "Self-Distilling Future Video Representations for World Action Models",
@@ -51,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.30320",
       "arxiv": "https://arxiv.org/abs/2610.30320",
       "pdf": "https://arxiv.org/pdf/2610.30320.pdf",
-      "upvotes": 25,
+      "upvotes": 36,
       "tags": [
         "World Model",
         "WAM"
@@ -59,6 +39,28 @@
       "topics": [
         "World Model",
         "WAM"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2610.27851",
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "abstract": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.",
+      "authors": "Junha Song, Geonmo Gu, Jeongeun Park, Heejeong Nam, Lucas Maes, Byeongho Heo, Dongyoon Han, Sangdoo Yun",
+      "date": "2026-10-23",
+      "published": "2026-10-23",
+      "url": "https://huggingface.co/papers/2610.27851",
+      "hfUrl": "https://huggingface.co/papers/2610.27851",
+      "arxiv": "https://arxiv.org/abs/2610.27851",
+      "pdf": "https://arxiv.org/pdf/2610.27851.pdf",
+      "upvotes": 35,
+      "tags": [
+        "World Model",
+        "Dataset"
+      ],
+      "topics": [
+        "World Model",
+        "Dataset"
       ],
       "source": "hf"
     },
@@ -73,7 +75,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.31494",
       "arxiv": "https://arxiv.org/abs/2610.31494",
       "pdf": "https://arxiv.org/pdf/2610.31494.pdf",
-      "upvotes": 11,
+      "upvotes": 17,
       "tags": [
         "VLA",
         "Dataset",
@@ -97,7 +99,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.31474",
       "arxiv": "https://arxiv.org/abs/2610.31474",
       "pdf": "https://arxiv.org/pdf/2610.31474.pdf",
-      "upvotes": 2,
+      "upvotes": 7,
       "tags": [
         "World Model",
         "Dataset"
@@ -118,7 +120,7 @@
       "url": "https://huggingface.co/papers/2610.29997",
       "arxiv": "https://arxiv.org/abs/2610.29997",
       "pdf": "https://arxiv.org/pdf/2610.29997.pdf",
-      "upvotes": 151,
+      "upvotes": 159,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -151,7 +153,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.28698",
       "arxiv": "https://arxiv.org/abs/2610.28698",
       "pdf": "https://arxiv.org/pdf/2610.28698.pdf",
-      "upvotes": 61,
+      "upvotes": 75,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -163,35 +165,6 @@
       "source": "hf"
     },
     {
-      "id": "2610.30108",
-      "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
-      "abstract": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome. Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across all five capabilities rather than task success alone.",
-      "authors": "Yanzhe Chen, Ziyi Yang, Jifeng Zhu, Qiming Huang, Ruihe An, Peiyao Xu, Hesen Yang, Runda Liu, Chang Gong, Zhijun Cao, Zechen Bai, Wenzheng Zeng, Yiqi Lin, Guoqiang Liang, Kevin Yuchen Ma, Kevin Qinghong Lin, Mike Zheng Shou",
-      "date": "2026-10-22",
-      "published": "2026-10-21",
-      "url": "https://huggingface.co/papers/2610.30108",
-      "arxiv": "https://arxiv.org/abs/2610.30108",
-      "pdf": "https://arxiv.org/pdf/2610.30108.pdf",
-      "upvotes": 21,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV",
-        "cs.MA",
-        "cs.MM"
-      ],
-      "source": "hf",
-      "topics": [
-        "Dataset",
-        "Embodied Vision"
-      ],
-      "tags": [
-        "Dataset",
-        "Embodied Vision"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.30108"
-    },
-    {
       "id": "2610.30136",
       "title": "Agentic World Action Models",
       "abstract": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architecture a code expert generates parameterized skill routines and control logic while video and action experts generate future visual states and low-level motor commands. Code serves two complementary roles: it structures multi-step prediction and control within the world model and represents skills as reusable programs for subsequent agentic execution. We further introduce an automated curation pipeline that labels robot and human video trajectories with aligned programs and consolidates recurring routines into reusable skill libraries. Evaluations on RoboTwin 2.0 and physical bimanual manipulation tasks show improved task performance over VLA and WAM baselines, alongside gains in language following, semantic reasoning and robustness, demonstrating that agentic code enables connection between planning, prediction and execution within WAMs.",
@@ -201,7 +174,7 @@
       "url": "https://huggingface.co/papers/2610.30136",
       "arxiv": "https://arxiv.org/abs/2610.30136",
       "pdf": "https://arxiv.org/pdf/2610.30136.pdf",
-      "upvotes": 19,
+      "upvotes": 23,
       "categories": [
         "cs.RO"
       ],
@@ -221,6 +194,35 @@
         "WAM"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.30136"
+    },
+    {
+      "id": "2610.30108",
+      "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
+      "abstract": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome. Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across all five capabilities rather than task success alone.",
+      "authors": "Yanzhe Chen, Ziyi Yang, Jifeng Zhu, Qiming Huang, Ruihe An, Peiyao Xu, Hesen Yang, Runda Liu, Chang Gong, Zhijun Cao, Zechen Bai, Wenzheng Zeng, Yiqi Lin, Guoqiang Liang, Kevin Yuchen Ma, Kevin Qinghong Lin, Mike Zheng Shou",
+      "date": "2026-10-22",
+      "published": "2026-10-21",
+      "url": "https://huggingface.co/papers/2610.30108",
+      "arxiv": "https://arxiv.org/abs/2610.30108",
+      "pdf": "https://arxiv.org/pdf/2610.30108.pdf",
+      "upvotes": 22,
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "source": "hf",
+      "topics": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "tags": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.30108"
     },
     {
       "id": "2610.31608",
@@ -1097,7 +1099,7 @@
       "url": "https://arxiv.org/abs/2610.29677",
       "arxiv": "https://arxiv.org/abs/2610.29677",
       "pdf": "https://arxiv.org/pdf/2610.29677.pdf",
-      "upvotes": 49,
+      "upvotes": 56,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -1121,7 +1123,7 @@
       "url": "https://huggingface.co/papers/2610.28594",
       "arxiv": "https://arxiv.org/abs/2610.28594",
       "pdf": "https://arxiv.org/pdf/2610.28594.pdf",
-      "upvotes": 48,
+      "upvotes": 52,
       "categories": [
         "cs.CV"
       ],
@@ -1137,26 +1139,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.28594"
     },
     {
-      "id": "2610.28632",
-      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
-      "abstract": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For instance, a video model can show a monkey jumping over a crossbar, but it cannot return that jump as replayable 3D motion placed in the 3D scene. Here we present a model that directly co-generates the video and 3D motion for any supplied rig, along with a camera that registers this motion to the scene. Prior video-motion models either handle only human skeletons, often adding billions of parameters, or triangulate 3D motion from generated 2D pose maps. We instead keep 3D motion in a separate model that supports arbitrary skeletons, and connect it to a pretrained video model through a small set of cross-attention layers. This separation lets the motion model first learn how skeletons move from motion-only data, which is easier to obtain and augment than paired video. Additionally, our model learns to locate each joint in the video frames, which lets us recover the camera and place the 3D motion in the scene. To train across many skeletons, we use a generative video editor to place animated 3D assets in scenes suited to their actions, curating the edits so their known motion remains valid. Together with human and robot video, this yields nearly 200K training pairs. Our evaluations demonstrate that our model animates diverse rigs from text more faithfully than video-first pipelines, and its motion responds to the surrounding scene. It also turns video into rig motion, rig motion into video, and enables keyframe-based control of the 3D motion. Videos and additional results are available on our project page: https://research.nvidia.com/labs/par/projects/jca/.",
-      "authors": "Noam Rotstein, Yoad Tewel, Chen Tessler, Haggai Maron, Gal Chechik, Or Litany, Yoni Kasten, Yuval Atzmon",
-      "date": "2026-10-21",
-      "published": "2026-10-21",
-      "url": "https://huggingface.co/papers/2610.28632",
-      "hfUrl": "https://huggingface.co/papers/2610.28632",
-      "arxiv": "https://arxiv.org/abs/2610.28632",
-      "pdf": "https://arxiv.org/pdf/2610.28632.pdf",
-      "upvotes": 25,
-      "tags": [
-        "Robotics"
-      ],
-      "topics": [
-        "Robotics"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2610.29560",
       "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
       "abstract": "Vision-language-action (VLA) models achieve strong performance across embodied manipulation tasks by unifying visual understanding, language conditioning, and action generation. However, long-horizon tasks can involve non-Markovian dependencies: successful decisions may require retaining task progress and past interaction outcomes, while partial observability and execution errors compound over time. Existing work has begun to address these challenges by augmenting foundation-model policies with memory and by introducing hierarchical architectures that separate high-level planning from low-level execution. We organize the high-level VLM as a robotic agent through an editable harness to maintain task context and improve planning through execution experience. We instantiate this approach as SERA (Self-Evolving Robotic Agent), with a fixed VLA executor providing low-level control. The harness maintains and updates task context using observations and execution feedback to guide subsequent planning. Self-evolution uses environment rollouts to propose and evaluate harness revisions, with the selected configuration fixed before held-out testing. On RoboMME, SERA achieves 51.38% overall success with autonomous selection, compared with 44.38% without self-evolution. Our exploration suggests that agentic planning is a promising direction for history-dependent robotic manipulation.",
@@ -1166,7 +1148,7 @@
       "url": "https://arxiv.org/abs/2610.29560",
       "arxiv": "https://arxiv.org/abs/2610.29560",
       "pdf": "https://arxiv.org/pdf/2610.29560.pdf",
-      "upvotes": 23,
+      "upvotes": 28,
       "categories": [
         "cs.RO"
       ],
@@ -1184,6 +1166,26 @@
       "hfUrl": "https://huggingface.co/papers/2610.29560"
     },
     {
+      "id": "2610.28632",
+      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+      "abstract": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For instance, a video model can show a monkey jumping over a crossbar, but it cannot return that jump as replayable 3D motion placed in the 3D scene. Here we present a model that directly co-generates the video and 3D motion for any supplied rig, along with a camera that registers this motion to the scene. Prior video-motion models either handle only human skeletons, often adding billions of parameters, or triangulate 3D motion from generated 2D pose maps. We instead keep 3D motion in a separate model that supports arbitrary skeletons, and connect it to a pretrained video model through a small set of cross-attention layers. This separation lets the motion model first learn how skeletons move from motion-only data, which is easier to obtain and augment than paired video. Additionally, our model learns to locate each joint in the video frames, which lets us recover the camera and place the 3D motion in the scene. To train across many skeletons, we use a generative video editor to place animated 3D assets in scenes suited to their actions, curating the edits so their known motion remains valid. Together with human and robot video, this yields nearly 200K training pairs. Our evaluations demonstrate that our model animates diverse rigs from text more faithfully than video-first pipelines, and its motion responds to the surrounding scene. It also turns video into rig motion, rig motion into video, and enables keyframe-based control of the 3D motion. Videos and additional results are available on our project page: https://research.nvidia.com/labs/par/projects/jca/.",
+      "authors": "Noam Rotstein, Yoad Tewel, Chen Tessler, Haggai Maron, Gal Chechik, Or Litany, Yoni Kasten, Yuval Atzmon",
+      "date": "2026-10-21",
+      "published": "2026-10-21",
+      "url": "https://huggingface.co/papers/2610.28632",
+      "hfUrl": "https://huggingface.co/papers/2610.28632",
+      "arxiv": "https://arxiv.org/abs/2610.28632",
+      "pdf": "https://arxiv.org/pdf/2610.28632.pdf",
+      "upvotes": 26,
+      "tags": [
+        "Robotics"
+      ],
+      "topics": [
+        "Robotics"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.26711",
       "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
       "abstract": "Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects obey geometry, kinematics, dynamics, and conservation laws. Existing benchmarks rely on coarse visual-language model judgments or target embodied world models rather than video generation itself. We introduce PVBench, a physical video benchmark that quantitatively measures the plausibility of generated videos across 46 dimensions organized into seven domains, spanning: i) instruction and semantic fidelity, ii) behavioral and causal consistency, iii) perceptual and temporal quality, iv) geometric and spatial consistency, v) material properties and field states, vi) kinematic and spatiotemporal persistence, vii) and mechanical plausibility with conservation laws. PVBench comprises 600 carefully crafted prompts, of which 30% involve physical embodied agents such as robot arms, humanoids, quadrupeds, and multi-agent systems. For challenging physically tractable dimensions, it pairs each with specialized vision models that derive verifiable, physically grounded measurements, such as object-level 6D pose, metric scale, surface normals, kinematics, and numerical conservation-law residuals. It thus avoids relying solely on subjective scoring, while supporting both text-to-video and image-to-video generation. Finally, we validate the agreement between automatic metrics and human judgments through human evaluation. Meanwhile, we evaluate mainstream open-source and closed-source models and present several insights. By releasing the benchmark, prompts, and calibration protocol, we aim to foster physically grounded video generation.",
@@ -1194,7 +1196,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.26711",
       "arxiv": "https://arxiv.org/abs/2610.26711",
       "pdf": "https://arxiv.org/pdf/2610.26711.pdf",
-      "upvotes": 7,
+      "upvotes": 10,
       "tags": [
         "Humanoid",
         "Locomotion",
@@ -1211,6 +1213,37 @@
         "Embodied Vision"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2610.30043",
+      "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
+      "abstract": "Robots must act under physical and social constraints while adapting to changes in their environment and human needs. Existing embodied-agent systems often focus on specified goals or abstract execution into symbolic actions, limiting evaluation in an evolving world. We introduce TARSphere, a robot-oriented full-stack framework for physically and socially grounded long-horizon embodied agents. TARSphere-Infra runs robot policies in a physics simulator with embodied NPCs and constrained dialogue. An event-driven finite-state machine (FSM) uses completed actions and delivered information to update task states and evaluate outcomes. TARSphere-Harness, its embodied brain harness, lets a frozen multimodal large language model (MLLM) act through multi-level executable skills, using observations, hierarchical memory, and execution feedback to revise its decisions. On this foundation, agent-in-the-loop curation aligns task semantics, causal dependencies, and scene geometry to construct TARSphere-Bench: 360 episodes across 30 indoor scenes. Five paired conditions assess perceptual robustness, disruption adaptation, task update, human coordination, and intent understanding for navigate-and-report and fetch-and-deliver tasks. Our evaluation of 8 MLLMs shows that general-purpose models can outperform embodied models, while task updates and human interaction remain difficult. Frequent collisions and falls further motivate evaluating execution safety alongside task success, even with a shared action interface and decision budget.",
+      "authors": "Yicheng Xu, Zhikai Xu, Ziyuan Chen, Yuhang Dong, Tao Zhang, Zhucun Xue, Yong Liu, Jiangning Zhang",
+      "date": "2026-10-21",
+      "published": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.30043",
+      "arxiv": "https://arxiv.org/abs/2610.30043",
+      "pdf": "https://arxiv.org/pdf/2610.30043.pdf",
+      "upvotes": 7,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Imitation Learning",
+        "LLM Agent",
+        "Simulator",
+        "Embodied Vision",
+        "Hardware"
+      ],
+      "tags": [
+        "Imitation Learning",
+        "LLM Agent",
+        "Simulator",
+        "Embodied Vision",
+        "Hardware"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.30043"
     },
     {
       "id": "2610.09513",
@@ -1231,37 +1264,6 @@
         "Robotics"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2610.30043",
-      "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
-      "abstract": "Robots must act under physical and social constraints while adapting to changes in their environment and human needs. Existing embodied-agent systems often focus on specified goals or abstract execution into symbolic actions, limiting evaluation in an evolving world. We introduce TARSphere, a robot-oriented full-stack framework for physically and socially grounded long-horizon embodied agents. TARSphere-Infra runs robot policies in a physics simulator with embodied NPCs and constrained dialogue. An event-driven finite-state machine (FSM) uses completed actions and delivered information to update task states and evaluate outcomes. TARSphere-Harness, its embodied brain harness, lets a frozen multimodal large language model (MLLM) act through multi-level executable skills, using observations, hierarchical memory, and execution feedback to revise its decisions. On this foundation, agent-in-the-loop curation aligns task semantics, causal dependencies, and scene geometry to construct TARSphere-Bench: 360 episodes across 30 indoor scenes. Five paired conditions assess perceptual robustness, disruption adaptation, task update, human coordination, and intent understanding for navigate-and-report and fetch-and-deliver tasks. Our evaluation of 8 MLLMs shows that general-purpose models can outperform embodied models, while task updates and human interaction remain difficult. Frequent collisions and falls further motivate evaluating execution safety alongside task success, even with a shared action interface and decision budget.",
-      "authors": "Yicheng Xu, Zhikai Xu, Ziyuan Chen, Yuhang Dong, Tao Zhang, Zhucun Xue, Yong Liu, Jiangning Zhang",
-      "date": "2026-10-21",
-      "published": "2026-10-21",
-      "url": "https://arxiv.org/abs/2610.30043",
-      "arxiv": "https://arxiv.org/abs/2610.30043",
-      "pdf": "https://arxiv.org/pdf/2610.30043.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "Imitation Learning",
-        "LLM Agent",
-        "Simulator",
-        "Embodied Vision",
-        "Hardware"
-      ],
-      "tags": [
-        "Imitation Learning",
-        "LLM Agent",
-        "Simulator",
-        "Embodied Vision",
-        "Hardware"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.30043"
     },
     {
       "id": "2610.30097",
@@ -2452,7 +2454,7 @@
       "url": "https://huggingface.co/papers/2610.26625",
       "arxiv": "https://arxiv.org/abs/2610.26625",
       "pdf": "https://arxiv.org/pdf/2610.26625.pdf",
-      "upvotes": 188,
+      "upvotes": 189,
       "categories": [
         "cs.CV"
       ],
@@ -2479,7 +2481,7 @@
       "url": "https://huggingface.co/papers/2610.25736",
       "arxiv": "https://arxiv.org/abs/2610.25736",
       "pdf": "https://arxiv.org/pdf/2610.25736.pdf",
-      "upvotes": 127,
+      "upvotes": 133,
       "categories": [
         "cs.RO"
       ],
@@ -2531,7 +2533,7 @@
       "url": "https://arxiv.org/abs/2610.28589",
       "arxiv": "https://arxiv.org/abs/2610.28589",
       "pdf": "https://arxiv.org/pdf/2610.28589.pdf",
-      "upvotes": 38,
+      "upvotes": 44,
       "categories": [
         "cs.RO"
       ],
@@ -3912,7 +3914,7 @@
       "url": "https://huggingface.co/papers/2610.22471",
       "arxiv": "https://arxiv.org/abs/2610.22471",
       "pdf": "https://arxiv.org/pdf/2610.22471.pdf",
-      "upvotes": 470,
+      "upvotes": 474,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -4032,7 +4034,7 @@
       "url": "https://arxiv.org/abs/2610.27040",
       "arxiv": "https://arxiv.org/abs/2610.27040",
       "pdf": "https://arxiv.org/pdf/2610.27040.pdf",
-      "upvotes": 12,
+      "upvotes": 13,
       "categories": [
         "cs.RO"
       ],
@@ -5257,7 +5259,7 @@
       "url": "https://arxiv.org/abs/2610.25376",
       "arxiv": "https://arxiv.org/abs/2610.25376",
       "pdf": "https://arxiv.org/pdf/2610.25376.pdf",
-      "upvotes": 2,
+      "upvotes": 8,
       "categories": [
         "cs.RO",
         "cs.LG"
@@ -5753,7 +5755,9 @@
       "tags": [
         "Dataset"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.24675",
       "title": "Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation",
@@ -6362,9 +6366,7 @@
       "tags": [
         "Dataset"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.21095",
       "title": "Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
@@ -6461,7 +6463,7 @@
       "url": "https://arxiv.org/abs/2610.22951",
       "arxiv": "https://arxiv.org/abs/2610.22951",
       "pdf": "https://arxiv.org/pdf/2610.22951.pdf",
-      "upvotes": 2,
+      "upvotes": 7,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -12637,7 +12639,7 @@
       "url": "https://arxiv.org/abs/2610.16782",
       "arxiv": "https://arxiv.org/abs/2610.16782",
       "pdf": "https://arxiv.org/pdf/2610.16782.pdf",
-      "upvotes": 21,
+      "upvotes": 25,
       "categories": [
         "cs.AI"
       ],
@@ -15047,7 +15049,7 @@
       "url": "https://arxiv.org/abs/2610.13781",
       "arxiv": "https://arxiv.org/abs/2610.13781",
       "pdf": "https://arxiv.org/pdf/2610.13781.pdf",
-      "upvotes": 28,
+      "upvotes": 31,
       "categories": [
         "cs.CV"
       ],
@@ -189053,201 +189055,6 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    },
-    {
-      "id": "2110.13241",
-      "title": "Multitask Adaptation by Retrospective Exploration with Learned World Models",
-      "abstract": "Model-based reinforcement learning (MBRL) allows solving complex tasks in a sample-efficient manner. However, no information is reused between the tasks. In this work, we propose a meta-learned addressing model called RAMa that provides training samples for the MBRL agent taken from continuously growing task-agnostic storage. The model is trained to maximize the expected agent's performance by selecting promising trajectories solving prior tasks from the storage. We show that such retrospective exploration can accelerate the learning process of the MBRL agent by better informing learned dynamics and prompting agent with exploratory trajectories. We test the performance of our approach on several domains from the DeepMind control suite, from Metaworld multitask benchmark, and from our bespoke environment implemented with a robotic NVIDIA Isaac simulator to test the ability of the model to act in a photorealistic, ray-traced environment.",
-      "authors": "Artem Zholus, Aleksandr I. Panov",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.13241",
-      "pdf": "https://arxiv.org/pdf/2110.13241.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "World Model",
-        "Reinforcement Learning",
-        "Dataset",
-        "Simulator",
-        "Multi-task"
-      ],
-      "tags": [
-        "Navigation",
-        "World Model",
-        "Reinforcement Learning",
-        "Dataset",
-        "Simulator"
-      ]
-    },
-    {
-      "id": "2110.13280",
-      "title": "A Variational Graph Autoencoder for Manipulation Action Recognition and Prediction",
-      "abstract": "Despite decades of research, understanding human manipulation activities is, and has always been, one of the most attractive and challenging research topics in computer vision and robotics. Recognition and prediction of observed human manipulation actions have their roots in the applications related to, for instance, human-robot interaction and robot learning from demonstration. The current research trend heavily relies on advanced convolutional neural networks to process the structured Euclidean data, such as RGB camera images. These networks, however, come with immense computational complexity to be able to process high dimensional raw data. Different from the related works, we here introduce a deep graph autoencoder to jointly learn recognition and prediction of manipulation tasks from symbolic scene graphs, instead of relying on the structured Euclidean data. Our network has a variational autoencoder structure with two branches: one for identifying the input graph type and one for predicting the future graphs. The input of the proposed network is a set of semantic graphs which store the spatial relations between subjects and objects in the scene. The network output is a label set representing the detected and predicted class types. We benchmark our new model against different state-of-the-art methods on two different datasets, MANIAC and MSRC-9, and show that our proposed model can achieve better performance. We also release our source code https://github.com/gamzeakyol/GNet.",
-      "authors": "Gamze Akyol, Sanem Sariel, Eren Erdal Aksoy",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.13280",
-      "pdf": "https://arxiv.org/pdf/2110.13280.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Imitation Learning",
-        "Dataset"
-      ],
-      "tags": [
-        "Manipulation",
-        "Imitation Learning",
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2110.12985",
-      "title": "Goal-Aware Cross-Entropy for Multi-Target Reinforcement Learning",
-      "abstract": "Learning in a multi-target environment without prior knowledge about the targets requires a large amount of samples and makes generalization difficult. To solve this problem, it is important to be able to discriminate targets through semantic understanding. In this paper, we propose goal-aware cross-entropy (GACE) loss, that can be utilized in a self-supervised way using auto-labeled goal states alongside reinforcement learning. Based on the loss, we then devise goal-discriminative attention networks (GDAN) which utilize the goal-relevant information to focus on the given instruction. We evaluate the proposed methods on visual navigation and robot arm manipulation tasks with multi-target environments and show that GDAN outperforms the state-of-the-art methods in terms of task success ratio, sample efficiency, and generalization. Additionally, qualitative analyses demonstrate that our proposed method can help the agent become aware of and focus on the given instruction clearly, promoting goal-directed behavior.",
-      "authors": "Kibeom Kim, Min Whoo Lee, Yoonsung Kim, Je-Hwan Ryu, Minsu Lee, Byoung-Tak Zhang",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.12985",
-      "pdf": "https://arxiv.org/pdf/2110.12985.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Navigation",
-        "Reinforcement Learning"
-      ],
-      "tags": [
-        "Manipulation",
-        "Navigation",
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2110.13242",
-      "title": "2D Grid Map Generation for Deep-Learning-based Navigation Approaches",
-      "abstract": "In the last decade, autonomous navigation for roboticshas been leveraged by deep learning and other approachesbased on machine learning. These approaches have demon-strated significant advantages in robotics performance. Butthey have the disadvantage that they require a lot of data toinfer knowledge. In this paper, we present an algorithm forbuilding 2D maps with attributes that make them useful fortraining and testing machine-learning-based approaches.The maps are based on dungeons environments where sev-eral random rooms are built and then those rooms are con-nected. In addition, we provide a dataset with 10,000 mapsproduced by the proposed algorithm and a description withextensive information for algorithm evaluation. Such infor-mation includes validation of path existence, the best path,distances, among other attributes. We believe that thesemaps and their related information can be very useful forrobotics enthusiasts and researchers who want to test deeplearning approaches. The dataset is available athttps://github.com/gbriel21/map2D_dataSet.git",
-      "authors": "Gabriel O. Flores-Aquino, Jheison Duvier Díaz Ortega, Ricardo Yahir Almazan Arvizu, Raúl López Muñoz, O. Octavio Gutierrez-Frias, J. Irving Vasquez-Gomez",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.13242",
-      "pdf": "https://arxiv.org/pdf/2110.13242.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation",
-        "Dataset"
-      ],
-      "tags": [
-        "Navigation",
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2111.01674",
-      "title": "Minimizing Energy Consumption Leads to the Emergence of Gaits in Legged Robots",
-      "abstract": "Legged locomotion is commonly studied and expressed as a discrete set of gait patterns, like walk, trot, gallop, which are usually treated as given and pre-programmed in legged robots for efficient locomotion at different speeds. However, fixing a set of pre-programmed gaits limits the generality of locomotion. Recent animal motor studies show that these conventional gaits are only prevalent in ideal flat terrain conditions while real-world locomotion is unstructured and more like bouts of intermittent steps. What principles could lead to both structured and unstructured patterns across mammals and how to synthesize them in robots? In this work, we take an analysis-by-synthesis approach and learn to move by minimizing mechanical energy. We demonstrate that learning to minimize energy consumption plays a key role in the emergence of natural locomotion gaits at different speeds in real quadruped robots. The emergent gaits are structured in ideal terrains and look similar to that of horses and sheep. The same approach leads to unstructured gaits in rough terrains which is consistent with the findings in animal motor control. We validate our hypothesis in both simulation and real hardware across natural terrains. Videos at https://energy-locomotion.github.io",
-      "authors": "Zipeng Fu, Ashish Kumar, Jitendra Malik, Deepak Pathak",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2111.01674",
-      "pdf": "https://arxiv.org/pdf/2111.01674.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.CV",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Locomotion"
-      ],
-      "tags": [
-        "Locomotion"
-      ]
-    },
-    {
-      "id": "2110.13125",
-      "title": "Automatic Impact-sounding Acoustic Inspection of Concrete Structure",
-      "abstract": "Impact sounding signal has been shown to contain information about structural integrity flaws and subsurface objects from previous research. As non-destructive testing (NDT) method, one of the biggest challenges in impact sounding based inspection is the subsurface targets detection and reconstruction. This paper presents the importance and practicability of using solenoids to trigger impact sounding signal and using acoustic data to reconstruct subsurface objects to address this issue. First, by taking advantage of Visual Simultaneous Localization and Mapping (V-SLAM), we could obtain the 3D position of the robot during the inspection. Second, our NDE method is based on Frequency Density (FD) analysis for the Fast Fourier Transform (FFT) of the impact sounding signal. At last, by combining the 3D position data and acoustic data, this paper creates a 3D map to highlight the possible subsurface objects. The experimental results demonstrate the feasibility of the method.",
-      "authors": "Jinglun Feng, Hua Xiao, Ejup Hoxha, Yifeng Song, Liang Yang, Jizhong Xiao",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.13125",
-      "pdf": "https://arxiv.org/pdf/2110.13125.pdf",
-      "upvotes": 0,
-      "categories": [
-        "eess.AS",
-        "cs.SD",
-        "eess.SP"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation"
-      ],
-      "tags": [
-        "Navigation"
-      ]
-    },
-    {
-      "id": "2110.12940",
-      "title": "CoboGuider: Haptic Potential Fields for Safe Human-Robot Interaction",
-      "abstract": "Modern industry still relies on manual manufacturing operations and safe human-robot interaction is of great interest nowadays. Speed and Separation Monitoring (SSM) allows close and efficient collaborative scenarios by maintaining a protective separation distance during robot operation. The paper focuses on a novel approach to strengthen the SSM safety requirements by introducing haptic feedback to a robotic cell worker. Tactile stimuli provide early warning of dangerous movements and proximity to the robot, based on the human reaction time and instantaneous velocities of robot and operator. A preliminary experiment was performed to identify the reaction time of participants when they are exposed to tactile stimuli in a collaborative environment with controlled conditions. In a second experiment, we evaluated our approach into a study case where human worker and cobot performed collaborative planetary gear assembly. Results show that the applied approach increased the average minimum distance between the robot's end-effector and hand by 44% compared to the operator relying only on the visual feedback. Moreover, the participants without the haptic support have failed several times to maintain the protective separation distance.",
-      "authors": "Viktor Rakhmatulin, Miguel Altamirano Cabrera, Fikre Hagos, Oleg Sautenkov, Jonathan Tirado, Ighor Uzhinsky, Dzmitry Tsetserukou",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.12940",
-      "pdf": "https://arxiv.org/pdf/2110.12940.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Tactile"
-      ],
-      "tags": [
-        "Tactile"
-      ]
-    },
-    {
-      "id": "2110.12919",
-      "title": "WOLF: A modular estimation framework for robotics based on factor graphs",
-      "abstract": "This paper introduces WOLF, a C++ estimation framework based on factor graphs and targeted at mobile robotics. WOLF can be used beyond SLAM to handle self-calibration, model identification, or the observation of dynamic quantities other than localization. The architecture of WOLF allows for a modular yet tightly-coupled estimator. Modularity is enhanced via reusable plugins that are loaded at runtime depending on application setup. This setup is achieved conveniently through YAML files, allowing users to configure a wide range of applications without the need of writing or compiling code. Most procedures are coded as abstract algorithms in base classes with varying levels of specialization. Overall, all these assets allow for coherent processing and favor code re-usability and scalability. WOLF can be used with ROS, and is made publicly available and open to collaboration.",
-      "authors": "Joan Sola, Joan Vallve, Joaquim Casals, Jeremie Deray, Mederic Fourmy, Dinesh Atchuthan, Andreu Corominas-Murtra, Juan Andrade-Cetto",
-      "date": "2021-10-25",
-      "published": "2021-10-25",
-      "arxiv": "https://arxiv.org/abs/2110.12919",
-      "pdf": "https://arxiv.org/pdf/2110.12919.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation"
-      ],
-      "tags": [
-        "Navigation"
-      ]
     }
   ]
 }
