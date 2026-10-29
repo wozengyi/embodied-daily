@@ -180120,7 +180120,7 @@
       "url": "https://arxiv.org/abs/2610.13781",
       "arxiv": "https://arxiv.org/abs/2610.13781",
       "pdf": "https://arxiv.org/pdf/2610.13781.pdf",
-      "upvotes": 32,
+      "upvotes": 33,
       "categories": [
         "cs.CV"
       ],
@@ -185697,7 +185697,7 @@
       "url": "https://arxiv.org/abs/2610.18950",
       "arxiv": "https://arxiv.org/abs/2610.18950",
       "pdf": "https://arxiv.org/pdf/2610.18950.pdf",
-      "upvotes": 7,
+      "upvotes": 8,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -188897,7 +188897,7 @@
       "url": "https://huggingface.co/papers/2610.22471",
       "arxiv": "https://arxiv.org/abs/2610.22471",
       "pdf": "https://arxiv.org/pdf/2610.22471.pdf",
-      "upvotes": 484,
+      "upvotes": 488,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -192208,7 +192208,7 @@
       "url": "https://huggingface.co/papers/2610.28594",
       "arxiv": "https://arxiv.org/abs/2610.28594",
       "pdf": "https://arxiv.org/pdf/2610.28594.pdf",
-      "upvotes": 53,
+      "upvotes": 55,
       "categories": [
         "cs.CV"
       ],
@@ -193062,7 +193062,7 @@
       "url": "https://arxiv.org/abs/2610.29560",
       "arxiv": "https://arxiv.org/abs/2610.29560",
       "pdf": "https://arxiv.org/pdf/2610.29560.pdf",
-      "upvotes": 33,
+      "upvotes": 34,
       "categories": [
         "cs.RO"
       ],
@@ -193931,7 +193931,7 @@
       "url": "https://huggingface.co/papers/2610.29997",
       "arxiv": "https://arxiv.org/abs/2610.29997",
       "pdf": "https://arxiv.org/pdf/2610.29997.pdf",
-      "upvotes": 161,
+      "upvotes": 162,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -193987,7 +193987,7 @@
       "url": "https://arxiv.org/abs/2610.29915",
       "arxiv": "https://arxiv.org/abs/2610.29915",
       "pdf": "https://arxiv.org/pdf/2610.29915.pdf",
-      "upvotes": 15,
+      "upvotes": 22,
       "categories": [
         "cs.CV"
       ],
@@ -194361,7 +194361,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.28698",
       "arxiv": "https://arxiv.org/abs/2610.28698",
       "pdf": "https://arxiv.org/pdf/2610.28698.pdf",
-      "upvotes": 85,
+      "upvotes": 86,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -194498,7 +194498,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.30320",
       "arxiv": "https://arxiv.org/abs/2610.30320",
       "pdf": "https://arxiv.org/pdf/2610.30320.pdf",
-      "upvotes": 51,
+      "upvotes": 52,
       "tags": [
         "World Model",
         "WAM"
@@ -195517,13 +195517,13 @@
       "url": "https://arxiv.org/abs/2610.31670",
       "arxiv": "https://arxiv.org/abs/2610.31670",
       "pdf": "https://arxiv.org/pdf/2610.31670.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "categories": [
         "cs.CV",
         "cs.LG",
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "VLA",
         "World Model",
@@ -195535,7 +195535,8 @@
         "World Model",
         "Foundation Models",
         "WAM"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.31670"
     },
     "2610.32961": {
       "id": "2610.32961",
@@ -196923,7 +196924,7 @@
       "url": "https://arxiv.org/abs/2610.34674",
       "arxiv": "https://arxiv.org/abs/2610.34674",
       "pdf": "https://arxiv.org/pdf/2610.34674.pdf",
-      "upvotes": 3,
+      "upvotes": 7,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -197051,7 +197052,7 @@
       "url": "https://huggingface.co/papers/2610.34356",
       "arxiv": "https://arxiv.org/abs/2610.34356",
       "pdf": "https://arxiv.org/pdf/2610.34356.pdf",
-      "upvotes": 16,
+      "upvotes": 30,
       "categories": [
         "cs.RO"
       ],
@@ -197397,7 +197398,7 @@
       "url": "https://arxiv.org/abs/2610.33718",
       "arxiv": "https://arxiv.org/abs/2610.33718",
       "pdf": "https://arxiv.org/pdf/2610.33718.pdf",
-      "upvotes": 9,
+      "upvotes": 13,
       "categories": [
         "cs.RO",
         "cs.LG"
@@ -197856,7 +197857,7 @@
       "url": "https://arxiv.org/abs/2610.35385",
       "arxiv": "https://arxiv.org/abs/2610.35385",
       "pdf": "https://arxiv.org/pdf/2610.35385.pdf",
-      "upvotes": 16,
+      "upvotes": 21,
       "categories": [
         "cs.RO"
       ],
@@ -198511,7 +198512,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.33966",
       "arxiv": "https://arxiv.org/abs/2610.33966",
       "pdf": "https://arxiv.org/pdf/2610.33966.pdf",
-      "upvotes": 117,
+      "upvotes": 126,
       "tags": [
         "LLM Agent",
         "Dataset",
@@ -199447,7 +199448,7 @@
       "url": "https://huggingface.co/papers/2610.37666",
       "arxiv": "https://arxiv.org/abs/2610.37666",
       "pdf": "https://arxiv.org/pdf/2610.37666.pdf",
-      "upvotes": 41,
+      "upvotes": 49,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -199893,7 +199894,7 @@
       "url": "https://huggingface.co/papers/2610.37219",
       "arxiv": "https://arxiv.org/abs/2610.37219",
       "pdf": "https://arxiv.org/pdf/2610.37219.pdf",
-      "upvotes": 3,
+      "upvotes": 5,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -200028,7 +200029,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36068",
       "arxiv": "https://arxiv.org/abs/2610.36068",
       "pdf": "https://arxiv.org/pdf/2610.36068.pdf",
-      "upvotes": 43,
+      "upvotes": 61,
       "tags": [
         "World Model",
         "Simulator"
@@ -200050,7 +200051,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36077",
       "arxiv": "https://arxiv.org/abs/2610.36077",
       "pdf": "https://arxiv.org/pdf/2610.36077.pdf",
-      "upvotes": 6,
+      "upvotes": 535,
       "tags": [
         "Sim2Real",
         "Dataset"
@@ -200072,7 +200073,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.34921",
       "arxiv": "https://arxiv.org/abs/2610.34921",
       "pdf": "https://arxiv.org/pdf/2610.34921.pdf",
-      "upvotes": 0,
+      "upvotes": 2,
       "tags": [
         "VLA",
         "Imitation Learning",
@@ -200096,7 +200097,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.33079",
       "arxiv": "https://arxiv.org/abs/2610.33079",
       "pdf": "https://arxiv.org/pdf/2610.33079.pdf",
-      "upvotes": 13,
+      "upvotes": 15,
       "tags": [
         "Dataset"
       ],
@@ -200116,7 +200117,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.14018",
       "arxiv": "https://arxiv.org/abs/2610.14018",
       "pdf": "https://arxiv.org/pdf/2610.14018.pdf",
-      "upvotes": 9,
+      "upvotes": 22,
       "tags": [
         "VLA",
         "World Model",
@@ -200134,7 +200135,97 @@
         "WAM"
       ],
       "source": "hf"
+    },
+    "2610.37381": {
+      "id": "2610.37381",
+      "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+      "abstract": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
+      "authors": "Hanqing Wang, Zhaotian Cai, Ruichuan An, Bohan Zeng, Tao Zhang, Yilin Chen, Xu Jiang, Kaiquan Chen, Chongyang Wu, Haoran Li, Fan Yang, Mingan Lin, Wentao Zhang, Zenan Zhou, Youzheng Wu",
+      "date": "2026-10-28",
+      "published": "2026-10-28",
+      "url": "https://huggingface.co/papers/2610.37381",
+      "hfUrl": "https://huggingface.co/papers/2610.37381",
+      "arxiv": "https://arxiv.org/abs/2610.37381",
+      "pdf": "https://arxiv.org/pdf/2610.37381.pdf",
+      "upvotes": 141,
+      "tags": [
+        "VLA",
+        "World Model",
+        "Dataset"
+      ],
+      "topics": [
+        "VLA",
+        "World Model",
+        "Dataset"
+      ],
+      "source": "hf"
+    },
+    "2610.37037": {
+      "id": "2610.37037",
+      "title": "Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception",
+      "abstract": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
+      "authors": "Lai Wei, Yatai Li, Liangbo He, Jun Lan, Renjie Gu, Linhan Cao, Junkai Lin, Huijia Zhu, Weiqiang Wang, Linghe Kong, Yue Wang, Zhuosheng Zhang, Weiran Huang",
+      "date": "2026-10-28",
+      "published": "2026-10-28",
+      "url": "https://huggingface.co/papers/2610.37037",
+      "hfUrl": "https://huggingface.co/papers/2610.37037",
+      "arxiv": "https://arxiv.org/abs/2610.37037",
+      "pdf": "https://arxiv.org/pdf/2610.37037.pdf",
+      "upvotes": 23,
+      "tags": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    "2610.36791": {
+      "id": "2610.36791",
+      "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+      "abstract": "Learning controllable world dynamics from heterogeneous interaction videos is challenging because robot embodiments use incompatible action spaces, while human videos lack native control labels. We present RynnWorld-Latent, a cross-embodiment video world model that uses the 3D-grounded latent actions introduced by RynnLAM as a shared conditioning interface. This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space. Built on a pretrained video transformer, RynnWorld-Latent combines global action tokens with an identity-initialized local pathway that aligns actions with future video latents. We pretrain on 23 datasets comprising approximately 553.5M frames and adapt the model to target robots through post-training. The framework supports two data-generation routes: digital teleoperation uses target robot commands to generate action-video demonstrations, while latent-action synthesis transfers source motion to an edited initial frame and pairs the resulting rollout with retargeted pseudo robot actions. Experiments show improved video prediction metrics on public benchmarks and two real-robot platforms, alongside qualitative action following when different action sequences share the same initial observation. Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings. These results support universal latent actions as a scalable interface for learning controllable visual dynamics across heterogeneous embodiments.",
+      "authors": "Haoyu Zhao, Yinzhou Tang, Zixuan Wang, Minghao Zhu, Dongchi Huang, Xingyue Zhao, Qin Zhao, Kehan Li, Siteng Huang, Xin Li, Zhenyu Zeng, Mingxiu Chen, Deli Zhao, Zhongyu Li",
+      "date": "2026-10-28",
+      "published": "2026-10-28",
+      "url": "https://huggingface.co/papers/2610.36791",
+      "hfUrl": "https://huggingface.co/papers/2610.36791",
+      "arxiv": "https://arxiv.org/abs/2610.36791",
+      "pdf": "https://arxiv.org/pdf/2610.36791.pdf",
+      "upvotes": 9,
+      "tags": [
+        "World Model",
+        "Teleoperation",
+        "Dataset"
+      ],
+      "topics": [
+        "World Model",
+        "Teleoperation",
+        "Dataset"
+      ],
+      "source": "hf"
+    },
+    "2509.05512": {
+      "id": "2509.05512",
+      "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+      "abstract": "This paper introduces Quaternion Approximate Networks (QUAN), a novel deep learning framework that leverages quaternion algebra for rotation equivariant image classification and object detection. Unlike conventional quaternion neural networks attempting to operate entirely in the quaternion domain, QUAN approximates quaternion convolution through Hamilton product decomposition using real-valued operations. This approach preserves geometric properties while enabling efficient implementation with custom CUDA kernels. We introduce Independent Quaternion Batch Normalization (IQBN) for training stability and extend quaternion operations to spatial attention mechanisms. QUAN is evaluated on image classification (CIFAR-10/100, ImageNet), object detection (COCO, DOTA), and robotic perception tasks. In classification tasks, QUAN achieves higher accuracy with fewer parameters and faster convergence compared to existing convolution and quaternion-based models. For objection detection, QUAN demonstrates improved parameter efficiency and rotation handling over standard Convolutional Neural Networks (CNNs) while establishing the SOTA for quaternion CNNs in this downstream task. These results highlight its potential for deployment in resource-constrained robotic systems requiring rotation-aware perception and application in other domains. Code: https://cwru-aism.github.io/ QUANpaper/",
+      "authors": "Bryce Grant, Peng Wang",
+      "date": "2026-10-28",
+      "published": "2026-10-28",
+      "url": "https://huggingface.co/papers/2509.05512",
+      "hfUrl": "https://huggingface.co/papers/2509.05512",
+      "arxiv": "https://arxiv.org/abs/2509.05512",
+      "pdf": "https://arxiv.org/pdf/2509.05512.pdf",
+      "upvotes": 2,
+      "tags": [
+        "Robotics"
+      ],
+      "topics": [
+        "Robotics"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-10-28T05:52:10.903684+00:00"
+  "generatedAt": "2026-10-29T05:56:18.651961+00:00"
 }
