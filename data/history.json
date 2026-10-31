@@ -188724,7 +188724,7 @@
       "url": "https://arxiv.org/abs/2610.22951",
       "arxiv": "https://arxiv.org/abs/2610.22951",
       "pdf": "https://arxiv.org/pdf/2610.22951.pdf",
-      "upvotes": 16,
+      "upvotes": 17,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -189091,7 +189091,7 @@
       "url": "https://arxiv.org/abs/2610.26663",
       "arxiv": "https://arxiv.org/abs/2610.26663",
       "pdf": "https://arxiv.org/pdf/2610.26663.pdf",
-      "upvotes": 21,
+      "upvotes": 22,
       "categories": [
         "cs.RO"
       ],
@@ -194499,7 +194499,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.30320",
       "arxiv": "https://arxiv.org/abs/2610.30320",
       "pdf": "https://arxiv.org/pdf/2610.30320.pdf",
-      "upvotes": 52,
+      "upvotes": 53,
       "tags": [
         "World Model",
         "WAM"
@@ -195284,7 +195284,7 @@
       "url": "https://arxiv.org/abs/2610.31423",
       "arxiv": "https://arxiv.org/abs/2610.31423",
       "pdf": "https://arxiv.org/pdf/2610.31423.pdf",
-      "upvotes": 12,
+      "upvotes": 13,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -195518,7 +195518,7 @@
       "url": "https://arxiv.org/abs/2610.31670",
       "arxiv": "https://arxiv.org/abs/2610.31670",
       "pdf": "https://arxiv.org/pdf/2610.31670.pdf",
-      "upvotes": 21,
+      "upvotes": 31,
       "categories": [
         "cs.CV",
         "cs.LG",
@@ -196925,7 +196925,7 @@
       "url": "https://arxiv.org/abs/2610.34674",
       "arxiv": "https://arxiv.org/abs/2610.34674",
       "pdf": "https://arxiv.org/pdf/2610.34674.pdf",
-      "upvotes": 10,
+      "upvotes": 11,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -197600,7 +197600,7 @@
       "url": "https://arxiv.org/abs/2610.34186",
       "arxiv": "https://arxiv.org/abs/2610.34186",
       "pdf": "https://arxiv.org/pdf/2610.34186.pdf",
-      "upvotes": 2,
+      "upvotes": 6,
       "categories": [
         "cs.RO"
       ],
@@ -198514,7 +198514,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.33966",
       "arxiv": "https://arxiv.org/abs/2610.33966",
       "pdf": "https://arxiv.org/pdf/2610.33966.pdf",
-      "upvotes": 126,
+      "upvotes": 127,
       "tags": [
         "LLM Agent",
         "Dataset",
@@ -199809,7 +199809,7 @@
       "url": "https://arxiv.org/abs/2610.36420",
       "arxiv": "https://arxiv.org/abs/2610.36420",
       "pdf": "https://arxiv.org/pdf/2610.36420.pdf",
-      "upvotes": 0,
+      "upvotes": 4,
       "categories": [
         "cs.CV"
       ],
@@ -200032,7 +200032,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36068",
       "arxiv": "https://arxiv.org/abs/2610.36068",
       "pdf": "https://arxiv.org/pdf/2610.36068.pdf",
-      "upvotes": 88,
+      "upvotes": 89,
       "tags": [
         "World Model",
         "Simulator"
@@ -200076,7 +200076,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.34921",
       "arxiv": "https://arxiv.org/abs/2610.34921",
       "pdf": "https://arxiv.org/pdf/2610.34921.pdf",
-      "upvotes": 3,
+      "upvotes": 5,
       "tags": [
         "VLA",
         "Imitation Learning",
@@ -200150,7 +200150,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.37381",
       "arxiv": "https://arxiv.org/abs/2610.37381",
       "pdf": "https://arxiv.org/pdf/2610.37381.pdf",
-      "upvotes": 146,
+      "upvotes": 148,
       "tags": [
         "VLA",
         "World Model",
@@ -200174,7 +200174,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.37037",
       "arxiv": "https://arxiv.org/abs/2610.37037",
       "pdf": "https://arxiv.org/pdf/2610.37037.pdf",
-      "upvotes": 26,
+      "upvotes": 27,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -200196,7 +200196,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36791",
       "arxiv": "https://arxiv.org/abs/2610.36791",
       "pdf": "https://arxiv.org/pdf/2610.36791.pdf",
-      "upvotes": 9,
+      "upvotes": 10,
       "tags": [
         "World Model",
         "Teleoperation",
@@ -202255,7 +202255,33 @@
         "3D / Perception",
         "WAM"
       ]
+    },
+    "2610.39287": {
+      "id": "2610.39287",
+      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+      "abstract": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
+      "authors": "Junli Liu, Zhongrui You, Chenhui Li, Zhen Li, Yuyang Tian, Qizhen Chen, Delin Qu, Haoming Song, Dong Wang, Xuelong Li, Zhigang Wang, Bin Zhao",
+      "date": "2026-10-30",
+      "published": "2026-10-30",
+      "url": "https://huggingface.co/papers/2610.39287",
+      "hfUrl": "https://huggingface.co/papers/2610.39287",
+      "arxiv": "https://arxiv.org/abs/2610.39287",
+      "pdf": "https://arxiv.org/pdf/2610.39287.pdf",
+      "upvotes": 4,
+      "tags": [
+        "VLA",
+        "Navigation",
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "topics": [
+        "VLA",
+        "Navigation",
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-10-30T05:57:18.771912+00:00"
+  "generatedAt": "2026-10-31T05:53:39.000231+00:00"
 }

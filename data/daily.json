@@ -1,23 +1,49 @@
 {
-  "generatedAt": "2026-10-30T05:57:18.771912+00:00",
+  "generatedAt": "2026-10-31T05:53:39.000231+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-23",
-  "archiveCutoff": "2021-10-31",
-  "addedToday": 78,
-  "historyTotal": 8215,
-  "count": 252,
-  "archiveCount": 7623,
+  "recentCutoff": "2026-10-24",
+  "archiveCutoff": "2021-11-01",
+  "addedToday": 1,
+  "historyTotal": 8216,
+  "count": 219,
+  "archiveCount": 7650,
   "sources": {
-    "hf": 26,
-    "arxiv": 226
+    "hf": 22,
+    "arxiv": 197
   },
   "archiveSources": {
-    "hf": 278,
-    "arxiv": 7345
+    "hf": 283,
+    "arxiv": 7367
   },
   "warnings": [],
   "papers": [
+    {
+      "id": "2610.39287",
+      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+      "abstract": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
+      "authors": "Junli Liu, Zhongrui You, Chenhui Li, Zhen Li, Yuyang Tian, Qizhen Chen, Delin Qu, Haoming Song, Dong Wang, Xuelong Li, Zhigang Wang, Bin Zhao",
+      "date": "2026-10-30",
+      "published": "2026-10-30",
+      "url": "https://huggingface.co/papers/2610.39287",
+      "hfUrl": "https://huggingface.co/papers/2610.39287",
+      "arxiv": "https://arxiv.org/abs/2610.39287",
+      "pdf": "https://arxiv.org/pdf/2610.39287.pdf",
+      "upvotes": 4,
+      "tags": [
+        "VLA",
+        "Navigation",
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "topics": [
+        "VLA",
+        "Navigation",
+        "Imitation Learning",
+        "Dataset"
+      ],
+      "source": "hf"
+    },
     {
       "id": "2610.39385",
       "title": "UMI-Live for In-The-Wild Bimanual Robotics Data Collection",
@@ -1440,7 +1466,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.37381",
       "arxiv": "https://arxiv.org/abs/2610.37381",
       "pdf": "https://arxiv.org/pdf/2610.37381.pdf",
-      "upvotes": 146,
+      "upvotes": 148,
       "tags": [
         "VLA",
         "World Model",
@@ -1464,7 +1490,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36068",
       "arxiv": "https://arxiv.org/abs/2610.36068",
       "pdf": "https://arxiv.org/pdf/2610.36068.pdf",
-      "upvotes": 88,
+      "upvotes": 89,
       "tags": [
         "World Model",
         "Simulator"
@@ -1515,7 +1541,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.37037",
       "arxiv": "https://arxiv.org/abs/2610.37037",
       "pdf": "https://arxiv.org/pdf/2610.37037.pdf",
-      "upvotes": 26,
+      "upvotes": 27,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -1537,7 +1563,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36791",
       "arxiv": "https://arxiv.org/abs/2610.36791",
       "pdf": "https://arxiv.org/pdf/2610.36791.pdf",
-      "upvotes": 9,
+      "upvotes": 10,
       "tags": [
         "World Model",
         "Teleoperation",
@@ -1589,7 +1615,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.34921",
       "arxiv": "https://arxiv.org/abs/2610.34921",
       "pdf": "https://arxiv.org/pdf/2610.34921.pdf",
-      "upvotes": 3,
+      "upvotes": 5,
       "tags": [
         "VLA",
         "Imitation Learning",
@@ -2060,7 +2086,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.33966",
       "arxiv": "https://arxiv.org/abs/2610.33966",
       "pdf": "https://arxiv.org/pdf/2610.33966.pdf",
-      "upvotes": 126,
+      "upvotes": 127,
       "tags": [
         "LLM Agent",
         "Dataset",
@@ -2166,7 +2192,7 @@
       "url": "https://arxiv.org/abs/2610.36420",
       "arxiv": "https://arxiv.org/abs/2610.36420",
       "pdf": "https://arxiv.org/pdf/2610.36420.pdf",
-      "upvotes": 0,
+      "upvotes": 4,
       "categories": [
         "cs.CV"
       ],
@@ -3612,7 +3638,7 @@
       "url": "https://arxiv.org/abs/2610.34674",
       "arxiv": "https://arxiv.org/abs/2610.34674",
       "pdf": "https://arxiv.org/pdf/2610.34674.pdf",
-      "upvotes": 10,
+      "upvotes": 11,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -4594,7 +4620,7 @@
       "url": "https://arxiv.org/abs/2610.34186",
       "arxiv": "https://arxiv.org/abs/2610.34186",
       "pdf": "https://arxiv.org/pdf/2610.34186.pdf",
-      "upvotes": 2,
+      "upvotes": 6,
       "categories": [
         "cs.RO"
       ],
@@ -5690,7 +5716,9 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.27851",
       "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
@@ -5724,7 +5752,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.30320",
       "arxiv": "https://arxiv.org/abs/2610.30320",
       "pdf": "https://arxiv.org/pdf/2610.30320.pdf",
-      "upvotes": 52,
+      "upvotes": 53,
       "tags": [
         "World Model",
         "WAM"
@@ -6554,9 +6582,7 @@
       "tags": [
         "Locomotion"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.29997",
       "title": "DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations",
@@ -6641,6 +6667,37 @@
       "hfUrl": "https://huggingface.co/papers/2610.31162"
     },
     {
+      "id": "2610.31670",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "abstract": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, different modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To examine this, we propose Sensorimotor Alignment ($S^2$), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that $S^2$ correlates positively with downstream robot task success across embodied model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. $S^2$ can also identify promising vision-language model (VLM) backbones even before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, $S^2$ offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With $S^2$, we extend PRH to embodied models and make sensorimotor alignment empirically measurable, offering insight into why an embodied model succeeds beyond its closed-loop success rate.",
+      "authors": "Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei",
+      "date": "2026-10-22",
+      "published": "2026-10-22",
+      "url": "https://arxiv.org/abs/2610.31670",
+      "arxiv": "https://arxiv.org/abs/2610.31670",
+      "pdf": "https://arxiv.org/pdf/2610.31670.pdf",
+      "upvotes": 31,
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "World Model",
+        "Foundation Models",
+        "WAM"
+      ],
+      "tags": [
+        "VLA",
+        "World Model",
+        "Foundation Models",
+        "WAM"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.31670"
+    },
+    {
       "id": "2610.30136",
       "title": "Agentic World Action Models",
       "abstract": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architecture a code expert generates parameterized skill routines and control logic while video and action experts generate future visual states and low-level motor commands. Code serves two complementary roles: it structures multi-step prediction and control within the world model and represents skills as reusable programs for subsequent agentic execution. We further introduce an automated curation pipeline that labels robot and human video trajectories with aligned programs and consolidates recurring routines into reusable skill libraries. Evaluations on RoboTwin 2.0 and physical bimanual manipulation tasks show improved task performance over VLA and WAM baselines, alongside gains in language following, semantic reasoning and robustness, demonstrating that agentic code enables connection between planning, prediction and execution within WAMs.",
@@ -6701,37 +6758,6 @@
       "hfUrl": "https://huggingface.co/papers/2610.30108"
     },
     {
-      "id": "2610.31670",
-      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
-      "abstract": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, different modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To examine this, we propose Sensorimotor Alignment ($S^2$), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that $S^2$ correlates positively with downstream robot task success across embodied model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. $S^2$ can also identify promising vision-language model (VLM) backbones even before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, $S^2$ offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With $S^2$, we extend PRH to embodied models and make sensorimotor alignment empirically measurable, offering insight into why an embodied model succeeds beyond its closed-loop success rate.",
-      "authors": "Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang, Chen Wei",
-      "date": "2026-10-22",
-      "published": "2026-10-22",
-      "url": "https://arxiv.org/abs/2610.31670",
-      "arxiv": "https://arxiv.org/abs/2610.31670",
-      "pdf": "https://arxiv.org/pdf/2610.31670.pdf",
-      "upvotes": 21,
-      "categories": [
-        "cs.CV",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "World Model",
-        "Foundation Models",
-        "WAM"
-      ],
-      "tags": [
-        "VLA",
-        "World Model",
-        "Foundation Models",
-        "WAM"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.31670"
-    },
-    {
       "id": "2610.31569",
       "title": "Echo: Coupled Action and Task Status Signal Denoising for Vision Language Action Models",
       "abstract": "Recognizing task completion and failure enables robots to stop upon success and initiate recovery or replanning after failure. Existing methods augment Vision Language Action (VLA) policies with task status signal prediction to support these execution decisions. However, learning and integrating these signals can require fine-grained supervision, external monitoring models, or complex architectural designs. Moreover, the potential of task status signals to directly guide action generation remains underexplored. We present Echo, a framework that combines task status signal learning without frame-level progress annotations with a compact design for status prediction and action generation within a single VLA. Specifically, Echo represents task status with stop and failure signals, added as two dimensions of each action chunk and denoised together with robot actions. Their combination distinguishes ongoing execution, successful completion, and failure. To learn these signals without fine-grained progress annotations, Echo constructs successful, failed, and recovery trajectories with complementary supervision properties. To enable status signal-guided action generation, Echo controls interactions between the signals and actions and denoises the signals faster than the actions. These allow later action denoising steps to condition on cleaner status estimates while preserving accurate signal prediction. Extensive real-world manipulation experiments show that Echo accurately predicts task status and consistently improves policy performance.",
@@ -6766,7 +6792,7 @@
       "url": "https://arxiv.org/abs/2610.31423",
       "arxiv": "https://arxiv.org/abs/2610.31423",
       "pdf": "https://arxiv.org/pdf/2610.31423.pdf",
-      "upvotes": 12,
+      "upvotes": 13,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -10734,7 +10760,7 @@
       "url": "https://arxiv.org/abs/2610.26663",
       "arxiv": "https://arxiv.org/abs/2610.26663",
       "pdf": "https://arxiv.org/pdf/2610.26663.pdf",
-      "upvotes": 21,
+      "upvotes": 22,
       "categories": [
         "cs.RO"
       ],
@@ -13120,7 +13146,7 @@
       "url": "https://arxiv.org/abs/2610.22951",
       "arxiv": "https://arxiv.org/abs/2610.22951",
       "pdf": "https://arxiv.org/pdf/2610.22951.pdf",
-      "upvotes": 16,
+      "upvotes": 17,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -194487,164 +194513,6 @@
         "cs.RO",
         "cs.CV",
         "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2111.00417",
-      "title": "Hierarchical Deep Residual Reasoning for Temporal Moment Localization",
-      "abstract": "Temporal Moment Localization (TML) in untrimmed videos is a challenging task in the field of multimedia, which aims at localizing the start and end points of the activity in the video, described by a sentence query. Existing methods mainly focus on mining the correlation between video and sentence representations or investigating the fusion manner of the two modalities. These works mainly understand the video and sentence coarsely, ignoring the fact that a sentence can be understood from various semantics, and the dominant words affecting the moment localization in the semantics are the action and object reference. Toward this end, we propose a Hierarchical Deep Residual Reasoning (HDRR) model, which decomposes the video and sentence into multi-level representations with different semantics to achieve a finer-grained localization. Furthermore, considering that videos with different resolution and sentences with different length have different difficulty in understanding, we design the simple yet effective Res-BiGRUs for feature fusion, which is able to grasp the useful information in a self-adapting manner. Extensive experiments conducted on Charades-STA and ActivityNet-Captions datasets demonstrate the superiority of our HDRR model compared with other state-of-the-art methods.",
-      "authors": "Ziyang Ma, Xianjing Han, Xuemeng Song, Yiran Cui, Liqiang Nie",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00417",
-      "pdf": "https://arxiv.org/pdf/2111.00417.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.MM",
-        "cs.CL",
-        "cs.CV",
-        "cs.IR"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Grasping",
-        "Imitation Learning",
-        "Dataset"
-      ],
-      "tags": [
-        "Grasping",
-        "Imitation Learning",
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2111.00585",
-      "title": "JEDAI: A System for Skill-Aligned Explainable Robot Planning",
-      "abstract": "This paper presents JEDAI, an AI system designed for outreach and educational efforts aimed at non-AI experts. JEDAI features a novel synthesis of research ideas from integrated task and motion planning and explainable AI. JEDAI helps users create high-level, intuitive plans while ensuring that they will be executable by the robot. It also provides users customized explanations about errors and helps improve their understanding of AI planning as well as the limits and capabilities of the underlying robot system.",
-      "authors": "Naman Shah, Pulkit Verma, Trevor Angle, Siddharth Srivastava",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00585",
-      "pdf": "https://arxiv.org/pdf/2111.00585.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.AI",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2111.00489",
-      "title": "Integrated Modular Solution for Task Oriented Manipulator Configuration Design",
-      "abstract": "Modular and reconfigurable robotic systems have been designed to provide a customized solution for the non-repetitive tasks to be performed in a constrained environment. Customized solutions are normally extracted from task-based optimization of the possible manipulator configurations but the solution are not integrated, for providing the modular compositions directly. In this work, in the first phase, a strategy of finding unconventional optimal configurations with minimal number of degrees-of-freedom are discussed based upon the prescribed working locations and the cluttered environment. Then, in the second phase, design of the modular and reconfigurable architecture is presented which can adapt these unconventional robotic parameters. Rather than generating and evolving the modular compositions, a strategy is presented through which the unconventional optimal configurations can be mapped directly to the modular compositions. The generated modular composition is validated using Robot Operating System for the motion planning between the prescribed working locations in a given cluttered environment.",
-      "authors": "Anubhav Dogra, Sakshay Mahna, Srikant Sekhar Padhee, Ekta Singla",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00489",
-      "pdf": "https://arxiv.org/pdf/2111.00489.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2111.00452",
-      "title": "Experimental Study on the Imitation of the Human Head-and-Eye Pose Using the 3-DOF Agile Eye Parallel Robot with ROS and Mediapipe Framework",
-      "abstract": "In this paper, a method to mimic a human face and eyes is proposed which can be regarded as a combination of computer vision techniques and neural network concepts. From a mechanical standpoint, a 3-DOF spherical parallel robot is used which imitates the human head movement. In what concerns eye movement, a 2-DOF mechanism is attached to the end-effector of the 3-DOF spherical parallel mechanism. In order to have robust and reliable results for the imitation, meaningful information should be extracted from the face mesh for obtaining the pose of a face, i.e., the roll, yaw, and pitch angles. To this end, two methods are proposed where each of them has its own pros and cons. The first method consists in resorting to the so-called Mediapipe library which is a machine learning solution for high-fidelity body pose tracking, introduced by Google. As the second method, a model is trained by a linear regression model for a gathered dataset of face pictures in different poses. In addition, a 3-DOF Agile Eye parallel robot is utilized to show the ability of this robot to be used as a system which is similar to a human head for performing a 3-DOF rotational motion pattern. Furthermore, a 3D printed face and a 2-DOF eye mechanism are fabricated to display the whole system more stylish way. Experimental tests, which are done based on a ROS platform, demonstrate the effectiveness of the proposed methods for tracking the human head and eye movement.",
-      "authors": "Amirmohammad Radmehr, Milad Asgari, Mehdi Tale Masouleh",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00452",
-      "pdf": "https://arxiv.org/pdf/2111.00452.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Dataset"
-      ],
-      "tags": [
-        "Dataset"
-      ]
-    },
-    {
-      "id": "2111.00435",
-      "title": "An Actor-Critic Method for Simulation-Based Optimization",
-      "abstract": "We focus on a simulation-based optimization problem of choosing the best design from the feasible space. Although the simulation model can be queried with finite samples, its internal processing rule cannot be utilized in the optimization process. We formulate the sampling process as a policy searching problem and give a solution from the perspective of Reinforcement Learning (RL). Concretely, Actor-Critic (AC) framework is applied, where the Actor serves as a surrogate model to predict the performance on unknown designs, whereas the actor encodes the sampling policy to be optimized. We design the updating rule and propose two algorithms for the cases where the feasible spaces are continuous and discrete respectively. Some experiments are designed to validate the effectiveness of proposed algorithms, including two toy examples, which intuitively explain the algorithms, and two more complex tasks, i.e., adversarial attack task and RL task, which validate the effectiveness in large-scale problems. The results show that the proposed algorithms can successfully deal with these problems. Especially note that in the RL task, our methods give a new perspective to robot control by treating the task as a simulation model and solving it by optimizing the policy generating process, while existing works commonly optimize the policy itself directly.",
-      "authors": "Kuo Li, Qing-Shan Jia, Jiaqi Yan",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00435",
-      "pdf": "https://arxiv.org/pdf/2111.00435.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Reinforcement Learning"
-      ],
-      "tags": [
-        "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2111.00422",
-      "title": "Shape Programmable Magnetic Pixel Soft Robot",
-      "abstract": "Magnetic response soft robot realizes programmable shape regulation with the help of magnetic field and produces various actions. The shape control of magnetic soft robot is based on the magnetic anisotropy caused by the orderly distribution of magnetic particles in the elastic matrix. In the previous technologies, magnetic programming is coupled with the manufacturing process, and the orientation of magnetic particles cannot be modified, which brings restrictions to the design and use of magnetic soft robot. This paper presents a magnetic pixel robot with shape programmable function. By encapsulating NdFeB/gallium composites into silicone shell, a thermo-magnetic response functional film with lattice structure are fabricated. Basing on thermal-assisted magnetization technique, we realized the discrete magnetization region distribution on the film. Therefore, we proposed a magnetic coding technique to realize the mathematical response action design of software robot. Using these methods, we prepared several magnetic soft robots based on origami structure. The experiments show that the behavior mode of robot can be flexibly and repeatedly regulated by magnetic encoding technique. This work provides a basis for the programmed shape regulation and motion design of soft robot.",
-      "authors": "Ran Zhao, Hanchen Yao, Houde Dai",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00422",
-      "pdf": "https://arxiv.org/pdf/2111.00422.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cond-mat.mtrl-sci"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2111.00384",
-      "title": "A Design and an Implementation of an Inverse Kinematics Computation in Robotics Using Real Quantifier Elimination based on Comprehensive Gröbner Systems",
-      "abstract": "The solution and implementation of the inverse kinematics computation of a three degree-of-freedom (DOF) robot manipulator using an algorithm for real quantifier elimination with Comprehensive Gröbner Systems (CGS) are presented. The method enables us to verify if the given parameters are feasible before solving the inverse kinematics problem. Furthermore, pre-computation of CGS and substituting parameters in the CGS with the given values avoids the repetitive computation of Gröbner basis. Experimental results compared with our previous implementation are shown.",
-      "authors": "Shuto Otaki, Akira Terui, Masahiko Mikawa",
-      "date": "2021-10-31",
-      "published": "2021-10-31",
-      "arxiv": "https://arxiv.org/abs/2111.00384",
-      "pdf": "https://arxiv.org/pdf/2111.00384.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.SC",
-        "math.AC"
       ],
       "source": "arxiv",
       "topics": [
