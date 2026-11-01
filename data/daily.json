@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-10-31T05:53:39.000231+00:00",
+  "generatedAt": "2026-11-01T06:18:03.216064+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-24",
-  "archiveCutoff": "2021-11-01",
-  "addedToday": 1,
+  "recentCutoff": "2026-10-25",
+  "archiveCutoff": "2021-11-02",
+  "addedToday": 0,
   "historyTotal": 8216,
-  "count": 219,
-  "archiveCount": 7650,
+  "count": 197,
+  "archiveCount": 7672,
   "sources": {
-    "hf": 22,
-    "arxiv": 197
+    "hf": 21,
+    "arxiv": 176
   },
   "archiveSources": {
-    "hf": 283,
-    "arxiv": 7367
+    "hf": 284,
+    "arxiv": 7388
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2610.39287",
@@ -29,7 +31,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.39287",
       "arxiv": "https://arxiv.org/abs/2610.39287",
       "pdf": "https://arxiv.org/pdf/2610.39287.pdf",
-      "upvotes": 4,
+      "upvotes": 5,
       "tags": [
         "VLA",
         "Navigation",
@@ -1466,7 +1468,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.37381",
       "arxiv": "https://arxiv.org/abs/2610.37381",
       "pdf": "https://arxiv.org/pdf/2610.37381.pdf",
-      "upvotes": 148,
+      "upvotes": 150,
       "tags": [
         "VLA",
         "World Model",
@@ -1511,7 +1513,7 @@
       "url": "https://huggingface.co/papers/2610.37666",
       "arxiv": "https://arxiv.org/abs/2610.37666",
       "pdf": "https://arxiv.org/pdf/2610.37666.pdf",
-      "upvotes": 55,
+      "upvotes": 62,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -1541,7 +1543,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.37037",
       "arxiv": "https://arxiv.org/abs/2610.37037",
       "pdf": "https://arxiv.org/pdf/2610.37037.pdf",
-      "upvotes": 27,
+      "upvotes": 31,
       "tags": [
         "Dataset",
         "Embodied Vision"
@@ -1563,7 +1565,7 @@
       "hfUrl": "https://huggingface.co/papers/2610.36791",
       "arxiv": "https://arxiv.org/abs/2610.36791",
       "pdf": "https://arxiv.org/pdf/2610.36791.pdf",
-      "upvotes": 10,
+      "upvotes": 11,
       "tags": [
         "World Model",
         "Teleoperation",
@@ -3658,6 +3660,34 @@
       "hfUrl": "https://huggingface.co/papers/2610.34674"
     },
     {
+      "id": "2610.27782",
+      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "abstract": "Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-annotated videos from 8 source corpora and 10 video generators, spanning grippers, human hands, and dexterous hands. Experiments reveal uneven alignment between existing judges and human ratings: general-purpose MLLMs show lower agreement on physical adherence, while specialized video judges designed for general-domain physical reasoning do not consistently transfer to embodied scenarios. Motivated by these findings, we construct RoboJudge-Train, comprising 12K videos annotated with 25K human-verified scores and model-assisted rationales for Physical Adherence and Instruction Alignment. We fine-tune a 9B MLLM on this dataset with supervised learning followed by reinforcement learning, yielding RoboJudge-9B. Among the model judges evaluated on RoboJudge-Bench, RoboJudge-9B achieves the highest overall agreement, reaching a Pearson correlation of 0.719 with a statistically significant 0.089 gain over Gemini-3.7-Flash, the best-performing proprietary baseline in our evaluation. Training on RoboJudge-Train also yields gains on external benchmarks, including VideoPhy2 and Physion-Eval. We further use RoboJudge-9B as a downstream evaluator to benchmark video generation models according to Physical Adherence and Instruction Alignment.",
+      "authors": "Siyuan Ma, Yu Qi, Cheng Ye, Ruotian Peng, Xinyi Xu, Zitiantao Lin, Zedong Cai, Yijian Huang, Weiyang Liu, Siyuan Wang, Yandong Wen",
+      "date": "2026-10-26",
+      "published": "2026-10-26",
+      "url": "https://huggingface.co/papers/2610.27782",
+      "hfUrl": "https://huggingface.co/papers/2610.27782",
+      "arxiv": "https://arxiv.org/abs/2610.27782",
+      "pdf": "https://arxiv.org/pdf/2610.27782.pdf",
+      "upvotes": 9,
+      "tags": [
+        "World Model",
+        "Dexterous",
+        "Reinforcement Learning",
+        "LLM Agent",
+        "Dataset"
+      ],
+      "topics": [
+        "World Model",
+        "Dexterous",
+        "Reinforcement Learning",
+        "LLM Agent",
+        "Dataset"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2610.32909",
       "title": "HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training",
       "abstract": "HoloBoxing presents a simple recipe for learning humanoid boxing by building on a pretrained whole-body controller. The recipe separates reusable motor skills from task decisions: a compact planner requests future body-point targets, while the frozen controller handles joint-level execution. A learned decoder maps 32-dimensional actions to structured target windows, and measured-state imitation initializes the planner before reinforcement learning. Task learning then refines interaction behavior while reusing the decoder and controller, avoiding the need to relearn whole-body control. This combination keeps task optimization focused on a compact upper policy and supplies an initial behavior before reward-driven exploration. Starting from that available controller, the recipe accounts for about seven minutes of additional training, including reused representation fitting and a single-GPU task run. This excludes controller pretraining, data preparation, evaluation, and search. Simulated boxing experiments and component controls evaluate the resulting behavior and the roles of imitation initialization and the target representation.",
@@ -3685,34 +3715,6 @@
         "Reinforcement Learning"
       ],
       "hfUrl": "https://huggingface.co/papers/2610.32909"
-    },
-    {
-      "id": "2610.27782",
-      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
-      "abstract": "Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-annotated videos from 8 source corpora and 10 video generators, spanning grippers, human hands, and dexterous hands. Experiments reveal uneven alignment between existing judges and human ratings: general-purpose MLLMs show lower agreement on physical adherence, while specialized video judges designed for general-domain physical reasoning do not consistently transfer to embodied scenarios. Motivated by these findings, we construct RoboJudge-Train, comprising 12K videos annotated with 25K human-verified scores and model-assisted rationales for Physical Adherence and Instruction Alignment. We fine-tune a 9B MLLM on this dataset with supervised learning followed by reinforcement learning, yielding RoboJudge-9B. Among the model judges evaluated on RoboJudge-Bench, RoboJudge-9B achieves the highest overall agreement, reaching a Pearson correlation of 0.719 with a statistically significant 0.089 gain over Gemini-3.7-Flash, the best-performing proprietary baseline in our evaluation. Training on RoboJudge-Train also yields gains on external benchmarks, including VideoPhy2 and Physion-Eval. We further use RoboJudge-9B as a downstream evaluator to benchmark video generation models according to Physical Adherence and Instruction Alignment.",
-      "authors": "Siyuan Ma, Yu Qi, Cheng Ye, Ruotian Peng, Xinyi Xu, Zitiantao Lin, Zedong Cai, Yijian Huang, Weiyang Liu, Siyuan Wang, Yandong Wen",
-      "date": "2026-10-26",
-      "published": "2026-10-26",
-      "url": "https://huggingface.co/papers/2610.27782",
-      "hfUrl": "https://huggingface.co/papers/2610.27782",
-      "arxiv": "https://arxiv.org/abs/2610.27782",
-      "pdf": "https://arxiv.org/pdf/2610.27782.pdf",
-      "upvotes": 7,
-      "tags": [
-        "World Model",
-        "Dexterous",
-        "Reinforcement Learning",
-        "LLM Agent",
-        "Dataset"
-      ],
-      "topics": [
-        "World Model",
-        "Dexterous",
-        "Reinforcement Learning",
-        "LLM Agent",
-        "Dataset"
-      ],
-      "source": "hf"
     },
     {
       "id": "2610.35832",
@@ -4620,7 +4622,7 @@
       "url": "https://arxiv.org/abs/2610.34186",
       "arxiv": "https://arxiv.org/abs/2610.34186",
       "pdf": "https://arxiv.org/pdf/2610.34186.pdf",
-      "upvotes": 6,
+      "upvotes": 23,
       "categories": [
         "cs.RO"
       ],
@@ -5146,7 +5148,9 @@
       "tags": [
         "Manipulation"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.33718",
       "title": "RoboJev: An Open Vision-Language Judge for Robot Success Detection",
@@ -5716,9 +5720,7 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.27851",
       "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
@@ -5773,7 +5775,7 @@
       "url": "https://arxiv.org/abs/2610.32093",
       "arxiv": "https://arxiv.org/abs/2610.32093",
       "pdf": "https://arxiv.org/pdf/2610.32093.pdf",
-      "upvotes": 28,
+      "upvotes": 31,
       "categories": [
         "cs.RO"
       ],
@@ -6647,7 +6649,7 @@
       "url": "https://arxiv.org/abs/2610.31162",
       "arxiv": "https://arxiv.org/abs/2610.31162",
       "pdf": "https://arxiv.org/pdf/2610.31162.pdf",
-      "upvotes": 57,
+      "upvotes": 58,
       "categories": [
         "cs.CV"
       ],
@@ -6676,7 +6678,7 @@
       "url": "https://arxiv.org/abs/2610.31670",
       "arxiv": "https://arxiv.org/abs/2610.31670",
       "pdf": "https://arxiv.org/pdf/2610.31670.pdf",
-      "upvotes": 31,
+      "upvotes": 39,
       "categories": [
         "cs.CV",
         "cs.LG",
@@ -6792,7 +6794,7 @@
       "url": "https://arxiv.org/abs/2610.31423",
       "arxiv": "https://arxiv.org/abs/2610.31423",
       "pdf": "https://arxiv.org/pdf/2610.31423.pdf",
-      "upvotes": 13,
+      "upvotes": 15,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -6818,7 +6820,7 @@
       "url": "https://arxiv.org/abs/2610.31779",
       "arxiv": "https://arxiv.org/abs/2610.31779",
       "pdf": "https://arxiv.org/pdf/2610.31779.pdf",
-      "upvotes": 2,
+      "upvotes": 3,
       "categories": [
         "cs.RO"
       ],
