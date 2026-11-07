@@ -167174,7 +167174,7 @@
       "url": "https://arxiv.org/abs/2610.00854",
       "arxiv": "https://arxiv.org/abs/2610.00854",
       "pdf": "https://arxiv.org/pdf/2610.00854.pdf",
-      "upvotes": 103,
+      "upvotes": 106,
       "categories": [
         "cs.RO"
       ],
@@ -203991,7 +203991,7 @@
       "url": "https://huggingface.co/papers/2611.01560",
       "arxiv": "https://arxiv.org/abs/2611.01560",
       "pdf": "https://arxiv.org/pdf/2611.01560.pdf",
-      "upvotes": 47,
+      "upvotes": 48,
       "categories": [
         "cs.RO"
       ],
@@ -204818,11 +204818,11 @@
       "url": "https://arxiv.org/abs/2611.02660",
       "arxiv": "https://arxiv.org/abs/2611.02660",
       "pdf": "https://arxiv.org/pdf/2611.02660.pdf",
-      "upvotes": 0,
+      "upvotes": 7,
       "categories": [
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "VLA",
         "LLM Agent"
@@ -204830,7 +204830,8 @@
       "tags": [
         "VLA",
         "LLM Agent"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.02660"
     },
     "2611.02629": {
       "id": "2611.02629",
@@ -205544,7 +205545,7 @@
       "url": "https://arxiv.org/abs/2611.05320",
       "arxiv": "https://arxiv.org/abs/2611.05320",
       "pdf": "https://arxiv.org/pdf/2611.05320.pdf",
-      "upvotes": 24,
+      "upvotes": 26,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -205892,7 +205893,7 @@
       "url": "https://arxiv.org/abs/2611.04391",
       "arxiv": "https://arxiv.org/abs/2611.04391",
       "pdf": "https://arxiv.org/pdf/2611.04391.pdf",
-      "upvotes": 13,
+      "upvotes": 14,
       "categories": [
         "cs.AI"
       ],
@@ -207236,7 +207237,7 @@
       "url": "https://arxiv.org/abs/2611.04527",
       "arxiv": "https://arxiv.org/abs/2611.04527",
       "pdf": "https://arxiv.org/pdf/2611.04527.pdf",
-      "upvotes": 3,
+      "upvotes": 8,
       "categories": [
         "cs.RO"
       ],
@@ -207286,7 +207287,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.02497",
       "arxiv": "https://arxiv.org/abs/2611.02497",
       "pdf": "https://arxiv.org/pdf/2611.02497.pdf",
-      "upvotes": 48,
+      "upvotes": 49,
       "tags": [
         "VLA",
         "Humanoid",
@@ -207412,7 +207413,7 @@
       "url": "https://arxiv.org/abs/2611.06817",
       "arxiv": "https://arxiv.org/abs/2611.06817",
       "pdf": "https://arxiv.org/pdf/2611.06817.pdf",
-      "upvotes": 2,
+      "upvotes": 15,
       "categories": [
         "cs.CV"
       ],
@@ -208037,7 +208038,7 @@
       "url": "https://huggingface.co/papers/2611.06918",
       "arxiv": "https://arxiv.org/abs/2611.06918",
       "pdf": "https://arxiv.org/pdf/2611.06918.pdf",
-      "upvotes": 57,
+      "upvotes": 59,
       "categories": [
         "cs.CV"
       ],
@@ -208305,7 +208306,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.05377",
       "arxiv": "https://arxiv.org/abs/2611.05377",
       "pdf": "https://arxiv.org/pdf/2611.05377.pdf",
-      "upvotes": 54,
+      "upvotes": 57,
       "tags": [
         "Imitation Learning"
       ],
@@ -209097,7 +209098,7 @@
       "url": "https://huggingface.co/papers/2611.08373",
       "arxiv": "https://arxiv.org/abs/2611.08373",
       "pdf": "https://arxiv.org/pdf/2611.08373.pdf",
-      "upvotes": 1,
+      "upvotes": 120,
       "categories": [
         "cs.RO"
       ],
@@ -209663,7 +209664,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 34,
+      "upvotes": 96,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -209725,7 +209726,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.00883",
       "arxiv": "https://arxiv.org/abs/2611.00883",
       "pdf": "https://arxiv.org/pdf/2611.00883.pdf",
-      "upvotes": 16,
+      "upvotes": 50,
       "tags": [
         "VLA",
         "Dataset",
@@ -209749,7 +209750,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.05376",
       "arxiv": "https://arxiv.org/abs/2611.05376",
       "pdf": "https://arxiv.org/pdf/2611.05376.pdf",
-      "upvotes": 1,
+      "upvotes": 5,
       "tags": [
         "Imitation Learning",
         "Foundation Models"
@@ -209759,7 +209760,29 @@
         "Foundation Models"
       ],
       "source": "hf"
+    },
+    "2611.07613": {
+      "id": "2611.07613",
+      "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
+      "abstract": "LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: high computational cost from redundant tokens in low-intensity background regions, and limited generalization due to scarce annotated training data. We address both bottlenecks by exploiting the physical structure inherent to FWL data. First, we propose FWL-ToPM, a token pruning and merging mechanism that leverages intensity distributions to selectively reduce tokens while retaining critical waveform content. Second, we introduce FWLAug, a data augmentation framework designed as a regularization method that preserves waveform structure, retaining the Time-of-Flight waveform of each ray and the frustum geometry, to improve generalization to unseen scenes. Evaluated on the Ghost-FWL benchmark, FWL-ToPM achieves over 8 times speedup at real-time throughput alongside a nearly 9-point F1 gain over the prior state of the art, establishing the first real-time FWL Transformer that simultaneously improves accuracy. FWLAug further improves performance on both the standard benchmark and an out-of-distribution test set of unseen scenes. Together, these methods push FWL-based perception toward practical deployment. The code and the OOD dataset are publicly available and can be accessed via the project page: https://keio-csg.github.io/FWL-ToPM",
+      "authors": "Kotaro Oishi, Kazuma Ikeda, Ryosei Hara, Ryo Yoshida, Mariko Isogawa, Kentaro Yoshioka",
+      "date": "2026-11-06",
+      "published": "2026-11-06",
+      "url": "https://huggingface.co/papers/2611.07613",
+      "hfUrl": "https://huggingface.co/papers/2611.07613",
+      "arxiv": "https://arxiv.org/abs/2611.07613",
+      "pdf": "https://arxiv.org/pdf/2611.07613.pdf",
+      "upvotes": 3,
+      "tags": [
+        "Dataset",
+        "Autonomous Driving"
+      ],
+      "topics": [
+        "Dataset",
+        "Autonomous Driving"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-11-06T06:57:07.546352+00:00"
+  "generatedAt": "2026-11-07T06:08:39.273737+00:00"
 }

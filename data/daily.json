@@ -1,23 +1,52 @@
 {
-  "generatedAt": "2026-11-06T06:57:07.546352+00:00",
+  "generatedAt": "2026-11-07T06:08:39.273737+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-30",
-  "archiveCutoff": "2021-11-07",
-  "addedToday": 55,
-  "historyTotal": 8503,
-  "count": 279,
-  "archiveCount": 7877,
+  "recentCutoff": "2026-10-31",
+  "archiveCutoff": "2021-11-08",
+  "addedToday": 1,
+  "historyTotal": 8504,
+  "count": 232,
+  "archiveCount": 7925,
   "sources": {
     "hf": 24,
-    "arxiv": 255
+    "arxiv": 208
   },
   "archiveSources": {
-    "hf": 312,
-    "arxiv": 7565
+    "hf": 314,
+    "arxiv": 7611
   },
   "warnings": [],
   "papers": [
+    {
+      "id": "2611.08373",
+      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+      "abstract": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
+      "authors": "Fuhao Li, Wenxuan Song, Qizhou Huang, Ziyang Zhou, Jingbo Wang, Junwu E, Pengwei Wang, Yan Wang, Shunbo Zhou, Haoang Li",
+      "date": "2026-11-06",
+      "published": "2026-11-05",
+      "url": "https://huggingface.co/papers/2611.08373",
+      "arxiv": "https://arxiv.org/abs/2611.08373",
+      "pdf": "https://arxiv.org/pdf/2611.08373.pdf",
+      "upvotes": 120,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Manipulation",
+        "Dataset",
+        "3D / Perception"
+      ],
+      "tags": [
+        "VLA",
+        "Manipulation",
+        "Dataset",
+        "3D / Perception"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.08373"
+    },
     {
       "id": "2611.08449",
       "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
@@ -28,7 +57,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 34,
+      "upvotes": 96,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -61,7 +90,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.00883",
       "arxiv": "https://arxiv.org/abs/2611.00883",
       "pdf": "https://arxiv.org/pdf/2611.00883.pdf",
-      "upvotes": 16,
+      "upvotes": 50,
       "tags": [
         "VLA",
         "Dataset",
@@ -75,35 +104,6 @@
       "source": "hf"
     },
     {
-      "id": "2611.08373",
-      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
-      "abstract": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
-      "authors": "Fuhao Li, Wenxuan Song, Qizhou Huang, Ziyang Zhou, Jingbo Wang, Junwu E, Pengwei Wang, Yan Wang, Shunbo Zhou, Haoang Li",
-      "date": "2026-11-06",
-      "published": "2026-11-05",
-      "url": "https://huggingface.co/papers/2611.08373",
-      "arxiv": "https://arxiv.org/abs/2611.08373",
-      "pdf": "https://arxiv.org/pdf/2611.08373.pdf",
-      "upvotes": 1,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Manipulation",
-        "Dataset",
-        "3D / Perception"
-      ],
-      "tags": [
-        "VLA",
-        "Manipulation",
-        "Dataset",
-        "3D / Perception"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.08373"
-    },
-    {
       "id": "2611.05376",
       "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
       "abstract": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as a symbiosis loop of sensing, keeping, understanding, living alongside, acting for and thinking with the person, and growing, enclosed by a personal runtime and by trust. Because a symbiont changes what a person can do in front of others, it also raises risks of a new kind, from covert assistance in examinations to pressure on everyone to adopt it, and we treat their governance as part of the paradigm.",
@@ -114,7 +114,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.05376",
       "arxiv": "https://arxiv.org/abs/2611.05376",
       "pdf": "https://arxiv.org/pdf/2611.05376.pdf",
-      "upvotes": 1,
+      "upvotes": 5,
       "tags": [
         "Imitation Learning",
         "Foundation Models"
@@ -122,6 +122,28 @@
       "topics": [
         "Imitation Learning",
         "Foundation Models"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2611.07613",
+      "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
+      "abstract": "LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: high computational cost from redundant tokens in low-intensity background regions, and limited generalization due to scarce annotated training data. We address both bottlenecks by exploiting the physical structure inherent to FWL data. First, we propose FWL-ToPM, a token pruning and merging mechanism that leverages intensity distributions to selectively reduce tokens while retaining critical waveform content. Second, we introduce FWLAug, a data augmentation framework designed as a regularization method that preserves waveform structure, retaining the Time-of-Flight waveform of each ray and the frustum geometry, to improve generalization to unseen scenes. Evaluated on the Ghost-FWL benchmark, FWL-ToPM achieves over 8 times speedup at real-time throughput alongside a nearly 9-point F1 gain over the prior state of the art, establishing the first real-time FWL Transformer that simultaneously improves accuracy. FWLAug further improves performance on both the standard benchmark and an out-of-distribution test set of unseen scenes. Together, these methods push FWL-based perception toward practical deployment. The code and the OOD dataset are publicly available and can be accessed via the project page: https://keio-csg.github.io/FWL-ToPM",
+      "authors": "Kotaro Oishi, Kazuma Ikeda, Ryosei Hara, Ryo Yoshida, Mariko Isogawa, Kentaro Yoshioka",
+      "date": "2026-11-06",
+      "published": "2026-11-06",
+      "url": "https://huggingface.co/papers/2611.07613",
+      "hfUrl": "https://huggingface.co/papers/2611.07613",
+      "arxiv": "https://arxiv.org/abs/2611.07613",
+      "pdf": "https://arxiv.org/pdf/2611.07613.pdf",
+      "upvotes": 3,
+      "tags": [
+        "Dataset",
+        "Autonomous Driving"
+      ],
+      "topics": [
+        "Dataset",
+        "Autonomous Driving"
       ],
       "source": "hf"
     },
@@ -135,7 +157,7 @@
       "url": "https://huggingface.co/papers/2611.06918",
       "arxiv": "https://arxiv.org/abs/2611.06918",
       "pdf": "https://arxiv.org/pdf/2611.06918.pdf",
-      "upvotes": 57,
+      "upvotes": 59,
       "categories": [
         "cs.CV"
       ],
@@ -1435,7 +1457,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.05377",
       "arxiv": "https://arxiv.org/abs/2611.05377",
       "pdf": "https://arxiv.org/pdf/2611.05377.pdf",
-      "upvotes": 54,
+      "upvotes": 57,
       "tags": [
         "Imitation Learning"
       ],
@@ -1455,7 +1477,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.02497",
       "arxiv": "https://arxiv.org/abs/2611.02497",
       "pdf": "https://arxiv.org/pdf/2611.02497.pdf",
-      "upvotes": 48,
+      "upvotes": 49,
       "tags": [
         "VLA",
         "Humanoid",
@@ -1471,6 +1493,35 @@
         "Hardware"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2611.06817",
+      "title": "Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models",
+      "abstract": "Egocentric human video offers a scalable source of manipulation priors for robot learning, yet translating raw data scale into generalizable robot policies demands rigorous data curation and training recipes. We introduce Open-HumanScale, the first fully open recipe for scaling egocentric pretraining to 50,000 hours, anchored by Open-HumanScale-50K---a curated egocentric video corpus densely annotated with hand motion and natural language. Leveraging this corpus, we systematically investigate pure human pretraining via closed-loop simulation evaluations and uncover an empirical log-linear scaling law linking pretraining data hours to downstream robot success rates. Grounded in these findings, we develop HumanWAM-Vanilla, a world--action model pretrained exclusively on 50k hours of egocentric human video. Upon robot post-training, HumanWAM-Vanilla reaches 92.08% success on RoboTwin 2.0 Clean2Clean and 68.88% on Clean2Random, alongside a 14.17% mean success rate and a 19.00 mean progress score on RoboDojo. To push the capability frontier further, we explore joint human--robot pretraining with HumanWAM-Goal, a visual-goal-conditioned world--action model. Hybrid data scaling unlocks broad zero-shot generalization across both simulation and physical benchmarks, propelling post-trained RoboTwin 2.0 performance to new state-of-the-art levels: 92.70% on Clean2Clean and a substantial leap to 84.60% on Clean2Random. On physical robots, HumanWAM-Goal further exhibits emergent embodied in-context learning, dynamically adapting its manipulation behavior to unseen visual goals without parameter updates. To support reproducible scaling research in embodied AI, we open-source the Open-HumanScale-50K corpus, data curation and pretraining pipelines, alongside the pretrained and post-trained HumanWAM checkpoints, inference code, and simulation evaluation suites.",
+      "authors": "Juncheng Ma, Jiaxin Li, Jiankai Tu, Bo Liang, Guodong Lv, Yufan Deng, Junzhe Tang, Liangzhu Yang, Chen Bian, Zicong Cao, Baohao Zhu, Jianxin Bi, Tengfei Yan, Yinyuan Zhang, Kewei Zhang, Xinglong Chen, Kaiqi Chen, Duomin Wang, Xiaotian Tang, Liang Tan, Li Li, Yuan Xu, Haosen Yang, Yuqi Wang, Jingfei Xia, Songyan Huang, Zhiyang Dou, Zhen Dong, Enze Xie, Tat-Seng Chua, Daquan Zhou",
+      "date": "2026-11-04",
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06817",
+      "arxiv": "https://arxiv.org/abs/2611.06817",
+      "pdf": "https://arxiv.org/pdf/2611.06817.pdf",
+      "upvotes": 15,
+      "categories": [
+        "cs.CV"
+      ],
+      "source": "hf",
+      "topics": [
+        "Dataset",
+        "Open-Source",
+        "Foundation Models",
+        "Embodied Vision"
+      ],
+      "tags": [
+        "Dataset",
+        "Open-Source",
+        "Foundation Models",
+        "Embodied Vision"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.06817"
     },
     {
       "id": "2611.04870",
@@ -1525,35 +1576,6 @@
         "Dataset"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.06768"
-    },
-    {
-      "id": "2611.06817",
-      "title": "Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models",
-      "abstract": "Egocentric human video offers a scalable source of manipulation priors for robot learning, yet translating raw data scale into generalizable robot policies demands rigorous data curation and training recipes. We introduce Open-HumanScale, the first fully open recipe for scaling egocentric pretraining to 50,000 hours, anchored by Open-HumanScale-50K---a curated egocentric video corpus densely annotated with hand motion and natural language. Leveraging this corpus, we systematically investigate pure human pretraining via closed-loop simulation evaluations and uncover an empirical log-linear scaling law linking pretraining data hours to downstream robot success rates. Grounded in these findings, we develop HumanWAM-Vanilla, a world--action model pretrained exclusively on 50k hours of egocentric human video. Upon robot post-training, HumanWAM-Vanilla reaches 92.08% success on RoboTwin 2.0 Clean2Clean and 68.88% on Clean2Random, alongside a 14.17% mean success rate and a 19.00 mean progress score on RoboDojo. To push the capability frontier further, we explore joint human--robot pretraining with HumanWAM-Goal, a visual-goal-conditioned world--action model. Hybrid data scaling unlocks broad zero-shot generalization across both simulation and physical benchmarks, propelling post-trained RoboTwin 2.0 performance to new state-of-the-art levels: 92.70% on Clean2Clean and a substantial leap to 84.60% on Clean2Random. On physical robots, HumanWAM-Goal further exhibits emergent embodied in-context learning, dynamically adapting its manipulation behavior to unseen visual goals without parameter updates. To support reproducible scaling research in embodied AI, we open-source the Open-HumanScale-50K corpus, data curation and pretraining pipelines, alongside the pretrained and post-trained HumanWAM checkpoints, inference code, and simulation evaluation suites.",
-      "authors": "Juncheng Ma, Jiaxin Li, Jiankai Tu, Bo Liang, Guodong Lv, Yufan Deng, Junzhe Tang, Liangzhu Yang, Chen Bian, Zicong Cao, Baohao Zhu, Jianxin Bi, Tengfei Yan, Yinyuan Zhang, Kewei Zhang, Xinglong Chen, Kaiqi Chen, Duomin Wang, Xiaotian Tang, Liang Tan, Li Li, Yuan Xu, Haosen Yang, Yuqi Wang, Jingfei Xia, Songyan Huang, Zhiyang Dou, Zhen Dong, Enze Xie, Tat-Seng Chua, Daquan Zhou",
-      "date": "2026-11-04",
-      "published": "2026-11-04",
-      "url": "https://arxiv.org/abs/2611.06817",
-      "arxiv": "https://arxiv.org/abs/2611.06817",
-      "pdf": "https://arxiv.org/pdf/2611.06817.pdf",
-      "upvotes": 2,
-      "categories": [
-        "cs.CV"
-      ],
-      "source": "hf",
-      "topics": [
-        "Dataset",
-        "Open-Source",
-        "Foundation Models",
-        "Embodied Vision"
-      ],
-      "tags": [
-        "Dataset",
-        "Open-Source",
-        "Foundation Models",
-        "Embodied Vision"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.06817"
     },
     {
       "id": "2611.06881",
@@ -2319,7 +2341,7 @@
       "url": "https://huggingface.co/papers/2611.01560",
       "arxiv": "https://arxiv.org/abs/2611.01560",
       "pdf": "https://arxiv.org/pdf/2611.01560.pdf",
-      "upvotes": 47,
+      "upvotes": 48,
       "categories": [
         "cs.RO"
       ],
@@ -2342,7 +2364,7 @@
       "url": "https://arxiv.org/abs/2611.05320",
       "arxiv": "https://arxiv.org/abs/2611.05320",
       "pdf": "https://arxiv.org/pdf/2611.05320.pdf",
-      "upvotes": 24,
+      "upvotes": 26,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -2372,7 +2394,7 @@
       "url": "https://arxiv.org/abs/2611.04391",
       "arxiv": "https://arxiv.org/abs/2611.04391",
       "pdf": "https://arxiv.org/pdf/2611.04391.pdf",
-      "upvotes": 13,
+      "upvotes": 14,
       "categories": [
         "cs.AI"
       ],
@@ -2384,6 +2406,31 @@
         "VLA"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.04391"
+    },
+    {
+      "id": "2611.04527",
+      "title": "Future Representation Distillation for Imagination-Free World Action Models",
+      "abstract": "World Action Models (WAMs) use the predictive knowledge of pretrained video diffusion models for robot control through future video prediction. However, iterative video denoising is costly, and inaccurate visual predictions can compromise action prediction. Our key idea is to make this predictive knowledge available through visual representations computed from the current observation, enabling action prediction without generating future videos. We introduce DreamFree, a WAM that repurposes a pretrained video diffusion model as a predictive visual encoder through representation distillation. The visual encoder learns to predict a frozen video diffusion model's representation using only the current observation. An action module is then trained to predict actions by extracting action-relevant information from the visual encoder. Across real-world and simulated tasks, DreamFree achieves higher success rates than state-of-the-art VLAs and WAMs, while performing real-time closed-loop control at 11Hz with a 14B video diffusion backbone. Experiments show that DreamFree can translate stronger video priors and additional video data into better robot control and enable learning new robot tasks from video demonstrations, including videos from a different embodiment, without action annotation for the new tasks.",
+      "authors": "Jaehyeong Jo, Sangwon Jang, Sihyun Yu, Seonghyeon Ye, Yekyung Nah, Hojung Jung, Kimin Lee, Sung Ju Hwang",
+      "date": "2026-11-03",
+      "published": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04527",
+      "arxiv": "https://arxiv.org/abs/2611.04527",
+      "pdf": "https://arxiv.org/pdf/2611.04527.pdf",
+      "upvotes": 8,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "World Model",
+        "WAM"
+      ],
+      "tags": [
+        "World Model",
+        "WAM"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.04527"
     },
     {
       "id": "2611.05163",
@@ -2414,31 +2461,6 @@
         "Foundation Models"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.05163"
-    },
-    {
-      "id": "2611.04527",
-      "title": "Future Representation Distillation for Imagination-Free World Action Models",
-      "abstract": "World Action Models (WAMs) use the predictive knowledge of pretrained video diffusion models for robot control through future video prediction. However, iterative video denoising is costly, and inaccurate visual predictions can compromise action prediction. Our key idea is to make this predictive knowledge available through visual representations computed from the current observation, enabling action prediction without generating future videos. We introduce DreamFree, a WAM that repurposes a pretrained video diffusion model as a predictive visual encoder through representation distillation. The visual encoder learns to predict a frozen video diffusion model's representation using only the current observation. An action module is then trained to predict actions by extracting action-relevant information from the visual encoder. Across real-world and simulated tasks, DreamFree achieves higher success rates than state-of-the-art VLAs and WAMs, while performing real-time closed-loop control at 11Hz with a 14B video diffusion backbone. Experiments show that DreamFree can translate stronger video priors and additional video data into better robot control and enable learning new robot tasks from video demonstrations, including videos from a different embodiment, without action annotation for the new tasks.",
-      "authors": "Jaehyeong Jo, Sangwon Jang, Sihyun Yu, Seonghyeon Ye, Yekyung Nah, Hojung Jung, Kimin Lee, Sung Ju Hwang",
-      "date": "2026-11-03",
-      "published": "2026-11-03",
-      "url": "https://arxiv.org/abs/2611.04527",
-      "arxiv": "https://arxiv.org/abs/2611.04527",
-      "pdf": "https://arxiv.org/pdf/2611.04527.pdf",
-      "upvotes": 3,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "World Model",
-        "WAM"
-      ],
-      "tags": [
-        "World Model",
-        "WAM"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.04527"
     },
     {
       "id": "2611.04166",
@@ -3640,6 +3662,31 @@
       "hfUrl": "https://huggingface.co/papers/2610.42141"
     },
     {
+      "id": "2611.02660",
+      "title": "HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation",
+      "abstract": "Recent advances in Vision-Language-Action (VLA) models have enabled fine manipulation capabilities, yet performing tasks that require working memory remains a key challenge. Most existing VLA architectures operate under a Markovian assumption, mapping only the current observation to an action, which leads to failure in non-Markovian environments. Inspired by the human 'inner monologue', we propose Hierarchical Explicit Language Memory (HeLM), a hierarchical VLA framework that maintains task-relevant history in explicit language through factorized event detection and event-triggered memory updates. We evaluate HeLM across 10 non-Markovian real-world tasks with 56 variants, including five newly formulated inter-episode tasks that require persistent context across task boundaries. HeLM improves intra-episode success by 12.8 percentage points over the strongest baseline and achieves 78% subtask success on compositional generalization tasks, while using up to 4.5x less memory and running 2.5x faster than the keyframe baseline at long horizons.",
+      "authors": "Gyeonghun Kim, Donghoon Kim, Minsoo Choi, Suyun Lee",
+      "date": "2026-11-02",
+      "published": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.02660",
+      "arxiv": "https://arxiv.org/abs/2611.02660",
+      "pdf": "https://arxiv.org/pdf/2611.02660.pdf",
+      "upvotes": 7,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "LLM Agent"
+      ],
+      "tags": [
+        "VLA",
+        "LLM Agent"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.02660"
+    },
+    {
       "id": "2610.42096",
       "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
       "abstract": "World action models (WAMs) learn latent variables from observations and use these to both predict the evolution of the scene and to generate actions. The prediction has to be of the whole scene, whereas only a portion of the scene causes actions. WAMs fitted to demonstrations do not, in general, guarantee that they will generate actions solely from the latent causes of the demonstrated actions (the action-relevant latent variables), as the model could just as well learn to imitate in this way whilst entangling the action-relevant latent variables with the nuisance variables. We therefore separate out what causes action from what prediction depends on. We prove that under a sparsity constraint the latent variables used to generate actions are an invertible function of the action-relevant latent variables alone and the true structure is identified up to a permutation of the latent variables. This requires neither sufficient temporal dependence nor any assumptions on how the unobserved regimes evolve and holds even when the action-relevant latent variables are statistically dependent on the rest. We therefore propose CWAM (Causal WAM), which incorporates the constraint into a pretrained WAM by adding a sparse routing path to its action head, with the world modeling objective remaining unchanged. Experiments on both synthetic data and real-world robots validate the theory as well as showcase the improved efficiency in closed-loop success.",
@@ -4602,30 +4649,6 @@
       "tags": [
         "VLA",
         "Reinforcement Learning"
-      ]
-    },
-    {
-      "id": "2611.02660",
-      "title": "HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation",
-      "abstract": "Recent advances in Vision-Language-Action (VLA) models have enabled fine manipulation capabilities, yet performing tasks that require working memory remains a key challenge. Most existing VLA architectures operate under a Markovian assumption, mapping only the current observation to an action, which leads to failure in non-Markovian environments. Inspired by the human 'inner monologue', we propose Hierarchical Explicit Language Memory (HeLM), a hierarchical VLA framework that maintains task-relevant history in explicit language through factorized event detection and event-triggered memory updates. We evaluate HeLM across 10 non-Markovian real-world tasks with 56 variants, including five newly formulated inter-episode tasks that require persistent context across task boundaries. HeLM improves intra-episode success by 12.8 percentage points over the strongest baseline and achieves 78% subtask success on compositional generalization tasks, while using up to 4.5x less memory and running 2.5x faster than the keyframe baseline at long horizons.",
-      "authors": "Gyeonghun Kim, Donghoon Kim, Minsoo Choi, Suyun Lee",
-      "date": "2026-11-02",
-      "published": "2026-11-02",
-      "url": "https://arxiv.org/abs/2611.02660",
-      "arxiv": "https://arxiv.org/abs/2611.02660",
-      "pdf": "https://arxiv.org/pdf/2611.02660.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "VLA",
-        "LLM Agent"
-      ],
-      "tags": [
-        "VLA",
-        "LLM Agent"
       ]
     },
     {
@@ -6084,7 +6107,9 @@
       "tags": [
         "Robotics"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2610.39287",
       "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
@@ -7289,9 +7314,7 @@
       "tags": [
         "LLM Agent"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.40373",
       "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
@@ -41010,6 +41033,35 @@
       ]
     },
     {
+      "id": "2610.00854",
+      "title": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
+      "abstract": "Frontier vision-language models (VLMs) combine scene estimation, interaction grounding, and executable actions. Understanding how these abilities support complete robotic tasks is central to evaluating their readiness as robot generalists. We introduce Embodied Agent Arena to examine where local competence supports, or falls short of, complete task success across Geometry, Spatial Reasoning, Affordance, Task Planning, and Manipulation. The arena contains 1,000 cases drawn from 32 established sources and GeoProbe, our new benchmark for geometric estimation on Blender renders and real-scene images. A minimal harness preserves source observations and operations while separating metric precision, functional grounding, and native goal completion. We evaluate seven VLMs, analyze Astra's task-specific advantages, and compare richer-observation execution protocols and multi-round review. Across the arena, Astra's advantage is strongest in precise estimation and usable-contact localization; completing coordinated, goal-directed actions remains the key gap to robot generalism.",
+      "authors": "Haojian Huang, Pukun Zhao, Zexi Li, Yehang Zhang, Yangkai Wei, Wenqian Li, Han Yang, Kaiwen Zhou, Ying-Cong Chen, Yinchuan Li",
+      "date": "2026-10-01",
+      "published": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.00854",
+      "arxiv": "https://arxiv.org/abs/2610.00854",
+      "pdf": "https://arxiv.org/pdf/2610.00854.pdf",
+      "upvotes": 106,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Imitation Learning",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "tags": [
+        "VLA",
+        "Imitation Learning",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2610.00854"
+    },
+    {
       "id": "2609.40325",
       "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
       "abstract": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have shown potential for automating this task. However, 3D world auditing is complex, requiring the close coupling of two distinct capabilities: action, to navigate the 3D world and search for anomalies systematically and efficiently; and visual reasoning, to understand the environment and identify anomalies from multimodal observations. It remains largely unexplored whether multimodal agents can effectively couple these two capabilities, using visual reasoning to identify potential anomalies while taking actions to validate them. In this paper, we introduce WorldAuditBench, a benchmark for 3D world auditing comprising 213 anomaly tasks across 13 environments built with Unreal Engine 5 and Three.js, spanning five anomaly families. We evaluate five frontier models under a fixed exploration budget using two auditing paradigms: VLA-based exploration followed by VLM-based anomaly identification, and an end-to-end VLM agent in which visual reasoning directly guides action selection. Across the evaluated models and two paradigms, success rates range from 6.6% to 42.3%, substantially below human performance (83.4%). Through the task of world auditing, WorldAuditBench provides a testbed for studying how multimodal agents couple action and visual reasoning in interactive 3D environments, while highlighting current limitations in their ability to gather and interpret evidence during exploration.",
@@ -41032,35 +41084,6 @@
         "Dataset"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2610.00854",
-      "title": "Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena",
-      "abstract": "Frontier vision-language models (VLMs) combine scene estimation, interaction grounding, and executable actions. Understanding how these abilities support complete robotic tasks is central to evaluating their readiness as robot generalists. We introduce Embodied Agent Arena to examine where local competence supports, or falls short of, complete task success across Geometry, Spatial Reasoning, Affordance, Task Planning, and Manipulation. The arena contains 1,000 cases drawn from 32 established sources and GeoProbe, our new benchmark for geometric estimation on Blender renders and real-scene images. A minimal harness preserves source observations and operations while separating metric precision, functional grounding, and native goal completion. We evaluate seven VLMs, analyze Astra's task-specific advantages, and compare richer-observation execution protocols and multi-round review. Across the arena, Astra's advantage is strongest in precise estimation and usable-contact localization; completing coordinated, goal-directed actions remains the key gap to robot generalism.",
-      "authors": "Haojian Huang, Pukun Zhao, Zexi Li, Yehang Zhang, Yangkai Wei, Wenqian Li, Han Yang, Kaiwen Zhou, Ying-Cong Chen, Yinchuan Li",
-      "date": "2026-10-01",
-      "published": "2026-10-01",
-      "url": "https://arxiv.org/abs/2610.00854",
-      "arxiv": "https://arxiv.org/abs/2610.00854",
-      "pdf": "https://arxiv.org/pdf/2610.00854.pdf",
-      "upvotes": 103,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Imitation Learning",
-        "Dataset",
-        "Embodied Vision"
-      ],
-      "tags": [
-        "VLA",
-        "Imitation Learning",
-        "Dataset",
-        "Embodied Vision"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2610.00854"
     },
     {
       "id": "2610.02508",
