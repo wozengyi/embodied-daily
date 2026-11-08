@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-11-07T06:08:39.273737+00:00",
+  "generatedAt": "2026-11-08T06:13:37.866445+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-10-31",
-  "archiveCutoff": "2021-11-08",
-  "addedToday": 1,
+  "recentCutoff": "2026-11-01",
+  "archiveCutoff": "2021-11-09",
+  "addedToday": 0,
   "historyTotal": 8504,
-  "count": 232,
-  "archiveCount": 7925,
+  "count": 211,
+  "archiveCount": 7946,
   "sources": {
     "hf": 24,
-    "arxiv": 208
+    "arxiv": 187
   },
   "archiveSources": {
     "hf": 314,
-    "arxiv": 7611
+    "arxiv": 7632
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2611.08373",
@@ -57,7 +59,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 96,
+      "upvotes": 100,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -78,6 +80,28 @@
         "WAM"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.08449"
+    },
+    {
+      "id": "2611.05376",
+      "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+      "abstract": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as a symbiosis loop of sensing, keeping, understanding, living alongside, acting for and thinking with the person, and growing, enclosed by a personal runtime and by trust. Because a symbiont changes what a person can do in front of others, it also raises risks of a new kind, from covert assistance in examinations to pressure on everyone to adopt it, and we treat their governance as part of the paradigm.",
+      "authors": "Hao Fei",
+      "date": "2026-11-06",
+      "published": "2026-11-06",
+      "url": "https://huggingface.co/papers/2611.05376",
+      "hfUrl": "https://huggingface.co/papers/2611.05376",
+      "arxiv": "https://arxiv.org/abs/2611.05376",
+      "pdf": "https://arxiv.org/pdf/2611.05376.pdf",
+      "upvotes": 86,
+      "tags": [
+        "Imitation Learning",
+        "Foundation Models"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Foundation Models"
+      ],
+      "source": "hf"
     },
     {
       "id": "2611.00883",
@@ -104,28 +128,6 @@
       "source": "hf"
     },
     {
-      "id": "2611.05376",
-      "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
-      "abstract": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as a symbiosis loop of sensing, keeping, understanding, living alongside, acting for and thinking with the person, and growing, enclosed by a personal runtime and by trust. Because a symbiont changes what a person can do in front of others, it also raises risks of a new kind, from covert assistance in examinations to pressure on everyone to adopt it, and we treat their governance as part of the paradigm.",
-      "authors": "Hao Fei",
-      "date": "2026-11-06",
-      "published": "2026-11-06",
-      "url": "https://huggingface.co/papers/2611.05376",
-      "hfUrl": "https://huggingface.co/papers/2611.05376",
-      "arxiv": "https://arxiv.org/abs/2611.05376",
-      "pdf": "https://arxiv.org/pdf/2611.05376.pdf",
-      "upvotes": 5,
-      "tags": [
-        "Imitation Learning",
-        "Foundation Models"
-      ],
-      "topics": [
-        "Imitation Learning",
-        "Foundation Models"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2611.07613",
       "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
       "abstract": "LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: high computational cost from redundant tokens in low-intensity background regions, and limited generalization due to scarce annotated training data. We address both bottlenecks by exploiting the physical structure inherent to FWL data. First, we propose FWL-ToPM, a token pruning and merging mechanism that leverages intensity distributions to selectively reduce tokens while retaining critical waveform content. Second, we introduce FWLAug, a data augmentation framework designed as a regularization method that preserves waveform structure, retaining the Time-of-Flight waveform of each ray and the frustum geometry, to improve generalization to unseen scenes. Evaluated on the Ghost-FWL benchmark, FWL-ToPM achieves over 8 times speedup at real-time throughput alongside a nearly 9-point F1 gain over the prior state of the art, establishing the first real-time FWL Transformer that simultaneously improves accuracy. FWLAug further improves performance on both the standard benchmark and an out-of-distribution test set of unseen scenes. Together, these methods push FWL-based perception toward practical deployment. The code and the OOD dataset are publicly available and can be accessed via the project page: https://keio-csg.github.io/FWL-ToPM",
@@ -136,7 +138,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.07613",
       "arxiv": "https://arxiv.org/abs/2611.07613",
       "pdf": "https://arxiv.org/pdf/2611.07613.pdf",
-      "upvotes": 3,
+      "upvotes": 5,
       "tags": [
         "Dataset",
         "Autonomous Driving"
@@ -157,7 +159,7 @@
       "url": "https://huggingface.co/papers/2611.06918",
       "arxiv": "https://arxiv.org/abs/2611.06918",
       "pdf": "https://arxiv.org/pdf/2611.06918.pdf",
-      "upvotes": 59,
+      "upvotes": 60,
       "categories": [
         "cs.CV"
       ],
@@ -1477,7 +1479,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.02497",
       "arxiv": "https://arxiv.org/abs/2611.02497",
       "pdf": "https://arxiv.org/pdf/2611.02497.pdf",
-      "upvotes": 49,
+      "upvotes": 50,
       "tags": [
         "VLA",
         "Humanoid",
@@ -1504,7 +1506,7 @@
       "url": "https://arxiv.org/abs/2611.06817",
       "arxiv": "https://arxiv.org/abs/2611.06817",
       "pdf": "https://arxiv.org/pdf/2611.06817.pdf",
-      "upvotes": 15,
+      "upvotes": 20,
       "categories": [
         "cs.CV"
       ],
@@ -1522,6 +1524,31 @@
         "Embodied Vision"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.06817"
+    },
+    {
+      "id": "2611.06768",
+      "title": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
+      "abstract": "Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that inform subsequent exploration and improvement. Our empirical study places physical manipulation at the center of the improvement process, examining how agents collaborate, what kinds of execution feedback support effective code refinement, and how task specifications and previously acquired skills influence robustness and task transfer. We further investigate the efficiency and capability of the resulting programs when deployed without involving an online agent for decision-making. Across eight real-world tasks, PyRUA-REAL achieves an average success rate of 91.1%. In complementary evaluation on 42 tasks from the RoboDojo benchmark, it achieves an average success rate of 84.4%. This study provides empirical guidance for turning physical exploration into reusable robot skills that support continued improvement and robust, efficient deployment.",
+      "authors": "Qiang Wang, Jianxin Bi, Shulong Jiang, Ruiyang Si, Wenbo Huang, Kaiqi Chen, Jiaxin Li, Liyun Li, Xuanyi Li, Daquan Zhou",
+      "date": "2026-11-04",
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06768",
+      "arxiv": "https://arxiv.org/abs/2611.06768",
+      "pdf": "https://arxiv.org/pdf/2611.06768.pdf",
+      "upvotes": 11,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Navigation",
+        "Dataset"
+      ],
+      "tags": [
+        "Navigation",
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.06768"
     },
     {
       "id": "2611.04870",
@@ -1551,31 +1578,6 @@
         "Simulator"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.04870"
-    },
-    {
-      "id": "2611.06768",
-      "title": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
-      "abstract": "Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that inform subsequent exploration and improvement. Our empirical study places physical manipulation at the center of the improvement process, examining how agents collaborate, what kinds of execution feedback support effective code refinement, and how task specifications and previously acquired skills influence robustness and task transfer. We further investigate the efficiency and capability of the resulting programs when deployed without involving an online agent for decision-making. Across eight real-world tasks, PyRUA-REAL achieves an average success rate of 91.1%. In complementary evaluation on 42 tasks from the RoboDojo benchmark, it achieves an average success rate of 84.4%. This study provides empirical guidance for turning physical exploration into reusable robot skills that support continued improvement and robust, efficient deployment.",
-      "authors": "Qiang Wang, Jianxin Bi, Shulong Jiang, Ruiyang Si, Wenbo Huang, Kaiqi Chen, Jiaxin Li, Liyun Li, Xuanyi Li, Daquan Zhou",
-      "date": "2026-11-04",
-      "published": "2026-11-04",
-      "url": "https://arxiv.org/abs/2611.06768",
-      "arxiv": "https://arxiv.org/abs/2611.06768",
-      "pdf": "https://arxiv.org/pdf/2611.06768.pdf",
-      "upvotes": 10,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "Navigation",
-        "Dataset"
-      ],
-      "tags": [
-        "Navigation",
-        "Dataset"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.06768"
     },
     {
       "id": "2611.06881",
@@ -2394,7 +2396,7 @@
       "url": "https://arxiv.org/abs/2611.04391",
       "arxiv": "https://arxiv.org/abs/2611.04391",
       "pdf": "https://arxiv.org/pdf/2611.04391.pdf",
-      "upvotes": 14,
+      "upvotes": 15,
       "categories": [
         "cs.AI"
       ],
@@ -2408,31 +2410,6 @@
       "hfUrl": "https://huggingface.co/papers/2611.04391"
     },
     {
-      "id": "2611.04527",
-      "title": "Future Representation Distillation for Imagination-Free World Action Models",
-      "abstract": "World Action Models (WAMs) use the predictive knowledge of pretrained video diffusion models for robot control through future video prediction. However, iterative video denoising is costly, and inaccurate visual predictions can compromise action prediction. Our key idea is to make this predictive knowledge available through visual representations computed from the current observation, enabling action prediction without generating future videos. We introduce DreamFree, a WAM that repurposes a pretrained video diffusion model as a predictive visual encoder through representation distillation. The visual encoder learns to predict a frozen video diffusion model's representation using only the current observation. An action module is then trained to predict actions by extracting action-relevant information from the visual encoder. Across real-world and simulated tasks, DreamFree achieves higher success rates than state-of-the-art VLAs and WAMs, while performing real-time closed-loop control at 11Hz with a 14B video diffusion backbone. Experiments show that DreamFree can translate stronger video priors and additional video data into better robot control and enable learning new robot tasks from video demonstrations, including videos from a different embodiment, without action annotation for the new tasks.",
-      "authors": "Jaehyeong Jo, Sangwon Jang, Sihyun Yu, Seonghyeon Ye, Yekyung Nah, Hojung Jung, Kimin Lee, Sung Ju Hwang",
-      "date": "2026-11-03",
-      "published": "2026-11-03",
-      "url": "https://arxiv.org/abs/2611.04527",
-      "arxiv": "https://arxiv.org/abs/2611.04527",
-      "pdf": "https://arxiv.org/pdf/2611.04527.pdf",
-      "upvotes": 8,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "World Model",
-        "WAM"
-      ],
-      "tags": [
-        "World Model",
-        "WAM"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.04527"
-    },
-    {
       "id": "2611.05163",
       "title": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
       "abstract": "Robot foundation models have shown remarkable performance in robot control, yet adapting them to a new task still relies heavily on teleoperated demonstrations. Egocentric human videos offer a scalable substitute, but overlaying rendered robots on human videos or retargeting human poses into robot actions leaves significant visual or action gaps for high-DoF robot embodiments. To address this limitation, we propose RoboTryOn, which treats human-to-robot translation as virtual try-on: try-on keeps the person and swaps the garment, RoboTryOn keeps the demonstrated motion and swaps the human for the robot. Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background. To maintain visual consistency, we translate selected keyframes autoregressively and use them to guide video synthesis with motion conditioned on the human hand skeleton. Additionally, we use an inverse dynamics model (IDM) that incorporates depth features to infer action labels from synthesized videos for policy learning. Our experiments across multiple humanoid embodiments show that policies trained with our synthetic data improve the average success rate on novel tasks, including challenging bimanual manipulation, from 2% to 60%, without any real robot demonstration of those tasks. Moreover, training with our synthetic data matches the performance of policies trained solely on teleoperated demonstrations at approximately a third of the collection cost, demonstrating the cost efficiency of our approach.",
@@ -2442,7 +2419,7 @@
       "url": "https://arxiv.org/abs/2611.05163",
       "arxiv": "https://arxiv.org/abs/2611.05163",
       "pdf": "https://arxiv.org/pdf/2611.05163.pdf",
-      "upvotes": 6,
+      "upvotes": 12,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -2461,6 +2438,31 @@
         "Foundation Models"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.05163"
+    },
+    {
+      "id": "2611.04527",
+      "title": "Future Representation Distillation for Imagination-Free World Action Models",
+      "abstract": "World Action Models (WAMs) use the predictive knowledge of pretrained video diffusion models for robot control through future video prediction. However, iterative video denoising is costly, and inaccurate visual predictions can compromise action prediction. Our key idea is to make this predictive knowledge available through visual representations computed from the current observation, enabling action prediction without generating future videos. We introduce DreamFree, a WAM that repurposes a pretrained video diffusion model as a predictive visual encoder through representation distillation. The visual encoder learns to predict a frozen video diffusion model's representation using only the current observation. An action module is then trained to predict actions by extracting action-relevant information from the visual encoder. Across real-world and simulated tasks, DreamFree achieves higher success rates than state-of-the-art VLAs and WAMs, while performing real-time closed-loop control at 11Hz with a 14B video diffusion backbone. Experiments show that DreamFree can translate stronger video priors and additional video data into better robot control and enable learning new robot tasks from video demonstrations, including videos from a different embodiment, without action annotation for the new tasks.",
+      "authors": "Jaehyeong Jo, Sangwon Jang, Sihyun Yu, Seonghyeon Ye, Yekyung Nah, Hojung Jung, Kimin Lee, Sung Ju Hwang",
+      "date": "2026-11-03",
+      "published": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04527",
+      "arxiv": "https://arxiv.org/abs/2611.04527",
+      "pdf": "https://arxiv.org/pdf/2611.04527.pdf",
+      "upvotes": 9,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "World Model",
+        "WAM"
+      ],
+      "tags": [
+        "World Model",
+        "WAM"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.04527"
     },
     {
       "id": "2611.04166",
@@ -5569,7 +5571,9 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2611.00513",
       "title": "WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation",
@@ -6107,9 +6111,7 @@
       "tags": [
         "Robotics"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2610.39287",
       "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
