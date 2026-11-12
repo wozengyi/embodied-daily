@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-11T06:37:50.792442+00:00",
+  "generatedAt": "2026-11-12T07:20:58.430061+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-11-04",
-  "archiveCutoff": "2021-11-12",
-  "addedToday": 43,
-  "historyTotal": 8671,
-  "count": 255,
-  "archiveCount": 8069,
+  "recentCutoff": "2026-11-05",
+  "archiveCutoff": "2021-11-13",
+  "addedToday": 1,
+  "historyTotal": 8672,
+  "count": 221,
+  "archiveCount": 8104,
   "sources": {
-    "hf": 21,
-    "arxiv": 234
+    "hf": 18,
+    "arxiv": 203
   },
   "archiveSources": {
-    "hf": 328,
-    "arxiv": 7741
+    "hf": 334,
+    "arxiv": 7770
   },
   "warnings": [],
   "papers": [
@@ -28,7 +28,7 @@
       "url": "https://huggingface.co/papers/2611.14488",
       "arxiv": "https://arxiv.org/abs/2611.14488",
       "pdf": "https://arxiv.org/pdf/2611.14488.pdf",
-      "upvotes": 5,
+      "upvotes": 7,
       "categories": [
         "cs.RO"
       ],
@@ -66,6 +66,26 @@
       "source": "hf"
     },
     {
+      "id": "2610.40754",
+      "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
+      "abstract": "While frontier coding agents can generate high-quality 3D scenes and articulated assets, they struggle to create coherent long-horizon animations. When equipped with general-purpose harnesses, they frequently produce physically implausible outputs, generating objects that interpenetrate, lack physical support, or move unnaturally. Such bare agents struggle to repair these errors because they default to scripting the full animation in one pass, making it difficult to verify their work and disentangle complex spatiotemporal constraints. Drawing on the practice of human animators, we introduce DyCraft, a system for animated 3D scene generation that breaks animation into steps that coding agents can more reliably solve. DyCraft first expands the user's prompt into a detailed plan and builds a static scene. It then creates a 3D storyboard of key animation poses, where each frame is a static 3D scene that the agent can build and debug in isolation. Storyboarding decomposes the problem into pairs of verified start and end states, allowing the agent to author local motion between them with a collection of motion authoring tools. We evaluate DyCraft on 24 long-horizon, multi-shot animation tasks covering humanoid robots, human and animal characters, and physical mechanisms. Compared with a native GPT-6 agent in Codex and prior agentic baselines, DyCraft substantially reduces physical violations and generates higher-quality animated 3D scenes that are more often preferred by human raters.",
+      "authors": "Jeff Tan, Hang Dai, Zeqian Long, Yanzhe Lyu, R. Kenny Jones, Shangzhe Wu, Chen Geng, Jiajun Wu",
+      "date": "2026-11-11",
+      "published": "2026-11-11",
+      "url": "https://huggingface.co/papers/2610.40754",
+      "hfUrl": "https://huggingface.co/papers/2610.40754",
+      "arxiv": "https://arxiv.org/abs/2610.40754",
+      "pdf": "https://arxiv.org/pdf/2610.40754.pdf",
+      "upvotes": 3,
+      "tags": [
+        "Humanoid"
+      ],
+      "topics": [
+        "Humanoid"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2611.10771",
       "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
       "abstract": "Visual generative models increasingly blur the line between synthesizing observations and simulating environments. Yet visual plausibility alone does not constitute successful world modeling: compelling outputs may lack persistent state, physical dynamics, or causally consistent responses to interactions. We define a generative world model as a predictive dynamical system that maintains a persistent, history-conditioned representation of an environment, updates that representation in response to actions or interventions, and generates temporally coherent trajectories that reflect outcomes under observed and counterfactual interventions. From this definition, we derive an intelligence-oriented framework spanning perceptual grounding, persistent state modeling, controllable transformation, dynamics-aware prediction, and closed-loop interaction. We present WorldFoundry, open-source infrastructure for reproducible inference and evaluation across video, 3D and 4D, embodied action, and interactive world systems. WorldFoundry unifies model and benchmark discovery, runtime and asset preparation, execution orchestration, artifact management, and interactive visualization, while modality-specific adapters preserve native inputs, execution semantics, output representations, and evaluation protocols. Explicit manifests, durable artifact contracts, and evidence-aware scorecards separate execution readiness from evaluative claims, making each claim traceable to its supporting artifacts. The catalog contains 270 model entries, 74 benchmarks, and 62 registered metric entries, with readiness and execution evidence recorded separately. WorldFoundry enables reproducible comparison of persistent, controllable dynamics across heterogeneous systems, advancing the field from perceptual synthesis toward measurable world intelligence.",
@@ -76,7 +96,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.10771",
       "arxiv": "https://arxiv.org/abs/2611.10771",
       "pdf": "https://arxiv.org/pdf/2611.10771.pdf",
-      "upvotes": 55,
+      "upvotes": 57,
       "tags": [
         "World Model",
         "Imitation Learning",
@@ -90,6 +110,31 @@
         "Open-Source"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2611.14115",
+      "title": "LEASH: Stay Safe in Agentic Robotics",
+      "abstract": "Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses serious safety risks, and comprehensive safety evaluation is still lacking. We introduce RoboRisk, a comprehensive benchmark for evaluating safety in agentic robotics. Its 92 simulated tasks and 13 physical-robot tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-time Hazard (E), Injection (I), and Sequential Memory (S). Prior benchmarks cover at most two of these categories, and several evaluate only text outputs. In contrast, RoboRisk covers all five and executes every task in closed loop. We evaluate six state-of-the-art foundation models on RoboRisk: GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, Claude Opus 5.5, Gemini 4 Argon, and Grok 4.7. These models generally show high harm rates. We also evaluate two robot-specific APIs: the Dream API and PokeBot's RoboAPI. We further propose the Lease-Enforced Agentic Safety Harness (LEASH), which offers essential safety infrastructure for agentic robotics and can be integrated into nearly any agentic architecture. LEASH leverages a decision model (Jev or OpenAI's Decisions API) to implement task, action, and commit gates, which review the task, each action, and each irreversible operation in their visual context. The planner and all three gates share a common safety policy. Experiments on RoboRisk in simulation and on physical robots show that LEASH effectively reduces harm across all six foundation models. It largely preserves their task completion performance and adds little time and token overhead.",
+      "authors": "Qinfeng Zhu, Weiguang Zhao, Ke Sun, Xihao Guo, Yunxi Jiang, Rui Zhang, Lei Fan, Kaizhu Huang",
+      "date": "2026-11-10",
+      "published": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.14115",
+      "arxiv": "https://arxiv.org/abs/2611.14115",
+      "pdf": "https://arxiv.org/pdf/2611.14115.pdf",
+      "upvotes": 5,
+      "categories": [
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Dataset",
+        "Foundation Models"
+      ],
+      "tags": [
+        "Dataset",
+        "Foundation Models"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.14115"
     },
     {
       "id": "2611.09195",
@@ -480,30 +525,6 @@
       ]
     },
     {
-      "id": "2611.14115",
-      "title": "LEASH: Stay Safe in Agentic Robotics",
-      "abstract": "Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses serious safety risks, and comprehensive safety evaluation is still lacking. We introduce RoboRisk, a comprehensive benchmark for evaluating safety in agentic robotics. Its 92 simulated tasks and 13 physical-robot tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-time Hazard (E), Injection (I), and Sequential Memory (S). Prior benchmarks cover at most two of these categories, and several evaluate only text outputs. In contrast, RoboRisk covers all five and executes every task in closed loop. We evaluate six state-of-the-art foundation models on RoboRisk: GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, Claude Opus 5.5, Gemini 4 Argon, and Grok 4.7. These models generally show high harm rates. We also evaluate two robot-specific APIs: the Dream API and PokeBot's RoboAPI. We further propose the Lease-Enforced Agentic Safety Harness (LEASH), which offers essential safety infrastructure for agentic robotics and can be integrated into nearly any agentic architecture. LEASH leverages a decision model (Jev or OpenAI's Decisions API) to implement task, action, and commit gates, which review the task, each action, and each irreversible operation in their visual context. The planner and all three gates share a common safety policy. Experiments on RoboRisk in simulation and on physical robots show that LEASH effectively reduces harm across all six foundation models. It largely preserves their task completion performance and adds little time and token overhead.",
-      "authors": "Qinfeng Zhu, Weiguang Zhao, Ke Sun, Xihao Guo, Yunxi Jiang, Rui Zhang, Lei Fan, Kaizhu Huang",
-      "date": "2026-11-10",
-      "published": "2026-11-10",
-      "url": "https://arxiv.org/abs/2611.14115",
-      "arxiv": "https://arxiv.org/abs/2611.14115",
-      "pdf": "https://arxiv.org/pdf/2611.14115.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Dataset",
-        "Foundation Models"
-      ],
-      "tags": [
-        "Dataset",
-        "Foundation Models"
-      ]
-    },
-    {
       "id": "2611.14049",
       "title": "RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control",
       "abstract": "Humanoid motion interfaces should accommodate application-specific movement constraints while retaining useful reference behavior. Local content redaction requires a controller to replace selected movements even when it continues to receive the original reference. Removing the tracking incentive for those movements leaves their replacement unspecified. We introduce RedirectMimic, which separates the reference observed by the actor from the target used to train its execution. A rule-generated edited reference guides tracking rewards during proximal policy optimization, while the deployed observation and action interfaces remain unchanged. We evaluate pose- and speed-defined arm editing in Unitree G1 simulation using a tracker pretrained on 7,509 motion clips. On the overhead-arm task, RedirectMimic reduces core-window content occurrence to 2.7%, compared with 58.9% for reward zeroing and 32.8% for anti-tracking. It achieves 94.2% core-window joint success, combining content suppression, fall-free execution, and local retention. On the speed-defined task, fast outward arm movements occurred at similarly low rates under all three local editing methods. Across both tasks, RedirectMimic achieved the lowest replacement error among these methods and tracked unedited motions with accuracy comparable to that of the pretrained controller. Project page: https://xiaopeng-whu.github.io/RedirectMimic/.",
@@ -790,7 +811,7 @@
       "url": "https://arxiv.org/abs/2611.12806",
       "arxiv": "https://arxiv.org/abs/2611.12806",
       "pdf": "https://arxiv.org/pdf/2611.12806.pdf",
-      "upvotes": 96,
+      "upvotes": 99,
       "categories": [
         "cs.RO"
       ],
@@ -813,32 +834,6 @@
       "hfUrl": "https://huggingface.co/papers/2611.12806"
     },
     {
-      "id": "2611.09124",
-      "title": "Toward the Era of Agentic Embodied Intelligence",
-      "abstract": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
-      "authors": "Chao Liang, Ke Chen, Fengxiaoxiao Li, Shibo Huang, Yufeng Sun, Zhaokai Yin, Jianhuan Lai, Haozhe Feng, Chenghuan Jia, Zhipeng Zhang",
-      "date": "2026-11-09",
-      "published": "2026-11-09",
-      "url": "https://huggingface.co/papers/2611.09124",
-      "hfUrl": "https://huggingface.co/papers/2611.09124",
-      "arxiv": "https://arxiv.org/abs/2611.09124",
-      "pdf": "https://arxiv.org/pdf/2611.09124.pdf",
-      "upvotes": 50,
-      "tags": [
-        "VLA",
-        "World Model",
-        "Dataset",
-        "Foundation Models"
-      ],
-      "topics": [
-        "VLA",
-        "World Model",
-        "Dataset",
-        "Foundation Models"
-      ],
-      "source": "hf"
-    },
-    {
       "id": "2611.12885",
       "title": "World In-Context Learning for Agentic Robot Manipulation",
       "abstract": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
@@ -848,7 +843,7 @@
       "url": "https://arxiv.org/abs/2611.12885",
       "arxiv": "https://arxiv.org/abs/2611.12885",
       "pdf": "https://arxiv.org/pdf/2611.12885.pdf",
-      "upvotes": 17,
+      "upvotes": 66,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -869,6 +864,64 @@
       "hfUrl": "https://huggingface.co/papers/2611.12885"
     },
     {
+      "id": "2611.09124",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "abstract": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
+      "authors": "Chao Liang, Ke Chen, Fengxiaoxiao Li, Shibo Huang, Yufeng Sun, Zhaokai Yin, Jianhuan Lai, Haozhe Feng, Chenghuan Jia, Zhipeng Zhang",
+      "date": "2026-11-09",
+      "published": "2026-11-09",
+      "url": "https://huggingface.co/papers/2611.09124",
+      "hfUrl": "https://huggingface.co/papers/2611.09124",
+      "arxiv": "https://arxiv.org/abs/2611.09124",
+      "pdf": "https://arxiv.org/pdf/2611.09124.pdf",
+      "upvotes": 53,
+      "tags": [
+        "VLA",
+        "World Model",
+        "Dataset",
+        "Foundation Models"
+      ],
+      "topics": [
+        "VLA",
+        "World Model",
+        "Dataset",
+        "Foundation Models"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2611.12177",
+      "title": "Embodied First Exam",
+      "abstract": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in up to three evaluation settings. The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes. Success rates in this setting serve as an approximate upper bound. On the 456 core tasks, the strongest of eight agents, GPT-6 Astra in Codex, achieves a success rate of 34% in the Standard Setting, leaving much room for improvement. To see where agents fail, we label the stage at which failed attempts go wrong and compare failures across agents, settings, and stage categories.",
+      "authors": "Kangrui Wang, Qineng Wang, Changhe Chen, Pingyue Zhang, Chi Gui, Feishi Wang, Canyu Chen, Wenli Xiao, Xiaoyu Huang, Tonghe Zhang, Linjie Li, Zihan Wang, Minyeong Kim, Yiyou Sun, Mingkai Deng, Jinyu Hou, Qi Zhu, Han Liu, Eric P. Xing, Huaxiu Yao, Zhiwen Fan, Yuejiang Liu, Dawn Song, Pieter Abbeel, Li Fei-Fei, Jiajun Wu, Yuke Zhu, Guanya Shi, Ruohan Zhang, Manling Li",
+      "date": "2026-11-09",
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12177",
+      "arxiv": "https://arxiv.org/abs/2611.12177",
+      "pdf": "https://arxiv.org/pdf/2611.12177.pdf",
+      "upvotes": 24,
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Humanoid",
+        "Dexterous",
+        "Dataset",
+        "Simulator"
+      ],
+      "tags": [
+        "Manipulation",
+        "Humanoid",
+        "Dexterous",
+        "Dataset",
+        "Simulator"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.12177"
+    },
+    {
       "id": "2611.12870",
       "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
       "abstract": "World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating language-video alignment acquired through video pretraining as an established foundation. However, introducing action learning may impair this alignment. Principled guidance on data and supervision design for maintaining language-video alignment during action learning remains limited. To investigate this, we curate a pool of approximately 47,000 hours of general videos, egocentric videos, UMI demonstrations, and robot demonstrations. Building on this, we systematically study how language-video supervision, language-video-action supervision, and the joint use of these two forms affect WAM performance. In particular, we examine how language annotation quality affects pretrained language-video capabilities, and how action supervision from UMI and robot demonstrations extends these capabilities to language-video-action modeling. To better scale the model, we further conduct detailed studies on joint training recipe and model architecture. Under a fixed training budget, mixing egocentric videos and UMI demonstrations improves control generalization. Model architecture affects how effectively these experiences are used, while scaling pretraining under the selected configuration brings further gains. The resulting recipe, post-trained on RoboTwin Clean demonstrations only, achieves success rates of 88.10% and 61.56% under Easy (Clean-to-Clean) and Hard (Clean-to-Random) conditions, respectively. Our model achieves 40.00% SR across three real-world tasks, compared with 23.33% for the strongest baseline, indicating better generalization under unseen conditions. We release the curated data, training code, and model weights.",
@@ -878,7 +931,7 @@
       "url": "https://arxiv.org/abs/2611.12870",
       "arxiv": "https://arxiv.org/abs/2611.12870",
       "pdf": "https://arxiv.org/pdf/2611.12870.pdf",
-      "upvotes": 7,
+      "upvotes": 22,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -1079,37 +1132,6 @@
         "Imitation Learning",
         "Open-Source",
         "Tactile"
-      ]
-    },
-    {
-      "id": "2611.12177",
-      "title": "Embodied First Exam",
-      "abstract": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in up to three evaluation settings. The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes. Success rates in this setting serve as an approximate upper bound. On the 456 core tasks, the strongest of eight agents, GPT-6 Astra in Codex, achieves a success rate of 34% in the Standard Setting, leaving much room for improvement. To see where agents fail, we label the stage at which failed attempts go wrong and compare failures across agents, settings, and stage categories.",
-      "authors": "Kangrui Wang, Qineng Wang, Changhe Chen, Pingyue Zhang, Chi Gui, Feishi Wang, Canyu Chen, Wenli Xiao, Xiaoyu Huang, Tonghe Zhang, Linjie Li, Zihan Wang, Minyeong Kim, Yiyou Sun, Mingkai Deng, Jinyu Hou, Qi Zhu, Han Liu, Eric P. Xing, Huaxiu Yao, Zhiwen Fan, Yuejiang Liu, Dawn Song, Pieter Abbeel, Li Fei-Fei, Jiajun Wu, Yuke Zhu, Guanya Shi, Ruohan Zhang, Manling Li",
-      "date": "2026-11-09",
-      "published": "2026-11-09",
-      "url": "https://arxiv.org/abs/2611.12177",
-      "arxiv": "https://arxiv.org/abs/2611.12177",
-      "pdf": "https://arxiv.org/pdf/2611.12177.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Humanoid",
-        "Dexterous",
-        "Dataset",
-        "Simulator"
-      ],
-      "tags": [
-        "Manipulation",
-        "Humanoid",
-        "Dexterous",
-        "Dataset",
-        "Simulator"
       ]
     },
     {
@@ -2288,7 +2310,7 @@
       "url": "https://arxiv.org/abs/2611.11166",
       "arxiv": "https://arxiv.org/abs/2611.11166",
       "pdf": "https://arxiv.org/pdf/2611.11166.pdf",
-      "upvotes": 20,
+      "upvotes": 24,
       "categories": [
         "cs.RO"
       ],
@@ -3326,7 +3348,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 112,
+      "upvotes": 113,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -5765,7 +5787,9 @@
       "source": "arxiv",
       "topics": [],
       "tags": []
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2611.05275",
       "title": "Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems",
@@ -6677,9 +6701,7 @@
       "tags": [
         "Manipulation"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2611.01560",
       "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
@@ -6690,7 +6712,7 @@
       "url": "https://huggingface.co/papers/2611.01560",
       "arxiv": "https://arxiv.org/abs/2611.01560",
       "pdf": "https://arxiv.org/pdf/2611.01560.pdf",
-      "upvotes": 48,
+      "upvotes": 49,
       "categories": [
         "cs.RO"
       ],
@@ -6821,7 +6843,7 @@
       "url": "https://arxiv.org/abs/2611.04166",
       "arxiv": "https://arxiv.org/abs/2611.04166",
       "pdf": "https://arxiv.org/pdf/2611.04166.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "categories": [
         "cs.LG",
         "cs.CR",
@@ -9930,7 +9952,7 @@
       "url": "https://arxiv.org/abs/2611.01112",
       "arxiv": "https://arxiv.org/abs/2611.01112",
       "pdf": "https://arxiv.org/pdf/2611.01112.pdf",
-      "upvotes": 4,
+      "upvotes": 8,
       "categories": [
         "cs.RO",
         "cs.AI"

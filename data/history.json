@@ -203992,7 +203992,7 @@
       "url": "https://huggingface.co/papers/2611.01560",
       "arxiv": "https://arxiv.org/abs/2611.01560",
       "pdf": "https://arxiv.org/pdf/2611.01560.pdf",
-      "upvotes": 48,
+      "upvotes": 49,
       "categories": [
         "cs.RO"
       ],
@@ -205189,7 +205189,7 @@
       "url": "https://arxiv.org/abs/2611.01112",
       "arxiv": "https://arxiv.org/abs/2611.01112",
       "pdf": "https://arxiv.org/pdf/2611.01112.pdf",
-      "upvotes": 4,
+      "upvotes": 8,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -206595,7 +206595,7 @@
       "url": "https://arxiv.org/abs/2611.04166",
       "arxiv": "https://arxiv.org/abs/2611.04166",
       "pdf": "https://arxiv.org/pdf/2611.04166.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "categories": [
         "cs.LG",
         "cs.CR",
@@ -209666,7 +209666,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 112,
+      "upvotes": 113,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -210719,7 +210719,7 @@
       "url": "https://arxiv.org/abs/2611.12885",
       "arxiv": "https://arxiv.org/abs/2611.12885",
       "pdf": "https://arxiv.org/pdf/2611.12885.pdf",
-      "upvotes": 17,
+      "upvotes": 66,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -212356,7 +212356,7 @@
       "url": "https://arxiv.org/abs/2611.12806",
       "arxiv": "https://arxiv.org/abs/2611.12806",
       "pdf": "https://arxiv.org/pdf/2611.12806.pdf",
-      "upvotes": 96,
+      "upvotes": 99,
       "categories": [
         "cs.RO"
       ],
@@ -212447,12 +212447,12 @@
       "url": "https://arxiv.org/abs/2611.12177",
       "arxiv": "https://arxiv.org/abs/2611.12177",
       "pdf": "https://arxiv.org/pdf/2611.12177.pdf",
-      "upvotes": 0,
+      "upvotes": 24,
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Manipulation",
         "Humanoid",
@@ -212466,7 +212466,8 @@
         "Dexterous",
         "Dataset",
         "Simulator"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.12177"
     },
     "2611.12111": {
       "id": "2611.12111",
@@ -212658,7 +212659,7 @@
       "url": "https://arxiv.org/abs/2611.11166",
       "arxiv": "https://arxiv.org/abs/2611.11166",
       "pdf": "https://arxiv.org/pdf/2611.11166.pdf",
-      "upvotes": 20,
+      "upvotes": 24,
       "categories": [
         "cs.RO"
       ],
@@ -212948,7 +212949,7 @@
       "url": "https://arxiv.org/abs/2611.12870",
       "arxiv": "https://arxiv.org/abs/2611.12870",
       "pdf": "https://arxiv.org/pdf/2611.12870.pdf",
-      "upvotes": 7,
+      "upvotes": 22,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -213001,7 +213002,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.10771",
       "arxiv": "https://arxiv.org/abs/2611.10771",
       "pdf": "https://arxiv.org/pdf/2611.10771.pdf",
-      "upvotes": 55,
+      "upvotes": 57,
       "tags": [
         "World Model",
         "Imitation Learning",
@@ -213027,7 +213028,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.09124",
       "arxiv": "https://arxiv.org/abs/2611.09124",
       "pdf": "https://arxiv.org/pdf/2611.09124.pdf",
-      "upvotes": 50,
+      "upvotes": 53,
       "tags": [
         "VLA",
         "World Model",
@@ -213052,7 +213053,7 @@
       "url": "https://huggingface.co/papers/2611.14488",
       "arxiv": "https://arxiv.org/abs/2611.14488",
       "pdf": "https://arxiv.org/pdf/2611.14488.pdf",
-      "upvotes": 5,
+      "upvotes": 7,
       "categories": [
         "cs.RO"
       ],
@@ -213129,11 +213130,11 @@
       "url": "https://arxiv.org/abs/2611.14115",
       "arxiv": "https://arxiv.org/abs/2611.14115",
       "pdf": "https://arxiv.org/pdf/2611.14115.pdf",
-      "upvotes": 0,
+      "upvotes": 5,
       "categories": [
         "cs.RO"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Dataset",
         "Foundation Models"
@@ -213141,7 +213142,8 @@
       "tags": [
         "Dataset",
         "Foundation Models"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.14115"
     },
     "2611.14092": {
       "id": "2611.14092",
@@ -214131,7 +214133,27 @@
         "Open-Source"
       ],
       "source": "hf"
+    },
+    "2610.40754": {
+      "id": "2610.40754",
+      "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
+      "abstract": "While frontier coding agents can generate high-quality 3D scenes and articulated assets, they struggle to create coherent long-horizon animations. When equipped with general-purpose harnesses, they frequently produce physically implausible outputs, generating objects that interpenetrate, lack physical support, or move unnaturally. Such bare agents struggle to repair these errors because they default to scripting the full animation in one pass, making it difficult to verify their work and disentangle complex spatiotemporal constraints. Drawing on the practice of human animators, we introduce DyCraft, a system for animated 3D scene generation that breaks animation into steps that coding agents can more reliably solve. DyCraft first expands the user's prompt into a detailed plan and builds a static scene. It then creates a 3D storyboard of key animation poses, where each frame is a static 3D scene that the agent can build and debug in isolation. Storyboarding decomposes the problem into pairs of verified start and end states, allowing the agent to author local motion between them with a collection of motion authoring tools. We evaluate DyCraft on 24 long-horizon, multi-shot animation tasks covering humanoid robots, human and animal characters, and physical mechanisms. Compared with a native GPT-6 agent in Codex and prior agentic baselines, DyCraft substantially reduces physical violations and generates higher-quality animated 3D scenes that are more often preferred by human raters.",
+      "authors": "Jeff Tan, Hang Dai, Zeqian Long, Yanzhe Lyu, R. Kenny Jones, Shangzhe Wu, Chen Geng, Jiajun Wu",
+      "date": "2026-11-11",
+      "published": "2026-11-11",
+      "url": "https://huggingface.co/papers/2610.40754",
+      "hfUrl": "https://huggingface.co/papers/2610.40754",
+      "arxiv": "https://arxiv.org/abs/2610.40754",
+      "pdf": "https://arxiv.org/pdf/2610.40754.pdf",
+      "upvotes": 3,
+      "tags": [
+        "Humanoid"
+      ],
+      "topics": [
+        "Humanoid"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-11-11T06:37:50.792442+00:00"
+  "generatedAt": "2026-11-12T07:20:58.430061+00:00"
 }
