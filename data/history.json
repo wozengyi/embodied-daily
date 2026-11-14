@@ -209666,7 +209666,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 116,
+      "upvotes": 117,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -212949,7 +212949,7 @@
       "url": "https://arxiv.org/abs/2611.12870",
       "arxiv": "https://arxiv.org/abs/2611.12870",
       "pdf": "https://arxiv.org/pdf/2611.12870.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -213781,17 +213781,18 @@
       "url": "https://arxiv.org/abs/2611.14256",
       "arxiv": "https://arxiv.org/abs/2611.14256",
       "pdf": "https://arxiv.org/pdf/2611.14256.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "categories": [
         "cs.AI"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Navigation"
       ],
       "tags": [
         "Navigation"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.14256"
     },
     "2611.14111": {
       "id": "2611.14111",
@@ -214490,18 +214491,19 @@
       "url": "https://arxiv.org/abs/2611.16009",
       "arxiv": "https://arxiv.org/abs/2611.16009",
       "pdf": "https://arxiv.org/pdf/2611.16009.pdf",
-      "upvotes": 0,
+      "upvotes": 3,
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Dataset"
       ],
       "tags": [
         "Dataset"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.16009"
     },
     "2611.15802": {
       "id": "2611.15802",
@@ -215062,19 +215064,20 @@
       "url": "https://arxiv.org/abs/2611.16728",
       "arxiv": "https://arxiv.org/abs/2611.16728",
       "pdf": "https://arxiv.org/pdf/2611.16728.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "categories": [
         "cs.RO",
         "cs.AI",
         "cs.LG"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Humanoid"
       ],
       "tags": [
         "Humanoid"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.16728"
     },
     "2611.16589": {
       "id": "2611.16589",
@@ -215651,7 +215654,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.17060",
       "arxiv": "https://arxiv.org/abs/2611.17060",
       "pdf": "https://arxiv.org/pdf/2611.17060.pdf",
-      "upvotes": 4,
+      "upvotes": 26,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -215677,7 +215680,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.13766",
       "arxiv": "https://arxiv.org/abs/2611.13766",
       "pdf": "https://arxiv.org/pdf/2611.13766.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "tags": [
         "Humanoid",
         "Dataset"
@@ -215687,7 +215690,31 @@
         "Dataset"
       ],
       "source": "hf"
+    },
+    "2611.08318": {
+      "id": "2611.08318",
+      "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+      "abstract": "Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark's success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark's criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly across tasks. We further propose instruction-faithful criteria and show that they better reflect the performance of agent-generated programs.",
+      "authors": "Wenbo Huang, Jianxin Bi, Shunyu Yang, Ruiyang Si, Rui Ni, Qiang Wang, Shulong Jiang, Yintianrun Zhang, Feixiang Ruan, Kewei Zhang, Ye Huang, Shukai Gong, Daquan Zhou",
+      "date": "2026-11-13",
+      "published": "2026-11-13",
+      "url": "https://huggingface.co/papers/2611.08318",
+      "hfUrl": "https://huggingface.co/papers/2611.08318",
+      "arxiv": "https://arxiv.org/abs/2611.08318",
+      "pdf": "https://arxiv.org/pdf/2611.08318.pdf",
+      "upvotes": 15,
+      "tags": [
+        "Imitation Learning",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
     }
   },
-  "generatedAt": "2026-11-13T06:54:01.171041+00:00"
+  "generatedAt": "2026-11-14T06:36:58.715134+00:00"
 }

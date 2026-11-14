@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-13T06:54:01.171041+00:00",
+  "generatedAt": "2026-11-14T06:36:58.715134+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-11-06",
-  "archiveCutoff": "2021-11-14",
-  "addedToday": 60,
-  "historyTotal": 8732,
-  "count": 229,
-  "archiveCount": 8156,
+  "recentCutoff": "2026-11-07",
+  "archiveCutoff": "2021-11-15",
+  "addedToday": 1,
+  "historyTotal": 8733,
+  "count": 187,
+  "archiveCount": 8199,
   "sources": {
-    "hf": 19,
-    "arxiv": 210
+    "hf": 18,
+    "arxiv": 169
   },
   "archiveSources": {
-    "hf": 335,
-    "arxiv": 7821
+    "hf": 340,
+    "arxiv": 7859
   },
   "warnings": [],
   "papers": [
@@ -29,7 +29,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.17060",
       "arxiv": "https://arxiv.org/abs/2611.17060",
       "pdf": "https://arxiv.org/pdf/2611.17060.pdf",
-      "upvotes": 4,
+      "upvotes": 26,
       "tags": [
         "Manipulation",
         "Imitation Learning",
@@ -45,6 +45,30 @@
       "source": "hf"
     },
     {
+      "id": "2611.08318",
+      "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+      "abstract": "Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark's success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark's criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly across tasks. We further propose instruction-faithful criteria and show that they better reflect the performance of agent-generated programs.",
+      "authors": "Wenbo Huang, Jianxin Bi, Shunyu Yang, Ruiyang Si, Rui Ni, Qiang Wang, Shulong Jiang, Yintianrun Zhang, Feixiang Ruan, Kewei Zhang, Ye Huang, Shukai Gong, Daquan Zhou",
+      "date": "2026-11-13",
+      "published": "2026-11-13",
+      "url": "https://huggingface.co/papers/2611.08318",
+      "hfUrl": "https://huggingface.co/papers/2611.08318",
+      "arxiv": "https://arxiv.org/abs/2611.08318",
+      "pdf": "https://arxiv.org/pdf/2611.08318.pdf",
+      "upvotes": 15,
+      "tags": [
+        "Imitation Learning",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "topics": [
+        "Imitation Learning",
+        "Dataset",
+        "Embodied Vision"
+      ],
+      "source": "hf"
+    },
+    {
       "id": "2611.13766",
       "title": "FAME-QP: A GPU-Accelerated Quadratic-Programming Solver for Real-Time Model Predictive Control",
       "abstract": "We present FAME-QP, a GPU-accelerated solver for dense quadratic programs arising in linear model predictive control. FAME-QP combines constraint-dependent operator representations with fused single- and two-kernel iterations replayed through CUDA graphs, automatically selecting the execution configuration through device calibration and problem-specific timing. It probes a cached operator bank to select the initial penalty and updates operators lazily when problem matrices change. Numerical benchmarks and simulated humanoid and quadrotor control experiments demonstrate reduced latency relative to competing GPU solvers while maintaining solution accuracy and control performance.",
@@ -55,7 +79,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.13766",
       "arxiv": "https://arxiv.org/abs/2611.13766",
       "pdf": "https://arxiv.org/pdf/2611.13766.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "tags": [
         "Humanoid",
         "Dataset"
@@ -65,6 +89,31 @@
         "Dataset"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2611.16728",
+      "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
+      "abstract": "Generalist manipulation policies can benefit from the complementary experience of humans, real robots, and simulated agents. However, differences in morphology, sensing, and control interfaces make it difficult to learn effectively from their combined demonstrations. We introduce EgoX, an egocentric cross-embodiment learning framework that organizes heterogeneous demonstrations through semantically corresponding observation and action modalities. EgoX pretrains a Modularized Cross-Embodiment Transformer with Embodiment Dreaming (MXT+) on this mixture and fine-tunes it on target-embodiment demonstrations. Within each embodiment, MXT+ assigns a dedicated tokenizer to each observation modality and a dedicated expert to each action modality, with a Transformer trunk shared across embodiments. A training-only embodiment-dreaming objective predicts latent representations of future visual and proprioceptive states, encouraging the shared trunk to model each embodiment's dynamics. Across 13 task-embodiment pairs spanning five tasks and six robot embodiments, including five physical robots and one simulated humanoid, cross-embodiment pretraining raises MXT+'s average normalized task progress from 0.63 to 0.80 over training from scratch. The gains are particularly pronounced under out-of-distribution conditions, where average task progress increases from 0.53 to 0.77. Ablations demonstrate the benefits of broader pretraining mixtures, modular interfaces, and embodiment dreaming, with dreaming producing more similar latent geometry across embodiments. Project page: egox-dream.github.io.",
+      "authors": "Yaru Niu, Binghong Chen, Changwei Yao, Shangtao Li, Zhenlong Fang, Revanth Krishna Senthilkumaran, Shuai Zhou, Yuemin Mao, Kalie Ching, Po-Ju Chao, Yudong Luo, Peiqi Yu, Heng Zhang, Hao Zhang, Bingqing Chen, Chen Qiu, H. Eric Tseng, Ye Yuan, Umar Iqbal, Changliu Liu, Jonathan Francis, Ding Zhao",
+      "date": "2026-11-12",
+      "published": "2026-11-12",
+      "url": "https://arxiv.org/abs/2611.16728",
+      "arxiv": "https://arxiv.org/abs/2611.16728",
+      "pdf": "https://arxiv.org/pdf/2611.16728.pdf",
+      "upvotes": 1,
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "source": "hf",
+      "topics": [
+        "Humanoid"
+      ],
+      "tags": [
+        "Humanoid"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.16728"
     },
     {
       "id": "2611.16439",
@@ -644,30 +693,6 @@
       ]
     },
     {
-      "id": "2611.16728",
-      "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
-      "abstract": "Generalist manipulation policies can benefit from the complementary experience of humans, real robots, and simulated agents. However, differences in morphology, sensing, and control interfaces make it difficult to learn effectively from their combined demonstrations. We introduce EgoX, an egocentric cross-embodiment learning framework that organizes heterogeneous demonstrations through semantically corresponding observation and action modalities. EgoX pretrains a Modularized Cross-Embodiment Transformer with Embodiment Dreaming (MXT+) on this mixture and fine-tunes it on target-embodiment demonstrations. Within each embodiment, MXT+ assigns a dedicated tokenizer to each observation modality and a dedicated expert to each action modality, with a Transformer trunk shared across embodiments. A training-only embodiment-dreaming objective predicts latent representations of future visual and proprioceptive states, encouraging the shared trunk to model each embodiment's dynamics. Across 13 task-embodiment pairs spanning five tasks and six robot embodiments, including five physical robots and one simulated humanoid, cross-embodiment pretraining raises MXT+'s average normalized task progress from 0.63 to 0.80 over training from scratch. The gains are particularly pronounced under out-of-distribution conditions, where average task progress increases from 0.53 to 0.77. Ablations demonstrate the benefits of broader pretraining mixtures, modular interfaces, and embodiment dreaming, with dreaming producing more similar latent geometry across embodiments. Project page: egox-dream.github.io.",
-      "authors": "Yaru Niu, Binghong Chen, Changwei Yao, Shangtao Li, Zhenlong Fang, Revanth Krishna Senthilkumaran, Shuai Zhou, Yuemin Mao, Kalie Ching, Po-Ju Chao, Yudong Luo, Peiqi Yu, Heng Zhang, Hao Zhang, Bingqing Chen, Chen Qiu, H. Eric Tseng, Ye Yuan, Umar Iqbal, Changliu Liu, Jonathan Francis, Ding Zhao",
-      "date": "2026-11-12",
-      "published": "2026-11-12",
-      "url": "https://arxiv.org/abs/2611.16728",
-      "arxiv": "https://arxiv.org/abs/2611.16728",
-      "pdf": "https://arxiv.org/pdf/2611.16728.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Humanoid"
-      ],
-      "tags": [
-        "Humanoid"
-      ]
-    },
-    {
       "id": "2611.16386",
       "title": "Remember What Changes the Odds: Critic-Gated Event Memory for Long-Horizon Manipulation",
       "abstract": "In long-horizon manipulation, a robot may need to take different actions under identical observations, depending on task progress and the outcomes of earlier attempts. We refer to this ambiguity as decision aliasing. Resolving it requires the policy to maintain memory of its execution history. To reduce the cost of processing full observation histories, recent methods build compact event memories using perceptual, semantic, or kinematic cues. However, these criteria may miss events that matter for task success. We instead propose an outcome-grounded principle: remember events that substantially change the predicted probability of eventual success. Following this principle, we introduce CGEM, a critic-gated event memory that uses a critic to select events with large estimated changes in success probability. Positive and negative changes are encoded as progress and failure records, respectively. Failure records are discarded once the corresponding subtask is completed. In a ten-subtask diagnostic environment with exactly computed success probabilities, CGEM achieves 88.0% success, compared with 0.0% for both a 36-step observation window and a kinematic event memory. Removing failure records reduces success to 1.7%.",
@@ -795,6 +820,30 @@
         "Dataset"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2611.16009",
+      "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+      "abstract": "GPT-6 Astra can drive a robot arm directly through a fixed harness, and scores of such robot-use agents on RoboDojo have risen quickly since. Reported systems differ in harness and test subset and often change several designs at once, so it is hard to tell which choices produce the gains. We take these designs apart and test them in one framework, along the harness around the model, the action interface, the reuse of experience and the scene geometry given to the model. A lean harness that keeps the full episode history and stops each motion early goes a long way. Reusing experience changes how the model acts but is not a free lunch, and scene geometry helps most, even when depth is predicted from RGB alone. JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3.",
+      "authors": "Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao",
+      "date": "2026-11-11",
+      "published": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.16009",
+      "arxiv": "https://arxiv.org/abs/2611.16009",
+      "pdf": "https://arxiv.org/pdf/2611.16009.pdf",
+      "upvotes": 3,
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Dataset"
+      ],
+      "tags": [
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.16009"
     },
     {
       "id": "2611.15443",
@@ -1386,29 +1435,6 @@
       ]
     },
     {
-      "id": "2611.16009",
-      "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
-      "abstract": "GPT-6 Astra can drive a robot arm directly through a fixed harness, and scores of such robot-use agents on RoboDojo have risen quickly since. Reported systems differ in harness and test subset and often change several designs at once, so it is hard to tell which choices produce the gains. We take these designs apart and test them in one framework, along the harness around the model, the action interface, the reuse of experience and the scene geometry given to the model. A lean harness that keeps the full episode history and stops each motion early goes a long way. Reusing experience changes how the model acts but is not a free lunch, and scene geometry helps most, even when depth is predicted from RGB alone. JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3.",
-      "authors": "Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao",
-      "date": "2026-11-11",
-      "published": "2026-11-11",
-      "url": "https://arxiv.org/abs/2611.16009",
-      "arxiv": "https://arxiv.org/abs/2611.16009",
-      "pdf": "https://arxiv.org/pdf/2611.16009.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Dataset"
-      ],
-      "tags": [
-        "Dataset"
-      ]
-    },
-    {
       "id": "2611.15743",
       "title": "Robot-Induced Bias in Movement Smoothness Metrics for Rehabilitation: Quantification and Correction in Simulation",
       "abstract": "Robot mechanics can bias kinematic measures of recovery and limit comparisons across rehabilitation devices. We developed a closed-loop human-robot simulation calibrated to published healthy and stroke group kinematics. Paired runs held motor-control parameters and movement plans fixed to quantify bias in seven metrics relative to a low-impedance reference, normalized using external repeatability benchmarks. Within a subset informed by published device specifications, median log dimensionless jerk (LDLJ) bias was 0.93 and 1.79 benchmark units for stroke and healthy profiles, respectively. Sobol analysis identified Coulomb friction and apparent mass as leading contributors; LDLJ bias persisted across 11 robustness variants. LDLJ bias increased as simulated movements became less fragmented. If recovery similarly reduces fragmentation, this effect could partly mask improvement in measured smoothness. Correction combining identified robot dynamics and observed metrics with gradient-boosted trees reduced median normalized absolute error from 0.77 to 0.10 for LDLJ and from 0.24 to 0.08 for spectral arc length (SPARC) in the device-informed subset of a random 20% hold-out. Median smoothness residuals remained at or below 0.15 benchmark units across four separately held-out parameter regions. Under an alternative controller, LDLJ error decreased from 1.60 to 0.17 without retraining, although transfer varied across metrics. These simulation results support mechanical characterization and movement-dependent correction toward more comparable robotic assessments, motivating validation in patients.",
@@ -1637,6 +1663,29 @@
         "Open-Source"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2611.14256",
+      "title": "A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents",
+      "abstract": "Recent work shows that multimodal agents increasingly self-improve without recurring human annotation. However, each self-improvement mechanism is designed and evaluated within a single scenario, leaving its preconditions unverified under cross-scenario transfer. This survey investigates the structural source of asymmetric mechanism transfer across four scenarios: multimodal reasoning, multimodal generation, GUI and Web navigation, and embodied manipulation. We first formalize the self-evolving multimodal agent by four criteria and a differentia of self-reference, and adopt the three-stage self-evolving loop of experience generation, feedback acquisition, and update consolidation as our analytical framework to position the scenarios along ceilings on rollout count and feedback fidelity. Comparing self-evolving with fixed loops within each scenario separates the limitations that the scenario imposes from those inherent in the self-evolving design. We then recast each mechanism as a trade-off that raises a scarce factor by presupposing a task-structural resource, such as output equivalence or checkable outcomes, and judge it portable, conditional, blocked, or redundant across scenarios. We attribute the asymmetry to divergent combinations of scarce factors and resources across opposite transfer directions, and identify the matched-budget measurements that could overturn these still untested verdicts.",
+      "authors": "Jingjing Jiang",
+      "date": "2026-11-10",
+      "published": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.14256",
+      "arxiv": "https://arxiv.org/abs/2611.14256",
+      "pdf": "https://arxiv.org/pdf/2611.14256.pdf",
+      "upvotes": 1,
+      "categories": [
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Navigation"
+      ],
+      "tags": [
+        "Navigation"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.14256"
     },
     {
       "id": "2611.14092",
@@ -2245,28 +2294,6 @@
       ]
     },
     {
-      "id": "2611.14256",
-      "title": "A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents",
-      "abstract": "Recent work shows that multimodal agents increasingly self-improve without recurring human annotation. However, each self-improvement mechanism is designed and evaluated within a single scenario, leaving its preconditions unverified under cross-scenario transfer. This survey investigates the structural source of asymmetric mechanism transfer across four scenarios: multimodal reasoning, multimodal generation, GUI and Web navigation, and embodied manipulation. We first formalize the self-evolving multimodal agent by four criteria and a differentia of self-reference, and adopt the three-stage self-evolving loop of experience generation, feedback acquisition, and update consolidation as our analytical framework to position the scenarios along ceilings on rollout count and feedback fidelity. Comparing self-evolving with fixed loops within each scenario separates the limitations that the scenario imposes from those inherent in the self-evolving design. We then recast each mechanism as a trade-off that raises a scarce factor by presupposing a task-structural resource, such as output equivalence or checkable outcomes, and judge it portable, conditional, blocked, or redundant across scenarios. We attribute the asymmetry to divergent combinations of scarce factors and resources across opposite transfer directions, and identify the matched-budget measurements that could overturn these still untested verdicts.",
-      "authors": "Jingjing Jiang",
-      "date": "2026-11-10",
-      "published": "2026-11-10",
-      "url": "https://arxiv.org/abs/2611.14256",
-      "arxiv": "https://arxiv.org/abs/2611.14256",
-      "pdf": "https://arxiv.org/pdf/2611.14256.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.AI"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation"
-      ],
-      "tags": [
-        "Navigation"
-      ]
-    },
-    {
       "id": "2611.14093",
       "title": "BODYinTRANSIT-Lab: A Multimodal Dataset for Investigating Sensory-Driven Transformations in Body Perception and Affective Experiences",
       "abstract": "Multimodal datasets that combine synchronised behavioural and physiological signals with subjective affective and body perception measures are still rare. This limits both the understanding of embodied experience and the development of computational models that infer subjective states from sensor data. We introduce BODYinTRANSIT-Lab, a multimodal dataset that addresses this gap by capturing affective, perceptual, and behavioural responses to the Footsteps Illusion. In this closed-loop paradigm, participants perform walking tasks while receiving real-time manipulated auditory feedback of their own footsteps intended to alter perceived body weight. The dataset comprises synchronised recordings from 101 participants recruited through systematic stratification by eating-disorder symptomatology and physical activity level. BODYinTRANSIT-Lab combines full-body kinematics with electromyography, electrocardiography, respiration, and electrodermal activity. Its annotations capture both immediate and post-trial experience, including within-trial perceived-weight ratings, post-trial assessments of body feelings and affective experience, 3D avatar body visualisations, and quantitative body maps. Psychological, behavioural, demographic, and social measures provide further information about factors that may influence individual responses. We provide a deep learning benchmark that uses walking kinematics to classify relative affective valence and perceived weight within subjects. On within-session, segment-level splits, the baseline model achieved mean balanced accuracies of 45.9% for affective valence and 44.5% for perceived weight. The BODYinTRANSIT-Lab dataset provides an experimentally controlled resource for cognitive neuroscience and affective computing research, with potential applications in affect-aware interactive systems, health and well-being technologies, and creative embodied experiences.",
@@ -2465,7 +2492,7 @@
       "url": "https://arxiv.org/abs/2611.12870",
       "arxiv": "https://arxiv.org/abs/2611.12870",
       "pdf": "https://arxiv.org/pdf/2611.12870.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -4820,7 +4847,9 @@
       "tags": [
         "VLA"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2611.05376",
       "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
@@ -4882,7 +4911,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 116,
+      "upvotes": 117,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -5934,9 +5963,7 @@
       "tags": [
         "Manipulation"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2611.06918",
       "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
