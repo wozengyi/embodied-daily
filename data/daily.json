@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-11-14T06:36:58.715134+00:00",
+  "generatedAt": "2026-11-15T06:44:30.424718+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-11-07",
-  "archiveCutoff": "2021-11-15",
-  "addedToday": 1,
+  "recentCutoff": "2026-11-08",
+  "archiveCutoff": "2021-11-16",
+  "addedToday": 0,
   "historyTotal": 8733,
-  "count": 187,
-  "archiveCount": 8199,
+  "count": 170,
+  "archiveCount": 8216,
   "sources": {
     "hf": 18,
-    "arxiv": 169
+    "arxiv": 152
   },
   "archiveSources": {
     "hf": 340,
-    "arxiv": 7859
+    "arxiv": 7876
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2611.17060",
@@ -55,7 +57,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.08318",
       "arxiv": "https://arxiv.org/abs/2611.08318",
       "pdf": "https://arxiv.org/pdf/2611.08318.pdf",
-      "upvotes": 15,
+      "upvotes": 20,
       "tags": [
         "Imitation Learning",
         "Dataset",
@@ -798,6 +800,30 @@
       "source": "hf"
     },
     {
+      "id": "2611.16009",
+      "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+      "abstract": "GPT-6 Astra can drive a robot arm directly through a fixed harness, and scores of such robot-use agents on RoboDojo have risen quickly since. Reported systems differ in harness and test subset and often change several designs at once, so it is hard to tell which choices produce the gains. We take these designs apart and test them in one framework, along the harness around the model, the action interface, the reuse of experience and the scene geometry given to the model. A lean harness that keeps the full episode history and stops each motion early goes a long way. Reusing experience changes how the model acts but is not a free lunch, and scene geometry helps most, even when depth is predicted from RGB alone. JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3.",
+      "authors": "Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao",
+      "date": "2026-11-11",
+      "published": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.16009",
+      "arxiv": "https://arxiv.org/abs/2611.16009",
+      "pdf": "https://arxiv.org/pdf/2611.16009.pdf",
+      "upvotes": 5,
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "source": "hf",
+      "topics": [
+        "Dataset"
+      ],
+      "tags": [
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.16009"
+    },
+    {
       "id": "2611.13482",
       "title": "ExRL: Sample-Efficient Online Adaptation of Long-Chunk Policies via Execution Length Control",
       "abstract": "Predicting long action chunks, often spanning dozens of timesteps, has become a key ingredient in increasingly capable robot policies. In this paper, we find that adapting these long-chunk policies with existing reinforcement learning (RL) methods can require many online samples due to the high dimensionality of the action chunks being optimized, making such adaptation impractical in real-world scenarios where interaction data are costly to collect. Our key insight is to shift adaptation from optimizing actions to optimizing how long to execute each predicted action chunk. This keeps the adaptation space low-dimensional while its expressivity grows with the chunk size. We thus introduce Execution at the Right Length (ExRL), a simple approach which augments the base policy with a lightweight adapter that predicts the execution length of each chunk and is trained using off-policy RL algorithms. Across simulation benchmarks and real-world robotic tasks, ExRL enables sample-efficient adaptation of a diverse range of long-chunk policies with minimal task-specific hyperparameter tuning.",
@@ -820,30 +846,6 @@
         "Dataset"
       ],
       "source": "hf"
-    },
-    {
-      "id": "2611.16009",
-      "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
-      "abstract": "GPT-6 Astra can drive a robot arm directly through a fixed harness, and scores of such robot-use agents on RoboDojo have risen quickly since. Reported systems differ in harness and test subset and often change several designs at once, so it is hard to tell which choices produce the gains. We take these designs apart and test them in one framework, along the harness around the model, the action interface, the reuse of experience and the scene geometry given to the model. A lean harness that keeps the full episode history and stops each motion early goes a long way. Reusing experience changes how the model acts but is not a free lunch, and scene geometry helps most, even when depth is predicted from RGB alone. JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3.",
-      "authors": "Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao",
-      "date": "2026-11-11",
-      "published": "2026-11-11",
-      "url": "https://arxiv.org/abs/2611.16009",
-      "arxiv": "https://arxiv.org/abs/2611.16009",
-      "pdf": "https://arxiv.org/pdf/2611.16009.pdf",
-      "upvotes": 3,
-      "categories": [
-        "cs.RO",
-        "cs.AI"
-      ],
-      "source": "hf",
-      "topics": [
-        "Dataset"
-      ],
-      "tags": [
-        "Dataset"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.16009"
     },
     {
       "id": "2611.15443",
@@ -1674,7 +1676,7 @@
       "url": "https://arxiv.org/abs/2611.14256",
       "arxiv": "https://arxiv.org/abs/2611.14256",
       "pdf": "https://arxiv.org/pdf/2611.14256.pdf",
-      "upvotes": 1,
+      "upvotes": 2,
       "categories": [
         "cs.AI"
       ],
@@ -2372,7 +2374,7 @@
       "url": "https://arxiv.org/abs/2611.12806",
       "arxiv": "https://arxiv.org/abs/2611.12806",
       "pdf": "https://arxiv.org/pdf/2611.12806.pdf",
-      "upvotes": 102,
+      "upvotes": 103,
       "categories": [
         "cs.RO"
       ],
@@ -4403,7 +4405,9 @@
       "tags": [
         "VLA"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2611.10994",
       "title": "RoboMoCap: A Large-Scale Whole-Body Motion Capture Dataset with Egocentric Vision for Robot Learning",
@@ -4847,9 +4851,7 @@
       "tags": [
         "VLA"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2611.05376",
       "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
@@ -4911,7 +4913,7 @@
       "url": "https://huggingface.co/papers/2611.08449",
       "arxiv": "https://arxiv.org/abs/2611.08449",
       "pdf": "https://arxiv.org/pdf/2611.08449.pdf",
-      "upvotes": 117,
+      "upvotes": 119,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -8379,7 +8381,7 @@
       "url": "https://arxiv.org/abs/2611.04527",
       "arxiv": "https://arxiv.org/abs/2611.04527",
       "pdf": "https://arxiv.org/pdf/2611.04527.pdf",
-      "upvotes": 12,
+      "upvotes": 13,
       "categories": [
         "cs.RO"
       ],
@@ -9628,7 +9630,7 @@
       "url": "https://huggingface.co/papers/2610.42096",
       "arxiv": "https://arxiv.org/abs/2610.42096",
       "pdf": "https://arxiv.org/pdf/2610.42096.pdf",
-      "upvotes": 4,
+      "upvotes": 5,
       "categories": [
         "cs.AI",
         "cs.RO",
