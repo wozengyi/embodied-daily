@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-20T07:26:29.286145+00:00",
+  "generatedAt": "2026-11-21T07:19:48.722829+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-11-13",
-  "archiveCutoff": "2021-11-21",
-  "addedToday": 66,
-  "historyTotal": 9026,
-  "count": 290,
-  "archiveCount": 8389,
+  "recentCutoff": "2026-11-14",
+  "archiveCutoff": "2021-11-22",
+  "addedToday": 1,
+  "historyTotal": 9027,
+  "count": 262,
+  "archiveCount": 8418,
   "sources": {
-    "hf": 19,
-    "arxiv": 271
+    "hf": 18,
+    "arxiv": 244
   },
   "archiveSources": {
-    "hf": 361,
-    "arxiv": 8028
+    "hf": 364,
+    "arxiv": 8054
   },
   "warnings": [],
   "papers": [
@@ -28,7 +28,7 @@
       "url": "https://huggingface.co/papers/2611.26444",
       "arxiv": "https://arxiv.org/abs/2611.26444",
       "pdf": "https://arxiv.org/pdf/2611.26444.pdf",
-      "upvotes": 19,
+      "upvotes": 45,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -63,7 +63,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.25980",
       "arxiv": "https://arxiv.org/abs/2611.25980",
       "pdf": "https://arxiv.org/pdf/2611.25980.pdf",
-      "upvotes": 9,
+      "upvotes": 13,
       "tags": [
         "World Model",
         "Teleoperation",
@@ -77,6 +77,26 @@
         "Bimanual",
         "Dataset",
         "Hardware"
+      ],
+      "source": "hf"
+    },
+    {
+      "id": "2611.26239",
+      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "abstract": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across LIBERO and BadLIBERO tasks evaluate prohibited completion, physical incidents, and retained-task performance. On the evaluated LIBERO tasks, SAFI reduces aggregate target success after takeover to 1.3\\%, with no recorded physical incidents or action saturation, while preserving high retained-task success.",
+      "authors": "Zheyuan Liu, Chuhan Wang, Jinduo Guo, Yue Huang, Xiangchi Yuan, Ningshan Ma, Meng Jiang",
+      "date": "2026-11-20",
+      "published": "2026-11-20",
+      "url": "https://huggingface.co/papers/2611.26239",
+      "hfUrl": "https://huggingface.co/papers/2611.26239",
+      "arxiv": "https://arxiv.org/abs/2611.26239",
+      "pdf": "https://arxiv.org/pdf/2611.26239.pdf",
+      "upvotes": 3,
+      "tags": [
+        "VLA"
+      ],
+      "topics": [
+        "VLA"
       ],
       "source": "hf"
     },
@@ -103,6 +123,36 @@
         "Simulator"
       ],
       "source": "hf"
+    },
+    {
+      "id": "2611.26617",
+      "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+      "abstract": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a feed-forward transition encoder with learnable action queries for inverse dynamics, and a causal, action-conditioned video generator for forward dynamics. By controlling information access and optimizing both dynamics end-to-end through a compact bottleneck, O$^{2}$LaF learns transferable actions from unlabeled videos. Across navigation and robotic manipulation, O$^{2}$LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments. Beyond generative video priors, we further extend our framework to predictive representation priors such as V-JEPA2, achieving competitive performance. Our findings suggest a broader paradigm for latent-action learning: repurposing pretrained video models to discover transferable actions and predict their consequences.",
+      "authors": "Yuxin Jiang, Wenqiang Sun, Jiaqi Li, Yuchao Gu, Lvmin Zhang, Ivor Tsang, Mike Zheng Shou",
+      "date": "2026-11-19",
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26617",
+      "arxiv": "https://arxiv.org/abs/2611.26617",
+      "pdf": "https://arxiv.org/pdf/2611.26617.pdf",
+      "upvotes": 2,
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "Manipulation",
+        "Navigation",
+        "Imitation Learning"
+      ],
+      "tags": [
+        "Manipulation",
+        "Navigation",
+        "Imitation Learning"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.26617"
     },
     {
       "id": "2611.26565",
@@ -679,35 +729,6 @@
         "VLA",
         "Manipulation",
         "Embodied Vision"
-      ]
-    },
-    {
-      "id": "2611.26617",
-      "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
-      "abstract": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles: a feed-forward transition encoder with learnable action queries for inverse dynamics, and a causal, action-conditioned video generator for forward dynamics. By controlling information access and optimizing both dynamics end-to-end through a compact bottleneck, O$^{2}$LaF learns transferable actions from unlabeled videos. Across navigation and robotic manipulation, O$^{2}$LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments. Beyond generative video priors, we further extend our framework to predictive representation priors such as V-JEPA2, achieving competitive performance. Our findings suggest a broader paradigm for latent-action learning: repurposing pretrained video models to discover transferable actions and predict their consequences.",
-      "authors": "Yuxin Jiang, Wenqiang Sun, Jiaqi Li, Yuchao Gu, Lvmin Zhang, Ivor Tsang, Mike Zheng Shou",
-      "date": "2026-11-19",
-      "published": "2026-11-19",
-      "url": "https://arxiv.org/abs/2611.26617",
-      "arxiv": "https://arxiv.org/abs/2611.26617",
-      "pdf": "https://arxiv.org/pdf/2611.26617.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Manipulation",
-        "Navigation",
-        "Imitation Learning"
-      ],
-      "tags": [
-        "Manipulation",
-        "Navigation",
-        "Imitation Learning"
       ]
     },
     {
@@ -1534,7 +1555,7 @@
       "url": "https://huggingface.co/papers/2611.23143",
       "arxiv": "https://arxiv.org/abs/2611.23143",
       "pdf": "https://arxiv.org/pdf/2611.23143.pdf",
-      "upvotes": 24,
+      "upvotes": 25,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -1618,7 +1639,7 @@
       "url": "https://arxiv.org/abs/2611.24011",
       "arxiv": "https://arxiv.org/abs/2611.24011",
       "pdf": "https://arxiv.org/pdf/2611.24011.pdf",
-      "upvotes": 13,
+      "upvotes": 16,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -1666,9 +1687,7 @@
         "World Model",
         "Sim2Real",
         "Imitation Learning",
-        "Reinforcement Learning",
-        "Teleoperation",
-        "Simulator"
+        "Reinforcement Learning"
       ],
       "tags": [
         "VLA",
@@ -3365,6 +3384,32 @@
       "hfUrl": "https://huggingface.co/papers/2611.21607"
     },
     {
+      "id": "2611.22666",
+      "title": "VSpark: Speculative Decoding for Autoregressive Vision-Language-Action Models",
+      "abstract": "Our aim is to accelerate autoregressive vision-language-action models (VLAs), which generate robot actions one token at a time. Speculative decoding makes this possible: a lightweight draft model proposes several tokens at once, and the VLA verifies them in a single pass, accepting only those that match its own predictions, so decoding remains lossless. The speedup, however, is limited in robot control, where many different tokens encode nearly the same motion and a draft close to the correct action is still rejected. To address this, our approach, VSpark, is built upon three design choices: (i) rollouts collected with calibrated action noise, which expose the draft to a wider range of robot states; (ii) feature alignment, which trains the draft to match the VLA's hidden features rather than its output tokens alone; and (iii) continuation reuse, which keeps the predictions the VLA has already computed along rejected drafts as candidates for the next verification step, instead of discarding them. On four VLAs with different action tokenizers and four manipulation benchmarks, VSpark achieves 1.28x to 2.10x speedup while keeping the VLA's decoding lossless.",
+      "authors": "Suho Yoo, Youngjoon Jang, Hyebin Cho, Taeyeop Lee, Jaewook Jeong, Joon Son Chung",
+      "date": "2026-11-17",
+      "published": "2026-11-17",
+      "url": "https://arxiv.org/abs/2611.22666",
+      "arxiv": "https://arxiv.org/abs/2611.22666",
+      "pdf": "https://arxiv.org/pdf/2611.22666.pdf",
+      "upvotes": 5,
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "source": "hf",
+      "topics": [
+        "VLA",
+        "Dataset"
+      ],
+      "tags": [
+        "VLA",
+        "Dataset"
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.22666"
+    },
+    {
       "id": "2611.23499",
       "title": "BiCAT: Bimanual Coordination Action Tokenization",
       "abstract": "Autoregressive vision-language-action (VLA) models predict discrete action tokens with the next-token objective of their vision-language backbone, so the action tokenizer defines the interface between the policy and the robot. In bimanual manipulation, the two arms share a repertoire of movements yet coordinate through complementary roles, and an action representation should capture both. However, most existing tokenizers encode both arms as a single concatenated action vector, in which motion patterns common to the two arms are not shared and cross-arm dependencies remain entangled within each token. The policy must therefore learn both aspects implicitly. We propose Bimanual Coordination Action Tokenization (BiCAT), which shares one motion representation across arms while conditioning each arm's tokens on its partner through symmetric cross-arm attention and a joint decoder. The policy then predicts all tokens of each arm in parallel, generating the left arm first and the right arm conditioned on it. Across ten RoboTwin 2.0 tasks and six real-world tasks on three embodiments, BiCAT achieves the highest success among the compared tokenizers. In simulation, it improves mean success by 17.6 percentage points over the strongest of eight baselines, with the largest gains on tasks that require close coordination between the arms, while requiring only 40.5 ms per action chunk. These results suggest that the action tokenizer is a natural place to model bimanual coordination.",
@@ -3374,7 +3419,7 @@
       "url": "https://arxiv.org/abs/2611.23499",
       "arxiv": "https://arxiv.org/abs/2611.23499",
       "pdf": "https://arxiv.org/pdf/2611.23499.pdf",
-      "upvotes": 3,
+      "upvotes": 4,
       "categories": [
         "cs.RO"
       ],
@@ -3390,32 +3435,6 @@
         "Bimanual"
       ],
       "hfUrl": "https://huggingface.co/papers/2611.23499"
-    },
-    {
-      "id": "2611.22666",
-      "title": "VSpark: Speculative Decoding for Autoregressive Vision-Language-Action Models",
-      "abstract": "Our aim is to accelerate autoregressive vision-language-action models (VLAs), which generate robot actions one token at a time. Speculative decoding makes this possible: a lightweight draft model proposes several tokens at once, and the VLA verifies them in a single pass, accepting only those that match its own predictions, so decoding remains lossless. The speedup, however, is limited in robot control, where many different tokens encode nearly the same motion and a draft close to the correct action is still rejected. To address this, our approach, VSpark, is built upon three design choices: (i) rollouts collected with calibrated action noise, which expose the draft to a wider range of robot states; (ii) feature alignment, which trains the draft to match the VLA's hidden features rather than its output tokens alone; and (iii) continuation reuse, which keeps the predictions the VLA has already computed along rejected drafts as candidates for the next verification step, instead of discarding them. On four VLAs with different action tokenizers and four manipulation benchmarks, VSpark achieves 1.28x to 2.10x speedup while keeping the VLA's decoding lossless.",
-      "authors": "Suho Yoo, Youngjoon Jang, Hyebin Cho, Taeyeop Lee, Jaewook Jeong, Joon Son Chung",
-      "date": "2026-11-17",
-      "published": "2026-11-17",
-      "url": "https://arxiv.org/abs/2611.22666",
-      "arxiv": "https://arxiv.org/abs/2611.22666",
-      "pdf": "https://arxiv.org/pdf/2611.22666.pdf",
-      "upvotes": 3,
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "source": "hf",
-      "topics": [
-        "VLA",
-        "Dataset"
-      ],
-      "tags": [
-        "VLA",
-        "Dataset"
-      ],
-      "hfUrl": "https://huggingface.co/papers/2611.22666"
     },
     {
       "id": "2611.23070",
@@ -4759,7 +4778,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.18397",
       "arxiv": "https://arxiv.org/abs/2611.18397",
       "pdf": "https://arxiv.org/pdf/2611.18397.pdf",
-      "upvotes": 140,
+      "upvotes": 144,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -4784,7 +4803,7 @@
       "url": "https://huggingface.co/papers/2611.18359",
       "arxiv": "https://arxiv.org/abs/2611.18359",
       "pdf": "https://arxiv.org/pdf/2611.18359.pdf",
-      "upvotes": 134,
+      "upvotes": 136,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -4812,7 +4831,7 @@
       "url": "https://arxiv.org/abs/2611.21099",
       "arxiv": "https://arxiv.org/abs/2611.21099",
       "pdf": "https://arxiv.org/pdf/2611.21099.pdf",
-      "upvotes": 43,
+      "upvotes": 45,
       "categories": [
         "cs.RO"
       ],
@@ -6800,7 +6819,9 @@
       "tags": [
         "Imitation Learning"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2611.17060",
       "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
@@ -7552,9 +7573,7 @@
       "tags": [
         "Navigation"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2611.17110",
       "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
@@ -9993,7 +10012,7 @@
       "url": "https://arxiv.org/abs/2611.12806",
       "arxiv": "https://arxiv.org/abs/2611.12806",
       "pdf": "https://arxiv.org/pdf/2611.12806.pdf",
-      "upvotes": 108,
+      "upvotes": 109,
       "categories": [
         "cs.RO"
       ],
@@ -10081,7 +10100,7 @@
       "url": "https://arxiv.org/abs/2611.12177",
       "arxiv": "https://arxiv.org/abs/2611.12177",
       "pdf": "https://arxiv.org/pdf/2611.12177.pdf",
-      "upvotes": 30,
+      "upvotes": 31,
       "categories": [
         "cs.RO",
         "cs.AI"
