@@ -1,22 +1,24 @@
 {
-  "generatedAt": "2026-11-21T07:19:48.722829+00:00",
+  "generatedAt": "2026-11-22T07:01:06.916590+00:00",
   "recentDays": 7,
   "archiveDays": 1825,
-  "recentCutoff": "2026-11-14",
-  "archiveCutoff": "2021-11-22",
-  "addedToday": 1,
+  "recentCutoff": "2026-11-15",
+  "archiveCutoff": "2021-11-23",
+  "addedToday": 0,
   "historyTotal": 9027,
-  "count": 262,
-  "archiveCount": 8418,
+  "count": 245,
+  "archiveCount": 8428,
   "sources": {
-    "hf": 18,
-    "arxiv": 244
+    "hf": 17,
+    "arxiv": 228
   },
   "archiveSources": {
-    "hf": 364,
-    "arxiv": 8054
+    "hf": 365,
+    "arxiv": 8063
   },
-  "warnings": [],
+  "warnings": [
+    "zero_new_today"
+  ],
   "papers": [
     {
       "id": "2611.26444",
@@ -28,7 +30,7 @@
       "url": "https://huggingface.co/papers/2611.26444",
       "arxiv": "https://arxiv.org/abs/2611.26444",
       "pdf": "https://arxiv.org/pdf/2611.26444.pdf",
-      "upvotes": 45,
+      "upvotes": 50,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -63,7 +65,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.25980",
       "arxiv": "https://arxiv.org/abs/2611.25980",
       "pdf": "https://arxiv.org/pdf/2611.25980.pdf",
-      "upvotes": 13,
+      "upvotes": 15,
       "tags": [
         "World Model",
         "Teleoperation",
@@ -91,7 +93,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.26239",
       "arxiv": "https://arxiv.org/abs/2611.26239",
       "pdf": "https://arxiv.org/pdf/2611.26239.pdf",
-      "upvotes": 3,
+      "upvotes": 7,
       "tags": [
         "VLA"
       ],
@@ -134,7 +136,7 @@
       "url": "https://arxiv.org/abs/2611.26617",
       "arxiv": "https://arxiv.org/abs/2611.26617",
       "pdf": "https://arxiv.org/pdf/2611.26617.pdf",
-      "upvotes": 2,
+      "upvotes": 4,
       "categories": [
         "cs.CV",
         "cs.AI",
@@ -3393,7 +3395,7 @@
       "url": "https://arxiv.org/abs/2611.22666",
       "arxiv": "https://arxiv.org/abs/2611.22666",
       "pdf": "https://arxiv.org/pdf/2611.22666.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -4778,7 +4780,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.18397",
       "arxiv": "https://arxiv.org/abs/2611.18397",
       "pdf": "https://arxiv.org/pdf/2611.18397.pdf",
-      "upvotes": 144,
+      "upvotes": 148,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -6362,7 +6364,9 @@
       "tags": [
         "Manipulation"
       ]
-    },
+    }
+  ],
+  "archive": [
     {
       "id": "2611.19559",
       "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
@@ -6819,9 +6823,7 @@
       "tags": [
         "Imitation Learning"
       ]
-    }
-  ],
-  "archive": [
+    },
     {
       "id": "2611.17060",
       "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
@@ -215431,160 +215433,6 @@
       "categories": [
         "cs.LG",
         "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2111.11524",
-      "title": "Tenodesis Grasp Emulator: Kinematic Assessment of Wrist-Driven Orthotic Control",
-      "abstract": "Wrist-driven orthotics have been designed to assist people with C6-7 spinal cord injury, however, the kinematic constraint imposed by such a control strategy can impede mobility and lead to abnormal body motion. This study characterizes body compensation using the novel Tenodesis Grasp Emulator, an adaptor orthotic that allows for the investigation of tenodesis grasping in subjects with unimpaired hand function. Subjects perform a series of grasp-and-release tasks in order to compare normal (test control) and constrained wrist-driven modes, showing significant compensation as a result of the constraint. A motor-augmented mode is also compared against traditional wrist-driven operation, to explore the potential role of hybrid human-robot control. We find that both the passive wrist-driven and motor-augmented modes fulfill different roles throughout various tasks tested. Thus, we conclude that a flexible control scheme that can alter intervention based on the task at hand holds the potential to reduce compensation in future work.",
-      "authors": "Erin Y. Chang, Raghid Mardini, Andrew I. W. McPherson, Yuri Gloumakov, Hannah S. Stuart",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11524",
-      "pdf": "https://arxiv.org/pdf/2111.11524.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Grasping"
-      ],
-      "tags": [
-        "Grasping"
-      ]
-    },
-    {
-      "id": "2111.11426",
-      "title": "Neural Fields in Visual Computing and Beyond",
-      "abstract": "Recent advances in machine learning have created increasing interest in solving visual computing problems using a class of coordinate-based neural networks that parametrize physical properties of scenes or objects across space and time. These methods, which we call neural fields, have seen successful application in the synthesis of 3D shapes and image, animation of human bodies, 3D reconstruction, and pose estimation. However, due to rapid progress in a short time, many papers exist but a comprehensive review and formulation of the problem has not yet emerged. In this report, we address this limitation by providing context, mathematical grounding, and an extensive review of literature on neural fields. This report covers research along two dimensions. In Part I, we focus on techniques in neural fields by identifying common components of neural field methods, including different representations, architectures, forward mapping, and generalization methods. In Part II, we focus on applications of neural fields to different problems in visual computing, and beyond (e.g., robotics, audio). Our review shows the breadth of topics already covered in visual computing, both historically and in current incarnations, demonstrating the improved quality, flexibility, and capability brought by neural fields methods. Finally, we present a companion website that contributes a living version of this review that can be continually updated by the community.",
-      "authors": "Yiheng Xie, Towaki Takikawa, Shunsuke Saito, Or Litany, Shiqin Yan, Numair Khan, Federico Tombari, James Tompkin, Vincent Sitzmann, Srinath Sridhar",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11426",
-      "pdf": "https://arxiv.org/pdf/2111.11426.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.CV",
-        "cs.GR",
-        "cs.LG"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "3D / Perception"
-      ],
-      "tags": [
-        "3D / Perception"
-      ]
-    },
-    {
-      "id": "2111.11401",
-      "title": "Balancing Efficiency and Comfort in Robot-Assisted Bite Transfer",
-      "abstract": "Robot-assisted feeding in household environments is challenging because it requires robots to generate trajectories that effectively bring food items of varying shapes and sizes into the mouth while making sure the user is comfortable. Our key insight is that in order to solve this challenge, robots must balance the efficiency of feeding a food item with the comfort of each individual bite. We formalize comfort and efficiency as heuristics to incorporate in motion planning. We present an approach based on heuristics-guided bi-directional Rapidly-exploring Random Trees (h-BiRRT) that selects bite transfer trajectories of arbitrary food item geometries and shapes using our developed bite efficiency and comfort heuristics and a learned constraint model. Real-robot evaluations show that optimizing both comfort and efficiency significantly outperforms a fixed-pose based method, and users preferred our method significantly more than that of a method that maximizes only user comfort. Videos and Appendices are found on our website: https://sites.google.com/view/comfortbitetransfer-icra22/home.",
-      "authors": "Suneel Belkhale, Ethan K. Gordon, Yuxiao Chen, Siddhartha Srinivasa, Tapomayukh Bhattacharjee, Dorsa Sadigh",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11401",
-      "pdf": "https://arxiv.org/pdf/2111.11401.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.HC"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Robotics"
-      ],
-      "tags": [
-        "Robotics"
-      ]
-    },
-    {
-      "id": "2111.11384",
-      "title": "Analysis of Exploration vs. Exploitation in Adaptive Information Sampling",
-      "abstract": "Adaptive information sampling approaches enable efficient selection of mobile robot's waypoints through which accurate sensing and mapping of a physical process, such as the radiation or field intensity, can be obtained. This paper analyzes the role of exploration and exploitation in such information-theoretic spatial sampling of the environmental processes. We use Gaussian processes to predict and estimate predictions with confidence bounds, thereby determining each point's informativeness in terms of exploration and exploitation. Specifically, we use a Gaussian process regression model to sample the Wi-Fi signal strength of the environment. For different variants of the informative function, we extensively analyze and evaluate the effectiveness and efficiency of information mapping through two different initial trajectories in both single robot and multi-robot settings. The results provide meaningful insights in choosing appropriate information function based on sampling objectives.",
-      "authors": "Aiman Munir, Ramviyas Parasuraman",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11384",
-      "pdf": "https://arxiv.org/pdf/2111.11384.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation"
-      ],
-      "tags": [
-        "Navigation"
-      ]
-    },
-    {
-      "id": "2111.11277",
-      "title": "BarrierNet: A Safety-Guaranteed Layer for Neural Networks",
-      "abstract": "This paper introduces differentiable higher-order control barrier functions (CBF) that are end-to-end trainable together with learning systems. CBFs are usually overly conservative, while guaranteeing safety. Here, we address their conservativeness by softening their definitions using environmental dependencies without loosing safety guarantees, and embed them into differentiable quadratic programs. These novel safety layers, termed a BarrierNet, can be used in conjunction with any neural network-based controller, and can be trained by gradient descent. BarrierNet allows the safety constraints of a neural controller be adaptable to changing environments. We evaluate them on a series of control problems such as traffic merging and robot navigations in 2D and 3D space, and demonstrate their effectiveness compared to state-of-the-art approaches.",
-      "authors": "Wei Xiao, Ramin Hasani, Xiao Li, Daniela Rus",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11277",
-      "pdf": "https://arxiv.org/pdf/2111.11277.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.LG",
-        "cs.RO",
-        "eess.SY"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Navigation"
-      ],
-      "tags": [
-        "Navigation"
-      ]
-    },
-    {
-      "id": "2111.11241",
-      "title": "RoboKit-MV: an Educational Initiative",
-      "abstract": "In this paper, we present a robot model and code base for affordable education in the field of humanoid robotics. We give an overview of the software and hardware of a robot that won several competitions with the team RoboKit in 2019-2021, provide analysis of the contemporary market of education in robotics, and highlight the reasoning beyond certain design solutions.",
-      "authors": "Azer Babaev, Ilya Osokin, Ilya Ryakin, Egor Davydenko, Vladimir Litvinenko, Ivan Khokhlov, Aleksandr Matsun, Vitaly Suvorov",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11241",
-      "pdf": "https://arxiv.org/pdf/2111.11241.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO"
-      ],
-      "source": "arxiv",
-      "topics": [
-        "Humanoid"
-      ],
-      "tags": [
-        "Humanoid"
-      ]
-    },
-    {
-      "id": "2111.11236",
-      "title": "Nanorobot queue: Cooperative treatment of cancer based on team member communication and image processing",
-      "abstract": "Although nanorobots have been used as clinical prescriptions for work such as gastroscopy, and even photoacoustic tomography technology has been proposed to control nanorobots to deliver drugs at designated delivery points in real time, and there are cases of eliminating \"superbacteria\" in blood through nanorobots, most technologies are immature, either with low efficiency or low accuracy, Either it can not be mass produced, so the most effective way to treat cancer diseases at this stage is through chemotherapy and radiotherapy. Patients are suffering and can not be cured. Therefore, this paper proposes an ideal model of a treatment method that can completely cure cancer, a cooperative treatment method based on nano robot queue through team member communication and computer vision image classification (target detection).",
-      "authors": "Xinyu Zhou",
-      "date": "2021-11-22",
-      "published": "2021-11-22",
-      "arxiv": "https://arxiv.org/abs/2111.11236",
-      "pdf": "https://arxiv.org/pdf/2111.11236.pdf",
-      "upvotes": 0,
-      "categories": [
-        "cs.RO",
-        "cs.CV",
-        "cs.LG"
       ],
       "source": "arxiv",
       "topics": [
