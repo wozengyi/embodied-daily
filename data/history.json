@@ -216409,7 +216409,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.18397",
       "arxiv": "https://arxiv.org/abs/2611.18397",
       "pdf": "https://arxiv.org/pdf/2611.18397.pdf",
-      "upvotes": 166,
+      "upvotes": 167,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -222510,7 +222510,7 @@
       "url": "https://arxiv.org/abs/2611.26617",
       "arxiv": "https://arxiv.org/abs/2611.26617",
       "pdf": "https://arxiv.org/pdf/2611.26617.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "categories": [
         "cs.CV",
         "cs.AI",
@@ -223951,7 +223951,7 @@
       "url": "https://arxiv.org/abs/2611.26745",
       "arxiv": "https://arxiv.org/abs/2611.26745",
       "pdf": "https://arxiv.org/pdf/2611.26745.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -224649,7 +224649,7 @@
       "url": "https://arxiv.org/abs/2611.31205",
       "arxiv": "https://arxiv.org/abs/2611.31205",
       "pdf": "https://arxiv.org/pdf/2611.31205.pdf",
-      "upvotes": 63,
+      "upvotes": 66,
       "categories": [
         "cs.RO",
         "cs.MA"
@@ -226116,7 +226116,7 @@
       "url": "https://huggingface.co/papers/2611.29897",
       "arxiv": "https://arxiv.org/abs/2611.29897",
       "pdf": "https://arxiv.org/pdf/2611.29897.pdf",
-      "upvotes": 217,
+      "upvotes": 224,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -226502,7 +226502,7 @@
       "url": "https://huggingface.co/papers/2611.31201",
       "arxiv": "https://arxiv.org/abs/2611.31201",
       "pdf": "https://arxiv.org/pdf/2611.31201.pdf",
-      "upvotes": 105,
+      "upvotes": 106,
       "categories": [
         "cs.RO"
       ],
@@ -226525,7 +226525,7 @@
       "url": "https://arxiv.org/abs/2611.31129",
       "arxiv": "https://arxiv.org/abs/2611.31129",
       "pdf": "https://arxiv.org/pdf/2611.31129.pdf",
-      "upvotes": 1,
+      "upvotes": 2,
       "categories": [
         "cs.CR",
         "cs.AI"
@@ -226961,7 +226961,7 @@
       "url": "https://arxiv.org/abs/2611.30254",
       "arxiv": "https://arxiv.org/abs/2611.30254",
       "pdf": "https://arxiv.org/pdf/2611.30254.pdf",
-      "upvotes": 44,
+      "upvotes": 45,
       "categories": [
         "cs.RO"
       ],
@@ -227512,12 +227512,12 @@
       "url": "https://arxiv.org/abs/2611.28732",
       "arxiv": "https://arxiv.org/abs/2611.28732",
       "pdf": "https://arxiv.org/pdf/2611.28732.pdf",
-      "upvotes": 0,
+      "upvotes": 28,
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Manipulation",
         "Foundation Models",
@@ -227529,7 +227529,8 @@
         "Foundation Models",
         "WAM",
         "World Model"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.28732"
     },
     "2611.28707": {
       "id": "2611.28707",
@@ -227780,7 +227781,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.26389",
       "arxiv": "https://arxiv.org/abs/2611.26389",
       "pdf": "https://arxiv.org/pdf/2611.26389.pdf",
-      "upvotes": 41,
+      "upvotes": 42,
       "tags": [
         "Imitation Learning",
         "Reinforcement Learning",
@@ -227850,7 +227851,7 @@
       "url": "https://huggingface.co/papers/2611.33010",
       "arxiv": "https://arxiv.org/abs/2611.33010",
       "pdf": "https://arxiv.org/pdf/2611.33010.pdf",
-      "upvotes": 32,
+      "upvotes": 33,
       "categories": [
         "cs.CV",
         "cs.AI",
@@ -228131,7 +228132,7 @@
       "url": "https://huggingface.co/papers/2611.32639",
       "arxiv": "https://arxiv.org/abs/2611.32639",
       "pdf": "https://arxiv.org/pdf/2611.32639.pdf",
-      "upvotes": 1,
+      "upvotes": 2,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -228443,18 +228444,19 @@
       "url": "https://arxiv.org/abs/2611.32238",
       "arxiv": "https://arxiv.org/abs/2611.32238",
       "pdf": "https://arxiv.org/pdf/2611.32238.pdf",
-      "upvotes": 0,
+      "upvotes": 6,
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Imitation Learning"
       ],
       "tags": [
         "Imitation Learning"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.32238"
     },
     "2611.32233": {
       "id": "2611.32233",
@@ -229223,7 +229225,7 @@
       "url": "https://arxiv.org/abs/2611.33144",
       "arxiv": "https://arxiv.org/abs/2611.33144",
       "pdf": "https://arxiv.org/pdf/2611.33144.pdf",
-      "upvotes": 39,
+      "upvotes": 44,
       "categories": [
         "cs.RO"
       ],
@@ -230088,7 +230090,7 @@
       "title": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
       "abstract": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-free, versatile and efficient agent policy: a multimodal LLM agent writes a sparse, ordered sequence of 6-DoF end-effector keyposes per call, observes the result, and writes the next, while a motion planner interpolates between them. The agent decides the number and spacing of keyposes for both fast long-range motion and fine-grained manipulation. This granularity matches the sparsity of teleoperated manipulation: most demonstrations in DROID can be compressed into a few keyposes instead of dense actions. SOLVE grounds keyposes with sparse depth queries answered by noisy sources, such as multi-view triangulation, stereo, or monocular depth, and copes with that noise itself. It also improves from execution feedback, reflecting on its own rollouts and distilling a few rules per task. SOLVE reaches state-of-the-art performance of 74.5% on RoboDojo and 84.5% on RoboLab, with only $1.7 per episode on average, 12x less than previous dense-control agent policies. On a real robot, the same agent achieves an 88% success rate (75 of 85 episodes) over 16 challenging zero-shot tasks. Our project page is at https://serenos.github.io/solve-website.",
       "authors": "Xiang Li, Hongyu Zhou, Ya-Li Li, Tao Li, Rui Zhang, Junjie Lai, Weihua Zhang, Shengjin Wang",
-      "date": "2026-11-26",
+      "date": "2026-11-25",
       "published": "2026-11-25",
       "url": "https://huggingface.co/papers/2611.34750",
       "arxiv": "https://arxiv.org/abs/2611.34750",
@@ -230119,7 +230121,7 @@
       "url": "https://huggingface.co/papers/2611.34675",
       "arxiv": "https://arxiv.org/abs/2611.34675",
       "pdf": "https://arxiv.org/pdf/2611.34675.pdf",
-      "upvotes": 8,
+      "upvotes": 9,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -230566,7 +230568,7 @@
       "url": "https://huggingface.co/papers/2611.33925",
       "arxiv": "https://arxiv.org/abs/2611.33925",
       "pdf": "https://arxiv.org/pdf/2611.33925.pdf",
-      "upvotes": 10,
+      "upvotes": 13,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -230596,7 +230598,7 @@
       "url": "https://huggingface.co/papers/2611.33915",
       "arxiv": "https://arxiv.org/abs/2611.33915",
       "pdf": "https://arxiv.org/pdf/2611.33915.pdf",
-      "upvotes": 10,
+      "upvotes": 11,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -230776,12 +230778,12 @@
       "url": "https://arxiv.org/abs/2611.33579",
       "arxiv": "https://arxiv.org/abs/2611.33579",
       "pdf": "https://arxiv.org/pdf/2611.33579.pdf",
-      "upvotes": 0,
+      "upvotes": 4,
       "categories": [
         "cs.RO",
         "cs.AI"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Dexterous",
         "Reinforcement Learning",
@@ -230791,7 +230793,8 @@
         "Dexterous",
         "Reinforcement Learning",
         "Dataset"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.33579"
     },
     "2611.33560": {
       "id": "2611.33560",
@@ -231182,8 +231185,7 @@
         "Mobile Manipulation",
         "Dataset",
         "Multi-task",
-        "WAM",
-        "World Model"
+        "WAM"
       ],
       "tags": [
         "Manipulation",
@@ -231745,7 +231747,7 @@
       "url": "https://huggingface.co/papers/2611.34811",
       "arxiv": "https://arxiv.org/abs/2611.34811",
       "pdf": "https://arxiv.org/pdf/2611.34811.pdf",
-      "upvotes": 18,
+      "upvotes": 22,
       "categories": [
         "cs.CV",
         "cs.AI",
@@ -231807,7 +231809,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.34347",
       "arxiv": "https://arxiv.org/abs/2611.34347",
       "pdf": "https://arxiv.org/pdf/2611.34347.pdf",
-      "upvotes": 15,
+      "upvotes": 17,
       "tags": [
         "Dataset",
         "Open-Source",
@@ -231831,7 +231833,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.33143",
       "arxiv": "https://arxiv.org/abs/2611.33143",
       "pdf": "https://arxiv.org/pdf/2611.33143.pdf",
-      "upvotes": 10,
+      "upvotes": 15,
       "tags": [
         "Navigation",
         "Imitation Learning",
@@ -231855,7 +231857,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.33922",
       "arxiv": "https://arxiv.org/abs/2611.33922",
       "pdf": "https://arxiv.org/pdf/2611.33922.pdf",
-      "upvotes": 9,
+      "upvotes": 10,
       "tags": [
         "Locomotion",
         "Reinforcement Learning"
@@ -231901,7 +231903,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.32649",
       "arxiv": "https://arxiv.org/abs/2611.32649",
       "pdf": "https://arxiv.org/pdf/2611.32649.pdf",
-      "upvotes": 18,
+      "upvotes": 19,
       "tags": [
         "Dataset"
       ],
@@ -231921,7 +231923,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.32351",
       "arxiv": "https://arxiv.org/abs/2611.32351",
       "pdf": "https://arxiv.org/pdf/2611.32351.pdf",
-      "upvotes": 1,
+      "upvotes": 2,
       "tags": [
         "VLA",
         "Dataset",
@@ -231937,5 +231939,5 @@
       "source": "hf"
     }
   },
-  "generatedAt": "2026-11-26T08:31:32.283593+00:00"
+  "generatedAt": "2026-11-27T08:45:07.001567+00:00"
 }
