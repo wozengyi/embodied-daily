@@ -216409,7 +216409,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.18397",
       "arxiv": "https://arxiv.org/abs/2611.18397",
       "pdf": "https://arxiv.org/pdf/2611.18397.pdf",
-      "upvotes": 167,
+      "upvotes": 171,
       "tags": [
         "VLA",
         "Reinforcement Learning",
@@ -218946,7 +218946,7 @@
       "url": "https://arxiv.org/abs/2611.21938",
       "arxiv": "https://arxiv.org/abs/2611.21938",
       "pdf": "https://arxiv.org/pdf/2611.21938.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "categories": [
         "cs.RO",
         "cs.CV",
@@ -223234,7 +223234,7 @@
       "url": "https://arxiv.org/abs/2611.25595",
       "arxiv": "https://arxiv.org/abs/2611.25595",
       "pdf": "https://arxiv.org/pdf/2611.25595.pdf",
-      "upvotes": 5,
+      "upvotes": 6,
       "categories": [
         "cs.CV",
         "cs.RO"
@@ -223951,7 +223951,7 @@
       "url": "https://arxiv.org/abs/2611.26745",
       "arxiv": "https://arxiv.org/abs/2611.26745",
       "pdf": "https://arxiv.org/pdf/2611.26745.pdf",
-      "upvotes": 7,
+      "upvotes": 9,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -224649,7 +224649,7 @@
       "url": "https://arxiv.org/abs/2611.31205",
       "arxiv": "https://arxiv.org/abs/2611.31205",
       "pdf": "https://arxiv.org/pdf/2611.31205.pdf",
-      "upvotes": 66,
+      "upvotes": 67,
       "categories": [
         "cs.RO",
         "cs.MA"
@@ -226116,7 +226116,7 @@
       "url": "https://huggingface.co/papers/2611.29897",
       "arxiv": "https://arxiv.org/abs/2611.29897",
       "pdf": "https://arxiv.org/pdf/2611.29897.pdf",
-      "upvotes": 224,
+      "upvotes": 229,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -226502,7 +226502,7 @@
       "url": "https://huggingface.co/papers/2611.31201",
       "arxiv": "https://arxiv.org/abs/2611.31201",
       "pdf": "https://arxiv.org/pdf/2611.31201.pdf",
-      "upvotes": 106,
+      "upvotes": 107,
       "categories": [
         "cs.RO"
       ],
@@ -227021,17 +227021,18 @@
       "url": "https://arxiv.org/abs/2611.30025",
       "arxiv": "https://arxiv.org/abs/2611.30025",
       "pdf": "https://arxiv.org/pdf/2611.30025.pdf",
-      "upvotes": 0,
+      "upvotes": 1,
       "categories": [
         "cs.LG"
       ],
-      "source": "arxiv",
+      "source": "hf",
       "topics": [
         "Simulator"
       ],
       "tags": [
         "Simulator"
-      ]
+      ],
+      "hfUrl": "https://huggingface.co/papers/2611.30025"
     },
     "2611.30024": {
       "id": "2611.30024",
@@ -227512,7 +227513,7 @@
       "url": "https://arxiv.org/abs/2611.28732",
       "arxiv": "https://arxiv.org/abs/2611.28732",
       "pdf": "https://arxiv.org/pdf/2611.28732.pdf",
-      "upvotes": 28,
+      "upvotes": 34,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -227618,7 +227619,7 @@
       "url": "https://huggingface.co/papers/2611.30898",
       "arxiv": "https://arxiv.org/abs/2611.30898",
       "pdf": "https://arxiv.org/pdf/2611.30898.pdf",
-      "upvotes": 28,
+      "upvotes": 29,
       "categories": [
         "cs.CV",
         "cs.LG",
@@ -228444,7 +228445,7 @@
       "url": "https://arxiv.org/abs/2611.32238",
       "arxiv": "https://arxiv.org/abs/2611.32238",
       "pdf": "https://arxiv.org/pdf/2611.32238.pdf",
-      "upvotes": 6,
+      "upvotes": 7,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -230121,7 +230122,7 @@
       "url": "https://huggingface.co/papers/2611.34675",
       "arxiv": "https://arxiv.org/abs/2611.34675",
       "pdf": "https://arxiv.org/pdf/2611.34675.pdf",
-      "upvotes": 9,
+      "upvotes": 10,
       "categories": [
         "cs.RO",
         "cs.AI",
@@ -230150,7 +230151,7 @@
       "url": "https://huggingface.co/papers/2611.34671",
       "arxiv": "https://arxiv.org/abs/2611.34671",
       "pdf": "https://arxiv.org/pdf/2611.34671.pdf",
-      "upvotes": 2,
+      "upvotes": 3,
       "categories": [
         "cs.RO",
         "cs.AI"
@@ -230598,7 +230599,7 @@
       "url": "https://huggingface.co/papers/2611.33915",
       "arxiv": "https://arxiv.org/abs/2611.33915",
       "pdf": "https://arxiv.org/pdf/2611.33915.pdf",
-      "upvotes": 11,
+      "upvotes": 12,
       "categories": [
         "cs.RO",
         "cs.CV"
@@ -231747,7 +231748,7 @@
       "url": "https://huggingface.co/papers/2611.34811",
       "arxiv": "https://arxiv.org/abs/2611.34811",
       "pdf": "https://arxiv.org/pdf/2611.34811.pdf",
-      "upvotes": 22,
+      "upvotes": 23,
       "categories": [
         "cs.CV",
         "cs.AI",
@@ -231833,7 +231834,7 @@
       "hfUrl": "https://huggingface.co/papers/2611.33143",
       "arxiv": "https://arxiv.org/abs/2611.33143",
       "pdf": "https://arxiv.org/pdf/2611.33143.pdf",
-      "upvotes": 15,
+      "upvotes": 16,
       "tags": [
         "Navigation",
         "Imitation Learning",
@@ -231939,5 +231940,5 @@
       "source": "hf"
     }
   },
-  "generatedAt": "2026-11-27T08:45:07.001567+00:00"
+  "generatedAt": "2026-11-28T07:58:47.733964+00:00"
 }
